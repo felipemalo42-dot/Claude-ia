@@ -1,0 +1,457 @@
+{
+ "total": 199.647,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.25,
+   "end": 9.404,
+   "sents": [
+    {
+     "text": "Trece años separan a GTA 5 de GTA 6.",
+     "start": 0.25,
+     "end": 3.206,
+     "voice": "host"
+    },
+    {
+     "text": "Y en ese tiempo, Rockstar cambió más cosas de las que parece... y dejó intacta una que muchos esperaban.",
+     "start": 3.536,
+     "end": 9.074,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  },
+  {
+   "i": 1,
+   "start": 9.404,
+   "end": 11.804,
+   "sents": [],
+   "id": "b1"
+  },
+  {
+   "i": 2,
+   "start": 11.804,
+   "end": 25.327,
+   "sents": [
+    {
+     "text": "Esto es Sal y Asfalto.",
+     "start": 11.804,
+     "end": 13.235,
+     "voice": "host"
+    },
+    {
+     "text": "Hoy: diez cambios confirmados entre GTA 5 y GTA 6, uno que no cambió, y tres rumores que te vamos a señalar con el dedo.",
+     "start": 13.565,
+     "end": 21.025,
+     "voice": "host"
+    },
+    {
+     "text": "A la izquierda, GTA 5.",
+     "start": 21.355,
+     "end": 23.072,
+     "voice": "host"
+    },
+    {
+     "text": "A la derecha, GTA 6.",
+     "start": 23.402,
+     "end": 24.997,
+     "voice": "host"
+    }
+   ],
+   "id": "b2"
+  },
+  {
+   "i": 3,
+   "start": 25.327,
+   "end": 37.14,
+   "sents": [
+    {
+     "text": "Uno: el mundo.",
+     "start": 25.327,
+     "end": 26.319,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 recreaba el sur de California con Los Santos.",
+     "start": 26.649,
+     "end": 29.777,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 se muda a Leonida, la parodia de Florida.",
+     "start": 30.107,
+     "end": 33.03,
+     "voice": "host"
+    },
+    {
+     "text": "Y según Aaron Garbut, de Rockstar, el mapa es el doble de grande.",
+     "start": 33.36,
+     "end": 36.81,
+     "voice": "host"
+    }
+   ],
+   "id": "b3"
+  },
+  {
+   "i": 4,
+   "start": 37.14,
+   "end": 50.463,
+   "sents": [
+    {
+     "text": "Dos: los protagonistas.",
+     "start": 37.14,
+     "end": 38.581,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 tenía tres:",
+     "start": 38.911,
+     "end": 40.478,
+     "voice": "host"
+    },
+    {
+     "text": "Michael, Franklin y Trevor.",
+     "start": 40.758,
+     "end": 42.329,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 tiene dos, Jason y Lucía, y en el Extended Look se vio que puedes cambiar entre ellos en plena acción, sin pantalla de carga.",
+     "start": 42.659,
+     "end": 50.133,
+     "voice": "host"
+    }
+   ],
+   "id": "b4"
+  },
+  {
+   "i": 5,
+   "start": 50.463,
+   "end": 56.605,
+   "sents": [
+    {
+     "text": "Tres: las estrellas de búsqueda.",
+     "start": 50.463,
+     "end": 52.222,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 llegaba a cinco.",
+     "start": 52.552,
+     "end": 54.419,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 llega a seis.",
+     "start": 54.749,
+     "end": 56.275,
+     "voice": "host"
+    }
+   ],
+   "id": "b5"
+  },
+  {
+   "i": 6,
+   "start": 56.605,
+   "end": 69.046,
+   "sents": [
+    {
+     "text": "Cuatro: algo que GTA 5 no tenía.",
+     "start": 56.605,
+     "end": 58.961,
+     "voice": "host"
+    },
+    {
+     "text": "El Perfil Criminal, un sistema que registra cómo te comportas.",
+     "start": 59.291,
+     "end": 62.857,
+     "voice": "host"
+    },
+    {
+     "text": "Rob Nelson, de Rockstar, dijo que las acciones constantes pueden influir en cómo reacciona el mundo.",
+     "start": 63.187,
+     "end": 68.716,
+     "voice": "host"
+    }
+   ],
+   "id": "b6"
+  },
+  {
+   "i": 7,
+   "start": 69.046,
+   "end": 82.015,
+   "sents": [
+    {
+     "text": "Cinco: el sistema de foco.",
+     "start": 69.046,
+     "end": 70.692,
+     "voice": "host"
+    },
+    {
+     "text": "Como en Red Dead Redemption 2, puedes fijar la atención en personas y animales para interactuar con ellos.",
+     "start": 71.022,
+     "end": 76.8,
+     "voice": "host"
+    },
+    {
+     "text": "Y al apuntar, el tiempo se ralentiza y se marcan los puntos débiles del enemigo.",
+     "start": 77.13,
+     "end": 81.685,
+     "voice": "host"
+    }
+   ],
+   "id": "b7"
+  },
+  {
+   "i": 8,
+   "start": 82.015,
+   "end": 93.745,
+   "sents": [
+    {
+     "text": "Seis: el clima.",
+     "start": 82.015,
+     "end": 83.008,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 tenía lluvia y tormentas.",
+     "start": 83.338,
+     "end": 85.652,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 suma tormentas tropicales y huracanes, con un sistema rehecho a partir del de Red Dead Redemption 2, según Game Informer.",
+     "start": 85.982,
+     "end": 93.415,
+     "voice": "host"
+    }
+   ],
+   "id": "b8"
+  },
+  {
+   "i": 9,
+   "start": 93.745,
+   "end": 106.902,
+   "sents": [
+    {
+     "text": "Siete: la fauna.",
+     "start": 93.745,
+     "end": 94.902,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 tenía animales, sí.",
+     "start": 95.232,
+     "end": 97.178,
+     "voice": "host"
+    },
+    {
+     "text": "Pero GTA 6, según Game Informer, tiene más de ciento setenta especies.",
+     "start": 97.508,
+     "end": 101.815,
+     "voice": "host"
+    },
+    {
+     "text": "Y algunas se pueden rastrear por rareza: raras, descubribles y legendarias.",
+     "start": 102.145,
+     "end": 106.572,
+     "voice": "host"
+    }
+   ],
+   "id": "b9"
+  },
+  {
+   "i": 10,
+   "start": 106.902,
+   "end": 118.055,
+   "sents": [
+    {
+     "text": "Ocho: el precio.",
+     "start": 106.902,
+     "end": 108.045,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 salió en 2013 a 59,99 dólares.",
+     "start": 108.375,
+     "end": 113.11,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 cuesta 79,99 en su edición estándar.",
+     "start": 113.44,
+     "end": 117.725,
+     "voice": "host"
+    }
+   ],
+   "id": "b10"
+  },
+  {
+   "i": 11,
+   "start": 118.055,
+   "end": 128.733,
+   "sents": [
+    {
+     "text": "Nueve: el online.",
+     "start": 118.055,
+     "end": 119.163,
+     "voice": "host"
+    },
+    {
+     "text": "GTA Online llegó apenas dos semanas después de GTA 5.",
+     "start": 119.493,
+     "end": 123.221,
+     "voice": "host"
+    },
+    {
+     "text": "Para GTA 6, Rockstar habla de una experiencia para un jugador, sin fecha para un online.",
+     "start": 123.551,
+     "end": 128.403,
+     "voice": "host"
+    }
+   ],
+   "id": "b11"
+  },
+  {
+   "i": 12,
+   "start": 128.733,
+   "end": 142.314,
+   "sents": [
+    {
+     "text": "Diez: las plataformas.",
+     "start": 128.733,
+     "end": 130.051,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 salió en PS3 y Xbox 360, y a PC llegó diecinueve meses después.",
+     "start": 130.381,
+     "end": 136.505,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 sale solo en PS5 y Xbox Series, y la versión de PC no tiene fecha.",
+     "start": 136.835,
+     "end": 141.984,
+     "voice": "host"
+    }
+   ],
+   "id": "b12"
+  },
+  {
+   "i": 13,
+   "start": 142.314,
+   "end": 155.633,
+   "sents": [
+    {
+     "text": "¿Y lo que no cambió?",
+     "start": 142.314,
+     "end": 143.501,
+     "voice": "host"
+    },
+    {
+     "text": "El idioma.",
+     "start": 143.881,
+     "end": 144.702,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 5 no tenía doblaje al español y GTA 6 tampoco: voces en inglés y textos en español.",
+     "start": 145.032,
+     "end": 151.029,
+     "voice": "host"
+    },
+    {
+     "text": "Algunos lo celebran por las actuaciones originales; otros, no tanto.",
+     "start": 151.359,
+     "end": 155.303,
+     "voice": "host"
+    }
+   ],
+   "id": "b13"
+  },
+  {
+   "i": 14,
+   "start": 155.633,
+   "end": 179.247,
+   "sents": [
+    {
+     "text": "Y ahora, tres rumores, con etiqueta roja.",
+     "start": 155.633,
+     "end": 158.043,
+     "voice": "host"
+    },
+    {
+     "text": "Uno: un modo a sesenta cuadros por segundo.",
+     "start": 158.373,
+     "end": 160.868,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar dijo que el objetivo es treinta, y no ha confirmado sesenta.",
+     "start": 161.198,
+     "end": 165.05,
+     "voice": "host"
+    },
+    {
+     "text": "Dos: un online para Leonida en pocas semanas.",
+     "start": 165.38,
+     "end": 167.812,
+     "voice": "host"
+    },
+    {
+     "text": "Lo dice un filtrador, no Rockstar.",
+     "start": 168.142,
+     "end": 170.161,
+     "voice": "host"
+    },
+    {
+     "text": "Tres: la versión de PC en 2027.",
+     "start": 170.491,
+     "end": 173.213,
+     "voice": "host"
+    },
+    {
+     "text": "Es lo que esperan muchos analistas mirando lo que pasó con GTA 5, pero nadie lo ha anunciado.",
+     "start": 173.543,
+     "end": 178.917,
+     "voice": "host"
+    }
+   ],
+   "id": "b14"
+  },
+  {
+   "i": 15,
+   "start": 179.247,
+   "end": 199.247,
+   "sents": [
+    {
+     "text": "Diez cambios, una tradición y tres incógnitas.",
+     "start": 179.247,
+     "end": 181.89,
+     "voice": "host"
+    },
+    {
+     "text": "¿Cuál de estos cambios te parece el más importante?",
+     "start": 182.22,
+     "end": 185.007,
+     "voice": "host"
+    },
+    {
+     "text": "Te leo en los comentarios.",
+     "start": 185.387,
+     "end": 186.868,
+     "voice": "host"
+    },
+    {
+     "text": "Y si quieres la comparación jugando, con pruebas reales, suscríbete: llega después del jueves.",
+     "start": 187.198,
+     "end": 192.437,
+     "voice": "host"
+    }
+   ],
+   "id": "b15"
+  }
+ ],
+ "lufs_in": -17.27
+}

@@ -1,0 +1,86 @@
+{
+ "total": 41.646,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.15,
+   "end": 40.446,
+   "sents": [
+    {
+     "text": "¿A qué hora sale GTA 6 en tu país?",
+     "start": 0.15,
+     "end": 2.348,
+     "voice": "host"
+    },
+    {
+     "text": "Sin tablas raras: la regla es una sola.",
+     "start": 2.614,
+     "end": 4.912,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar lo desbloquea a la medianoche, hora local, del jueves diecinueve de noviembre.",
+     "start": 5.143,
+     "end": 9.666,
+     "voice": "host"
+    },
+    {
+     "text": "La medianoche va a recorrer el mundo como una ola.",
+     "start": 9.897,
+     "end": 12.652,
+     "voice": "host"
+    },
+    {
+     "text": "En España llega a las cero horas del jueves.",
+     "start": 12.883,
+     "end": 15.368,
+     "voice": "host"
+    },
+    {
+     "text": "Cuatro horas después, Argentina y Chile.",
+     "start": 15.599,
+     "end": 17.941,
+     "voice": "host"
+    },
+    {
+     "text": "Una hora más tarde, Venezuela.",
+     "start": 18.172,
+     "end": 19.947,
+     "voice": "host"
+    },
+    {
+     "text": "Luego Colombia, Perú y Ecuador.",
+     "start": 20.178,
+     "end": 21.897,
+     "voice": "host"
+    },
+    {
+     "text": "Y casi al final, el centro de México y Centroamérica.",
+     "start": 22.128,
+     "end": 25.164,
+     "voice": "host"
+    },
+    {
+     "text": "En Estados Unidos abre a la medianoche de la costa este: en la costa oeste serán las nueve de la noche del miércoles.",
+     "start": 25.395,
+     "end": 31.83,
+     "voice": "host"
+    },
+    {
+     "text": "Si una tabla te dice otra cosa, manda la ficha de tu tienda.",
+     "start": 32.061,
+     "end": 35.41,
+     "voice": "host"
+    },
+    {
+     "text": "Y si todavía no tienes doscientos diez gigas libres... ya sabes qué hacer esta noche.",
+     "start": 35.641,
+     "end": 40.215,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  }
+ ],
+ "lufs_in": -16.0
+}

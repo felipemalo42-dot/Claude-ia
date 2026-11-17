@@ -1,0 +1,80 @@
+{
+ "total": 37.523,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.2,
+   "end": 36.323,
+   "sents": [
+    {
+     "text": "Más de ciento setenta especies.",
+     "start": 0.2,
+     "end": 2.069,
+     "voice": "analista"
+    },
+    {
+     "text": "Eso es lo que, según Game Informer, vive en Leonida.",
+     "start": 2.333,
+     "end": 5.13,
+     "voice": "analista"
+    },
+    {
+     "text": "Y Rockstar ya nombró a cuatro.",
+     "start": 5.394,
+     "end": 7.197,
+     "voice": "analista"
+    },
+    {
+     "text": "El aligátor americano, al que casi todos llamamos caimán: el rey de los pantanos, visto desde el primer tráiler.",
+     "start": 7.461,
+     "end": 13.584,
+     "voice": "analista"
+    },
+    {
+     "text": "El flamenco, el rosado más famoso de Florida.",
+     "start": 13.848,
+     "end": 16.42,
+     "voice": "analista"
+    },
+    {
+     "text": "El pelícano, patrullando muelles y playas.",
+     "start": 16.684,
+     "end": 19.004,
+     "voice": "analista"
+    },
+    {
+     "text": "Y el manatí, la vaca marina: lenta, enorme y pacífica.",
+     "start": 19.268,
+     "end": 22.636,
+     "voice": "analista"
+    },
+    {
+     "text": "Además, algunos animales se podrán rastrear por rareza: raros, descubribles y legendarios.",
+     "start": 22.9,
+     "end": 28.187,
+     "voice": "analista"
+    },
+    {
+     "text": "¿Cuáles serán legendarios?",
+     "start": 28.451,
+     "end": 29.87,
+     "voice": "analista"
+    },
+    {
+     "text": "Todavía nadie lo sabe.",
+     "start": 30.174,
+     "end": 31.635,
+     "voice": "analista"
+    },
+    {
+     "text": "Guarda este video: después del lanzamiento armamos la guía de campo completa.",
+     "start": 31.899,
+     "end": 36.059,
+     "voice": "analista"
+    }
+   ],
+   "id": "b0"
+  }
+ ],
+ "lufs_in": -16.93
+}

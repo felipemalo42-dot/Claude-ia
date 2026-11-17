@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+VIDEO_*/recursos/_vox.wav
+VIDEO_*/recursos/mezcla_final.wav
+VIDEO_*/recursos/preview_*.mp4
