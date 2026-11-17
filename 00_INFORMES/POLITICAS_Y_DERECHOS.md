@@ -28,7 +28,7 @@
 
 ### 1.4 Derechos de autor (Content ID)
 - La música es sintetizada por código: no hay Content ID que la reclame.
-- Las voces son nuestras, generadas con un modelo Apache 2.0.
+- La voz es sintética, generada con Chatterbox (licencia MIT) a partir de una referencia con licencia abierta CC BY-SA 4.0 (ver sección 4). No hay voces de terceros con derechos reservados.
 - Las tipografías tienen licencia OFL o Apache 2.0, aptas para uso comercial y para incrustarlas en vídeo.
 
 ---
@@ -90,7 +90,6 @@ Para usar gameplay propio con el riesgo mínimo razonable:
 | Supertonic 3 (Supertone): solo para crear la voz de referencia del copiloto | Pesos: OpenRAIL-M · código: MIT | Sí, con las restricciones de uso responsable del anexo A |
 | Parakeet TDT v3 (NVIDIA), solo para verificar y sincronizar la voz | CC-BY-4.0 | Sí (herramienta; no aparece en los videos) |
 | sherpa-onnx (distribución del modelo) | Apache 2.0 | Sí |
-| espeak-ng (fonemización) | GPL v3 (herramienta) | Sí: el audio generado no es obra derivada del programa |
 | onnxruntime | MIT | Sí |
 | Skia / skia-python | BSD-3 | Sí |
 | FFmpeg (libx264, AAC) | GPL/LGPL (herramienta) | Sí: los MP4 resultantes son obra propia |
