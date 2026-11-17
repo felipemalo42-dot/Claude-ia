@@ -90,6 +90,7 @@ def thumb_mark(c, x, y, r=34):
     draw_badge(c, x, y, r)
 
 def word_times(sent):
+    if sent.get("words"): return [(w, s, e) for w, s, e in sent["words"]]
     words = sent["text"].split(); tot = sum(len(w) + 1 for w in words); d = sent["end"] - sent["start"]; acc = 0; out = []
     for w in words:
         st = sent["start"] + d * acc / tot; acc += len(w) + 1; out.append((w, st, sent["start"] + d * acc / tot))

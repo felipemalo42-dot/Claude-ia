@@ -6,7 +6,7 @@ import argparse, importlib, json, math, os, re, subprocess, sys, time
 import numpy as np, soundfile as sf, skia
 sys.path.insert(0, os.path.dirname(__file__))
 import audio, gfx
-from tts import Kokoro, split_markup, spoken, pause_after, SR as TSR
+from tts import Supertonic, Aligner, split_markup, spoken, pause_after, trim, level, take_seed, SR as TSR
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 FPS = 30
@@ -18,38 +18,79 @@ def split_sentences(text):
     return [p.replace("\x00", ".").replace("\x01", "?").replace("\x02", "!").replace("\x03", ":").strip() for p in parts if p.strip()]
 
 # ---------------------------------------------------------------- etapa de audio
-def build_audio(V, outdir, k=None):
-    k = k or Kokoro()
-    t = V.get("lead_in", 0.25); beats = []; chunks = []
+QA_THR = 0.90     # coincidencia mínima entre el guion y la voz reconocida para aceptar una toma
+MAX_TRIES = 5     # tomas alternativas (otra semilla) si la verificación falla
+
+def word_at(sent, char_i):
+    """Tiempo (absoluto) de la palabra que contiene el carácter `char_i` del texto de la frase."""
+    ws = sent.get("words")
+    if not ws: return sent["start"] + (sent["end"] - sent["start"]) * char_i / max(1, len(sent["text"]))
+    k = min(len(ws) - 1, sent["text"][:char_i].count(" "))
+    return ws[k][1]
+
+def group_takes(items, max_chars=250, max_sents=3):
+    """Agrupa frases consecutivas en tomas (párrafos cortos) para que el ritmo entre frases sea natural."""
+    groups = []; cur = []; n = 0
+    for it in items:
+        L = len(it["spk"])
+        if cur and (n + L > max_chars or len(cur) >= max_sents): groups.append(cur); cur = []; n = 0
+        cur.append(it); n += L + 1
+    if cur: groups.append(cur)
+    return groups
+
+def build_audio(V, outdir, narr=None, aligner=None):
+    narr = narr or Supertonic(); aligner = aligner or Aligner()
+    t = V.get("lead_in", 0.25); beats = []; chunks = []; qa = []
     for bi, b in enumerate(V["beats"]):
         bstart = t + b.get("pre", 0.0); cur = bstart; sents = []
-        vo = b.get("vo", "")
+        vo = b.get("vo", ""); voice = b.get("voice", V.get("voice", "host"))
+        speed = b.get("speed", V.get("speed", 1.0)); pmul = b.get("pause_mul", V.get("pause_mul", 1.0))
+        items = []
+        for sx in (split_sentences(vo) if vo else []):
+            sub, spk = split_markup(sx); items.append(dict(sub=sub, plain=spk, spk=spoken(spk)))
         human = f"{outdir}/voz_humana/beat_{bi:02d}.wav"
-        if vo and os.path.exists(human):
-            # Locución humana: un archivo por bloque; los tiempos de frase se reparten por nº de caracteres
+        if items and os.path.exists(human):
+            # Locución humana: un archivo por bloque; el reconocedor da el tiempo exacto de cada palabra
             from scipy import signal as _sg
-            from tts import trim as _trim
             ha, hsr = sf.read(human, dtype="float32")
             if ha.ndim > 1: ha = ha.mean(axis=1)
             if hsr != TSR: ha = _sg.resample_poly(ha, TSR, hsr).astype(np.float32)
-            ha = _trim(ha); chunks.append((cur, ha)); subs = [split_markup(x)[0] for x in split_sentences(vo)]
-            tot = sum(len(x) for x in subs); dur = len(ha) / TSR; acc = 0
-            for x in subs:
-                st = cur + dur * acc / tot; acc += len(x)
-                sents.append(dict(text=x, start=round(st, 3), end=round(cur + dur * acc / tot, 3), voice="humana"))
-            cur += dur + 0.3
-        for s in (split_sentences(vo) if vo and not os.path.exists(human) else []):
-            sub, spk = split_markup(s)
-            a = k.synth(spoken(spk), b.get("voice", V.get("voice", "host")), b.get("speed", V.get("speed", 1.0)))
-            chunks.append((cur, a))
-            sents.append(dict(text=sub, start=round(cur, 3), end=round(cur + len(a) / TSR, 3), voice=b.get("voice", V.get("voice", "host"))))
-            cur += len(a) / TSR + pause_after(sub) * b.get("pause_mul", V.get("pause_mul", 1.0))
+            takes = [(items, level(trim(ha)), "humana", None)]
+        else:
+            takes = [(tk, None, voice, speed) for tk in group_takes(items)]
+        for take, x, vname, spd in takes:
+            text = " ".join(it["spk"] for it in take); flat = [w for it in take for w in it["sub"].split()]
+            exp = " ".join(it["plain"] for it in take); tries = 1
+            if x is None:
+                seed0 = take_seed(text, vname); best = None
+                for k in range(MAX_TRIES):
+                    xx = level(trim(narr.synth(text, vname, spd, seed0 + k)))
+                    times, score, hyp = aligner.align(xx, TSR, flat, exp)
+                    if best is None or score > best[0]: best = (score, xx, times, hyp, k + 1)
+                    if score >= QA_THR: break
+                score, x, times, hyp, tries = best
+            else:
+                times, score, hyp = aligner.align(x, TSR, flat, exp)
+            qa.append(dict(t=round(cur, 2), score=round(score, 3), tries=tries, guion=exp, reconocido=hyp, voz=vname))
+            chunks.append((cur, x)); i0 = 0
+            for it in take:
+                ws = it["sub"].split(); wt = times[i0:i0 + len(ws)]; i0 += len(ws)
+                sents.append(dict(text=it["sub"], start=round(cur + wt[0][0], 3), end=round(cur + wt[-1][1], 3), voice=vname,
+                                  words=[[w, round(cur + ws_, 3), round(cur + we_, 3)] for w, (ws_, we_) in zip(ws, wt)]))
+            cur += len(x) / TSR + pause_after(take[-1]["sub"]) * pmul
         if not sents: cur = bstart + b.get("dur", 2.0)
         bend = max(cur + b.get("hold", 0.0), bstart + b.get("min", 0.0))
         beats.append(dict(i=bi, start=round(bstart, 3), end=round(bend, 3), sents=sents, id=b.get("id", f"b{bi}")))
         t = bend
     total = t + V.get("tail", 0.4)
-    # pista de narración (24 kHz mono, sin procesar)
+    # control de calidad de la voz: guion frente a lo que entiende el reconocedor
+    with open(f"{outdir}/recursos/control_de_voz.csv", "w", encoding="utf-8") as f:
+        f.write("inicio_s;coincidencia;tomas;voz;guion;reconocido\n")
+        for q in qa: f.write(f"{q['t']};{q['score']};{q['tries']};{q['voz']};{q['guion']};{q['reconocido']}\n")
+    low = [q for q in qa if q["score"] < QA_THR]
+    print(f"  voz: {len(qa)} tomas · coincidencia media {np.mean([q['score'] for q in qa]):.3f} · mínima {min(q['score'] for q in qa):.2f} · repetidas {sum(q['tries'] > 1 for q in qa)} · bajo umbral {len(low)}")
+    for q in low: print(f"   [revisar {q['score']:.2f}] {q['guion']}\n        → {q['reconocido']}")
+    # pista de narración (44,1 kHz mono, sin procesar)
     nar = np.zeros(int(total * TSR) + TSR, np.float32)
     for st, a in chunks:
         s = int(st * TSR); nar[s:s + len(a)] += a
@@ -86,7 +127,7 @@ def build_audio(V, outdir, k=None):
                 frag = off[2:]; ref = None
                 for st in bd["sents"]:
                     i = st["text"].find(frag)
-                    if i >= 0: ref = st["start"] + (st["end"] - st["start"]) * i / max(1, len(st["text"])); break
+                    if i >= 0: ref = word_at(st, i); break
                 if ref is None: print(f"   [aviso] sfx: marca '{frag}' no encontrada"); continue
                 off = 0
             y = audio.to_stereo(audio.sfx(name)) * g
@@ -94,6 +135,7 @@ def build_audio(V, outdir, k=None):
     mix = vox * V.get("voice_gain", 1.0) + mus + fx * V.get("sfx_gain", 0.8)
     mix = mix * np.minimum(1, np.minimum(np.arange(n) / (0.02 * audio.SR), 1))[:, None]
     mix, lufs = audio.master(mix, -14.0)
+    gr = audio.master.last_gr; print(f"  mezcla: limitador máx. {gr['max_db']:.1f} dB · {gr['pct_over_1db']:.2f} % del tiempo por encima de 1 dB")
     sf.write(f"{outdir}/recursos/mezcla_final.wav", mix.astype(np.float32), audio.SR, subtype="PCM_16")
     sf.write(f"{outdir}/recursos/musica_original.wav", (mus / (np.abs(mus).max() + 1e-9) * 0.8).astype(np.float32), audio.SR, subtype="PCM_16")
     # mp3 de la narración procesada
@@ -120,18 +162,29 @@ def srt_chunks(text, maxc=42, maxl=2):
     return [lines[i:i + maxl] for i in range(0, len(lines), maxl)]
 
 def write_srt(tl, path, V):
-    out = []; n = 1
+    caps = []
     for b in tl["beats"]:
         for s in b["sents"]:
-            groups = srt_chunks(s["text"]); total_chars = sum(len(" ".join(g)) for g in groups); t0 = s["start"]
+            groups = srt_chunks(s["text"]); ws = s.get("words"); i0 = 0
+            total_chars = sum(len(" ".join(g)) for g in groups); t0 = s["start"]
             for g in groups:
-                dur = (s["end"] - s["start"]) * len(" ".join(g)) / max(1, total_chars)
-                out.append(f"{n}\n{fmt_ts(t0)} --> {fmt_ts(t0 + dur)}\n" + "\n".join(g) + "\n"); n += 1; t0 += dur
+                nw = sum(len(line.split()) for line in g)
+                if ws and i0 + nw <= len(ws):
+                    st, en = ws[i0][1], ws[i0 + nw - 1][2]; i0 += nw
+                else:
+                    dur = (s["end"] - s["start"]) * len(" ".join(g)) / max(1, total_chars); st, en = t0, t0 + dur; t0 += dur
+                caps.append([st, en, "\n".join(g)])
+    # legibilidad: cada subtítulo dura al menos ~1 s y se mantiene hasta el siguiente si la pausa es corta
+    for i, c in enumerate(caps):
+        nxt = caps[i + 1][0] if i + 1 < len(caps) else c[1] + 1.0
+        c[1] = min(max(c[1] + 0.25, c[0] + 1.0), nxt - 0.04) if nxt - c[0] > 0.3 else c[1]
+        if nxt - c[1] < 0.5: c[1] = nxt - 0.04
+    out = [f"{i + 1}\n{fmt_ts(c[0])} --> {fmt_ts(c[1])}\n{c[2]}\n" for i, c in enumerate(caps)]
     open(path, "w", encoding="utf-8").write("\n".join(out))
 
 def write_script(V, tl, path):
-    L = [f"GUION — {V['title']}", f"Formato: {V['format']} · Duración: {fmt_ts(tl['total'], False)[:-4]} · Voz: Kokoro (Apache-2.0), español latinoamericano", "=" * 78, ""]
-    names = {"host": "NARRADOR", "analista": "ANALISTA"}
+    L = [f"GUION — {V['title']}", f"Formato: {V['format']} · Duración: {fmt_ts(tl['total'], False)[:-4]} · Voz: Supertonic 3 (voz femenina), español", "=" * 78, ""]
+    names = {"host": "NARRADORA", "copiloto": "COPILOTO", "humana": "VOZ HUMANA"}
     for b, bd in zip(V["beats"], tl["beats"]):
         if b.get("section"): L += ["", f"## {b['section']}", ""]
         if b.get("note"): L.append(f"   [VISUAL] {b['note']}")
@@ -172,6 +225,7 @@ class SceneInfo:
             i = s["text"].find(frag)
             while i >= 0:
                 if k == n:
+                    if s.get("words"): return word_at(s, i) - self.start
                     return s["start"] + (s["end"] - s["start"]) * i / max(1, len(s["text"]))
                 k += 1; i = s["text"].find(frag, i + 1)
         if default is None: print(f"   [aviso] marca '{frag}' no encontrada en la escena")

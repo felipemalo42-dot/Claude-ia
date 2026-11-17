@@ -404,18 +404,13 @@ def sfx(name, **k):
 def to_stereo(x): return x if x.ndim == 2 else np.stack([x, x], 1)
 
 # ---------------------------------------------------------------- tratamiento de voz y mezcla
-def voice_chain(v, sr_in=24000):
-    """Remuestrea a 48 kHz y aplica cadena de locución: HPF, EQ de presencia, compresión suave, aire."""
-    v = signal.resample_poly(v, SR, sr_in)
-    v = hp(v, 75, 2)
-    pres = bp(v, 2500, 5000, 1); v = v + 0.18 * pres           # presencia
-    body = bp(v, 150, 320, 1); v = v + 0.10 * body               # cuerpo
-    # compresor RMS sencillo
-    env = np.sqrt(signal.lfilter([0.002], [1, -0.998], v ** 2) + 1e-9)
-    thr = 0.08; gain = np.where(env > thr, (thr / env) ** 0.35, 1.0); v = v * gain
-    v = norm(v, 0.95)
-    st = reverb(v, 0.05, 0.6, 9.0)  # sala muy corta para quitar sequedad
-    return st
+def voice_chain(v, sr_in=44100):
+    """Voz limpia: remuestreo a 48 kHz y filtro de graves. Sin compresión rápida ni reverberación
+    (ambas añadían aspereza); el control de picos lo hace el limitador final."""
+    from math import gcd
+    g = gcd(SR, int(sr_in)); v = signal.resample_poly(v, SR // g, int(sr_in) // g)
+    sos = signal.butter(2, 70 / (SR / 2), "high", output="sos"); v = signal.sosfiltfilt(sos, v)
+    return np.stack([v, v], 1)
 
 def duck_envelope(voice_st, depth=0.32, attack=0.08, release=0.45):
     m = np.abs(voice_st).mean(axis=1)
@@ -429,11 +424,32 @@ def duck_envelope(voice_st, depth=0.32, attack=0.08, release=0.45):
         out[i:i + 240] = cur
     return 1 - (1 - depth) * out  # 1 = sin voz, depth = con voz
 
+def limiter(x, ceiling=0.84, win_ms=10.0):
+    """Limitador con anticipación (look-ahead): reduce solo los picos, con una curva de ganancia suave.
+    Mínimo deslizante + media deslizante de la misma ventana ⇒ el pico nunca supera el techo y no hay
+    recorte ni distorsión de la forma de onda."""
+    from scipy.ndimage import minimum_filter1d, uniform_filter1d
+    peak = np.abs(x).max(axis=1) if x.ndim == 2 else np.abs(x)
+    g = np.minimum(1.0, ceiling / np.maximum(peak, 1e-9))
+    W = int(win_ms * SR / 1000) | 1
+    g = minimum_filter1d(g, size=W, mode="nearest")
+    g = uniform_filter1d(g, size=W, mode="nearest")
+    g = uniform_filter1d(g, size=W, mode="nearest")  # segunda pasada: transiciones aún más suaves
+    g = np.minimum(g, 1.0)
+    y = x * (g[:, None] if x.ndim == 2 else g)
+    pk = np.abs(y).max()
+    if pk > ceiling: y *= ceiling / pk
+    return y, g
+
+
 def master(mixst, target_lufs=-14.0):
     import pyloudnorm as pyln
     meter = pyln.Meter(SR); lufs = meter.integrated_loudness(mixst)
-    g = 10 ** ((target_lufs - lufs) / 20); y = mixst * g
-    # limitador de picos simple
-    peak = np.max(np.abs(y))
-    if peak > 0.89: y = np.tanh(y / 0.89 * 1.0) * 0.89
+    y = mixst * 10 ** ((target_lufs - lufs) / 20)
+    y, g = limiter(y)
+    # el limitador baja un poco la sonoridad: se corrige una vez
+    l2 = meter.integrated_loudness(y)
+    if abs(l2 - target_lufs) > 0.3:
+        y, g = limiter(y * 10 ** ((target_lufs - l2) / 20))
+    master.last_gr = dict(max_db=float(-20 * np.log10(g.min() + 1e-9)), pct_over_1db=float((g < 0.891).mean() * 100))
     return y, lufs

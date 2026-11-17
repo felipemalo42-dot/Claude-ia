@@ -1,6 +1,6 @@
 """VIDEO 03 — Investigación: 'GTA 6 para PC / Android' — anatomía de la estafa que roba cuentas.
 Lenguaje visual: laboratorio forense digital. Carbón + rojo alarma + cian frío, Share Tech Mono / VT323,
-diagramas de flujo animados, 'rayos X' sobre archivos, cortes con glitch. Dos voces: narrador + analista.
+diagramas de flujo animados, 'rayos X' sobre archivos, cortes con glitch. Dos voces: narradora (explica) + copiloto (hace las preguntas).
 """
 import math, numpy as np, skia
 from gfx import *
@@ -35,7 +35,7 @@ def speaker_badge(c, gt, ctx):
         for s in b["sents"]:
             if s["start"] <= gt <= s["end"] + 0.2: cur = s["voice"]
     if not cur: return
-    lab = "NARRADOR" if cur == "host" else "ANALISTA"; col = CYAN if cur == "host" else AMB
+    lab = "NARRADORA" if cur == "host" else "COPILOTO"; col = CYAN if cur == "host" else AMB
     x, y = 60, ctx.H - 110
     rect(c, x, y, 300, 56, "#000000", 0.6, r=10); rect(c, x, y, 6, 56, col, 1)
     for i in range(10):
@@ -94,7 +94,7 @@ def sc_sting(c, t, info, ctx): brand_sting(c, t, info, ctx)
 def sc_intro(c, t, info, ctx):
     W, H = ctx.W, ctx.H; lab_bg(c, W, H, t); hud(c, W, t, "EXPEDIENTE: LA DESCARGA FALSA", "0613")
     p = ease_out(prog(t, 0.2, 0.8))
-    for i, (lab, col, cue) in enumerate((("NARRADOR", CYAN, 0.0), ("ANALISTA", AMB, info.w("Hola", default=info.w("analista"))))):
+    for i, (lab, col, cue) in enumerate((("NARRADORA", CYAN, 0.0), ("COPILOTO", AMB, info.w("Hola"))))):
         pp = ease_out_back(prog(t, cue, cue + 0.5)); x = 520 + i * 880; y = 560
         if pp <= 0: continue
         c.save(); c.translate(x, y); c.scale(pp, pp)
@@ -285,43 +285,45 @@ beat("Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones 
      "Todo falso. Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.",
      sc_hook, section="GANCHO", energy=1, sfx=[(0.3, "typing", 0.5), ("w:Todo falso", "stamp", 0.8), ("w:Todo falso", "glitch", 0.5), ("w:esta semana", "alarm", 0.3)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("glitch", 0.4))
-beat("Esto es Sal y Asfalto. Hoy no hablamos de Leonida: hablamos de la trampa que la rodea. Y para eso me acompaña nuestra analista.",
+beat("Estás en Sal y Asfalto. Hoy no hablamos de Leonida: hablamos de la trampa que la rodea. Y hoy no vengo sola: traigo copiloto.",
      sc_intro, section="INTRODUCCIÓN", energy=1, trans=("glitch", 0.35))
-beat("Hola. Vamos a abrir el archivo paso a paso, sin tecnicismos.", None, voice="analista", sfx=[(0.0, "pop", 0.4)])
+beat("Hola. Yo hago las preguntas que haría cualquiera.", None, voice="copiloto", sfx=[(0.0, "pop", 0.4)])
 beat("Primero, el dato que desarma toda la estafa. GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S. "
      "No hay versión de PC anunciada. Y no hay versión para Android ni para iPhone. "
      "Cualquier archivo que diga lo contrario está mintiendo desde el nombre.",
      sc_truth, section="1 · LA VERDAD CORTA", energy=2, trans=("glitch", 0.35),
      sfx=[("w:PlayStation 5", "tick", 0.5), ("w:Xbox", "tick", 0.5), ("w:PC anunciada", "buzz", 0.3), ("w:Android", "buzz", 0.3), ("w:iPhone", "buzz", 0.3), ("w:mintiendo", "hit", 0.4)])
-beat("¿Y por qué cae tanta gente? Porque el anzuelo se aprovecha de tres cosas reales. "
+beat("¿Y por qué cae tanta gente?", sc_why, section="1B · POR QUÉ FUNCIONA", voice="copiloto", energy=2, trans=("glitch", 0.35))
+beat("Porque el anzuelo se aprovecha de tres cosas reales. "
      "Hay millones de jugadores sin PS5 ni Xbox Series. La espera duró años. Y en internet abundan los trucos para todo. "
-     "La estafa no vende un juego: vende la ilusión de no quedarte afuera.",
-     sc_why, section="1B · POR QUÉ FUNCIONA", voice="analista", energy=2, trans=("glitch", 0.35),
+     "La estafa no vende un juego: vende la ilusión de no quedarte afuera.", None,
      sfx=[("w:sin PS5", "pop", 0.4), ("w:espera", "pop", 0.4), ("w:trucos", "pop", 0.4), ("w:no vende", "hit", 0.5)])
 beat("El anzuelo tiene tres piezas. Una página que imita a una tienda. Un botón de descarga. Y una excusa para que bajes la guardia. "
      "La empresa ESET detectó un archivo llamado {gta6_installer.exe|ge te a seis, guion bajo, installer, punto e equis e}, que en realidad transporta Vidar: un programa diseñado para robar información. "
      "Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.",
-     sc_hook_parts, section="2 · ANATOMÍA DEL ANZUELO", voice="analista", energy=2, trans=("glitch", 0.35),
+     sc_hook_parts, section="2 · ANATOMÍA DEL ANZUELO", energy=2, trans=("glitch", 0.35),
      sfx=[("w:página", "pop", 0.4), ("w:botón", "pop", 0.4), ("w:excusa", "pop", 0.4), ("w:Vidar", "alarm", 0.3), ("w:WARDEN", "alarm", 0.3)])
-beat("¿Y qué te pide el instalador?", sc_asks, section="3 · LO QUE PIDE", energy=2, trans=("glitch", 0.35))
+beat("¿Y qué te pide el instalador?", sc_asks, section="3 · LO QUE PIDE", voice="copiloto", energy=2, trans=("glitch", 0.35))
 beat("Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus. "
-     "En otras palabras: te pide que apagues la alarma antes de entrar.", None, voice="analista",
+     "En otras palabras: te pide que apagues la alarma antes de entrar.", None,
      sfx=[("w:administrador", "pop", 0.4), ("w:ignorar", "pop", 0.4), ("w:excepción", "pop", 0.4), ("w:En otras palabras", "glitch", 0.4), ("w:alarma", "alarm", 0.4)])
 beat("Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas. "
      "Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.",
-     sc_steals, section="4 · LO QUE SE LLEVA", voice="analista", energy=2, trans=("glitch", 0.35),
+     sc_steals, section="4 · LO QUE SE LLEVA", energy=2, trans=("glitch", 0.35),
      sfx=[("w:contraseñas", "tick", 0.5), ("w:cookies", "tick", 0.5), ("w:Steam", "tick", 0.5), ("w:criptomonedas", "tick", 0.5)])
-beat("O sea que no pierdes un juego: pierdes tus cuentas.", None, sfx=[(0.0, "hit", 0.6)], music_stop=1.5)
-beat("No siempre es un ejecutable. También circulan otras versiones del mismo truco.", sc_variants, section="5 · VARIANTES", energy=2, trans=("glitch", 0.35))
-beat("Páginas que te piden completar encuestas antes de mostrar el enlace. Falsos accesos anticipados o betas que exigen un pago por adelantado. "
-     "Y en Android, archivos APK que piden permisos que ningún juego necesita.", None, voice="analista",
+beat("O sea que no pierdes un juego: pierdes tus cuentas.", None, voice="copiloto", sfx=[(0.0, "hit", 0.6)], music_stop=1.5)
+beat("¿Y siempre es un archivo ejecutable?", sc_variants, section="5 · VARIANTES", voice="copiloto", energy=2, trans=("glitch", 0.35))
+beat("No siempre. También circulan otras versiones del mismo truco. "
+     "Páginas que te piden completar encuestas antes de mostrar el enlace. Falsos accesos anticipados o betas que exigen un pago por adelantado. "
+     "Y en Android, archivos APK que piden permisos que ningún juego necesita.", None,
      sfx=[("w:encuestas", "pop", 0.4), ("w:accesos anticipados", "pop", 0.4), ("w:APK", "pop", 0.4)])
-beat("Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy. "
+beat("¿Y si alguien ya lo ejecutó?", sc_steps, section="6 · SI YA LO EJECUTASTE", voice="copiloto", energy=2, trans=("glitch", 0.35))
+beat("Que no entre en pánico, pero que actúe hoy. "
      "Desconecta el equipo de internet y analízalo con tu antivirus. "
      "Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas. "
      "Activa la verificación en dos pasos. "
      "Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.",
-     sc_steps, section="6 · SI YA LO EJECUTASTE", voice="analista", energy=2, trans=("glitch", 0.35),
+     None,
      sfx=[("w:Desconecta", "tick", 0.5), ("w:Cambia", "tick", 0.5), ("w:cierra", "tick", 0.5), ("w:verificación", "tick", 0.5), ("w:frase de recuperación", "tick", 0.5)])
 beat("Regla rápida para la próxima vez. Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6. "
      "Si te pide desactivar el antivirus, es malware. "
