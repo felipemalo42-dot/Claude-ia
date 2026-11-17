@@ -245,14 +245,14 @@ def sc_end(c, t, info, ctx):
 def overlay(c, gt, ctx):
     W, H = ctx.W, ctx.H
     if 2.5 < gt < ctx.total - 20: watermark(c, W, H, 0.45, corner="tr")
-    if gt < 8: ai_notice(c, W, H, clamp(8 - gt), "Infografías originales de Caimán Neón · sin imágenes de GTA V ni de GTA VI")
+    if gt < 8: ai_notice(c, W, H, clamp(8 - gt), "Infografías originales de Sal y Asfalto · sin imágenes de GTA V ni de GTA VI")
 
 B = []
 def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
 beat("Trece años separan a GTA 5 de GTA 6. Y en ese tiempo, Rockstar cambió más cosas de las que parece... y dejó intacta una que muchos esperaban.",
      sc_hook, section="GANCHO", energy=2, sfx=[(0.0, "riser", 0.4), ("w:Trece", "hit", 0.6), ("w:intacta", "hit", 0.5)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=2, trans=("flash", 0.3))
-beat("Esto es Caimán Neón. Hoy: diez cambios confirmados entre GTA 5 y GTA 6, uno que no cambió, y tres rumores que te vamos a señalar con el dedo. "
+beat("Esto es Sal y Asfalto. Hoy: diez cambios confirmados entre GTA 5 y GTA 6, uno que no cambió, y tres rumores que te vamos a señalar con el dedo. "
      "A la izquierda, GTA 5. A la derecha, GTA 6.",
      sc_intro, section="INTRODUCCIÓN", energy=3, trans=("zoom", 0.5), sfx=[("w:diez", "hit", 0.5), ("w:uno que", "hit", 0.5), ("w:tres rumores", "hit", 0.5)])
 R = []
@@ -280,7 +280,7 @@ rnd(10, "PLATAFORMAS", viz_platforms, "Diez: las plataformas. GTA 5 salió en PS
     "Take-Two · historial de lanzamientos de GTA V", sfx=[("w:PS3", "pop", 0.4), ("w:PS5", "pop", 0.4)])
 beat("¿Y lo que no cambió? El idioma. GTA 5 no tenía doblaje al español y GTA 6 tampoco: voces en inglés y textos en español. Algunos lo celebran por las actuaciones originales; otros, no tanto.",
      make_round("LO QUE NO CAMBIA", "EL IDIOMA", viz_same, "Vandal · Microsoft Store"), section="LO QUE NO CAMBIA", energy=2, trans=("flash", 0.3), sfx=[("w:Algunos", "stamp", 0.5)])
-beat("Y ahora, tres rumores, con etiqueta rosada. Uno: un modo a sesenta cuadros por segundo. Rockstar dijo que el objetivo es treinta, y no ha confirmado sesenta. "
+beat("Y ahora, tres rumores, con etiqueta roja. Uno: un modo a sesenta cuadros por segundo. Rockstar dijo que el objetivo es treinta, y no ha confirmado sesenta. "
      "Dos: un online para Leonida en pocas semanas. Lo dice un filtrador, no Rockstar. "
      "Tres: la versión de PC en 2027. Es lo que esperan muchos analistas mirando lo que pasó con GTA 5, pero nadie lo ha anunciado.",
      sc_rumors, section="RUMORES", energy=2, trans=("glitch", 0.4), sfx=[("w:sesenta cuadros", "buzz", 0.4), ("w:filtrador", "buzz", 0.4), ("w:PC en", "buzz", 0.4)])
@@ -292,15 +292,17 @@ VIDEO = dict(id="v06", folder="VIDEO_06", file="GTA6_vs_GTA5_10_cambios_confirma
              title="GTA 6 vs GTA 5: 10 cambios confirmados, 1 que no cambió y 3 rumores",
              format="Largo (16:9)", music="dembow", music_seed=61, voice="host", speed=1.04, beats=B, overlay=overlay, music_gain=0.48)
 
+THUMB_MARK = (1236, 676, 30)
+
 def thumbnail(c):
     W, H = 1280, 720
     c.drawRect(skia.Rect.MakeWH(W, H), lin_grad(0, 0, 0, H, [L1, L2]))
     c.drawPath(poly([(700, 0), (W, 0), (W, H), (580, H)]), lin_grad(0, 0, 0, H, [R1, R2]))
     c.drawPath(poly([(694, 0), (706, 0), (586, H), (574, H)]), paint("#FFFFFF"))
-    draw_text(c, "V", 300, 470, "anton", 420, CY, 1, align="center", glow=(CY, 20))
-    draw_text(c, "VI", 960, 470, "anton", 420, GR, 1, align="center", glow=(GR, 20))
+    draw_text(c, "V", 300, 470, "ovblk", 400, CY, 1, align="center")
+    draw_text(c, "VI", 960, 470, "ovblk", 400, GR, 1, align="center")
     for i in range(5): star(c, 130 + i * 85, 600, 34, CY)
     for i in range(6): star(c, 760 + i * 80, 600, 34, GR if i < 5 else SUN)
     c.save(); c.translate(640, 330); c.rotate(-8); rect(c, -95, -65, 190, 130, "#000000", 1, r=12); rect(c, -95, -65, 190, 130, SUN, 1, r=12, stroke=5)
     draw_text(c, "VS", 0, 42, "anton", 110, SUN, 1, align="center"); c.restore()
-    rect(c, 0, 0, W, 110, "#000000", 0.7); draw_text(c, "10 CAMBIOS CONFIRMADOS", W / 2, 82, "anton", 76, "#FFFFFF", 1, align="center", tracking=2)
+    sign_text(c, W / 2, 14, "10 CAMBIOS CONFIRMADOS", 60, align="center")

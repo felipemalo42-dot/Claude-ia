@@ -1,4 +1,4 @@
-# Motor de producción de Caimán Neón
+# Motor de producción de Sal y Asfalto
 
 Pipeline reproducible: **guion → voz → tiempos → música/SFX → animación → MP4 + SRT + miniatura**.
 Cada vídeo es un módulo de Python (`videos/v01.py` … `videos/v10.py`) con dos partes:
@@ -40,7 +40,7 @@ python publish_meta.py              # regenera publicacion.md, descripción, eti
 | `audio.py` | Sintetizador propio: osciladores, FM, filtros, reverberación por convolución, batería, 10 estilos musicales, 24 efectos de sonido, *ducking* y masterización a −14 LUFS |
 | `gfx.py` | Utilidades de Skia: texto, formas, degradados, iconos (rutas SVG propias), cámara 3D en perspectiva y *easing* |
 | `components.py` | Elementos de marca: semáforo de certeza, chips de fuente, cortinilla, pantalla final, subtítulos de Shorts y marca de agua |
-| `brand.py` | Logotipo del caimán neón y recursos de identidad |
+| `brand.py` | Emblema (carretera sobre el mar), wordmark, señal vial, semáforo y recursos de identidad |
 | `build.py` | Orquestación, transiciones (whip, glitch, iris, zoom, flash, wipe…), codificación H.264/AAC, SRT y guion con marcas de tiempo |
 | `publish_meta.py` | Metadatos de publicación y auditoría de los 10 vídeos |
 | `geo/` | Natural Earth (dominio público): países, estados y lagos |

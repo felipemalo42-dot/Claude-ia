@@ -21,7 +21,7 @@ def lab_bg(c, W, H, t, alert=0.0):
     vignette(c, W, H, 0.6)
 
 def hud(c, W, t, title, code):
-    draw_text(c, "CAIMÁN NEÓN // LAB", 60, 64, "techmono", 26, CYAN, 0.8, tracking=3)
+    draw_text(c, "SAL Y ASFALTO // LAB", 60, 64, "techmono", 26, CYAN, 0.8, tracking=3)
     draw_text(c, title, 60, 112, "techmono", 46, WHITE, 1, tracking=2)
     draw_text(c, f"EXP-{code} · {int(t * 10) % 10000:04d}", W - 60, 64, "techmono", 24, DIM, 1, align="right", tracking=2)
     rect(c, 60, 132, 560, 2, CYAN, 0.6)
@@ -285,7 +285,7 @@ beat("Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones 
      "Todo falso. Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.",
      sc_hook, section="GANCHO", energy=1, sfx=[(0.3, "typing", 0.5), ("w:Todo falso", "stamp", 0.8), ("w:Todo falso", "glitch", 0.5), ("w:esta semana", "alarm", 0.3)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("glitch", 0.4))
-beat("Esto es Caimán Neón. Hoy no hablamos de Leonida: hablamos de la trampa que la rodea. Y para eso me acompaña nuestra analista.",
+beat("Esto es Sal y Asfalto. Hoy no hablamos de Leonida: hablamos de la trampa que la rodea. Y para eso me acompaña nuestra analista.",
      sc_intro, section="INTRODUCCIÓN", energy=1, trans=("glitch", 0.35))
 beat("Hola. Vamos a abrir el archivo paso a paso, sin tecnicismos.", None, voice="analista", sfx=[(0.0, "pop", 0.4)])
 beat("Primero, el dato que desarma toda la estafa. GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S. "
@@ -328,7 +328,7 @@ beat("Regla rápida para la próxima vez. Si no viene de PlayStation Store, de M
      "Y si es gratis, el producto eres tú.",
      sc_rules, section="7 · REGLA DE LOS 5 SEGUNDOS", energy=3, trans=("glitch", 0.35), sfx=[("w:Regla rápida", "typing", 0.4), ("w:antivirus, es", "stamp", 0.6), ("w:gratis", "stamp", 0.7)])
 beat("Comparte este video con ese primo que siempre encuentra “versiones especiales”. Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país. "
-     "Suscríbete a Caimán Neón: aquí, la única descarga que recomendamos es la oficial.",
+     "Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.",
      sc_end, section="LLAMADA A LA ACCIÓN", energy=2, hold=4.0, min=20, trans=("fade", 0.6))
 
 VIDEO = dict(id="v03", folder="VIDEO_03", file="GTA6_PC_Android_estafa_malware_investigacion",
@@ -347,8 +347,8 @@ def thumbnail(c):
     draw_text(c, "PC GRATIS", 430, 425, "interblk", 70, "#000000", 1, align="center")
     pth = skia.Path(); pth.moveTo(700, 40); pth.lineTo(700, 420); pth.quadTo(700, 520, 630, 520); pth.quadTo(570, 520, 570, 465)
     c.drawPath(pth, paint("#D8DEE6", 1, stroke=18)); draw_poly(c, [(555, 450), (585, 450), (570, 420)], "#D8DEE6")
-    draw_text(c, "NO LO", 1010, 250, "anton", 150, WHITE, 1, align="center")
-    draw_text(c, "DESCARGUES", 1010, 400, "anton", 104, RED, 1, align="center", glow=(RED, 14))
+    draw_text(c, "NO LO", 1010, 250, "ovblk", 140, WHITE, 1, align="center")
+    draw_text(c, "DESCARGUES", 1005, 385, "ovblk", 70, RED, 1, align="center")
     rect(c, 780, 450, 470, 90, "#000000", 0.7, r=12); icon(c, "skull", 835, 495, 60, RED)
     draw_text(c, "ROBA CUENTAS", 1050, 515, "techmono", 56, WHITE, 1, align="center")
     draw_text(c, "ALERTA ESET · CYNET · NOV 2026", 70, 660, "techmono", 36, WHITE, 0.85, tracking=2)

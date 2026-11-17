@@ -1,26 +1,31 @@
-# Identidad del canal
+# Identidad del canal: SAL Y ASFALTO
 
-## 1. Cinco nombres posibles
-| Nombre | Idea | Pros | Contras |
-|---|---|---|---|
-| **Caimán Neón** ✅ | El animal emblema de Florida/Leonida y la estética nocturna de Vice City | Mascota reconocible, funciona en miniaturas pequeñas, no depende de marcas de Rockstar y sirve para otros mundos abiertos | "Caimán" no es la especie exacta (es aligátor), algo que convertimos en guiño (V08) |
-| Brújula Neón | Exploración y guías | Promete orientación | Más genérico; no tiene una mascota clara |
-| Medianoche Tropical | Lanzamiento a medianoche y trópico | Evocador | Largo y difícil de recordar como @usuario |
-| Ruta Seis | Carretera + "VI" | Corto | Demasiado ligado a GTA VI; envejece mal y recuerda a canales de noticias |
-| Expediente Sur | Investigación | Encaja con el tono riguroso | Frío; no transmite entretenimiento |
+> **Cambio de marca (17/11/2026):** el nombre anterior, *Caimán Neón*, se descartó porque **ya existe un canal de YouTube con ese nombre** (@CaimánNeón), que además publica contenido de GTA 6 con estética neón rosa y violeta. Para no confundir a la audiencia ni competir con su marca, se rediseñó todo: nombre, emblema, paleta, tipografía, cortinilla, pantalla final, rótulos, sintonía y sistema de miniaturas.
 
-**Elegido: Caimán Neón.**
-- Es corto (2 palabras, 11 letras) y se pronuncia igual en toda Hispanoamérica.
-- Tiene una **mascota dibujable**: el caimán de tubo de neón, que funciona como logotipo, sello de lacre, marca de agua y sintonía.
-- **No usa marcas de Rockstar** ("GTA", "Vice City", "Leonida"), así que puede crecer más allá de GTA VI sin cambiar de nombre.
-- Antes de crear el canal, **comprueba si están libres el @usuario `@caimanneon` y los perfiles en redes**. No se pudo verificar desde este entorno.
+## 1. Cinco nombres candidatos
+| Nombre | Idea | ¿Hay un canal de YouTube con ese nombre? |
+|---|---|---|
+| **Sal y Asfalto** ✅ | El mar (sal) y la calle (asfalto): la costa de Leonida y su vida criminal sobre ruedas | No se encontró en búsqueda web |
+| Faro Sur | Una luz que guía entre tanto rumor | No se encontró en búsqueda web |
+| Bitácora Sur | Diario de exploración con método | No se encontró en búsqueda web |
+| Palmera Rota | Huracanes, trópico y caos | No se encontró en búsqueda web |
+| Cuadrante Sur | Mapas y cuadrículas | No se encontró en búsqueda web |
+
+> ⚠️ **Antes de crear el canal**, búscalo en YouTube y comprueba que estén libres el @usuario **`@SalYAsfalto`** y el nombre en Instagram y TikTok. Esa comprobación no se puede hacer desde este entorno: YouTube está bloqueado.
+
+**Por qué Sal y Asfalto:**
+- **Evoca Leonida sin usar marcas de Rockstar.** Mar, carreteras costeras y autos son el corazón de GTA VI, inspirado en Florida.
+- **Tiene una imagen propia:** una carretera que cruza el mar hacia el sol, como las autopistas que unen islas. Funciona igual de bien en 98 px (avatar) que en un banner.
+- **Sobrevive a GTA VI.** Sirve para cualquier juego de mundo abierto, de conducción o de crimen.
+- **El semáforo de certeza se vuelve literal:** un canal "de carretera" que separa lo OFICIAL (verde), la DEDUCCIÓN (ámbar) y el RUMOR (rojo).
+- **Es lo opuesto a la estética neón** que usan casi todos los canales de GTA 6 en español, así que destaca en la página de resultados.
 
 ## 2. Descripción del canal ("Acerca de")
-> **Caimán Neón: GTA VI en español, sin humo.**
-> Guías, mapas, análisis y misterios de Grand Theft Auto VI para Latinoamérica y España. Nuestra regla: cada dato lleva su etiqueta.
+> **Sal y Asfalto: GTA VI en español, sin humo.**
+> Guías, mapas, análisis y misterios de Grand Theft Auto VI para Latinoamérica y España. Aquí manda el semáforo:
 > 🟢 OFICIAL: lo confirmó Rockstar, Take-Two o la tienda.
 > 🟡 DEDUCCIÓN: lo inferimos nosotros o la comunidad, y lo decimos.
-> 🩷 RUMOR: nadie lo ha confirmado.
+> 🔴 RUMOR: nadie lo ha confirmado.
 > Sin filtraciones, sin imágenes falsas y sin "descargas gratis". Animaciones y música originales.
 > Nuevos videos martes, jueves y sábados, y Shorts casi a diario.
 > *Canal independiente, sin relación con Rockstar Games ni Take-Two Interactive.*
@@ -28,77 +33,63 @@
 ## 3. Logotipo y recursos (esta carpeta)
 | Archivo | Uso |
 |---|---|
-| `logo_horizontal_transparente.png` (2600×640) | Cabeceras, documentos, colaboraciones |
-| `logo_horizontal_fondo.png` | Redes sociales y presentaciones |
-| `avatar_800x800.png` | Foto de perfil de YouTube (se ve circular). Solo el caimán, legible a 98 px |
-| `banner_2560x1440.png` | Banner de YouTube. Logo, eslogan y semáforo dentro de la zona segura de 1546×423 |
-| `marca_de_agua_150x150.png` | Marca de agua de YouTube (Studio → Personalización → Imagen de marca) |
-| `paleta.png`, `tipografia.png` | Referencia visual |
+| `avatar_800x800.png` | Foto de perfil: el emblema (carretera sobre el mar, sol amarillo y línea de carril) |
+| `banner_2560x1440.png` | Banner: carretera costera al atardecer y señal de autopista con el nombre, dentro de la zona segura de 1546×423 |
+| `logo_horizontal_transparente.png` / `logo_horizontal_fondo.png` | Emblema + wordmark (2600×640) |
+| `marca_de_agua_150x150.png` | Marca de agua de YouTube |
+| `paleta.png`, `tipografia.png` | Referencias visuales |
 
-El logotipo es un **caimán de perfil dibujado como tubo de neón** (verde Caimán) con el **ojo en rosa Flamenco** y pupila rasgada. Lleva el wordmark "CAIMÁN" en hueso y "NEÓN" en verde con brillo. Es dibujo vectorial original: el código está en `engine/brand.py`.
+**El emblema:** un círculo con borde blanco sal. Arriba, cielo claro con medio sol amarillo en el horizonte. Abajo, mar turquesa con olas y una carretera de asfalto en perspectiva que cruza el mar hasta el sol, con línea central amarilla discontinua.
+**El wordmark:** "SAL Y ASFALTO" en Overpass Black. La "Y" va en amarillo de carril.
+Todo es dibujo vectorial original (`engine/brand.py`).
 
 ## 4. Paleta
 | Nombre | Hex | Uso |
 |---|---|---|
-| Noche | `#0B0F1E` | Fondos de marca |
-| Pantano | `#10302A` | Degradados y profundidad |
-| **Caimán** | `#2BFF88` | Color principal; etiqueta **OFICIAL** |
-| **Sol** | `#FFC83D` | Acentos; etiqueta **DEDUCCIÓN** |
-| **Flamenco** | `#FF4FA0` | Acentos; etiqueta **RUMOR** |
-| Laguna | `#27D7F2` | Información secundaria, fuentes |
-| Hueso | `#F3EFE4` | Texto sobre oscuro |
+| Asfalto | `#16181B` | Fondos de marca |
+| Asfalto 2 | `#25282D` | Carretera, paneles |
+| Sal | `#F3F0E9` | Texto, bordes de señal |
+| **Amarillo carril** | `#FFC72C` | Color principal de acento (la "Y", llamadas a la acción) |
+| Mar | `#13A8A0` → `#0B5E63` | Secundario, etiqueta REPORTADO |
+| Señal | `#0B6B45` | Paneles tipo señal de autopista |
+| Verde / Ámbar / Rojo | `#22C55E` / `#FFB000` / `#FF4A3D` | Semáforo de certeza: OFICIAL / DEDUCCIÓN / RUMOR |
 
-La paleta evita a propósito el degradado rosa-naranja-violeta de la identidad de GTA VI. Nuestro verde neón es el diferenciador.
+**Se evitan** el neón rosa y violeta y el degradado rosa-naranja-violeta propio de GTA VI.
 
-## 5. Tipografía (todas OFL o Apache 2.0, aptas para uso comercial)
-- **Anton:** titulares y miniaturas.
-- **Inter:** texto y subtítulos.
-- **JetBrains Mono:** datos, etiquetas y fuentes.
-- **Cada formato tiene su tipografía de acento:**
-  - Barlow Condensed: kit de lanzamiento.
-  - Bebas Neue: Shorts informativos.
-  - Share Tech Mono: investigación.
-  - DM Serif Display: mapas.
-  - Special Elite: expedientes.
-  - Bungee: Shorts de juego.
-  - Abril Fatface + Caveat: guía de campo.
-  - Syne: misterios.
+## 5. Tipografía (todas con licencia OFL o Apache 2.0)
+- **Overpass Black / ExtraBold:** titulares, miniaturas y wordmark. Es una tipografía libre derivada del lenguaje de la señalización vial.
+- **Overpass Mono:** datos, etiquetas y fuentes.
+- **Inter:** texto largo.
+- Cada formato conserva su tipografía de acento para diferenciar los videos entre sí: Barlow Condensed, Bebas Neue, Share Tech Mono, DM Serif Display, Special Elite, Bungee, Abril Fatface + Caveat, Syne.
 
-## 6. Sistema de miniaturas
-1. **Un solo punto focal** que se entienda a 160 px de ancho (en el móvil).
-2. **Máximo 4 palabras grandes.** El resto del texto, pequeño o ninguno.
-3. **Composición distinta por formato**, no una plantilla única:
-   - Reloj de paletas (V01).
-   - Globo (V02).
-   - Botón trampa (V03).
-   - Mapa 3D (V04).
-   - Expediente (V05).
-   - Pantalla dividida (V06).
-   - Tanques (V07).
-   - Lámina naturalista (V08).
-   - Sobres (V09/V10).
-4. **Constante de marca:** el verde Caimán o el caimán aparece en algún lugar. Siempre alto contraste.
+## 6. Elementos animados de marca
+- **Cortinilla (2,4 s):** viaje por la carretera costera hacia el sol. La imagen se cierra en el emblema y aparece la señal verde "SAL Y ASFALTO".
+- **Sintonía:** un auto que pasa (efecto Doppler, de izquierda a derecha), una ola y un acorde de piano eléctrico. Sintetizada por código: es original.
+- **Etiquetas de certeza:** semáforo en miniatura + rótulo en Overpass Mono.
+- **Fuentes en pantalla:** chip negro con barra amarilla ("FUENTE · …").
+- **Pantalla final:** escena costera con una señal "SIGUIENTE SALIDA", dos marcos "SALIDA 1 / SALIDA 2" para los elementos de YouTube, y el emblema con "SUSCRÍBETE".
+- **Marca de agua:** el emblema, abajo a la derecha.
+
+## 7. Sistema de miniaturas
+1. **Un solo punto focal** y **un máximo de 4 palabras grandes** en Overpass Black. Sin brillos neón.
+2. **Panel de señal vial** (verde con borde blanco) para el dato clave cuando ayuda: "00:00 LOCAL", "Y SUS LUGARES REALES", "10 CAMBIOS CONFIRMADOS".
+3. **El emblema siempre aparece** en una esquina. Es la constante de marca.
+4. **Composición distinta por formato**, no una plantilla única.
 5. **Prohibido:**
-   - Logotipos o arte de Rockstar.
+   - Logotipos, arte o personajes de Rockstar.
    - Capturas falsas o imágenes de IA que imiten el juego.
-   - Flechas o reacciones engañosas.
-   - Prometer en la miniatura algo que el vídeo no muestra.
-6. **Formato:** PNG de 1280×720. Cada vídeo trae la suya en `VIDEO_XX/miniatura.png`.
+   - Prometer en la miniatura algo que el video no muestra.
+6. **Formato:** PNG de 1280×720 (`VIDEO_XX/miniatura.png`).
 
-## 7. Personalidad de la narración
-- **El Narrador (voz principal):**
-  - Cercano, directo y con humor seco ("prepárate para ser el narrador oficial de la sala").
-  - Tutea, usa frases cortas y verbos activos. Nunca grita ni exagera ("BRUTAL", "INCREÍBLE").
-  - Dice en voz alta cuando algo es deducción.
-  - Español latinoamericano neutro: "video", "computadora" o "PC", "ustedes".
-- **La Analista (segunda voz):**
-  - Calmada y precisa. Aparece en los formatos de investigación (V03), expediente (V05) y guía de campo (V08).
-- **Tono de marca:** "el amigo que sabe y no te vende humo". El rigor es la diferencia frente a los canales de rumores.
-- **Identidad sonora:**
-  - Sintonía de 3 notas en campana FM más una "mordida" de caimán (cortinilla de 2,4 s).
-  - Cada formato tiene su propio estilo musical original.
-
-## 8. Fórmulas recurrentes que construyen marca
-- El **semáforo de certeza** en pantalla y en voz.
-- **Fuentes visibles** en pantalla (chip "FUENTE · …").
-- **Marcador de aciertos y fallos**: el canal vuelve a sus deducciones y rinde cuentas (V09 → V10). Es lo que hace que la audiencia vuelva.
+## 8. Personalidad de la narración
+- **El Narrador:**
+  - "El copiloto que conoce la ruta": cercano, directo y con humor seco.
+  - Tutea, usa frases cortas y no exagera.
+  - Dice en voz alta cuándo algo es deducción.
+  - Español latinoamericano neutro.
+- **La Analista:** calmada y precisa. Aparece en investigación (V03), expediente (V05) y guía de campo (V08).
+- **Fórmula de presentación:** "Esto es Sal y Asfalto, y aquí manda el semáforo…"
+- **Fórmulas recurrentes:**
+  - Fuentes visibles en pantalla.
+  - Semáforo de certeza.
+  - Marcador de aciertos y fallos: el canal vuelve a sus deducciones y rinde cuentas (V09 → V10).

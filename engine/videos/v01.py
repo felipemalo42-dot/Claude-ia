@@ -107,13 +107,13 @@ def sc_intro(c, t, info, ctx):
     rng = np.random.default_rng(4); xx = 320
     while xx < 1150:
         w = rng.integers(2, 9); rect(c, xx, y + 370, w, 70, "#16161A", p); xx += w + rng.integers(3, 8)
-    draw_text(c, "CN", 1430, y + 260, "anton", 160, "#16161A", p * 0.9, align="center")
+    draw_text(c, "SA", 1430, y + 260, "anton", 160, "#16161A", p * 0.9, align="center")
     draw_text(c, "PUERTA", 1430, y + 330, "monob", 22, "#6A6A70", p, align="center", tracking=3)
     c.restore()
     # semáforo de certeza sincronizado con la frase
     s1 = info.w("verde")
     for i, k in enumerate(("OFICIAL", "DEDUCCIÓN", "RUMOR")):
-        st = [info.w("verde"), info.w("amarillo"), info.w("rosado")][i]
+        st = [info.w("verde"), info.w("amarillo"), info.w("en rojo")][i]
         cert_tag(c, 470 + i * 360, 720, k, 1, 34, t=prog(t, st, st + 0.4))
     draw_text(c, "verde = confirmado por Rockstar/Take-Two o por la tienda", W / 2, 840, "intermd", 30, WHITE, 0.75 * prog(t, s1 + 3.5, s1 + 4), align="center")
     vignette(c, W, H, 0.45)
@@ -336,7 +336,7 @@ def sc_end(c, t, info, ctx):
 def overlay(c, gt, ctx):
     W, H = ctx.W, ctx.H
     if 2 < gt < ctx.total - 20: watermark(c, W, H, 0.5)
-    if gt < 8: ai_notice(c, W, H, clamp((8 - gt) / 1.0), "Animación original de Caimán Neón · no contiene imágenes ni material de Rockstar Games")
+    if gt < 8: ai_notice(c, W, H, clamp((8 - gt) / 1.0), "Animación original de Sal y Asfalto · no contiene imágenes ni material de Rockstar Games")
 
 # ---------------------------------------------------------------- guion
 B = []
@@ -348,9 +348,9 @@ beat("El jueves diecinueve de noviembre, a la medianoche, millones de consolas v
      sc_hook, section="GANCHO", energy=1, sfx=[(0.1, "flap", 0.5), (0.6, "flap", 0.4), ("w:puerta", "buzz", 0.5), ("w:Por la hora", "hit", 0.5), ("w:Por el espacio", "hit", 0.5), ("w:descarga", "hit", 0.6)],
      note="Tablero de salidas: vuelos a Leonida 'A TIEMPO'; dos cambian a 'PUERTA CERRADA'. Aparecen las tres causas.")
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=2, trans=("flash", 0.3), note="Cortinilla de marca.")
-beat("Esto es Caimán Neón. Aquí lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rosado. "
+beat("Esto es Sal y Asfalto, y aquí manda el semáforo: lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rojo. "
      "Hoy hacemos la lista de abordaje: siete comprobaciones para que a medianoche solo tengas que darle a play.",
-     sc_intro, section="INTRODUCCIÓN", energy=2, trans=("zoom", 0.5), sfx=[(0.2, "paper", 0.5), ("w:verde", "pop", 0.4), ("w:amarillo", "pop", 0.4), ("w:rosado", "pop", 0.4)],
+     sc_intro, section="INTRODUCCIÓN", energy=2, trans=("zoom", 0.5), sfx=[(0.2, "paper", 0.5), ("w:verde", "pop", 0.4), ("w:amarillo", "pop", 0.4), ("w:en rojo", "pop", 0.4)],
      note="Tarjeta de embarque + semáforo de certeza de la marca.")
 beat("Comprobación uno: la plataforma. GTA 6 sale solo en PlayStation 5 y en Xbox Series X y Series S. "
      "No hay versión para PS4 ni para Xbox One. Y tampoco para PC, por ahora: Take-Two no ha anunciado fecha, y su director ejecutivo dijo que la prioridad son las consolas. "
@@ -411,7 +411,7 @@ def thumbnail(c):
         rect(c, x if ch != ":" else x + 36, 150, w, 330, "#1B1C22", 1, r=14)
         draw_text(c, ch, (x if ch != ":" else x + 36) + w / 2, 400, "monob", 250, AMBER, 1, align="center")
         rect(c, x if ch != ":" else x + 36, 312, w, 6, "#000000", 0.9)
-    draw_text(c, "19 NOV · HORA LOCAL", 80, 560, "barlowblk", 66, "#F5F2EA", 1, tracking=2)
+    draw_text(c, "19 NOV · HORA LOCAL", 80, 560, "ovblk", 58, "#F5F2EA", 1)
     # bloque derecho
     rect(c, 830, 120, 400, 460, "#F3EDE0", 1, r=22)
     draw_text(c, "ANTES DE", 1030, 215, "barlowblk", 66, "#16161A", 1, align="center")
@@ -419,7 +419,5 @@ def thumbnail(c):
     for i, (ic, lab) in enumerate((("disk", "210 GB"), ("tag", "PRECIO"), ("chat", "IDIOMA"))):
         y = 360 + i * 66; icon(c, ic, 900, y, 44, "#16161A"); draw_text(c, lab, 940, y + 16, "barlowblk", 46, "#16161A")
         icon(c, "check", 1180, y, 40, "#16A34A")
-    draw_text(c, "GTA VI", 80, 660, "anton", 70, GREEN, 1, glow=(GREEN, 10))
+    sign_text(c, 80, 590, "GTA VI", 56)
     rect(c, 0, 0, W, H, "#000000", 0)
-    from brand import draw_caiman
-    draw_caiman(c, 1100, 625, 0.75, lw=5, glow=True)

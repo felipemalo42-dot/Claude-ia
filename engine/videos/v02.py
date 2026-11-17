@@ -5,7 +5,7 @@ cada país se 'enciende' cuando le llega su hora. Neón cian/magenta, tipografí
 import json, math, os, numpy as np, skia
 from gfx import *
 from components import *
-from brand import PAL, draw_caiman
+from brand import PAL, draw_caiman, draw_badge
 
 W, H = 1080, 1920
 CY, R = 790, 395
@@ -158,8 +158,8 @@ def sc_main(c, t, info, ctx):
 
 def overlay(c, gt, ctx):
     short_captions(c, gt, ctx, y=1590, size=78, hl=GREEN, fontname="anton", maxw=960)
-    draw_caiman(c, W / 2 - 150, 22, 0.36, lw=6, glow=True, a=0.9)
-    draw_text(c, "CAIMÁN NEÓN", W / 2 - 66, 52, "monob", 24, "#FFFFFF", 0.8, tracking=3)
+    draw_badge(c, W / 2 - 150, 46, 24)
+    draw_text(c, "SAL Y ASFALTO", W / 2 - 112, 56, "ovblk", 28, "#FFFFFF", 0.9, tracking=2)
 
 B = []
 def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
@@ -188,7 +188,7 @@ def thumbnail(c):
     c.drawRect(skia.Rect.MakeWH(Wt, Ht), lin_grad(0, 0, Wt, Ht, [BG, "#120A1E"]))
     lit = {n: 1.0 for n in ["Spain", "Argentina", "Chile", "Colombia", "Peru", "Ecuador", "Mexico"]}
     draw_globe(c, 930, 380, 330, -55, 12, lit, 0)
-    draw_text(c, "¿A QUÉ", 60, 200, "bebas", 170, "#FFFFFF", 1, tracking=3)
-    draw_text(c, "HORA?", 60, 360, "bebas", 190, CYAN, 1, tracking=3, glow=(CYAN, 16))
-    rect(c, 60, 420, 470, 130, GREEN, 1, r=20); draw_text(c, "00:00 LOCAL", 295, 515, "bebas", 104, "#000000", 1, align="center")
+    draw_text(c, "¿A QUÉ", 60, 200, "ovblk", 140, "#FFFFFF", 1)
+    draw_text(c, "HORA?", 60, 350, "ovblk", 150, PAL["amarillo"], 1)
+    sign_text(c, 60, 400, "00:00 LOCAL", 84)
     draw_text(c, "GTA VI · 19 NOV · TU PAÍS", 60, 640, "monob", 40, "#FFFFFF", 0.9, tracking=2)

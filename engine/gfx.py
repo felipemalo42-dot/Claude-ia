@@ -13,7 +13,8 @@ FONTS = {
     "shoulders": "BigShouldersDisplay[wght].ttf", "vt323": "VT323-Regular.ttf", "caveat": "Caveat[wght].ttf",
     "abril": "AbrilFatface-Regular.ttf", "syne": "Syne[wght].ttf", "inter": "Inter-Regular.otf", "intermd": "Inter-Medium.otf",
     "intersb": "Inter-SemiBold.otf", "interb": "Inter-Bold.otf", "interxb": "Inter-ExtraBold.otf", "interblk": "Inter-Black.otf",
-    "interdisp": "InterDisplay-Black.otf", "mono": "JetBrainsMono-Regular.ttf", "monob": "JetBrainsMono-Bold.ttf",
+    "interdisp": "InterDisplay-Black.otf", "ovblk": "Overpass-Black.ttf", "ovxb": "Overpass-ExtraBold.ttf", "ovb": "Overpass-Bold.ttf",
+    "ovsb": "Overpass-SemiBold.ttf", "ovmono": "OverpassMono-Bold.ttf", "ovmonomd": "OverpassMono-Medium.ttf", "mono": "JetBrainsMono-Regular.ttf", "monob": "JetBrainsMono-Bold.ttf",
 }
 
 def typeface(name):

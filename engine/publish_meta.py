@@ -6,7 +6,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 AI_NO = ("**Casilla “contenido alterado o sintético”: NO.** Todo el material visual es animación/infografía claramente no realista "
          "y la voz sintética no imita a ninguna persona real ni presenta hechos inventados como reales. Según los ejemplos de YouTube, "
          "esto no exige la etiqueta. Por transparencia, la descripción lo declara igualmente.")
-DISCLOSE_LINE = ("ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. "
+DISCLOSE_LINE = ("ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. "
                  "Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; "
                  "canal independiente, sin relación con Rockstar Games.")
 COMMON_LIC = [
@@ -27,8 +27,8 @@ META = {
     intent="Informativa urgente (pre-lanzamiento): resolver todas las dudas prácticas en un solo lugar.",
     audience="Jugadores hispanohablantes que van a comprar o ya compraron GTA VI y quieren jugar la noche del lanzamiento.",
     dur="4:29 (formato largo compacto).", why="Promete y entrega una lista clara y verificada en 7 puntos, con datos locales (México, Colombia, Argentina, España) que los medios dan contradictorios.",
-    desc="GTA 6 se desbloquea a la medianoche HORA LOCAL del jueves 19 de noviembre de 2026. En este video revisamos las 7 cosas que tienes que tener listas antes: consola, espacio (≈210 GB), precarga, hora por país, precio, idioma y modo online.\n\nEn Caimán Neón separamos lo OFICIAL (verde), lo DEDUCIDO (amarillo) y el RUMOR (rosado).",
-    tags=["gta 6", "gta vi", "gta 6 hora", "gta 6 hora de lanzamiento", "a qué hora sale gta 6", "gta 6 precio", "gta 6 precio méxico", "gta 6 precio colombia", "gta 6 cuánto pesa", "gta 6 210 gb", "gta 6 español", "gta 6 doblaje latino", "gta 6 ps5", "gta 6 xbox series", "gta 6 ps4", "gta 6 pc", "gta 6 online", "gta 6 precarga", "grand theft auto 6", "caimán neón"],
+    desc="GTA 6 se desbloquea a la medianoche HORA LOCAL del jueves 19 de noviembre de 2026. En este video revisamos las 7 cosas que tienes que tener listas antes: consola, espacio (≈210 GB), precarga, hora por país, precio, idioma y modo online.\n\nEn Sal y Asfalto manda el semáforo: lo OFICIAL en verde, lo DEDUCIDO en amarillo y el RUMOR en rojo.",
+    tags=["gta 6", "gta vi", "gta 6 hora", "gta 6 hora de lanzamiento", "a qué hora sale gta 6", "gta 6 precio", "gta 6 precio méxico", "gta 6 precio colombia", "gta 6 cuánto pesa", "gta 6 210 gb", "gta 6 español", "gta 6 doblaje latino", "gta 6 ps5", "gta 6 xbox series", "gta 6 ps4", "gta 6 pc", "gta 6 online", "gta 6 precarga", "grand theft auto 6", "sal y asfalto"],
     pinned="📌 Resumen rápido: 00:00 hora local del jueves 19 · ≈210 GB · PS5 y Xbox Series (no PS4/One, no PC aún) · voces en inglés con textos en español de México y de España · sin online por ahora. ¿Desde qué país lo vas a jugar y a qué hora te toca? 👇",
     sources=["Forbes (12 y 16 nov. 2026): hora de desbloqueo y tamaño", "El Comercio / eldiario.es / Heraldo Binario: horarios por país; PS Store México: 00:00 del 19 (hora del centro)",
              "Hollywood Reporter: precio 79,99 / 99,99 USD", "Bloomberg Línea / ADN40 (nov. 2026): precios en México y Colombia", "Notebookcheck / gta6filesize: 209,86 GB en Xbox Store",
@@ -59,7 +59,7 @@ META = {
     audience="Jugadores sin PS5/Series que buscan alternativas, sobre todo en Latinoamérica; padres y familiares.",
     dur="3:24", why="Ocupa una búsqueda masiva dominada por contenido engañoso con información verificada por empresas de seguridad (ESET, Cynet) y pasos de recuperación útiles.",
     desc="No existe GTA 6 para PC (sin fecha anunciada), ni para Android ni para iPhone. Los archivos que lo prometen son malware: ESET detectó “gta6_installer.exe” con el infostealer Vidar y Cynet otra variante con WARDEN. En este video: cómo funciona el anzuelo, qué roba y qué hacer si ya lo ejecutaste.",
-    tags=["gta 6 pc", "gta 6 pc descargar", "gta 6 apk", "gta 6 android", "gta 6 gratis", "gta 6 descargar", "gta 6 malware", "gta 6 estafa", "gta 6 virus", "seguridad gamer", "infostealer", "gta 6", "caimán neón"],
+    tags=["gta 6 pc", "gta 6 pc descargar", "gta 6 apk", "gta 6 android", "gta 6 gratis", "gta 6 descargar", "gta 6 malware", "gta 6 estafa", "gta 6 virus", "seguridad gamer", "infostealer", "gta 6", "sal y asfalto"],
     pinned="📌 Si ya ejecutaste un “instalador de GTA 6”: 1) desconecta y analiza el equipo, 2) cambia contraseñas desde OTRO dispositivo (empieza por el correo), 3) cierra sesiones y activa 2FA. Comparte esto con quien lo necesite 🛡️",
     sources=["Help Net Security (13 nov. 2026): falsa descarga de GTA 6 que roba credenciales de Steam y monederos", "Security Boulevard (nov. 2026): “GTA 6 download” como búsqueda peligrosa",
              "Shattered.io: ESET y Vidar en gta6_installer.exe", "Neowin: estafas de descarga gratuita", "Take-Two: sin fecha para PC"],
@@ -75,7 +75,7 @@ META = {
     intent="Exploración y curiosidad pre-lanzamiento.", audience="Fans que quieren entender el mundo antes de jugar; interesados en Florida/Miami.",
     dur="3:31", why="Combina datos oficiales con inspiraciones reales, marcando qué es deducción; animación 3D original que evita los mapas falsos que circulan.",
     desc="Rockstar no ha publicado un mapa completo de Leonida. Con lo oficial (6 regiones, Mount Kalaga en la frontera norte, Ambrosia en el corazón del estado, el mapa “el doble que el de GTA 5” según Aaron Garbut en Game Informer) y la geografía real de Florida, recorremos Mount Kalaga, Port Gellhorn, Ambrosia, Grassrivers, Vice City y Leonida Keys.\n\n⚠️ El mapa que ves es la FLORIDA REAL (Natural Earth), no el mapa del juego.",
-    tags=["mapa gta 6", "gta 6 mapa", "leonida", "vice city", "grassrivers", "port gellhorn", "ambrosia", "mount kalaga", "leonida keys", "gta 6 florida", "gta 6 regiones", "gta 6", "caimán neón"],
+    tags=["mapa gta 6", "gta 6 mapa", "leonida", "vice city", "grassrivers", "port gellhorn", "ambrosia", "mount kalaga", "leonida keys", "gta 6 florida", "gta 6 regiones", "gta 6", "sal y asfalto"],
     pinned="📌 Marcador de deducciones: el jueves volvemos a este mapa con el juego y marcamos aciertos ✅ y fallos ❌. ¿A qué región vas primero?",
     sources=["Web oficial de Rockstar (regiones y descripciones), vía GTA BOOM / The Games Wiki / guías que la citan", "Game Informer n.º 382 (Aaron Garbut: mapa el doble que GTA V; +170 especies)",
              "Clewiston, “America's Sweetest Town” (dato real)", "Britton Hill, ≈105 m, punto más alto de Florida (dato real)"],
@@ -90,7 +90,7 @@ META = {
     intent="Narrativa / contexto de historia sin spoilers.", audience="Jugadores que quieren llegar al juego entendiendo a los personajes; público que sigue la historia.",
     dur="3:06", why="Formato de expediente con fuentes y etiquetas de certeza; evita spoilers y especulación disfrazada.",
     desc="Lo que Rockstar publicó sobre Jason Duval y Lucía Caminos (web oficial y tráileres), lo que reportó la prensa y lo que aún no sabemos. Sin spoilers.",
-    tags=["jason y lucia", "lucia gta 6", "jason gta 6", "personajes gta 6", "historia gta 6", "gta 6 sin spoilers", "cal hampton", "boobie ike", "real dimez", "raul bautista", "brian heder", "gta 6", "caimán neón"],
+    tags=["jason y lucia", "lucia gta 6", "jason gta 6", "personajes gta 6", "historia gta 6", "gta 6 sin spoilers", "cal hampton", "boobie ike", "real dimez", "raul bautista", "brian heder", "gta 6", "sal y asfalto"],
     pinned="📌 Cero spoilers en este canal durante la primera semana. ¿Con quién vas a jugar más: Jason o Lucía? 💗🩵",
     sources=["Web oficial de Rockstar (perfiles de personajes, mayo 2025) vía VGC / GamesRadar / PCGamesN", "Descripción oficial del tráiler 2 (mayo 2025)",
              "Tráiler de lanzamiento (15 oct. 2026) vía GameSpot / Vice", "Extended Look (agosto 2026) vía TechRadar / Red Bull", "Rob Nelson (Rockstar) sobre el Perfil Criminal, vía prensa"],
@@ -105,7 +105,7 @@ META = {
     intent="Comparativa.", audience="Jugadores veteranos de GTA V que deciden cuánto cambia la experiencia.", dur="3:19",
     why="Formato rápido de rondas con fuentes; separa los 3 rumores más repetidos con etiqueta propia.",
     desc="Diez cambios confirmados entre GTA 5 y GTA 6 (mapa, protagonistas, estrellas, Perfil Criminal, foco, clima, fauna, precio, online y plataformas), lo que no cambió (el idioma) y tres rumores señalados.",
-    tags=["gta 6 vs gta 5", "gta 5 vs gta 6", "diferencias gta 6", "gta 6 cambios", "gta 6 estrellas", "perfil criminal", "gta 6 huracanes", "gta 6 animales", "gta 6 precio", "gta 6 60 fps", "gta 6", "caimán neón"],
+    tags=["gta 6 vs gta 5", "gta 5 vs gta 6", "diferencias gta 6", "gta 6 cambios", "gta 6 estrellas", "perfil criminal", "gta 6 huracanes", "gta 6 animales", "gta 6 precio", "gta 6 60 fps", "gta 6", "sal y asfalto"],
     pinned="📌 ¿Cuál es el cambio más importante para ti? Después del jueves hacemos la comparación JUGANDO, con pruebas propias. 🎮",
     sources=["Game Informer n.º 382 (mapa ×2, clima, +170 especies)", "Extended Look (Rockstar, agosto 2026) vía TechRadar / Red Bull", "Rob Nelson (Rockstar), vía prensa",
              "Hollywood Reporter (precio)", "FAQ de PlayStation / Take-Two (un jugador)", "TweakTown / RockstarINTEL (objetivo 30 fps)", "Historial de lanzamiento de GTA V (2013, PC en 2015)"],
@@ -141,7 +141,7 @@ META = {
     intent="Curiosidad y conversación; puente a contenido post-lanzamiento.", audience="Fans que siguen el lanzamiento y comentan.", dur="2:55",
     why="Formato de apuesta con medidor de confianza: invita a comentar y a volver para ver el resultado (VIDEO 10).",
     desc="Siete preguntas que Rockstar no ha respondido, lo que sí sabemos y nuestras predicciones con un porcentaje de confianza. Las predicciones son opinión del canal (en amarillo), no información. El jueves los abrimos jugando.",
-    tags=["gta 6 misterios", "gta 6 preguntas", "gta 6 online", "gta 6 60 fps", "gta 6 predicciones", "perfil criminal", "gta 6 huracanes", "gta 6", "caimán neón"],
+    tags=["gta 6 misterios", "gta 6 preguntas", "gta 6 online", "gta 6 60 fps", "gta 6 predicciones", "perfil criminal", "gta 6 huracanes", "gta 6", "sal y asfalto"],
     pinned="📌 Deja tu predicción para el sobre que quieras (1-7). La más acertada se lleva este fijado después del lanzamiento 🔮",
     sources=["FAQ de PlayStation / Take-Two (online)", "TweakTown / RockstarINTEL (30 fps)", "Rob Nelson (Rockstar), vía prensa (Perfil Criminal)", "Game Informer n.º 382 (huracanes, fauna, mapa ×2)", "Web oficial (6 regiones)"],
     lic_extra=["Fuentes: Syne (OFL)."], status="TERMINADO · listo para publicar", phase="Pre-lanzamiento (publicar antes de la medianoche del 18/19)",
@@ -153,7 +153,7 @@ META = {
     intent="Experiencial / verificación post-lanzamiento.", audience="Jugadores en la primera semana y quienes aún dudan en comprar.", dur="Estimada 8-10 min con capturas.",
     why="Cierra el arco iniciado en VIDEO 09: el espectador vuelve para ver el resultado.",
     desc="(Completar tras las pruebas) Abrimos los 7 sobres del video anterior y comprobamos cada misterio jugando, con capturas propias. Aciertos, fallos y “sin datos”, sin maquillar.",
-    tags=["gta 6", "gta 6 probado", "gta 6 gameplay español", "gta 6 60 fps", "gta 6 online", "gta 6 huracanes", "caimán neón"],
+    tags=["gta 6", "gta 6 probado", "gta 6 gameplay español", "gta 6 60 fps", "gta 6 online", "gta 6 huracanes", "sal y asfalto"],
     pinned="(Completar) 📌 Marcador final: __ aciertos · __ fallos · __ sin datos. ¿Qué probamos ahora?",
     sources=["Capturas propias del juego (fecha, consola)", "Newswire / soporte de Rockstar en la fecha de publicación"],
     lic_extra=["Gameplay: capturas propias. La política de Rockstar sobre material del juego tolera los vídeos de jugadores pero no concede licencia comercial explícita; ver 00_INFORMES/POLITICAS_Y_DERECHOS.md."],

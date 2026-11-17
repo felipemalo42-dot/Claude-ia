@@ -6,7 +6,7 @@ Es el puente hacia el VIDEO 10 (post-lanzamiento), donde se abren los sobres jug
 import math, numpy as np, skia
 from gfx import *
 from components import *
-from brand import PAL, draw_caiman
+from brand import PAL, draw_caiman, draw_badge
 
 V1, V2 = "#1B1040", "#0A0618"; ENV = "#EADFC8"; ENV_D = "#CDBE9F"; WAX = "#9E1B32"; GOLD = "#E9C46A"; LAV = "#B8A6F0"; WHITE = "#F3EEFF"; SUN = PAL["sol"]
 
@@ -35,7 +35,8 @@ def envelope(c, x, y, s, num, q, t, open_p=0.0, seal=True, a=1.0, rot=0):
     draw_poly(c, [(-260, 150), (-30, -20), (30, -20), (260, 150)], "#E2D5B9", a)
     if seal and open_p < 0.2:
         circle(c, 0, 10, 56, WAX, a); circle(c, 0, 10, 46, "#7E1427", a, stroke=4)
-        draw_caiman(c, -40, -4, 0.4, line_col="#F2C2C8", eye_col="#F2C2C8", glow=False, lw=6, a=a)
+        arc = skia.Path(); arc.addArc(skia.Rect.MakeXYWH(-18, -10, 36, 36), 180, 180); c.drawPath(arc, paint("#F2C2C8", a, stroke=4))
+        line(c, -30, 8, 30, 8, "#F2C2C8", a, 3); c.drawPath(poly([(-2, 8), (2, 8), (16, 40), (-16, 40)]), paint("#F2C2C8", a, stroke=3))
     draw_text(c, f"N.º {num}", -230, 120, "syne", 30, "#6E5C3C", a)
     c.restore()
 
@@ -140,14 +141,14 @@ def sc_end(c, t, info, ctx):
 def overlay(c, gt, ctx):
     W, H = ctx.W, ctx.H
     if 2.5 < gt < ctx.total - 20: watermark(c, W, H, 0.45)
-    if gt < 8: ai_notice(c, W, H, clamp(8 - gt), "Animación original de Caimán Neón · las predicciones son opinión del canal")
+    if gt < 8: ai_notice(c, W, H, clamp(8 - gt), "Animación original de Sal y Asfalto · las predicciones son opinión del canal")
 
 B = []
 def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
 beat("Faltan horas para el lanzamiento, y todavía hay siete preguntas que Rockstar no ha respondido. Las metimos en sobres sellados. El jueves los abrimos.",
      sc_hook, section="GANCHO", energy=1, sfx=[(0.4, "paper", 0.4), (1.2, "paper", 0.4), (2.0, "paper", 0.4), ("w:El jueves", "seal", 0.6)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("flash", 0.3))
-beat("Esto es Caimán Neón. Cada sobre lleva una pregunta, lo que sí sabemos con certeza y nuestra predicción, con un medidor de confianza. "
+beat("Esto es Sal y Asfalto. Cada sobre lleva una pregunta, lo que sí sabemos con certeza y nuestra predicción, con un medidor de confianza. "
      "Ojo: las predicciones son nuestras, van en amarillo y no son información.",
      sc_rules, section="REGLAS", energy=1, trans=("zoom", 0.5), sfx=[("w:pregunta", "pop", 0.4), ("w:sabemos", "pop", 0.4), ("w:predicción", "pop", 0.4), ("w:no son información", "ding", 0.3)])
 VO = [

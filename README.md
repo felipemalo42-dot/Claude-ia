@@ -1,4 +1,6 @@
-# Caimán Neón: paquete de lanzamiento del canal de GTA VI (10 videos)
+# Sal y Asfalto: paquete de lanzamiento del canal de GTA VI (10 videos)
+
+> **Nombre e identidad nuevos (17/11/2026):** el nombre anterior, *Caimán Neón*, ya estaba en uso en YouTube. Se rediseñó toda la marca y se volvieron a producir los 10 videos con la identidad nueva. Ver `CANAL_IDENTIDAD/GUIA_DE_MARCA.md`.
 
 Canal hispanohablante dedicado a **Grand Theft Auto VI**, preparado para el lanzamiento del **jueves 19 de noviembre de 2026**.
 Todo el material audiovisual es **original**: guiones, voces sintéticas con licencia comercial, música y efectos sintetizados por código, animaciones e infografías vectoriales, mapas de dominio público. **No hay imágenes, música ni recursos de Rockstar Games.**
@@ -59,7 +61,7 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
    - Para videos más largos, la estructura está lista para ampliar los guiones y volver a renderizar.
 5. **Calidad del MP4:** se codificó compacto (5-28 MB) para que entrara en GitHub. Para subir a YouTube con la máxima calidad: `python engine/build.py vXX --master`.
 6. **El video 10** no puede terminarse sin jugar. No se ha simulado ninguna prueba ni ningún resultado.
-7. **Nombre del canal:** no se pudo verificar si el usuario `@caimanneon` está libre.
+7. **Nombre del canal:** la búsqueda web no encontró ningún canal llamado "Sal y Asfalto", pero YouTube no se puede consultar desde aquí. Comprueba que `@SalYAsfalto` esté libre antes de crear el canal.
 8. **Monetización:** nadie puede garantizarla. Los riesgos y lo que se hizo para reducirlos están en `00_INFORMES/POLITICAS_Y_DERECHOS.md`.
 
 ## Reconstruir o modificar

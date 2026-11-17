@@ -52,7 +52,7 @@ PRON = [
     (r"\bGB\b", "gigas"), (r"\bTB\b", "terabait"), (r"\bfps\b", "cuadros por segundo"), (r"\bUSD\b", "dólares"),
     (r"\bEverglades\b", "Évergleids"), (r"\bMiami\b", "Miami"), (r"\bOverseas Highway\b", "Ouversís Jáiuei"),
     (r"\bClewiston\b", "Clúiston"), (r"\bPanama City\b", "Pánama Síti"), (r"\bOcala\b", "Ocala"),
-    (r"\bOkeechobee\b", "Okichóubi"), (r"\bCaimán Neón\b", "Caimán Neón"), (r"\bhype\b", "jáip"),
+    (r"\bOkeechobee\b", "Okichóubi"), (r"\bhype\b", "jáip"),
     (r"\bstreaming\b", "estrímin"), (r"\bcheckpoint\b", "chécpoint"), (r"\bsetup\b", "sétap"),
     (r"\bupdate\b", "ápdeit"), (r"\bpatch\b", "pach"), (r"\bpreload\b", "prilóud"), (r"\bslow motion\b", "slou móshon"),
     (r"\bwanted\b", "uónted"), (r"\bfeed\b", "fid"), (r"\binfluencers?\b", "influénser"), (r"\bmemes?\b", "mem"),

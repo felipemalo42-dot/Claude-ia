@@ -5,7 +5,7 @@ Abril Fatface + Caveat, anotaciones a mano, fichas que se pasan como páginas. V
 import math, numpy as np, skia
 from gfx import *
 from components import *
-from brand import PAL, draw_caiman
+from brand import PAL, draw_caiman, draw_badge
 
 W, H = 1080, 1920
 PAPER = "#F3EBD8"; PAPER2 = "#E9DEC4"; INK = "#22301F"; SAGE = "#7FA37A"; FLAM = "#F27BA0"; TEAL = "#3C8C8A"; OCHRE = "#C98B2E"; GREY = "#8A8F98"
@@ -135,8 +135,8 @@ def sc_main(c, t, info, ctx):
 
 def overlay(c, gt, ctx):
     short_captions(c, gt, ctx, y=1520, size=68, hl=OCHRE, fontname="abril", maxw=960, box=False)
-    draw_caiman(c, W / 2 - 150, 22, 0.36, lw=6, glow=False, line_col=INK, eye_col=FLAM, a=0.9)
-    draw_text(c, "CAIMÁN NEÓN", W / 2 - 66, 52, "monob", 24, INK, 0.8, tracking=3)
+    draw_badge(c, W / 2 - 150, 46, 24)
+    draw_text(c, "SAL Y ASFALTO", W / 2 - 112, 56, "ovblk", 28, INK, 0.9, tracking=2)
     draw_text(c, "Ilustraciones originales · no son imágenes del juego", W / 2, 1640, "mono", 20, INK, 0.55, align="center")
 
 B = []

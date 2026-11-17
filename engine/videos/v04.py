@@ -247,7 +247,7 @@ beat("Rockstar todavía no ha publicado un mapa completo de Leonida. Pero sí de
      "Hoy armamos el rompecabezas, sin inventar ni una pieza.",
      sc_hook, section="GANCHO", energy=1, sfx=[("w:seis nombres", "pin", 0.5), ("w:dos ubicaciones", "pin", 0.5), ("w:un estado real", "pin", 0.5), ("w:rompecabezas", "whoosh", 0.4)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("flash", 0.3))
-beat("Esto es Caimán Neón. Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad. "
+beat("Esto es Sal y Asfalto. Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad. "
      "Y una advertencia importante: el mapa que vas a ver es la Florida real, no el mapa del juego. Lo usamos porque Leonida es, claramente, su parodia.",
      sc_rules, section="INTRODUCCIÓN", energy=1, trans=("zoom", 0.5), sfx=[("w:verde", "pop", 0.4), ("w:amarillo", "pop", 0.4), ("w:advertencia", "ding", 0.3)])
 beat("Primero, el tamaño. Aaron Garbut, de Rockstar, le dijo a la revista Game Informer que el mapa es el doble de grande que el de GTA 5. "
@@ -289,8 +289,8 @@ def thumbnail(c):
     draw_map(c, W, H, (-81.6, 27.0, 900, 58, 12), 0, active="vice", visited=["kalaga", "gellhorn", "ambrosia", "grass", "keys"], route_p=5.0, labels=False)
     rect(c, 0, 0, W, H, "#000000", 0.0)
     c.drawRect(skia.Rect.MakeWH(W, H), lin_grad(0, 0, W, 0, [hexc("#06202A", 0.92), hexc("#06202A", 0.6), hexc("#06202A", 0)], [0, 0.45, 0.75]))
-    draw_text(c, "6", 60, 330, "dmserif", 300, SUN, 1)
-    draw_text(c, "REGIONES", 250, 220, "anton", 96, CREAM, 1)
-    draw_text(c, "DE LEONIDA", 250, 320, "anton", 96, CREAM, 1)
-    rect(c, 60, 390, 560, 96, CORAL, 1, r=14); draw_text(c, "Y SUS LUGARES REALES", 340, 455, "anton", 54, "#16161A", 1, align="center")
+    draw_text(c, "6", 60, 330, "ovblk", 300, PAL["amarillo"], 1)
+    draw_text(c, "REGIONES", 270, 210, "ovblk", 88, CREAM, 1)
+    draw_text(c, "DE LEONIDA", 270, 310, "ovblk", 88, CREAM, 1)
+    sign_text(c, 60, 380, "Y SUS LUGARES REALES", 52)
     draw_text(c, "GTA VI · MAPA EXPLICADO", 60, 560, "monob", 38, CREAM, 0.9, tracking=2)

@@ -68,7 +68,7 @@ def folder(c, W, H, t, name, rim, hair, fields, info, tag_cues, cam=1.0):
     rect(c, 110, 110, 1700, 900, "#000000", 0.4, blur=20)
     rect(c, 100, 100, 1700, 880, MANILA, 1, r=10); rect(c, 300, 70, 300, 60, MANILA, 1, r=10)
     rect(c, 940, 100, 4, 880, MANILA_D, 1)
-    draw_text(c, "CONFIDENCIAL · CAIMÁN NEÓN", 330, 112, "courierb", 22, "#6B5B3E", 1, tracking=2)
+    draw_text(c, "CONFIDENCIAL · SAL Y ASFALTO", 330, 112, "courierb", 22, "#6B5B3E", 1, tracking=2)
     polaroid(c, 520, 520, -4, rim, hair, name, prog(t, 0.2, 0.9), s=1.15)
     rect(c, 990, 150, 760, 790, PAPER, 1, r=4)
     for k in range(18): rect(c, 990, 210 + k * 42, 760, 1, "#9CB4D0", 0.35)
@@ -224,14 +224,14 @@ def overlay(c, gt, ctx):
     W, H = ctx.W, ctx.H
     if 2.5 < gt < ctx.total - 20:
         watermark(c, W, H, 0.5)
-    if gt < 9: ai_notice(c, W, H, clamp(9 - gt), "Siluetas y documentos ilustrados por Caimán Neón · sin arte oficial ni imágenes del juego")
+    if gt < 9: ai_notice(c, W, H, clamp(9 - gt), "Siluetas y documentos ilustrados por Sal y Asfalto · sin arte oficial ni imágenes del juego")
 
 B = []
 def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
 beat("Ella salió de una prisión de Leonida. Él trabaja para traficantes en los Cayos. Rockstar ya nos dio sus expedientes... y hoy los abrimos, sin un solo spoiler.",
      sc_hook, section="GANCHO", energy=1, sfx=[("w:Ella", "shutter", 0.5), ("w:Él trabaja", "shutter", 0.5), ("w:los abrimos", "stamp", 0.8), ("w:sin un solo spoiler", "stamp", 0.6)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("flash", 0.3))
-beat("Esto es Caimán Neón. Regla de hoy: solo usamos lo que Rockstar publicó en su web y en sus tráileres, y lo que reportó la prensa que habló con el estudio. "
+beat("Esto es Sal y Asfalto. Regla de hoy: solo usamos lo que Rockstar publicó en su web y en sus tráileres, y lo que reportó la prensa que habló con el estudio. "
      "Cada dato lleva su etiqueta. Y si algo es deducción nuestra, te lo vamos a decir en voz alta.",
      sc_intro, section="INTRODUCCIÓN", energy=1, trans=("zoom", 0.5), sfx=[(0.1, "paper", 0.5), ("w:web", "stamp", 0.5), ("w:etiqueta", "stamp", 0.5), ("w:deducción", "stamp", 0.5)])
 beat("Expediente número uno: Lucía Caminos. Según la web oficial, su padre le enseñó a pelear desde muy pequeña. Pelear por su familia la llevó a la Penitenciaría de Leonida, y salió gracias a la pura suerte. "
@@ -261,7 +261,7 @@ beat("¿Y lo que no sabemos? No sabemos cómo termina. No sabemos si hay varios 
      "Lo más parecido a una pista lo dio Rob Nelson, de Rockstar: dijo que las acciones constantes pueden influir en cómo reacciona el mundo y en cómo se desarrolla la narrativa. "
      "Cualquier cosa más allá de eso, hoy, sería inventar.",
      sc_unknown, section="LO QUE NO SABEMOS", energy=1, trans=("fade", 0.5), sfx=[("w:termina", "typing", 0.4), ("w:finales", "typing", 0.4), ("w:decisiones", "typing", 0.4), ("w:Rob Nelson", "ding", 0.3)])
-beat("El jueves empieza el caso de verdad. Si quieres un análisis de la historia sin spoilers durante la primera semana, suscríbete a Caimán Neón. "
+beat("El jueves empieza el caso de verdad. Si quieres un análisis de la historia sin spoilers durante la primera semana, suscríbete a Sal y Asfalto. "
      "Y cuéntame en los comentarios: ¿con quién vas a jugar más, con Jason o con Lucía?",
      sc_end, section="LLAMADA A LA ACCIÓN", energy=2, hold=4.0, min=20, trans=("fade", 0.6))
 
@@ -277,6 +277,6 @@ def thumbnail(c):
     c.drawCircle(380, 380, 320, rad_grad(380, 380, 320, [hexc(MAG, 0.45), hexc(MAG, 0)])); c.drawCircle(900, 380, 320, rad_grad(900, 380, 320, [hexc(CYAN, 0.45), hexc(CYAN, 0)]))
     silhouette(c, 360, 360, 1.25, MAG, "long"); silhouette(c, 920, 360, 1.25, CYAN, "short")
     rect(c, 0, 520, W, 200, "#000000", 0.55)
-    draw_text(c, "JASON Y LUCÍA", W / 2, 640, "anton", 120, "#FFFFFF", 1, align="center", tracking=2)
+    draw_text(c, "JASON Y LUCÍA", W / 2, 640, "ovblk", 108, "#FFFFFF", 1, align="center")
     stamp(c, 640, 110, "EXPEDIENTE", 1.0, -6, STAMP, 70)
     c.save(); c.translate(1120, 470); c.rotate(8); rect(c, -150, -40, 300, 80, "#1E7B45", 1, r=8); draw_text(c, "SIN SPOILERS", 0, 14, "anton", 44, "#FFFFFF", 1, align="center"); c.restore()

@@ -5,7 +5,7 @@ como pieza de puzle, sellos '¡CABE!', confeti. Paleta violeta/amarillo/cian, ti
 import math, numpy as np, skia
 from gfx import *
 from components import *
-from brand import PAL, draw_caiman
+from brand import PAL, draw_caiman, draw_badge
 
 W, H = 1080, 1920
 VIO1, VIO2 = "#2A0F5E", "#140632"; YEL = "#FFD23F"; CY = "#3EE6FF"; PINK = "#FF4FA0"; GRN = PAL["caiman"]; RED = "#FF4A3D"; WH = "#FFFFFF"
@@ -97,8 +97,8 @@ def sc_main(c, t, info, ctx):
 
 def overlay(c, gt, ctx):
     short_captions(c, gt, ctx, y=1470, size=70, hl=YEL, fontname="bungee", maxw=980)
-    draw_caiman(c, W / 2 - 150, 22, 0.36, lw=6, glow=True, a=0.9)
-    draw_text(c, "CAIMÁN NEÓN", W / 2 - 66, 52, "monob", 24, WH, 0.8, tracking=3)
+    draw_badge(c, W / 2 - 150, 46, 24)
+    draw_text(c, "SAL Y ASFALTO", W / 2 - 112, 56, "ovblk", 28, WH, 0.9, tracking=2)
 
 B = []
 def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
@@ -117,6 +117,8 @@ beat("GTA 6 pesa unos doscientos diez gigas. ¿Te cabe? Vamos consola por consol
 VIDEO = dict(id="v07", folder="VIDEO_07", file="GTA6_210GB_te_cabe_SHORT", size=(W, H),
              title="GTA 6 pesa 210 GB: ¿te cabe en tu consola? #shorts", format="Short vertical (9:16)",
              music="chip", music_seed=71, voice="host", beats=B, overlay=overlay, lead_in=0.15, tail=1.0, music_gain=0.4)
+
+THUMB_MARK = (1232, 52, 30)
 
 def thumbnail(c):
     Wt, Ht = 1280, 720

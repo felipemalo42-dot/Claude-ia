@@ -374,10 +374,19 @@ def sfx(name, **k):
     if name == "snap":  # mordida de caimán (logo sonoro)
         t = t_axis(0.35); x = hp(noise(len(t)), 2500) * np.exp(-t * 120) * 0.9 + np.sin(2 * np.pi * (90 + 120 * np.exp(-t * 50)) * t) * np.exp(-t * 16)
         return reverb(np.tanh(x * 1.5) * 0.8, 0.2)
-    if name == "logo":  # sintonía de marca: motivo de 3 notas + mordida
-        out = np.zeros(int(2.6 * SR))
-        for i, (nn, tt) in enumerate(((76, 0.0), (83, 0.16), (88, 0.32))): place(out, bell(nn, 1.6) * 0.5, tt); place(out, epiano(nn - 12, 1.2) * 0.4, tt)
-        st = reverb(out, 0.35); place(st, sfx("snap"), 0.62); return st
+    if name == "logo":  # sintonía SAL Y ASFALTO: auto que pasa (Doppler) + ola + acorde de piano eléctrico
+        n = int(2.6 * SR); st = np.zeros((n, 2))
+        d = 1.2; t = t_axis(d); env = np.exp(-((t - 0.55) / 0.2) ** 2)
+        f = 150 * (1.3 - 0.55 * np.tanh((t - 0.55) * 6))
+        car = (bp(noise(len(t)), 250, 2500) * 0.5 + np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.35 + np.sin(2 * np.pi * np.cumsum(2 * f) / SR) * 0.12) * env
+        st[:len(car), 0] += car * np.linspace(1.0, 0.15, len(car)); st[:len(car), 1] += car * np.linspace(0.15, 1.0, len(car))
+        tw = t_axis(1.6); wave = sweep_lp(noise(len(tw)), 300, 2200, 24) * np.sin(np.pi * np.clip(tw / 1.6, 0, 1)) ** 2 * 0.35
+        place(st, pan(wave, 0), 0.75)
+        ch = np.zeros(int(2.0 * SR))
+        for i, nn in enumerate((53, 57, 60, 64, 67)): place(ch, epiano(nn + 12, 1.8) * 0.45, 0.018 * i)
+        place(ch, bell(84, 1.6) * 0.25, 0.1)
+        place(st, pan(ch, 0), 1.05)
+        return reverb(st * 0.9, 0.25)
     if name == "bird":
         t = t_axis(0.25); f = 2800 + 1600 * np.sin(2 * np.pi * 9 * t) * np.exp(-t * 6)
         x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / 0.25) ** 2 * 0.15

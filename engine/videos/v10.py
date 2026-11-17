@@ -7,7 +7,7 @@ huecos rotulados para las capturas y veredictos en blanco; (2) rótulos PNG tran
 import math, os, numpy as np, skia
 from gfx import *
 from components import *
-from brand import PAL, draw_caiman
+from brand import PAL, draw_caiman, draw_badge
 from videos.v09 import velvet, envelope, candle, gauge, MYST, GOLD, WAX, LAV, WHITE, SUN
 
 TEST = [  # protocolo de verificación por sobre
@@ -98,7 +98,7 @@ for i, m in enumerate(MYST):
          make_open(i), section=f"SOBRE {i + 1} — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]", hold=8.0, energy=1, trans=("slide_up", 0.5),
          note=f"PROTOCOLO: {TEST[i]}", sfx=[(0.2, "seal", 0.5)])
 beat("", sc_score, dur=8.0, section="MARCADOR — [COMPLETAR CON RESULTADOS REALES]", energy=2, trans=("fade", 0.5))
-beat("¿Qué otra pregunta quieres que comprobemos jugando? Déjala en los comentarios. Y si quieres más pruebas con método, suscríbete a Caimán Neón.",
+beat("¿Qué otra pregunta quieres que comprobemos jugando? Déjala en los comentarios. Y si quieres más pruebas con método, suscríbete a Sal y Asfalto.",
      sc_end, section="LLAMADA A LA ACCIÓN (narración lista)", energy=2, hold=4.0, min=20, trans=("fade", 0.6))
 
 VIDEO = dict(id="v10", folder="VIDEO_10", file="V10_ANIMATICO_preproduccion_NO_PUBLICAR",

@@ -274,7 +274,11 @@ def main():
         tl = build_audio(V, outdir); print(f"{V['id']}: audio listo, {tl['total']:.1f} s ({time.time() - t0:.0f} s)")
     tl = json.load(open(f"{outdir}/recursos/timeline.json"))
     if a.stage in ("all", "thumb") and hasattr(mod, "thumbnail"):
-        s = gfx.new_surface(1280, 720); mod.thumbnail(s.getCanvas()); s.makeImageSnapshot().save(f"{outdir}/miniatura.png", skia.kPNG); print("miniatura lista")
+        s = gfx.new_surface(1280, 720); mod.thumbnail(s.getCanvas())
+        mk = getattr(mod, "THUMB_MARK", (1215, 655, 34))
+        if mk:
+            import components; components.thumb_mark(s.getCanvas(), *mk)
+        s.makeImageSnapshot().save(f"{outdir}/miniatura.png", skia.kPNG); print("miniatura lista")
     if a.stage in ("all", "video"):
         fd = f"{outdir}/recursos/fotogramas"; os.makedirs(fd, exist_ok=True)
         out = render_video(V, tl, outdir, a.master, a.preview, None if a.preview else fd)
