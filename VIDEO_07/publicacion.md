@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** gta 6 210 gb, gta 6 series s, gta 6 espacio ps5
 - **Intención de búsqueda:** Informativa técnica, móvil.
 - **Público:** Dueños de PS5/Series S/X preparando la descarga.
-- **Duración:** 0:44 (Short 9:16).
+- **Duración:** 0:48 (Short 9:16).
 - **Por qué hacer clic:** Cuenta visual instantánea por consola; el Series S (58 %) genera conversación.
 
 ## B-C. Guion, voz y subtítulos

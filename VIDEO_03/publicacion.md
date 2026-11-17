@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** gta 6 apk, gta 6 android, gta 6 gratis, gta 6 malware, gta 6 estafa, gta 6 para pc
 - **Intención de búsqueda:** Navegacional riesgosa → la convertimos en protección (servicio público).
 - **Público:** Jugadores sin PS5/Series que buscan alternativas, sobre todo en Latinoamérica; padres y familiares.
-- **Duración:** 3:24
+- **Duración:** 3:32
 - **Por qué hacer clic:** Ocupa una búsqueda masiva dominada por contenido engañoso con información verificada por empresas de seguridad (ESET, Cynet) y pasos de recuperación útiles.
 
 ## B-C. Guion, voz y subtítulos

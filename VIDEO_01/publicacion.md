@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** gta 6 precio méxico, gta 6 precio colombia, gta 6 cuánto pesa, gta 6 en español, gta 6 ps4, gta 6 pc, gta 6 online, gta 6 precarga
 - **Intención de búsqueda:** Informativa urgente (pre-lanzamiento): resolver todas las dudas prácticas en un solo lugar.
 - **Público:** Jugadores hispanohablantes que van a comprar o ya compraron GTA VI y quieren jugar la noche del lanzamiento.
-- **Duración:** 4:29 (formato largo compacto).
+- **Duración:** 4:52 (formato largo compacto).
 - **Por qué hacer clic:** Promete y entrega una lista clara y verificada en 7 puntos, con datos locales (México, Colombia, Argentina, España) que los medios dan contradictorios.
 
 ## B-C. Guion, voz y subtítulos

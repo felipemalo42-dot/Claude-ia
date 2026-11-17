@@ -232,7 +232,7 @@ def write_all():
              "", "## A. Estrategia y posicionamiento", "", f"- **Título principal (SEO):** {M['titles'][0]}",
              "- **Títulos alternativos:**", *[f"  {i}. {t}" for i, t in enumerate(M['titles'][1:], 1)],
              f"- **Palabra clave principal:** {M['kw']}", f"- **Palabras clave secundarias:** {', '.join(M['kw2'])}",
-             f"- **Intención de búsqueda:** {M['intent']}", f"- **Público:** {M['audience']}", f"- **Duración:** {M['dur']}",
+             f"- **Intención de búsqueda:** {M['intent']}", f"- **Público:** {M['audience']}", f"- **Duración:** {M['dur'] if vid == 'v10' else fmt(tl['total']) + (' ' + M['dur'].split(' ', 1)[1] if ' ' in M['dur'] else '')}",
              f"- **Por qué hacer clic:** {M['why']}", "", "## B-C. Guion, voz y subtítulos", "",
              "- Guion completo con marcas de tiempo y notas visuales: `guion.txt`", "- Texto de narración: `narracion.txt` · marcas por frase: `marcas_de_tiempo.csv`",
              "- Audio de narración: `narracion.wav` (24 kHz, original) y `narracion.mp3` (procesada, 48 kHz)", "- Subtítulos: `subtitulos.srt` (súbelos como subtítulos en español en YouTube Studio)",

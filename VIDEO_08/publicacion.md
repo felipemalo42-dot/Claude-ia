@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** fauna gta 6, caimán gta 6, gta 6 170 especies, animales legendarios gta 6
 - **Intención de búsqueda:** Curiosidad evergreen.
 - **Público:** Público curioso y jugadores exploradores.
-- **Duración:** 0:37 (Short 9:16).
+- **Duración:** 0:40 (Short 9:16).
 - **Por qué hacer clic:** Estética de cuaderno de naturalista poco común en gaming; dato llamativo (170+ especies) y pregunta abierta.
 
 ## B-C. Guion, voz y subtítulos

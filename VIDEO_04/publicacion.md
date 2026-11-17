@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** leonida gta 6, regiones gta 6, vice city gta 6, grassrivers, port gellhorn, ambrosia gta 6, mount kalaga, leonida keys
 - **Intención de búsqueda:** Exploración y curiosidad pre-lanzamiento.
 - **Público:** Fans que quieren entender el mundo antes de jugar; interesados en Florida/Miami.
-- **Duración:** 3:31
+- **Duración:** 3:40
 - **Por qué hacer clic:** Combina datos oficiales con inspiraciones reales, marcando qué es deducción; animación 3D original que evita los mapas falsos que circulan.
 
 ## B-C. Guion, voz y subtítulos

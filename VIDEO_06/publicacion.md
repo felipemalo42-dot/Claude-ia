@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** diferencias gta 5 gta 6, gta 6 estrellas, perfil criminal gta 6, gta 6 huracanes, gta 6 animales, gta 6 60 fps
 - **Intención de búsqueda:** Comparativa.
 - **Público:** Jugadores veteranos de GTA V que deciden cuánto cambia la experiencia.
-- **Duración:** 3:19
+- **Duración:** 3:37
 - **Por qué hacer clic:** Formato rápido de rondas con fuentes; separa los 3 rumores más repetidos con etiqueta propia.
 
 ## B-C. Guion, voz y subtítulos

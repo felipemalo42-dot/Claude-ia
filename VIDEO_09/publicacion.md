@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** gta 6 online fecha, gta 6 60 fps, gta 6 interiores, gta 6 preguntas, gta 6 predicciones
 - **Intención de búsqueda:** Curiosidad y conversación; puente a contenido post-lanzamiento.
 - **Público:** Fans que siguen el lanzamiento y comentan.
-- **Duración:** 2:55
+- **Duración:** 3:03
 - **Por qué hacer clic:** Formato de apuesta con medidor de confianza: invita a comentar y a volver para ver el resultado (VIDEO 10).
 
 ## B-C. Guion, voz y subtítulos

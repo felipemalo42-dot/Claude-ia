@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** lucia gta 6, jason gta 6, personajes gta 6, historia gta 6, reparto gta 6, cal hampton, boobie ike
 - **Intención de búsqueda:** Narrativa / contexto de historia sin spoilers.
 - **Público:** Jugadores que quieren llegar al juego entendiendo a los personajes; público que sigue la historia.
-- **Duración:** 3:06
+- **Duración:** 3:21
 - **Por qué hacer clic:** Formato de expediente con fuentes y etiquetas de certeza; evita spoilers y especulación disfrazada.
 
 ## B-C. Guion, voz y subtítulos

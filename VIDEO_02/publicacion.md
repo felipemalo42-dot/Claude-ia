@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** gta 6 hora méxico, gta 6 hora colombia, gta 6 hora argentina, gta 6 hora españa, gta 6 medianoche
 - **Intención de búsqueda:** Informativa urgente, consumo móvil.
 - **Público:** Jugadores LatAm/España que buscan su hora exacta desde el móvil.
-- **Duración:** 0:41 (Short vertical 9:16).
+- **Duración:** 0:45 (Short vertical 9:16).
 - **Por qué hacer clic:** Responde la pregunta exacta en menos de un minuto con un globo 3D que la hace visual y compartible.
 
 ## B-C. Guion, voz y subtítulos

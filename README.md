@@ -17,15 +17,15 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
 
 | # | Video | Formato | Duración | Estado | Publicación sugerida (UTC) |
 |---|---|---|---|---|---|
-| 01 | GTA 6: hora exacta, precio, peso e idioma (7 comprobaciones) | Largo 16:9 | 4:29 | ✅ **Terminado** | mar 17 · 20:00 |
-| 02 | ¿A qué hora sale GTA 6 en tu país? | Short 9:16 | 0:41 | ✅ **Terminado** | mié 18 · 12:00 |
-| 03 | GTA 6 para PC y Android: la estafa que roba cuentas | Largo | 3:24 | ✅ **Terminado** | mié 18 · 15:00 |
-| 04 | El mapa de Leonida: 6 regiones y sus lugares reales | Largo | 3:31 | ✅ **Terminado** | mié 18 · 19:00 |
-| 05 | Jason y Lucía: el expediente (sin spoilers) | Largo | 3:06 | ✅ **Terminado** | vie 20 · 18:00 |
-| 06 | GTA 6 vs GTA 5: 10 cambios confirmados | Largo | 3:19 | ✅ **Terminado** | sáb 21 · 17:00 |
-| 07 | GTA 6 pesa 210 GB: ¿te cabe? | Short | 0:44 | ✅ **Terminado** | mar 17 · 23:00 |
-| 08 | Fauna de Leonida: guía de campo | Short | 0:37 | ✅ **Terminado** | jue 19 · 17:00 |
-| 09 | 7 misterios que se resuelven el jueves | Largo | 2:55 | ✅ **Terminado** | mié 18 · 21:00 |
+| 01 | GTA 6: hora exacta, precio, peso e idioma (7 comprobaciones) | Largo 16:9 | 4:52 | ✅ **Terminado** | mar 17 · 20:00 |
+| 02 | ¿A qué hora sale GTA 6 en tu país? | Short 9:16 | 0:45 | ✅ **Terminado** | mié 18 · 12:00 |
+| 03 | GTA 6 para PC y Android: la estafa que roba cuentas | Largo | 3:32 | ✅ **Terminado** | mié 18 · 15:00 |
+| 04 | El mapa de Leonida: 6 regiones y sus lugares reales | Largo | 3:40 | ✅ **Terminado** | mié 18 · 19:00 |
+| 05 | Jason y Lucía: el expediente (sin spoilers) | Largo | 3:21 | ✅ **Terminado** | vie 20 · 18:00 |
+| 06 | GTA 6 vs GTA 5: 10 cambios confirmados | Largo | 3:37 | ✅ **Terminado** | sáb 21 · 17:00 |
+| 07 | GTA 6 pesa 210 GB: ¿te cabe? | Short | 0:48 | ✅ **Terminado** | mar 17 · 23:00 |
+| 08 | Fauna de Leonida: guía de campo | Short | 0:40 | ✅ **Terminado** | jue 19 · 17:00 |
+| 09 | 7 misterios que se resuelven el jueves | Largo | 3:03 | ✅ **Terminado** | mié 18 · 21:00 |
 | 10 | Abrimos los 7 sobres: lo comprobamos jugando | Largo (post-lanzamiento) | estimada 8-10 min | 🟡 **Preproducción**: faltan capturas propias y veredictos. El MP4 incluido es un **animático rotulado "NO PUBLICAR"** | lun 23 · 19:00 |
 
 **Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada −14,4/−14,5 LUFS.
@@ -57,7 +57,7 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
    - No había un generador de imágenes con IA disponible. Todo está dibujado por código (motion graphics vectoriales, mapa 3D en perspectiva, globo 3D).
    - Esto además **evita el riesgo legal de las imágenes de IA que imitan el juego**, que Take-Two ya persigue.
 4. **Duración:**
-   - Los videos largos duran entre 2:55 y 4:29: densos y sin relleno.
+   - Los videos largos duran entre 3:03 y 4:52: densos y sin relleno.
    - **Sin anuncios intermedios** (YouTube exige 8 minutos o más).
    - Para videos más largos, la estructura está lista para ampliar los guiones y volver a renderizar.
 5. **Calidad del MP4:** se codificó compacto (5-28 MB) para que entrara en GitHub. Para subir a YouTube con la máxima calidad: `python engine/build.py vXX --master`.
