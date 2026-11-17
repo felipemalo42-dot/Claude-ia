@@ -1,5 +1,5 @@
 GUION — GTA 6: hora exacta en tu país, precio, peso e idioma — 7 cosas que revisar antes de medianoche
-Formato: Largo (16:9) · Duración: 00:05:06 · Voz: Supertonic 3 (voz femenina), español
+Formato: Largo (16:9) · Duración: 00:04:52 · Voz: narradora (Chatterbox Multilingual), español
 ==============================================================================
 
 
@@ -7,93 +7,93 @@ Formato: Largo (16:9) · Duración: 00:05:06 · Voz: Supertonic 3 (voz femenina)
 
    [VISUAL] Tablero de salidas: vuelos a Leonida 'A TIEMPO'; dos cambian a 'PUERTA CERRADA'. Aparecen las tres causas.
 [00:00.25] NARRADORA: El jueves diecinueve de noviembre, a la medianoche, millones de consolas van a intentar entrar a Leonida al mismo tiempo.
-[00:07.85] NARRADORA: Y una parte de esa gente se va a quedar en la puerta.
-[00:10.97] NARRADORA: Por la hora.
-[00:12.05] NARRADORA: Por el espacio.
-[00:13.17] NARRADORA: O por una descarga que nunca debió hacer.
+[00:07.53] NARRADORA: Y una parte de esa gente se va a quedar en la puerta.
+[00:10.41] NARRADORA: Por la hora.
+[00:12.40] NARRADORA: Por el espacio.
+[00:14.08] NARRADORA: O por una descarga que nunca debió hacer.
    [VISUAL] Cortinilla de marca.
-[00:15.91] (sin narración · 2.4 s)
+[00:16.78] (sin narración · 2.4 s)
 
 ## INTRODUCCIÓN
 
    [VISUAL] Tarjeta de embarque + semáforo de certeza de la marca.
-[00:18.31] NARRADORA: Estás en Sal y Asfalto, y aquí manda el semáforo: lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rojo.
-[00:27.27] NARRADORA: Hoy hacemos la lista de abordaje: siete comprobaciones para que a medianoche solo tengas que darle a play.
+[00:19.18] NARRADORA: Estás en Sal y Asfalto, y aquí manda el semáforo: lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rojo.
+[00:26.94] NARRADORA: Hoy hacemos la lista de abordaje: siete comprobaciones para que a medianoche solo tengas que darle a play.
 
 ## 1 · PLATAFORMA
 
-[00:34.09] NARRADORA: Comprobación uno: la plataforma.
-[00:36.65] NARRADORA: GTA 6 sale solo en PlayStation 5 y en Xbox Series X y Series S.
-[00:42.89] NARRADORA: No hay versión para PS4 ni para Xbox One.
-[00:46.89] NARRADORA: Y tampoco para PC, por ahora:
-[00:49.37] NARRADORA: Take-Two no ha anunciado fecha, y su director ejecutivo dijo que la prioridad son las consolas.
-[00:55.21] NARRADORA: Para móvil, ninguna.
-[00:57.32] NARRADORA: Si ves un GTA 6 para Android o un instalador para PC, no es un adelanto: es una trampa.
-[01:04.20] NARRADORA: Le dedicamos un video completo, porque ya hay malware robando cuentas con ese anzuelo.
+[00:34.30] NARRADORA: Comprobación uno: la plataforma.
+[00:36.34] NARRADORA: GTA 6 sale solo en PlayStation 5 y en Xbox Series X y Series S.
+[00:42.70] NARRADORA: No hay versión para PS4 ni para Xbox One.
+[00:46.30] NARRADORA: Y tampoco para PC, por ahora:
+[00:47.92] NARRADORA: Take-Two no ha anunciado fecha, y su director ejecutivo dijo que la prioridad son las consolas.
+[00:53.74] NARRADORA: Para móvil, ninguna.
+[00:55.47] NARRADORA: Si ves un GTA 6 para Android o un instalador para PC, no es un adelanto: es una trampa.
+[01:01.63] NARRADORA: Le dedicamos un video completo, porque ya hay malware robando cuentas con ese anzuelo.
 
 ## 2 · ESPACIO
 
-[01:10.25] NARRADORA: Dos: el espacio.
-[01:11.93] NARRADORA: Las tiendas marcan alrededor de 210 GB.
-[01:15.29] NARRADORA: En Xbox, la ficha dice 209,86.
-[01:19.75] NARRADORA: Ojo con esto: un PS5 original de 825 GB deja libres unos 667.
-[01:28.15] NARRADORA: Un Series S de 512, apenas unos 364: ahí GTA 6 se come más de la mitad del disco.
-[01:37.13] NARRADORA: Si tienes un Series X, vas más holgado.
-[01:39.93] NARRADORA: Haz espacio hoy, no a las once y cincuenta y nueve.
+[01:08.10] NARRADORA: Dos: el espacio.
+[01:09.94] NARRADORA: Las tiendas marcan alrededor de 210 GB.
+[01:13.46] NARRADORA: En Xbox, la ficha dice 209,86.
+[01:18.26] NARRADORA: Ojo con esto: un PS5 original de 825 GB deja libres unos 667.
+[01:24.74] NARRADORA: Un Series S de 512, apenas unos 364: ahí GTA 6 se come más de la mitad del disco.
+[01:32.70] NARRADORA: Si tienes un Series X, vas más holgado.
+[01:35.42] NARRADORA: Haz espacio hoy, no a las once y cincuenta y nueve.
 
 ## 3 · PRECARGA
 
-[01:43.78] NARRADORA: Tres: la precarga.
-[01:45.46] NARRADORA: Ya está disponible en las dos consolas.
-[01:48.02] NARRADORA: Y según la prensa, a las consolas con el juego precargado ya llegó una primera actualización, la uno punto cero cero dos.
-[01:56.60] NARRADORA: Si compraste en digital, deja la consola en modo reposo con las descargas activadas: así, cuando llegue la hora, solo faltará que se desbloquee.
+[01:39.14] NARRADORA: Tres: la precarga.
+[01:40.66] NARRADORA: Ya está disponible en las dos consolas.
+[01:43.30] NARRADORA: Y según la prensa, a las consolas con el juego precargado ya llegó una primera actualización, la uno punto cero cero dos.
+[01:51.20] NARRADORA: Si compraste en digital, deja la consola en modo reposo con las descargas activadas: así, cuando llegue la hora, solo faltará que se desbloquee.
 
 ## 4 · HORA
 
-[02:06.76] NARRADORA: Cuatro: la hora.
-[02:08.12] NARRADORA: Rockstar confirmó que el juego se desbloquea a la medianoche, hora local.
-[02:12.52] NARRADORA: Eso significa que no hay un único botón global.
-[02:16.00] NARRADORA: En España se abre a las cero horas del jueves.
-[02:19.04] NARRADORA: En Argentina y Chile, a su medianoche, cuando en España ya son las cuatro de la mañana.
-[02:24.56] NARRADORA: En Colombia, Perú y Ecuador, a su medianoche, que son las seis en España.
-[02:30.16] NARRADORA: Y en el centro de México, a la medianoche local: las siete de la mañana en Madrid.
-[02:36.16] NARRADORA: Un detalle curioso: en Estados Unidos abre a la medianoche de la costa este, así que en la costa oeste se podrá jugar desde las nueve de la noche del miércoles.
-[02:46.96] NARRADORA: Si una tabla en internet te dice otra cosa, revisa la ficha de tu tienda: esa es la que manda.
+[02:00.92] NARRADORA: Cuatro: la hora.
+[02:03.72] NARRADORA: Rockstar confirmó que el juego se desbloquea a la medianoche, hora local.
+[02:08.52] NARRADORA: Eso significa que no hay un único botón global.
+[02:12.24] NARRADORA: En España se abre a las cero horas del jueves.
+[02:14.80] NARRADORA: En Argentina y Chile, a su medianoche, cuando en España ya son las cuatro de la mañana.
+[02:19.76] NARRADORA: En Colombia, Perú y Ecuador, a su medianoche, que son las seis en España.
+[02:25.71] NARRADORA: Y en el centro de México, a la medianoche local: las siete de la mañana en Madrid.
+[02:30.43] NARRADORA: Un detalle curioso: en Estados Unidos abre a la medianoche de la costa este, así que en la costa oeste se podrá jugar desde las nueve de la noche del miércoles.
+[02:40.80] NARRADORA: Si una tabla en internet te dice otra cosa, revisa la ficha de tu tienda: esa es la que manda.
 
 ## 5 · PRECIO
 
-[02:53.74] NARRADORA: Cinco: el precio.
-[02:55.26] NARRADORA: En dólares, la edición estándar cuesta 79,99, y la Ultimate, 99,99.
-[03:03.47] NARRADORA: En la tienda de Xbox de México aparece a 1.499 pesos la estándar, y en la de Colombia, a 339.900 pesos.
-[03:14.62] NARRADORA: En PlayStation Store, según el país, el precio sale en moneda local o en dólares, y la prensa ha visto cifras distintas.
-[03:22.62] NARRADORA: Antes de pagar, revisa el total con impuestos en tu tienda.
-[03:26.94] NARRADORA: Y un consejo de bolsillo: si alguien te ofrece GTA 6 mucho más barato fuera de una tienda oficial, desconfía.
-[03:34.70] NARRADORA: Te puedes quedar sin juego y sin dinero.
+[02:47.65] NARRADORA: Cinco: el precio.
+[02:49.17] NARRADORA: En dólares, la edición estándar cuesta 79,99, y la Ultimate, 99,99.
+[02:58.00] NARRADORA: En la tienda de Xbox de México aparece a 1.499 pesos la estándar, y en la de Colombia, a 339.900 pesos.
+[03:07.43] NARRADORA: En PlayStation Store, según el país, el precio sale en moneda local o en dólares, y la prensa ha visto cifras distintas.
+[03:14.55] NARRADORA: Antes de pagar, revisa el total con impuestos en tu tienda.
+[03:17.92] NARRADORA: Y un consejo de bolsillo: si alguien te ofrece GTA 6 mucho más barato fuera de una tienda oficial, desconfía.
+[03:24.96] NARRADORA: Te puedes quedar sin juego y sin dinero.
 
 ## 6 · IDIOMA
 
-[03:37.75] NARRADORA: Seis: el idioma.
-[03:39.35] NARRADORA: GTA 6 no tiene doblaje al español: las voces están solo en inglés, como en toda la saga.
-[03:46.55] NARRADORA: Lo que sí trae son textos y subtítulos en dos variantes: español de México, pensado para Latinoamérica, y español de España.
-[03:55.51] NARRADORA: Así que, si vas a jugar con alguien que no lee rápido, prepárate para ser el narrador oficial de la sala.
+[03:28.55] NARRADORA: Seis: el idioma.
+[03:29.60] NARRADORA: GTA 6 no tiene doblaje al español: las voces están solo en inglés, como en toda la saga.
+[03:35.19] NARRADORA: Lo que sí trae son textos y subtítulos en dos variantes: español de México, pensado para Latinoamérica, y español de España.
+[03:43.74] NARRADORA: Así que, si vas a jugar con alguien que no lee rápido, prepárate para ser el narrador oficial de la sala.
 
 ## 7 · ONLINE
 
-[04:02.48] NARRADORA: Siete: el modo online.
-[04:04.48] NARRADORA: Rockstar describe GTA 6 como una experiencia para un jugador, y no ha dado fecha para un nuevo online.
-[04:11.52] NARRADORA: GTA Online, el de GTA 5, sigue funcionando:
-[04:15.77] NARRADORA: Take-Two confirmó que lo seguirá actualizando.
-[04:18.89] NARRADORA: ¿Llegará un online a Leonida?
-[04:20.81] NARRADORA: Es probable que algún día.
-[04:22.65] NARRADORA: Pero hoy es una pregunta sin respuesta, y aquí no te la vamos a vender como noticia.
+[03:50.14] NARRADORA: Siete: el modo online.
+[03:51.82] NARRADORA: Rockstar describe GTA 6 como una experiencia para un jugador, y no ha dado fecha para un nuevo online.
+[03:58.22] NARRADORA: GTA Online, el de GTA 5, sigue funcionando:
+[04:02.23] NARRADORA: Take-Two confirmó que lo seguirá actualizando.
+[04:05.21] NARRADORA: ¿Llegará un online a Leonida?
+[04:08.25] NARRADORA: Es probable que algún día.
+[04:11.23] NARRADORA: Pero hoy es una pregunta sin respuesta, y aquí no te la vamos a vender como noticia.
 
 ## CIERRE
 
-[04:28.05] NARRADORA: Recapitulemos: consola correcta, doscientos diez gigas libres, precarga hecha, tu hora local clara, el precio revisado, subtítulos en tu español y cero expectativas de online el primer día.
-[04:41.33] NARRADORA: Si todo eso está en verde, estás listo para abordar.
+[04:17.30] NARRADORA: Recapitulemos: consola correcta, doscientos diez gigas libres, precarga hecha, tu hora local clara, el precio revisado, subtítulos en tu español y cero expectativas de online el primer día.
+[04:28.10] NARRADORA: Si todo eso está en verde, estás listo para abordar.
 
 ## LLAMADA A LA ACCIÓN
 
-[04:44.79] NARRADORA: En el próximo video abrimos el mapa de Leonida, región por región, separando lo que Rockstar mostró de lo que todavía es pura deducción.
-[04:53.67] NARRADORA: Y si quieres que lleguemos juntos a la medianoche, suscríbete: el jueves te contamos qué cambió.
-[05:00.25] NARRADORA: Nos vemos en Leonida.
+[04:31.93] NARRADORA: En el próximo video abrimos el mapa de Leonida, región por región, separando lo que Rockstar mostró de lo que todavía es pura deducción.
+[04:39.85] NARRADORA: Y si quieres que lleguemos juntos a la medianoche, suscríbete: el jueves te contamos qué cambió.
+[04:45.05] NARRADORA: Nos vemos en Leonida.
