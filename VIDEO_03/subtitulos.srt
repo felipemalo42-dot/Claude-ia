@@ -1,0 +1,273 @@
+1
+00:00:00,250 --> 00:00:04,546
+Escribe “GTA 6 descargar PC” en un
+buscador y vas a encontrar botones
+
+2
+00:00:04,546 --> 00:00:08,032
+gigantes, contadores de descargas y
+comentarios felices.
+
+3
+00:00:08,362 --> 00:00:09,253
+Todo falso.
+
+4
+00:00:09,583 --> 00:00:13,619
+Y esta semana, empresas de ciberseguridad
+encontraron lo que hay detrás.
+
+5
+00:00:16,349 --> 00:00:17,658
+Esto es Caimán Neón.
+
+6
+00:00:17,988 --> 00:00:21,413
+Hoy no hablamos de Leonida: hablamos de la
+trampa que la rodea.
+
+7
+00:00:21,743 --> 00:00:24,195
+Y para eso me acompaña nuestra analista.
+
+8
+00:00:24,525 --> 00:00:24,966
+Hola.
+
+9
+00:00:25,296 --> 00:00:28,408
+Vamos a abrir el archivo paso a paso, sin
+tecnicismos.
+
+10
+00:00:28,738 --> 00:00:31,347
+Primero, el dato que desarma toda la
+estafa.
+
+11
+00:00:31,677 --> 00:00:36,854
+GTA 6 solo existe en PlayStation 5 y en
+Xbox Series X y Series S.
+
+12
+00:00:37,184 --> 00:00:39,276
+No hay versión de PC anunciada.
+
+13
+00:00:39,605 --> 00:00:42,080
+Y no hay versión para Android ni para
+iPhone.
+
+14
+00:00:42,410 --> 00:00:46,375
+Cualquier archivo que diga lo contrario
+está mintiendo desde el nombre.
+
+15
+00:00:46,705 --> 00:00:48,359
+¿Y por qué cae tanta gente?
+
+16
+00:00:48,739 --> 00:00:51,704
+Porque el anzuelo se aprovecha de tres
+cosas reales.
+
+17
+00:00:52,034 --> 00:00:55,533
+Hay millones de jugadores sin PS5 ni Xbox
+Series.
+
+18
+00:00:55,863 --> 00:00:57,202
+La espera duró años.
+
+19
+00:00:57,532 --> 00:01:00,028
+Y en internet abundan los trucos para
+todo.
+
+20
+00:01:00,358 --> 00:01:04,077
+La estafa no vende un juego: vende la
+ilusión de no quedarte afuera.
+
+21
+00:01:04,407 --> 00:01:06,191
+El anzuelo tiene tres piezas.
+
+22
+00:01:06,521 --> 00:01:08,582
+Una página que imita a una tienda.
+
+23
+00:01:08,912 --> 00:01:10,310
+Un botón de descarga.
+
+24
+00:01:10,640 --> 00:01:12,813
+Y una excusa para que bajes la guardia.
+
+25
+00:01:13,143 --> 00:01:18,625
+La empresa ESET detectó un archivo llamado
+gta6_installer.exe, que en realidad
+
+26
+00:01:18,625 --> 00:01:22,983
+transporta Vidar: un programa diseñado
+para robar información.
+
+27
+00:01:23,313 --> 00:01:27,791
+Y la firma Cynet encontró otra variante,
+con un ladrón de datos llamado WARDEN.
+
+28
+00:01:28,121 --> 00:01:29,823
+¿Y qué te pide el instalador?
+
+29
+00:01:30,203 --> 00:01:34,805
+Justo lo que un juego legítimo nunca te
+pediría: ejecutarlo como administrador,
+
+30
+00:01:34,805 --> 00:01:39,232
+ignorar la advertencia de seguridad y
+agregar una excepción en el antivirus.
+
+31
+00:01:39,562 --> 00:01:43,055
+En otras palabras: te pide que apagues la
+alarma antes de entrar.
+
+32
+00:01:43,385 --> 00:01:47,892
+Según los reportes, este tipo de programa
+busca las contraseñas guardadas en el
+
+33
+00:01:47,892 --> 00:01:52,685
+navegador, las cookies de sesión, cuentas
+de Steam y de Roblox, y datos de monederos
+
+34
+00:01:52,685 --> 00:01:53,655
+de criptomonedas.
+
+35
+00:01:53,985 --> 00:01:58,385
+Las cookies son lo más delicado: con
+ellas, alguien puede entrar a tu cuenta
+
+36
+00:01:58,385 --> 00:01:59,774
+sin saber tu contraseña.
+
+37
+00:02:00,104 --> 00:02:02,968
+O sea que no pierdes un juego: pierdes tus
+cuentas.
+
+38
+00:02:03,298 --> 00:02:05,272
+No siempre es un ejecutable.
+
+39
+00:02:05,602 --> 00:02:08,565
+También circulan otras versiones del mismo
+truco.
+
+40
+00:02:08,895 --> 00:02:12,840
+Páginas que te piden completar encuestas
+antes de mostrar el enlace.
+
+41
+00:02:13,170 --> 00:02:17,251
+Falsos accesos anticipados o betas que
+exigen un pago por adelantado.
+
+42
+00:02:17,581 --> 00:02:21,898
+Y en Android, archivos APK que piden
+permisos que ningún juego necesita.
+
+43
+00:02:22,228 --> 00:02:26,559
+Si ya ejecutaste uno de estos archivos, no
+entres en pánico, pero actúa hoy.
+
+44
+00:02:26,889 --> 00:02:30,303
+Desconecta el equipo de internet y
+analízalo con tu antivirus.
+
+45
+00:02:30,633 --> 00:02:34,751
+Cambia tus contraseñas desde otro
+dispositivo limpio, empezando por el
+
+46
+00:02:34,751 --> 00:02:37,398
+correo, y cierra todas las sesiones
+abiertas.
+
+47
+00:02:37,728 --> 00:02:39,835
+Activa la verificación en dos pasos.
+
+48
+00:02:40,165 --> 00:02:44,528
+Y si escribiste la frase de recuperación
+de una billetera de criptomonedas,
+
+49
+00:02:44,528 --> 00:02:49,472
+considérala comprometida: mueve los fondos
+a una billetera nueva desde un dispositivo
+
+50
+00:02:49,472 --> 00:02:49,879
+limpio.
+
+51
+00:02:50,209 --> 00:02:52,275
+Regla rápida para la próxima vez.
+
+52
+00:02:52,605 --> 00:02:56,852
+Si no viene de PlayStation Store, de
+Microsoft Store o de una tienda de
+
+53
+00:02:56,852 --> 00:02:58,228
+confianza, no es GTA 6.
+
+54
+00:02:58,558 --> 00:03:01,242
+Si te pide desactivar el antivirus, es
+malware.
+
+55
+00:03:01,572 --> 00:03:03,727
+Y si es gratis, el producto eres tú.
+
+56
+00:03:04,057 --> 00:03:08,531
+Comparte este video con ese primo que
+siempre encuentra “versiones especiales”.
+
+57
+00:03:08,861 --> 00:03:13,520
+Y si quieres jugar GTA 6 de verdad, en la
+descripción tienes nuestra guía con la
+
+58
+00:03:13,520 --> 00:03:14,452
+hora de tu país.
+
+59
+00:03:14,782 --> 00:03:19,701
+Suscríbete a Caimán Neón: aquí, la única
+descarga que recomendamos es la oficial.

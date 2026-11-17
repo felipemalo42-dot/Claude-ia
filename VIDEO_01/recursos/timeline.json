@@ -1,0 +1,455 @@
+{
+ "total": 269.511,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.25,
+   "end": 15.446,
+   "sents": [
+    {
+     "text": "El jueves diecinueve de noviembre, a la medianoche, millones de consolas van a intentar entrar a Leonida al mismo tiempo.",
+     "start": 0.25,
+     "end": 6.897,
+     "voice": "host"
+    },
+    {
+     "text": "Y una parte de esa gente se va a quedar en la puerta.",
+     "start": 7.227,
+     "end": 10.103,
+     "voice": "host"
+    },
+    {
+     "text": "Por la hora.",
+     "start": 10.433,
+     "end": 11.15,
+     "voice": "host"
+    },
+    {
+     "text": "Por el espacio.",
+     "start": 11.48,
+     "end": 12.432,
+     "voice": "host"
+    },
+    {
+     "text": "O por una descarga que nunca debió hacer.",
+     "start": 12.762,
+     "end": 15.116,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  },
+  {
+   "i": 1,
+   "start": 15.446,
+   "end": 17.846,
+   "sents": [],
+   "id": "b1"
+  },
+  {
+   "i": 2,
+   "start": 17.846,
+   "end": 30.49,
+   "sents": [
+    {
+     "text": "Esto es Caimán Neón.",
+     "start": 17.846,
+     "end": 19.156,
+     "voice": "host"
+    },
+    {
+     "text": "Aquí lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rosado.",
+     "start": 19.486,
+     "end": 24.008,
+     "voice": "host"
+    },
+    {
+     "text": "Hoy hacemos la lista de abordaje: siete comprobaciones para que a medianoche solo tengas que darle a play.",
+     "start": 24.338,
+     "end": 30.16,
+     "voice": "host"
+    }
+   ],
+   "id": "b2"
+  },
+  {
+   "i": 3,
+   "start": 30.49,
+   "end": 61.873,
+   "sents": [
+    {
+     "text": "Comprobación uno: la plataforma.",
+     "start": 30.49,
+     "end": 32.572,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 sale solo en PlayStation 5 y en Xbox Series X y Series S.",
+     "start": 32.902,
+     "end": 37.825,
+     "voice": "host"
+    },
+    {
+     "text": "No hay versión para PS4 ni para Xbox One.",
+     "start": 38.155,
+     "end": 41.184,
+     "voice": "host"
+    },
+    {
+     "text": "Y tampoco para PC, por ahora:",
+     "start": 41.514,
+     "end": 43.413,
+     "voice": "host"
+    },
+    {
+     "text": "Take-Two no ha anunciado fecha, y su director ejecutivo dijo que la prioridad son las consolas.",
+     "start": 43.693,
+     "end": 49.197,
+     "voice": "host"
+    },
+    {
+     "text": "Para móvil, ninguna.",
+     "start": 49.527,
+     "end": 50.874,
+     "voice": "host"
+    },
+    {
+     "text": "Si ves un GTA 6 para Android o un instalador para PC, no es un adelanto: es una trampa.",
+     "start": 51.204,
+     "end": 56.348,
+     "voice": "host"
+    },
+    {
+     "text": "Le dedicamos un video completo, porque ya hay malware robando cuentas con ese anzuelo.",
+     "start": 56.678,
+     "end": 61.543,
+     "voice": "host"
+    }
+   ],
+   "id": "b3"
+  },
+  {
+   "i": 4,
+   "start": 61.873,
+   "end": 91.468,
+   "sents": [
+    {
+     "text": "Dos: el espacio.",
+     "start": 61.873,
+     "end": 62.993,
+     "voice": "host"
+    },
+    {
+     "text": "Las tiendas marcan alrededor de 210 GB.",
+     "start": 63.323,
+     "end": 66.446,
+     "voice": "host"
+    },
+    {
+     "text": "En Xbox, la ficha dice 209,86.",
+     "start": 66.776,
+     "end": 70.355,
+     "voice": "host"
+    },
+    {
+     "text": "Ojo con esto: un PS5 original de 825 GB deja libres unos 667.",
+     "start": 70.685,
+     "end": 77.885,
+     "voice": "host"
+    },
+    {
+     "text": "Un Series S de 512, apenas unos 364: ahí GTA 6 se come más de la mitad del disco.",
+     "start": 78.215,
+     "end": 85.279,
+     "voice": "host"
+    },
+    {
+     "text": "Si tienes un Series X, vas más holgado.",
+     "start": 85.609,
+     "end": 88.104,
+     "voice": "host"
+    },
+    {
+     "text": "Haz espacio hoy, no a las once y cincuenta y nueve.",
+     "start": 88.434,
+     "end": 91.138,
+     "voice": "host"
+    }
+   ],
+   "id": "b4"
+  },
+  {
+   "i": 5,
+   "start": 91.468,
+   "end": 111.358,
+   "sents": [
+    {
+     "text": "Tres: la precarga.",
+     "start": 91.468,
+     "end": 92.652,
+     "voice": "host"
+    },
+    {
+     "text": "Ya está disponible en las dos consolas.",
+     "start": 92.982,
+     "end": 95.188,
+     "voice": "host"
+    },
+    {
+     "text": "Y según la prensa, a las consolas con el juego precargado ya llegó una primera actualización, la uno punto cero cero dos.",
+     "start": 95.517,
+     "end": 102.52,
+     "voice": "host"
+    },
+    {
+     "text": "Si compraste en digital, deja la consola en modo reposo con las descargas activadas: así, cuando llegue la hora, solo faltará que se desbloquee.",
+     "start": 102.85,
+     "end": 111.028,
+     "voice": "host"
+    }
+   ],
+   "id": "b5"
+  },
+  {
+   "i": 6,
+   "start": 111.358,
+   "end": 152.2,
+   "sents": [
+    {
+     "text": "Cuatro: la hora.",
+     "start": 111.358,
+     "end": 112.388,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar confirmó que el juego se desbloquea a la medianoche, hora local.",
+     "start": 112.718,
+     "end": 116.512,
+     "voice": "host"
+    },
+    {
+     "text": "Eso significa que no hay un único botón global.",
+     "start": 116.842,
+     "end": 119.67,
+     "voice": "host"
+    },
+    {
+     "text": "En España se abre a las cero horas del jueves.",
+     "start": 120.0,
+     "end": 122.523,
+     "voice": "host"
+    },
+    {
+     "text": "En Argentina y Chile, a su medianoche, cuando en España ya son las cuatro de la mañana.",
+     "start": 122.853,
+     "end": 127.678,
+     "voice": "host"
+    },
+    {
+     "text": "En Colombia, Perú y Ecuador, a su medianoche, que son las seis en España.",
+     "start": 128.008,
+     "end": 132.01,
+     "voice": "host"
+    },
+    {
+     "text": "Y en el centro de México, a la medianoche local: las siete de la mañana en Madrid.",
+     "start": 132.34,
+     "end": 136.75,
+     "voice": "host"
+    },
+    {
+     "text": "Un detalle curioso: en Estados Unidos abre a la medianoche de la costa este, así que en la costa oeste se podrá jugar desde las nueve de la noche del miércoles.",
+     "start": 137.08,
+     "end": 146.165,
+     "voice": "host"
+    },
+    {
+     "text": "Si una tabla en internet te dice otra cosa, revisa la ficha de tu tienda: esa es la que manda.",
+     "start": 146.495,
+     "end": 151.87,
+     "voice": "host"
+    }
+   ],
+   "id": "b6"
+  },
+  {
+   "i": 7,
+   "start": 152.2,
+   "end": 190.801,
+   "sents": [
+    {
+     "text": "Cinco: el precio.",
+     "start": 152.2,
+     "end": 153.36,
+     "voice": "host"
+    },
+    {
+     "text": "En dólares, la edición estándar cuesta 79,99, y la Ultimate, 99,99.",
+     "start": 153.69,
+     "end": 160.801,
+     "voice": "host"
+    },
+    {
+     "text": "En la tienda de Xbox de México aparece a 1.499 pesos la estándar, y en la de Colombia, a 339.900 pesos.",
+     "start": 161.131,
+     "end": 170.367,
+     "voice": "host"
+    },
+    {
+     "text": "En PlayStation Store, según el país, el precio sale en moneda local o en dólares, y la prensa ha visto cifras distintas.",
+     "start": 170.697,
+     "end": 177.354,
+     "voice": "host"
+    },
+    {
+     "text": "Antes de pagar, revisa el total con impuestos en tu tienda.",
+     "start": 177.684,
+     "end": 181.011,
+     "voice": "host"
+    },
+    {
+     "text": "Y un consejo de bolsillo: si alguien te ofrece GTA 6 mucho más barato fuera de una tienda oficial, desconfía.",
+     "start": 181.341,
+     "end": 187.85,
+     "voice": "host"
+    },
+    {
+     "text": "Te puedes quedar sin juego y sin dinero.",
+     "start": 188.18,
+     "end": 190.471,
+     "voice": "host"
+    }
+   ],
+   "id": "b7"
+  },
+  {
+   "i": 8,
+   "start": 190.801,
+   "end": 211.462,
+   "sents": [
+    {
+     "text": "Seis: el idioma.",
+     "start": 190.801,
+     "end": 191.854,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 no tiene doblaje al español: las voces están solo en inglés, como en toda la saga.",
+     "start": 192.184,
+     "end": 197.45,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sí trae son textos y subtítulos en dos variantes: español de México, pensado para Latinoamérica, y español de España.",
+     "start": 197.78,
+     "end": 205.11,
+     "voice": "host"
+    },
+    {
+     "text": "Así que, si vas a jugar con alguien que no lee rápido, prepárate para ser el narrador oficial de la sala.",
+     "start": 205.44,
+     "end": 211.132,
+     "voice": "host"
+    }
+   ],
+   "id": "b8"
+  },
+  {
+   "i": 9,
+   "start": 211.462,
+   "end": 234.787,
+   "sents": [
+    {
+     "text": "Siete: el modo online.",
+     "start": 211.462,
+     "end": 212.911,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar describe GTA 6 como una experiencia para un jugador, y no ha dado fecha para un nuevo online.",
+     "start": 213.241,
+     "end": 219.118,
+     "voice": "host"
+    },
+    {
+     "text": "GTA Online, el de GTA 5, sigue funcionando:",
+     "start": 219.448,
+     "end": 222.535,
+     "voice": "host"
+    },
+    {
+     "text": "Take-Two confirmó que lo seguirá actualizando.",
+     "start": 222.815,
+     "end": 225.402,
+     "voice": "host"
+    },
+    {
+     "text": "¿Llegará un online a Leonida?",
+     "start": 225.732,
+     "end": 227.45,
+     "voice": "host"
+    },
+    {
+     "text": "Es probable que algún día.",
+     "start": 227.83,
+     "end": 229.48,
+     "voice": "host"
+    },
+    {
+     "text": "Pero hoy es una pregunta sin respuesta, y aquí no te la vamos a vender como noticia.",
+     "start": 229.81,
+     "end": 234.457,
+     "voice": "host"
+    }
+   ],
+   "id": "b9"
+  },
+  {
+   "i": 10,
+   "start": 234.787,
+   "end": 249.111,
+   "sents": [
+    {
+     "text": "Recapitulemos: consola correcta, doscientos diez gigas libres, precarga hecha, tu hora local clara, el precio revisado, subtítulos en tu español y cero expectativas de online el primer día.",
+     "start": 234.787,
+     "end": 245.618,
+     "voice": "host"
+    },
+    {
+     "text": "Si todo eso está en verde, estás listo para abordar.",
+     "start": 245.948,
+     "end": 248.781,
+     "voice": "host"
+    }
+   ],
+   "id": "b10"
+  },
+  {
+   "i": 11,
+   "start": 249.111,
+   "end": 269.111,
+   "sents": [
+    {
+     "text": "En el próximo video abrimos el mapa de Leonida, región por región, separando lo que Rockstar mostró de lo que todavía es pura deducción.",
+     "start": 249.111,
+     "end": 256.827,
+     "voice": "host"
+    },
+    {
+     "text": "Y si quieres que lleguemos juntos a la medianoche, suscríbete: el jueves te contamos qué cambió.",
+     "start": 257.157,
+     "end": 262.507,
+     "voice": "host"
+    },
+    {
+     "text": "Nos vemos en Leonida.",
+     "start": 262.837,
+     "end": 264.183,
+     "voice": "host"
+    }
+   ],
+   "id": "b11"
+  }
+ ],
+ "lufs_in": -17.53
+}

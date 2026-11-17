@@ -1,0 +1,365 @@
+{
+ "total": 211.815,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.25,
+   "end": 14.085,
+   "sents": [
+    {
+     "text": "Rockstar todavía no ha publicado un mapa completo de Leonida.",
+     "start": 0.25,
+     "end": 3.674,
+     "voice": "host"
+    },
+    {
+     "text": "Pero sí dejó pistas: seis nombres, dos ubicaciones confirmadas y un estado real que todos reconocemos.",
+     "start": 4.004,
+     "end": 10.147,
+     "voice": "host"
+    },
+    {
+     "text": "Hoy armamos el rompecabezas, sin inventar ni una pieza.",
+     "start": 10.477,
+     "end": 13.755,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  },
+  {
+   "i": 1,
+   "start": 14.085,
+   "end": 16.485,
+   "sents": [],
+   "id": "b1"
+  },
+  {
+   "i": 2,
+   "start": 16.485,
+   "end": 33.313,
+   "sents": [
+    {
+     "text": "Esto es Caimán Neón.",
+     "start": 16.485,
+     "end": 17.794,
+     "voice": "host"
+    },
+    {
+     "text": "Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad.",
+     "start": 18.124,
+     "end": 24.032,
+     "voice": "host"
+    },
+    {
+     "text": "Y una advertencia importante: el mapa que vas a ver es la Florida real, no el mapa del juego.",
+     "start": 24.362,
+     "end": 29.548,
+     "voice": "host"
+    },
+    {
+     "text": "Lo usamos porque Leonida es, claramente, su parodia.",
+     "start": 29.878,
+     "end": 32.983,
+     "voice": "host"
+    }
+   ],
+   "id": "b2"
+  },
+  {
+   "i": 3,
+   "start": 33.313,
+   "end": 49.486,
+   "sents": [
+    {
+     "text": "Primero, el tamaño.",
+     "start": 33.313,
+     "end": 34.634,
+     "voice": "host"
+    },
+    {
+     "text": "Aaron Garbut, de Rockstar, le dijo a la revista Game Informer que el mapa es el doble de grande que el de GTA 5.",
+     "start": 34.964,
+     "end": 41.345,
+     "voice": "host"
+    },
+    {
+     "text": "No sabemos si habla de superficie de tierra, de área total o de contenido, así que tómalo como una escala, no como una medida exacta.",
+     "start": 41.675,
+     "end": 49.156,
+     "voice": "host"
+    }
+   ],
+   "id": "b3"
+  },
+  {
+   "i": 4,
+   "start": 49.486,
+   "end": 73.86,
+   "sents": [
+    {
+     "text": "Primera parada: el extremo norte.",
+     "start": 49.486,
+     "end": 51.578,
+     "voice": "host"
+    },
+    {
+     "text": "La web de Rockstar ubica el Parque Nacional Mount Kalaga contra la frontera norte de Leonida, y lo describe como el borde salvaje del estado: caza, pesca y caminos para todoterreno, lejos del caos de Vice City.",
+     "start": 51.908,
+     "end": 63.553,
+     "voice": "host"
+    },
+    {
+     "text": "Curiosamente, la Florida real no tiene montañas.",
+     "start": 63.883,
+     "end": 66.973,
+     "voice": "host"
+    },
+    {
+     "text": "Su punto más alto, Britton Hill, mide unos ciento cinco metros... y también está pegado a la frontera norte.",
+     "start": 67.303,
+     "end": 73.53,
+     "voice": "host"
+    }
+   ],
+   "id": "b4"
+  },
+  {
+   "i": 5,
+   "start": 73.86,
+   "end": 96.985,
+   "sents": [
+    {
+     "text": "Segunda parada, hacia el oeste:",
+     "start": 73.86,
+     "end": 75.793,
+     "voice": "host"
+    },
+    {
+     "text": "Port Gellhorn.",
+     "start": 76.073,
+     "end": 76.852,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar lo llama la costa olvidada de Leonida: un antiguo destino de vacaciones lleno de moteles baratos, atracciones cerradas y centros comerciales vacíos.",
+     "start": 77.182,
+     "end": 86.418,
+     "voice": "host"
+    },
+    {
+     "text": "La comunidad lo asocia con Panama City y el noroeste de Florida, la zona conocida como el Panhandle.",
+     "start": 86.748,
+     "end": 92.545,
+     "voice": "host"
+    },
+    {
+     "text": "Ojo:",
+     "start": 92.875,
+     "end": 93.406,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar no ha dicho en qué punto exacto del mapa está.",
+     "start": 93.686,
+     "end": 96.655,
+     "voice": "host"
+    }
+   ],
+   "id": "b5"
+  },
+  {
+   "i": 6,
+   "start": 96.985,
+   "end": 121.199,
+   "sents": [
+    {
+     "text": "Tercera parada: el corazón del estado.",
+     "start": 96.985,
+     "end": 99.272,
+     "voice": "host"
+    },
+    {
+     "text": "Según Rockstar, Ambrosia es un pueblo industrial en el centro de Leonida, construido alrededor de una refinería de azúcar, donde la vieja industria y los viejos valores siguen mandando, cueste lo que cueste.",
+     "start": 99.602,
+     "end": 110.879,
+     "voice": "host"
+    },
+    {
+     "text": "La pista real es casi un regalo:",
+     "start": 111.209,
+     "end": 113.306,
+     "voice": "host"
+    },
+    {
+     "text": "Clewiston, a orillas del lago Okeechobee, se promociona como la ciudad más dulce de Estados Unidos por su industria azucarera.",
+     "start": 113.586,
+     "end": 120.869,
+     "voice": "host"
+    }
+   ],
+   "id": "b6"
+  },
+  {
+   "i": 7,
+   "start": 121.199,
+   "end": 142.146,
+   "sents": [
+    {
+     "text": "Bajamos al sur, y la carretera empieza a perderse entre el agua.",
+     "start": 121.199,
+     "end": 124.865,
+     "voice": "host"
+    },
+    {
+     "text": "Grassrivers es el humedal de Leonida, inspirado en los Everglades: el famoso río de hierba, un pantano gigantesco que avanza despacio hacia el mar.",
+     "start": 125.195,
+     "end": 133.471,
+     "voice": "host"
+    },
+    {
+     "text": "Ahí viven los caimanes que vimos desde el primer tráiler.",
+     "start": 133.801,
+     "end": 136.834,
+     "voice": "host"
+    },
+    {
+     "text": "Y según Game Informer, Leonida tendrá más de ciento setenta especies de animales.",
+     "start": 137.164,
+     "end": 141.816,
+     "voice": "host"
+    }
+   ],
+   "id": "b7"
+  },
+  {
+   "i": 8,
+   "start": 142.146,
+   "end": 157.572,
+   "sents": [
+    {
+     "text": "Quinta parada: la estrella.",
+     "start": 142.146,
+     "end": 143.796,
+     "voice": "host"
+    },
+    {
+     "text": "Vice City, la versión de Miami que Rockstar parodia desde el año dos mil dos.",
+     "start": 144.126,
+     "end": 148.258,
+     "voice": "host"
+    },
+    {
+     "text": "Playas, rascacielos y una vida nocturna que no se apaga.",
+     "start": 148.588,
+     "end": 151.84,
+     "voice": "host"
+    },
+    {
+     "text": "Es el centro urbano de Leonida, y el lugar donde casi todo el marketing ha puesto la cámara.",
+     "start": 152.17,
+     "end": 157.242,
+     "voice": "host"
+    }
+   ],
+   "id": "b8"
+  },
+  {
+   "i": 9,
+   "start": 157.572,
+   "end": 172.824,
+   "sents": [
+    {
+     "text": "Y la última parada: las Leonida Keys, el reflejo de los Cayos de Florida, esa cadena de islas unidas por puentes sobre el mar.",
+     "start": 157.572,
+     "end": 164.931,
+     "voice": "host"
+    },
+    {
+     "text": "Aquí hay un dato oficial clave para la historia: según la web de Rockstar, Jason trabaja en los Keys para traficantes locales.",
+     "start": 165.261,
+     "end": 172.494,
+     "voice": "host"
+    }
+   ],
+   "id": "b9"
+  },
+  {
+   "i": 10,
+   "start": 172.824,
+   "end": 191.415,
+   "sents": [
+    {
+     "text": "¿Y qué no sabemos?",
+     "start": 172.824,
+     "end": 174.049,
+     "voice": "host"
+    },
+    {
+     "text": "Muchísimo.",
+     "start": 174.429,
+     "end": 175.281,
+     "voice": "host"
+    },
+    {
+     "text": "No sabemos la forma exacta de Leonida, ni cuánto se parece su costa a la de Florida.",
+     "start": 175.611,
+     "end": 180.484,
+     "voice": "host"
+    },
+    {
+     "text": "No sabemos cuántos interiores se pueden visitar, ni qué pueblos hay entre una región y otra.",
+     "start": 180.814,
+     "end": 185.912,
+     "voice": "host"
+    },
+    {
+     "text": "Y no sabemos si estas seis regiones son todas.",
+     "start": 186.242,
+     "end": 188.791,
+     "voice": "host"
+    },
+    {
+     "text": "Eso solo se responde jugando.",
+     "start": 189.121,
+     "end": 191.085,
+     "voice": "host"
+    }
+   ],
+   "id": "b10"
+  },
+  {
+   "i": 11,
+   "start": 191.415,
+   "end": 211.415,
+   "sents": [
+    {
+     "text": "El jueves, con el juego en las manos, volvemos a este mapa y marcamos qué deducciones acertamos y cuáles fallamos.",
+     "start": 191.415,
+     "end": 197.743,
+     "voice": "host"
+    },
+    {
+     "text": "Si quieres ver ese marcador, suscríbete.",
+     "start": 198.073,
+     "end": 200.452,
+     "voice": "host"
+    },
+    {
+     "text": "Y cuéntame en los comentarios:",
+     "start": 200.782,
+     "end": 202.568,
+     "voice": "host"
+    },
+    {
+     "text": "¿a qué región vas a ir primero?",
+     "start": 202.848,
+     "end": 204.789,
+     "voice": "host"
+    }
+   ],
+   "id": "b11"
+  }
+ ],
+ "lufs_in": -17.1
+}

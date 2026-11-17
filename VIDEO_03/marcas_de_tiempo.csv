@@ -1,0 +1,49 @@
+inicio_s;fin_s;voz;texto
+0.25;8.03;host;Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.
+8.36;9.25;host;Todo falso.
+9.58;13.62;host;Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.
+16.35;17.66;host;Esto es Caimán Neón.
+17.99;21.41;host;Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.
+21.74;24.20;host;Y para eso me acompaña nuestra analista.
+24.52;24.97;analista;Hola.
+25.30;28.41;analista;Vamos a abrir el archivo paso a paso, sin tecnicismos.
+28.74;31.35;host;Primero, el dato que desarma toda la estafa.
+31.68;36.85;host;GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.
+37.18;39.28;host;No hay versión de PC anunciada.
+39.60;42.08;host;Y no hay versión para Android ni para iPhone.
+42.41;46.38;host;Cualquier archivo que diga lo contrario está mintiendo desde el nombre.
+46.70;48.36;analista;¿Y por qué cae tanta gente?
+48.74;51.70;analista;Porque el anzuelo se aprovecha de tres cosas reales.
+52.03;55.53;analista;Hay millones de jugadores sin PS5 ni Xbox Series.
+55.86;57.20;analista;La espera duró años.
+57.53;60.03;analista;Y en internet abundan los trucos para todo.
+60.36;64.08;analista;La estafa no vende un juego: vende la ilusión de no quedarte afuera.
+64.41;66.19;analista;El anzuelo tiene tres piezas.
+66.52;68.58;analista;Una página que imita a una tienda.
+68.91;70.31;analista;Un botón de descarga.
+70.64;72.81;analista;Y una excusa para que bajes la guardia.
+73.14;82.98;analista;La empresa ESET detectó un archivo llamado gta6_installer.exe, que en realidad transporta Vidar: un programa diseñado para robar información.
+83.31;87.79;analista;Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.
+88.12;89.82;host;¿Y qué te pide el instalador?
+90.20;99.23;analista;Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.
+99.56;103.06;analista;En otras palabras: te pide que apagues la alarma antes de entrar.
+103.39;113.66;analista;Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.
+113.98;119.77;analista;Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.
+120.10;122.97;host;O sea que no pierdes un juego: pierdes tus cuentas.
+123.30;125.27;host;No siempre es un ejecutable.
+125.60;128.56;host;También circulan otras versiones del mismo truco.
+128.90;132.84;analista;Páginas que te piden completar encuestas antes de mostrar el enlace.
+133.17;137.25;analista;Falsos accesos anticipados o betas que exigen un pago por adelantado.
+137.58;141.90;analista;Y en Android, archivos APK que piden permisos que ningún juego necesita.
+142.23;146.56;analista;Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy.
+146.89;150.30;analista;Desconecta el equipo de internet y analízalo con tu antivirus.
+150.63;157.40;analista;Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.
+157.73;159.84;analista;Activa la verificación en dos pasos.
+160.16;169.88;analista;Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.
+170.21;172.28;host;Regla rápida para la próxima vez.
+172.60;178.23;host;Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.
+178.56;181.24;host;Si te pide desactivar el antivirus, es malware.
+181.57;183.73;host;Y si es gratis, el producto eres tú.
+184.06;188.53;host;Comparte este video con ese primo que siempre encuentra “versiones especiales”.
+188.86;194.45;host;Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.
+194.78;199.70;host;Suscríbete a Caimán Neón: aquí, la única descarga que recomendamos es la oficial.
