@@ -85,7 +85,9 @@ Para usar gameplay propio con el riesgo mínimo razonable:
 
 | Recurso | Licencia | Uso comercial |
 |---|---|---|
-| Supertonic 3 (Supertone): voces preestablecidas F3 (narradora) y M1 (copiloto) | Pesos: OpenRAIL-M · código: MIT | Sí, con las restricciones de uso responsable del anexo A de la licencia (nada ilegal, sin suplantar personas) |
+| Chatterbox Multilingual (Resemble AI): generación de la narración | MIT | Sí |
+| Referencia de voz de la narradora: corpus OpenSLR SLR72 (Google), locutora anónima `cof_03034` | CC BY-SA 4.0 (atribución: Guevara-Rukoz et al., LREC 2020) | Sí, con atribución; el archivo de referencia derivado se comparte con la misma licencia |
+| Supertonic 3 (Supertone): solo para crear la voz de referencia del copiloto | Pesos: OpenRAIL-M · código: MIT | Sí, con las restricciones de uso responsable del anexo A |
 | Parakeet TDT v3 (NVIDIA), solo para verificar y sincronizar la voz | CC-BY-4.0 | Sí (herramienta; no aparece en los videos) |
 | sherpa-onnx (distribución del modelo) | Apache 2.0 | Sí |
 | espeak-ng (fonemización) | GPL v3 (herramienta) | Sí: el audio generado no es obra derivada del programa |
@@ -98,4 +100,4 @@ Para usar gameplay propio con el riesgo mínimo razonable:
 | Inter, JetBrains Mono | SIL OFL 1.1 | Sí |
 | Música, efectos, ilustraciones, iconos y logotipo | Creación original de este proyecto | Sí |
 
-**Nota sobre las voces:** se usan las voces preestablecidas de Supertonic 3, que no imitan a ninguna persona conocida. La licencia OpenRAIL-M permite el uso comercial, pero obliga a respetar sus restricciones de uso (anexo A) y a conservar el aviso de licencia si se redistribuye el modelo. Lee el texto completo en huggingface.co/Supertone/supertonic-3 antes de monetizar. Riesgo residual: no podemos auditar los datos de entrenamiento. Si quieres eliminar también ese riesgo, graba la narración con tu voz.
+**Nota sobre las voces:** la narradora suena con el timbre de una locutora del corpus SLR72, grabado por voluntarios precisamente para construir voces sintéticas y publicado con licencia abierta que permite uso comercial. No es una persona conocida ni se presenta como tal. Chatterbox incrusta una marca de agua inaudible en todo el audio que genera. La atribución obligatoria está en `engine/voces/README.md` y en la sección de licencias de cada video. Si prefieres eliminar cualquier duda, graba la narración con tu propia voz (el motor lo admite).

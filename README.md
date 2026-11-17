@@ -49,7 +49,7 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
    - La investigación se hizo con búsqueda web, citando prensa y fuentes secundarias. **No hay volúmenes de búsqueda inventados.**
    - **Antes de publicar, comprueba tres datos en tus propias fuentes:** la hora en el soporte de Rockstar, el precio en tu tienda y el tamaño en tu consola.
 2. **Voz:**
-   - Voz femenina de Supertonic 3 (pesos con licencia OpenRAIL-M, que permite uso comercial con restricciones de uso responsable). Genera a 44,1 kHz y lee por párrafos para que el ritmo sea más natural.
+   - Voz femenina expresiva generada con **Chatterbox Multilingual** (Resemble AI, licencia MIT), a partir de una referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0). Lee frase a frase con entonación natural; la voz la elegiste tú entre cuatro candidatas (voz C). Chatterbox añade una marca de agua inaudible que identifica el audio como sintético.
    - Cada toma se comprueba con reconocimiento de voz y se repite si no coincide con el guion. El resultado de cada video está en `recursos/control_de_voz.csv`. Aun así, **no puedo escucharla**: revisa el resultado.
    - Revisa cada narración antes de publicar.
    - Para reducir el riesgo de "contenido inauténtico", lo más eficaz es **grabar la narración con tu voz**. El motor lo admite: ver `engine/README.md`.

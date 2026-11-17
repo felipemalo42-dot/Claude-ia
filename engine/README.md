@@ -9,7 +9,11 @@ Cada vídeo es un módulo de Python (`videos/v01.py` … `videos/v10.py`) con do
 ```bash
 pip install "sherpa-onnx>=2" skia-python numpy scipy soundfile pyloudnorm pillow
 sudo apt-get install -y ffmpeg libegl1
-# Voz: Supertonic 3 (pesos OpenRAIL-M), ~130 MB
+# Voz principal: Chatterbox Multilingual (MIT), en un entorno aparte con PyTorch (~3,2 GB de modelo)
+python3 -m venv cbenv && cbenv/bin/pip install chatterbox-tts "setuptools<81"
+# descarga de https://huggingface.co/ResembleAI/chatterbox: ve.pt, conds.pt, s3gen.pt, t3_mtl23ls_v2.safetensors, grapheme_mtl_merged_expanded_v1.json, Cangjie5_TC.json
+export CHATTERBOX_PY=$PWD/cbenv/bin/python CHATTERBOX_DIR=/ruta/al/modelo
+# Voz alternativa ligera (VOICE_ENGINE=supertonic): Supertonic 3 (pesos OpenRAIL-M), ~130 MB
 curl -L -O https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-supertonic-3-tts-int8-2026-05-11.tar.bz2
 tar xjf sherpa-onnx-supertonic-3-tts-int8-2026-05-11.tar.bz2 && export SUPERTONIC_DIR=$PWD/sherpa-onnx-supertonic-3-tts-int8-2026-05-11
 # Verificación y sincronización (CC-BY-4.0), ~490 MB
@@ -39,7 +43,8 @@ python publish_meta.py              # regenera publicacion.md, descripción, eti
 ## Arquitectura
 | Archivo | Función |
 |---|---|
-| `tts.py` | Voz Supertonic 3 (narradora femenina, 44,1 kHz), diccionario de pronunciación para nombres en inglés, números a palabras, verificación de cada toma y tiempos por palabra con reconocimiento de voz |
+| `tts.py` | Texto hablado (pronunciación de nombres en inglés, números a palabras), voz alternativa Supertonic 3, verificación de cada toma y tiempos por palabra con reconocimiento de voz |
+| `tts_chatterbox.py` | Síntesis por lotes de la narradora con Chatterbox Multilingual (se ejecuta en su propio entorno de Python); referencias en `voces/` |
 | `audio.py` | Sintetizador propio: osciladores, FM, filtros, reverberación por convolución, batería, 10 estilos musicales, 24 efectos de sonido, *ducking* y masterización a −14 LUFS |
 | `gfx.py` | Utilidades de Skia: texto, formas, degradados, iconos (rutas SVG propias), cámara 3D en perspectiva y *easing* |
 | `components.py` | Elementos de marca: semáforo de certeza, chips de fuente, cortinilla, pantalla final, subtítulos de Shorts y marca de agua |
