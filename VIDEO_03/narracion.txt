@@ -2,12 +2,12 @@ Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigant
 Todo falso.
 Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.
 
-Esto es Sal y Asfalto.
+Estás en Sal y Asfalto.
 Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.
-Y para eso me acompaña nuestra analista.
+Y hoy no vengo sola: traigo copiloto.
 
 Hola.
-Vamos a abrir el archivo paso a paso, sin tecnicismos.
+Yo hago las preguntas que haría cualquiera.
 
 Primero, el dato que desarma toda la estafa.
 GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.
@@ -16,6 +16,7 @@ Y no hay versión para Android ni para iPhone.
 Cualquier archivo que diga lo contrario está mintiendo desde el nombre.
 
 ¿Y por qué cae tanta gente?
+
 Porque el anzuelo se aprovecha de tres cosas reales.
 Hay millones de jugadores sin PS5 ni Xbox Series.
 La espera duró años.
@@ -26,7 +27,7 @@ El anzuelo tiene tres piezas.
 Una página que imita a una tienda.
 Un botón de descarga.
 Y una excusa para que bajes la guardia.
-La empresa ESET detectó un archivo llamado gta6_installer.exe, que en realidad transporta Vidar: un programa diseñado para robar información.
+La empresa de seguridad ESET detectó un instalador falso de GTA 6 que en realidad transporta Vidar: un programa diseñado para robar información.
 Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.
 
 ¿Y qué te pide el instalador?
@@ -39,14 +40,17 @@ Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta si
 
 O sea que no pierdes un juego: pierdes tus cuentas.
 
-No siempre es un ejecutable.
-También circulan otras versiones del mismo truco.
+¿Y siempre es un archivo ejecutable?
 
+No siempre.
+También circulan otras versiones del mismo truco.
 Páginas que te piden completar encuestas antes de mostrar el enlace.
 Falsos accesos anticipados o betas que exigen un pago por adelantado.
 Y en Android, archivos APK que piden permisos que ningún juego necesita.
 
-Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy.
+¿Y si alguien ya lo ejecutó?
+
+Que no entre en pánico, pero que actúe hoy.
 Desconecta el equipo de internet y analízalo con tu antivirus.
 Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.
 Activa la verificación en dos pasos.

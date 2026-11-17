@@ -1,86 +1,88 @@
 GUION — GTA 6 para PC y Android: la verdad (y la estafa que está robando cuentas)
-Formato: Largo (16:9) · Duración: 00:03:24 · Voz: Kokoro (Apache-2.0), español latinoamericano
+Formato: Largo (16:9) · Duración: 00:03:32 · Voz: narradora (Chatterbox Multilingual), español
 ==============================================================================
 
 
 ## GANCHO
 
-[00:00.25] NARRADOR: Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.
-[00:08.36] NARRADOR: Todo falso.
-[00:09.58] NARRADOR: Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.
-[00:13.95] (sin narración · 2.4 s)
+[00:00.25] NARRADORA: Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.
+[00:07.69] NARRADORA: Todo falso.
+[00:09.05] NARRADORA: Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.
+[00:14.64] (sin narración · 2.4 s)
 
 ## INTRODUCCIÓN
 
-[00:16.35] NARRADOR: Esto es Sal y Asfalto.
-[00:18.17] NARRADOR: Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.
-[00:21.93] NARRADOR: Y para eso me acompaña nuestra analista.
-[00:24.71] ANALISTA: Hola.
-[00:25.48] ANALISTA: Vamos a abrir el archivo paso a paso, sin tecnicismos.
+[00:17.04] NARRADORA: Estás en Sal y Asfalto.
+[00:19.04] NARRADORA: Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.
+[00:22.88] NARRADORA: Y hoy no vengo sola: traigo copiloto.
+[00:26.11] COPILOTO: Hola.
+[00:26.75] COPILOTO: Yo hago las preguntas que haría cualquiera.
 
 ## 1 · LA VERDAD CORTA
 
-[00:28.92] NARRADOR: Primero, el dato que desarma toda la estafa.
-[00:31.86] NARRADOR: GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.
-[00:37.37] NARRADOR: No hay versión de PC anunciada.
-[00:39.78] NARRADOR: Y no hay versión para Android ni para iPhone.
-[00:42.58] NARRADOR: Cualquier archivo que diga lo contrario está mintiendo desde el nombre.
+[00:29.07] NARRADORA: Primero, el dato que desarma toda la estafa.
+[00:31.87] NARRADORA: GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.
+[00:38.99] NARRADORA: No hay versión de PC anunciada.
+[00:42.62] NARRADORA: Y no hay versión para Android ni para iPhone.
+[00:45.34] NARRADORA: Cualquier archivo que diga lo contrario está mintiendo desde el nombre.
 
 ## 1B · POR QUÉ FUNCIONA
 
-[00:46.87] ANALISTA: ¿Y por qué cae tanta gente?
-[00:48.91] ANALISTA: Porque el anzuelo se aprovecha de tres cosas reales.
-[00:52.20] ANALISTA: Hay millones de jugadores sin PS5 ni Xbox Series.
-[00:56.03] ANALISTA: La espera duró años.
-[00:57.70] ANALISTA: Y en internet abundan los trucos para todo.
-[01:00.53] ANALISTA: La estafa no vende un juego: vende la ilusión de no quedarte afuera.
+[00:50.25] COPILOTO: ¿Y por qué cae tanta gente?
+[00:52.00] NARRADORA: Porque el anzuelo se aprovecha de tres cosas reales.
+[00:55.20] NARRADORA: Hay millones de jugadores sin PS5 ni Xbox Series.
+[00:59.12] NARRADORA: La espera duró años.
+[01:00.80] NARRADORA: Y en internet abundan los trucos para todo.
+[01:03.60] NARRADORA: La estafa no vende un juego: vende la ilusión de no quedarte afuera.
 
 ## 2 · ANATOMÍA DEL ANZUELO
 
-[01:04.58] ANALISTA: El anzuelo tiene tres piezas.
-[01:06.69] ANALISTA: Una página que imita a una tienda.
-[01:09.08] ANALISTA: Un botón de descarga.
-[01:10.81] ANALISTA: Y una excusa para que bajes la guardia.
-[01:13.31] ANALISTA: La empresa ESET detectó un archivo llamado gta6_installer.exe, que en realidad transporta Vidar: un programa diseñado para robar información.
-[01:23.48] ANALISTA: Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.
+[01:09.06] NARRADORA: El anzuelo tiene tres piezas.
+[01:10.90] NARRADORA: Una página que imita a una tienda.
+[01:13.14] NARRADORA: Un botón de descarga.
+[01:15.82] NARRADORA: Y una excusa para que bajes la guardia.
+[01:18.30] NARRADORA: La empresa de seguridad ESET detectó un instalador falso de GTA 6 que en realidad transporta Vidar: un programa diseñado para robar información.
+[01:27.91] NARRADORA: Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.
 
 ## 3 · LO QUE PIDE
 
-[01:28.29] NARRADOR: ¿Y qué te pide el instalador?
-[01:30.37] ANALISTA: Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.
-[01:39.73] ANALISTA: En otras palabras: te pide que apagues la alarma antes de entrar.
+[01:34.22] COPILOTO: ¿Y qué te pide el instalador?
+[01:35.98] NARRADORA: Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.
+[01:45.98] NARRADORA: En otras palabras: te pide que apagues la alarma antes de entrar.
 
 ## 4 · LO QUE SE LLEVA
 
-[01:43.56] ANALISTA: Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.
-[01:54.16] ANALISTA: Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.
-[02:00.27] NARRADOR: O sea que no pierdes un juego: pierdes tus cuentas.
+[01:49.92] NARRADORA: Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.
+[02:00.26] NARRADORA: Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.
+[02:06.80] COPILOTO: O sea que no pierdes un juego: pierdes tus cuentas.
 
 ## 5 · VARIANTES
 
-[02:03.47] NARRADOR: No siempre es un ejecutable.
-[02:05.77] NARRADOR: También circulan otras versiones del mismo truco.
-[02:09.06] ANALISTA: Páginas que te piden completar encuestas antes de mostrar el enlace.
-[02:13.34] ANALISTA: Falsos accesos anticipados o betas que exigen un pago por adelantado.
-[02:17.75] ANALISTA: Y en Android, archivos APK que piden permisos que ningún juego necesita.
+[02:10.18] COPILOTO: ¿Y siempre es un archivo ejecutable?
+[02:12.51] NARRADORA: No siempre.
+[02:13.47] NARRADORA: También circulan otras versiones del mismo truco.
+[02:16.35] NARRADORA: Páginas que te piden completar encuestas antes de mostrar el enlace.
+[02:20.06] NARRADORA: Falsos accesos anticipados o betas que exigen un pago por adelantado.
+[02:24.14] NARRADORA: Y en Android, archivos APK que piden permisos que ningún juego necesita.
 
 ## 6 · SI YA LO EJECUTASTE
 
-[02:22.40] ANALISTA: Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy.
-[02:27.06] ANALISTA: Desconecta el equipo de internet y analízalo con tu antivirus.
-[02:30.80] ANALISTA: Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.
-[02:37.90] ANALISTA: Activa la verificación en dos pasos.
-[02:40.34] ANALISTA: Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.
+[02:29.41] COPILOTO: ¿Y si alguien ya lo ejecutó?
+[02:31.07] NARRADORA: Que no entre en pánico, pero que actúe hoy.
+[02:34.35] NARRADORA: Desconecta el equipo de internet y analízalo con tu antivirus.
+[02:38.11] NARRADORA: Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.
+[02:44.91] NARRADORA: Activa la verificación en dos pasos.
+[02:47.07] NARRADORA: Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.
 
 ## 7 · REGLA DE LOS 5 SEGUNDOS
 
-[02:50.38] NARRADOR: Regla rápida para la próxima vez.
-[02:52.78] NARRADOR: Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.
-[02:58.73] NARRADOR: Si te pide desactivar el antivirus, es malware.
-[03:01.74] NARRADOR: Y si es gratis, el producto eres tú.
+[02:56.46] NARRADORA: Regla rápida para la próxima vez.
+[02:58.62] NARRADORA: Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.
+[03:05.34] NARRADORA: Si te pide desactivar el antivirus, es malware.
+[03:08.22] NARRADORA: Y si es gratis, el producto eres tú.
 
 ## LLAMADA A LA ACCIÓN
 
-[03:04.23] NARRADOR: Comparte este video con ese primo que siempre encuentra “versiones especiales”.
-[03:09.04] NARRADOR: Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.
-[03:14.96] NARRADOR: Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.
+[03:11.41] NARRADORA: Comparte este video con ese primo que siempre encuentra “versiones especiales”.
+[03:15.65] NARRADORA: Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.
+[03:22.81] NARRADORA: Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.

@@ -2,16 +2,16 @@ No existe GTA 6 para PC (sin fecha anunciada), ni para Android ni para iPhone. L
 
 CAPÍTULOS
 0:00 Gancho
-0:16 Introducción
-0:28 1 · la verdad corta
-0:46 1b · por qué funciona
-1:04 2 · anatomía del anzuelo
-1:28 3 · lo que pide
-1:43 4 · lo que se lleva
-2:03 5 · variantes
-2:22 6 · si ya lo ejecutaste
-2:50 7 · regla de los 5 segundos
-3:04 Despedida
+0:17 Introducción
+0:29 1 · la verdad corta
+0:50 1b · por qué funciona
+1:09 2 · anatomía del anzuelo
+1:34 3 · lo que pide
+1:49 4 · lo que se lleva
+2:10 5 · variantes
+2:29 6 · si ya lo ejecutaste
+2:56 7 · regla de los 5 segundos
+3:11 Despedida
 
 FUENTES
 • Help Net Security (13 nov. 2026): falsa descarga de GTA 6 que roba credenciales de Steam y monederos
@@ -20,6 +20,6 @@ FUENTES
 • Neowin: estafas de descarga gratuita
 • Take-Two: sin fecha para PC
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
