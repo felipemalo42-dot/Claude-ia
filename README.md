@@ -49,7 +49,8 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
    - La investigación se hizo con búsqueda web, citando prensa y fuentes secundarias. **No hay volúmenes de búsqueda inventados.**
    - **Antes de publicar, comprueba tres datos en tus propias fuentes:** la hora en el soporte de Rockstar, el precio en tu tienda y el tamaño en tu consola.
 2. **Voz:**
-   - Kokoro (Apache 2.0) con pronunciación latinoamericana (seseo). La verifiqué por métodos objetivos (transcripción automática sin errores y análisis de entonación), pero **no puedo escucharla**.
+   - Voz femenina de Supertonic 3 (pesos con licencia OpenRAIL-M, que permite uso comercial con restricciones de uso responsable). Genera a 44,1 kHz y lee por párrafos para que el ritmo sea más natural.
+   - Cada toma se comprueba con reconocimiento de voz y se repite si no coincide con el guion. El resultado de cada video está en `recursos/control_de_voz.csv`. Aun así, **no puedo escucharla**: revisa el resultado.
    - Revisa cada narración antes de publicar.
    - Para reducir el riesgo de "contenido inauténtico", lo más eficaz es **grabar la narración con tu voz**. El motor lo admite: ver `engine/README.md`.
 3. **Imagen:**

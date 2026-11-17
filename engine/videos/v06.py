@@ -253,7 +253,7 @@ beat("Trece años separan a GTA 5 de GTA 6. Y en ese tiempo, Rockstar cambió m�
      sc_hook, section="GANCHO", energy=2, sfx=[(0.0, "riser", 0.4), ("w:Trece", "hit", 0.6), ("w:intacta", "hit", 0.5)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=2, trans=("flash", 0.3))
 beat("Estás en Sal y Asfalto. Hoy: diez cambios confirmados entre GTA 5 y GTA 6, uno que no cambió, y tres rumores que te vamos a señalar con el dedo. "
-     "A la izquierda, GTA 5. A la derecha, GTA 6.",
+     "A la izquierda, GTA 5, y a la derecha, GTA 6.",
      sc_intro, section="INTRODUCCIÓN", energy=3, trans=("zoom", 0.5), sfx=[("w:diez", "hit", 0.5), ("w:uno que", "hit", 0.5), ("w:tres rumores", "hit", 0.5)])
 R = []
 def rnd(n, title, viz, vo, src=None, cert="OFICIAL", sfx=()):

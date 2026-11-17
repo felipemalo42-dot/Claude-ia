@@ -35,7 +35,11 @@ def group_takes(items, max_chars=250, max_sents=3):
         L = len(it["spk"])
         if cur and (n + L > max_chars or len(cur) >= max_sents): groups.append(cur); cur = []; n = 0
         cur.append(it); n += L + 1
-    if cur: groups.append(cur)
+    if cur:
+        # una frase muy corta sola suena peor: se une a la toma anterior si cabe
+        if groups and sum(len(it["spk"]) for it in cur) < 45 and sum(len(it["spk"]) for it in groups[-1] + cur) <= max_chars + 90:
+            groups[-1] += cur
+        else: groups.append(cur)
     return groups
 
 def build_audio(V, outdir, narr=None, aligner=None):

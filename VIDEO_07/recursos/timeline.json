@@ -1,110 +1,747 @@
 {
- "total": 44.897,
+ "total": 48.148,
  "beats": [
   {
    "i": 0,
    "start": 0.15,
-   "end": 43.897,
+   "end": 47.148,
    "sents": [
     {
      "text": "GTA 6 pesa unos doscientos diez gigas.",
      "start": 0.15,
-     "end": 2.523,
-     "voice": "host"
+     "end": 2.49,
+     "voice": "host",
+     "words": [
+      [
+       "GTA",
+       0.15,
+       0.63
+      ],
+      [
+       "6",
+       0.71,
+       0.867
+      ],
+      [
+       "pesa",
+       0.87,
+       1.29
+      ],
+      [
+       "unos",
+       1.27,
+       1.53
+      ],
+      [
+       "doscientos",
+       1.59,
+       2.09
+      ],
+      [
+       "diez",
+       1.59,
+       2.09
+      ],
+      [
+       "gigas.",
+       2.07,
+       2.49
+      ]
+     ]
     },
     {
      "text": "¿Te cabe?",
-     "start": 2.738,
-     "end": 3.374,
-     "voice": "host"
+     "start": 2.47,
+     "end": 2.972,
+     "voice": "host",
+     "words": [
+      [
+       "¿Te",
+       2.47,
+       2.638
+      ],
+      [
+       "cabe?",
+       2.71,
+       2.972
+      ]
+     ]
     },
     {
      "text": "Vamos consola por consola.",
-     "start": 3.621,
-     "end": 5.319,
-     "voice": "host"
+     "start": 3.27,
+     "end": 4.914,
+     "voice": "host",
+     "words": [
+      [
+       "Vamos",
+       3.27,
+       3.69
+      ],
+      [
+       "consola",
+       3.67,
+       4.17
+      ],
+      [
+       "por",
+       4.15,
+       4.41
+      ],
+      [
+       "consola.",
+       4.39,
+       4.914
+      ]
+     ]
     },
     {
      "text": "PS5 original: de sus ochocientos veinticinco gigas, te quedan libres unos seiscientos sesenta y siete.",
-     "start": 5.534,
-     "end": 11.834,
-     "voice": "host"
+     "start": 5.205,
+     "end": 11.705,
+     "voice": "host",
+     "words": [
+      [
+       "PS5",
+       5.205,
+       5.925
+      ],
+      [
+       "original:",
+       6.165,
+       6.793
+      ],
+      [
+       "de",
+       6.805,
+       7.065
+      ],
+      [
+       "sus",
+       7.045,
+       7.303
+      ],
+      [
+       "ochocientos",
+       7.445,
+       8.505
+      ],
+      [
+       "veinticinco",
+       7.445,
+       8.505
+      ],
+      [
+       "gigas,",
+       8.485,
+       9.089
+      ],
+      [
+       "te",
+       9.125,
+       9.305
+      ],
+      [
+       "quedan",
+       9.285,
+       9.625
+      ],
+      [
+       "libres",
+       9.605,
+       10.105
+      ],
+      [
+       "unos",
+       10.085,
+       10.425
+      ],
+      [
+       "seiscientos",
+       10.485,
+       11.705
+      ],
+      [
+       "sesenta",
+       10.485,
+       11.705
+      ],
+      [
+       "y",
+       10.485,
+       11.705
+      ],
+      [
+       "siete.",
+       10.485,
+       11.705
+      ]
+     ]
     },
     {
      "text": "Cabe, y te sobra.",
-     "start": 12.049,
-     "end": 13.18,
-     "voice": "host"
+     "start": 11.705,
+     "end": 13.416,
+     "voice": "host",
+     "words": [
+      [
+       "Cabe,",
+       11.705,
+       12.645
+      ],
+      [
+       "y",
+       12.645,
+       12.78
+      ],
+      [
+       "te",
+       12.805,
+       13.065
+      ],
+      [
+       "sobra.",
+       13.045,
+       13.416
+      ]
+     ]
     },
     {
      "text": "Series S de quinientos doce: unos trescientos sesenta y cuatro libres.",
-     "start": 13.394,
-     "end": 17.236,
-     "voice": "host"
+     "start": 13.605,
+     "end": 18.269,
+     "voice": "host",
+     "words": [
+      [
+       "Series",
+       13.605,
+       14.025
+      ],
+      [
+       "S",
+       14.165,
+       14.345
+      ],
+      [
+       "de",
+       14.405,
+       14.585
+      ],
+      [
+       "quinientos",
+       14.725,
+       15.532
+      ],
+      [
+       "doce:",
+       14.725,
+       15.532
+      ],
+      [
+       "unos",
+       15.685,
+       16.017
+      ],
+      [
+       "trescientos",
+       16.245,
+       17.625
+      ],
+      [
+       "sesenta",
+       16.245,
+       17.625
+      ],
+      [
+       "y",
+       16.245,
+       17.625
+      ],
+      [
+       "cuatro",
+       16.245,
+       17.625
+      ],
+      [
+       "libres.",
+       17.685,
+       18.269
+      ]
+     ]
     },
     {
      "text": "Cabe, pero se come casi el sesenta por ciento.",
-     "start": 17.451,
-     "end": 20.119,
-     "voice": "host"
+     "start": 18.558,
+     "end": 21.438,
+     "voice": "host",
+     "words": [
+      [
+       "Cabe,",
+       18.558,
+       18.958
+      ],
+      [
+       "pero",
+       18.958,
+       19.218
+      ],
+      [
+       "se",
+       19.198,
+       19.337
+      ],
+      [
+       "come",
+       19.358,
+       19.698
+      ],
+      [
+       "casi",
+       19.678,
+       19.938
+      ],
+      [
+       "el",
+       19.918,
+       20.098
+      ],
+      [
+       "sesenta",
+       20.238,
+       21.218
+      ],
+      [
+       "por",
+       21.218,
+       21.292
+      ],
+      [
+       "ciento.",
+       21.292,
+       21.438
+      ]
+     ]
     },
     {
      "text": "Series X de un tera: unos ochocientos dos libres.",
-     "start": 20.334,
-     "end": 23.39,
-     "voice": "host"
+     "start": 21.438,
+     "end": 24.601,
+     "voice": "host",
+     "words": [
+      [
+       "Series",
+       21.438,
+       21.858
+      ],
+      [
+       "X",
+       21.998,
+       22.338
+      ],
+      [
+       "de",
+       22.318,
+       22.418
+      ],
+      [
+       "un",
+       22.418,
+       22.625
+      ],
+      [
+       "tera:",
+       22.625,
+       23.038
+      ],
+      [
+       "unos",
+       23.038,
+       23.218
+      ],
+      [
+       "ochocientos",
+       23.438,
+       24.018
+      ],
+      [
+       "dos",
+       23.438,
+       24.018
+      ],
+      [
+       "libres.",
+       24.158,
+       24.601
+      ]
+     ]
     },
     {
      "text": "Sin drama.",
-     "start": 23.605,
-     "end": 24.338,
-     "voice": "host"
+     "start": 24.878,
+     "end": 25.636,
+     "voice": "host",
+     "words": [
+      [
+       "Sin",
+       24.878,
+       25.218
+      ],
+      [
+       "drama.",
+       25.198,
+       25.636
+      ]
+     ]
     },
     {
      "text": "PS5 Slim de un tera: alrededor de ochocientos cuarenta.",
-     "start": 24.552,
-     "end": 28.155,
-     "voice": "host"
+     "start": 25.928,
+     "end": 30.033,
+     "voice": "host",
+     "words": [
+      [
+       "PS5",
+       25.928,
+       26.488
+      ],
+      [
+       "Slim",
+       26.728,
+       27.068
+      ],
+      [
+       "de",
+       27.128,
+       27.308
+      ],
+      [
+       "un",
+       27.308,
+       27.568
+      ],
+      [
+       "tera:",
+       27.568,
+       28.088
+      ],
+      [
+       "alrededor",
+       28.088,
+       28.588
+      ],
+      [
+       "de",
+       28.568,
+       28.748
+      ],
+      [
+       "ochocientos",
+       28.888,
+       30.033
+      ],
+      [
+       "cuarenta.",
+       28.888,
+       30.033
+      ]
+     ]
     },
     {
      "text": "Holgado.",
-     "start": 28.37,
-     "end": 28.958,
-     "voice": "host"
+     "start": 30.088,
+     "end": 30.785,
+     "voice": "host",
+     "words": [
+      [
+       "Holgado.",
+       30.088,
+       30.785
+      ]
+     ]
     },
     {
      "text": "El truco: tu espacio real depende de lo que ya tengas instalado.",
-     "start": 29.173,
-     "end": 32.651,
-     "voice": "host"
+     "start": 30.968,
+     "end": 34.828,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       30.968,
+       31.148
+      ],
+      [
+       "truco:",
+       31.128,
+       31.671
+      ],
+      [
+       "tu",
+       31.768,
+       31.948
+      ],
+      [
+       "espacio",
+       31.928,
+       32.428
+      ],
+      [
+       "real",
+       32.408,
+       32.748
+      ],
+      [
+       "depende",
+       32.728,
+       33.148
+      ],
+      [
+       "de",
+       33.128,
+       33.308
+      ],
+      [
+       "lo",
+       33.288,
+       33.468
+      ],
+      [
+       "que",
+       33.448,
+       33.548
+      ],
+      [
+       "ya",
+       33.528,
+       33.788
+      ],
+      [
+       "tengas",
+       33.768,
+       34.268
+      ],
+      [
+       "instalado.",
+       34.248,
+       34.828
+      ]
+     ]
     },
     {
      "text": "Revísalo hoy, no a las once y cincuenta y nueve.",
-     "start": 32.866,
-     "end": 35.337,
-     "voice": "host"
+     "start": 35.12,
+     "end": 38.605,
+     "voice": "host",
+     "words": [
+      [
+       "Revísalo",
+       35.12,
+       35.84
+      ],
+      [
+       "hoy,",
+       35.84,
+       36.203
+      ],
+      [
+       "no",
+       36.32,
+       36.58
+      ],
+      [
+       "a",
+       36.56,
+       36.66
+      ],
+      [
+       "las",
+       36.64,
+       36.98
+      ],
+      [
+       "once",
+       37.04,
+       37.38
+      ],
+      [
+       "y",
+       37.36,
+       37.54
+      ],
+      [
+       "cincuenta",
+       37.84,
+       38.605
+      ],
+      [
+       "y",
+       37.84,
+       38.605
+      ],
+      [
+       "nueve.",
+       37.84,
+       38.605
+      ]
+     ]
     },
     {
      "text": "Y si estás en PS4 o Xbox One... no te cabe ni aunque borres todo:",
-     "start": 35.551,
-     "end": 39.892,
-     "voice": "host"
+     "start": 38.72,
+     "end": 43.278,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       38.72,
+       38.88
+      ],
+      [
+       "si",
+       38.88,
+       39.06
+      ],
+      [
+       "estás",
+       39.04,
+       39.3
+      ],
+      [
+       "en",
+       39.28,
+       39.46
+      ],
+      [
+       "PS4",
+       40.0,
+       40.18
+      ],
+      [
+       "o",
+       40.16,
+       40.34
+      ],
+      [
+       "Xbox",
+       40.32,
+       40.98
+      ],
+      [
+       "One...",
+       40.96,
+       41.331
+      ],
+      [
+       "no",
+       41.44,
+       41.6
+      ],
+      [
+       "te",
+       41.6,
+       41.78
+      ],
+      [
+       "cabe",
+       41.76,
+       42.1
+      ],
+      [
+       "ni",
+       42.16,
+       42.34
+      ],
+      [
+       "aunque",
+       42.32,
+       42.58
+      ],
+      [
+       "borres",
+       42.56,
+       43.06
+      ],
+      [
+       "todo:",
+       43.04,
+       43.278
+      ]
+     ]
     },
     {
      "text": "GTA 6 no existe ahí.",
-     "start": 40.074,
-     "end": 41.742,
-     "voice": "host"
+     "start": 43.44,
+     "end": 45.187,
+     "voice": "host",
+     "words": [
+      [
+       "GTA",
+       43.44,
+       44.02
+      ],
+      [
+       "6",
+       44.16,
+       44.34
+      ],
+      [
+       "no",
+       44.32,
+       44.5
+      ],
+      [
+       "existe",
+       44.48,
+       44.98
+      ],
+      [
+       "ahí.",
+       44.96,
+       45.187
+      ]
+     ]
     },
     {
      "text": "¿Cuánto espacio te queda a ti?",
-     "start": 41.957,
-     "end": 43.65,
-     "voice": "host"
+     "start": 45.476,
+     "end": 46.875,
+     "voice": "host",
+     "words": [
+      [
+       "¿Cuánto",
+       45.476,
+       45.796
+      ],
+      [
+       "espacio",
+       45.796,
+       46.216
+      ],
+      [
+       "te",
+       46.196,
+       46.371
+      ],
+      [
+       "queda",
+       46.356,
+       46.654
+      ],
+      [
+       "a",
+       46.676,
+       46.841
+      ],
+      [
+       "ti?",
+       46.836,
+       46.875
+      ]
+     ]
     }
    ],
    "id": "b0"
   }
  ],
- "lufs_in": -15.89
+ "lufs_in": -11.68
 }

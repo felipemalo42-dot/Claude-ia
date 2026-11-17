@@ -172,7 +172,7 @@ def digits_to_words(text):
 
 
 _EQUIV = {"gb": ["gigas"], "tb": ["teras"], "ps5": ["ps", "cinco"], "ps4": ["ps", "cuatro"], "ps3": ["ps", "tres"], "vs": ["versus"],
-          "playstation5": ["playstation", "cinco"], "pc": ["pc"], "ee": ["estados"], "uu": ["unidos"]}
+          "playstation5": ["playstation", "cinco"], "pc": ["pc"], "fps": ["cuadros", "por", "segundo"], "untera": ["un", "tera"], "tera": ["tera"], "ee": ["estados"], "uu": ["unidos"]}
 
 
 def norm_tokens(word):
@@ -180,6 +180,7 @@ def norm_tokens(word):
     w = digits_to_words(word.lower())
     s = unicodedata.normalize("NFD", w); s = "".join(c for c in s if unicodedata.category(c) != "Mn")
     out = []
+    s = s.replace("%", " por ciento ")
     for tk in re.findall(r"[a-z0-9]+", s):
         out += _EQUIV.get(tk, [tk])
     return out

@@ -94,7 +94,7 @@ def sc_sting(c, t, info, ctx): brand_sting(c, t, info, ctx)
 def sc_intro(c, t, info, ctx):
     W, H = ctx.W, ctx.H; lab_bg(c, W, H, t); hud(c, W, t, "EXPEDIENTE: LA DESCARGA FALSA", "0613")
     p = ease_out(prog(t, 0.2, 0.8))
-    for i, (lab, col, cue) in enumerate((("NARRADORA", CYAN, 0.0), ("COPILOTO", AMB, info.w("Hola"))))):
+    for i, (lab, col, cue) in enumerate((("NARRADORA", CYAN, 0.0), ("COPILOTO", AMB, info.w("Hola")))):
         pp = ease_out_back(prog(t, cue, cue + 0.5)); x = 520 + i * 880; y = 560
         if pp <= 0: continue
         c.save(); c.translate(x, y); c.scale(pp, pp)

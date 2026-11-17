@@ -1,261 +1,261 @@
 1
-00:00:00,250 --> 00:00:02,306
+00:00:00,250 --> 00:00:02,930
 Ella salió de una prisión de Leonida.
 
 2
-00:00:02,636 --> 00:00:05,096
+00:00:02,970 --> 00:00:05,810
 Él trabaja para traficantes en los Cayos.
 
 3
-00:00:05,426 --> 00:00:09,743
+00:00:05,850 --> 00:00:11,862
 Rockstar ya nos dio sus expedientes... y
 hoy los abrimos, sin un solo spoiler.
 
 4
-00:00:12,473 --> 00:00:13,969
-Esto es Sal y Asfalto.
+00:00:14,412 --> 00:00:16,292
+Estás en Sal y Asfalto.
 
 5
-00:00:14,299 --> 00:00:18,835
+00:00:16,332 --> 00:00:21,812
 Regla de hoy: solo usamos lo que Rockstar
 publicó en su web y en sus tráileres, y lo
 
 6
-00:00:18,835 --> 00:00:21,373
+00:00:21,852 --> 00:00:24,692
 que reportó la prensa que habló con el
 estudio.
 
 7
-00:00:21,703 --> 00:00:23,558
+00:00:24,732 --> 00:00:27,090
 Cada dato lleva su etiqueta.
 
 8
-00:00:23,888 --> 00:00:27,590
+00:00:27,130 --> 00:00:31,370
 Y si algo es deducción nuestra, te lo
 vamos a decir en voz alta.
 
 9
-00:00:27,920 --> 00:00:29,370
+00:00:31,410 --> 00:00:33,130
 Expediente número uno:
 
 10
-00:00:29,650 --> 00:00:30,593
+00:00:33,170 --> 00:00:34,650
 Lucía Caminos.
 
 11
-00:00:30,923 --> 00:00:34,697
+00:00:34,690 --> 00:00:39,269
 Según la web oficial, su padre le enseñó a
 pelear desde muy pequeña.
 
 12
-00:00:35,027 --> 00:00:39,542
+00:00:39,309 --> 00:00:44,069
 Pelear por su familia la llevó a la
 Penitenciaría de Leonida, y salió gracias
 
 13
-00:00:39,542 --> 00:00:40,539
+00:00:44,109 --> 00:00:45,429
 a la pura suerte.
 
 14
-00:00:40,869 --> 00:00:44,304
+00:00:45,469 --> 00:00:50,016
 Desde entonces, dice Rockstar, solo
 jugadas inteligentes.
 
 15
-00:00:44,634 --> 00:00:49,114
+00:00:50,056 --> 00:00:55,536
 En el tráiler de lanzamiento de octubre se
 ve una tobillera electrónica en su pierna,
 
 16
-00:00:49,114 --> 00:00:53,226
+00:00:55,576 --> 00:01:00,638
 y la prensa que habló con Rockstar asegura
 que tendrá un papel en la historia.
 
 17
-00:00:53,556 --> 00:00:55,016
+00:01:00,678 --> 00:01:02,478
 Expediente número dos:
 
 18
-00:00:55,296 --> 00:00:56,271
+00:01:02,518 --> 00:01:03,678
 Jason Duval.
 
 19
-00:00:56,601 --> 00:00:59,935
+00:01:03,718 --> 00:01:07,986
 Rockstar cuenta que creció rodeado de
 estafadores y ladrones.
 
 20
-00:01:00,265 --> 00:01:04,704
+00:01:08,026 --> 00:01:13,266
 Pasó por el ejército intentando dejar
 atrás una adolescencia problemática, y
 
 21
-00:01:04,704 --> 00:01:09,494
+00:01:13,306 --> 00:01:19,224
 terminó en los Keys haciendo lo que mejor
 sabe: trabajar para traficantes locales.
 
 22
-00:01:09,824 --> 00:01:14,213
+00:01:19,264 --> 00:01:24,264
 El tráiler de lanzamiento sugiere que se
 metió en problemas durante el servicio y
 
 23
-00:01:14,213 --> 00:01:15,947
+00:01:24,304 --> 00:01:26,684
 que no salió en buenos términos.
 
 24
-00:01:16,277 --> 00:01:17,275
+00:01:26,724 --> 00:01:27,884
 ¿Y qué los une?
 
 25
-00:01:17,655 --> 00:01:19,356
+00:01:27,924 --> 00:01:29,645
 Rockstar los presenta así:
 
 26
-00:01:19,636 --> 00:01:23,408
+00:01:29,685 --> 00:01:34,106
 Jason y Lucía siempre supieron que tenían
 las cartas en contra.
 
 27
-00:01:23,738 --> 00:01:28,113
+00:01:34,146 --> 00:01:39,146
 Pero cuando un golpe fácil sale mal,
 terminan en el lado más oscuro del lugar
 
 28
-00:01:28,113 --> 00:01:32,772
+00:01:39,186 --> 00:01:44,346
 más soleado de Estados Unidos, en medio de
 una conspiración criminal que atraviesa
 
 29
-00:01:32,772 --> 00:01:37,432
+00:01:44,386 --> 00:01:49,626
 toda Leonida, obligados a confiar el uno
 en el otro más que nunca si quieren salir
 
 30
-00:01:37,432 --> 00:01:37,943
+00:01:49,666 --> 00:01:50,735
 con vida.
 
 31
-00:01:38,273 --> 00:01:42,770
+00:01:50,775 --> 00:01:56,175
 En la jugabilidad, el Extended Look de
 agosto mostró algo clave: puedes cambiar
 
 32
-00:01:42,770 --> 00:01:46,128
+00:01:56,215 --> 00:02:00,852
 entre Jason y Lucía en plena acción, sin
 pantalla de carga.
 
 33
-00:01:46,458 --> 00:01:51,149
+00:02:00,892 --> 00:02:06,292
 Y un detalle que la prensa ha repetido,
 pero que todavía no podemos comprobar: la
 
 34
-00:01:51,149 --> 00:01:53,813
+00:02:06,332 --> 00:02:09,762
 relación romántica entre ambos sería
 opcional.
 
 35
-00:01:54,143 --> 00:01:56,659
+00:02:09,802 --> 00:02:13,122
 Ahora, el reparto que Rockstar ya
 confirmó.
 
 36
-00:01:56,989 --> 00:02:01,538
+00:02:13,162 --> 00:02:18,002
 Cal Hampton, amigo y socio de Jason,
 desconfiado y amante de las teorías de
 
 37
-00:02:01,538 --> 00:02:02,326
+00:02:18,042 --> 00:02:18,820
 conspiración.
 
 38
-00:02:02,656 --> 00:02:06,933
+00:02:18,860 --> 00:02:23,922
 Boobie Ike, una leyenda local de Vice City
 con negocios que van de la noche a la
 
 39
-00:02:06,933 --> 00:02:07,307
+00:02:23,962 --> 00:02:24,895
 música.
 
 40
-00:02:07,637 --> 00:02:11,629
+00:02:24,935 --> 00:02:29,557
 Dre'Quan Priest, que busca su gran
 oportunidad en la industria musical.
 
 41
-00:02:11,959 --> 00:02:15,366
+00:02:29,597 --> 00:02:34,038
 Real Dimez, un dúo de rap con una
 presencia incansable en redes.
 
 42
-00:02:15,696 --> 00:02:19,743
+00:02:34,078 --> 00:02:38,357
 Raul Bautista, un ladrón de bancos
 veterano que siempre está buscando
 
 43
-00:02:19,743 --> 00:02:20,212
+00:02:38,397 --> 00:02:39,404
 talento.
 
 44
-00:02:20,542 --> 00:02:24,341
+00:02:39,444 --> 00:02:44,112
 Y Brian Heder, el casero de Jason, un
 veterano del contrabando.
 
 45
-00:02:24,671 --> 00:02:25,948
+00:02:44,152 --> 00:02:45,632
 ¿Y lo que no sabemos?
 
 46
-00:02:26,328 --> 00:02:27,978
+00:02:45,672 --> 00:02:47,392
 No sabemos cómo termina.
 
 47
-00:02:28,308 --> 00:02:30,240
+00:02:47,432 --> 00:02:49,791
 No sabemos si hay varios finales.
 
 48
-00:02:30,570 --> 00:02:33,190
+00:02:49,831 --> 00:02:53,231
 Tampoco sabemos cuánto pesan tus
 decisiones.
 
 49
-00:02:33,520 --> 00:02:38,084
+00:02:53,271 --> 00:02:58,911
 Lo más parecido a una pista lo dio Rob
 Nelson, de Rockstar: dijo que las acciones
 
 50
-00:02:38,084 --> 00:02:42,366
+00:02:58,951 --> 00:03:03,871
 constantes pueden influir en cómo
 reacciona el mundo y en cómo se desarrolla
 
 51
-00:02:42,366 --> 00:02:43,098
+00:03:03,911 --> 00:03:05,148
 la narrativa.
 
 52
-00:02:43,428 --> 00:02:46,371
+00:03:05,188 --> 00:03:08,491
 Cualquier cosa más allá de eso, hoy, sería
 inventar.
 
 53
-00:02:46,701 --> 00:02:49,057
+00:03:08,531 --> 00:03:11,131
 El jueves empieza el caso de verdad.
 
 54
-00:02:49,387 --> 00:02:53,681
+00:03:11,171 --> 00:03:16,091
 Si quieres un análisis de la historia sin
 spoilers durante la primera semana,
 
 55
-00:02:53,681 --> 00:02:55,187
+00:03:16,131 --> 00:03:18,411
 suscríbete a Sal y Asfalto.
 
 56
-00:02:55,517 --> 00:02:57,305
+00:03:18,451 --> 00:03:20,722
 Y cuéntame en los comentarios:
 
 57
-00:02:57,585 --> 00:03:00,566
+00:03:20,762 --> 00:03:23,839
 ¿con quién vas a jugar más, con Jason o
 con Lucía?

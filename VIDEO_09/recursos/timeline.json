@@ -1,388 +1,2379 @@
 {
- "total": 176.142,
+ "total": 194.615,
  "beats": [
   {
    "i": 0,
    "start": 0.25,
-   "end": 9.765,
+   "end": 10.5,
    "sents": [
     {
      "text": "Faltan horas para el lanzamiento, y todavía hay siete preguntas que Rockstar no ha respondido.",
      "start": 0.25,
-     "end": 5.494,
-     "voice": "host"
+     "end": 5.984,
+     "voice": "host",
+     "words": [
+      [
+       "Faltan",
+       0.25,
+       0.73
+      ],
+      [
+       "horas",
+       0.73,
+       1.076
+      ],
+      [
+       "para",
+       1.13,
+       1.31
+      ],
+      [
+       "el",
+       1.29,
+       1.47
+      ],
+      [
+       "lanzamiento,",
+       1.45,
+       2.269
+      ],
+      [
+       "y",
+       2.41,
+       2.67
+      ],
+      [
+       "todavía",
+       2.65,
+       3.15
+      ],
+      [
+       "hay",
+       3.13,
+       3.39
+      ],
+      [
+       "siete",
+       3.37,
+       3.774
+      ],
+      [
+       "preguntas",
+       3.77,
+       4.155
+      ],
+      [
+       "que",
+       4.17,
+       4.35
+      ],
+      [
+       "Rockstar",
+       4.33,
+       5.07
+      ],
+      [
+       "no",
+       5.05,
+       5.23
+      ],
+      [
+       "ha",
+       5.21,
+       5.38
+      ],
+      [
+       "respondido.",
+       5.37,
+       5.984
+      ]
+     ]
     },
     {
      "text": "Las metimos en sobres sellados.",
-     "start": 5.824,
-     "end": 7.671,
-     "voice": "host"
+     "start": 6.25,
+     "end": 8.49,
+     "voice": "host",
+     "words": [
+      [
+       "Las",
+       6.25,
+       6.51
+      ],
+      [
+       "metimos",
+       6.49,
+       6.99
+      ],
+      [
+       "en",
+       6.97,
+       7.15
+      ],
+      [
+       "sobres",
+       7.15,
+       7.702
+      ],
+      [
+       "sellados.",
+       7.702,
+       8.49
+      ]
+     ]
     },
     {
      "text": "El jueves los abrimos.",
-     "start": 8.001,
-     "end": 9.435,
-     "voice": "host"
+     "start": 8.49,
+     "end": 10.066,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       8.49,
+       8.75
+      ],
+      [
+       "jueves",
+       8.73,
+       9.31
+      ],
+      [
+       "los",
+       9.29,
+       9.47
+      ],
+      [
+       "abrimos.",
+       9.45,
+       10.066
+      ]
+     ]
     }
    ],
    "id": "b0"
   },
   {
    "i": 1,
-   "start": 9.765,
-   "end": 12.165,
+   "start": 10.5,
+   "end": 12.9,
    "sents": [],
    "id": "b1"
   },
   {
    "i": 2,
-   "start": 12.165,
-   "end": 25.23,
+   "start": 12.9,
+   "end": 27.852,
    "sents": [
     {
-     "text": "Esto es Sal y Asfalto.",
-     "start": 12.165,
-     "end": 13.662,
-     "voice": "host"
+     "text": "Estás en Sal y Asfalto.",
+     "start": 12.9,
+     "end": 14.593,
+     "voice": "host",
+     "words": [
+      [
+       "Estás",
+       12.9,
+       13.22
+      ],
+      [
+       "en",
+       13.22,
+       13.48
+      ],
+      [
+       "Sal",
+       13.46,
+       13.8
+      ],
+      [
+       "y",
+       13.78,
+       14.04
+      ],
+      [
+       "Asfalto.",
+       14.02,
+       14.593
+      ]
+     ]
     },
     {
      "text": "Cada sobre lleva una pregunta, lo que sí sabemos con certeza y nuestra predicción, con un medidor de confianza.",
-     "start": 13.992,
-     "end": 20.383,
-     "voice": "host"
+     "start": 14.82,
+     "end": 22.393,
+     "voice": "host",
+     "words": [
+      [
+       "Cada",
+       14.82,
+       15.24
+      ],
+      [
+       "sobre",
+       15.24,
+       15.63
+      ],
+      [
+       "lleva",
+       15.63,
+       16.02
+      ],
+      [
+       "una",
+       16.02,
+       16.28
+      ],
+      [
+       "pregunta,",
+       16.26,
+       16.863
+      ],
+      [
+       "lo",
+       17.06,
+       17.24
+      ],
+      [
+       "que",
+       17.22,
+       17.48
+      ],
+      [
+       "sí",
+       17.46,
+       17.72
+      ],
+      [
+       "sabemos",
+       17.7,
+       18.28
+      ],
+      [
+       "con",
+       18.26,
+       18.44
+      ],
+      [
+       "certeza",
+       18.42,
+       19.0
+      ],
+      [
+       "y",
+       18.98,
+       19.16
+      ],
+      [
+       "nuestra",
+       19.14,
+       19.56
+      ],
+      [
+       "predicción,",
+       19.54,
+       20.31
+      ],
+      [
+       "con",
+       20.34,
+       20.6
+      ],
+      [
+       "un",
+       20.58,
+       20.76
+      ],
+      [
+       "medidor",
+       20.74,
+       21.48
+      ],
+      [
+       "de",
+       21.46,
+       21.64
+      ],
+      [
+       "confianza.",
+       21.62,
+       22.393
+      ]
+     ]
     },
     {
      "text": "Ojo: las predicciones son nuestras, van en amarillo y no son información.",
-     "start": 20.713,
-     "end": 24.9,
-     "voice": "host"
+     "start": 22.66,
+     "end": 27.416,
+     "voice": "host",
+     "words": [
+      [
+       "Ojo:",
+       22.66,
+       23.24
+      ],
+      [
+       "las",
+       23.22,
+       23.383
+      ],
+      [
+       "predicciones",
+       23.38,
+       24.04
+      ],
+      [
+       "son",
+       24.02,
+       24.28
+      ],
+      [
+       "nuestras,",
+       24.26,
+       24.807
+      ],
+      [
+       "van",
+       24.98,
+       25.24
+      ],
+      [
+       "en",
+       25.22,
+       25.48
+      ],
+      [
+       "amarillo",
+       25.46,
+       26.01
+      ],
+      [
+       "y",
+       26.02,
+       26.2
+      ],
+      [
+       "no",
+       26.18,
+       26.44
+      ],
+      [
+       "son",
+       26.42,
+       26.76
+      ],
+      [
+       "información.",
+       26.74,
+       27.416
+      ]
+     ]
     }
    ],
    "id": "b2"
   },
   {
    "i": 3,
-   "start": 25.23,
-   "end": 44.436,
+   "start": 27.852,
+   "end": 49.201,
    "sents": [
     {
      "text": "Sobre uno:",
-     "start": 25.23,
-     "end": 26.013,
-     "voice": "host"
+     "start": 27.852,
+     "end": 28.61,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       27.852,
+       28.172
+      ],
+      [
+       "uno:",
+       28.172,
+       28.61
+      ]
+     ]
     },
     {
      "text": "¿cuándo llega el online?",
-     "start": 26.293,
-     "end": 27.724,
-     "voice": "host"
+     "start": 28.652,
+     "end": 29.946,
+     "voice": "host",
+     "words": [
+      [
+       "¿cuándo",
+       28.652,
+       28.732
+      ],
+      [
+       "llega",
+       28.972,
+       29.312
+      ],
+      [
+       "el",
+       29.292,
+       29.472
+      ],
+      [
+       "online?",
+       29.452,
+       29.946
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos:",
-     "start": 28.104,
-     "end": 29.073,
-     "voice": "host"
+     "start": 30.092,
+     "end": 31.106,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       30.092,
+       30.352
+      ],
+      [
+       "que",
+       30.332,
+       30.512
+      ],
+      [
+       "sabemos:",
+       30.492,
+       31.106
+      ]
+     ]
     },
     {
      "text": "Rockstar describe GTA 6 como una experiencia para un jugador y no ha dado fecha para un online.",
-     "start": 29.353,
-     "end": 34.879,
-     "voice": "host"
+     "start": 31.44,
+     "end": 38.04,
+     "voice": "host",
+     "words": [
+      [
+       "Rockstar",
+       31.44,
+       32.08
+      ],
+      [
+       "describe",
+       32.08,
+       32.657
+      ],
+      [
+       "GTA",
+       32.64,
+       33.139
+      ],
+      [
+       "6",
+       33.12,
+       33.54
+      ],
+      [
+       "como",
+       33.52,
+       33.78
+      ],
+      [
+       "una",
+       33.76,
+       34.1
+      ],
+      [
+       "experiencia",
+       34.08,
+       34.764
+      ],
+      [
+       "para",
+       34.8,
+       35.06
+      ],
+      [
+       "un",
+       35.04,
+       35.212
+      ],
+      [
+       "jugador",
+       35.2,
+       35.7
+      ],
+      [
+       "y",
+       35.68,
+       35.94
+      ],
+      [
+       "no",
+       35.92,
+       36.1
+      ],
+      [
+       "ha",
+       36.08,
+       36.26
+      ],
+      [
+       "dado",
+       36.24,
+       36.58
+      ],
+      [
+       "fecha",
+       36.56,
+       37.06
+      ],
+      [
+       "para",
+       37.04,
+       37.3
+      ],
+      [
+       "un",
+       37.28,
+       37.54
+      ],
+      [
+       "online.",
+       37.52,
+       38.04
+      ]
+     ]
     },
     {
      "text": "GTA Online, el de GTA 5, sigue activo.",
-     "start": 35.209,
-     "end": 38.013,
-     "voice": "host"
+     "start": 38.24,
+     "end": 41.738,
+     "voice": "host",
+     "words": [
+      [
+       "GTA",
+       38.24,
+       38.82
+      ],
+      [
+       "Online,",
+       38.8,
+       39.354
+      ],
+      [
+       "el",
+       39.36,
+       39.62
+      ],
+      [
+       "de",
+       39.6,
+       39.78
+      ],
+      [
+       "GTA",
+       39.76,
+       40.34
+      ],
+      [
+       "5,",
+       40.32,
+       40.82
+      ],
+      [
+       "sigue",
+       40.8,
+       41.22
+      ],
+      [
+       "activo.",
+       41.2,
+       41.738
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: no antes de 2027.",
-     "start": 38.343,
-     "end": 41.273,
-     "voice": "host"
+     "start": 42.0,
+     "end": 45.855,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       42.0,
+       42.484
+      ],
+      [
+       "predicción:",
+       42.48,
+       43.245
+      ],
+      [
+       "no",
+       43.44,
+       43.78
+      ],
+      [
+       "antes",
+       43.76,
+       44.1
+      ],
+      [
+       "de",
+       44.08,
+       44.34
+      ],
+      [
+       "2027.",
+       44.48,
+       45.855
+      ]
+     ]
     },
     {
      "text": "Confianza, cincuenta y cinco por ciento.",
-     "start": 41.603,
-     "end": 44.106,
-     "voice": "host"
+     "start": 46.285,
+     "end": 48.8,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       46.285,
+       46.845
+      ],
+      [
+       "cincuenta",
+       47.245,
+       48.766
+      ],
+      [
+       "y",
+       47.245,
+       48.766
+      ],
+      [
+       "cinco",
+       47.245,
+       48.766
+      ],
+      [
+       "por",
+       48.766,
+       48.796
+      ],
+      [
+       "ciento.",
+       48.77,
+       48.8
+      ]
+     ]
     }
    ],
    "id": "b3"
   },
   {
    "i": 4,
-   "start": 44.436,
-   "end": 61.619,
+   "start": 49.201,
+   "end": 68.66,
    "sents": [
     {
      "text": "Sobre dos:",
-     "start": 44.436,
-     "end": 45.181,
-     "voice": "host"
+     "start": 49.201,
+     "end": 50.162,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       49.201,
+       49.701
+      ],
+      [
+       "dos:",
+       49.841,
+       50.162
+      ]
+     ]
     },
     {
      "text": "¿habrá un modo a sesenta cuadros por segundo?",
-     "start": 45.461,
-     "end": 47.999,
-     "voice": "host"
+     "start": 50.321,
+     "end": 53.034,
+     "voice": "host",
+     "words": [
+      [
+       "¿habrá",
+       50.321,
+       50.661
+      ],
+      [
+       "un",
+       50.641,
+       50.821
+      ],
+      [
+       "modo",
+       50.801,
+       51.141
+      ],
+      [
+       "a",
+       51.121,
+       51.295
+      ],
+      [
+       "sesenta",
+       51.441,
+       51.749
+      ],
+      [
+       "cuadros",
+       51.761,
+       52.341
+      ],
+      [
+       "por",
+       52.321,
+       52.581
+      ],
+      [
+       "segundo?",
+       52.561,
+       53.034
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos: el objetivo oficial es treinta, también en PS5 Pro, y el estudio no se ha comprometido con sesenta.",
-     "start": 48.379,
-     "end": 55.552,
-     "voice": "host"
+     "start": 53.361,
+     "end": 61.886,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       53.361,
+       53.604
+      ],
+      [
+       "que",
+       53.601,
+       53.781
+      ],
+      [
+       "sabemos:",
+       53.761,
+       54.449
+      ],
+      [
+       "el",
+       54.561,
+       54.821
+      ],
+      [
+       "objetivo",
+       54.801,
+       55.461
+      ],
+      [
+       "oficial",
+       55.441,
+       55.941
+      ],
+      [
+       "es",
+       55.921,
+       56.181
+      ],
+      [
+       "treinta,",
+       56.321,
+       56.713
+      ],
+      [
+       "también",
+       56.961,
+       57.301
+      ],
+      [
+       "en",
+       57.281,
+       57.532
+      ],
+      [
+       "PS5",
+       57.521,
+       58.169
+      ],
+      [
+       "Pro,",
+       58.321,
+       58.662
+      ],
+      [
+       "y",
+       58.801,
+       58.981
+      ],
+      [
+       "el",
+       58.961,
+       59.141
+      ],
+      [
+       "estudio",
+       59.121,
+       59.621
+      ],
+      [
+       "no",
+       59.601,
+       59.861
+      ],
+      [
+       "se",
+       59.841,
+       60.021
+      ],
+      [
+       "ha",
+       60.001,
+       60.181
+      ],
+      [
+       "comprometido",
+       60.161,
+       60.93
+      ],
+      [
+       "con",
+       60.961,
+       61.221
+      ],
+      [
+       "sesenta.",
+       61.361,
+       61.886
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: el día del lanzamiento, no.",
-     "start": 55.882,
-     "end": 58.524,
-     "voice": "host"
+     "start": 62.312,
+     "end": 65.612,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       62.312,
+       62.792
+      ],
+      [
+       "predicción:",
+       62.792,
+       63.549
+      ],
+      [
+       "el",
+       63.672,
+       63.852
+      ],
+      [
+       "día",
+       63.832,
+       64.092
+      ],
+      [
+       "del",
+       64.072,
+       64.252
+      ],
+      [
+       "lanzamiento,",
+       64.232,
+       64.876
+      ],
+      [
+       "no.",
+       65.032,
+       65.612
+      ]
+     ]
     },
     {
      "text": "Confianza, setenta y cinco por ciento.",
-     "start": 58.854,
-     "end": 61.289,
-     "voice": "host"
+     "start": 65.592,
+     "end": 68.26,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       65.592,
+       66.252
+      ],
+      [
+       "setenta",
+       66.632,
+       68.228
+      ],
+      [
+       "y",
+       66.632,
+       68.228
+      ],
+      [
+       "cinco",
+       66.632,
+       68.228
+      ],
+      [
+       "por",
+       68.228,
+       68.258
+      ],
+      [
+       "ciento.",
+       68.232,
+       68.26
+      ]
+     ]
     }
    ],
    "id": "b4"
   },
   {
    "i": 5,
-   "start": 61.619,
-   "end": 74.101,
+   "start": 68.66,
+   "end": 82.251,
    "sents": [
     {
      "text": "Sobre tres:",
-     "start": 61.619,
-     "end": 62.438,
-     "voice": "host"
+     "start": 68.66,
+     "end": 69.61,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       68.66,
+       69.14
+      ],
+      [
+       "tres:",
+       69.3,
+       69.61
+      ]
+     ]
     },
     {
      "text": "¿cuántos edificios se podrán visitar por dentro?",
-     "start": 62.718,
-     "end": 65.605,
-     "voice": "host"
+     "start": 69.78,
+     "end": 72.783,
+     "voice": "host",
+     "words": [
+      [
+       "¿cuántos",
+       69.78,
+       70.36
+      ],
+      [
+       "edificios",
+       70.34,
+       71.08
+      ],
+      [
+       "se",
+       71.06,
+       71.239
+      ],
+      [
+       "podrán",
+       71.22,
+       71.64
+      ],
+      [
+       "visitar",
+       71.62,
+       72.052
+      ],
+      [
+       "por",
+       72.1,
+       72.36
+      ],
+      [
+       "dentro?",
+       72.34,
+       72.783
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos: no hay ninguna cifra oficial.",
-     "start": 65.985,
-     "end": 68.531,
-     "voice": "host"
+     "start": 73.06,
+     "end": 76.228,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       73.06,
+       73.32
+      ],
+      [
+       "que",
+       73.3,
+       73.556
+      ],
+      [
+       "sabemos:",
+       73.54,
+       74.011
+      ],
+      [
+       "no",
+       74.26,
+       74.52
+      ],
+      [
+       "hay",
+       74.5,
+       74.76
+      ],
+      [
+       "ninguna",
+       74.74,
+       75.24
+      ],
+      [
+       "cifra",
+       75.24,
+       75.635
+      ],
+      [
+       "oficial.",
+       75.635,
+       76.228
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: más que en GTA 5.",
-     "start": 68.861,
-     "end": 71.404,
-     "voice": "host"
+     "start": 76.684,
+     "end": 79.482,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       76.684,
+       77.084
+      ],
+      [
+       "predicción:",
+       77.084,
+       77.823
+      ],
+      [
+       "más",
+       77.964,
+       78.144
+      ],
+      [
+       "que",
+       78.204,
+       78.381
+      ],
+      [
+       "en",
+       78.364,
+       78.544
+      ],
+      [
+       "GTA",
+       78.524,
+       79.104
+      ],
+      [
+       "5.",
+       79.084,
+       79.482
+      ]
+     ]
     },
     {
      "text": "Confianza, sesenta por ciento.",
-     "start": 71.734,
-     "end": 73.771,
-     "voice": "host"
+     "start": 79.804,
+     "end": 81.851,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       79.804,
+       80.464
+      ],
+      [
+       "sesenta",
+       80.764,
+       81.818
+      ],
+      [
+       "por",
+       81.818,
+       81.848
+      ],
+      [
+       "ciento.",
+       81.821,
+       81.851
+      ]
+     ]
     }
    ],
    "id": "b5"
   },
   {
    "i": 6,
-   "start": 74.101,
-   "end": 92.568,
+   "start": 82.251,
+   "end": 102.113,
    "sents": [
     {
      "text": "Sobre cuatro:",
-     "start": 74.101,
-     "end": 75.016,
-     "voice": "host"
+     "start": 82.251,
+     "end": 83.151,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       82.251,
+       82.651
+      ],
+      [
+       "cuatro:",
+       82.811,
+       83.151
+      ]
+     ]
     },
     {
      "text": "¿cuánto pesa el Perfil Criminal?",
-     "start": 75.296,
-     "end": 77.242,
-     "voice": "host"
+     "start": 83.291,
+     "end": 85.165,
+     "voice": "host",
+     "words": [
+      [
+       "¿cuánto",
+       83.291,
+       83.711
+      ],
+      [
+       "pesa",
+       83.691,
+       84.098
+      ],
+      [
+       "el",
+       84.091,
+       84.191
+      ],
+      [
+       "Perfil",
+       84.171,
+       84.671
+      ],
+      [
+       "Criminal?",
+       84.651,
+       85.165
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos:",
-     "start": 77.622,
-     "end": 78.591,
-     "voice": "host"
+     "start": 85.291,
+     "end": 86.3,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       85.291,
+       85.551
+      ],
+      [
+       "que",
+       85.531,
+       85.791
+      ],
+      [
+       "sabemos:",
+       85.771,
+       86.3
+      ]
+     ]
     },
     {
      "text": "Rob Nelson, de Rockstar, dijo que las acciones constantes pueden influir en cómo reacciona el mundo y en la narrativa.",
-     "start": 78.871,
-     "end": 85.526,
-     "voice": "host"
+     "start": 86.635,
+     "end": 94.315,
+     "voice": "host",
+     "words": [
+      [
+       "Rob",
+       86.635,
+       86.795
+      ],
+      [
+       "Nelson,",
+       86.955,
+       87.601
+      ],
+      [
+       "de",
+       87.675,
+       87.855
+      ],
+      [
+       "Rockstar,",
+       87.835,
+       88.815
+      ],
+      [
+       "dijo",
+       88.795,
+       89.135
+      ],
+      [
+       "que",
+       89.115,
+       89.295
+      ],
+      [
+       "las",
+       89.275,
+       89.455
+      ],
+      [
+       "acciones",
+       89.435,
+       90.015
+      ],
+      [
+       "constantes",
+       89.995,
+       90.575
+      ],
+      [
+       "pueden",
+       90.555,
+       90.895
+      ],
+      [
+       "influir",
+       90.875,
+       91.455
+      ],
+      [
+       "en",
+       91.435,
+       91.615
+      ],
+      [
+       "cómo",
+       91.595,
+       91.855
+      ],
+      [
+       "reacciona",
+       91.835,
+       92.495
+      ],
+      [
+       "el",
+       92.475,
+       92.575
+      ],
+      [
+       "mundo",
+       92.555,
+       92.895
+      ],
+      [
+       "y",
+       92.875,
+       92.975
+      ],
+      [
+       "en",
+       92.955,
+       93.135
+      ],
+      [
+       "la",
+       93.115,
+       93.215
+      ],
+      [
+       "narrativa.",
+       93.215,
+       94.315
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: va a cambiar más el mundo que la trama principal.",
-     "start": 85.856,
-     "end": 89.872,
-     "voice": "host"
+     "start": 94.315,
+     "end": 98.975,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       94.315,
+       94.881
+      ],
+      [
+       "predicción:",
+       94.875,
+       95.69
+      ],
+      [
+       "va",
+       95.835,
+       96.095
+      ],
+      [
+       "a",
+       96.075,
+       96.156
+      ],
+      [
+       "cambiar",
+       96.155,
+       96.575
+      ],
+      [
+       "más",
+       96.555,
+       96.815
+      ],
+      [
+       "el",
+       96.795,
+       96.975
+      ],
+      [
+       "mundo",
+       96.955,
+       97.215
+      ],
+      [
+       "que",
+       97.195,
+       97.455
+      ],
+      [
+       "la",
+       97.435,
+       97.615
+      ],
+      [
+       "trama",
+       97.595,
+       98.095
+      ],
+      [
+       "principal.",
+       98.075,
+       98.975
+      ]
+     ]
     },
     {
      "text": "Confianza, cincuenta por ciento.",
-     "start": 90.202,
-     "end": 92.238,
-     "voice": "host"
+     "start": 98.955,
+     "end": 101.713,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       98.955,
+       99.666
+      ],
+      [
+       "cincuenta",
+       100.315,
+       101.682
+      ],
+      [
+       "por",
+       101.682,
+       101.712
+      ],
+      [
+       "ciento.",
+       101.685,
+       101.713
+      ]
+     ]
     }
    ],
    "id": "b6"
   },
   {
    "i": 7,
-   "start": 92.568,
-   "end": 109.165,
+   "start": 102.113,
+   "end": 121.23,
    "sents": [
     {
      "text": "Sobre cinco:",
-     "start": 92.568,
-     "end": 93.486,
-     "voice": "host"
+     "start": 102.113,
+     "end": 103.12,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       102.113,
+       102.593
+      ],
+      [
+       "cinco:",
+       102.753,
+       103.12
+      ]
+     ]
     },
     {
      "text": "¿los huracanes serán dinámicos o solo de historia?",
-     "start": 93.766,
-     "end": 96.438,
-     "voice": "host"
+     "start": 103.393,
+     "end": 106.489,
+     "voice": "host",
+     "words": [
+      [
+       "¿los",
+       103.393,
+       103.653
+      ],
+      [
+       "huracanes",
+       103.633,
+       104.373
+      ],
+      [
+       "serán",
+       104.353,
+       104.693
+      ],
+      [
+       "dinámicos",
+       104.673,
+       105.253
+      ],
+      [
+       "o",
+       105.313,
+       105.573
+      ],
+      [
+       "solo",
+       105.553,
+       105.813
+      ],
+      [
+       "de",
+       105.793,
+       106.017
+      ],
+      [
+       "historia?",
+       106.033,
+       106.489
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos: según Game Informer, tormentas tropicales y huracanes pueden azotar Leonida.",
-     "start": 96.818,
-     "end": 102.239,
-     "voice": "host"
+     "start": 106.753,
+     "end": 113.243,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       106.753,
+       107.013
+      ],
+      [
+       "que",
+       106.993,
+       107.253
+      ],
+      [
+       "sabemos:",
+       107.233,
+       107.891
+      ],
+      [
+       "según",
+       108.033,
+       108.453
+      ],
+      [
+       "Game",
+       108.433,
+       108.93
+      ],
+      [
+       "Informer,",
+       108.913,
+       109.492
+      ],
+      [
+       "tormentas",
+       109.713,
+       110.27
+      ],
+      [
+       "tropicales",
+       110.273,
+       110.933
+      ],
+      [
+       "y",
+       110.913,
+       111.093
+      ],
+      [
+       "huracanes",
+       111.073,
+       111.733
+      ],
+      [
+       "pueden",
+       111.713,
+       112.053
+      ],
+      [
+       "azotar",
+       112.033,
+       112.613
+      ],
+      [
+       "Leonida.",
+       112.593,
+       113.243
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: las dos cosas, clima libre y momentos de misión.",
-     "start": 102.569,
-     "end": 106.469,
-     "voice": "host"
+     "start": 113.67,
+     "end": 118.189,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       113.67,
+       114.07
+      ],
+      [
+       "predicción:",
+       114.07,
+       114.852
+      ],
+      [
+       "las",
+       115.11,
+       115.37
+      ],
+      [
+       "dos",
+       115.35,
+       115.655
+      ],
+      [
+       "cosas,",
+       115.67,
+       116.17
+      ],
+      [
+       "clima",
+       116.15,
+       116.57
+      ],
+      [
+       "libre",
+       116.55,
+       116.89
+      ],
+      [
+       "y",
+       116.87,
+       117.05
+      ],
+      [
+       "momentos",
+       117.03,
+       117.53
+      ],
+      [
+       "de",
+       117.51,
+       117.69
+      ],
+      [
+       "misión.",
+       117.67,
+       118.189
+      ]
+     ]
     },
     {
      "text": "Confianza, cincuenta por ciento.",
-     "start": 106.799,
-     "end": 108.835,
-     "voice": "host"
+     "start": 118.39,
+     "end": 120.83,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       118.39,
+       119.13
+      ],
+      [
+       "cincuenta",
+       119.59,
+       120.799
+      ],
+      [
+       "por",
+       120.799,
+       120.829
+      ],
+      [
+       "ciento.",
+       120.802,
+       120.83
+      ]
+     ]
     }
    ],
    "id": "b7"
   },
   {
    "i": 8,
-   "start": 109.165,
-   "end": 124.204,
+   "start": 121.23,
+   "end": 139.058,
    "sents": [
     {
      "text": "Sobre seis:",
-     "start": 109.165,
-     "end": 109.957,
-     "voice": "host"
+     "start": 121.23,
+     "end": 122.235,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       121.23,
+       121.55
+      ],
+      [
+       "seis:",
+       121.87,
+       122.235
+      ]
+     ]
     },
     {
      "text": "¿qué animal será legendario?",
-     "start": 110.237,
-     "end": 111.917,
-     "voice": "host"
+     "start": 122.35,
+     "end": 124.333,
+     "voice": "host",
+     "words": [
+      [
+       "¿qué",
+       122.35,
+       122.77
+      ],
+      [
+       "animal",
+       122.75,
+       123.25
+      ],
+      [
+       "será",
+       123.23,
+       123.57
+      ],
+      [
+       "legendario?",
+       123.55,
+       124.333
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos: habrá animales raros, descubribles y legendarios, pero nadie dijo cuáles.",
-     "start": 112.297,
-     "end": 117.3,
-     "voice": "host"
+     "start": 124.51,
+     "end": 130.786,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       124.51,
+       124.729
+      ],
+      [
+       "que",
+       124.75,
+       124.93
+      ],
+      [
+       "sabemos:",
+       124.91,
+       125.521
+      ],
+      [
+       "habrá",
+       125.79,
+       126.21
+      ],
+      [
+       "animales",
+       126.19,
+       126.77
+      ],
+      [
+       "raros,",
+       126.75,
+       127.17
+      ],
+      [
+       "descubribles",
+       127.23,
+       128.05
+      ],
+      [
+       "y",
+       128.03,
+       128.21
+      ],
+      [
+       "legendarios,",
+       128.19,
+       129.023
+      ],
+      [
+       "pero",
+       129.23,
+       129.49
+      ],
+      [
+       "nadie",
+       129.47,
+       129.89
+      ],
+      [
+       "dijo",
+       129.87,
+       130.264
+      ],
+      [
+       "cuáles.",
+       130.27,
+       130.786
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: un animal emblemático de Florida, como la pantera.",
-     "start": 117.63,
-     "end": 121.483,
-     "voice": "host"
+     "start": 131.22,
+     "end": 135.872,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       131.22,
+       131.78
+      ],
+      [
+       "predicción:",
+       131.78,
+       132.503
+      ],
+      [
+       "un",
+       132.74,
+       133.0
+      ],
+      [
+       "animal",
+       132.98,
+       133.4
+      ],
+      [
+       "emblemático",
+       133.38,
+       134.12
+      ],
+      [
+       "de",
+       134.1,
+       134.28
+      ],
+      [
+       "Florida,",
+       134.26,
+       134.817
+      ],
+      [
+       "como",
+       134.9,
+       135.16
+      ],
+      [
+       "la",
+       135.14,
+       135.315
+      ],
+      [
+       "pantera.",
+       135.3,
+       135.872
+      ]
+     ]
     },
     {
      "text": "Confianza, cuarenta por ciento.",
-     "start": 121.813,
-     "end": 123.874,
-     "voice": "host"
+     "start": 136.18,
+     "end": 138.658,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       136.18,
+       137.059
+      ],
+      [
+       "cuarenta",
+       137.38,
+       138.627
+      ],
+      [
+       "por",
+       138.627,
+       138.657
+      ],
+      [
+       "ciento.",
+       138.63,
+       138.658
+      ]
+     ]
     }
    ],
    "id": "b8"
   },
   {
    "i": 9,
-   "start": 124.204,
-   "end": 141.477,
+   "start": 139.058,
+   "end": 158.123,
    "sents": [
     {
      "text": "Sobre siete:",
-     "start": 124.204,
-     "end": 125.104,
-     "voice": "host"
+     "start": 139.058,
+     "end": 140.11,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       139.058,
+       139.538
+      ],
+      [
+       "siete:",
+       139.698,
+       140.11
+      ]
+     ]
     },
     {
      "text": "¿hay más de seis regiones?",
-     "start": 125.384,
-     "end": 126.926,
-     "voice": "host"
+     "start": 140.258,
+     "end": 141.903,
+     "voice": "host",
+     "words": [
+      [
+       "¿hay",
+       140.258,
+       140.438
+      ],
+      [
+       "más",
+       140.578,
+       140.758
+      ],
+      [
+       "de",
+       140.738,
+       140.918
+      ],
+      [
+       "seis",
+       141.058,
+       141.318
+      ],
+      [
+       "regiones?",
+       141.298,
+       141.903
+      ]
+     ]
     },
     {
      "text": "Lo que sabemos: hay seis regiones con nombre, y el mapa es el doble que el de GTA 5.",
-     "start": 127.306,
-     "end": 132.297,
-     "voice": "host"
+     "start": 141.938,
+     "end": 147.729,
+     "voice": "host",
+     "words": [
+      [
+       "Lo",
+       141.938,
+       142.104
+      ],
+      [
+       "que",
+       142.098,
+       142.278
+      ],
+      [
+       "sabemos:",
+       142.258,
+       142.909
+      ],
+      [
+       "hay",
+       143.058,
+       143.238
+      ],
+      [
+       "seis",
+       143.538,
+       143.718
+      ],
+      [
+       "regiones",
+       143.698,
+       144.25
+      ],
+      [
+       "con",
+       144.258,
+       144.518
+      ],
+      [
+       "nombre,",
+       144.498,
+       144.94
+      ],
+      [
+       "y",
+       144.978,
+       145.158
+      ],
+      [
+       "el",
+       145.138,
+       145.318
+      ],
+      [
+       "mapa",
+       145.298,
+       145.638
+      ],
+      [
+       "es",
+       145.618,
+       145.798
+      ],
+      [
+       "el",
+       145.778,
+       145.958
+      ],
+      [
+       "doble",
+       145.938,
+       146.358
+      ],
+      [
+       "que",
+       146.338,
+       146.518
+      ],
+      [
+       "el",
+       146.498,
+       146.678
+      ],
+      [
+       "de",
+       146.658,
+       146.804
+      ],
+      [
+       "GTA",
+       146.818,
+       147.398
+      ],
+      [
+       "5.",
+       147.378,
+       147.729
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción: muchas más zonas y pueblos dentro de esas regiones, pero no una séptima región grande.",
-     "start": 132.627,
-     "end": 138.78,
-     "voice": "host"
+     "start": 148.161,
+     "end": 155.184,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       148.161,
+       148.721
+      ],
+      [
+       "predicción:",
+       148.721,
+       149.566
+      ],
+      [
+       "muchas",
+       149.841,
+       150.062
+      ],
+      [
+       "más",
+       150.241,
+       150.501
+      ],
+      [
+       "zonas",
+       150.481,
+       150.901
+      ],
+      [
+       "y",
+       150.881,
+       151.035
+      ],
+      [
+       "pueblos",
+       151.041,
+       151.511
+      ],
+      [
+       "dentro",
+       151.521,
+       151.861
+      ],
+      [
+       "de",
+       151.841,
+       152.021
+      ],
+      [
+       "esas",
+       152.001,
+       152.341
+      ],
+      [
+       "regiones,",
+       152.321,
+       152.977
+      ],
+      [
+       "pero",
+       153.121,
+       153.381
+      ],
+      [
+       "no",
+       153.361,
+       153.621
+      ],
+      [
+       "una",
+       153.601,
+       153.861
+      ],
+      [
+       "séptima",
+       153.841,
+       154.341
+      ],
+      [
+       "región",
+       154.321,
+       154.821
+      ],
+      [
+       "grande.",
+       154.801,
+       155.184
+      ]
+     ]
     },
     {
      "text": "Confianza, cincuenta por ciento.",
-     "start": 139.11,
-     "end": 141.147,
-     "voice": "host"
+     "start": 155.361,
+     "end": 157.723,
+     "voice": "host",
+     "words": [
+      [
+       "Confianza,",
+       155.361,
+       156.181
+      ],
+      [
+       "cincuenta",
+       156.561,
+       157.7
+      ],
+      [
+       "por",
+       157.7,
+       157.723
+      ],
+      [
+       "ciento.",
+       157.703,
+       157.723
+      ]
+     ]
     }
    ],
    "id": "b9"
   },
   {
    "i": 10,
-   "start": 141.477,
-   "end": 155.742,
+   "start": 158.123,
+   "end": 174.215,
    "sents": [
     {
      "text": "Siete sobres, siete apuestas.",
-     "start": 141.477,
-     "end": 143.263,
-     "voice": "host"
+     "start": 158.203,
+     "end": 160.223,
+     "voice": "host",
+     "words": [
+      [
+       "Siete",
+       158.203,
+       158.383
+      ],
+      [
+       "sobres,",
+       158.523,
+       159.263
+      ],
+      [
+       "siete",
+       159.323,
+       159.484
+      ],
+      [
+       "apuestas.",
+       159.643,
+       160.223
+      ]
+     ]
     },
     {
      "text": "El jueves los abrimos jugando, uno por uno.",
-     "start": 143.593,
-     "end": 146.094,
-     "voice": "host"
+     "start": 160.443,
+     "end": 163.205,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       160.443,
+       160.623
+      ],
+      [
+       "jueves",
+       160.603,
+       161.263
+      ],
+      [
+       "los",
+       161.263,
+       161.293
+      ],
+      [
+       "abrimos",
+       161.263,
+       161.823
+      ],
+      [
+       "jugando,",
+       161.803,
+       162.336
+      ],
+      [
+       "uno",
+       162.363,
+       162.703
+      ],
+      [
+       "por",
+       162.683,
+       162.863
+      ],
+      [
+       "uno.",
+       162.843,
+       163.205
+      ]
+     ]
     },
     {
      "text": "Si quieres ver cuántas acertamos, y cuántas fallamos, suscríbete.",
-     "start": 146.424,
-     "end": 149.994,
-     "voice": "host"
+     "start": 163.403,
+     "end": 167.606,
+     "voice": "host",
+     "words": [
+      [
+       "Si",
+       163.403,
+       163.663
+      ],
+      [
+       "quieres",
+       163.643,
+       163.983
+      ],
+      [
+       "ver",
+       163.963,
+       164.181
+      ],
+      [
+       "cuántas",
+       164.203,
+       164.703
+      ],
+      [
+       "acertamos,",
+       164.683,
+       165.343
+      ],
+      [
+       "y",
+       165.403,
+       165.624
+      ],
+      [
+       "cuántas",
+       165.643,
+       166.063
+      ],
+      [
+       "fallamos,",
+       166.043,
+       166.783
+      ],
+      [
+       "suscríbete.",
+       166.763,
+       167.606
+      ]
+     ]
     },
     {
      "text": "Y deja tu predicción en los comentarios: la más acertada se lleva el comentario fijado.",
-     "start": 150.324,
-     "end": 155.412,
-     "voice": "host"
+     "start": 168.041,
+     "end": 173.784,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       168.041,
+       168.071
+      ],
+      [
+       "deja",
+       168.201,
+       168.615
+      ],
+      [
+       "tu",
+       168.601,
+       168.861
+      ],
+      [
+       "predicción",
+       168.841,
+       169.501
+      ],
+      [
+       "en",
+       169.481,
+       169.661
+      ],
+      [
+       "los",
+       169.641,
+       169.901
+      ],
+      [
+       "comentarios:",
+       169.881,
+       170.675
+      ],
+      [
+       "la",
+       170.841,
+       171.101
+      ],
+      [
+       "más",
+       171.081,
+       171.341
+      ],
+      [
+       "acertada",
+       171.321,
+       171.981
+      ],
+      [
+       "se",
+       171.961,
+       172.141
+      ],
+      [
+       "lleva",
+       172.121,
+       172.523
+      ],
+      [
+       "el",
+       172.523,
+       172.681
+      ],
+      [
+       "comentario",
+       172.681,
+       173.327
+      ],
+      [
+       "fijado.",
+       173.321,
+       173.784
+      ]
+     ]
     }
    ],
    "id": "b10"
   },
   {
    "i": 11,
-   "start": 155.742,
-   "end": 175.742,
+   "start": 174.215,
+   "end": 194.215,
    "sents": [],
    "id": "b11"
   }
  ],
- "lufs_in": -17.23
+ "lufs_in": -12.45
 }

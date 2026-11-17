@@ -85,7 +85,8 @@ Para usar gameplay propio con el riesgo mínimo razonable:
 
 | Recurso | Licencia | Uso comercial |
 |---|---|---|
-| Kokoro-82M (voces `em_alex`, `ef_dora`) | Apache 2.0 | Sí |
+| Supertonic 3 (Supertone): voces preestablecidas F3 (narradora) y M1 (copiloto) | Pesos: OpenRAIL-M · código: MIT | Sí, con las restricciones de uso responsable del anexo A de la licencia (nada ilegal, sin suplantar personas) |
+| Parakeet TDT v3 (NVIDIA), solo para verificar y sincronizar la voz | CC-BY-4.0 | Sí (herramienta; no aparece en los videos) |
 | sherpa-onnx (distribución del modelo) | Apache 2.0 | Sí |
 | espeak-ng (fonemización) | GPL v3 (herramienta) | Sí: el audio generado no es obra derivada del programa |
 | onnxruntime | MIT | Sí |
@@ -97,4 +98,4 @@ Para usar gameplay propio con el riesgo mínimo razonable:
 | Inter, JetBrains Mono | SIL OFL 1.1 | Sí |
 | Música, efectos, ilustraciones, iconos y logotipo | Creación original de este proyecto | Sí |
 
-**Nota sobre las voces:** según su ficha, Kokoro se entrenó con audio de dominio público, con licencias permisivas y sintético. Las voces no imitan a ninguna persona conocida. Riesgo residual: no podemos auditar cada muestra del entrenamiento. Si quieres eliminar también ese riesgo, graba la narración con tu voz.
+**Nota sobre las voces:** se usan las voces preestablecidas de Supertonic 3, que no imitan a ninguna persona conocida. La licencia OpenRAIL-M permite el uso comercial, pero obliga a respetar sus restricciones de uso (anexo A) y a conservar el aviso de licencia si se redistribuye el modelo. Lee el texto completo en huggingface.co/Supertone/supertonic-3 antes de monetizar. Riesgo residual: no podemos auditar los datos de entrenamiento. Si quieres eliminar también ese riesgo, graba la narración con tu voz.
