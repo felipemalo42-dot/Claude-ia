@@ -1,252 +1,252 @@
 1
-00:00:00,250 --> 00:00:05,010
+00:00:00,250 --> 00:00:03,810
 Faltan horas para el lanzamiento, y
 todavía hay siete preguntas que Rockstar
 
 2
-00:00:05,050 --> 00:00:06,210
+00:00:03,850 --> 00:00:04,850
 no ha respondido.
 
 3
-00:00:06,250 --> 00:00:08,450
+00:00:04,890 --> 00:00:07,010
 Las metimos en sobres sellados.
 
 4
-00:00:08,490 --> 00:00:10,316
+00:00:07,050 --> 00:00:09,400
 El jueves los abrimos.
 
 5
-00:00:12,900 --> 00:00:14,780
+00:00:12,463 --> 00:00:13,576
 Estás en Sal y Asfalto.
 
 6
-00:00:14,820 --> 00:00:20,300
+00:00:13,616 --> 00:00:18,343
 Cada sobre lleva una pregunta, lo que sí
 sabemos con certeza y nuestra predicción,
 
 7
-00:00:20,340 --> 00:00:22,620
+00:00:18,383 --> 00:00:20,263
 con un medidor de confianza.
 
 8
-00:00:22,660 --> 00:00:27,812
+00:00:20,303 --> 00:00:25,007
 Ojo: las predicciones son nuestras, van en
 amarillo y no son información.
 
 9
-00:00:27,852 --> 00:00:28,612
+00:00:25,047 --> 00:00:26,367
 Sobre uno:
 
 10
-00:00:28,652 --> 00:00:30,052
+00:00:26,407 --> 00:00:28,005
 ¿cuándo llega el online?
 
 11
-00:00:30,092 --> 00:00:31,400
+00:00:30,327 --> 00:00:31,805
 Lo que sabemos:
 
 12
-00:00:31,440 --> 00:00:36,520
+00:00:31,845 --> 00:00:36,045
 Rockstar describe GTA 6 como una
 experiencia para un jugador y no ha dado
 
 13
-00:00:36,560 --> 00:00:38,200
+00:00:36,085 --> 00:00:37,049
 fecha para un online.
 
 14
-00:00:38,240 --> 00:00:41,960
+00:00:37,089 --> 00:00:40,525
 GTA Online, el de GTA 5, sigue activo.
 
 15
-00:00:42,000 --> 00:00:46,245
+00:00:40,565 --> 00:00:43,405
 Nuestra predicción: no antes de 2027.
 
 16
-00:00:46,285 --> 00:00:49,161
+00:00:43,445 --> 00:00:45,776
 Confianza, cincuenta y cinco por ciento.
 
 17
-00:00:49,201 --> 00:00:50,281
+00:00:45,816 --> 00:00:46,656
 Sobre dos:
 
 18
-00:00:50,321 --> 00:00:53,321
+00:00:46,696 --> 00:00:49,616
 ¿habrá un modo a sesenta cuadros por
 segundo?
 
 19
-00:00:53,361 --> 00:00:59,561
+00:00:49,656 --> 00:00:54,416
 Lo que sabemos: el objetivo oficial es
 treinta, también en PS5 Pro, y el estudio
 
 20
-00:00:59,601 --> 00:01:02,272
+00:00:54,456 --> 00:00:57,298
 no se ha comprometido con sesenta.
 
 21
-00:01:02,312 --> 00:01:05,552
+00:00:57,338 --> 00:01:00,898
 Nuestra predicción: el día del
 lanzamiento, no.
 
 22
-00:01:05,592 --> 00:01:08,620
+00:01:00,938 --> 00:01:03,530
 Confianza, setenta y cinco por ciento.
 
 23
-00:01:08,660 --> 00:01:09,740
+00:01:04,503 --> 00:01:05,263
 Sobre tres:
 
 24
-00:01:09,780 --> 00:01:13,020
+00:01:05,303 --> 00:01:07,983
 ¿cuántos edificios se podrán visitar por
 dentro?
 
 25
-00:01:13,060 --> 00:01:16,644
+00:01:08,023 --> 00:01:11,884
 Lo que sabemos: no hay ninguna cifra
 oficial.
 
 26
-00:01:16,684 --> 00:01:19,764
+00:01:11,924 --> 00:01:14,684
 Nuestra predicción: más que en GTA 5.
 
 27
-00:01:19,804 --> 00:01:22,211
+00:01:14,724 --> 00:01:16,811
 Confianza, sesenta por ciento.
 
 28
-00:01:22,251 --> 00:01:23,251
+00:01:16,851 --> 00:01:17,691
 Sobre cuatro:
 
 29
-00:01:23,291 --> 00:01:25,251
+00:01:17,731 --> 00:01:19,691
 ¿cuánto pesa el Perfil Criminal?
 
 30
-00:01:25,291 --> 00:01:26,595
+00:01:19,731 --> 00:01:20,944
 Lo que sabemos:
 
 31
-00:01:26,635 --> 00:01:31,795
+00:01:20,984 --> 00:01:25,664
 Rob Nelson, de Rockstar, dijo que las
 acciones constantes pueden influir en cómo
 
 32
-00:01:31,835 --> 00:01:34,275
+00:01:25,704 --> 00:01:27,664
 reacciona el mundo y en la narrativa.
 
 33
-00:01:34,315 --> 00:01:38,915
+00:01:27,704 --> 00:01:31,584
 Nuestra predicción: va a cambiar más el
 mundo que la trama principal.
 
 34
-00:01:38,955 --> 00:01:42,073
+00:01:31,624 --> 00:01:34,522
 Confianza, cincuenta por ciento.
 
 35
-00:01:42,113 --> 00:01:43,353
+00:01:34,562 --> 00:01:35,242
 Sobre cinco:
 
 36
-00:01:43,393 --> 00:01:46,713
+00:01:35,282 --> 00:01:38,282
 ¿los huracanes serán dinámicos o solo de
 historia?
 
 37
-00:01:46,753 --> 00:01:51,993
+00:01:38,322 --> 00:01:42,702
 Lo que sabemos: según Game Informer,
 tormentas tropicales y huracanes pueden
 
 38
-00:01:52,033 --> 00:01:53,630
+00:01:42,742 --> 00:01:44,736
 azotar Leonida.
 
 39
-00:01:53,670 --> 00:01:58,350
+00:01:44,776 --> 00:01:49,776
 Nuestra predicción: las dos cosas, clima
 libre y momentos de misión.
 
 40
-00:01:58,390 --> 00:02:01,190
+00:01:49,816 --> 00:01:52,839
 Confianza, cincuenta por ciento.
 
 41
-00:02:01,230 --> 00:02:02,310
+00:01:52,879 --> 00:01:53,799
 Sobre seis:
 
 42
-00:02:02,350 --> 00:02:04,470
+00:01:53,839 --> 00:01:55,559
 ¿qué animal será legendario?
 
 43
-00:02:04,510 --> 00:02:09,830
+00:01:55,599 --> 00:02:00,039
 Lo que sabemos: habrá animales raros,
 descubribles y legendarios, pero nadie
 
 44
-00:02:09,870 --> 00:02:11,180
+00:02:00,079 --> 00:02:01,266
 dijo cuáles.
 
 45
-00:02:11,220 --> 00:02:16,140
+00:02:01,306 --> 00:02:05,746
 Nuestra predicción: un animal emblemático
 de Florida, como la pantera.
 
 46
-00:02:16,180 --> 00:02:19,018
+00:02:05,786 --> 00:02:08,136
 Confianza, cuarenta por ciento.
 
 47
-00:02:19,058 --> 00:02:20,218
+00:02:08,974 --> 00:02:09,894
 Sobre siete:
 
 48
-00:02:20,258 --> 00:02:21,898
+00:02:09,934 --> 00:02:11,574
 ¿hay más de seis regiones?
 
 49
-00:02:21,938 --> 00:02:26,778
+00:02:11,614 --> 00:02:15,994
 Lo que sabemos: hay seis regiones con
 nombre, y el mapa es el doble que el de
 
 50
-00:02:26,818 --> 00:02:28,121
+00:02:16,034 --> 00:02:18,171
 GTA 5.
 
 51
-00:02:28,161 --> 00:02:33,561
+00:02:18,211 --> 00:02:23,451
 Nuestra predicción: muchas más zonas y
 pueblos dentro de esas regiones, pero no
 
 52
-00:02:33,601 --> 00:02:35,321
+00:02:23,491 --> 00:02:25,211
 una séptima región grande.
 
 53
-00:02:35,361 --> 00:02:38,163
+00:02:25,251 --> 00:02:27,561
 Confianza, cincuenta por ciento.
 
 54
-00:02:38,203 --> 00:02:40,403
+00:02:27,601 --> 00:02:29,401
 Siete sobres, siete apuestas.
 
 55
-00:02:40,443 --> 00:02:43,363
+00:02:29,441 --> 00:02:32,121
 El jueves los abrimos jugando, uno por
 uno.
 
 56
-00:02:43,403 --> 00:02:48,001
+00:02:32,161 --> 00:02:36,857
 Si quieres ver cuántas acertamos, y
 cuántas fallamos, suscríbete.
 
 57
-00:02:48,041 --> 00:02:53,281
+00:02:36,897 --> 00:02:41,417
 Y deja tu predicción en los comentarios:
 la más acertada se lleva el comentario
 
 58
-00:02:53,321 --> 00:02:54,744
+00:02:41,457 --> 00:02:43,187
 fijado.

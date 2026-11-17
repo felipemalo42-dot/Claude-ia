@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (publicar antes de la medianoche del 18/19)  
-**Formato:** Largo (16:9) · **Duración:** 2:56 · **Música:** estilo «mystery» original · **Voz:** narrador
+**Formato:** Largo (16:9) · **Duración:** 3:03 · **Música:** estilo «mystery» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -41,14 +41,14 @@ CAPÍTULOS
 0:00 Gancho
 0:12 Reglas
 0:25 Sobre 1
-0:44 Sobre 2
-1:01 Sobre 3
-1:14 Sobre 4
-1:32 Sobre 5
-1:49 Sobre 6
-2:04 Sobre 7
-2:21 Cierre
-2:35 Pantalla final
+0:45 Sobre 2
+1:04 Sobre 3
+1:16 Sobre 4
+1:34 Sobre 5
+1:52 Sobre 6
+2:08 Sobre 7
+2:27 Cierre
+2:43 Pantalla final
 
 FUENTES
 • FAQ de PlayStation / Take-Two (online)
@@ -57,7 +57,7 @@ FUENTES
 • Game Informer n.º 382 (huracanes, fauna, mapa ×2)
 • Web oficial (6 regiones)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
@@ -85,7 +85,8 @@ gta 6 misterios, gta 6 preguntas, gta 6 online, gta 6 60 fps, gta 6 predicciones
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -99,7 +100,7 @@ gta 6 misterios, gta 6 preguntas, gta 6 online, gta 6 60 fps, gta 6 predicciones
 | ¿Aporta valor? | Sí: separa hechos de predicciones |
 | ¿Guion distinto a los demás? | Sí: sobres sellados + medidores |
 | ¿Imágenes adecuadas y autorizadas? | Sí |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
 | ¿Montaje con buen ritmo? | Sí |
 | ¿Título honesto? | Sí |
 | ¿Miniatura corresponde? | Sí |
