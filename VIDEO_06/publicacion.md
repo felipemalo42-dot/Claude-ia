@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento y primera semana  
-**Formato:** Largo (16:9) · **Duración:** 3:19 · **Música:** estilo «dembow» original · **Voz:** narrador
+**Formato:** Largo (16:9) · **Duración:** 3:37 · **Música:** estilo «dembow» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -41,17 +41,16 @@ CAPÍTULOS
 0:00 Gancho
 0:11 Introducción
 0:25 Ronda 1 · el mundo
-0:37 Ronda 2 · protagonistas
-0:56 Ronda 4 · perfil criminal
-1:09 Ronda 5 · sistema de foco
-1:22 Ronda 6 · clima
-1:33 Ronda 7 · fauna
-1:46 Ronda 8 · precio
-1:58 Ronda 9 · online
-2:08 Ronda 10 · plataformas
-2:22 Lo que no cambia
-2:35 Rumores
-2:59 Despedida
+0:40 Ronda 2 · protagonistas
+1:01 Ronda 4 · perfil criminal
+1:16 Ronda 5 · sistema de foco
+1:30 Ronda 6 · clima
+1:42 Ronda 7 · fauna
+2:07 Ronda 9 · online
+2:18 Ronda 10 · plataformas
+2:33 Lo que no cambia
+2:49 Rumores
+3:17 Despedida
 
 FUENTES
 • Game Informer n.º 382 (mapa ×2, clima, +170 especies)
@@ -62,7 +61,7 @@ FUENTES
 • TweakTown / RockstarINTEL (objetivo 30 fps)
 • Historial de lanzamiento de GTA V (2013, PC en 2015)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
@@ -92,7 +91,8 @@ gta 6 vs gta 5, gta 5 vs gta 6, diferencias gta 6, gta 6 cambios, gta 6 estrella
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -106,7 +106,7 @@ gta 6 vs gta 5, gta 5 vs gta 6, diferencias gta 6, gta 6 cambios, gta 6 estrella
 | ¿Aporta valor? | Sí |
 | ¿Guion distinto a los demás? | Sí: rondas tipo transmisión deportiva |
 | ¿Imágenes adecuadas y autorizadas? | Sí: infografías propias |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
 | ¿Montaje con buen ritmo? | Sí: ritmo alto, música dembow original |
 | ¿Título honesto? | Sí |
 | ¿Miniatura corresponde? | Sí |

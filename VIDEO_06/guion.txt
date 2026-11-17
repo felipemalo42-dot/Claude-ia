@@ -1,5 +1,5 @@
 GUION — GTA 6 vs GTA 5: 10 cambios confirmados, 1 que no cambió y 3 rumores
-Formato: Largo (16:9) · Duración: 00:03:36 · Voz: Supertonic 3 (voz femenina), español
+Formato: Largo (16:9) · Duración: 00:03:37 · Voz: narradora (Chatterbox Multilingual), español
 ==============================================================================
 
 
@@ -7,97 +7,97 @@ Formato: Largo (16:9) · Duración: 00:03:36 · Voz: Supertonic 3 (voz femenina)
 
 [00:00.25] NARRADORA: Trece años separan a GTA 5 de GTA 6.
 [00:03.61] NARRADORA: Y en ese tiempo, Rockstar cambió más cosas de las que parece... y dejó intacta una que muchos esperaban.
-[00:10.25] (sin narración · 2.4 s)
+[00:09.33] (sin narración · 2.4 s)
 
 ## INTRODUCCIÓN
 
-[00:12.65] NARRADORA: Estás en Sal y Asfalto.
-[00:14.57] NARRADORA: Hoy: diez cambios confirmados entre GTA 5 y GTA 6, uno que no cambió, y tres rumores que te vamos a señalar con el dedo.
-[00:22.81] NARRADORA: A la izquierda, GTA 5, y a la derecha, GTA 6.
+[00:11.73] NARRADORA: Estás en Sal y Asfalto.
+[00:13.57] NARRADORA: Hoy: diez cambios confirmados entre GTA 5 y GTA 6, uno que no cambió, y tres rumores que te vamos a señalar con el dedo.
+[00:21.33] NARRADORA: A la izquierda, GTA 5, y a la derecha, GTA 6.
 
 ## RONDA 1 · EL MUNDO
 
-[00:27.01] NARRADORA: Uno: el mundo.
-[00:28.21] NARRADORA: GTA 5 recreaba el sur de California con Los Santos.
-[00:31.97] NARRADORA: GTA 6 se muda a Leonida, la parodia de Florida.
-[00:35.94] NARRADORA: Y según Aaron Garbut, de Rockstar, el mapa es el doble de grande.
+[00:25.63] NARRADORA: Uno: el mundo.
+[00:27.55] NARRADORA: GTA 5 recreaba el sur de California con Los Santos.
+[00:30.75] NARRADORA: GTA 6 se muda a Leonida, la parodia de Florida.
+[00:35.02] NARRADORA: Y según Aaron Garbut, de Rockstar, el mapa es el doble de grande.
 
 ## RONDA 2 · PROTAGONISTAS
 
-[00:40.03] NARRADORA: Dos: los protagonistas.
-[00:41.95] NARRADORA: GTA 5 tenía tres:
-[00:43.63] NARRADORA: Michael, Franklin y Trevor.
-[00:45.73] NARRADORA: GTA 6 tiene dos, Jason y Lucía, y en el Extended Look se vio que puedes cambiar entre ellos en plena acción, sin pantalla de carga.
+[00:40.83] NARRADORA: Dos: los protagonistas.
+[00:42.45] NARRADORA: GTA 5 tenía tres:
+[00:44.13] NARRADORA: Michael, Franklin y Trevor.
+[00:46.09] NARRADORA: GTA 6 tiene dos, Jason y Lucía, y en el Extended Look se vio que puedes cambiar entre ellos en plena acción, sin pantalla de carga.
 
 ## RONDA 3 · ESTRELLAS DE BÚSQUEDA
 
-[00:54.83] NARRADORA: Tres: las estrellas de búsqueda.
-[00:56.91] NARRADORA: GTA 5 llegaba a cinco.
-[00:58.75] NARRADORA: GTA 6 llega a seis.
+[00:55.13] NARRADORA: Tres: las estrellas de búsqueda.
+[00:57.13] NARRADORA: GTA 5 llegaba a cinco.
+[00:58.97] NARRADORA: GTA 6 llega a seis.
 
 ## RONDA 4 · PERFIL CRIMINAL
 
-[01:01.06] NARRADORA: Cuatro: algo que GTA 5 no tenía.
-[01:03.86] NARRADORA: El Perfil Criminal, un sistema que registra cómo te comportas.
-[01:07.70] NARRADORA: Rob Nelson, de Rockstar, dijo que las acciones constantes pueden influir en cómo reacciona el mundo.
+[01:01.64] NARRADORA: Cuatro: algo que GTA 5 no tenía.
+[01:04.28] NARRADORA: El Perfil Criminal, un sistema que registra cómo te comportas.
+[01:09.32] NARRADORA: Rob Nelson, de Rockstar, dijo que las acciones constantes pueden influir en cómo reacciona el mundo.
 
 ## RONDA 5 · SISTEMA DE FOCO
 
-[01:14.25] NARRADORA: Cinco: el sistema de foco.
-[01:16.25] NARRADORA: Como en Red Dead Redemption 2, puedes fijar la atención en personas y animales para interactuar con ellos.
-[01:22.89] NARRADORA: Y al apuntar, el tiempo se ralentiza y se marcan los puntos débiles del enemigo.
+[01:16.43] NARRADORA: Cinco: el sistema de foco.
+[01:18.91] NARRADORA: Como en Red Dead Redemption 2, puedes fijar la atención en personas y animales para interactuar con ellos.
+[01:24.83] NARRADORA: Y al apuntar, el tiempo se ralentiza y se marcan los puntos débiles del enemigo.
 
 ## RONDA 6 · CLIMA
 
-[01:28.90] NARRADORA: Seis: el clima.
-[01:30.50] NARRADORA: GTA 5 tenía lluvia y tormentas.
-[01:33.46] NARRADORA: GTA 6 suma tormentas tropicales y huracanes, con un sistema rehecho a partir del de Red Dead Redemption 2, según Game Informer.
+[01:30.76] NARRADORA: Seis: el clima.
+[01:32.12] NARRADORA: GTA 5 tenía lluvia y tormentas.
+[01:34.68] NARRADORA: GTA 6 suma tormentas tropicales y huracanes, con un sistema rehecho a partir del de Red Dead Redemption 2, según Game Informer.
 
 ## RONDA 7 · FAUNA
 
-[01:42.55] NARRADORA: Siete: la fauna.
-[01:44.15] NARRADORA: GTA 5 tenía animales, sí.
-[01:46.39] NARRADORA: Pero GTA 6, según Game Informer, tiene más de ciento setenta especies.
-[01:51.73] NARRADORA: Y algunas se pueden rastrear por rareza: raras, descubribles y legendarias.
+[01:42.85] NARRADORA: Siete: la fauna.
+[01:44.53] NARRADORA: GTA 5 tenía animales, sí.
+[01:46.77] NARRADORA: Pero GTA 6, según Game Informer, tiene más de ciento setenta especies.
+[01:51.66] NARRADORA: Y algunas se pueden rastrear por rareza: raras, descubribles y legendarias.
 
 ## RONDA 8 · PRECIO
 
-[01:56.83] NARRADORA: Ocho: el precio.
-[01:58.35] NARRADORA: GTA 5 salió en 2013 a 59,99 dólares.
-[02:03.71] NARRADORA: GTA 6 cuesta 79,99 en su edición estándar.
+[01:58.09] NARRADORA: Ocho: el precio.
+[01:59.29] NARRADORA: GTA 5 salió en 2013 a 59,99 dólares.
+[02:03.21] NARRADORA: GTA 6 cuesta 79,99 en su edición estándar.
 
 ## RONDA 9 · ONLINE
 
-[02:08.70] NARRADORA: Nueve: el online.
-[02:10.38] NARRADORA: GTA Online llegó apenas dos semanas después de GTA 5.
-[02:14.62] NARRADORA: Para GTA 6, Rockstar habla de una experiencia para un jugador, sin fecha para un online.
+[02:07.26] NARRADORA: Nueve: el online.
+[02:09.34] NARRADORA: GTA Online llegó apenas dos semanas después de GTA 5.
+[02:13.02] NARRADORA: Para GTA 6, Rockstar habla de una experiencia para un jugador, sin fecha para un online.
 
 ## RONDA 10 · PLATAFORMAS
 
-[02:21.31] NARRADORA: Diez: las plataformas.
-[02:23.07] NARRADORA: GTA 5 salió en PS3 y Xbox 360, y a PC llegó diecinueve meses después.
-[02:29.95] NARRADORA: GTA 6 sale solo en PS5 y Xbox Series, y la versión de PC no tiene fecha.
+[02:18.95] NARRADORA: Diez: las plataformas.
+[02:20.39] NARRADORA: GTA 5 salió en PS3 y Xbox 360, y a PC llegó diecinueve meses después.
+[02:27.27] NARRADORA: GTA 6 sale solo en PS5 y Xbox Series, y la versión de PC no tiene fecha.
 
 ## LO QUE NO CAMBIA
 
-[02:36.33] NARRADORA: ¿Y lo que no cambió?
-[02:37.69] NARRADORA: El idioma.
-[02:38.57] NARRADORA: GTA 5 no tenía doblaje al español y GTA 6 tampoco: voces en inglés y textos en español.
-[02:44.89] NARRADORA: Algunos lo celebran por las actuaciones originales; otros, no tanto.
+[02:33.23] NARRADORA: ¿Y lo que no cambió?
+[02:35.07] NARRADORA: El idioma.
+[02:36.35] NARRADORA: GTA 5 no tenía doblaje al español y GTA 6 tampoco: voces en inglés y textos en español.
+[02:44.05] NARRADORA: Algunos lo celebran por las actuaciones originales; otros, no tanto.
 
 ## RUMORES
 
-[02:49.39] NARRADORA: Y ahora, tres rumores, con etiqueta roja.
-[02:52.57] NARRADORA: Uno: un modo a sesenta cuadros por segundo.
-[02:55.39] NARRADORA: Rockstar dijo que el objetivo es treinta, y no ha confirmado sesenta.
-[03:00.31] NARRADORA: Dos: un online para Leonida en pocas semanas.
-[03:03.75] NARRADORA: Lo dice un filtrador, no Rockstar.
-[03:06.55] NARRADORA: Tres: la versión de PC en 2027.
-[03:10.08] NARRADORA: Es lo que esperan muchos analistas mirando lo que pasó con GTA 5, pero nadie lo ha anunciado.
+[02:49.78] NARRADORA: Y ahora, tres rumores, con etiqueta roja.
+[02:52.50] NARRADORA: Uno: un modo a sesenta cuadros por segundo.
+[02:55.54] NARRADORA: Rockstar dijo que el objetivo es treinta, y no ha confirmado sesenta.
+[03:00.50] NARRADORA: Dos: un online para Leonida en pocas semanas.
+[03:03.62] NARRADORA: Lo dice un filtrador, no Rockstar.
+[03:06.58] NARRADORA: Tres: la versión de PC en 2027.
+[03:10.22] NARRADORA: Es lo que esperan muchos analistas mirando lo que pasó con GTA 5, pero nadie lo ha anunciado.
 
 ## LLAMADA A LA ACCIÓN
 
-[03:16.19] NARRADORA: Diez cambios, una tradición y tres incógnitas.
-[03:19.71] NARRADORA: ¿Cuál de estos cambios te parece el más importante?
-[03:22.43] NARRADORA: Te leo en los comentarios.
-[03:24.47] NARRADORA: Y si quieres la comparación jugando, con pruebas reales, suscríbete: llega después del jueves.
+[03:17.09] NARRADORA: Diez cambios, una tradición y tres incógnitas.
+[03:20.53] NARRADORA: ¿Cuál de estos cambios te parece el más importante?
+[03:23.41] NARRADORA: Te leo en los comentarios.
+[03:25.23] NARRADORA: Y si quieres la comparación jugando, con pruebas reales, suscríbete: llega después del jueves.
