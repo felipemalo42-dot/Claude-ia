@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento  
-**Formato:** Short vertical (9:16) · **Duración:** 0:41 · **Música:** estilo «electro» original · **Voz:** narrador
+**Formato:** Short vertical (9:16) · **Duración:** 0:45 · **Música:** estilo «electro» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -42,7 +42,7 @@ FUENTES
 • PS Store México (00:00 del 19, hora del centro)
 • Forbes (12 nov. 2026): EE. UU. abre a las 00:00 ET
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida #shorts
 ```
@@ -68,7 +68,8 @@ gta 6, gta 6 hora, a qué hora sale gta 6, gta 6 méxico, gta 6 colombia, gta 6 
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -82,7 +83,7 @@ gta 6, gta 6 hora, a qué hora sale gta 6, gta 6 méxico, gta 6 colombia, gta 6 
 | ¿Aporta valor? | Sí: hora exacta por país |
 | ¿Guion distinto a los demás? | Sí: Short con globo 3D |
 | ¿Imágenes adecuadas y autorizadas? | Sí: Natural Earth (dominio público) |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
 | ¿Montaje con buen ritmo? | Sí: ritmo rápido, subtítulos palabra a palabra |
 | ¿Título honesto? | Sí |
 | ¿Miniatura corresponde? | Sí |
