@@ -299,7 +299,7 @@ beat("Porque el anzuelo se aprovecha de tres cosas reales. "
      "La estafa no vende un juego: vende la ilusión de no quedarte afuera.", None,
      sfx=[("w:sin PS5", "pop", 0.4), ("w:espera", "pop", 0.4), ("w:trucos", "pop", 0.4), ("w:no vende", "hit", 0.5)])
 beat("El anzuelo tiene tres piezas. Una página que imita a una tienda. Un botón de descarga. Y una excusa para que bajes la guardia. "
-     "La empresa ESET detectó un archivo llamado {gta6_installer.exe|ge te a seis, guion bajo, installer, punto e equis e}, que en realidad transporta Vidar: un programa diseñado para robar información. "
+     "La empresa de seguridad ESET detectó un instalador falso de GTA 6 que en realidad transporta Vidar: un programa diseñado para robar información. "
      "Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.",
      sc_hook_parts, section="2 · ANATOMÍA DEL ANZUELO", energy=2, trans=("glitch", 0.35),
      sfx=[("w:página", "pop", 0.4), ("w:botón", "pop", 0.4), ("w:excusa", "pop", 0.4), ("w:Vidar", "alarm", 0.3), ("w:WARDEN", "alarm", 0.3)])

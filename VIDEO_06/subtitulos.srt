@@ -1,283 +1,280 @@
 1
-00:00:00,250 --> 00:00:03,206
+00:00:00,250 --> 00:00:03,570
 Trece años separan a GTA 5 de GTA 6.
 
 2
-00:00:03,536 --> 00:00:07,945
+00:00:03,610 --> 00:00:08,610
 Y en ese tiempo, Rockstar cambió más cosas
 de las que parece... y dejó intacta una
 
 3
-00:00:07,945 --> 00:00:09,074
+00:00:08,650 --> 00:00:10,062
 que muchos esperaban.
 
 4
-00:00:11,804 --> 00:00:13,235
-Esto es Sal y Asfalto.
+00:00:12,651 --> 00:00:14,531
+Estás en Sal y Asfalto.
 
 5
-00:00:13,565 --> 00:00:18,831
+00:00:14,571 --> 00:00:20,771
 Hoy: diez cambios confirmados entre GTA 5
 y GTA 6, uno que no cambió, y tres rumores
 
 6
-00:00:18,831 --> 00:00:21,025
+00:00:20,811 --> 00:00:22,771
 que te vamos a señalar con el dedo.
 
 7
-00:00:21,355 --> 00:00:23,072
-A la izquierda, GTA 5.
+00:00:22,811 --> 00:00:26,971
+A la izquierda, GTA 5, y a la derecha, GTA
+6.
 
 8
-00:00:23,402 --> 00:00:24,997
-A la derecha, GTA 6.
-
-9
-00:00:25,327 --> 00:00:26,319
+00:00:27,011 --> 00:00:28,171
 Uno: el mundo.
 
-10
-00:00:26,649 --> 00:00:29,777
+9
+00:00:28,211 --> 00:00:31,931
 GTA 5 recreaba el sur de California con
 Los Santos.
 
-11
-00:00:30,107 --> 00:00:33,030
+10
+00:00:31,971 --> 00:00:35,900
 GTA 6 se muda a Leonida, la parodia de
 Florida.
 
-12
-00:00:33,360 --> 00:00:36,810
+11
+00:00:35,940 --> 00:00:39,991
 Y según Aaron Garbut, de Rockstar, el mapa
 es el doble de grande.
 
-13
-00:00:37,140 --> 00:00:38,581
+12
+00:00:40,031 --> 00:00:41,911
 Dos: los protagonistas.
 
-14
-00:00:38,911 --> 00:00:40,478
+13
+00:00:41,951 --> 00:00:43,591
 GTA 5 tenía tres:
 
-15
-00:00:40,758 --> 00:00:42,329
+14
+00:00:43,631 --> 00:00:45,692
 Michael, Franklin y Trevor.
 
-16
-00:00:42,659 --> 00:00:47,201
+15
+00:00:45,732 --> 00:00:51,292
 GTA 6 tiene dos, Jason y Lucía, y en el
 Extended Look se vio que puedes cambiar
 
-17
-00:00:47,201 --> 00:00:50,133
+16
+00:00:51,332 --> 00:00:54,793
 entre ellos en plena acción, sin pantalla
 de carga.
 
-18
-00:00:50,463 --> 00:00:52,222
+17
+00:00:54,833 --> 00:00:56,873
 Tres: las estrellas de búsqueda.
 
-19
-00:00:52,552 --> 00:00:54,419
+18
+00:00:56,913 --> 00:00:58,713
 GTA 5 llegaba a cinco.
 
-20
-00:00:54,749 --> 00:00:56,275
+19
+00:00:58,753 --> 00:01:01,025
 GTA 6 llega a seis.
 
-21
-00:00:56,605 --> 00:00:58,961
+20
+00:01:01,065 --> 00:01:03,825
 Cuatro: algo que GTA 5 no tenía.
 
-22
-00:00:59,291 --> 00:01:02,857
+21
+00:01:03,865 --> 00:01:07,665
 El Perfil Criminal, un sistema que
 registra cómo te comportas.
 
-23
-00:01:03,187 --> 00:01:07,655
+22
+00:01:07,705 --> 00:01:12,545
 Rob Nelson, de Rockstar, dijo que las
 acciones constantes pueden influir en cómo
 
-24
-00:01:07,655 --> 00:01:08,716
+23
+00:01:12,585 --> 00:01:14,212
 reacciona el mundo.
 
-25
-00:01:09,046 --> 00:01:10,692
+24
+00:01:14,252 --> 00:01:16,212
 Cinco: el sistema de foco.
 
-26
-00:01:11,022 --> 00:01:15,314
+25
+00:01:16,252 --> 00:01:21,092
 Como en Red Dead Redemption 2, puedes
 fijar la atención en personas y animales
 
-27
-00:01:15,314 --> 00:01:16,800
+26
+00:01:21,132 --> 00:01:22,852
 para interactuar con ellos.
 
-28
-00:01:17,130 --> 00:01:21,685
+27
+00:01:22,892 --> 00:01:28,860
 Y al apuntar, el tiempo se ralentiza y se
 marcan los puntos débiles del enemigo.
 
-29
-00:01:22,015 --> 00:01:23,008
+28
+00:01:28,900 --> 00:01:30,460
 Seis: el clima.
 
-30
-00:01:23,338 --> 00:01:25,652
+29
+00:01:30,500 --> 00:01:33,420
 GTA 5 tenía lluvia y tormentas.
 
-31
-00:01:25,982 --> 00:01:30,465
+30
+00:01:33,460 --> 00:01:38,220
 GTA 6 suma tormentas tropicales y
 huracanes, con un sistema rehecho a partir
 
-32
-00:01:30,465 --> 00:01:33,415
+31
+00:01:38,260 --> 00:01:42,511
 del de Red Dead Redemption 2, según Game
 Informer.
 
-33
-00:01:33,745 --> 00:01:34,902
+32
+00:01:42,551 --> 00:01:44,111
 Siete: la fauna.
 
-34
-00:01:35,232 --> 00:01:37,178
+33
+00:01:44,151 --> 00:01:46,351
 GTA 5 tenía animales, sí.
 
-35
-00:01:37,508 --> 00:01:41,815
+34
+00:01:46,391 --> 00:01:51,693
 Pero GTA 6, según Game Informer, tiene más
 de ciento setenta especies.
 
-36
-00:01:42,145 --> 00:01:46,572
+35
+00:01:51,733 --> 00:01:56,798
 Y algunas se pueden rastrear por rareza:
 raras, descubribles y legendarias.
 
-37
-00:01:46,902 --> 00:01:48,045
+36
+00:01:56,838 --> 00:01:58,318
 Ocho: el precio.
 
-38
-00:01:48,375 --> 00:01:53,110
+37
+00:01:58,358 --> 00:02:03,678
 GTA 5 salió en 2013 a 59,99 dólares.
 
-39
-00:01:53,440 --> 00:01:57,725
+38
+00:02:03,718 --> 00:02:08,662
 GTA 6 cuesta 79,99 en su edición estándar.
 
-40
-00:01:58,055 --> 00:01:59,163
+39
+00:02:08,702 --> 00:02:10,342
 Nueve: el online.
 
-41
-00:01:59,493 --> 00:02:03,221
+40
+00:02:10,382 --> 00:02:14,582
 GTA Online llegó apenas dos semanas
 después de GTA 5.
 
-42
-00:02:03,551 --> 00:02:07,566
+41
+00:02:14,622 --> 00:02:19,542
 Para GTA 6, Rockstar habla de una
 experiencia para un jugador, sin fecha
 
-43
-00:02:07,566 --> 00:02:08,403
+42
+00:02:19,582 --> 00:02:21,275
 para un online.
 
-44
-00:02:08,733 --> 00:02:10,051
+43
+00:02:21,315 --> 00:02:23,035
 Diez: las plataformas.
 
-45
-00:02:10,381 --> 00:02:16,505
+44
+00:02:23,075 --> 00:02:29,915
 GTA 5 salió en PS3 y Xbox 360, y a PC
 llegó diecinueve meses después.
 
-46
-00:02:16,835 --> 00:02:21,984
+45
+00:02:29,955 --> 00:02:36,293
 GTA 6 sale solo en PS5 y Xbox Series, y la
 versión de PC no tiene fecha.
 
-47
-00:02:22,314 --> 00:02:23,501
+46
+00:02:36,333 --> 00:02:37,653
 ¿Y lo que no cambió?
 
-48
-00:02:23,881 --> 00:02:24,702
+47
+00:02:37,693 --> 00:02:38,533
 El idioma.
 
-49
-00:02:25,032 --> 00:02:30,471
+48
+00:02:38,573 --> 00:02:43,893
 GTA 5 no tenía doblaje al español y GTA 6
 tampoco: voces en inglés y textos en
 
-50
-00:02:30,471 --> 00:02:31,029
+49
+00:02:43,933 --> 00:02:44,855
 español.
 
-51
-00:02:31,359 --> 00:02:35,303
+50
+00:02:44,895 --> 00:02:49,358
 Algunos lo celebran por las actuaciones
 originales; otros, no tanto.
 
-52
-00:02:35,633 --> 00:02:38,043
+51
+00:02:49,398 --> 00:02:52,538
 Y ahora, tres rumores, con etiqueta roja.
 
-53
-00:02:38,373 --> 00:02:40,868
+52
+00:02:52,578 --> 00:02:55,358
 Uno: un modo a sesenta cuadros por
 segundo.
 
-54
-00:02:41,198 --> 00:02:45,050
+53
+00:02:55,398 --> 00:03:00,272
 Rockstar dijo que el objetivo es treinta,
 y no ha confirmado sesenta.
 
-55
-00:02:45,380 --> 00:02:47,812
+54
+00:03:00,312 --> 00:03:03,712
 Dos: un online para Leonida en pocas
 semanas.
 
-56
-00:02:48,142 --> 00:02:50,161
+55
+00:03:03,752 --> 00:03:06,512
 Lo dice un filtrador, no Rockstar.
 
-57
-00:02:50,491 --> 00:02:53,213
+56
+00:03:06,552 --> 00:03:10,042
 Tres: la versión de PC en 2027.
 
-58
-00:02:53,543 --> 00:02:58,333
+57
+00:03:10,082 --> 00:03:15,002
 Es lo que esperan muchos analistas mirando
 lo que pasó con GTA 5, pero nadie lo ha
 
-59
-00:02:58,333 --> 00:02:58,917
+58
+00:03:15,042 --> 00:03:16,152
 anunciado.
 
-60
-00:02:59,247 --> 00:03:01,890
+59
+00:03:16,192 --> 00:03:19,672
 Diez cambios, una tradición y tres
 incógnitas.
 
-61
-00:03:02,220 --> 00:03:05,007
+60
+00:03:19,712 --> 00:03:22,392
 ¿Cuál de estos cambios te parece el más
 importante?
 
-62
-00:03:05,387 --> 00:03:06,868
+61
+00:03:22,432 --> 00:03:24,431
 Te leo en los comentarios.
 
-63
-00:03:07,198 --> 00:03:11,817
+62
+00:03:24,471 --> 00:03:29,711
 Y si quieres la comparación jugando, con
 pruebas reales, suscríbete: llega después
 
-64
-00:03:11,817 --> 00:03:12,437
+63
+00:03:29,751 --> 00:03:30,820
 del jueves.
