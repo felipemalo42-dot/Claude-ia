@@ -1,57 +1,57 @@
 1
-00:00:00,200 --> 00:00:02,400
+00:00:00,200 --> 00:00:02,240
 Más de ciento setenta especies.
 
 2
-00:00:02,440 --> 00:00:05,600
+00:00:02,280 --> 00:00:05,680
 Eso es lo que, según Game Informer, vive
 en Leonida.
 
 3
-00:00:05,640 --> 00:00:07,805
+00:00:05,720 --> 00:00:08,630
 Y Rockstar ya nombró a cuatro.
 
 4
-00:00:07,845 --> 00:00:13,485
+00:00:09,207 --> 00:00:14,047
 El aligátor americano, al que casi todos
 llamamos caimán: el rey de los pantanos,
 
 5
-00:00:13,525 --> 00:00:15,485
+00:00:14,087 --> 00:00:15,647
 visto desde el primer tráiler.
 
 6
-00:00:15,525 --> 00:00:18,925
+00:00:15,687 --> 00:00:18,287
 El flamenco, el rosado más famoso de
 Florida.
 
 7
-00:00:18,965 --> 00:00:22,462
+00:00:18,327 --> 00:00:21,210
 El pelícano, patrullando muelles y playas.
 
 8
-00:00:22,502 --> 00:00:27,022
+00:00:21,250 --> 00:00:25,290
 Y el manatí, la vaca marina: lenta, enorme
 y pacífica.
 
 9
-00:00:27,062 --> 00:00:32,222
+00:00:25,330 --> 00:00:30,090
 Además, algunos animales se podrán
 rastrear por rareza: raros, descubribles y
 
 10
-00:00:32,262 --> 00:00:33,262
+00:00:30,130 --> 00:00:31,050
 legendarios.
 
 11
-00:00:33,302 --> 00:00:35,344
+00:00:31,090 --> 00:00:32,630
 ¿Cuáles serán legendarios?
 
 12
-00:00:35,384 --> 00:00:37,024
+00:00:32,670 --> 00:00:34,230
 Todavía nadie lo sabe.
 
 13
-00:00:37,064 --> 00:00:41,921
+00:00:34,270 --> 00:00:39,403
 Guarda este video: después del lanzamiento
 armamos la guía de campo completa.
