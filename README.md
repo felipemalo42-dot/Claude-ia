@@ -28,7 +28,7 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
 | 09 | 7 misterios que se resuelven el jueves | Largo | 3:03 | ✅ **Terminado** | mié 18 · 21:00 |
 | 10 | Abrimos los 7 sobres: lo comprobamos jugando | Largo (post-lanzamiento) | estimada 8-10 min | 🟡 **Preproducción**: faltan capturas propias y veredictos. El MP4 incluido es un **animático rotulado "NO PUBLICAR"** | lun 23 · 19:00 |
 
-**Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada −14,4/−14,5 LUFS.
+**Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada entre −14,1 y −14,5 LUFS.
 
 ## Contenido de cada carpeta `VIDEO_XX`
 | Archivo | Qué es |
