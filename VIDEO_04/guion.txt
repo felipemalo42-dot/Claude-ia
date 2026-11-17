@@ -1,5 +1,5 @@
 GUION — El mapa de GTA 6 explicado: las 6 regiones de Leonida y los lugares reales que las inspiran
-Formato: Largo (16:9) · Duración: 00:03:31 · Voz: Kokoro (Apache-2.0), español latinoamericano
+Formato: Largo (16:9) · Duración: 00:03:32 · Voz: Kokoro (Apache-2.0), español latinoamericano
 ==============================================================================
 
 
@@ -7,76 +7,76 @@ Formato: Largo (16:9) · Duración: 00:03:31 · Voz: Kokoro (Apache-2.0), españ
 
 [00:00.25] NARRADOR: Rockstar todavía no ha publicado un mapa completo de Leonida.
 [00:04.00] NARRADOR: Pero sí dejó pistas: seis nombres, dos ubicaciones confirmadas y un estado real que todos reconocemos.
-[00:10.47] NARRADOR: Hoy armamos el rompecabezas, sin inventar ni una pieza.
-[00:14.08] (sin narración · 2.4 s)
+[00:10.48] NARRADOR: Hoy armamos el rompecabezas, sin inventar ni una pieza.
+[00:14.09] (sin narración · 2.4 s)
 
 ## INTRODUCCIÓN
 
-[00:16.48] NARRADOR: Esto es Caimán Neón.
-[00:18.12] NARRADOR: Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad.
-[00:24.36] NARRADOR: Y una advertencia importante: el mapa que vas a ver es la Florida real, no el mapa del juego.
-[00:29.87] NARRADOR: Lo usamos porque Leonida es, claramente, su parodia.
+[00:16.49] NARRADOR: Esto es Sal y Asfalto.
+[00:18.32] NARRADOR: Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad.
+[00:24.56] NARRADOR: Y una advertencia importante: el mapa que vas a ver es la Florida real, no el mapa del juego.
+[00:30.08] NARRADOR: Lo usamos porque Leonida es, claramente, su parodia.
 
 ## TAMAÑO
 
-[00:33.31] NARRADOR: Primero, el tamaño.
-[00:34.96] NARRADOR: Aaron Garbut, de Rockstar, le dijo a la revista Game Informer que el mapa es el doble de grande que el de GTA 5.
-[00:41.67] NARRADOR: No sabemos si habla de superficie de tierra, de área total o de contenido, así que tómalo como una escala, no como una medida exacta.
+[00:33.51] NARRADOR: Primero, el tamaño.
+[00:35.16] NARRADOR: Aaron Garbut, de Rockstar, le dijo a la revista Game Informer que el mapa es el doble de grande que el de GTA 5.
+[00:41.87] NARRADOR: No sabemos si habla de superficie de tierra, de área total o de contenido, así que tómalo como una escala, no como una medida exacta.
 
 ## PARADA 1 · MOUNT KALAGA
 
-[00:49.48] NARRADOR: Primera parada: el extremo norte.
-[00:51.90] NARRADOR: La web de Rockstar ubica el Parque Nacional Mount Kalaga contra la frontera norte de Leonida, y lo describe como el borde salvaje del estado: caza, pesca y caminos para todoterreno, lejos del caos de Vice City.
-[01:03.88] NARRADOR: Curiosamente, la Florida real no tiene montañas.
-[01:07.30] NARRADOR: Su punto más alto, Britton Hill, mide unos ciento cinco metros... y también está pegado a la frontera norte.
+[00:49.68] NARRADOR: Primera parada: el extremo norte.
+[00:52.11] NARRADOR: La web de Rockstar ubica el Parque Nacional Mount Kalaga contra la frontera norte de Leonida, y lo describe como el borde salvaje del estado: caza, pesca y caminos para todoterreno, lejos del caos de Vice City.
+[01:04.08] NARRADOR: Curiosamente, la Florida real no tiene montañas.
+[01:07.50] NARRADOR: Su punto más alto, Britton Hill, mide unos ciento cinco metros... y también está pegado a la frontera norte.
 
 ## PARADA 2 · PORT GELLHORN
 
-[01:13.86] NARRADOR: Segunda parada, hacia el oeste:
-[01:16.07] NARRADOR: Port Gellhorn.
-[01:17.18] NARRADOR: Rockstar lo llama la costa olvidada de Leonida: un antiguo destino de vacaciones lleno de moteles baratos, atracciones cerradas y centros comerciales vacíos.
-[01:26.74] NARRADOR: La comunidad lo asocia con Panama City y el noroeste de Florida, la zona conocida como el Panhandle.
-[01:32.87] NARRADOR: Ojo:
-[01:33.68] NARRADOR: Rockstar no ha dicho en qué punto exacto del mapa está.
+[01:14.06] NARRADOR: Segunda parada, hacia el oeste:
+[01:16.27] NARRADOR: Port Gellhorn.
+[01:17.38] NARRADOR: Rockstar lo llama la costa olvidada de Leonida: un antiguo destino de vacaciones lleno de moteles baratos, atracciones cerradas y centros comerciales vacíos.
+[01:26.95] NARRADOR: La comunidad lo asocia con Panama City y el noroeste de Florida, la zona conocida como el Panhandle.
+[01:33.07] NARRADOR: Ojo:
+[01:33.88] NARRADOR: Rockstar no ha dicho en qué punto exacto del mapa está.
 
 ## PARADA 3 · AMBROSIA
 
-[01:36.98] NARRADOR: Tercera parada: el corazón del estado.
-[01:39.60] NARRADOR: Según Rockstar, Ambrosia es un pueblo industrial en el centro de Leonida, construido alrededor de una refinería de azúcar, donde la vieja industria y los viejos valores siguen mandando, cueste lo que cueste.
-[01:51.20] NARRADOR: La pista real es casi un regalo:
-[01:53.58] NARRADOR: Clewiston, a orillas del lago Okeechobee, se promociona como la ciudad más dulce de Estados Unidos por su industria azucarera.
+[01:37.18] NARRADOR: Tercera parada: el corazón del estado.
+[01:39.80] NARRADOR: Según Rockstar, Ambrosia es un pueblo industrial en el centro de Leonida, construido alrededor de una refinería de azúcar, donde la vieja industria y los viejos valores siguen mandando, cueste lo que cueste.
+[01:51.41] NARRADOR: La pista real es casi un regalo:
+[01:53.79] NARRADOR: Clewiston, a orillas del lago Okeechobee, se promociona como la ciudad más dulce de Estados Unidos por su industria azucarera.
 
 ## PARADA 4 · GRASSRIVERS
 
-[02:01.19] NARRADOR: Bajamos al sur, y la carretera empieza a perderse entre el agua.
-[02:05.19] NARRADOR: Grassrivers es el humedal de Leonida, inspirado en los Everglades: el famoso río de hierba, un pantano gigantesco que avanza despacio hacia el mar.
-[02:13.80] NARRADOR: Ahí viven los caimanes que vimos desde el primer tráiler.
-[02:17.16] NARRADOR: Y según Game Informer, Leonida tendrá más de ciento setenta especies de animales.
+[02:01.40] NARRADOR: Bajamos al sur, y la carretera empieza a perderse entre el agua.
+[02:05.40] NARRADOR: Grassrivers es el humedal de Leonida, inspirado en los Everglades: el famoso río de hierba, un pantano gigantesco que avanza despacio hacia el mar.
+[02:14.00] NARRADOR: Ahí viven los caimanes que vimos desde el primer tráiler.
+[02:17.37] NARRADOR: Y según Game Informer, Leonida tendrá más de ciento setenta especies de animales.
 
 ## PARADA 5 · VICE CITY
 
-[02:22.14] NARRADOR: Quinta parada: la estrella.
-[02:24.12] NARRADOR: Vice City, la versión de Miami que Rockstar parodia desde el año dos mil dos.
-[02:28.58] NARRADOR: Playas, rascacielos y una vida nocturna que no se apaga.
-[02:32.17] NARRADOR: Es el centro urbano de Leonida, y el lugar donde casi todo el marketing ha puesto la cámara.
+[02:22.46] NARRADOR: Quinta parada: la estrella.
+[02:24.44] NARRADOR: Vice City, la versión de Miami que Rockstar parodia desde el año dos mil dos.
+[02:28.90] NARRADOR: Playas, rascacielos y una vida nocturna que no se apaga.
+[02:32.48] NARRADOR: Es el centro urbano de Leonida, y el lugar donde casi todo el marketing ha puesto la cámara.
 
 ## PARADA 6 · LEONIDA KEYS
 
-[02:37.57] NARRADOR: Y la última parada: las Leonida Keys, el reflejo de los Cayos de Florida, esa cadena de islas unidas por puentes sobre el mar.
-[02:45.26] NARRADOR: Aquí hay un dato oficial clave para la historia: según la web de Rockstar, Jason trabaja en los Keys para traficantes locales.
+[02:37.88] NARRADOR: Y la última parada: las Leonida Keys, el reflejo de los Cayos de Florida, esa cadena de islas unidas por puentes sobre el mar.
+[02:45.57] NARRADOR: Aquí hay un dato oficial clave para la historia: según la web de Rockstar, Jason trabaja en los Keys para traficantes locales.
 
 ## LO QUE NO SABEMOS
 
-[02:52.82] NARRADOR: ¿Y qué no sabemos?
-[02:54.42] NARRADOR: Muchísimo.
-[02:55.61] NARRADOR: No sabemos la forma exacta de Leonida, ni cuánto se parece su costa a la de Florida.
-[03:00.81] NARRADOR: No sabemos cuántos interiores se pueden visitar, ni qué pueblos hay entre una región y otra.
-[03:06.24] NARRADOR: Y no sabemos si estas seis regiones son todas.
-[03:09.12] NARRADOR: Eso solo se responde jugando.
+[02:53.13] NARRADOR: ¿Y qué no sabemos?
+[02:54.73] NARRADOR: Muchísimo.
+[02:55.91] NARRADOR: No sabemos la forma exacta de Leonida, ni cuánto se parece su costa a la de Florida.
+[03:01.12] NARRADOR: No sabemos cuántos interiores se pueden visitar, ni qué pueblos hay entre una región y otra.
+[03:06.55] NARRADOR: Y no sabemos si estas seis regiones son todas.
+[03:09.43] NARRADOR: Eso solo se responde jugando.
 
 ## LLAMADA A LA ACCIÓN
 
-[03:11.41] NARRADOR: El jueves, con el juego en las manos, volvemos a este mapa y marcamos qué deducciones acertamos y cuáles fallamos.
-[03:18.07] NARRADOR: Si quieres ver ese marcador, suscríbete.
-[03:20.78] NARRADOR: Y cuéntame en los comentarios:
-[03:22.84] NARRADOR: ¿a qué región vas a ir primero?
+[03:11.72] NARRADOR: El jueves, con el juego en las manos, volvemos a este mapa y marcamos qué deducciones acertamos y cuáles fallamos.
+[03:18.38] NARRADOR: Si quieres ver ese marcador, suscríbete.
+[03:21.09] NARRADOR: Y cuéntame en los comentarios:
+[03:23.15] NARRADOR: ¿a qué región vas a ir primero?

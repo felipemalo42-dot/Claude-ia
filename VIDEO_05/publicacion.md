@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (válido durante la primera semana)  
-**Formato:** Largo (16:9) · **Duración:** 3:06 · **Música:** estilo «noir» original · **Voz:** narrador + analista
+**Formato:** Largo (16:9) · **Duración:** 3:07 · **Música:** estilo «noir» original · **Voz:** narrador + analista
 
 ## A. Estrategia y posicionamiento
 
@@ -44,7 +44,7 @@ CAPÍTULOS
 0:53 Expediente 2 · Jason
 1:16 La pareja
 1:38 Dos protagonistas
-1:53 Reparto
+1:54 Reparto
 2:24 Lo que no sabemos
 2:46 Despedida
 
@@ -55,14 +55,14 @@ FUENTES
 • Extended Look (agosto 2026) vía TechRadar / Red Bull
 • Rob Nelson (Rockstar) sobre el Perfil Criminal, vía prensa
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-jason y lucia, lucia gta 6, jason gta 6, personajes gta 6, historia gta 6, gta 6 sin spoilers, cal hampton, boobie ike, real dimez, raul bautista, brian heder, gta 6, caimán neón
+jason y lucia, lucia gta 6, jason gta 6, personajes gta 6, historia gta 6, gta 6 sin spoilers, cal hampton, boobie ike, real dimez, raul bautista, brian heder, gta 6, sal y asfalto
 
 ## Comentario fijado recomendado
 

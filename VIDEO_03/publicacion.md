@@ -57,14 +57,14 @@ FUENTES
 • Neowin: estafas de descarga gratuita
 • Take-Two: sin fecha para PC
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-gta 6 pc, gta 6 pc descargar, gta 6 apk, gta 6 android, gta 6 gratis, gta 6 descargar, gta 6 malware, gta 6 estafa, gta 6 virus, seguridad gamer, infostealer, gta 6, caimán neón
+gta 6 pc, gta 6 pc descargar, gta 6 apk, gta 6 android, gta 6 gratis, gta 6 descargar, gta 6 malware, gta 6 estafa, gta 6 virus, seguridad gamer, infostealer, gta 6, sal y asfalto
 
 ## Comentario fijado recomendado
 

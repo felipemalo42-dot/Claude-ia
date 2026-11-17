@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (100 % producible con información oficial)  
-**Formato:** Largo (16:9) · **Duración:** 4:29 · **Música:** estilo «synthwave» original · **Voz:** narrador
+**Formato:** Largo (16:9) · **Duración:** 4:30 · **Música:** estilo «synthwave» original · **Voz:** narrador
 
 ## A. Estrategia y posicionamiento
 
@@ -37,19 +37,19 @@
 ```
 GTA 6 se desbloquea a la medianoche HORA LOCAL del jueves 19 de noviembre de 2026. En este video revisamos las 7 cosas que tienes que tener listas antes: consola, espacio (≈210 GB), precarga, hora por país, precio, idioma y modo online.
 
-En Caimán Neón separamos lo OFICIAL (verde), lo DEDUCIDO (amarillo) y el RUMOR (rosado).
+En Sal y Asfalto manda el semáforo: lo OFICIAL en verde, lo DEDUCIDO en amarillo y el RUMOR en rojo.
 
 CAPÍTULOS
 0:00 Gancho
 0:17 Introducción
-0:30 1 · plataforma
-1:01 2 · espacio
-1:31 3 · precarga
+0:31 1 · plataforma
+1:02 2 · espacio
+1:32 3 · precarga
 1:51 4 · hora
 2:32 5 · precio
-3:10 6 · idioma
-3:31 7 · online
-3:54 Cierre
+3:11 6 · idioma
+3:32 7 · online
+3:55 Cierre
 4:09 Despedida
 
 FUENTES
@@ -64,14 +64,14 @@ FUENTES
 • Wccftech / Digital Citizen: sin fecha de PC
 • GameSpot: espacio útil de PS5 (667 GB) y Series S (364 GB)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-gta 6, gta vi, gta 6 hora, gta 6 hora de lanzamiento, a qué hora sale gta 6, gta 6 precio, gta 6 precio méxico, gta 6 precio colombia, gta 6 cuánto pesa, gta 6 210 gb, gta 6 español, gta 6 doblaje latino, gta 6 ps5, gta 6 xbox series, gta 6 ps4, gta 6 pc, gta 6 online, gta 6 precarga, grand theft auto 6, caimán neón
+gta 6, gta vi, gta 6 hora, gta 6 hora de lanzamiento, a qué hora sale gta 6, gta 6 precio, gta 6 precio méxico, gta 6 precio colombia, gta 6 cuánto pesa, gta 6 210 gb, gta 6 español, gta 6 doblaje latino, gta 6 ps5, gta 6 xbox series, gta 6 ps4, gta 6 pc, gta 6 online, gta 6 precarga, grand theft auto 6, sal y asfalto
 
 ## Comentario fijado recomendado
 

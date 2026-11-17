@@ -1,10 +1,10 @@
 {
- "total": 204.457,
+ "total": 204.787,
  "beats": [
   {
    "i": 0,
    "start": 0.25,
-   "end": 13.949,
+   "end": 13.95,
    "sents": [
     {
      "text": "Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.",
@@ -15,13 +15,13 @@
     {
      "text": "Todo falso.",
      "start": 8.362,
-     "end": 9.253,
+     "end": 9.254,
      "voice": "host"
     },
     {
      "text": "Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.",
-     "start": 9.583,
-     "end": 13.619,
+     "start": 9.584,
+     "end": 13.62,
      "voice": "host"
     }
    ],
@@ -29,32 +29,32 @@
   },
   {
    "i": 1,
-   "start": 13.949,
-   "end": 16.349,
+   "start": 13.95,
+   "end": 16.35,
    "sents": [],
    "id": "b1"
   },
   {
    "i": 2,
-   "start": 16.349,
-   "end": 24.525,
+   "start": 16.35,
+   "end": 24.712,
    "sents": [
     {
-     "text": "Esto es Caimán Neón.",
-     "start": 16.349,
-     "end": 17.658,
+     "text": "Esto es Sal y Asfalto.",
+     "start": 16.35,
+     "end": 17.846,
      "voice": "host"
     },
     {
      "text": "Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.",
-     "start": 17.988,
-     "end": 21.413,
+     "start": 18.177,
+     "end": 21.6,
      "voice": "host"
     },
     {
      "text": "Y para eso me acompaña nuestra analista.",
-     "start": 21.743,
-     "end": 24.195,
+     "start": 21.93,
+     "end": 24.382,
      "voice": "host"
     }
    ],
@@ -62,19 +62,19 @@
   },
   {
    "i": 3,
-   "start": 24.525,
-   "end": 28.738,
+   "start": 24.712,
+   "end": 28.925,
    "sents": [
     {
      "text": "Hola.",
-     "start": 24.525,
-     "end": 24.966,
+     "start": 24.712,
+     "end": 25.153,
      "voice": "analista"
     },
     {
      "text": "Vamos a abrir el archivo paso a paso, sin tecnicismos.",
-     "start": 25.296,
-     "end": 28.408,
+     "start": 25.483,
+     "end": 28.595,
      "voice": "analista"
     }
    ],
@@ -82,37 +82,37 @@
   },
   {
    "i": 4,
-   "start": 28.738,
-   "end": 46.705,
+   "start": 28.925,
+   "end": 46.879,
    "sents": [
     {
      "text": "Primero, el dato que desarma toda la estafa.",
-     "start": 28.738,
-     "end": 31.347,
+     "start": 28.925,
+     "end": 31.534,
      "voice": "host"
     },
     {
      "text": "GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.",
-     "start": 31.677,
-     "end": 36.854,
+     "start": 31.864,
+     "end": 37.041,
      "voice": "host"
     },
     {
      "text": "No hay versión de PC anunciada.",
-     "start": 37.184,
-     "end": 39.276,
+     "start": 37.371,
+     "end": 39.452,
      "voice": "host"
     },
     {
      "text": "Y no hay versión para Android ni para iPhone.",
-     "start": 39.605,
-     "end": 42.08,
+     "start": 39.782,
+     "end": 42.256,
      "voice": "host"
     },
     {
      "text": "Cualquier archivo que diga lo contrario está mintiendo desde el nombre.",
-     "start": 42.41,
-     "end": 46.375,
+     "start": 42.586,
+     "end": 46.549,
      "voice": "host"
     }
    ],
@@ -120,43 +120,43 @@
   },
   {
    "i": 5,
-   "start": 46.705,
-   "end": 64.407,
+   "start": 46.879,
+   "end": 64.583,
    "sents": [
     {
      "text": "¿Y por qué cae tanta gente?",
-     "start": 46.705,
-     "end": 48.359,
+     "start": 46.879,
+     "end": 48.533,
      "voice": "analista"
     },
     {
      "text": "Porque el anzuelo se aprovecha de tres cosas reales.",
-     "start": 48.739,
-     "end": 51.704,
+     "start": 48.913,
+     "end": 51.878,
      "voice": "analista"
     },
     {
      "text": "Hay millones de jugadores sin PS5 ni Xbox Series.",
-     "start": 52.034,
-     "end": 55.533,
+     "start": 52.208,
+     "end": 55.707,
      "voice": "analista"
     },
     {
      "text": "La espera duró años.",
-     "start": 55.863,
-     "end": 57.202,
+     "start": 56.037,
+     "end": 57.377,
      "voice": "analista"
     },
     {
      "text": "Y en internet abundan los trucos para todo.",
-     "start": 57.532,
-     "end": 60.028,
+     "start": 57.707,
+     "end": 60.204,
      "voice": "analista"
     },
     {
      "text": "La estafa no vende un juego: vende la ilusión de no quedarte afuera.",
-     "start": 60.358,
-     "end": 64.077,
+     "start": 60.534,
+     "end": 64.253,
      "voice": "analista"
     }
    ],
@@ -164,43 +164,43 @@
   },
   {
    "i": 6,
-   "start": 64.407,
-   "end": 88.121,
+   "start": 64.583,
+   "end": 88.296,
    "sents": [
     {
      "text": "El anzuelo tiene tres piezas.",
-     "start": 64.407,
-     "end": 66.191,
+     "start": 64.583,
+     "end": 66.367,
      "voice": "analista"
     },
     {
      "text": "Una página que imita a una tienda.",
-     "start": 66.521,
-     "end": 68.582,
+     "start": 66.697,
+     "end": 68.757,
      "voice": "analista"
     },
     {
      "text": "Un botón de descarga.",
-     "start": 68.912,
-     "end": 70.31,
+     "start": 69.087,
+     "end": 70.486,
      "voice": "analista"
     },
     {
      "text": "Y una excusa para que bajes la guardia.",
-     "start": 70.64,
-     "end": 72.813,
+     "start": 70.816,
+     "end": 72.989,
      "voice": "analista"
     },
     {
      "text": "La empresa ESET detectó un archivo llamado gta6_installer.exe, que en realidad transporta Vidar: un programa diseñado para robar información.",
-     "start": 73.143,
-     "end": 82.983,
+     "start": 73.319,
+     "end": 83.158,
      "voice": "analista"
     },
     {
      "text": "Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.",
-     "start": 83.313,
-     "end": 87.791,
+     "start": 83.488,
+     "end": 87.966,
      "voice": "analista"
     }
    ],
@@ -208,13 +208,13 @@
   },
   {
    "i": 7,
-   "start": 88.121,
-   "end": 90.203,
+   "start": 88.296,
+   "end": 90.379,
    "sents": [
     {
      "text": "¿Y qué te pide el instalador?",
-     "start": 88.121,
-     "end": 89.823,
+     "start": 88.296,
+     "end": 89.999,
      "voice": "host"
     }
    ],
@@ -222,19 +222,19 @@
   },
   {
    "i": 8,
-   "start": 90.203,
-   "end": 103.385,
+   "start": 90.379,
+   "end": 103.56,
    "sents": [
     {
      "text": "Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.",
-     "start": 90.203,
-     "end": 99.232,
+     "start": 90.379,
+     "end": 99.408,
      "voice": "analista"
     },
     {
      "text": "En otras palabras: te pide que apagues la alarma antes de entrar.",
-     "start": 99.562,
-     "end": 103.055,
+     "start": 99.738,
+     "end": 103.23,
      "voice": "analista"
     }
    ],
@@ -242,19 +242,19 @@
   },
   {
    "i": 9,
-   "start": 103.385,
-   "end": 120.104,
+   "start": 103.56,
+   "end": 120.279,
    "sents": [
     {
      "text": "Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.",
-     "start": 103.385,
-     "end": 113.655,
+     "start": 103.56,
+     "end": 113.83,
      "voice": "analista"
     },
     {
      "text": "Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.",
-     "start": 113.985,
-     "end": 119.774,
+     "start": 114.16,
+     "end": 119.949,
      "voice": "analista"
     }
    ],
@@ -262,13 +262,13 @@
   },
   {
    "i": 10,
-   "start": 120.104,
-   "end": 123.298,
+   "start": 120.279,
+   "end": 123.474,
    "sents": [
     {
      "text": "O sea que no pierdes un juego: pierdes tus cuentas.",
-     "start": 120.104,
-     "end": 122.968,
+     "start": 120.279,
+     "end": 123.144,
      "voice": "host"
     }
    ],
@@ -276,19 +276,19 @@
   },
   {
    "i": 11,
-   "start": 123.298,
-   "end": 128.895,
+   "start": 123.474,
+   "end": 129.068,
    "sents": [
     {
      "text": "No siempre es un ejecutable.",
-     "start": 123.298,
-     "end": 125.272,
+     "start": 123.474,
+     "end": 125.447,
      "voice": "host"
     },
     {
      "text": "También circulan otras versiones del mismo truco.",
-     "start": 125.602,
-     "end": 128.565,
+     "start": 125.777,
+     "end": 128.738,
      "voice": "host"
     }
    ],
@@ -296,25 +296,25 @@
   },
   {
    "i": 12,
-   "start": 128.895,
-   "end": 142.228,
+   "start": 129.068,
+   "end": 142.403,
    "sents": [
     {
      "text": "Páginas que te piden completar encuestas antes de mostrar el enlace.",
-     "start": 128.895,
-     "end": 132.84,
+     "start": 129.068,
+     "end": 133.014,
      "voice": "analista"
     },
     {
      "text": "Falsos accesos anticipados o betas que exigen un pago por adelantado.",
-     "start": 133.17,
-     "end": 137.251,
+     "start": 133.344,
+     "end": 137.425,
      "voice": "analista"
     },
     {
      "text": "Y en Android, archivos APK que piden permisos que ningún juego necesita.",
-     "start": 137.581,
-     "end": 141.898,
+     "start": 137.755,
+     "end": 142.073,
      "voice": "analista"
     }
    ],
@@ -322,37 +322,37 @@
   },
   {
    "i": 13,
-   "start": 142.228,
-   "end": 170.209,
+   "start": 142.403,
+   "end": 170.384,
    "sents": [
     {
      "text": "Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy.",
-     "start": 142.228,
-     "end": 146.559,
+     "start": 142.403,
+     "end": 146.734,
      "voice": "analista"
     },
     {
      "text": "Desconecta el equipo de internet y analízalo con tu antivirus.",
-     "start": 146.889,
-     "end": 150.303,
+     "start": 147.064,
+     "end": 150.478,
      "voice": "analista"
     },
     {
      "text": "Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.",
-     "start": 150.633,
-     "end": 157.398,
+     "start": 150.808,
+     "end": 157.574,
      "voice": "analista"
     },
     {
      "text": "Activa la verificación en dos pasos.",
-     "start": 157.728,
-     "end": 159.835,
+     "start": 157.904,
+     "end": 160.01,
      "voice": "analista"
     },
     {
      "text": "Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.",
-     "start": 160.165,
-     "end": 169.879,
+     "start": 160.34,
+     "end": 170.054,
      "voice": "analista"
     }
    ],
@@ -360,31 +360,31 @@
   },
   {
    "i": 14,
-   "start": 170.209,
-   "end": 184.057,
+   "start": 170.384,
+   "end": 184.237,
    "sents": [
     {
      "text": "Regla rápida para la próxima vez.",
-     "start": 170.209,
-     "end": 172.275,
+     "start": 170.384,
+     "end": 172.45,
      "voice": "host"
     },
     {
      "text": "Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.",
-     "start": 172.605,
-     "end": 178.228,
+     "start": 172.78,
+     "end": 178.402,
      "voice": "host"
     },
     {
      "text": "Si te pide desactivar el antivirus, es malware.",
-     "start": 178.558,
-     "end": 181.242,
+     "start": 178.732,
+     "end": 181.417,
      "voice": "host"
     },
     {
      "text": "Y si es gratis, el producto eres tú.",
-     "start": 181.572,
-     "end": 183.727,
+     "start": 181.747,
+     "end": 183.907,
      "voice": "host"
     }
    ],
@@ -392,30 +392,30 @@
   },
   {
    "i": 15,
-   "start": 184.057,
-   "end": 204.057,
+   "start": 184.237,
+   "end": 204.387,
    "sents": [
     {
      "text": "Comparte este video con ese primo que siempre encuentra “versiones especiales”.",
-     "start": 184.057,
-     "end": 188.531,
+     "start": 184.237,
+     "end": 188.71,
      "voice": "host"
     },
     {
      "text": "Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.",
-     "start": 188.861,
-     "end": 194.452,
+     "start": 189.04,
+     "end": 194.632,
      "voice": "host"
     },
     {
-     "text": "Suscríbete a Caimán Neón: aquí, la única descarga que recomendamos es la oficial.",
-     "start": 194.782,
-     "end": 199.701,
+     "text": "Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.",
+     "start": 194.962,
+     "end": 200.057,
      "voice": "host"
     }
    ],
    "id": "b15"
   }
  ],
- "lufs_in": -18.56
+ "lufs_in": -18.54
 }

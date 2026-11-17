@@ -14,7 +14,7 @@ Formato: Short vertical (9:16) · Duración: 00:00:44 · Voz: Kokoro (Apache-2.0
 [00:24.55] NARRADOR: PS5 Slim de un tera: alrededor de ochocientos cuarenta.
 [00:28.37] NARRADOR: Holgado.
 [00:29.17] NARRADOR: El truco: tu espacio real depende de lo que ya tengas instalado.
-[00:32.87] NARRADOR: Revísalo hoy, no a las once y cincuenta y nueve.
+[00:32.86] NARRADOR: Revísalo hoy, no a las once y cincuenta y nueve.
 [00:35.55] NARRADOR: Y si estás en PS4 o Xbox One... no te cabe ni aunque borres todo:
 [00:40.07] NARRADOR: GTA 6 no existe ahí.
-[00:41.96] NARRADOR: ¿Cuánto espacio te queda a ti?
+[00:41.95] NARRADOR: ¿Cuánto espacio te queda a ti?

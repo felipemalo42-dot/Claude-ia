@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (actualizar con comentario fijado tras jugar)  
-**Formato:** Largo (16:9) · **Duración:** 3:31 · **Música:** estilo «tropical» original · **Voz:** narrador
+**Formato:** Largo (16:9) · **Duración:** 3:32 · **Música:** estilo «tropical» original · **Voz:** narrador
 
 ## A. Estrategia y posicionamiento
 
@@ -44,12 +44,12 @@ CAPÍTULOS
 0:16 Introducción
 0:33 Tamaño
 0:49 Parada 1 · Mount Kalaga
-1:13 Parada 2 · Port Gellhorn
-1:36 Parada 3 · Ambrosia
+1:14 Parada 2 · Port Gellhorn
+1:37 Parada 3 · Ambrosia
 2:01 Parada 4 · Grassrivers
 2:22 Parada 5 · Vice City
 2:37 Parada 6 · Leonida Keys
-2:52 Lo que no sabemos
+2:53 Lo que no sabemos
 3:11 Despedida
 
 FUENTES
@@ -58,14 +58,14 @@ FUENTES
 • Clewiston, “America's Sweetest Town” (dato real)
 • Britton Hill, ≈105 m, punto más alto de Florida (dato real)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-mapa gta 6, gta 6 mapa, leonida, vice city, grassrivers, port gellhorn, ambrosia, mount kalaga, leonida keys, gta 6 florida, gta 6 regiones, gta 6, caimán neón
+mapa gta 6, gta 6 mapa, leonida, vice city, grassrivers, port gellhorn, ambrosia, mount kalaga, leonida keys, gta 6 florida, gta 6 regiones, gta 6, sal y asfalto
 
 ## Comentario fijado recomendado
 

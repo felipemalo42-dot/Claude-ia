@@ -41,13 +41,13 @@ CAPÍTULOS
 0:00 Gancho
 0:11 Introducción
 0:25 Ronda 1 · el mundo
-0:36 Ronda 2 · protagonistas
+0:37 Ronda 2 · protagonistas
 0:56 Ronda 4 · perfil criminal
-1:08 Ronda 5 · sistema de foco
-1:21 Ronda 6 · clima
+1:09 Ronda 5 · sistema de foco
+1:22 Ronda 6 · clima
 1:33 Ronda 7 · fauna
 1:46 Ronda 8 · precio
-1:57 Ronda 9 · online
+1:58 Ronda 9 · online
 2:08 Ronda 10 · plataformas
 2:22 Lo que no cambia
 2:35 Rumores
@@ -62,14 +62,14 @@ FUENTES
 • TweakTown / RockstarINTEL (objetivo 30 fps)
 • Historial de lanzamiento de GTA V (2013, PC en 2015)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-gta 6 vs gta 5, gta 5 vs gta 6, diferencias gta 6, gta 6 cambios, gta 6 estrellas, perfil criminal, gta 6 huracanes, gta 6 animales, gta 6 precio, gta 6 60 fps, gta 6, caimán neón
+gta 6 vs gta 5, gta 5 vs gta 6, diferencias gta 6, gta 6 cambios, gta 6 estrellas, perfil criminal, gta 6 huracanes, gta 6 animales, gta 6 precio, gta 6 60 fps, gta 6, sal y asfalto
 
 ## Comentario fijado recomendado
 

@@ -8,8 +8,8 @@ Formato: Short vertical (9:16) · Duración: 00:00:37 · Voz: Kokoro (Apache-2.0
 [00:07.46] ANALISTA: El aligátor americano, al que casi todos llamamos caimán: el rey de los pantanos, visto desde el primer tráiler.
 [00:13.84] ANALISTA: El flamenco, el rosado más famoso de Florida.
 [00:16.68] ANALISTA: El pelícano, patrullando muelles y playas.
-[00:19.28] ANALISTA: Y el manatí, la vaca marina: lenta, enorme y pacífica.
-[00:22.91] ANALISTA: Además, algunos animales se podrán rastrear por rareza: raros, descubribles y legendarios.
-[00:28.47] ANALISTA: ¿Cuáles serán legendarios?
-[00:30.19] ANALISTA: Todavía nadie lo sabe.
-[00:31.92] ANALISTA: Guarda este video: después del lanzamiento armamos la guía de campo completa.
+[00:19.26] ANALISTA: Y el manatí, la vaca marina: lenta, enorme y pacífica.
+[00:22.90] ANALISTA: Además, algunos animales se podrán rastrear por rareza: raros, descubribles y legendarios.
+[00:28.45] ANALISTA: ¿Cuáles serán legendarios?
+[00:30.17] ANALISTA: Todavía nadie lo sabe.
+[00:31.89] ANALISTA: Guarda este video: después del lanzamiento armamos la guía de campo completa.

@@ -41,14 +41,14 @@ FUENTES
 • Capturas propias del juego (fecha, consola)
 • Newswire / soporte de Rockstar en la fecha de publicación
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-gta 6, gta 6 probado, gta 6 gameplay español, gta 6 60 fps, gta 6 online, gta 6 huracanes, caimán neón
+gta 6, gta 6 probado, gta 6 gameplay español, gta 6 60 fps, gta 6 online, gta 6 huracanes, sal y asfalto
 
 ## Comentario fijado recomendado
 

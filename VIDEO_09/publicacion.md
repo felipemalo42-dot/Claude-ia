@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (publicar antes de la medianoche del 18/19)  
-**Formato:** Largo (16:9) · **Duración:** 2:55 · **Música:** estilo «mystery» original · **Voz:** narrador
+**Formato:** Largo (16:9) · **Duración:** 2:56 · **Música:** estilo «mystery» original · **Voz:** narrador
 
 ## A. Estrategia y posicionamiento
 
@@ -43,9 +43,9 @@ CAPÍTULOS
 0:25 Sobre 1
 0:44 Sobre 2
 1:01 Sobre 3
-1:13 Sobre 4
+1:14 Sobre 4
 1:32 Sobre 5
-1:48 Sobre 6
+1:49 Sobre 6
 2:04 Sobre 7
 2:21 Cierre
 2:35 Pantalla final
@@ -57,14 +57,14 @@ FUENTES
 • Game Informer n.º 382 (huracanes, fauna, mapa ×2)
 • Web oficial (6 regiones)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Caimán Neón. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
 
 ## Etiquetas
 
-gta 6 misterios, gta 6 preguntas, gta 6 online, gta 6 60 fps, gta 6 predicciones, perfil criminal, gta 6 huracanes, gta 6, caimán neón
+gta 6 misterios, gta 6 preguntas, gta 6 online, gta 6 60 fps, gta 6 predicciones, perfil criminal, gta 6 huracanes, gta 6, sal y asfalto
 
 ## Comentario fijado recomendado
 
