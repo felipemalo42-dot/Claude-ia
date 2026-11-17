@@ -1,0 +1,286 @@
+{
+ "total": 160.273,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.25,
+   "end": 15.248,
+   "sents": [
+    {
+     "text": "Hace unos días metimos siete preguntas sobre GTA 6 en sobres sellados, cada una con una predicción y un porcentaje de confianza.",
+     "start": 0.25,
+     "end": 8.147,
+     "voice": "host"
+    },
+    {
+     "text": "Hoy, con el juego en las manos, los abrimos.",
+     "start": 8.477,
+     "end": 10.816,
+     "voice": "host"
+    },
+    {
+     "text": "Y vamos a contar los aciertos y los fallos, sin maquillar ninguno.",
+     "start": 11.146,
+     "end": 14.918,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  },
+  {
+   "i": 1,
+   "start": 15.248,
+   "end": 17.648,
+   "sents": [],
+   "id": "b1"
+  },
+  {
+   "i": 2,
+   "start": 17.648,
+   "end": 31.043,
+   "sents": [
+    {
+     "text": "Las reglas.",
+     "start": 17.648,
+     "end": 18.449,
+     "voice": "host"
+    },
+    {
+     "text": "Todas las pruebas son capturas nuestras, jugando.",
+     "start": 18.779,
+     "end": 21.646,
+     "voice": "host"
+    },
+    {
+     "text": "Nada de spoilers de la historia más allá de las primeras horas.",
+     "start": 21.976,
+     "end": 25.381,
+     "voice": "host"
+    },
+    {
+     "text": "Y si algo todavía no se puede comprobar, lo marcamos como sin datos, no como acierto.",
+     "start": 25.711,
+     "end": 30.713,
+     "voice": "host"
+    }
+   ],
+   "id": "b2"
+  },
+  {
+   "i": 3,
+   "start": 31.043,
+   "end": 45.413,
+   "sents": [
+    {
+     "text": "Sobre uno:",
+     "start": 31.043,
+     "end": 31.827,
+     "voice": "host"
+    },
+    {
+     "text": "¿Cuándo llega el online?",
+     "start": 32.107,
+     "end": 33.537,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: no antes de 2027.",
+     "start": 33.917,
+     "end": 37.083,
+     "voice": "host"
+    }
+   ],
+   "id": "b3"
+  },
+  {
+   "i": 4,
+   "start": 45.413,
+   "end": 60.338,
+   "sents": [
+    {
+     "text": "Sobre dos:",
+     "start": 45.413,
+     "end": 46.158,
+     "voice": "host"
+    },
+    {
+     "text": "¿Habrá modo a 60 fps?",
+     "start": 46.438,
+     "end": 48.862,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: no el día del lanzamiento.",
+     "start": 49.242,
+     "end": 52.008,
+     "voice": "host"
+    }
+   ],
+   "id": "b4"
+  },
+  {
+   "i": 5,
+   "start": 60.338,
+   "end": 74.129,
+   "sents": [
+    {
+     "text": "Sobre tres:",
+     "start": 60.338,
+     "end": 61.158,
+     "voice": "host"
+    },
+    {
+     "text": "¿Cuántos interiores?",
+     "start": 61.438,
+     "end": 62.675,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: más que en gta 5.",
+     "start": 63.055,
+     "end": 65.799,
+     "voice": "host"
+    }
+   ],
+   "id": "b5"
+  },
+  {
+   "i": 6,
+   "start": 74.129,
+   "end": 88.99,
+   "sents": [
+    {
+     "text": "Sobre cuatro:",
+     "start": 74.129,
+     "end": 75.044,
+     "voice": "host"
+    },
+    {
+     "text": "¿Cuánto pesa el perfil criminal?",
+     "start": 75.324,
+     "end": 77.27,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: más en el mundo que en la trama.",
+     "start": 77.65,
+     "end": 80.66,
+     "voice": "host"
+    }
+   ],
+   "id": "b6"
+  },
+  {
+   "i": 7,
+   "start": 88.99,
+   "end": 102.995,
+   "sents": [
+    {
+     "text": "Sobre cinco:",
+     "start": 88.99,
+     "end": 89.908,
+     "voice": "host"
+    },
+    {
+     "text": "¿Huracanes dinámicos?",
+     "start": 90.188,
+     "end": 91.578,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: ambos: clima y misiones.",
+     "start": 91.958,
+     "end": 94.665,
+     "voice": "host"
+    }
+   ],
+   "id": "b7"
+  },
+  {
+   "i": 8,
+   "start": 102.995,
+   "end": 117.328,
+   "sents": [
+    {
+     "text": "Sobre seis:",
+     "start": 102.995,
+     "end": 103.787,
+     "voice": "host"
+    },
+    {
+     "text": "¿Qué animal será legendario?",
+     "start": 104.067,
+     "end": 105.746,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: uno emblemático de florida.",
+     "start": 106.126,
+     "end": 108.998,
+     "voice": "host"
+    }
+   ],
+   "id": "b8"
+  },
+  {
+   "i": 9,
+   "start": 117.328,
+   "end": 131.873,
+   "sents": [
+    {
+     "text": "Sobre siete:",
+     "start": 117.328,
+     "end": 118.228,
+     "voice": "host"
+    },
+    {
+     "text": "¿Hay más de seis regiones?",
+     "start": 118.508,
+     "end": 120.049,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción fue: más zonas, no otra gran región.",
+     "start": 120.429,
+     "end": 123.543,
+     "voice": "host"
+    }
+   ],
+   "id": "b9"
+  },
+  {
+   "i": 10,
+   "start": 131.873,
+   "end": 139.873,
+   "sents": [],
+   "id": "b10"
+  },
+  {
+   "i": 11,
+   "start": 139.873,
+   "end": 159.873,
+   "sents": [
+    {
+     "text": "¿Qué otra pregunta quieres que comprobemos jugando?",
+     "start": 139.873,
+     "end": 142.73,
+     "voice": "host"
+    },
+    {
+     "text": "Déjala en los comentarios.",
+     "start": 143.11,
+     "end": 144.63,
+     "voice": "host"
+    },
+    {
+     "text": "Y si quieres más pruebas con método, suscríbete a Caimán Neón.",
+     "start": 144.96,
+     "end": 148.532,
+     "voice": "host"
+    }
+   ],
+   "id": "b11"
+  }
+ ],
+ "lufs_in": -18.03
+}

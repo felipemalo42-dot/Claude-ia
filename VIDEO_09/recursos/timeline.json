@@ -1,0 +1,388 @@
+{
+ "total": 175.935,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.25,
+   "end": 9.768,
+   "sents": [
+    {
+     "text": "Faltan horas para el lanzamiento, y todavía hay siete preguntas que Rockstar no ha respondido.",
+     "start": 0.25,
+     "end": 5.497,
+     "voice": "host"
+    },
+    {
+     "text": "Las metimos en sobres sellados.",
+     "start": 5.827,
+     "end": 7.675,
+     "voice": "host"
+    },
+    {
+     "text": "El jueves los abrimos.",
+     "start": 8.005,
+     "end": 9.438,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  },
+  {
+   "i": 1,
+   "start": 9.768,
+   "end": 12.168,
+   "sents": [],
+   "id": "b1"
+  },
+  {
+   "i": 2,
+   "start": 12.168,
+   "end": 25.043,
+   "sents": [
+    {
+     "text": "Esto es Caimán Neón.",
+     "start": 12.168,
+     "end": 13.477,
+     "voice": "host"
+    },
+    {
+     "text": "Cada sobre lleva una pregunta, lo que sí sabemos con certeza y nuestra predicción, con un medidor de confianza.",
+     "start": 13.807,
+     "end": 20.198,
+     "voice": "host"
+    },
+    {
+     "text": "Ojo: las predicciones son nuestras, van en amarillo y no son información.",
+     "start": 20.528,
+     "end": 24.713,
+     "voice": "host"
+    }
+   ],
+   "id": "b2"
+  },
+  {
+   "i": 3,
+   "start": 25.043,
+   "end": 44.249,
+   "sents": [
+    {
+     "text": "Sobre uno:",
+     "start": 25.043,
+     "end": 25.825,
+     "voice": "host"
+    },
+    {
+     "text": "¿cuándo llega el online?",
+     "start": 26.105,
+     "end": 27.536,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos:",
+     "start": 27.916,
+     "end": 28.885,
+     "voice": "host"
+    },
+    {
+     "text": "Rockstar describe GTA 6 como una experiencia para un jugador y no ha dado fecha para un online.",
+     "start": 29.165,
+     "end": 34.691,
+     "voice": "host"
+    },
+    {
+     "text": "GTA Online, el de GTA 5, sigue activo.",
+     "start": 35.021,
+     "end": 37.826,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: no antes de 2027.",
+     "start": 38.156,
+     "end": 41.085,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, cincuenta y cinco por ciento.",
+     "start": 41.415,
+     "end": 43.919,
+     "voice": "host"
+    }
+   ],
+   "id": "b3"
+  },
+  {
+   "i": 4,
+   "start": 44.249,
+   "end": 61.428,
+   "sents": [
+    {
+     "text": "Sobre dos:",
+     "start": 44.249,
+     "end": 44.994,
+     "voice": "host"
+    },
+    {
+     "text": "¿habrá un modo a sesenta cuadros por segundo?",
+     "start": 45.274,
+     "end": 47.811,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos: el objetivo oficial es treinta, también en PS5 Pro, y el estudio no se ha comprometido con sesenta.",
+     "start": 48.191,
+     "end": 55.364,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: el día del lanzamiento, no.",
+     "start": 55.694,
+     "end": 58.333,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, setenta y cinco por ciento.",
+     "start": 58.663,
+     "end": 61.098,
+     "voice": "host"
+    }
+   ],
+   "id": "b4"
+  },
+  {
+   "i": 5,
+   "start": 61.428,
+   "end": 73.914,
+   "sents": [
+    {
+     "text": "Sobre tres:",
+     "start": 61.428,
+     "end": 62.248,
+     "voice": "host"
+    },
+    {
+     "text": "¿cuántos edificios se podrán visitar por dentro?",
+     "start": 62.528,
+     "end": 65.418,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos: no hay ninguna cifra oficial.",
+     "start": 65.798,
+     "end": 68.344,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: más que en GTA 5.",
+     "start": 68.674,
+     "end": 71.218,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, sesenta por ciento.",
+     "start": 71.548,
+     "end": 73.584,
+     "voice": "host"
+    }
+   ],
+   "id": "b5"
+  },
+  {
+   "i": 6,
+   "start": 73.914,
+   "end": 92.371,
+   "sents": [
+    {
+     "text": "Sobre cuatro:",
+     "start": 73.914,
+     "end": 74.829,
+     "voice": "host"
+    },
+    {
+     "text": "¿cuánto pesa el Perfil Criminal?",
+     "start": 75.109,
+     "end": 77.055,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos:",
+     "start": 77.435,
+     "end": 78.404,
+     "voice": "host"
+    },
+    {
+     "text": "Rob Nelson, de Rockstar, dijo que las acciones constantes pueden influir en cómo reacciona el mundo y en la narrativa.",
+     "start": 78.684,
+     "end": 85.339,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: va a cambiar más el mundo que la trama principal.",
+     "start": 85.669,
+     "end": 89.674,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, cincuenta por ciento.",
+     "start": 90.004,
+     "end": 92.041,
+     "voice": "host"
+    }
+   ],
+   "id": "b6"
+  },
+  {
+   "i": 7,
+   "start": 92.371,
+   "end": 108.967,
+   "sents": [
+    {
+     "text": "Sobre cinco:",
+     "start": 92.371,
+     "end": 93.289,
+     "voice": "host"
+    },
+    {
+     "text": "¿los huracanes serán dinámicos o solo de historia?",
+     "start": 93.569,
+     "end": 96.24,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos: según Game Informer, tormentas tropicales y huracanes pueden azotar Leonida.",
+     "start": 96.62,
+     "end": 102.042,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: las dos cosas, clima libre y momentos de misión.",
+     "start": 102.372,
+     "end": 106.271,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, cincuenta por ciento.",
+     "start": 106.601,
+     "end": 108.637,
+     "voice": "host"
+    }
+   ],
+   "id": "b7"
+  },
+  {
+   "i": 8,
+   "start": 108.967,
+   "end": 124.004,
+   "sents": [
+    {
+     "text": "Sobre seis:",
+     "start": 108.967,
+     "end": 109.759,
+     "voice": "host"
+    },
+    {
+     "text": "¿qué animal será legendario?",
+     "start": 110.039,
+     "end": 111.718,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos: habrá animales raros, descubribles y legendarios, pero nadie dijo cuáles.",
+     "start": 112.098,
+     "end": 117.101,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: un animal emblemático de Florida, como la pantera.",
+     "start": 117.431,
+     "end": 121.283,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, cuarenta por ciento.",
+     "start": 121.613,
+     "end": 123.674,
+     "voice": "host"
+    }
+   ],
+   "id": "b8"
+  },
+  {
+   "i": 9,
+   "start": 124.004,
+   "end": 141.276,
+   "sents": [
+    {
+     "text": "Sobre siete:",
+     "start": 124.004,
+     "end": 124.905,
+     "voice": "host"
+    },
+    {
+     "text": "¿hay más de seis regiones?",
+     "start": 125.185,
+     "end": 126.726,
+     "voice": "host"
+    },
+    {
+     "text": "Lo que sabemos: hay seis regiones con nombre, y el mapa es el doble que el de GTA 5.",
+     "start": 127.106,
+     "end": 132.097,
+     "voice": "host"
+    },
+    {
+     "text": "Nuestra predicción: muchas más zonas y pueblos dentro de esas regiones, pero no una séptima región grande.",
+     "start": 132.427,
+     "end": 138.58,
+     "voice": "host"
+    },
+    {
+     "text": "Confianza, cincuenta por ciento.",
+     "start": 138.91,
+     "end": 140.946,
+     "voice": "host"
+    }
+   ],
+   "id": "b9"
+  },
+  {
+   "i": 10,
+   "start": 141.276,
+   "end": 155.535,
+   "sents": [
+    {
+     "text": "Siete sobres, siete apuestas.",
+     "start": 141.276,
+     "end": 143.063,
+     "voice": "host"
+    },
+    {
+     "text": "El jueves los abrimos jugando, uno por uno.",
+     "start": 143.393,
+     "end": 145.893,
+     "voice": "host"
+    },
+    {
+     "text": "Si quieres ver cuántas acertamos, y cuántas fallamos, suscríbete.",
+     "start": 146.223,
+     "end": 149.792,
+     "voice": "host"
+    },
+    {
+     "text": "Y deja tu predicción en los comentarios: la más acertada se lleva el comentario fijado.",
+     "start": 150.122,
+     "end": 155.205,
+     "voice": "host"
+    }
+   ],
+   "id": "b10"
+  },
+  {
+   "i": 11,
+   "start": 155.535,
+   "end": 175.535,
+   "sents": [],
+   "id": "b11"
+  }
+ ],
+ "lufs_in": -17.12
+}

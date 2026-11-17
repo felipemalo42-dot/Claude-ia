@@ -1,0 +1,110 @@
+{
+ "total": 44.901,
+ "beats": [
+  {
+   "i": 0,
+   "start": 0.15,
+   "end": 43.901,
+   "sents": [
+    {
+     "text": "GTA 6 pesa unos doscientos diez gigas.",
+     "start": 0.15,
+     "end": 2.523,
+     "voice": "host"
+    },
+    {
+     "text": "¿Te cabe?",
+     "start": 2.738,
+     "end": 3.373,
+     "voice": "host"
+    },
+    {
+     "text": "Vamos consola por consola.",
+     "start": 3.62,
+     "end": 5.319,
+     "voice": "host"
+    },
+    {
+     "text": "PS5 original: de sus ochocientos veinticinco gigas, te quedan libres unos seiscientos sesenta y siete.",
+     "start": 5.534,
+     "end": 11.834,
+     "voice": "host"
+    },
+    {
+     "text": "Cabe, y te sobra.",
+     "start": 12.048,
+     "end": 13.185,
+     "voice": "host"
+    },
+    {
+     "text": "Series S de quinientos doce: unos trescientos sesenta y cuatro libres.",
+     "start": 13.399,
+     "end": 17.24,
+     "voice": "host"
+    },
+    {
+     "text": "Cabe, pero se come casi el sesenta por ciento.",
+     "start": 17.454,
+     "end": 20.123,
+     "voice": "host"
+    },
+    {
+     "text": "Series X de un tera: unos ochocientos dos libres.",
+     "start": 20.337,
+     "end": 23.395,
+     "voice": "host"
+    },
+    {
+     "text": "Sin drama.",
+     "start": 23.609,
+     "end": 24.343,
+     "voice": "host"
+    },
+    {
+     "text": "PS5 Slim de un tera: alrededor de ochocientos cuarenta.",
+     "start": 24.557,
+     "end": 28.161,
+     "voice": "host"
+    },
+    {
+     "text": "Holgado.",
+     "start": 28.375,
+     "end": 28.963,
+     "voice": "host"
+    },
+    {
+     "text": "El truco: tu espacio real depende de lo que ya tengas instalado.",
+     "start": 29.178,
+     "end": 32.656,
+     "voice": "host"
+    },
+    {
+     "text": "Revísalo hoy, no a las once y cincuenta y nueve.",
+     "start": 32.871,
+     "end": 35.341,
+     "voice": "host"
+    },
+    {
+     "text": "Y si estás en PS4 o Xbox One... no te cabe ni aunque borres todo:",
+     "start": 35.556,
+     "end": 39.897,
+     "voice": "host"
+    },
+    {
+     "text": "GTA 6 no existe ahí.",
+     "start": 40.079,
+     "end": 41.747,
+     "voice": "host"
+    },
+    {
+     "text": "¿Cuánto espacio te queda a ti?",
+     "start": 41.962,
+     "end": 43.654,
+     "voice": "host"
+    }
+   ],
+   "id": "b0"
+  }
+ ],
+ "lufs_in": -16.01
+}
