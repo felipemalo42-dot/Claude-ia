@@ -42,46 +42,103 @@ def group_takes(items, max_chars=250, max_sents=3):
         else: groups.append(cur)
     return groups
 
+VOICE_ENGINE = os.environ.get("VOICE_ENGINE", "chatterbox")
+_SCR = "/tmp/claude-0/-home-user-Claude-ia/2692e1fb-2c8d-5e01-9751-d8741cc42ebb/scratchpad"
+CB = dict(python=os.environ.get("CHATTERBOX_PY", f"{_SCR}/cbenv/bin/python"), dir=os.environ.get("CHATTERBOX_DIR", f"{_SCR}/cbmodel"),
+          cache=os.environ.get("VOICE_CACHE", f"{_SCR}/voice_cache"), shards=int(os.environ.get("CB_SHARDS", "2")))
+# Referencias de voz (≈12 s de audio limpio cada una). Ver engine/voces/README.md
+CB_VOICES = {"host": dict(ref=os.path.join(os.path.dirname(__file__), "voces", "narradora_ref.wav"), exaggeration=0.6, cfg=0.4),
+             "copiloto": dict(ref=os.path.join(os.path.dirname(__file__), "voces", "copiloto_ref.wav"), exaggeration=0.5, cfg=0.45)}
+
+def cb_batch(jobs):
+    """Genera en paralelo (varios procesos) las tomas que no están en caché."""
+    import hashlib
+    todo = [j for j in jobs if not os.path.exists(j["out"])]
+    if not todo: return
+    os.makedirs(CB["cache"], exist_ok=True); n = max(1, min(CB["shards"], len(todo))); procs = []
+    thr = max(1, (os.cpu_count() or 4) // n)
+    for k in range(n):
+        part = todo[k::n]; jf = os.path.join(CB["cache"], f"lote_{os.getpid()}_{k}.json")
+        json.dump(part, open(jf, "w", encoding="utf-8"), ensure_ascii=False)
+        env = dict(os.environ, CHATTERBOX_DIR=CB["dir"])
+        procs.append(subprocess.Popen([CB["python"], os.path.join(os.path.dirname(__file__), "tts_chatterbox.py"), jf, "--threads", str(thr)], env=env,
+                                      stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True))
+    for p in procs:
+        for line in p.stdout:
+            if line.startswith("[") or "Error" in line or "Traceback" in line: print("   ", line.rstrip(), flush=True)
+        p.wait()
+        if p.returncode: raise RuntimeError("Falló la síntesis con Chatterbox")
+
+def cb_job(text, voice, seed):
+    import hashlib
+    v = CB_VOICES.get(voice, CB_VOICES["host"])
+    key = hashlib.sha1(f"{text}|{voice}|{seed}|{v['exaggeration']}|{v['cfg']}|{os.path.getsize(v['ref'])}".encode()).hexdigest()[:20]
+    return dict(text=text, seed=int(seed), ref=v["ref"], exaggeration=v["exaggeration"], cfg=v["cfg"], temperature=0.8,
+                out=os.path.join(CB["cache"], f"{key}.wav"))
+
+def load_take(path):
+    from scipy import signal as _sg
+    x, sr = sf.read(path, dtype="float32")
+    if x.ndim > 1: x = x.mean(axis=1)
+    if sr != TSR:
+        from math import gcd
+        g = gcd(TSR, sr); x = _sg.resample_poly(x, TSR // g, sr // g).astype(np.float32)
+    return level(trim(x))
+
 def build_audio(V, outdir, narr=None, aligner=None):
-    narr = narr or Supertonic(); aligner = aligner or Aligner()
-    t = V.get("lead_in", 0.25); beats = []; chunks = []; qa = []
+    aligner = aligner or Aligner()
+    # 1) planificar tomas
+    plan = []
     for bi, b in enumerate(V["beats"]):
-        bstart = t + b.get("pre", 0.0); cur = bstart; sents = []
         vo = b.get("vo", ""); voice = b.get("voice", V.get("voice", "host"))
-        speed = b.get("speed", V.get("speed", 1.0)); pmul = b.get("pause_mul", V.get("pause_mul", 1.0))
+        speed = b.get("speed", V.get("speed", 1.0))
         items = []
         for sx in (split_sentences(vo) if vo else []):
             sub, spk = split_markup(sx); items.append(dict(sub=sub, plain=spk, spk=spoken(spk)))
         human = f"{outdir}/voz_humana/beat_{bi:02d}.wav"
         if items and os.path.exists(human):
-            # Locución humana: un archivo por bloque; el reconocedor da el tiempo exacto de cada palabra
+            plan.append([dict(bi=bi, take=items, voice="humana", speed=None, human=human)])
+        else:
+            plan.append([dict(bi=bi, take=tk, voice=voice, speed=speed) for tk in group_takes(items)])
+    takes = [tk for bt in plan for tk in bt]
+    for tk in takes:
+        tk["text"] = " ".join(it["spk"] for it in tk["take"]); tk["flat"] = [w for it in tk["take"] for w in it["sub"].split()]
+        tk["exp"] = " ".join(it["plain"] for it in tk["take"]); tk["best"] = None; tk["tries"] = 0
+    # 2) sintetizar + verificar (rondas con otra semilla para las tomas que no pasan el control)
+    for tk in takes:
+        if tk["voice"] == "humana":
             from scipy import signal as _sg
-            ha, hsr = sf.read(human, dtype="float32")
+            ha, hsr = sf.read(tk["human"], dtype="float32")
             if ha.ndim > 1: ha = ha.mean(axis=1)
             if hsr != TSR: ha = _sg.resample_poly(ha, TSR, hsr).astype(np.float32)
-            takes = [(items, level(trim(ha)), "humana", None)]
-        else:
-            takes = [(tk, None, voice, speed) for tk in group_takes(items)]
-        for take, x, vname, spd in takes:
-            text = " ".join(it["spk"] for it in take); flat = [w for it in take for w in it["sub"].split()]
-            exp = " ".join(it["plain"] for it in take); tries = 1
-            if x is None:
-                seed0 = take_seed(text, vname); best = None
-                for k in range(MAX_TRIES):
-                    xx = level(trim(narr.synth(text, vname, spd, seed0 + k)))
-                    times, score, hyp = aligner.align(xx, TSR, flat, exp)
-                    if best is None or score > best[0]: best = (score, xx, times, hyp, k + 1)
-                    if score >= QA_THR: break
-                score, x, times, hyp, tries = best
-            else:
-                times, score, hyp = aligner.align(x, TSR, flat, exp)
-            qa.append(dict(t=round(cur, 2), score=round(score, 3), tries=tries, guion=exp, reconocido=hyp, voz=vname))
+            x = level(trim(ha)); times, score, hyp = aligner.align(x, TSR, tk["flat"], tk["exp"]); tk["best"] = (score, x, times, hyp); tk["tries"] = 1
+    synth = [tk for tk in takes if tk["voice"] != "humana"]
+    if VOICE_ENGINE == "supertonic":
+        narr = narr or Supertonic()
+    for k in range(MAX_TRIES):
+        pend = [tk for tk in synth if tk["best"] is None or tk["best"][0] < QA_THR]
+        if not pend: break
+        if k: print(f"  ronda {k + 1}: repitiendo {len(pend)} tomas con otra semilla")
+        if VOICE_ENGINE == "chatterbox":
+            for tk in pend: tk["job"] = cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + k)
+            cb_batch([tk["job"] for tk in pend])
+        for tk in pend:
+            x = load_take(tk["job"]["out"]) if VOICE_ENGINE == "chatterbox" else level(trim(narr.synth(tk["text"], tk["voice"], tk["speed"], take_seed(tk["text"], tk["voice"]) + k)))
+            times, score, hyp = aligner.align(x, TSR, tk["flat"], tk["exp"]); tk["tries"] = k + 1
+            if tk["best"] is None or score > tk["best"][0]: tk["best"] = (score, x, times, hyp)
+    # 3) montar la línea de tiempo
+    t = V.get("lead_in", 0.25); beats = []; chunks = []; qa = []
+    for bi, b in enumerate(V["beats"]):
+        bstart = t + b.get("pre", 0.0); cur = bstart; sents = []; pmul = b.get("pause_mul", V.get("pause_mul", 1.0))
+        for tk in plan[bi]:
+            score, x, times, hyp = tk["best"]
+            qa.append(dict(t=round(cur, 2), score=round(score, 3), tries=tk["tries"], guion=tk["exp"], reconocido=hyp, voz=tk["voice"]))
             chunks.append((cur, x)); i0 = 0
-            for it in take:
+            for it in tk["take"]:
                 ws = it["sub"].split(); wt = times[i0:i0 + len(ws)]; i0 += len(ws)
-                sents.append(dict(text=it["sub"], start=round(cur + wt[0][0], 3), end=round(cur + wt[-1][1], 3), voice=vname,
+                sents.append(dict(text=it["sub"], start=round(cur + wt[0][0], 3), end=round(cur + wt[-1][1], 3), voice=tk["voice"],
                                   words=[[w, round(cur + ws_, 3), round(cur + we_, 3)] for w, (ws_, we_) in zip(ws, wt)]))
-            cur += len(x) / TSR + pause_after(take[-1]["sub"]) * pmul
+            cur += len(x) / TSR + pause_after(tk["take"][-1]["sub"]) * pmul
         if not sents: cur = bstart + b.get("dur", 2.0)
         bend = max(cur + b.get("hold", 0.0), bstart + b.get("min", 0.0))
         beats.append(dict(i=bi, start=round(bstart, 3), end=round(bend, 3), sents=sents, id=b.get("id", f"b{bi}")))
@@ -187,7 +244,7 @@ def write_srt(tl, path, V):
     open(path, "w", encoding="utf-8").write("\n".join(out))
 
 def write_script(V, tl, path):
-    L = [f"GUION — {V['title']}", f"Formato: {V['format']} · Duración: {fmt_ts(tl['total'], False)[:-4]} · Voz: Supertonic 3 (voz femenina), español", "=" * 78, ""]
+    L = [f"GUION — {V['title']}", f"Formato: {V['format']} · Duración: {fmt_ts(tl['total'], False)[:-4]} · Voz: narradora (Chatterbox Multilingual), español", "=" * 78, ""]
     names = {"host": "NARRADORA", "copiloto": "COPILOTO", "humana": "VOZ HUMANA"}
     for b, bd in zip(V["beats"], tl["beats"]):
         if b.get("section"): L += ["", f"## {b['section']}", ""]
