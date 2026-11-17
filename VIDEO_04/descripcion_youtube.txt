@@ -5,15 +5,15 @@ Rockstar no ha publicado un mapa completo de Leonida. Con lo oficial (6 regiones
 CAPÍTULOS
 0:00 Gancho
 0:16 Introducción
-0:33 Tamaño
-0:49 Parada 1 · Mount Kalaga
-1:14 Parada 2 · Port Gellhorn
-1:37 Parada 3 · Ambrosia
-2:01 Parada 4 · Grassrivers
-2:22 Parada 5 · Vice City
-2:37 Parada 6 · Leonida Keys
-2:53 Lo que no sabemos
-3:11 Despedida
+0:36 Tamaño
+0:54 Parada 1 · Mount Kalaga
+1:19 Parada 2 · Port Gellhorn
+1:43 Parada 3 · Ambrosia
+2:07 Parada 4 · Grassrivers
+2:27 Parada 5 · Vice City
+2:45 Parada 6 · Leonida Keys
+3:00 Lo que no sabemos
+3:19 Despedida
 
 FUENTES
 • Web oficial de Rockstar (regiones y descripciones), vía GTA BOOM / The Games Wiki / guías que la citan
@@ -21,6 +21,6 @@ FUENTES
 • Clewiston, “America's Sweetest Town” (dato real)
 • Britton Hill, ≈105 m, punto más alto de Florida (dato real)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida

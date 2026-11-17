@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (actualizar con comentario fijado tras jugar)  
-**Formato:** Largo (16:9) · **Duración:** 3:32 · **Música:** estilo «tropical» original · **Voz:** narrador
+**Formato:** Largo (16:9) · **Duración:** 3:40 · **Música:** estilo «tropical» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -42,15 +42,15 @@ Rockstar no ha publicado un mapa completo de Leonida. Con lo oficial (6 regiones
 CAPÍTULOS
 0:00 Gancho
 0:16 Introducción
-0:33 Tamaño
-0:49 Parada 1 · Mount Kalaga
-1:14 Parada 2 · Port Gellhorn
-1:37 Parada 3 · Ambrosia
-2:01 Parada 4 · Grassrivers
-2:22 Parada 5 · Vice City
-2:37 Parada 6 · Leonida Keys
-2:53 Lo que no sabemos
-3:11 Despedida
+0:36 Tamaño
+0:54 Parada 1 · Mount Kalaga
+1:19 Parada 2 · Port Gellhorn
+1:43 Parada 3 · Ambrosia
+2:07 Parada 4 · Grassrivers
+2:27 Parada 5 · Vice City
+2:45 Parada 6 · Leonida Keys
+3:00 Lo que no sabemos
+3:19 Despedida
 
 FUENTES
 • Web oficial de Rockstar (regiones y descripciones), vía GTA BOOM / The Games Wiki / guías que la citan
@@ -58,7 +58,7 @@ FUENTES
 • Clewiston, “America's Sweetest Town” (dato real)
 • Britton Hill, ≈105 m, punto más alto de Florida (dato real)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
@@ -85,7 +85,8 @@ mapa gta 6, gta 6 mapa, leonida, vice city, grassrivers, port gellhorn, ambrosia
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -100,7 +101,7 @@ mapa gta 6, gta 6 mapa, leonida, vice city, grassrivers, port gellhorn, ambrosia
 | ¿Aporta valor? | Sí: guía geográfica con certeza etiquetada |
 | ¿Guion distinto a los demás? | Sí: viaje de norte a sur en 3D |
 | ¿Imágenes adecuadas y autorizadas? | Sí: Natural Earth + dibujo propio; aviso permanente de que no es el mapa oficial |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
 | ¿Montaje con buen ritmo? | Sí: cámara 3D continua |
 | ¿Título honesto? | Sí |
 | ¿Miniatura corresponde? | Sí |
