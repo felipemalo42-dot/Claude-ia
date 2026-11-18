@@ -1,4 +1,4 @@
-# Sal y Asfalto: paquete de lanzamiento del canal de GTA VI (10 videos)
+# Sal y Asfalto: paquete de lanzamiento del canal de GTA VI (10 videos + 1 producción especial)
 
 > **Nombre e identidad nuevos (17/11/2026):** el nombre anterior, *Caimán Neón*, ya estaba en uso en YouTube. Se rediseñó toda la marca y se volvieron a producir los 10 videos con la identidad nueva. Ver `CANAL_IDENTIDAD/GUIA_DE_MARCA.md`.
 
@@ -11,7 +11,8 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
 3. `00_INFORMES/ESTRATEGIA_LANZAMIENTO.md`: calendario con horarios para México, Colombia, Argentina y España.
 4. `CANAL_IDENTIDAD/`: nombre, logotipo, avatar, banner, marca de agua y guía de marca.
 5. `VIDEO_01` … `VIDEO_10`: cada carpeta tiene su `publicacion.md` (paquete completo) y los archivos para subir.
-6. `00_INFORMES/INVENTARIO.md`: lista completa de archivos.
+6. `VIDEO_EXTRA/`: la producción especial de 9:29, «¿Por qué Vice City es rosa?». Empieza por `ANALISIS_Y_CONCEPTO.md` y `AUDITORIA_FINAL.md`.
+7. `00_INFORMES/INVENTARIO.md`: lista completa de archivos.
 
 ## Estado real de producción
 
@@ -27,6 +28,7 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
 | 08 | Fauna de Leonida: guía de campo | Short | 0:40 | ✅ **Terminado** | jue 19 · 17:00 |
 | 09 | 7 misterios que se resuelven el jueves | Largo | 3:03 | ✅ **Terminado** | mié 18 · 21:00 |
 | 10 | Abrimos los 7 sobres: lo comprobamos jugando | Largo (post-lanzamiento) | estimada 8-10 min | 🟡 **Preproducción**: faltan capturas propias y veredictos. El MP4 incluido es un **animático rotulado "NO PUBLICAR"** | lun 23 · 19:00 |
+| EXTRA | ¿Por qué Vice City es rosa? La historia real de sus colores | Largo 16:9 · producción especial | 9:29 | ✅ **Terminado**. Coincidencia guion ↔ voz: 99,97 % | **mié 18 · 20:00** (antes del lanzamiento: el guion dice «mañana») |
 
 **Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada entre −14,1 y −14,5 LUFS.
 

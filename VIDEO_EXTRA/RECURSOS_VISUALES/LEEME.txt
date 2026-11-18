@@ -1,0 +1,7 @@
+RECURSOS VISUALES · VIDEO_EXTRA
+
+Fotogramas clave del video, en 1920×1080 PNG, exportados directamente desde el motor (no son capturas del MP4 comprimido).
+Todo es ilustración vectorial original de Sal y Asfalto, dibujada por código: los hoteles MAREA, CORAL, BRISA y SOL son inventados y reúnen rasgos genéricos del art déco.
+Código fuente: engine/videos/vx_lib.py (biblioteca visual) y engine/videos/vx_scenes.py (escenas). Para regenerar: python engine/vx_package.py --visuals
+Hoja de contactos completa (un fotograma cada 5 s): VIDEO_EXTRA/recursos/hoja_de_contactos.jpg
+Música original del video: VIDEO_EXTRA/recursos/musica_original.mp3

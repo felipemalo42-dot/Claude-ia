@@ -32,6 +32,16 @@ STEPS = int(os.environ.get("TTS_STEPS", "16"))
 
 # Pronunciación: (regex, reemplazo hablado). Solo afecta al audio, nunca a subtítulos.
 PRON = [
+    # VIDEO_EXTRA (Vice City capa por capa): nombres propios en inglés
+    (r"\bOcean Beach Realty Company\b", "Óushen Bich Rílti Cómpani"), (r"\bOcean Beach\b", "Óushen Bich"), (r"\bOcean Drive\b", "Óushen Dráiv"),
+    (r"\bOcean View Hotel\b", "Óushen Viu Hotel"), (r"\bMiami Beach\b", "Miami Bich"), (r"\bSouth Beach\b", "Sáuz Bich"),
+    (r"\bMiami Vice\b", "Maiami Vais"), (r"\bMiami-Dade\b", "Miami Déid"), (r"\bMichael Mann\b", "Máikol Man"), (r"\bMann\b", "Man"),
+    (r"\bLeonard Horowitz\b", "Léonard Jórouits"), (r"\bHorowitz\b", "Jórouits"), (r"\bBarbara Capitman\b", "Bárbara Cápitman"),
+    (r"\bCapitman\b", "Cápitman"), (r"\bL\. Murray Dixon\b", "Él Múrrei Díxon"), (r"\bDixon\b", "Díxon"), (r"\bLummus\b", "Lámus"),
+    (r"\bFriedman's\b", "Frídmans"), (r"\bDeco schmeco\b", "Déco shméco"), (r"\bPhilip Michael Thomas\b", "Fílip Máikol Tómas"),
+    (r"\bLance Vance\b", "Lans Vans"), (r"\bTommy Vercetti\b", "Tómi Verchéti"), (r"\bVercetti\b", "Verchéti"), (r"\bTubbs\b", "Tabs"),
+    (r"\bVintage\b", "Víntach"), (r"\bWelcome to\b", "Güélcom tu"), (r"\bHeat\b", "Jit"), (r"\bNBC\b", "ene be ce"), (r"\bAP\b", "a pe"),
+    (r"\bVictor\b", "Víctor"), (r"\b[Aa]rt déco\b", "art decó"), (r"\bsheriff\b", "shérif"), (r"\bWashington\b", "Uáshinton"),
     (r"\bGTA VI\b", "ge te a seis"), (r"\bGTA 6\b", "ge te a seis"), (r"\bGTA V\b", "ge te a cinco"),
     (r"\bGTA 5\b", "ge te a cinco"), (r"\bGTA\b", "ge te a"),
     (r"\bJason\b", "Yéison"), (r"\bLucia\b", "Lucía"), (r"\bDuval\b", "Duval"),

@@ -63,15 +63,22 @@ def cb_batch(jobs):
         env = dict(os.environ, CHATTERBOX_DIR=CB["dir"])
         procs.append(subprocess.Popen([CB["python"], os.path.join(os.path.dirname(__file__), "tts_chatterbox.py"), jf, "--threads", str(thr)], env=env,
                                       stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True))
-    for p in procs:
+    # leer la salida de todos los procesos a la vez: si no, el que no se lee se bloquea al llenarse su tubería
+    import threading
+    def drain(p, k):
         for line in p.stdout:
-            if line.startswith("[") or "Error" in line or "Traceback" in line: print("   ", line.rstrip(), flush=True)
-        p.wait()
-        if p.returncode: raise RuntimeError("Falló la síntesis con Chatterbox")
+            if line.startswith("[") or "Error" in line or "Traceback" in line: print(f"    [proceso {k}]", line.rstrip(), flush=True)
+    ths = [threading.Thread(target=drain, args=(p, k), daemon=True) for k, p in enumerate(procs)]
+    for th in ths: th.start()
+    for p in procs: p.wait()
+    for th in ths: th.join(timeout=5)
+    if any(p.returncode for p in procs): raise RuntimeError("Falló la síntesis con Chatterbox")
 
-def cb_job(text, voice, seed):
+def cb_job(text, voice, seed, exag=None, cfg=None):
     import hashlib
-    v = CB_VOICES.get(voice, CB_VOICES["host"])
+    v = dict(CB_VOICES.get(voice, CB_VOICES["host"]))
+    if exag is not None: v["exaggeration"] = exag
+    if cfg is not None: v["cfg"] = cfg
     key = hashlib.sha1(f"{text}|{voice}|{seed}|{v['exaggeration']}|{v['cfg']}|{os.path.getsize(v['ref'])}".encode()).hexdigest()[:20]
     return dict(text=text, seed=int(seed), ref=v["ref"], exaggeration=v["exaggeration"], cfg=v["cfg"], temperature=0.8,
                 out=os.path.join(CB["cache"], f"{key}.wav"))
@@ -84,6 +91,9 @@ def load_take(path):
         from math import gcd
         g = gcd(TSR, sr); x = _sg.resample_poly(x, TSR // g, sr // g).astype(np.float32)
     return level(trim(x))
+
+NAMES = dict(narr_wav="narracion.wav", narr_mp3="narracion.mp3", srt="subtitulos.srt", script="guion.txt", thumb="miniatura.png")
+def out_name(V, key): return V.get("names", {}).get(key, NAMES[key])
 
 def build_audio(V, outdir, narr=None, aligner=None):
     aligner = aligner or Aligner()
@@ -99,40 +109,52 @@ def build_audio(V, outdir, narr=None, aligner=None):
         if items and os.path.exists(human):
             plan.append([dict(bi=bi, take=items, voice="humana", speed=None, human=human)])
         else:
-            plan.append([dict(bi=bi, take=tk, voice=voice, speed=speed) for tk in group_takes(items)])
+            plan.append([dict(bi=bi, take=tk, voice=voice, speed=speed, exag=b.get("exag"), cfg=b.get("cfg")) for tk in group_takes(items)])
     takes = [tk for bt in plan for tk in bt]
     for tk in takes:
         tk["text"] = " ".join(it["spk"] for it in tk["take"]); tk["flat"] = [w for it in tk["take"] for w in it["sub"].split()]
         tk["exp"] = " ".join(it["plain"] for it in tk["take"]); tk["best"] = None; tk["tries"] = 0
     # 2) sintetizar + verificar (rondas con otra semilla para las tomas que no pasan el control)
+    thr = V.get("qa_thr", QA_THR); metric = V.get("qa_metric", "tokens"); W2 = {}
+    def evaluate(tk, x):
+        """→ (tiempos por palabra, coincidencia, texto reconocido, detalle). Métrica «fonetica»: ver voice_qa.py."""
+        times, score, hyp = aligner.align(x, TSR, tk["flat"], tk["exp"])
+        if metric != "fonetica": return times, score, hyp, dict(d=None, n=None, src="parakeet")
+        import voice_qa
+        sc, d, e, h = voice_qa.score(tk["exp"], hyp); src = "parakeet"; n = len(e)
+        if sc < thr:  # segunda opinión: un error del reconocedor no debe contar como error de la voz
+            if "w" not in W2: W2["w"] = voice_qa.Whisper()
+            hw = W2["w"].transcribe(x, TSR); sc2, d2, _, _ = voice_qa.score(tk["exp"], hw)
+            if sc2 > sc: sc, d, hyp, src = sc2, d2, hw, "whisper"
+        return times, sc, hyp, dict(d=d, n=n, src=src)
     for tk in takes:
         if tk["voice"] == "humana":
             from scipy import signal as _sg
             ha, hsr = sf.read(tk["human"], dtype="float32")
             if ha.ndim > 1: ha = ha.mean(axis=1)
             if hsr != TSR: ha = _sg.resample_poly(ha, TSR, hsr).astype(np.float32)
-            x = level(trim(ha)); times, score, hyp = aligner.align(x, TSR, tk["flat"], tk["exp"]); tk["best"] = (score, x, times, hyp); tk["tries"] = 1
+            x = level(trim(ha)); times, score, hyp, det = evaluate(tk, x); tk["best"] = (score, x, times, hyp, det); tk["tries"] = 1
     synth = [tk for tk in takes if tk["voice"] != "humana"]
     if VOICE_ENGINE == "supertonic":
         narr = narr or Supertonic()
-    for k in range(MAX_TRIES):
-        pend = [tk for tk in synth if tk["best"] is None or tk["best"][0] < QA_THR]
+    for k in range(V.get("max_tries", MAX_TRIES)):
+        pend = [tk for tk in synth if tk["best"] is None or tk["best"][0] < thr]
         if not pend: break
         if k: print(f"  ronda {k + 1}: repitiendo {len(pend)} tomas con otra semilla")
         if VOICE_ENGINE == "chatterbox":
-            for tk in pend: tk["job"] = cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + k)
+            for tk in pend: tk["job"] = cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + k, tk.get("exag"), tk.get("cfg"))
             cb_batch([tk["job"] for tk in pend])
         for tk in pend:
             x = load_take(tk["job"]["out"]) if VOICE_ENGINE == "chatterbox" else level(trim(narr.synth(tk["text"], tk["voice"], tk["speed"], take_seed(tk["text"], tk["voice"]) + k)))
-            times, score, hyp = aligner.align(x, TSR, tk["flat"], tk["exp"]); tk["tries"] = k + 1
-            if tk["best"] is None or score > tk["best"][0]: tk["best"] = (score, x, times, hyp)
+            times, score, hyp, det = evaluate(tk, x); tk["tries"] = k + 1
+            if tk["best"] is None or score > tk["best"][0]: tk["best"] = (score, x, times, hyp, det)
     # 3) montar la línea de tiempo
     t = V.get("lead_in", 0.25); beats = []; chunks = []; qa = []
     for bi, b in enumerate(V["beats"]):
         bstart = t + b.get("pre", 0.0); cur = bstart; sents = []; pmul = b.get("pause_mul", V.get("pause_mul", 1.0))
         for tk in plan[bi]:
-            score, x, times, hyp = tk["best"]
-            qa.append(dict(t=round(cur, 2), score=round(score, 3), tries=tk["tries"], guion=tk["exp"], reconocido=hyp, voz=tk["voice"]))
+            score, x, times, hyp, det = tk["best"]
+            qa.append(dict(t=round(cur, 2), score=round(score, 4), tries=tk["tries"], guion=tk["exp"], reconocido=hyp, voz=tk["voice"], **det))
             chunks.append((cur, x)); i0 = 0
             for it in tk["take"]:
                 ws = it["sub"].split(); wt = times[i0:i0 + len(ws)]; i0 += len(ws)
@@ -145,18 +167,23 @@ def build_audio(V, outdir, narr=None, aligner=None):
         t = bend
     total = t + V.get("tail", 0.4)
     # control de calidad de la voz: guion frente a lo que entiende el reconocedor
-    with open(f"{outdir}/recursos/control_de_voz.csv", "w", encoding="utf-8") as f:
-        f.write("inicio_s;coincidencia;tomas;voz;guion;reconocido\n")
-        for q in qa: f.write(f"{q['t']};{q['score']};{q['tries']};{q['voz']};{q['guion']};{q['reconocido']}\n")
-    low = [q for q in qa if q["score"] < QA_THR]
-    print(f"  voz: {len(qa)} tomas · coincidencia media {np.mean([q['score'] for q in qa]):.3f} · mínima {min(q['score'] for q in qa):.2f} · repetidas {sum(q['tries'] > 1 for q in qa)} · bajo umbral {len(low)}")
+    import csv as _csv
+    with open(f"{outdir}/recursos/control_de_voz.csv", "w", encoding="utf-8", newline="") as f:
+        wr = _csv.writer(f, delimiter=";")
+        wr.writerow(["inicio_s", "coincidencia", "tomas", "voz", "diferencias", "sonidos", "reconocedor", "guion", "reconocido"])
+        for q in qa: wr.writerow([q["t"], q["score"], q["tries"], q["voz"], q.get("d"), q.get("n"), q.get("src"), q["guion"], q["reconocido"]])
+    low = [q for q in qa if q["score"] < thr]
+    print(f"  voz: {len(qa)} tomas · coincidencia media {np.mean([q['score'] for q in qa]):.4f} · mínima {min(q['score'] for q in qa):.4f} · repetidas {sum(q['tries'] > 1 for q in qa)} · bajo umbral {len(low)}")
+    if metric == "fonetica":
+        D = sum(q["d"] for q in qa); N = sum(q["n"] for q in qa)
+        print(f"  coincidencia fonética global guion↔voz: {1 - D / N:.4%} ({D} diferencias en {N} sonidos)")
     for q in low: print(f"   [revisar {q['score']:.2f}] {q['guion']}\n        → {q['reconocido']}")
     # pista de narración (44,1 kHz mono, sin procesar)
     nar = np.zeros(int(total * TSR) + TSR, np.float32)
     for st, a in chunks:
         s = int(st * TSR); nar[s:s + len(a)] += a
     nar = nar[: int(total * TSR)]
-    sf.write(f"{outdir}/narracion.wav", nar, TSR, subtype="PCM_16")
+    sf.write(f"{outdir}/{out_name(V, 'narr_wav')}", nar, TSR, subtype="PCM_16")
     # voz procesada 48 kHz
     vox = audio.voice_chain(nar, TSR); n = int(total * audio.SR); vox = np.pad(vox, ((0, max(0, n - len(vox))), (0, 0)))[:n]
     # música
@@ -164,7 +191,8 @@ def build_audio(V, outdir, narr=None, aligner=None):
     for b, bd in zip(V["beats"], beats):
         if "energy" in b: energy.append((bd["start"], b["energy"]))
     energy = energy or [(0, 2)]
-    mus = audio.compose(V["music"], total, energy=energy, seed=V.get("music_seed", 1), key_shift=V.get("key_shift", 0))
+    if V.get("music_fn"): mus = V["music_fn"](total, beats)
+    else: mus = audio.compose(V["music"], total, energy=energy, seed=V.get("music_seed", 1), key_shift=V.get("key_shift", 0))
     mus = mus[:n] if len(mus) >= n else np.pad(mus, ((0, n - len(mus)), (0, 0)))
     duck = audio.duck_envelope(vox, depth=V.get("duck", 0.30))
     # silencios dramáticos de música
@@ -201,12 +229,12 @@ def build_audio(V, outdir, narr=None, aligner=None):
     sf.write(f"{outdir}/recursos/musica_original.wav", (mus / (np.abs(mus).max() + 1e-9) * 0.8).astype(np.float32), audio.SR, subtype="PCM_16")
     # mp3 de la narración procesada
     sf.write(f"{outdir}/recursos/_vox.wav", (vox / (np.abs(vox).max() + 1e-9) * 0.9).astype(np.float32), audio.SR, subtype="PCM_16")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{outdir}/recursos/_vox.wav", "-c:a", "libmp3lame", "-b:a", "160k", f"{outdir}/narracion.mp3"], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{outdir}/recursos/_vox.wav", "-c:a", "libmp3lame", "-b:a", "160k", f"{outdir}/{out_name(V, 'narr_mp3')}"], check=True)
     os.remove(f"{outdir}/recursos/_vox.wav")
     tl = dict(total=round(total, 3), beats=beats, lufs_in=round(lufs, 2))
     json.dump(tl, open(f"{outdir}/recursos/timeline.json", "w"), ensure_ascii=False, indent=1)
-    write_srt(tl, f"{outdir}/subtitulos.srt", V)
-    write_script(V, tl, f"{outdir}/guion.txt")
+    write_srt(tl, f"{outdir}/{out_name(V, 'srt')}", V)
+    write_script(V, tl, f"{outdir}/{out_name(V, 'script')}")
     return tl
 
 # ---------------------------------------------------------------- SRT y guion
@@ -324,26 +352,43 @@ def blend_transition(c, imgA, imgB, kind, p, W, H):
         gfx.rect(c, 0, 0, W, H, "#ff2bd6", 0.10 * math.sin(p * math.pi))
     elif kind == "flash":
         c.drawImage(imgA if p < 0.5 else imgB, 0, 0); gfx.rect(c, 0, 0, W, H, "#ffffff", math.sin(p * math.pi) ** 2 * 0.9)
+    elif kind == "paint":  # rodillo de pintura: borde ondulado que avanza
+        c.drawImage(imgA, 0, 0); xe = W * 1.2 * e - W * 0.1
+        pth = skia.Path(); pth.moveTo(-10, -10)
+        for k in range(41):
+            yy = H * k / 40; xx = xe + 26 * math.sin(k * 1.3 + p * 7) + 12 * math.sin(k * 3.1 + 1)
+            pth.lineTo(xx, yy) if k else pth.lineTo(xx, -10)
+        pth.lineTo(-10, H + 10); pth.close()
+        c.save(); c.clipPath(pth, doAntiAlias=True); c.drawImage(imgB, 0, 0); c.restore()
+        edge = skia.Path()
+        for k in range(41):
+            yy = H * k / 40; xx = xe + 26 * math.sin(k * 1.3 + p * 7) + 12 * math.sin(k * 3.1 + 1)
+            edge.lineTo(xx, yy) if k else edge.moveTo(xx, yy)
+        c.drawPath(edge, gfx.paint("#ffffff", 0.35 * math.sin(p * math.pi), stroke=8))
     elif kind == "slide_up":
         c.save(); c.translate(0, -H * e); c.drawImage(imgA, 0, 0); c.restore(); c.save(); c.translate(0, H * (1 - e)); c.drawImage(imgB, 0, 0); c.restore()
     else:
         c.drawImage(imgB, 0, 0)
 
-def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None):
+def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None, segment=None):
+    """segment=(k, n): renderiza solo la parte k de n (sin audio) para montarla después en paralelo."""
     W, H = V.get("size", (1920, 1080)); ctx = Ctx(V, tl, W, H)
     groups = group_scenes(V, tl); infos = [SceneInfo(g) for g in groups]
     total = tl["total"]; nfr = int(math.ceil(total * FPS))
     f0, f1 = 0, nfr
     if preview: a, b = preview; f0, f1 = int(a * FPS), min(nfr, int(b * FPS))
+    if segment: k, n = segment; f0, f1 = nfr * k // n, nfr * (k + 1) // n
     mp4 = f"{outdir}/{V['file']}.mp4" if not preview else f"{outdir}/recursos/preview_{int(f0 / FPS)}.mp4"
+    if segment: mp4 = f"{outdir}/recursos/_seg_{segment[0]:02d}.mp4"
     dur = (f1 - f0) / FPS
     if master: vargs = ["-crf", "17", "-maxrate", "12M", "-bufsize", "24M"]
     else:
         cap = int(min(8000, 92 * 8 * 1000 / max(1, total) - 192)); vargs = ["-crf", "19", "-maxrate", f"{cap}k", "-bufsize", f"{cap * 2}k"]
-    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-           "-ss", f"{f0 / FPS:.3f}", "-t", f"{dur:.3f}", "-i", f"{outdir}/recursos/mezcla_final.wav",
-           "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-pix_fmt", "yuv420p",
-           "-profile:v", "high", "-g", "60", *vargs, "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart",
+    aud_in = [] if segment else ["-ss", f"{f0 / FPS:.3f}", "-t", f"{dur:.3f}", "-i", f"{outdir}/recursos/mezcla_final.wav"]
+    aud_out = [] if segment else ["-map", "1:a", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", *aud_in,
+           "-map", "0:v", *aud_out, "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-pix_fmt", "yuv420p",
+           "-profile:v", "high", "-g", "60", *vargs, "-movflags", "+faststart",
            "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", mp4]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     surf = gfx.new_surface(W, H); sA = gfx.new_surface(W, H); sB = gfx.new_surface(W, H)
@@ -378,9 +423,27 @@ def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None):
     proc.stdin.close(); proc.wait()
     return mp4
 
+def render_parallel(V, tl, outdir, vid, jobs, master=False):
+    """Renderiza en `jobs` procesos (cada uno una parte del vídeo) y une las partes con el audio final."""
+    procs = []
+    for k in range(jobs):
+        cmd = [sys.executable, os.path.abspath(__file__), vid, "--stage", "video", "--segment", str(k), str(jobs)] + (["--master"] if master else [])
+        procs.append(subprocess.Popen(cmd))
+    codes = [p.wait() for p in procs]
+    if any(codes): raise RuntimeError(f"falló algún segmento: {codes}")
+    lst = f"{outdir}/recursos/_segs.txt"
+    open(lst, "w").write("".join(f"file '{outdir}/recursos/_seg_{k:02d}.mp4'\n" for k in range(jobs)))
+    mp4 = f"{outdir}/{V['file']}.mp4"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-i", f"{outdir}/recursos/mezcla_final.wav",
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", mp4], check=True)
+    for k in range(jobs): os.remove(f"{outdir}/recursos/_seg_{k:02d}.mp4")
+    os.remove(lst)
+    return mp4
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("vid"); ap.add_argument("--stage", default="all")
     ap.add_argument("--master", action="store_true"); ap.add_argument("--preview", type=float, nargs=2)
+    ap.add_argument("--jobs", type=int, default=1); ap.add_argument("--segment", type=int, nargs=2)
     a = ap.parse_args()
     mod = importlib.import_module(f"videos.{a.vid}"); V = mod.VIDEO
     outdir = os.path.join(ROOT, V["folder"]); os.makedirs(f"{outdir}/recursos", exist_ok=True)
@@ -393,10 +456,13 @@ def main():
         mk = getattr(mod, "THUMB_MARK", (1215, 655, 34))
         if mk:
             import components; components.thumb_mark(s.getCanvas(), *mk)
-        s.makeImageSnapshot().save(f"{outdir}/miniatura.png", skia.kPNG); print("miniatura lista")
+        s.makeImageSnapshot().save(f"{outdir}/{out_name(V, 'thumb')}", skia.kPNG); print("miniatura lista")
     if a.stage in ("all", "video"):
         fd = f"{outdir}/recursos/fotogramas"; os.makedirs(fd, exist_ok=True)
-        out = render_video(V, tl, outdir, a.master, a.preview, None if a.preview else fd)
+        if a.segment:
+            render_video(V, tl, outdir, a.master, None, fd, segment=tuple(a.segment)); return
+        if a.jobs > 1 and not a.preview: out = render_parallel(V, tl, outdir, a.vid, a.jobs, a.master)
+        else: out = render_video(V, tl, outdir, a.master, a.preview, None if a.preview else fd)
         print(f"{V['id']}: vídeo listo {out} ({(time.time() - t0) / 60:.1f} min)")
 
 if __name__ == "__main__":

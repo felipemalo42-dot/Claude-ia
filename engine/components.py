@@ -4,7 +4,8 @@ from gfx import *
 from brand import PAL, wordmark, draw_badge, guide_sign, traffic_light, coast_scene, BRAND
 
 CERT = {"OFICIAL": (PAL["verde"], 0), "DEDUCCIÓN": (PAL["ambar"], 1), "RUMOR": (PAL["rojo"], 2), "SIN CONFIRMAR": (PAL["rojo"], 2),
-        "REPORTADO": (PAL["mar"], None), "HIPÓTESIS": (PAL["ambar"], 1), "COMPROBAR EN EL JUEGO": (PAL["mar"], None)}
+        "REPORTADO": (PAL["mar"], None), "HIPÓTESIS": (PAL["ambar"], 1), "COMPROBAR EN EL JUEGO": (PAL["mar"], None),
+        "DOCUMENTADO": (PAL["verde"], 0), "INTERPRETACIÓN": (PAL["ambar"], 1)}
 
 def cert_tag(c, x, y, kind, a=1.0, size=30, align="left", t=1.0):
     """Etiqueta del semáforo de certeza: mini semáforo + rótulo. t = progreso de aparición 0..1."""

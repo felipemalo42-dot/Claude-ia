@@ -236,6 +236,56 @@ Generado automáticamente. Tamaños aproximados.
 | `rotulos_para_edicion/veredicto_FALLAMOS.png` | 63.4 KB |
 | `rotulos_para_edicion/veredicto_SIN_DATOS.png` | 65.3 KB |
 
+## VIDEO_EXTRA
+
+| Archivo | Tamaño |
+|---|---|
+| `ANALISIS_Y_CONCEPTO.md` | 10.0 KB |
+| `AUDITORIA_FINAL.md` | 10.2 KB |
+| `DESCRIPCION_YOUTUBE.txt` | 3.1 KB |
+| `ETIQUETAS.txt` | 306 B |
+| `FUENTES_Y_REFERENCIAS.txt` | 13.6 KB |
+| `GUION_COMPLETO.docx` | 27.4 KB |
+| `MINIATURA.png` | 109.3 KB |
+| `NARRACION.mp3` | 10.9 MB |
+| `PUBLICACION_YOUTUBE.md` | 6.8 KB |
+| `REGISTRO_DE_DERECHOS.txt` | 9.6 KB |
+| `SUBTITULOS.srt` | 13.6 KB |
+| `VIDEO_FINAL.mp4` | 75.2 MB |
+| `RECURSOS_VISUALES/00_miniatura.png` | 109.3 KB |
+| `RECURSOS_VISUALES/01_hook_1.png` | 212.7 KB |
+| `RECURSOS_VISUALES/02_hook_2.png` | 211.7 KB |
+| `RECURSOS_VISUALES/03_hook_3.png` | 196.8 KB |
+| `RECURSOS_VISUALES/04_intro.png` | 208.3 KB |
+| `RECURSOS_VISUALES/05_oficial.png` | 158.9 KB |
+| `RECURSOS_VISUALES/06_island.png` | 928.6 KB |
+| `RECURSOS_VISUALES/07_storm.png` | 1.1 MB |
+| `RECURSOS_VISUALES/08_blueprint.png` | 777.4 KB |
+| `RECURSOS_VISUALES/09_white.png` | 682.0 KB |
+| `RECURSOS_VISUALES/10_decline.png` | 1.1 MB |
+| `RECURSOS_VISUALES/11_capitman.png` | 1.0 MB |
+| `RECURSOS_VISUALES/12_register.png` | 792.8 KB |
+| `RECURSOS_VISUALES/13_bakery.png` | 122.8 KB |
+| `RECURSOS_VISUALES/14_continuity.png` | 180.2 KB |
+| `RECURSOS_VISUALES/15_tv.png` | 222.8 KB |
+| `RECURSOS_VISUALES/16_coda.png` | 401.5 KB |
+| `RECURSOS_VISUALES/17_game.png` | 125.6 KB |
+| `RECURSOS_VISUALES/18_game2.png` | 128.6 KB |
+| `RECURSOS_VISUALES/19_2026.png` | 339.0 KB |
+| `RECURSOS_VISUALES/20_phones.png` | 497.1 KB |
+| `RECURSOS_VISUALES/21_loop.png` | 307.2 KB |
+| `RECURSOS_VISUALES/22_guide.png` | 174.4 KB |
+| `RECURSOS_VISUALES/23_close.png` | 173.7 KB |
+| `RECURSOS_VISUALES/24_paletas_por_epoca.png` | 176.6 KB |
+| `RECURSOS_VISUALES/25_corte_de_pintura.png` | 73.8 KB |
+| `RECURSOS_VISUALES/LEEME.txt` | 652 B |
+| `recursos/control_de_voz.csv` | 18.1 KB |
+| `recursos/guion_con_tiempos.txt` | 15.0 KB |
+| `recursos/hoja_de_contactos.jpg` | 1.0 MB |
+| `recursos/musica_original.mp3` | 13.0 MB |
+| `recursos/narracion_original.flac` | 17.8 MB |
+| `recursos/timeline.json` | 114.3 KB |
+
 ## engine
 
 Código fuente del motor (68 archivos: módulos Python, referencias de voz, tipografías OFL/Apache y datos de Natural Earth). Ver `engine/README.md`.

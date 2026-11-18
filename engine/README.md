@@ -53,3 +53,28 @@ python publish_meta.py              # regenera publicacion.md, descripción, eti
 | `publish_meta.py` | Metadatos de publicación y auditoría de los 10 vídeos |
 | `geo/` | Natural Earth (dominio público): países, estados y lagos |
 | `fonts/` | Tipografías con licencia OFL o Apache 2.0 |
+
+## Producción especial VIDEO_EXTRA (9:29)
+```bash
+cd engine
+python build.py vx --stage audio            # voz verificada (métrica fonética, ver voice_qa.py), música por épocas, mezcla, SRT
+python build.py vx --stage video --jobs 4   # render en 4 procesos paralelos (~19 min en 4 núcleos)
+python vx_package.py                        # GUION_COMPLETO.docx, paquete de publicación, RECURSOS_VISUALES y limpieza
+```
+| Archivo | Función |
+|---|---|
+| `videos/vx.py` | Guion por bloques (con énfasis, ritmo y notas visuales), música por épocas y tratamiento de color por época |
+| `videos/vx_lib.py` | Biblioteca visual: fachadas art déco genéricas, calle por época, corte de pintura, televisor, celulares, pixelado |
+| `videos/vx_scenes.py` | Las 29 escenas y la miniatura |
+| `voice_qa.py` | Control de calidad de la voz: dos reconocedores (Parakeet + Whisper) y comparación fonética guion ↔ voz |
+| `vx_package.py` / `vx_docx.js` | Empaquetado final y guion en Word (docx-js) |
+
+Opciones nuevas del motor:
+- `--jobs N`: render en paralelo.
+- En el módulo del video:
+  - `music_fn`: música propia del video;
+  - `grade`: corrección de color por época;
+  - `qa_metric="fonetica"` y `qa_thr`: umbral de coincidencia de la voz;
+  - `max_tries`: número de semillas;
+  - `names`: nombres de los archivos de salida.
+- Por bloque: `exag` y `cfg` (expresividad de la voz).
