@@ -859,7 +859,7 @@ def g_spoiler(c, t, d, sh, ctx):
     draw_text(c, sub, 0, 120, "ovblk", 44, YEL, 1, align="center", tracking=2)
     if st:
         j = _spoiler_jump(ctx)
-        if j: draw_text(c, f"PARA SALTARLAS, VE AL MINUTO {j}", 0, 200, "anton", 64, "#FFFFFF", 1, align="center", tracking=2)
+        if j: draw_text(c, f"PARA SALTARLAS, VE AL MINUTO {j}", 0, 200, "anton", 64 if st == 1 else 96, YEL if st == 2 else "#FFFFFF", 1, align="center", tracking=2)
     c.restore()
 
 def g_spoiler_end(c, t, d, sh, ctx):
@@ -1014,7 +1014,7 @@ def g_bugs(c, t, d, sh, ctx):
     _panel_bg(c, "Vice_City_16", 0.66); st = sh.get("step", 0)
     draw_text(c, "PRIMERAS QUEJAS DE JUGADORES", W / 2, 250, "anton", 80, "#FF8A80", 1, align="center", tracking=2)
     _rows(c, t, [("ATRAVESAR OBJETOS", "Personajes que atraviesan muebles o el suelo"), ("FÍSICAS RARAS", "Reacciones extrañas de objetos y vehículos"),
-                 ("CIERRES EN CONSOLA", "Algunos jugadores reportan cuelgues")], 2, y0=470, dy=165, col="#FF8A80")
+                 ("CIERRES EN CONSOLA", "Algunos jugadores reportan cuelgues")], 2 if st >= 1 or sh.get("row") else min(2, int(t / 1.2)), y0=470, dy=165, col="#FF8A80")
     if st >= 1:
         p = ease_out_back(prog(t, 0, 0.4)); c.save(); c.translate(W / 2, 345); c.scale(p, p)
         rect(c, -560, -50, 1120, 80, "#FFB000", 1, r=10); draw_text(c, "SIN CONFIRMAR POR ROCKSTAR · OTROS NO REPORTAN FALLOS", 0, 6, "ovmono", 30, "#16181B", 1, align="center")

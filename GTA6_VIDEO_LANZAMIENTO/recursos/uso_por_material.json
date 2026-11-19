@@ -1,0 +1,72 @@
+{
+ "Extended Look": {
+  "n": 82,
+  "s": 237.6,
+  "archivos": [
+   "GTAVI_An_Extended_Look.mp4"
+  ]
+ },
+ "Captura oficial": {
+  "n": 38,
+  "s": 111.5,
+  "archivos": [
+   "Brian_Heder_01",
+   "Cal_Hampton_01",
+   "Cal_Hampton_03",
+   "Grassrivers_05",
+   "Grassrivers_06",
+   "Jason_Duval_03",
+   "Jason_Duval_05",
+   "Jason_Duval_11",
+   "Jason_Duval_12",
+   "Jason_Duval_16",
+   "Jason_Duval_17",
+   "Jason_Duval_19",
+   "Jason_and_Lucia_03",
+   "Jason_and_Lucia_06",
+   "Jason_and_Lucia_09",
+   "Jason_and_Lucia_11",
+   "Jason_and_Lucia_13",
+   "Jason_and_Lucia_14",
+   "Jason_and_Lucia_16",
+   "Jason_and_Lucia_19",
+   "Jason_and_Lucia_20",
+   "Lucia_Caminos_01",
+   "Lucia_Caminos_13",
+   "Lucia_Caminos_14",
+   "Real_Dimez_02",
+   "Vice_City_02",
+   "Vice_City_09",
+   "Vice_City_10",
+   "Vice_City_11",
+   "Vice_City_15",
+   "Vice_City_18",
+   "Vice_City_26"
+  ]
+ },
+ "Ilustración oficial": {
+  "n": 6,
+  "s": 16.4,
+  "archivos": [
+   "Jason_and_Lucia_Beach_landscape",
+   "Jason_and_Lucia_Motel_landscape",
+   "Jason_and_Lucia_Robbery_landscape"
+  ]
+ },
+ "Vídeo de personaje": {
+  "n": 3,
+  "s": 7.1,
+  "archivos": [
+   "Cal_Hampton",
+   "Jason_Duval",
+   "Lucia_Caminos"
+  ]
+ },
+ "Portada animada": {
+  "n": 1,
+  "s": 3.5,
+  "archivos": [
+   "cover"
+  ]
+ }
+}

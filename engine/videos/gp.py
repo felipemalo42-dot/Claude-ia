@@ -81,10 +81,10 @@ beat("Hay más detalles sobre la gente de Leonida. Según Windows Central, los p
      "y Vice destaca que tienen frases propias. Incluso las caras de la gente están capturadas con actores, y se aprecian en las conversaciones dentro del coche si pones la cámara en primera persona.",
      mus=("tropical", 1), cert="OFICIAL", src_note="Windows Central y Vice, reseñas del 18/11/2026",
      shots=[S(None, "e:380.2"), S("si conduces mal", "e:521.0"), S("si les pitas", "e:528.0"), S("frases propias", "e:554.6"),
-            S("las caras", "s:Brian_Heder_01", z=(1.0, 1.1)), S("dentro del coche", "e:794.0"), S("primera persona", "s:Jason_and_Lucia_11", z=(1.0, 1.08))])
+            S("las caras", "s:Brian_Heder_01", z=(1.0, 1.1)), S("dentro del coche", "s:Jason_and_Lucia_20", z=(1.0, 1.08)), S("primera persona", "s:Jason_and_Lucia_11", z=(1.0, 1.08))])
 beat("Rockstar ya había dicho que Leonida es, más o menos, el doble de grande que el mapa de GTA 5. Y el analista de The Guardian lo resume con una imagen: hacer la reseña de GTA 6 es como hacer la reseña de una ciudad entera, como París.",
      mus=("tropical", 1), cert="OFICIAL", src_note="Aaron Garbut a Game Informer (mapa) · The Guardian, citado por The National (18/11/2026)",
-     shots=[S(None, "g:postcards"), S("The Guardian", "e:1142.0"), S("como París", "e:571.2", z=(1.0, 1.08))])
+     shots=[S(None, "g:postcards"), S("el doble de grande", "g:map"), S("The Guardian", "e:1142.0"), S("como París", "e:571.2", z=(1.0, 1.08))])
 
 # ================================================================ 3B · QUÉ HACER
 beat("¿Y fuera de las misiones? Las reseñas coinciden en que las actividades secundarias pueden comerte horas: pescar, entrenar en el gimnasio, bailar en una discoteca, "
@@ -99,7 +99,7 @@ beat("¿Y fuera de las misiones? Las reseñas coinciden en que las actividades s
 beat("Ahora sí, aviso de spoiler. Las próximas imágenes son de misiones del Extended Look, el vídeo de juego que Rockstar publicó en agosto. "
      "Si no quieres ver nada, salta al siguiente capítulo: el minuto está en la descripción.",
      section="4 · LOS ATRACOS (AVISO DE SPOILER)", chapter=(4, "LOS ATRACOS"), mus=("tension", 1), pre=0.6, cert=None, spoiler=True,
-     shots=[S(None, "g:spoiler", step=1)], sfx=[(0.0, "stamp", 0.6)], hold=0.6)
+     shots=[S(None, "g:spoiler", step=1), S("el vídeo de juego", "g:el_card"), S("Si no quieres ver nada", "g:spoiler", step=2)], sfx=[(0.0, "stamp", 0.6)], hold=0.6)
 beat("Para GameSpot, los grandes atracos son la joya del juego. Y Windows Central explica que un robo puede salir distinto según quién haya alrededor. "
      "En el atraco que enseñó Rockstar se ve la preparación con pañuelos en la cara, la entrada en la tienda y la huida.",
      mus=("tension", 2), cert="OFICIAL", spoiler=True, src_note="GameSpot y Windows Central, reseñas del 18/11/2026",
@@ -142,7 +142,7 @@ beat("Con el combate, la crítica es menos entusiasta. Una reseña lo describe c
             S("controles", "s:Jason_Duval_12", z=(1.0, 1.08))])
 beat("Nuestra lectura: en un juego de Rockstar, el combate nunca ha sido lo más pulido, y parece que esta vez tampoco. Pero nadie lo señala como un problema grave.",
      mus=("tension", 1), cert="INTERPRETACIÓN",
-     shots=[S(None, "s:Lucia_Caminos_13", z=(1.0, 1.08)), S("nadie lo señala", "s:Jason_and_Lucia_09", z=(1.0, 1.08))])
+     shots=[S(None, "s:Lucia_Caminos_13", z=(1.0, 1.08)), S("esta vez tampoco", "s:Jason_Duval_05", z=(1.0, 1.08)), S("nadie lo señala", "s:Jason_and_Lucia_09", z=(1.0, 1.08))])
 
 # ================================================================ 7 · EL REALISMO
 beat("Otro cambio grande es el realismo del día a día. Seis reseñas avisan del realismo: coches frágiles, facturas de reparación y tareas cotidianas, "
@@ -166,13 +166,13 @@ beat("Y el punto más criticado: el rendimiento. GTA 6 funciona a 30 imágenes p
 beat("Digital Foundry ya lo ha medido. En Xbox Series X, el juego se renderiza internamente a 1440p y apunta a 30, con bajadas en escenas cargadas. "
      "En Series S baja a 720p, que Rockstar reescala a 1080p, y se queda a menudo por debajo de 30. Su recomendación: jugarlo en PS5 o en Series X.",
      mus=("electro", 1), cert="OFICIAL", src_note="Digital Foundry (vía VGC y LevelUp) y Rockstar a Wccftech, 11/2026",
-     shots=[S(None, "g:df", step=0), S("En Series S", "g:df", step=1), S("Su recomendación", "g:df", step=2)])
+     shots=[S(None, "g:df", step=0), S("con bajadas", "e:1226.2"), S("En Series S", "g:df", step=1), S("a menudo por debajo", "e:1222.4"), S("Su recomendación", "g:df", step=2)])
 beat("Y en PlayStation, según el análisis de Digital Foundry, PS5 y PS5 Pro renderizan a unos 1440p y también apuntan a 30. "
      "La Pro reescala con PSSR hasta una imagen casi 4K, añade sombras con trazado de rayos y mantiene los 30 casi siempre: para ellos, es la mejor forma de jugarlo. "
      "En la PS5 normal, las caídas por debajo de 30 son más frecuentes en la acción intensa. Su veredicto: un rendimiento aceptable, pero algo decepcionante.",
      mus=("electro", 1), cert="OFICIAL", src_note="Digital Foundry (18/11/2026), vía TweakTown y Twisted Voxel",
-     shots=[S(None, "g:dfps", step=0), S("La Pro reescala", "g:dfps", step=1), S("la mejor forma", "e:1214.2"), S("En la PS5 normal", "g:dfps", step=2),
-            S("la acción intensa", "e:864.4"), S("Su veredicto", "g:dfps", step=3)])
+     shots=[S(None, "g:dfps", step=0), S("también apuntan", "e:1546.2"), S("La Pro reescala", "g:dfps", step=1), S("sombras con trazado", "s:Vice_City_26", z=(1.0, 1.08)), S("la mejor forma", "e:1214.2"), S("En la PS5 normal", "g:dfps", step=2),
+            S("la acción intensa", "e:1062.4"), S("Su veredicto", "g:dfps", step=3)])
 beat("Nuestra lectura: a cambio, el juego enseña un nivel de detalle que pocos juegos de mundo abierto alcanzan. Pero si para ti los 60 son imprescindibles, conviene saberlo antes.",
      mus=("electro", 1), cert="INTERPRETACIÓN",
      shots=[S(None, "e:1214.2"), S("nivel de detalle", "e:458.0"), S("conviene saberlo", "g:fps", step=1)])
@@ -212,7 +212,7 @@ beat("¿Y qué ha pasado desde que se desbloqueó? Primero, un récord: entre Tw
 beat("También han llegado las primeras quejas: jugadores que hablan de personajes que atraviesan objetos, físicas raras y algunos cierres inesperados en consola. "
      "De momento, Rockstar no los ha confirmado, y muchos otros jugadores dicen no haber tenido ningún problema. Antes del lanzamiento, además, PlayStation Network sufrió una caída que Sony reconoció.",
      mus=("synthpop", 1), cert="OFICIAL", src_note="Sportskeeda y Brit Brief (reportes de jugadores, sin confirmar) · Newsweek (caída de PSN)",
-     shots=[S(None, "g:bugs", step=0), S("De momento, Rockstar", "g:bugs", step=1), S("muchos otros jugadores", "e:1108.6"), S("PlayStation Network", "g:psn")])
+     shots=[S(None, "g:bugs", step=0), S("físicas raras", "g:bugs", step=0, row=1), S("De momento, Rockstar", "g:bugs", step=1), S("muchos otros jugadores", "e:1108.6"), S("PlayStation Network", "g:psn")])
 
 beat("Pausa rápida: ¿tú ya lo estás jugando, o esperas a tu hora? Te leemos en los comentarios.",
      mus=("synthwave", 1), cert=None, pre=0.4, hold=0.4, shots=[S(None, "g:poll3"), S("Te leemos", "s:Jason_and_Lucia_03", z=(1.0, 1.08))], sfx=[("w:¿tú ya", "pop", 0.4)])

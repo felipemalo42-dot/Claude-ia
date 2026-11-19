@@ -3,3 +3,9 @@ __pycache__/
 VIDEO_*/recursos/_vox.wav
 VIDEO_*/recursos/mezcla_final.wav
 VIDEO_*/recursos/preview_*.mp4
+GTA6_VIDEO_LANZAMIENTO/recursos/mezcla_final.wav
+GTA6_VIDEO_LANZAMIENTO/recursos/musica_original.wav
+GTA6_VIDEO_LANZAMIENTO/recursos/_seg_*
+GTA6_VIDEO_LANZAMIENTO/recursos/_video.h264
+GTA6_VIDEO_LANZAMIENTO/recursos/fotogramas/
+GTA6_VIDEO_LANZAMIENTO/recursos/_*
