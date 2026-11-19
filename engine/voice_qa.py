@@ -31,7 +31,7 @@ ALIAS = [
     (r"\bThe Legend of Zelda\b", "Di Léyend of Zelda"), (r"\bo ?Kar[ia]n[ao] of Time\b", "Ocarina of Taim"), (r"\bOcarina of Time\b", "Ocarina of Taim"),
     (r"\bG,? ?(T|de),? ?a\b", "GTA"), (r"\bGT a\b", "GTA"), (r"\bG T\b", "GTA"), (r"\bJeta\b", "GTA"),
     (r"\bTake 2\b", "Take-Two"), (r"\bKik\b", "Kick"), (r"\bStreams? Charts\b", "Streams Charts"), (r"\bSeries se\b", "Series S"), (r"\bSirius\b", "Series"),
-    (r"\bOpen Critic\b", "OpenCritic"), (r"\bmetacritic\b", "Metacritic"),
+    (r"\bOpen Critic\b", "OpenCritic"), (r"\b[YJHyjh][uaá]s?t? [Ll](?:a?i|ai)ke? [Pp][aá]ra ?[Dd]a?i[sc]e?\b", "Just Like Paradise"), (r"\b[Ii]mponte [Ff](?:í|i)nix\b", "Imponte Phoenix"), (r"\bmetacritic\b", "Metacritic"),
 ]
 _ALIAS = [(re.compile(a, re.I), b) for a, b in ALIAS]
 _ROMAN = {"xx": "veinte", "xix": "diecinueve", "xxi": "veintiuno"}

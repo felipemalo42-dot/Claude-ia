@@ -1,24 +1,24 @@
-GTA 6 ya se juega, y la crítica ya ha hablado: 99 en Metacritic. Repasamos qué dicen de su JUGABILIDAD los medios que ya lo han jugado y los primeros jugadores de Nueva Zelanda: atracos, conducción, policía, combate, realismo, rendimiento a 30 fps e historia (sin spoilers). Cada dato lleva su fuente en pantalla y su imagen real del juego (material oficial de Rockstar).
+GTA 6 ya se ha lanzado en todo el mundo, y la crítica ya ha hablado: 99 en Metacritic. Repasamos qué dicen de su JUGABILIDAD los medios que ya lo han jugado y los primeros jugadores de Nueva Zelanda: atracos, conducción, policía, combate, realismo, rendimiento a 30 fps e historia (sin spoilers). Cada dato lleva su fuente en pantalla y su imagen de juego real, grabada ya con el juego a la venta.
 
-⚠️ AVISO: el capítulo de los atracos muestra escenas de misiones del Extended Look oficial. Si no quieres verlas, salta al capítulo siguiente.
+⚠️ AVISO: el capítulo de los atracos muestra escenas de misiones del juego final (un asalto a un banco, la primera misión y otra misión de la historia) que no salen en ningún tráiler. Si no quieres verlas, salta al capítulo siguiente.
 
 CAPÍTULOS
 0:00 GTA 6 ya se juega: el veredicto
-0:27 Tres avisos: fuentes, opiniones y spoilers
-0:52 El veredicto: 99 en Metacritic
-1:36 Los primeros jugadores (Nueva Zelanda)
-2:14 El mundo y la gente de Leonida
-3:24 Qué hacer: actividades secundarias
-3:45 Los atracos (AVISO: escenas de misiones)
-4:46 La conducción (fin de los spoilers)
-5:15 La policía
-5:35 El combate
-6:00 El realismo del día a día
-6:32 Rendimiento: 30 fps y Digital Foundry
-7:58 La historia (sin spoilers)
-8:55 El lanzamiento: Sam Houser y la bolsa
-9:17 Las primeras horas: récord de audiencia y primeras quejas
-10:22 Resumen y cierre
+0:30 Tres avisos: fuentes, opiniones y spoilers
+0:54 El veredicto: 99 en Metacritic
+1:38 Los primeros jugadores (Nueva Zelanda)
+2:22 El mundo y la gente de Leonida
+3:32 Qué hacer: actividades secundarias
+3:53 Los atracos (AVISO: escenas de misiones)
+5:04 La conducción (fin de los spoilers)
+5:34 La policía
+6:00 El combate
+6:25 El realismo del día a día
+6:58 Rendimiento: 30 fps y Digital Foundry
+8:23 La historia (sin spoilers)
+9:20 El lanzamiento: Sam Houser y la bolsa
+9:43 Las primeras horas: récord de audiencia y primeras quejas
+10:49 Resumen y cierre
 
 FUENTES PRINCIPALES
 • Bloomberg: «Grand Theft Auto VI Becomes the Best-Reviewed Video Game Ever»: https://www.bloomberg.com/news/articles/2026-11-18/-grand-theft-auto-vi-becomes-the-best-reviewed-video-game-ever
@@ -34,8 +34,20 @@ FUENTES PRINCIPALES
 • Material oficial: https://www.rockstargames.com/VI/media
 Lista completa: FUENTES_Y_ENLACES.txt (proyecto del canal).
 
+GAMEPLAY (créditos, por orden de uso)
+• IGN: «Grand Theft Auto 6 (GTA 6) Review» https://www.youtube.com/watch?v=agBEh5aZ_Go
+• IGN: «GTA 6 Gameplay on Xbox Series X, Finally!» https://www.youtube.com/watch?v=w9Y1xXSzQbs
+• Lootward: «What Happens If You Get 6 Stars in GTA 6» https://www.youtube.com/watch?v=ORYwlJXszi4
+• IGN: «15 Minutes of GTA 6 PS5 Pro Gameplay (First Mission)» https://www.youtube.com/watch?v=3PiR0G3rVw8
+• Sirloin1: «The Military Base in GTA 6 - First Look» https://www.youtube.com/watch?v=nqmpDCbz3lA
+• IGN: «GTA 6 PS5 Pro vs Xbox Series S Gameplay - Closer Than You'd Think» https://www.youtube.com/watch?v=aRRNSVwx8UM
+• IGN: «GTA 6: Gorgeous Underwater Gameplay | Scuba Diving & Treasure Hunting» https://www.youtube.com/watch?v=JKjf8-mt1X8
+• RedArcade: «GTA 6 FAILS - #1 (GTA 6 Funny Moments)» https://www.youtube.com/watch?v=0zFpvGl7a3A
+• Swiss001: «I Stole An Airliner In GTA 6 And It Went Wrong» https://www.youtube.com/watch?v=9K-S0pNsRu4
+• IGN: «GTA 6 Series S Gameplay - It's Shockingly Good» https://www.youtube.com/watch?v=7j-Ylv-BSXk
+
 ℹ️ Transparencia y derechos
-• Imágenes: solo material oficial de Rockstar Games (rockstargames.com/VI/media): Extended Look, tráiler de lanzamiento, capturas, ilustraciones y vídeos de personajes. La fuente aparece en pantalla en cada plano. Uso no comercial y con comentario, según la política de Rockstar sobre su material. Vídeo no monetizado. Audio oficial silenciado.
+• Imágenes: gameplay grabado y publicado tras el lanzamiento por los creadores de la lista de abajo, usado en fragmentos breves para ilustrar el análisis, con el autor en pantalla en cada plano, más algunas capturas y vídeos oficiales de Rockstar Games. Nada del Extended Look ni de los tráileres. Vídeo no monetizado. Audio original silenciado. Si eres autor de alguno de estos clips y prefieres que no aparezca, escríbenos y lo cambiamos.
 • Las opiniones son de los medios citados (reseñas publicadas el 18/11/2026); las frases se muestran traducidas. Nuestra interpretación va marcada en amarillo.
 • Grand Theft Auto, GTA, Vice City y Leonida son marcas de Take-Two Interactive. Canal independiente, sin relación con Rockstar Games.
 • Narración con voz sintética (Chatterbox Multilingual, licencia MIT) a partir de una voz de referencia de OpenSLR SLR72 (Google, CC BY-SA 4.0). Música, efectos y gráficos originales.

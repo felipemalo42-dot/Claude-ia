@@ -101,8 +101,9 @@ def credits():
 
 def credits_text(L, short=False):
     if not L: return ""
-    if short: return "\n".join(f"• {c['autor']}: «{c['titulo']}» · {c['url']} · {c['licencia']}" for c in L)
-    return "\n".join(f"- {c['autor']} · «{c['titulo']}» (publicado el {c['publicado']})\n  {c['url']}\n  Licencia {c['licencia']} ({c['licencia_url']}) · "
+    if short: return "\n".join(f"• {c['autor']}: «{c['titulo']}» {c['url']}" + (f" ({c['licencia']})" if c["licencia"].startswith("CC") else "") for c in L)
+    lic = lambda c: f"Licencia {c['licencia']} ({c['licencia_url']})" if c["licencia"].startswith("CC") else "Sin licencia de reutilización: cita breve con crédito"
+    return "\n".join(f"- {c['autor']} · «{c['titulo']}» (publicado el {c['publicado']})\n  {c['url']}\n  Copia usada: {R.XCAT[c['id']].get('copia', '-')}\n  {lic(c)} · "
                      f"{c['planos']} planos, {c['segundos']:.0f} s · aparece en {', '.join(c['en_el_video'][:12])}{' …' if len(c['en_el_video']) > 12 else ''}" for c in L)
 
 def permissions():
@@ -110,7 +111,8 @@ def permissions():
     p = f"{OUT}/REGISTRO_DE_PERMISOS.txt"; s = open(p, encoding="utf-8").read()
     def u(tipo, unit="planos"):
         x = use.get(tipo)
-        return f"{x['n']} {unit}, {x['s']:.0f} s en total ({len(x['files'])} archivos distintos)" if x else "no se usa"
+        nf = len(x["files"]) if x else 0
+        return f"{x['n']} {unit}, {x['s']:.0f} s en total ({nf} {'archivo distinto' if nf == 1 else 'archivos distintos'})" if x else "no se usa"
     X = credits()
     rep = {"{{USO_X}}": u("Gameplay de terceros"), "{{CREDITOS_X}}": credits_text(X) or "  (no se usa gameplay de terceros)", "{{USO_E}}": u("Extended Look"), "{{USO_L}}": u("Tráiler de lanzamiento"), "{{USO_P}}": u("Vídeo Pre-Load Now"),
            "{{USO_C}}": u("Vídeo de personaje"), "{{USO_S}}": u("Captura oficial"),
@@ -242,7 +244,7 @@ def publication():
             + DISCLOSE + "\n\n#GTA6 #GTAVI #ViceCity")
     open(f"{OUT}/DESCRIPCION_YOUTUBE.txt", "w", encoding="utf-8").write(desc)
     st = json.load(open(f"{OUT}/recursos/sincronia.json"))
-    L = ["# GTA6_VIDEO_LANZAMIENTO: paquete de publicación", "", f"**Duración real:** {mmss(T['total'])} · **Formato:** 16:9, 1920×1080, 30 fps, H.264 + AAC",
+    L = ["# GTA6_VIDEO_LANZAMIENTO: paquete de publicación", "", f"**Duración real:** {mmss(T['total'])} · **Formato:** 16:9, 1920×1080, 30 fps, AV1 (10 bits) + AAC",
          "**Archivos:** `VIDEO_FINAL.mp4` · `MINIATURA.png` (1280×720) · `SUBTITULOS.srt` · `NARRACION.mp3` · `GUION_COMPLETO.docx`", "",
          "## Títulos", "", f"- **Principal:** {TITLES[0]}", *[f"- Alternativo {i}: {t}" for i, t in enumerate(TITLES[1:], 1)], "",
          "## Palabras clave", "", f"- **Principal:** {KEYWORDS['principal']}", f"- **Secundarias:** {', '.join(KEYWORDS['secundarias'])}", "",

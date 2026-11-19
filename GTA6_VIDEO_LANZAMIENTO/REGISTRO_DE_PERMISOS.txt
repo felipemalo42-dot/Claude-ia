@@ -9,7 +9,7 @@ CONCLUSIÓN (léela antes de publicar)
    IGN, Lootward, Sirloin1, Swiss001 y RedArcade (apartado B). El vídeo ya no usa nada del Extended Look ni de los tráileres.
    Esos vídeos NO tienen licencia de reutilización: no son Creative Commons. Se usan por decisión del canal
    («si lo sacas de algún lado se le da el crédito y no pasa nada, no importa si no se puede monetizar»), con estas condiciones:
-     - fragmentos breves: el plano más largo de material ajeno dura {{MAX_PLANO}} s;
+     - fragmentos breves: el plano más largo de material ajeno dura 7,5 s;
      - cada fragmento ilustra una frase concreta del comentario: la opinión de un medio, una mecánica o una cifra;
      - el autor aparece en pantalla en cada plano (autor, título del vídeo y minuto);
      - todos los vídeos usados están enlazados en la descripción;
@@ -53,20 +53,20 @@ A1. «An Extended Look», tráiler de lanzamiento y vídeo «Pre-Load Now»
 
 A2. Vídeos oficiales de personajes (8)
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Videos.zip
-    Uso: {{USO_C}}
+    Uso: 3 planos, 7 s en total (3 archivos distintos)
     Solo en el capítulo de la historia, para presentar a Jason y a Lucía sin spoilers. Audio silenciado.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A3. Capturas oficiales
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Screenshots.zip
-    Uso: {{USO_S}}
+    Uso: 6 planos, 9 s en total (6 archivos distintos)
     Solo donde no hay gameplay del tema (golf, caza, observación de aves) y en el capítulo de la historia, para no hacer spoilers.
     Atribución: en pantalla, con el nombre del archivo oficial.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A4. Ilustraciones oficiales
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/GTAVI_Artwork_Wallpapers.zip
-    Uso: {{USO_A}}
+    Uso: 2 planos, 8 s en total (1 archivo distinto)
     La miniatura lleva la captura oficial «Jason_and_Lucia_09» (sin logotipo ni spoilers).
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
@@ -90,11 +90,50 @@ Origen: vídeos publicados en YouTube el 18 y el 19/11/2026. Se obtuvieron de su
 porque YouTube bloquea la descarga desde el servidor de producción. Ese bloqueo no se esquivó.
 Se eligieron por el tema de cada frase. Ejemplos: las opiniones de IGN van sobre el análisis en vídeo de IGN, el rendimiento sobre
 sus vídeos en Xbox Series X, Series S y PS5 Pro, y la policía sobre una persecución de seis estrellas.
-Uso total: {{USO_X}}
+Uso total: 134 planos, 393 s en total (10 archivos distintos)
 Ninguno tiene licencia Creative Commons. Para cada uno: sin permiso expreso · crédito en pantalla y en la descripción · sin monetizar.
 
 Detalle por vídeo (autor · título · enlace original · licencia · planos y segundos · dónde aparece en el vídeo):
-{{CREDITOS_X}}
+- IGN · «Grand Theft Auto 6 (GTA 6) Review» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=agBEh5aZ_Go
+  Copia usada: https://archive.org/details/youtube-agBEh5aZ_Go
+  Sin licencia de reutilización: cita breve con crédito · 70 planos, 210 s · aparece en 0:00, 0:03, 0:09, 0:19, 0:20, 0:21, 0:24, 0:54, 1:17, 1:38, 1:50, 1:55 …
+- IGN · «GTA 6 Gameplay on Xbox Series X, Finally!» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=w9Y1xXSzQbs
+  Copia usada: https://archive.org/details/youtube-w9Y1xXSzQbs
+  Sin licencia de reutilización: cita breve con crédito · 28 planos, 78 s · aparece en 2:48, 2:49, 2:50, 3:01, 3:03, 3:05, 3:09, 3:19, 3:38, 4:44, 4:50, 4:52 …
+- Lootward · «What Happens If You Get 6 Stars in GTA 6» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=ORYwlJXszi4
+  Copia usada: https://archive.org/details/youtube-ORYwlJXszi4
+  Sin licencia de reutilización: cita breve con crédito · 9 planos, 33 s · aparece en 0:15, 5:16, 5:31, 5:34, 5:42, 6:00, 6:14, 6:21, 7:11
+- IGN · «15 Minutes of GTA 6 PS5 Pro Gameplay (First Mission)» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=3PiR0G3rVw8
+  Copia usada: https://archive.org/details/youtube-3PiR0G3rVw8
+  Sin licencia de reutilización: cita breve con crédito · 8 planos, 20 s · aparece en 4:26, 4:33, 4:36, 4:38, 4:39, 4:42, 4:43, 7:57
+- Sirloin1 · «The Military Base in GTA 6 - First Look» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=nqmpDCbz3lA
+  Copia usada: https://archive.org/details/youtube-nqmpDCbz3lA
+  Sin licencia de reutilización: cita breve con crédito · 5 planos, 15 s · aparece en 2:01, 2:37, 9:16, 9:24, 10:49
+- IGN · «GTA 6 PS5 Pro vs Xbox Series S Gameplay - Closer Than You'd Think» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=aRRNSVwx8UM
+  Copia usada: https://archive.org/details/youtube-aRRNSVwx8UM
+  Sin licencia de reutilización: cita breve con crédito · 3 planos, 12 s · aparece en 6:58, 7:45, 7:52
+- IGN · «GTA 6: Gorgeous Underwater Gameplay | Scuba Diving & Treasure Hunting» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=JKjf8-mt1X8
+  Copia usada: https://archive.org/details/youtube-JKjf8-mt1X8
+  Sin licencia de reutilización: cita breve con crédito · 5 planos, 9 s · aparece en 1:58, 3:43, 6:10, 8:11, 9:30
+- RedArcade · «GTA 6 FAILS - #1 (GTA 6 Funny Moments)» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=0zFpvGl7a3A
+  Copia usada: https://archive.org/details/youtube-0zFpvGl7a3A
+  Sin licencia de reutilización: cita breve con crédito · 2 planos, 6 s · aparece en 9:43, 10:05
+- Swiss001 · «I Stole An Airliner In GTA 6 And It Went Wrong» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=9K-S0pNsRu4
+  Copia usada: https://archive.org/details/youtube-9K-S0pNsRu4
+  Sin licencia de reutilización: cita breve con crédito · 2 planos, 6 s · aparece en 3:16, 10:47
+- IGN · «GTA 6 Series S Gameplay - It's Shockingly Good» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=7j-Ylv-BSXk
+  Copia usada: https://archive.org/details/youtube-7j-Ylv-BSXk
+  Sin licencia de reutilización: cita breve con crédito · 2 planos, 4 s · aparece en 4:00, 7:30
 
 Notas:
   - «RedArcade» es una recopilación de momentos de directos. En sus planos se ve también el nombre del streamer original,

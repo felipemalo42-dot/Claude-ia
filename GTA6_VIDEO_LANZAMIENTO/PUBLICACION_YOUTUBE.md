@@ -1,6 +1,6 @@
 # GTA6_VIDEO_LANZAMIENTO: paquete de publicación
 
-**Duración real:** 11:05 · **Formato:** 16:9, 1920×1080, 30 fps, H.264 + AAC
+**Duración real:** 11:32 · **Formato:** 16:9, 1920×1080, 30 fps, AV1 (10 bits) + AAC
 **Archivos:** `VIDEO_FINAL.mp4` · `MINIATURA.png` (1280×720) · `SUBTITULOS.srt` · `NARRACION.mp3` · `GUION_COMPLETO.docx`
 
 ## Títulos
@@ -25,26 +25,26 @@ Está en `DESCRIPCION_YOUTUBE.txt` (lista para copiar y pegar, con capítulos y 
 
 ## Comentario fijado
 
-📌 ¿Ya lo estás jugando o esperas a tu hora? Cuéntanos qué te ha parecido la conducción y el combate 👇 Espacio SIN SPOILERS: si comentas algo de la historia, empieza con «SPOILER». Las imágenes de misiones del vídeo están en el capítulo de los atracos, con aviso.
+📌 ¿Ya lo estás jugando? ¿Qué es lo primero que has hecho en Leonida? Cuéntanos qué te ha parecido la conducción y el combate 👇 Espacio SIN SPOILERS: si comentas algo de la historia, empieza con «SPOILER». Las escenas de misiones del vídeo están en el capítulo de los atracos, con aviso.
 
 ## Capítulos
 
 - 0:00 GTA 6 ya se juega: el veredicto
-- 0:27 Tres avisos: fuentes, opiniones y spoilers
-- 0:52 El veredicto: 99 en Metacritic
-- 1:36 Los primeros jugadores (Nueva Zelanda)
-- 2:14 El mundo y la gente de Leonida
-- 3:24 Qué hacer: actividades secundarias
-- 3:45 Los atracos (AVISO: escenas de misiones)
-- 4:46 La conducción (fin de los spoilers)
-- 5:15 La policía
-- 5:35 El combate
-- 6:00 El realismo del día a día
-- 6:32 Rendimiento: 30 fps y Digital Foundry
-- 7:58 La historia (sin spoilers)
-- 8:55 El lanzamiento: Sam Houser y la bolsa
-- 9:17 Las primeras horas: récord de audiencia y primeras quejas
-- 10:22 Resumen y cierre
+- 0:30 Tres avisos: fuentes, opiniones y spoilers
+- 0:54 El veredicto: 99 en Metacritic
+- 1:38 Los primeros jugadores (Nueva Zelanda)
+- 2:22 El mundo y la gente de Leonida
+- 3:32 Qué hacer: actividades secundarias
+- 3:53 Los atracos (AVISO: escenas de misiones)
+- 5:04 La conducción (fin de los spoilers)
+- 5:34 La policía
+- 6:00 El combate
+- 6:25 El realismo del día a día
+- 6:58 Rendimiento: 30 fps y Digital Foundry
+- 8:23 La historia (sin spoilers)
+- 9:20 El lanzamiento: Sam Houser y la bolsa
+- 9:43 Las primeras horas: récord de audiencia y primeras quejas
+- 10:49 Resumen y cierre
 
 ## Configuración en YouTube Studio (obligatoria)
 
@@ -54,9 +54,10 @@ Está en `DESCRIPCION_YOUTUBE.txt` (lista para copiar y pegar, con capítulos y 
 - **Contenido para niños:** No. **Restricción de edad:** no hace falta (no hay violencia explícita), pero el juego es para mayores de 18 años.
 - **Pantalla final (últimos 20 s):** un vídeo recomendado (sugerido: VIDEO_04, el mapa) y la lista «GTA VI explicado».
 - **Publicación sugerida:** cuanto antes, jueves 19/11/2026 (día del lanzamiento en América y Europa). Las notas citadas son del 18/11: si cambian, actualiza la descripción.
-- **Si llega una reclamación de Content ID de Rockstar:** no la dispute. Es su material y el vídeo no se monetiza.
+- **Si llega una reclamación de Content ID (Rockstar o IGN):** no la dispute. Es su material y el vídeo no se monetiza.
+- **Si un autor pide retirar su clip:** sustituya sus planos en `engine/videos/gp.py` y vuelva a montar (ver `REGISTRO_DE_PERMISOS.txt`).
 
 ## Control de calidad
 
-- Sincronía imagen ↔ palabra: 154/154 cortes a menos de 0,10 s (100.0 %).
+- Sincronía imagen ↔ palabra: 165/165 cortes a menos de 0,10 s (100.0 %).
 - Coincidencia guion ↔ voz: ver `recursos/control_de_voz.csv` y `AUDITORIA_FINAL.md`.

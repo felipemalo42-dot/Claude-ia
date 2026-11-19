@@ -1,9 +1,10 @@
 FUENTES Y ENLACES · GTA6_VIDEO_LANZAMIENTO (vídeo post lanzamiento)
 «GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado»
-Consultadas el 18/11/2026, entre las 19:00 y las 21:00 UTC: las reseñas ya estaban publicadas y el juego ya estaba desbloqueado en Nueva Zelanda, Australia y Asia.
+Consultadas el 18/11/2026, entre las 19:00 y las 21:00 UTC (reseñas y primeros jugadores), y el 19/11/2026 (primeras horas, gameplay y mapa).
+El juego se desbloqueó a medianoche, hora local de cada país, entre el 18/11 (Nueva Zelanda, 11:00 UTC) y el 19/11 (América).
 
 Cómo leer este archivo:
-  [O] Fuente oficial de Rockstar Games, leída directamente.
+  [O] Fuente oficial de Rockstar Games, o vídeo de gameplay, vistos directamente.
   [P] Prensa, leída mediante el buscador web: desde este entorno no se pueden abrir sus páginas. Se citan los titulares y los
       extractos devueltos. Antes de publicar, abre los enlaces principales y comprueba las frases.
   Las frases de las reseñas aparecen traducidas al español por Sal y Asfalto.
@@ -97,20 +98,66 @@ Cómo leer este archivo:
        https://www.newsweek.com/playstation-users-report-access-issues-hours-before-gta-vi-launch-12736310
    - Rockstar no había publicado material nuevo en su página de medios a las 02:00 UTC del 19/11.  [O]
 
-4. MATERIAL OFICIAL USADO EN EL VÍDEO (descarga directa)  [O]
+   - Lanzamiento mundial: el juego se desbloquea a medianoche, hora local. A las 10:00 UTC del 19/11 ya era 19/11 en Hawái (UTC−10),
+     el último huso de América: desde entonces está disponible en todo el mundo. Cobertura del lanzamiento:  [P]
+       https://tech.yahoo.com/gaming/breaking-news/article/gta-6-is-out-now-and-officially-ready-to-play-everything-you-need-to-know-about-the-rockstar-game-launch-including-reviews-pricing-story-mode-and-more-050048410.html
+
+4. IMÁGENES: GAMEPLAY PUBLICADO TRAS EL LANZAMIENTO (versión 2)
+   Vídeos de YouTube del 18 y el 19/11/2026. Se descargaron de sus copias públicas en Internet Archive, porque YouTube bloquea
+   las descargas desde el servidor de producción. No tienen licencia Creative Commons: se usan como cita breve, con crédito y sin
+   monetizar (ver REGISTRO_DE_PERMISOS.txt). Planos, segundos y momentos de cada uno: recursos/creditos_gameplay.json.
+   Comprobado en cada vídeo: autor (canal), título y fecha, según los metadatos de la copia.  [O = vídeo visto directamente]
+   - IGN · «Grand Theft Auto 6 (GTA 6) Review» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=agBEh5aZ_Go
+       Copia:    https://archive.org/details/youtube-agBEh5aZ_Go
+   - IGN · «15 Minutes of GTA 6 PS5 Pro Gameplay (First Mission)» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=3PiR0G3rVw8
+       Copia:    https://archive.org/details/youtube-3PiR0G3rVw8
+   - IGN · «GTA 6 Series S Gameplay - It's Shockingly Good» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=7j-Ylv-BSXk
+       Copia:    https://archive.org/details/youtube-7j-Ylv-BSXk
+   - IGN · «GTA 6 Gameplay on Xbox Series X, Finally!» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=w9Y1xXSzQbs
+       Copia:    https://archive.org/details/youtube-w9Y1xXSzQbs
+   - IGN · «GTA 6: Gorgeous Underwater Gameplay | Scuba Diving & Treasure Hunting» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=JKjf8-mt1X8
+       Copia:    https://archive.org/details/youtube-JKjf8-mt1X8
+   - IGN · «GTA 6 PS5 Pro vs Xbox Series S Gameplay - Closer Than You'd Think» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=aRRNSVwx8UM
+       Copia:    https://archive.org/details/youtube-aRRNSVwx8UM
+   - Lootward · «What Happens If You Get 6 Stars in GTA 6» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=ORYwlJXszi4
+       Copia:    https://archive.org/details/youtube-ORYwlJXszi4
+   - Sirloin1 · «The Military Base in GTA 6 - First Look» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=nqmpDCbz3lA
+       Copia:    https://archive.org/details/youtube-nqmpDCbz3lA
+   - Swiss001 · «I Stole An Airliner In GTA 6 And It Went Wrong» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=9K-S0pNsRu4
+       Copia:    https://archive.org/details/youtube-9K-S0pNsRu4
+   - RedArcade · «GTA 6 FAILS - #1 (GTA 6 Funny Moments)» (2026-11-18)
+       Original: https://www.youtube.com/watch?v=0zFpvGl7a3A
+       Copia:    https://archive.org/details/youtube-0zFpvGl7a3A
+   Qué se ve y de dónde sale cada dato de pantalla:
+   - Título de la primera misión, «Just Like Paradise»: rótulo del juego en el vídeo de IGN en Xbox Series S (segundos 4-8).
+   - Misión del alquiler de Brian: textos del juego en el vídeo de IGN en Xbox Series X («Collect Brian's rent», opciones
+     Defuse/Threaten, código 0420, «Brian's Lockup», «Search the impound for the Phoenix», «Lose the cops»).
+   - Reconocimiento policial: «Adjust your hat and glasses to lower recognition» y «Changing your accessories or hairstyle
+     will make you harder to recognize» (mismo vídeo, minutos 20:54 y 21:18).
+   - Mapa de Leonida: menú de pausa del juego en los vídeos de IGN (Series X) y de Swiss001.
+   - Se comprobó que estas misiones no salen en el Extended Look: se revisó entero, con un fotograma cada 8 s.
+
+4B. MATERIAL OFICIAL QUE SIGUE EN EL VÍDEO (descarga directa)  [O]
    Página de medios: https://www.rockstargames.com/VI/media
-   - An Extended Look:          https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_An_Extended_Look/GTAVI_An_Extended_Look.mp4
-   - Tráiler de lanzamiento:    https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Launch_Trailer/GTAVI_Launch_Trailer.mp4
-   - Portada animada:           https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Official_Cover_Art_Landscape/GTAVI_Official_Cover_Art_Landscape.mp4
    - Vídeos de personajes:      https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Videos.zip
    - Capturas (138):            https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Screenshots.zip
    - Ilustraciones (142):       https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/GTAVI_Artwork_Wallpapers.zip
-   Cada plano, con su archivo y su minuto original, está en recursos/registro_de_planos.csv.
-   El 18/11 a las 20:30 UTC, Rockstar no había publicado material nuevo tras el lanzamiento (página de medios sin cambios).
+   Ya no se usan el Extended Look, el tráiler de lanzamiento ni el vídeo «Pre-Load Now».
+   Mapa oficial imprimible: Rockstar anunció que lo publicaría gratis el 19/11 (Newswire, «Grand Theft Auto VI Pre-Load Begins on November 10»):
+     https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10
+     A las 05:25 UTC del 19/11 aún no estaba en rockstargames.com/VI/downloads; por eso el vídeo enseña el mapa del propio juego.
 
-5. POLÍTICA DE ROCKSTAR Y PERMISO DEL EXTENDED LOOK
+5. POLÍTICA DE ROCKSTAR
    - https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz (uso no comercial; actualizada el 10/01/2025)
-   - https://www.gtaboom.com/netflix-just-cleared-creators-to-cover-the-gta-6-extended-look-d613 (recortar con comentario)
 
 6. VOZ, MÚSICA Y DATOS
    - Chatterbox Multilingual (MIT): https://github.com/resemble-ai/chatterbox · Referencia de voz: OpenSLR SLR72 (CC BY-SA 4.0): https://www.openslr.org/72/

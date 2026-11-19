@@ -79,26 +79,31 @@ Opciones nuevas del motor:
   - `names`: nombres de los archivos de salida.
 - Por bloque: `exag` y `cfg` (expresividad de la voz).
 
-## GTA6_VIDEO_LANZAMIENTO (vídeo post lanzamiento con material oficial de Rockstar)
+## GTA6_VIDEO_LANZAMIENTO (vídeo post lanzamiento · versión 2 con gameplay de terceros)
 ```bash
 cd engine
+python clips_externos.py                    # copias ligeras (480p) en GL_X: cortes de escena y hojas de contacto para elegir planos
 python build.py gp --stage audio            # voz C verificada (fonética, ≥ 99,5 % por toma), música por capítulo, mezcla, SRT
+python clips_externos.py --hq --plan        # extrae a 1080p, de la copia 4K de Internet Archive, solo los tramos que usa el montaje
 python build.py gp --stage thumb            # miniatura (captura oficial, sin spoilers)
 python build.py gp --stage video --jobs 4   # render en 4 procesos; segmentos H.264 en bruto unidos sin pérdida + AV1 final < 100 MB
-python gp_package.py                        # registro de planos y sincronía, permisos con cifras reales, GUION_COMPLETO.docx, SEO, RECURSOS_VISUALES
+python gp_package.py                        # registro de planos, créditos, permisos con cifras reales, GUION_COMPLETO.docx, SEO, RECURSOS_VISUALES
 ```
 | Archivo | Función |
 |---|---|
-| `videos/gp.py` | Guion por bloques (reseñas y datos posteriores al lanzamiento). Cada bloque lleva su lista de planos `S(ancla, fuente)`: el corte cae en la palabra «ancla». También fija qué misiones del Extended Look se muestran (con aviso de spoiler) |
-| `videos/gl_render.py` | Montaje compartido: lector de vídeo (ffmpeg → Skia), ventanas por corte de escena, tramos prohibidos (`BAD`), Ken Burns, rótulos, aviso de spoiler, subtítulos dinámicos, gráficos y miniaturas |
+| `videos/gp.py` | Guion por bloques y lista de planos `S(ancla, fuente)`: el corte cae en la palabra «ancla». Fuentes de gameplay `X(vídeo, segundo)`, tramos excluidos (`XBAD`) y grabaciones continuas (`XNOCUT`) |
+| `videos/gp_clips.json` | Catálogo de vídeos de gameplay: autor, título, enlace original, copia en Internet Archive y licencia. De aquí salen los créditos en pantalla y en la descripción |
+| `clips_externos.py` | Prepara los clips: cortes de escena, hojas de contacto y tramos en alta calidad |
+| `videos/gl_render.py` | Montaje compartido: lector de vídeo (ffmpeg → Skia), ventanas por corte de escena, Ken Burns, encuadre fijo (`lock`) para ocultar cámaras, rótulos, aviso de spoiler, subtítulos dinámicos, gráficos y miniaturas |
 | `videos/gl.py` | Borrador descartado (guía previa al lanzamiento). Se conserva sin renderizar |
-| `gp_package.py` | `registro_de_planos.csv`, `sincronia.json`, cifras de uso en `REGISTRO_DE_PERMISOS.txt`, docx, descripción y recursos visuales |
+| `gp_package.py` | `registro_de_planos.csv`, `creditos_gameplay.json`, `sincronia.json`, cifras de uso en `REGISTRO_DE_PERMISOS.txt`, docx, descripción y recursos visuales |
 
-Material de entrada (no incluido en el repositorio: se descarga de rockstargames.com/VI/media). Las rutas se fijan con estas variables de entorno:
-- `GL_MEDIA`: carpeta con los ZIP descomprimidos y los MP4 oficiales;
-- `GL_EL`: tramos del Extended Look en 1080p, sin audio (`r1…r5`, `m1`, `m3`, `m4`).
-  Se extraen con `ffmpeg -ss T -i GTAVI_An_Extended_Look.mp4 -t D -an -vf scale=1920:1080 …`: los inicios y duraciones están en `EL_RANGES`.
+Material de entrada (no incluido en el repositorio). Las rutas se fijan con estas variables de entorno:
+- `GL_X`: copias ligeras de los vídeos de gameplay, con el nombre `ID.mp4` o `ID.webm` (se descargan de `archive.org/download/youtube-ID/`);
+- `GL_XHQ`: tramos en 1080p generados por `clips_externos.py --hq`;
+- `GL_MEDIA`: material oficial de rockstargames.com/VI/media (capturas, ilustraciones y vídeos de personaje).
 - Cortes de escena: `ffmpeg … select='gt(scene,0.22)'` y `0.10`, guardados en `cuts/` y `cuts2/`.
+- La versión 1 (material oficial: Extended Look y tráiler) está en el historial de git, en el commit 1950e53.
 
 Mejora general del motor: `--jobs N` ahora une los segmentos como H.264 en bruto (`cat`). Así no se pierde ningún fotograma entre partes, como pasaba con el `concat` de MP4.
 Con `final_codec="av1"` y `target_mb`, el módulo comprime al final en AV1 de 10 bits con un tamaño objetivo.

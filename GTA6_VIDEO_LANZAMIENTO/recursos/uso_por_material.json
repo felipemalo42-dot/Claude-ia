@@ -1,56 +1,37 @@
 {
- "Extended Look": {
-  "n": 82,
-  "s": 237.6,
+ "Gameplay de terceros": {
+  "n": 134,
+  "s": 393.2,
   "archivos": [
-   "GTAVI_An_Extended_Look.mp4"
+   "https://www.youtube.com/watch?v=0zFpvGl7a3A",
+   "https://www.youtube.com/watch?v=3PiR0G3rVw8",
+   "https://www.youtube.com/watch?v=7j-Ylv-BSXk",
+   "https://www.youtube.com/watch?v=9K-S0pNsRu4",
+   "https://www.youtube.com/watch?v=JKjf8-mt1X8",
+   "https://www.youtube.com/watch?v=ORYwlJXszi4",
+   "https://www.youtube.com/watch?v=aRRNSVwx8UM",
+   "https://www.youtube.com/watch?v=agBEh5aZ_Go",
+   "https://www.youtube.com/watch?v=nqmpDCbz3lA",
+   "https://www.youtube.com/watch?v=w9Y1xXSzQbs"
   ]
  },
  "Captura oficial": {
-  "n": 38,
-  "s": 111.5,
+  "n": 6,
+  "s": 9.4,
   "archivos": [
-   "Brian_Heder_01",
    "Cal_Hampton_01",
-   "Cal_Hampton_03",
    "Grassrivers_05",
    "Grassrivers_06",
-   "Jason_Duval_03",
-   "Jason_Duval_05",
-   "Jason_Duval_11",
-   "Jason_Duval_12",
-   "Jason_Duval_16",
-   "Jason_Duval_17",
-   "Jason_Duval_19",
-   "Jason_and_Lucia_03",
-   "Jason_and_Lucia_06",
-   "Jason_and_Lucia_09",
-   "Jason_and_Lucia_11",
    "Jason_and_Lucia_13",
    "Jason_and_Lucia_14",
-   "Jason_and_Lucia_16",
-   "Jason_and_Lucia_19",
-   "Jason_and_Lucia_20",
-   "Lucia_Caminos_01",
-   "Lucia_Caminos_13",
-   "Lucia_Caminos_14",
-   "Real_Dimez_02",
-   "Vice_City_02",
-   "Vice_City_09",
-   "Vice_City_10",
-   "Vice_City_11",
-   "Vice_City_15",
-   "Vice_City_18",
-   "Vice_City_26"
+   "Real_Dimez_02"
   ]
  },
  "Ilustración oficial": {
-  "n": 6,
-  "s": 16.4,
+  "n": 2,
+  "s": 8.3,
   "archivos": [
-   "Jason_and_Lucia_Beach_landscape",
-   "Jason_and_Lucia_Motel_landscape",
-   "Jason_and_Lucia_Robbery_landscape"
+   "Jason_and_Lucia_Beach_landscape"
   ]
  },
  "Vídeo de personaje": {
@@ -60,13 +41,6 @@
    "Cal_Hampton",
    "Jason_Duval",
    "Lucia_Caminos"
-  ]
- },
- "Portada animada": {
-  "n": 1,
-  "s": 3.5,
-  "archivos": [
-   "cover"
   ]
  }
 }

@@ -3,6 +3,8 @@
 Vídeos de YouTube publicados el 18 y el 19/11/2026, con licencia **Creative Commons Atribución**: se pueden reutilizar, incluso con fines comerciales, citando al autor.
 La imagen del juego sigue siendo de Rockstar: el vídeo se publica sin monetizar.
 
+> **Estado (19/11/2026, versión 2 del vídeo):** estos vídeos no se pudieron usar: YouTube bloquea la descarga y no tienen copia en Internet Archive. La versión 2 usa gameplay de IGN y de otros 4 creadores con copia pública en Internet Archive (créditos en `recursos/creditos_gameplay.json`). Si descargas estos vídeos CC BY desde tu ordenador, se pueden cambiar por ellos para reducir el riesgo de derechos.
+
 **Por qué no están ya en el vídeo:**
 - YouTube bloquea las descargas desde el servidor de producción («Sign in to confirm you're not a bot»), y no se ha intentado esquivar.
 - Descárgalos desde tu ordenador (con tu navegador o con `yt-dlp ENLACE`) y pásamelos: van a `GTA6_VIDEO_LANZAMIENTO/clips_externos/`, con el nombre `ID.mp4`.

@@ -92,7 +92,7 @@ beat("Hay más detalles sobre la gente de Leonida. Según Windows Central, los p
             S("las caras", X(SX, 720)), S("dentro del coche", X(SX, 702)), S("primera persona", X(RV, 1032))])
 beat("Rockstar ya había dicho que Leonida es, más o menos, el doble de grande que el mapa de GTA 5, y este es su mapa dentro del juego. Y el analista de The Guardian lo resume con una imagen: hacer la reseña de GTA 6 es como hacer la reseña de una ciudad entera, como París.",
      mus=("tropical", 1), cert="OFICIAL", src_note="Aaron Garbut a Game Informer (mapa) · The Guardian, citado por The National (18/11/2026)",
-     shots=[S(None, X(RV, 272.5)), S("el doble de grande", X(AL, 138), z=(1.36, 1.4), f=(0.0, 0.25), lock=True, nocut=True), S("su mapa dentro del juego", X(SX, 400)), S("The Guardian", X(RV, 354)), S("como París", X(RV, 378))])
+     shots=[S(None, X(RV, 272.5)), S("el doble de grande", X(AL, 138), z=(1.36, 1.4), f=(0.0, 0.25), lock=True, nocut=True, label="LEONIDA"), S("su mapa dentro del juego", X(SX, 400), label="EL MAPA DEL JUEGO"), S("The Guardian", X(RV, 354)), S("como París", X(RV, 378))])
 
 # ================================================================ 3B · QUÉ HACER
 beat("¿Y fuera de las misiones? Las reseñas coinciden en que las actividades secundarias pueden comerte horas: pescar, entrenar en el gimnasio, bailar en una discoteca, "

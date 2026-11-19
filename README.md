@@ -5,7 +5,7 @@
 Canal hispanohablante dedicado a **Grand Theft Auto VI**, preparado para el lanzamiento del **jueves 19 de noviembre de 2026**.
 En los 10 videos y en VIDEO_EXTRA todo el material audiovisual es **original**: guiones, voces sintéticas con licencia comercial, música y efectos sintetizados por código, animaciones e infografías vectoriales, mapas de dominio público. En esos 11 no hay imágenes, música ni recursos de Rockstar Games.
 
-**Excepción: `GTA6_VIDEO_LANZAMIENTO/`.** Usa material oficial de Rockstar (imagen sin audio), con la fuente en pantalla. **Debe publicarse sin monetizar**: ver su `REGISTRO_DE_PERMISOS.txt`.
+**Excepción: `GTA6_VIDEO_LANZAMIENTO/`.** Usa gameplay grabado por terceros tras el lanzamiento (IGN y otros), sin audio y con el autor en pantalla en cada plano, más algo de material oficial de Rockstar. **Debe publicarse sin monetizar**: ver su `REGISTRO_DE_PERMISOS.txt`.
 
 ## Por dónde empezar
 1. `00_INFORMES/INFORME_INVESTIGACION.md`: demanda, tabla de palabras clave y hechos verificados, con su nivel de certeza.
@@ -14,7 +14,7 @@ En los 10 videos y en VIDEO_EXTRA todo el material audiovisual es **original**: 
 4. `CANAL_IDENTIDAD/`: nombre, logotipo, avatar, banner, marca de agua y guía de marca.
 5. `VIDEO_01` … `VIDEO_10`: cada carpeta tiene su `publicacion.md` (paquete completo) y los archivos para subir.
 6. `VIDEO_EXTRA/`: la producción especial de 9:29, «¿Por qué Vice City es rosa?». Empieza por `ANALISIS_Y_CONCEPTO.md` y `AUDITORIA_FINAL.md`.
-7. `GTA6_VIDEO_LANZAMIENTO/`: vídeo posterior al lanzamiento (11:05), «GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado». Empieza por `AUDITORIA_FINAL.md` y `REGISTRO_DE_PERMISOS.txt`.
+7. `GTA6_VIDEO_LANZAMIENTO/`: vídeo posterior al lanzamiento (11:32, versión 2 con gameplay del juego ya lanzado), «GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado». Empieza por `AUDITORIA_FINAL.md` y `REGISTRO_DE_PERMISOS.txt`.
 8. `00_INFORMES/INVENTARIO.md`: lista completa de archivos.
 
 ## Estado real de producción
@@ -32,7 +32,7 @@ En los 10 videos y en VIDEO_EXTRA todo el material audiovisual es **original**: 
 | 09 | 7 misterios que se resuelven el jueves | Largo | 3:03 | ✅ **Terminado** | mié 18 · 21:00 |
 | 10 | Abrimos los 7 sobres: lo comprobamos jugando | Largo (post-lanzamiento) | estimada 8-10 min | 🟡 **Preproducción**: faltan capturas propias y veredictos. El MP4 incluido es un **animático rotulado "NO PUBLICAR"** | lun 23 · 19:00 |
 | EXTRA | ¿Por qué Vice City es rosa? La historia real de sus colores | Largo 16:9 · producción especial | 9:29 | ✅ **Terminado**. Coincidencia guion ↔ voz: 99,97 % | **mié 18 · 20:00** (antes del lanzamiento: el guion dice «mañana») |
-| LANZAMIENTO | GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado | Largo 16:9 · reseñas + gameplay oficial | 11:05 | ✅ **Terminado**. Voz: 99,66 %. Sincronía imagen ↔ palabra: 154/154 cortes. **Sin monetizar** | **jue 19**, cuanto antes |
+| LANZAMIENTO | GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado | Largo 16:9 · reseñas + gameplay posterior al lanzamiento (IGN y otros, con crédito) | 11:32 | ✅ **Versión 2 terminada**. Voz: 99,65 %. Sincronía imagen ↔ palabra: 165/165 cortes. **Sin monetizar** | **jue 19**, cuanto antes |
 
 **Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada entre −14,1 y −14,5 LUFS.
 
