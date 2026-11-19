@@ -44,7 +44,22 @@ def asset_path(src):
         for r, (a, b) in EL_RANGES.items():
             if a <= T < b: return f"{EL}/{r}.mp4"
         raise ValueError(f"segundo {T} fuera de los tramos extraídos")
+    if k == "x": return x_path(v.split("@")[0])
     return None
+
+# ---------------------------------------------------------------- gameplay de terceros (clips externos con licencia y crédito)
+# Fuente "x:ID@segundo": vídeo ID del catálogo videos/gp_clips.json, guardado en XDIR/ID.<ext>. Cada plano muestra su autor.
+XDIR = os.environ.get("GL_X", os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "GTA6_VIDEO_LANZAMIENTO", "clips_externos"))
+XCAT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gp_clips.json"), encoding="utf-8"))
+XBAD = {}   # ID → [(a, b)] tramos que no se muestran (sangre, rótulos del autor, cámara del streamer, menús)
+def x_path(vid):
+    for ext in ("mp4", "mkv", "webm", "mov"):
+        p = f"{XDIR}/{vid}.{ext}"
+        if os.path.exists(p): return p
+    raise FileNotFoundError(f"falta el clip externo {vid} en {XDIR}")
+def x_credit(vid, short=False):
+    m = XCAT[vid]
+    return f"{m['autor']} · {m['plataforma']}" if short else f"{m['autor']} · {m['plataforma']} «{m['titulo'][:46]}» · {m['licencia']}"
 
 def _mmss(t): return f"{int(t // 60)}:{int(t % 60):02d}"
 def source_label(src):
@@ -58,6 +73,7 @@ def source_label(src):
     if k == "p": return f"Rockstar Games · vídeo «Pre-Load Now» · {_mmss(float(v))}"
     if k == "c": return f"Rockstar Games · vídeo oficial de personaje «{v.replace('_', ' ')}»"
     if k == "k": return "Rockstar Games · portada oficial animada"
+    if k == "x": vid, s = v.split("@"); return f"Gameplay: {x_credit(vid)} · {_mmss(float(s))}"
     return None
 GFX_SRC = {"mosaic": "Gráfico: Sal y Asfalto con las 138 capturas oficiales de Rockstar Games", "map": "Representación aproximada sobre el mapa real de Florida (Natural Earth). Rockstar no ha publicado el mapa",
            "postcards": "Gráfico: Sal y Asfalto con las postales oficiales de Rockstar Games", "cast": "Gráfico: Sal y Asfalto con ilustraciones oficiales de Rockstar Games",
@@ -196,8 +212,14 @@ def src_window(sh):
     material, en un tramo prohibido o al final del tramo extraído. Si el inicio cae justo antes de un corte, salta a él."""
     if "_win" in sh: return sh["_win"]
     k, v = sh["src"].split(":", 1); path = asset_path(sh["src"])
-    T0 = float(v) if k in ("e", "l", "p") else float(sh.get("st", 0.0)) if k == "k" else 0.0
+    T0 = float(v) if k in ("e", "l", "p") else float(sh.get("st", 0.0)) if k == "k" else float(v.split("@")[1]) if k == "x" else 0.0
     off = 0.0; limit = _clip_meta(path)["dur"] - 0.1
+    if k == "x":
+        xb = XBAD.get(v.split("@")[0], [])
+        for a, b in xb:
+            if a <= T0 < b: T0 = b + 0.05
+        for a, b in xb:
+            if a > T0: limit = min(limit, a - 0.05)
     if k == "e":
         r = next(r for r, (a, b) in EL_RANGES.items() if a <= T0 < b); ra, rb = EL_RANGES[r]; off = ra; limit = rb - ra - 0.1
         for a, b in BAD:
@@ -257,7 +279,7 @@ def footage(c, sh, tau, d, slot="main"):
         else:
             _cover(c, img, z, fx, fy)
         return
-    # e / l / p / k: vídeo 16:9 dentro de su plano de origen (sin cruzar cortes de escena ni tramos prohibidos)
+    # e / l / p / k / x: vídeo 16:9 dentro de su plano de origen (sin cruzar cortes de escena ni tramos prohibidos)
     path, loc, Ls = src_window(sh)
     sp = sh.get("speed") or max(0.5, min(1.0, Ls / max(d, 0.1)))
     tt = (tau * sp) % Ls
@@ -593,7 +615,21 @@ def g_cast(c, t, d, sh, ctx):
         draw_text(c, lab, x, y + 385, "anton", 52, "#FFFFFF", 1, tracking=1); c.restore()
     draw_text(c, "EL REPARTO OFICIAL", W / 2, 90, "anton", 64, YEL, ease_out(prog(t, 0, 0.3)), align="center", tracking=3)
 
+# mapa oficial de Leonida (descarga gratuita de Rockstar el día del lanzamiento): si está en RM/mapa_oficial/, sustituye a la representación sobre Florida
+MAP_OFICIAL = next(iter(sorted(glob.glob(f"{RM}/mapa_oficial/*.jpg") + glob.glob(f"{RM}/mapa_oficial/*.png"))), None)
+if MAP_OFICIAL: GFX_SRC["map"] = "Rockstar Games · mapa oficial de Leonida (descarga gratuita, rockstargames.com/VI)"
 def g_map(c, t, d, sh, ctx):
+    if MAP_OFICIAL:
+        img = load_img(MAP_OFICIAL, maxw=3200); p = ease_io(prog(t, 0, d))
+        rect(c, 0, 0, W, H, "#0B0C10", 1)
+        # el mapa entero a la vista (sin recortar) y acercamiento lento hacia Vice City (sureste)
+        iw, ih = img.width(), img.height(); s0 = min(W / iw, (H - 40) / ih); s = s0 * lerp(1.0, 1.35, p)
+        fx, fy = sh.get("f", (0.72, 0.78)); dw, dh = iw * s, ih * s
+        x = W / 2 - dw * lerp(0.5, fx, p) + lerp(0, W * (fx - 0.5) * 0.5, p); y = H / 2 - dh * lerp(0.5, fy, p) + lerp(0, H * (fy - 0.5) * 0.5, p)
+        c.drawImageRect(img, skia.Rect.MakeXYWH(x, y, dw, dh), skia.SamplingOptions(skia.FilterMode.kLinear, skia.MipmapMode.kLinear))
+        rect(c, 0, 140, W, 120, "#000000", 0.55)
+        draw_text(c, "EL MAPA OFICIAL DE LEONIDA", 90, 225, "anton", 76, "#FFFFFF", 1, tracking=2)
+        return
     from videos import v04
     p = ease_io(prog(t, 0, d)); v04.draw_map(c, W, H, (-82.4, 27.4, 1500 - 160 * p, 66, 0), t, visited=[s["key"] for s in v04.STOPS], labels=True)
     rect(c, 0, 90, W, 120, "#000000", 0.5)
@@ -944,7 +980,7 @@ def _poll(c, t, title, opts):
         draw_text(c, n, x + 320, 845, "anton", 70, "#FFFFFF", 1, align="center", tracking=2); c.restore()
 
 def g_poll2(c, t, d, sh, ctx): _poll(c, t, "¿INMERSIÓN O MOLESTIA?", ["INMERSIÓN", "MOLESTIA"])
-def g_poll3(c, t, d, sh, ctx): _poll(c, t, "PAUSA RÁPIDA", ["YA LO JUEGO", "ESPERO MI HORA"])
+def g_poll3(c, t, d, sh, ctx): _poll(c, t, "PAUSA RÁPIDA", ["YA LO JUEGO", "TODAVÍA NO"])
 
 def g_hours(c, t, d, sh, ctx):
     _panel_bg(c, "Jason_and_Lucia_13", 0.6); p = ease_out_back(prog(t, 0, 0.4))

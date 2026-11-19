@@ -460,7 +460,7 @@ def main():
     ap.add_argument("--jobs", type=int, default=1); ap.add_argument("--segment", type=int, nargs=2)
     a = ap.parse_args()
     mod = importlib.import_module(f"videos.{a.vid}"); V = mod.VIDEO
-    outdir = os.path.join(ROOT, V["folder"]); os.makedirs(f"{outdir}/recursos", exist_ok=True)
+    outdir = os.environ.get("BUILD_OUT") or os.path.join(ROOT, V["folder"]); os.makedirs(f"{outdir}/recursos", exist_ok=True)   # BUILD_OUT: pruebas sin tocar la entrega
     t0 = time.time()
     if a.stage in ("all", "audio"):
         tl = build_audio(V, outdir); print(f"{V['id']}: audio listo, {tl['total']:.1f} s ({time.time() - t0:.0f} s)")

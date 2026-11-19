@@ -20,9 +20,9 @@ def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), *
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 
 # ================================================================ GANCHO
-beat("Trece años después de GTA 5, la espera ha terminado: GTA 6 ya se está jugando. Nueva Zelanda fue el primer país en desbloquearlo, y la crítica, que ya lo ha jugado, ha dado su veredicto: un 99 en Metacritic.",
+beat("Trece años después de GTA 5, la espera ha terminado: GTA 6 ya se ha lanzado en todo el mundo. Nueva Zelanda fue el primer país en desbloquearlo, y la crítica, que ya lo ha jugado, ha dado su veredicto: un 99 en Metacritic.",
      section="GANCHO", mus=("synthwave", 2), exag=0.65, pre=0.4, cert="OFICIAL",
-     shots=[S(None, "e:1133.4", z=(1.0, 1.1)), S("GTA 6 ya se está jugando", "e:1128.0"), S("Nueva Zelanda", "g:nz"), S("la crítica", "s:Vice_City_10", z=(1.0, 1.08)), S("un 99", "g:meta")],
+     shots=[S(None, "e:1133.4", z=(1.0, 1.1)), S("GTA 6 ya se ha lanzado", "e:1128.0"), S("Nueva Zelanda", "g:nz"), S("la crítica", "s:Vice_City_10", z=(1.0, 1.08)), S("un 99", "g:meta")],
      sfx=[("w:Nueva Zelanda", "whoosh", 0.35), ("w:un 99", "hit", 0.4)])
 beat("Hoy repasamos qué dicen de su jugabilidad: los atracos, la conducción, el combate, el realismo y lo que menos ha gustado, con imágenes reales del juego.",
      mus=("synthwave", 2), exag=0.65,
@@ -54,16 +54,16 @@ beat("Algunas frases de las reseñas. IGN le pone un diez y lo llama «el videoj
      sfx=[("w:IGN", "pop", 0.35), ("w:GameSpot", "pop", 0.35), ("w:Eurogamer", "pop", 0.35), ("w:GamesRadar", "pop", 0.35)])
 
 # ================================================================ 2 · LOS PRIMEROS JUGADORES
-beat("Mientras tanto, el juego ya se desbloqueaba país a país, a la medianoche de cada uno. Nueva Zelanda fue la primera, a las once de la mañana en hora universal del día 18, y su prensa recogió las primeras impresiones. "
+beat("Mientras tanto, el juego ya se desbloqueaba país a país, a la medianoche de cada uno. Nueva Zelanda fue la primera, a las once de la mañana en hora universal del día 18, y su prensa recogió las primeras impresiones. Un día después, el juego ya estaba disponible en todo el mundo. "
      "Un jugador, a la media hora, destacaba la jugabilidad, los gráficos y la historia. Otro lo resumía como «un festín para los ojos».",
      section="2 · LOS PRIMEROS JUGADORES", chapter=(2, "LOS PRIMEROS JUGADORES"), mus=("synthpop", 1), pre=0.6, cert="OFICIAL",
      src_note="Stuff y NZ Herald (Nueva Zelanda), 18/11/2026",
      shots=[S(None, "e:1208.4"), S("Nueva Zelanda fue la primera", "g:nz", step=1), S("a la media hora", "e:509.0"), S("los gráficos", "e:1570.4"),
             S("la historia", "a:Jason_and_Lucia_Motel_landscape", z=(1.0, 1.08)), S("un festín", "e:1549.0", z=(1.0, 1.06))])
 beat("Y un aviso: algunos jugadores cambiaron la región de su consola para jugar antes, el llamado truco de Nueva Zelanda. "
-     "Hay medios que advierten de posibles sanciones en las cuentas, y streamers a los que se lo han recordado. Nuestro consejo: espera a tu hora.",
+     "Hay medios que advierten de posibles sanciones en las cuentas. Ahora que ya ha salido en todo el mundo, ese truco ya no tiene sentido: no te la juegues con tu cuenta.",
      mus=("synthpop", 1), cert="INTERPRETACIÓN",
-     shots=[S(None, "g:nz", step=2), S("posibles sanciones", "g:warn"), S("Nuestro consejo", "e:1208.4")])
+     shots=[S(None, "g:nz", step=2), S("posibles sanciones", "g:warn"), S("no te la juegues", "e:1208.4")])
 
 # ================================================================ 3 · EL MUNDO
 beat("Lo que más repiten los análisis es el mundo. IGN describe Leonida como un lugar exquisitamente detallado, que invita a experimentar sin parar. "
@@ -214,7 +214,7 @@ beat("También han llegado las primeras quejas: jugadores que hablan de personaj
      mus=("synthpop", 1), cert="OFICIAL", src_note="Sportskeeda y Brit Brief (reportes de jugadores, sin confirmar) · Newsweek (caída de PSN)",
      shots=[S(None, "g:bugs", step=0), S("físicas raras", "g:bugs", step=0, row=1), S("De momento, Rockstar", "g:bugs", step=1), S("muchos otros jugadores", "e:1108.6"), S("PlayStation Network", "g:psn")])
 
-beat("Pausa rápida: ¿tú ya lo estás jugando, o esperas a tu hora? Te leemos en los comentarios.",
+beat("Pausa rápida: ¿tú ya lo estás jugando? ¿Qué es lo primero que has hecho en Leonida? Te leemos en los comentarios.",
      mus=("synthwave", 1), cert=None, pre=0.4, hold=0.4, shots=[S(None, "g:poll3"), S("Te leemos", "s:Jason_and_Lucia_03", z=(1.0, 1.08))], sfx=[("w:¿tú ya", "pop", 0.4)])
 beat("¿Merece la pena? Para la crítica, sin ninguna duda. Nuestra lectura: si te preocupan los 30 imágenes por segundo o el combate, dale unas horas antes de juzgarlo: varias reseñas coinciden en que el arranque es lento y en que el juego tarda en despegar.",
      mus=("synthwave", 1), cert="INTERPRETACIÓN", pre=0.3,

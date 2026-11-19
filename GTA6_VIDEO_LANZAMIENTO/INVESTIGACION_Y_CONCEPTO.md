@@ -14,7 +14,7 @@
 | Fuente | Disponible | Utilizable | Decisión |
 |---|---|---|---|
 | Directos y vídeos de streamers (YouTube, Twitch) | Sí, existen | Solo con permiso escrito de cada creador. Además, desde este entorno no se puede acceder a esas plataformas: el control de permisos bloqueó la descarga | **No se usan**. Plantilla para pedir permiso: `00_INFORMES/PLANTILLA_PERMISO_STREAMERS.md` |
-| Gameplay con licencia Creative Commons | No se encontró ninguno | — | — |
+| Gameplay con licencia Creative Commons | **Sí (19/11/2026):** 14 vídeos de YouTube publicados tras el lanzamiento con licencia CC BY (lista: `CLIPS_POSTLANZAMIENTO_CC.md`) | Sí, citando al autor en pantalla y en la descripción | **Base visual de la versión 2**. YouTube bloquea la descarga desde el servidor de producción: hay que descargarlos desde un ordenador |
 | Filtraciones | — | No | Descartado |
 | Gameplay oficial de Rockstar (Extended Look, 26 min de juego real) | Sí | Sí, sin fines comerciales y con comentario | **Base visual del vídeo** |
 | Reseñas y crónicas del lanzamiento | Sí | Sí, como cita breve atribuida | **Base del guion** |
@@ -54,3 +54,13 @@
   - durante, un rótulo rojo permanente de «SPOILER».
 - **Historia:** solo lo que dicen las reseñas de forma general (arranque lento, historia de amor). Nada de tramas, giros ni finales.
 - **Excluidos de las misiones:** rehenes, sangre, cuerpos y diálogos de trama (`recursos/tramos_excluidos.txt`).
+
+## 5. Versión 2 (en preparación, 19/11/2026)
+
+Petición del canal: mantener el guion y la estructura, pero **cambiar las imágenes por gameplay del juego ya lanzado**, sin planos del Extended Look ni de los tráileres.
+
+- **Imágenes:** clips de jugadores con licencia CC BY (`CLIPS_POSTLANZAMIENTO_CC.md`). Cada plano lleva el autor, el título del vídeo, la licencia y el minuto. Las opiniones de la crítica van sobre gameplay del mismo tema (conducción sobre conducción, policía sobre persecuciones, etc.).
+- **Spoilers:** el capítulo 4 pasa a mostrar misiones del juego final que no salen en los tráileres ni en el Extended Look, con el mismo cartel de aviso y el rótulo rojo permanente.
+- **Lanzamiento mundial:** la narración ya dice que el juego se ha lanzado en todo el mundo (el último desbloqueo, en América, es el 19/11).
+- **Mapa:** Rockstar anunció un mapa oficial imprimible de Leonida, gratis, para el 19/11. Cuando esté en rockstargames.com/VI, el gráfico del mapa lo usará en lugar de la representación sobre Florida (el motor ya lo hace si encuentra el archivo).
+- **Bloqueos:** YouTube pide iniciar sesión («Sign in to confirm you're not a bot») a las descargas desde el servidor, y no se ha esquivado. El acceso automático a Twitch y Reddit lo ha denegado el control de permisos de la sesión.

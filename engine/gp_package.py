@@ -51,7 +51,7 @@ def log():
     C = ctx(); T = R.table(C); rows = []
     for s in T["shots"]:
         k, v = s["src"].split(":", 1)
-        win = R.src_window(s) if k in ("e", "l", "p", "k") else None
+        win = R.src_window(s) if k in ("e", "l", "p", "k", "x") else None
         src_t = None
         if win:
             path, loc, Ls = win; off = R.EL_RANGES[os.path.basename(path)[:-4]][0] if k == "e" else 0.0
@@ -59,8 +59,9 @@ def log():
         rows.append(dict(inicio=round(s["t0"], 3), fin=round(s["t1"], 3), duracion=round(s["t1"] - s["t0"], 2), palabra=s.get("word") or "",
                          ancla=s.get("anchor") or "(inicio del bloque)", desfase_s=round(s["t0"] - s["word_t"], 3) if s.get("word_t") is not None else "",
                          tipo={"e": "Extended Look", "l": "Tráiler de lanzamiento", "p": "Vídeo Pre-Load Now", "c": "Vídeo de personaje", "k": "Portada animada",
-                               "s": "Captura oficial", "u": "Edición Ultimate", "v": "Vintage Vice City", "a": "Ilustración oficial", "g": "Gráfico propio"}[k],
-                         recurso=v if k not in ("e", "l", "p") else ("GTAVI_An_Extended_Look.mp4" if k == "e" else "GTAVI_Launch_Trailer.mp4" if k == "l" else "GTAVI_Pre-Load_Now.mp4"),
+                               "s": "Captura oficial", "u": "Edición Ultimate", "v": "Vintage Vice City", "a": "Ilustración oficial", "g": "Gráfico propio",
+                               "x": "Gameplay de jugadores (CC BY)"}[k],
+                         recurso=(R.XCAT[v.split("@")[0]]["url"] if k == "x" else v) if k not in ("e", "l", "p") else ("GTAVI_An_Extended_Look.mp4" if k == "e" else "GTAVI_Launch_Trailer.mp4" if k == "l" else "GTAVI_Pre-Load_Now.mp4"),
                          minuto_en_el_original=src_t or "", rotulo=" | ".join(x for x in [s.get("label"), s.get("region"), (s.get("card") or [None])[0], s.get("quote")] if x) or ""))
     with open(f"{OUT}/recursos/registro_de_planos.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]), delimiter=";"); w.writeheader(); w.writerows(rows)
@@ -83,13 +84,35 @@ def log():
     for r in long_: print("   plano largo:", r["inicio"], r["duracion"], r["recurso"], r["ancla"])
     return stats, use
 
+def credits():
+    """Créditos de cada clip de gameplay de terceros usado (exigidos por la licencia CC BY): autor, título, enlace, licencia y dónde aparece."""
+    T = R.table(ctx()); used = {}
+    for s in T["shots"]:
+        k, v = s["src"].split(":", 1)
+        if k != "x": continue
+        vid = v.split("@")[0]; u = used.setdefault(vid, dict(n=0, s=0.0, ts=[])); u["n"] += 1; u["s"] += s["t1"] - s["t0"]; u["ts"].append(mmss(s["t0"]))
+    L = []
+    for vid, u in sorted(used.items(), key=lambda x: -x[1]["s"]):
+        m = R.XCAT[vid]
+        L.append(dict(id=vid, autor=m["autor"], titulo=m["titulo"], url=m["url"], licencia=m["licencia"], licencia_url=m["licencia_url"],
+                      publicado=m["publicado"], planos=u["n"], segundos=round(u["s"], 1), en_el_video=u["ts"]))
+    json.dump(L, open(f"{OUT}/recursos/creditos_gameplay.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return L
+
+def credits_text(L, short=False):
+    if not L: return ""
+    if short: return "\n".join(f"• {c['autor']}: «{c['titulo']}» · {c['url']} · {c['licencia']}" for c in L)
+    return "\n".join(f"- {c['autor']} · «{c['titulo']}» (publicado el {c['publicado']})\n  {c['url']}\n  Licencia {c['licencia']} ({c['licencia_url']}) · "
+                     f"{c['planos']} planos, {c['segundos']:.0f} s · aparece en {', '.join(c['en_el_video'][:12])}{' …' if len(c['en_el_video']) > 12 else ''}" for c in L)
+
 def permissions():
     stats, use = log()
     p = f"{OUT}/REGISTRO_DE_PERMISOS.txt"; s = open(p, encoding="utf-8").read()
     def u(tipo, unit="planos"):
         x = use.get(tipo)
         return f"{x['n']} {unit}, {x['s']:.0f} s en total ({len(x['files'])} archivos distintos)" if x else "no se usa"
-    rep = {"{{USO_E}}": u("Extended Look"), "{{USO_L}}": u("Tráiler de lanzamiento"), "{{USO_P}}": u("Vídeo Pre-Load Now"),
+    X = credits()
+    rep = {"{{USO_X}}": u("Gameplay de jugadores (CC BY)"), "{{CREDITOS_X}}": credits_text(X) or "  (no se usa gameplay de terceros)", "{{USO_E}}": u("Extended Look"), "{{USO_L}}": u("Tráiler de lanzamiento"), "{{USO_P}}": u("Vídeo Pre-Load Now"),
            "{{USO_C}}": f"{u('Vídeo de personaje')}; portada animada: {u('Portada animada')}", "{{USO_S}}": u("Captura oficial"),
            "{{USO_A}}": u("Ilustración oficial"), "{{USO_U}}": u("Edición Ultimate"), "{{USO_V}}": u("Vintage Vice City"),
            "{{MAX_PLANO}}": f"{stats['max_oficial']:.1f}".replace(".", ",")}
