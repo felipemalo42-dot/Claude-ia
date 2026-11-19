@@ -23,6 +23,15 @@ ALIAS = [
     (r"\bselfie\b", "selfi"), (r"\bmiami,? dade\b", "Miami-Dade"), (r"\bdeco\b", "déco"), (r"\bNB ?se\b", "NBC"), (r"\bN\.? ?B\.? ?C\.?\b", "NBC"),
     (r"\bmiami,? (bays|bais|vais|bice|vice)\b", "Miami Vice"), (r"\bway city\b", "Vice City"), (r"\bbay city\b", "Vice City"),
     (r"\b(L\.? )?Murray\b", "Múrrei"),
+    # GTA6_VIDEO_LANZAMIENTO: nombres de medios y siglas tal como los escriben los reconocedores
+    (r"\b(un |en un )?[MIU]?[iu]?ndus central\b", "Windows Central"), (r"\binduced central\b", "Windows Central"),
+    (r"\bD[ei] ?Guardian\b", "The Guardian"), (r"\bCord?s ?pla(ne|in)\b", "Worthplaying"), (r"\b[HJ]uro ?Gamer\b", "Eurogamer"),
+    (r"\b(James|Hames|Heim|Aime) ?Pott?k?\b", "GameSpot"), (r"\bHames ?Pod\b", "GameSpot"), (r"\bHamespot\b", "GameSpot"),
+    (r"\b(Geimes|Heims) ?(Reidar|tradar)\b", "GamesRadar"), (r"\bHeimstradar\b", "GamesRadar"),
+    (r"\bThe Legend of Zelda\b", "Di Léyend of Zelda"), (r"\bo ?Kar[ia]n[ao] of Time\b", "Ocarina of Taim"), (r"\bOcarina of Time\b", "Ocarina of Taim"),
+    (r"\bG,? ?(T|de),? ?a\b", "GTA"), (r"\bGT a\b", "GTA"), (r"\bG T\b", "GTA"), (r"\bJeta\b", "GTA"),
+    (r"\bTake 2\b", "Take-Two"), (r"\bKik\b", "Kick"), (r"\bStreams? Charts\b", "Streams Charts"), (r"\bSeries se\b", "Series S"), (r"\bSirius\b", "Series"),
+    (r"\bOpen Critic\b", "OpenCritic"), (r"\bmetacritic\b", "Metacritic"),
 ]
 _ALIAS = [(re.compile(a, re.I), b) for a, b in ALIAS]
 _ROMAN = {"xx": "veinte", "xix": "diecinueve", "xxi": "veintiuno"}

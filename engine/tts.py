@@ -33,7 +33,8 @@ STEPS = int(os.environ.get("TTS_STEPS", "16"))
 # Pronunciación: (regex, reemplazo hablado). Solo afecta al audio, nunca a subtítulos.
 PRON = [
     # GTA6_VIDEO_LANZAMIENTO (post lanzamiento): medios y nombres
-    (r"\bWindows Central\b", "Uíndous Séntral"), (r"\bGameSpot\b", "Géim Spot"), (r"\bGamesRadar\b", "Géims Réidar"), (r"\bEurogamer\b", "Iúrogueimer"),
+    (r"\bWindows Central\b", "Uíndous Séntral"), (r"\bGameSpot\b", "Guéim Spot"), (r"\bGamesRadar\b", "Guéims Réidar"), (r"\bEurogamer\b", "Iúrogueimer"),
+    (r"\bRockstar Games\b", "Rokstar Guéims"),
     (r"\bIGN\b", "i ge ene"), (r"\bForbes\b", "Forbs"), (r"\bMetacritic\b", "Metacrític"), (r"\bOpenCritic\b", "Óupen Crític"),
     (r"\bSam Houser\b", "Sam Jáuser"), (r"\bLos Santos\b", "Los Santos"),
     (r"\bPSSR\b", "pe ese ese erre"), (r"\b4K\b", "cuatro ka"), (r"\bStreams Charts\b", "Strims Charts"), (r"\bPlayStation Network\b", "Pleistéishon Nétuork"),

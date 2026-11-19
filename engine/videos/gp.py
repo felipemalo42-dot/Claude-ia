@@ -252,7 +252,7 @@ def music_fn(total, beats_tl):
 VIDEO = dict(id="gp", folder="GTA6_VIDEO_LANZAMIENTO", file="VIDEO_FINAL",
              title="GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado",
              format="Largo (16:9) · análisis post lanzamiento con material oficial", music="synthwave", music_fn=music_fn, voice="host", beats=B,
-             overlay=R.overlay, grade=None, music_gain=0.42, max_tries=4, qa_metric="fonetica", qa_thr=0.995, trans=("cut", 0.0),
+             overlay=R.overlay, grade=None, music_gain=0.42, max_tries=3, qa_metric="fonetica", qa_thr=0.995, trans=("cut", 0.0),
              final_codec="av1", target_mb=94, av1_preset=8,
              names=dict(narr_wav="recursos/narracion_original.flac", narr_mp3="NARRACION.mp3", srt="SUBTITULOS.srt",
                         script="recursos/guion_con_tiempos.txt", thumb="MINIATURA.png"))
