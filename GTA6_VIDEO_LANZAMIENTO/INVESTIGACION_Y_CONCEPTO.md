@@ -34,10 +34,11 @@
 6. La conducción y la policía.
 7. El combate, la crítica más repetida.
 8. El realismo del día a día.
-9. El rendimiento: 30 fps sin modo a 60, y las medidas de Digital Foundry.
+9. El rendimiento: 30 fps sin modo a 60, y las medidas de Digital Foundry en Xbox y PlayStation.
 10. La historia, sin spoilers.
 11. El lanzamiento: mensaje de Sam Houser y bolsa.
-12. ¿Merece la pena?, con nuestra lectura en amarillo.
+12. Las primeras horas: récord de audiencia en directo y primeras quejas de jugadores (sin confirmar). Añadido el 19/11, tras el desbloqueo en Europa.
+13. ¿Merece la pena?, con nuestra lectura en amarillo.
 
 **Por qué funciona:**
 - Responde a lo que más se busca el día del lanzamiento: «¿es bueno?», «¿cómo se juega?», «¿va a 60 fps?».

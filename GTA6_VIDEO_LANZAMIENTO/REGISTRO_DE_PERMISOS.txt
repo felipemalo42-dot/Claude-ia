@@ -126,7 +126,7 @@ A10. Música oficial: radios, banda sonora y «Grand Theft Auto VI: The Album»
     Decisión: ROJO. No suena en el vídeo. El álbum solo se menciona, sobre su portada oficial (A6).
 
 A12. Citas breves de reseñas de prensa (IGN, GameSpot, Eurogamer, GamesRadar+, Windows Central, Forbes, Vice, The Guardian,
-     Worthplaying y Digital Foundry) y de prensa de Nueva Zelanda (Stuff, NZ Herald)
+     Worthplaying y Digital Foundry), de prensa de Nueva Zelanda (Stuff, NZ Herald) y datos de audiencia (Streams Charts, TalkEsport, Win.gg)
     Uso: frases de menos de 20 palabras, traducidas, con el medio en pantalla y el enlace en la descripción. Son objeto de análisis.
     Autorización: derecho de cita (mismas normas que A11). Las cifras (notas, fps, resoluciones) son hechos.
     Decisión: VERDE.

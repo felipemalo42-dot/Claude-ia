@@ -994,3 +994,38 @@ def thumbnail2(c):
     rect(c, 50, 440, 560, 90, "#FF4A3D", 1, r=45); draw_text(c, "LO BUENO Y LO MALO", 330, 501, "ovblk", 44, "#FFFFFF", 1, align="center", tracking=2)
     draw_text(c, "LO QUE DICE QUIEN YA LO JUGÓ", 54, 610, "ovmono", 30, "#FFFFFF", 0.92, tracking=2)
     draw_badge(c, 1200, 640, 52)
+
+def g_dfps(c, t, d, sh, ctx):
+    _panel_bg(c, "Vice_City_22", 0.64); st = sh.get("step", 0)
+    draw_text(c, "DIGITAL FOUNDRY · PLAYSTATION", W / 2, 250, "anton", 80, YEL, 1, align="center", tracking=3)
+    _rows(c, t, [("PS5 Y PS5 PRO", "≈1440p internos · objetivo 30 fps · sin modo a 60"),
+                 ("PS5 PRO", "PSSR → imagen casi 4K · sombras con trazado de rayos · 30 casi estables"),
+                 ("PS5 NORMAL", "Más caídas por debajo de 30 en la acción intensa"),
+                 ("VEREDICTO", "«Aceptable, pero algo decepcionante»")], st, y0=400, dy=160)
+
+def g_stream(c, t, d, sh, ctx):
+    _panel_bg(c, "Vice_City_13", 0.62); st = sh.get("step", 0)
+    draw_text(c, "RÉCORD DE AUDIENCIA EN DIRECTO", W / 2, 250, "anton", 80, YEL, 1, align="center", tracking=2)
+    _rows(c, t, [("+6 MILLONES A LA VEZ", "Twitch + YouTube + Kick (Streams Charts; otras mediciones, hasta 7,8 M)"),
+                 ("+3 MILLONES EN TWITCH", "Pico de espectadores simultáneos"),
+                 ("RÉCORD HISTÓRICO", "El mayor lanzamiento de un videojuego en streaming")], st, y0=420, dy=190, col=GRN)
+
+def g_bugs(c, t, d, sh, ctx):
+    _panel_bg(c, "Vice_City_16", 0.66); st = sh.get("step", 0)
+    draw_text(c, "PRIMERAS QUEJAS DE JUGADORES", W / 2, 250, "anton", 80, "#FF8A80", 1, align="center", tracking=2)
+    _rows(c, t, [("ATRAVESAR OBJETOS", "Personajes que atraviesan muebles o el suelo"), ("FÍSICAS RARAS", "Reacciones extrañas de objetos y vehículos"),
+                 ("CIERRES EN CONSOLA", "Algunos jugadores reportan cuelgues")], 2, y0=470, dy=165, col="#FF8A80")
+    if st >= 1:
+        p = ease_out_back(prog(t, 0, 0.4)); c.save(); c.translate(W / 2, 345); c.scale(p, p)
+        rect(c, -560, -50, 1120, 80, "#FFB000", 1, r=10); draw_text(c, "SIN CONFIRMAR POR ROCKSTAR · OTROS NO REPORTAN FALLOS", 0, 6, "ovmono", 30, "#16181B", 1, align="center")
+        c.restore()
+
+def g_psn(c, t, d, sh, ctx):
+    _panel_bg(c, "Vice_City_27", 0.62); p = ease_out_back(prog(t, 0, 0.4))
+    c.save(); c.translate(W / 2, H / 2 - 20); c.scale(p, p)
+    draw_text(c, "CAÍDA DE PLAYSTATION NETWORK", 0, 0, "anton", 96, "#FFFFFF", 1, align="center", tracking=2)
+    draw_text(c, "Horas antes del lanzamiento · reconocida por PlayStation", 0, 80, "intersb", 44, YEL, 1, align="center"); c.restore()
+
+GFX.update({"dfps": g_dfps, "stream": g_stream, "bugs": g_bugs, "psn": g_psn})
+GFX_SRC.update({"dfps": "Digital Foundry (18/11/2026), vía TweakTown y Twisted Voxel", "stream": "Streams Charts, TalkEsport y Win.gg (19/11/2026)",
+                "bugs": "Reportes de jugadores recogidos por Sportskeeda y Brit Brief · sin confirmar", "psn": "Newsweek (18/11/2026)"})

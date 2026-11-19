@@ -2,7 +2,7 @@
 recursos visuales, permisos con cifras reales y limpieza.
 Uso: python gp_package.py [--log] [--docx] [--pub] [--visuals] [--clean]   (sin argumentos: todo)
 """
-import csv, importlib, json, os, re, subprocess, sys, shutil
+import csv, importlib, json, math, os, re, subprocess, sys, shutil
 sys.path.insert(0, os.path.dirname(__file__))
 import build
 from tts import split_markup
@@ -19,7 +19,7 @@ CHAPTERS = {"GANCHO": "GTA 6 ya se juega: el veredicto", "INTRODUCCIÓN: TRES AV
             "4 · LOS ATRACOS (AVISO DE SPOILER)": "Los atracos (AVISO: escenas de misiones)", "5 · LA CONDUCCIÓN": "La conducción (fin de los spoilers)",
             "5B · LA POLICÍA": "La policía", "6 · EL COMBATE": "El combate", "7 · EL REALISMO": "El realismo del día a día",
             "8 · EL RENDIMIENTO": "Rendimiento: 30 fps y Digital Foundry", "9 · LA HISTORIA (SIN SPOILERS)": "La historia (sin spoilers)",
-            "10 · EL LANZAMIENTO": "El lanzamiento: Sam Houser y la bolsa", "CIERRE": "Resumen y cierre"}
+            "10 · EL LANZAMIENTO": "El lanzamiento: Sam Houser y la bolsa", "11 · LAS PRIMERAS HORAS": "Las primeras horas: récord de audiencia y primeras quejas", "CIERRE": "Resumen y cierre"}
 SFX_ES = {"whoosh": "barrido", "pop": "pop", "paper": "papel", "stamp": "sello", "hit": "golpe grave", "tick": "tic", "ding": "campanita",
           "logo": "sintonía del canal", "tune": "dial de radio"}
 MUS_ES = {"synthwave": "synthwave", "electro": "electro", "tension": "tensión (pads oscuros)", "trap26": "trap", "tropical": "tropical",
@@ -39,7 +39,7 @@ GFX_ES = {"trailers": "Gráfico: los tres tráileres", "mosaic": "Gráfico: mosa
           "nz": "Gráfico: horas de desbloqueo / truco de Nueva Zelanda", "warn": "Gráfico: riesgo de sanción", "realism": "Gráfico: lo que avisan 6 reseñas",
           "fps": "Gráfico: 30 fps", "df": "Gráfico: medidas de Digital Foundry", "police": "Gráfico: la policía según Windows Central",
           "drone": "Gráfico: carreras de drones (sin imagen oficial)", "poll2": "Gráfico: ¿inmersión o molestia?", "poll3": "Gráfico: ¿ya lo juegas?",
-          "hours": "Gráfico: ≈80 horas", "houser": "Gráfico: mensaje de Sam Houser", "stock": "Gráfico: bolsa y reservas", "nospoil2": "Gráfico: sin spoilers en comentarios"}
+          "hours": "Gráfico: ≈80 horas", "dfps": "Gráfico: Digital Foundry en PlayStation", "stream": "Gráfico: récord de audiencia en directo", "bugs": "Gráfico: quejas de jugadores (sin confirmar)", "psn": "Gráfico: caída de PSN", "houser": "Gráfico: mensaje de Sam Houser", "stock": "Gráfico: bolsa y reservas", "nospoil2": "Gráfico: sin spoilers en comentarios"}
 
 def shot_desc(s):
     k, v = s["src"].split(":", 1)
@@ -295,3 +295,36 @@ if __name__ == "__main__":
     if "--pub" in args: publication()
     if "--docx" in args: docx()
     if "--visuals" in args: visuals()
+    if "--audit" in args: audit()
+
+# ---------------------------------------------------------------- auditoría final con cifras medidas sobre el MP4
+def audit():
+    import statistics
+    T = tl(); mp4 = f"{OUT}/VIDEO_FINAL.mp4"
+    pr = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration,size,bit_rate:stream=codec_name,width,height,r_frame_rate,pix_fmt,sample_rate,channels,bit_rate",
+                                    "-of", "json", mp4], capture_output=True, text=True).stdout)
+    fmt = pr["format"]; vs = [s for s in pr["streams"] if s.get("width")][0]; aus = [s for s in pr["streams"] if s.get("sample_rate")][0]
+    nfr = int(subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", mp4],
+                             capture_output=True, text=True).stdout.strip())
+    lu = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", mp4, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = re.findall(r"I:\s+(-?[\d.]+) LUFS", lu); lufs = float(m[-1]) if m else float("nan")
+    st = json.load(open(f"{OUT}/recursos/sincronia.json"))
+    rows = list(csv.DictReader(open(f"{OUT}/recursos/control_de_voz.csv", encoding="utf-8"), delimiter=";"))
+    D = sum(int(r["diferencias"] or 0) for r in rows); N = sum(int(r["sonidos"] or 0) for r in rows)
+    low = [r for r in rows if float(r["coincidencia"]) < 0.995]
+    words = sum(len(" ".join(split_markup(x)[0] for x in build.split_sentences(b["vo"])).split()) for b in B if b["vo"])
+    dur = float(fmt["duration"]); exp_fr = int(math.ceil(T["total"] * 30)) if False else None
+    L = ["# GTA6_VIDEO_LANZAMIENTO: auditoría final", "",
+         f"**Vídeo:** *{V['title']}* · `VIDEO_FINAL.mp4` · revisado el {__import__('time').strftime('%d/%m/%Y')} sobre el archivo final.", "",
+         "## Datos técnicos medidos", "", "| Comprobación | Resultado |", "|---|---|",
+         f"| Duración | **{mmss(dur)}** ({dur:.1f} s), incluida la pantalla final de 20 s |",
+         f"| Vídeo | {vs['codec_name'].upper()} 10 bits, {vs['width']} × {vs['height']}, {vs['r_frame_rate'].split('/')[0]} fps, {nfr} fotogramas |",
+         f"| Audio | AAC, {int(aus['sample_rate']) // 1000} kHz, {aus['channels']} canales |",
+         f"| Tamaño | {int(fmt['size']) / 1e6:.1f} MB (límite de GitHub: 100 MB) |",
+         f"| Sonoridad integrada | {lufs:.1f} LUFS (objetivo de YouTube: −14) |",
+         f"| Narración | {words} palabras, voz C (la misma del canal) |",
+         f"| Coincidencia guion ↔ voz | **{1 - D / max(1, N):.2%}** global ({D} sonidos distintos de {N}); {len(rows) - len(low)} de {len(rows)} tomas ≥ 99,5 % |",
+         f"| Sincronía imagen ↔ palabra | **{st['sincronizados']} de {st['anclados']} cortes ({st['pct']:.1f} %)** a ≤ 0,10 s del inicio de su palabra |",
+         f"| Planos | {st['planos']} (media {st['dur_media']:.1f} s por plano) |", ""]
+    open(f"{OUT}/recursos/_auditoria_cifras.md", "w", encoding="utf-8").write("\n".join(L) + "\n")
+    print("\n".join(L)); print("tomas por debajo de 99,5 %:", [(r["inicio_s"], r["coincidencia"]) for r in low])

@@ -167,6 +167,12 @@ beat("Digital Foundry ya lo ha medido. En Xbox Series X, el juego se renderiza i
      "En Series S baja a 720p, que Rockstar reescala a 1080p, y se queda a menudo por debajo de 30. Su recomendación: jugarlo en PS5 o en Series X.",
      mus=("electro", 1), cert="OFICIAL", src_note="Digital Foundry (vía VGC y LevelUp) y Rockstar a Wccftech, 11/2026",
      shots=[S(None, "g:df", step=0), S("En Series S", "g:df", step=1), S("Su recomendación", "g:df", step=2)])
+beat("Y en PlayStation, según el análisis de Digital Foundry, PS5 y PS5 Pro renderizan a unos 1440p y también apuntan a 30. "
+     "La Pro reescala con PSSR hasta una imagen casi 4K, añade sombras con trazado de rayos y mantiene los 30 casi siempre: para ellos, es la mejor forma de jugarlo. "
+     "En la PS5 normal, las caídas por debajo de 30 son más frecuentes en la acción intensa. Su veredicto: un rendimiento aceptable, pero algo decepcionante.",
+     mus=("electro", 1), cert="OFICIAL", src_note="Digital Foundry (18/11/2026), vía TweakTown y Twisted Voxel",
+     shots=[S(None, "g:dfps", step=0), S("La Pro reescala", "g:dfps", step=1), S("la mejor forma", "e:1214.2"), S("En la PS5 normal", "g:dfps", step=2),
+            S("la acción intensa", "e:864.4"), S("Su veredicto", "g:dfps", step=3)])
 beat("Nuestra lectura: a cambio, el juego enseña un nivel de detalle que pocos juegos de mundo abierto alcanzan. Pero si para ti los 60 son imprescindibles, conviene saberlo antes.",
      mus=("electro", 1), cert="INTERPRETACIÓN",
      shots=[S(None, "e:1214.2"), S("nivel de detalle", "e:458.0"), S("conviene saberlo", "g:fps", step=1)])
@@ -195,6 +201,18 @@ beat("Para cerrar, Sam Houser, cofundador de Rockstar, publicó un mensaje poco 
      section="10 · EL LANZAMIENTO", chapter=(10, "EL LANZAMIENTO"), mus=("synthwave", 1), pre=0.6, cert="OFICIAL",
      src_note="GamesRadar+ (mensaje de Sam Houser) y Forbes (bolsa), 18/11/2026",
      shots=[S(None, "k:cover", st=15.6), S("un mensaje poco habitual", "s:Vice_City_11", z=(1.0, 1.08)), S("Dio las gracias", "g:houser"), S("muchos años", "e:1570.4"), S("en bolsa", "g:stock"), S("reservas", "g:stock", step=1)])
+
+# ================================================================ 11 · LAS PRIMERAS HORAS
+beat("¿Y qué ha pasado desde que se desbloqueó? Primero, un récord: entre Twitch, YouTube y Kick, más de seis millones de personas vieron directos de GTA 6 a la vez, según Streams Charts. "
+     "Solo en Twitch se superaron los tres millones. Es el mayor lanzamiento de un videojuego en la historia del streaming.",
+     section="11 · LAS PRIMERAS HORAS", chapter=(11, "LAS PRIMERAS HORAS"), mus=("synthpop", 2), pre=0.6, cert="OFICIAL",
+     src_note="Streams Charts, TalkEsport y Win.gg (19/11/2026); las cifras varían según la plataforma y la hora",
+     shots=[S(None, "e:1546.2"), S("un récord", "g:stream", step=0), S("Solo en Twitch", "g:stream", step=1), S("el mayor lanzamiento", "g:stream", step=2)],
+     sfx=[(0.0, "whoosh", 0.4), ("w:un récord", "hit", 0.35)])
+beat("También han llegado las primeras quejas: jugadores que hablan de personajes que atraviesan objetos, físicas raras y algunos cierres inesperados en consola. "
+     "De momento, Rockstar no los ha confirmado, y muchos otros jugadores dicen no haber tenido ningún problema. Antes del lanzamiento, además, PlayStation Network sufrió una caída que Sony reconoció.",
+     mus=("synthpop", 1), cert="OFICIAL", src_note="Sportskeeda y Brit Brief (reportes de jugadores, sin confirmar) · Newsweek (caída de PSN)",
+     shots=[S(None, "g:bugs", step=0), S("De momento, Rockstar", "g:bugs", step=1), S("muchos otros jugadores", "e:1108.6"), S("PlayStation Network", "g:psn")])
 
 beat("Pausa rápida: ¿tú ya lo estás jugando, o esperas a tu hora? Te leemos en los comentarios.",
      mus=("synthwave", 1), cert=None, pre=0.4, hold=0.4, shots=[S(None, "g:poll3"), S("Te leemos", "s:Jason_and_Lucia_03", z=(1.0, 1.08))], sfx=[("w:¿tú ya", "pop", 0.4)])

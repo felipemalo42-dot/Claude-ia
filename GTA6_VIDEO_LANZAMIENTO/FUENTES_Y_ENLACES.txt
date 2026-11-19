@@ -78,6 +78,25 @@ Cómo leer este archivo:
    - Mecánicas que Rockstar adelantó antes del lanzamiento (cambio de personaje, peso, músculos, sueño).  [P] Entrevista de Dazed, vía:
        https://pcgamer.com/games/grand-theft-auto/big-new-gta-6-gameplay-details-revealed-including-specifics-about-jason-and-lucia-character-swapping-play-as-a-couple-or-go-off-and-cause-chaos-independently
 
+3B. LAS PRIMERAS HORAS (consultado el 19/11/2026, hacia las 02:00 UTC)
+   - Récord de audiencia en directo: más de 6 millones de espectadores simultáneos entre Twitch, YouTube y Kick (Streams Charts);
+     otras mediciones dan de 7,1 a 7,8 millones; en Twitch, unos 3 millones.  [P]
+       https://streamscharts.com/news/gta-6-streaming-records
+       https://www.talkesport.com/streaming/gta-6-launch-viewership-record-7-million-peak-viewers/
+       https://win.gg/gta-6-smashes-streaming-records/
+   - Digital Foundry en PS5 y PS5 Pro: unos 1440p internos y objetivo de 30 fps; la Pro, con PSSR (imagen casi 4K) y sombras con trazado
+     de rayos, es «la mejor forma de jugarlo»; la PS5 normal cae más por debajo de 30 en la acción; veredicto «aceptable, pero algo decepcionante».  [P]
+       https://www.tweaktown.com/news/114764/gta-6-struggles-to-hold-30-fps-on-base-ps5-more-often-than-expected/index.html
+       https://www.tweaktown.com/news/114763/gta-6-deemed-the-single-most-visually-striking-game-of-the-generation-by-tech-experts/index.html
+       https://twistedvoxel.com/gta-6-ps5-pro-vs-ps5-performance-analysis/
+   - Quejas de jugadores el día del lanzamiento (atravesar objetos, físicas, cierres). Son reportes de jugadores SIN CONFIRMAR por Rockstar,
+     y otros jugadores dicen no tener problemas.  [P]
+       https://tech.sportskeeda.com/gaming-news/all-gta-6-bugs-glitches-found-far
+       https://britbrief.co.uk/entertainment/gaming/gta-vi-launch-marred-by-player-reported-glitches.html
+   - Caída de PlayStation Network horas antes del lanzamiento, reconocida por PlayStation.  [P]
+       https://www.newsweek.com/playstation-users-report-access-issues-hours-before-gta-vi-launch-12736310
+   - Rockstar no había publicado material nuevo en su página de medios a las 02:00 UTC del 19/11.  [O]
+
 4. MATERIAL OFICIAL USADO EN EL VÍDEO (descarga directa)  [O]
    Página de medios: https://www.rockstargames.com/VI/media
    - An Extended Look:          https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_An_Extended_Look/GTAVI_An_Extended_Look.mp4
