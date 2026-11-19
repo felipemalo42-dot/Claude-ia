@@ -49,8 +49,10 @@ def asset_path(src):
 
 # ---------------------------------------------------------------- gameplay de terceros (clips externos con licencia y crédito)
 # Fuente "x:ID@segundo": vídeo ID del catálogo videos/gp_clips.json, guardado en XDIR/ID.<ext>. Cada plano muestra su autor.
-XDIR = os.environ.get("GL_X", os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "GTA6_VIDEO_LANZAMIENTO", "clips_externos"))
+XDIR = os.environ.get("GL_X", f"{SCR}/xproxy")          # copias ligeras (480p) para elegir planos y detectar cortes
+XHQ = os.environ.get("GL_XHQ", f"{SCR}/xhq")             # tramos usados, extraídos a 1080p de la copia 4K (clips_externos.py --hq)
 XCAT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gp_clips.json"), encoding="utf-8"))
+XNOCUT = set()   # grabaciones continuas de juego: sus «cortes» detectados son fogonazos de la acción, no cambios de plano
 XBAD = {}   # ID → [(a, b)] tramos que no se muestran (sangre, rótulos del autor, cámara del streamer, menús)
 def x_path(vid):
     for ext in ("mp4", "mkv", "webm", "mov"):
@@ -59,7 +61,11 @@ def x_path(vid):
     raise FileNotFoundError(f"falta el clip externo {vid} en {XDIR}")
 def x_credit(vid, short=False):
     m = XCAT[vid]
-    return f"{m['autor']} · {m['plataforma']}" if short else f"{m['autor']} · {m['plataforma']} «{m['titulo'][:46]}» · {m['licencia']}"
+    lic = f" · {m['licencia']}" if m["licencia"].startswith("CC") else ""
+    return f"{m['autor']} · {m['plataforma']}" if short else f"{m['autor']} · {m['plataforma']} «{m['titulo'][:46]}»{lic}"
+def x_hq(vid, loc):
+    p = f"{XHQ}/{vid}_{loc:.3f}.mp4"
+    return p if os.path.exists(p) else None
 
 def _mmss(t): return f"{int(t // 60)}:{int(t % 60):02d}"
 def source_label(src):
@@ -226,7 +232,7 @@ def src_window(sh):
             if a <= T0 < b: T0 = b + 0.05          # el inicio caía en un tramo prohibido
         for a, b in BAD:
             if a > T0: limit = min(limit, a - ra - 0.05)
-    loc = T0 - off; cs = cuts_for(path)
+    loc = T0 - off; cs = [] if k == "x" and (v.split("@")[0] in XNOCUT or sh.get("nocut")) else cuts_for(path)
     for _ in range(3):
         nxt = next((x for x in cs if x > loc + 0.02), limit + 0.1)
         end = min(nxt - 0.04, limit)
@@ -252,7 +258,7 @@ def footage(c, sh, tau, d, slot="main"):
     src = sh["src"]; k, v = src.split(":", 1)
     if k == "g": return
     # renovación del encuadre en planos largos: segmentos de ≤ MAXD con otro encuadre
-    nseg = max(1, int(math.ceil(d / MAXD))); seg = min(nseg - 1, int(tau / (d / nseg))) if nseg > 1 else 0
+    nseg = 1 if sh.get("lock") else max(1, int(math.ceil(d / MAXD))); seg = min(nseg - 1, int(tau / (d / nseg))) if nseg > 1 else 0
     tl_ = (tau - seg * d / nseg) / (d / nseg)
     z0, z1 = sh.get("z", (1.0, 1.06) if k in ("s", "u", "v", "a") else (1.0, 1.03))
     fx, fy = sh.get("f", (0.5, 0.5))
@@ -281,6 +287,9 @@ def footage(c, sh, tau, d, slot="main"):
         return
     # e / l / p / k / x: vídeo 16:9 dentro de su plano de origen (sin cruzar cortes de escena ni tramos prohibidos)
     path, loc, Ls = src_window(sh)
+    if k == "x":
+        hq = x_hq(v.split("@")[0], loc)
+        if hq: path, loc = hq, 0.0
     sp = sh.get("speed") or max(0.5, min(1.0, Ls / max(d, 0.1)))
     tt = (tau * sp) % Ls
     clip = _CL.get(slot)
@@ -293,8 +302,9 @@ def footage(c, sh, tau, d, slot="main"):
 _META = {}
 def _clip_meta(path):
     if path not in _META:
-        o = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,duration", "-of", "json", path], capture_output=True, text=True)
-        st = json.loads(o.stdout)["streams"][0]; _META[path] = dict(w=int(st["width"]), h=int(st["height"]), dur=float(st.get("duration", 1.0)))
+        o = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,duration:format=duration", "-of", "json", path], capture_output=True, text=True)
+        j = json.loads(o.stdout); st = j["streams"][0]   # .webm: la duración solo viene en el contenedor
+        _META[path] = dict(w=int(st["width"]), h=int(st["height"]), dur=float(st.get("duration") or j.get("format", {}).get("duration") or 1.0))
     return _META[path]
 
 # ---------------------------------------------------------------- rótulos
@@ -891,7 +901,7 @@ def g_spoiler(c, t, d, sh, ctx):
     c.save(); c.translate(W / 2, H / 2 - 40); c.scale(p, p)
     icon(c, "warn", 0, -200, 150, "#FF4A3D", 1)
     draw_text(c, "AVISO DE SPOILER", 0, 30, "anton", 160, "#FFFFFF", 1, align="center", tracking=4)
-    sub = "ESCENAS DE MISIONES DEL EXTENDED LOOK (OFICIAL)" if st else "EN EL CAPÍTULO 4 HAY ESCENAS DE MISIONES"
+    sub = SPOILER_SUB if st else "EN EL CAPÍTULO 4 HAY ESCENAS DE MISIONES"
     draw_text(c, sub, 0, 120, "ovblk", 44, YEL, 1, align="center", tracking=2)
     if st:
         j = _spoiler_jump(ctx)
@@ -961,12 +971,29 @@ def g_police(c, t, d, sh, ctx):
     draw_text(c, "LA POLICÍA, SEGÚN WINDOWS CENTRAL", W / 2, 250, "anton", 70, YEL, 1, align="center", tracking=2)
     _rows(c, t, [("CORTA ALARMAS Y CÁMARAS", "La policía pierde eficacia"), ("ESCÓNDETE EN EL COCHE", "Los agentes pasan a modo de búsqueda")], sh.get("step", 0), y0=380, dy=210)
 
+SPOILER_SUB = "ESCENAS DE MISIONES DEL EXTENDED LOOK (OFICIAL)"
+CREATORS = []   # [(autor, qué se ve)] lo rellena el módulo del vídeo
+def g_creators(c, t, d, sh, ctx):
+    """Quién ha grabado el gameplay del vídeo (crédito general; además, cada plano lleva su autor)."""
+    vid, s = sh.get("bg", (None, 0.0))
+    if vid: _cover(c, _still_from_video(x_path(vid), s, (1920, 1080)), 1.05 + 0.03 * clamp(t / d), 0.5, 0.5)
+    rect(c, 0, 0, W, H, "#07080C", 0.78)
+    draw_text(c, "GAMEPLAY GRABADO TRAS EL LANZAMIENTO", W / 2, 190, "anton", 70, YEL, ease_out(prog(t, 0, 0.35)), align="center", tracking=2)
+    for i, (a, b) in enumerate(CREATORS):
+        p = ease_out(prog(t, 0.15 + 0.12 * i, 0.5 + 0.12 * i)); y = 300 + i * 112
+        c.save(); c.translate(-(1 - p) * 80, 0)
+        rect(c, 330, y, 1260, 92, "#0B0C10", 0.88 * p, r=12); rect(c, 330, y, 10, 92, YEL, p)
+        draw_text(c, a, 380, y + 62, "anton", 54, "#FFFFFF", p, tracking=1); draw_text(c, b, 1560, y + 58, "intersb", 32, "#E8E4DA", p, align="right")
+        c.restore()
+    draw_text(c, "EL AUTOR DE CADA PLANO APARECE EN PANTALLA · ENLACES EN LA DESCRIPCIÓN", W / 2, 300 + len(CREATORS) * 112 + 60, "ovmono", 28, "#FFFFFF",
+              ease_out(prog(t, 0.9, 1.3)), align="center", tracking=1)
+
 def g_drone(c, t, d, sh, ctx):
     _panel_bg(c, "Vice_City_03", 0.6); p = ease_out_back(prog(t, 0, 0.4))
     c.save(); c.translate(W / 2, H / 2); c.scale(p, p)
     draw_text(c, "CARRERAS DE DRONES", 0, 20, "anton", 140, "#FFFFFF", 1, align="center", tracking=3); c.restore()
     rect(c, W / 2 - 470, 700, 940, 58, "#FFB000", 1, r=8)
-    draw_text(c, "SIN IMAGEN OFICIAL · LO CITAN LAS RESEÑAS", W / 2, 740, "ovmono", 30, "#16181B", 1, align="center")
+    draw_text(c, "SIN IMÁGENES EN ESTE VÍDEO · LO CITAN LAS RESEÑAS", W / 2, 740, "ovmono", 30, "#16181B", 1, align="center")
 
 def _poll(c, t, title, opts):
     _cover(c, thumb("Jason_and_Lucia_Beach_landscape", 1600), 1.05 + 0.04 * clamp(t / 4), 0.5, 0.45); rect(c, 0, 0, W, H, "#000000", 0.45)

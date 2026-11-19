@@ -39,7 +39,7 @@ GFX_ES = {"trailers": "Gráfico: los tres tráileres", "mosaic": "Gráfico: mosa
           "nz": "Gráfico: horas de desbloqueo / truco de Nueva Zelanda", "warn": "Gráfico: riesgo de sanción", "realism": "Gráfico: lo que avisan 6 reseñas",
           "fps": "Gráfico: 30 fps", "df": "Gráfico: medidas de Digital Foundry", "police": "Gráfico: la policía según Windows Central",
           "drone": "Gráfico: carreras de drones (sin imagen oficial)", "poll2": "Gráfico: ¿inmersión o molestia?", "poll3": "Gráfico: ¿ya lo juegas?",
-          "hours": "Gráfico: ≈80 horas", "dfps": "Gráfico: Digital Foundry en PlayStation", "stream": "Gráfico: récord de audiencia en directo", "bugs": "Gráfico: quejas de jugadores (sin confirmar)", "psn": "Gráfico: caída de PSN", "houser": "Gráfico: mensaje de Sam Houser", "stock": "Gráfico: bolsa y reservas", "nospoil2": "Gráfico: sin spoilers en comentarios"}
+          "hours": "Gráfico: ≈80 horas", "dfps": "Gráfico: Digital Foundry en PlayStation", "stream": "Gráfico: récord de audiencia en directo", "bugs": "Gráfico: quejas de jugadores (sin confirmar)", "psn": "Gráfico: caída de PSN", "houser": "Gráfico: mensaje de Sam Houser", "stock": "Gráfico: bolsa y reservas", "nospoil2": "Gráfico: sin spoilers en comentarios", "creators": "Gráfico: quién ha grabado el gameplay"}
 
 def shot_desc(s):
     k, v = s["src"].split(":", 1)
@@ -60,7 +60,7 @@ def log():
                          ancla=s.get("anchor") or "(inicio del bloque)", desfase_s=round(s["t0"] - s["word_t"], 3) if s.get("word_t") is not None else "",
                          tipo={"e": "Extended Look", "l": "Tráiler de lanzamiento", "p": "Vídeo Pre-Load Now", "c": "Vídeo de personaje", "k": "Portada animada",
                                "s": "Captura oficial", "u": "Edición Ultimate", "v": "Vintage Vice City", "a": "Ilustración oficial", "g": "Gráfico propio",
-                               "x": "Gameplay de jugadores (CC BY)"}[k],
+                               "x": "Gameplay de terceros"}[k],
                          recurso=(R.XCAT[v.split("@")[0]]["url"] if k == "x" else v) if k not in ("e", "l", "p") else ("GTAVI_An_Extended_Look.mp4" if k == "e" else "GTAVI_Launch_Trailer.mp4" if k == "l" else "GTAVI_Pre-Load_Now.mp4"),
                          minuto_en_el_original=src_t or "", rotulo=" | ".join(x for x in [s.get("label"), s.get("region"), (s.get("card") or [None])[0], s.get("quote")] if x) or ""))
     with open(f"{OUT}/recursos/registro_de_planos.csv", "w", encoding="utf-8", newline="") as f:
@@ -112,16 +112,20 @@ def permissions():
         x = use.get(tipo)
         return f"{x['n']} {unit}, {x['s']:.0f} s en total ({len(x['files'])} archivos distintos)" if x else "no se usa"
     X = credits()
-    rep = {"{{USO_X}}": u("Gameplay de jugadores (CC BY)"), "{{CREDITOS_X}}": credits_text(X) or "  (no se usa gameplay de terceros)", "{{USO_E}}": u("Extended Look"), "{{USO_L}}": u("Tráiler de lanzamiento"), "{{USO_P}}": u("Vídeo Pre-Load Now"),
-           "{{USO_C}}": f"{u('Vídeo de personaje')}; portada animada: {u('Portada animada')}", "{{USO_S}}": u("Captura oficial"),
+    rep = {"{{USO_X}}": u("Gameplay de terceros"), "{{CREDITOS_X}}": credits_text(X) or "  (no se usa gameplay de terceros)", "{{USO_E}}": u("Extended Look"), "{{USO_L}}": u("Tráiler de lanzamiento"), "{{USO_P}}": u("Vídeo Pre-Load Now"),
+           "{{USO_C}}": u("Vídeo de personaje"), "{{USO_S}}": u("Captura oficial"),
            "{{USO_A}}": u("Ilustración oficial"), "{{USO_U}}": u("Edición Ultimate"), "{{USO_V}}": u("Vintage Vice City"),
            "{{MAX_PLANO}}": f"{stats['max_oficial']:.1f}".replace(".", ",")}
     for a, b in rep.items(): s = s.replace(a, b)
     open(p, "w", encoding="utf-8").write(s)
-    bad = "\n".join(f"  {mmss(a)}-{mmss(b)}  ({a:.1f}-{b:.1f} s)" for a, b in R.BAD)
+    bad = "\n".join(f"  {R.XCAT[v]['autor']} · «{R.XCAT[v]['titulo'][:60]}» ({v}): " + ", ".join(f"{mmss(a)}-{mmss(b)}" for a, b in ab)
+                     for v, ab in R.XBAD.items() if ab)
     open(f"{OUT}/recursos/tramos_excluidos.txt", "w", encoding="utf-8").write(
-        "Tramos del Extended Look que el montaje NO muestra (misiones, escenas de historia, violencia explícita, transiciones con glitch, rótulos).\n"
-        "Si un plano llegara a uno de ellos, el motor vuelve al inicio del plano. Código: engine/videos/gl_render.py (lista BAD).\n\n" + bad + "\n")
+        "Versión 2 · tramos del gameplay de terceros que el montaje NO muestra (rótulos finales, mapa de transición).\n"
+        "Además, cada plano empieza y acaba dentro de una misma toma (cortes de escena detectados) y se revisó a mano: se descartaron\n"
+        "los planos con cuerpos, sangre o desnudos, la cámara de los creadores y los fragmentos de otros juegos que IGN intercala\n"
+        "en su análisis (Red Dead Redemption 2, GTA IV, GTA V, Cyberpunk 2077, GTA: San Andreas).\n"
+        "Código: engine/videos/gp.py (R.XBAD) y engine/videos/gl_render.py (src_window).\n\n" + bad + "\n")
     print("permisos: cifras reales insertadas")
 
 # ---------------------------------------------------------------- guion .docx
@@ -183,7 +187,8 @@ SOURCES = [("Notas (18/11/2026)", ["Metacritic 99 (más de 140 reseñas, ninguna
                                               "Actividades: The National, Output Lag y Vice", "Rendimiento medido: Digital Foundry (vía VGC y LevelUp), Rockstar a Wccftech"]),
            ("Lanzamiento", ["Primeros jugadores: Stuff y NZ Herald (Nueva Zelanda)", "Truco de Nueva Zelanda y riesgo de sanción: Notebookcheck, Newsweek, NME",
                             "Sam Houser: GamesRadar+ · Bolsa y reservas: Forbes · 80 horas: Rob Nelson a Variety"]),
-           ("Imágenes", ["Solo material oficial de Rockstar Games (rockstargames.com/VI/media): Extended Look, tráiler de lanzamiento, capturas, ilustraciones y vídeos de personajes"])]
+           ("Imágenes", ["Gameplay publicado tras el lanzamiento por IGN, Lootward, Sirloin1, Swiss001 y RedArcade (copias públicas en Internet Archive), con crédito en cada plano",
+                         "Algunas capturas, ilustraciones y vídeos de personaje oficiales de Rockstar Games (rockstargames.com/VI/media)"])]
 
 # ---------------------------------------------------------------- publicación (descripción, títulos, SEO)
 TITLES = ["GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado (99 en Metacritic)",
@@ -195,11 +200,12 @@ TAGS = ["GTA 6", "GTA VI", "Grand Theft Auto VI", "GTA 6 reseñas", "GTA 6 revie
         "GTA 6 Nueva Zelanda", "GTA 6 vale la pena", "Leonida", "Vice City", "Sal y Asfalto"]
 KEYWORDS = dict(principal="gta 6 reseñas", secundarias=["gta 6 metacritic", "gta 6 jugabilidad", "gta 6 vale la pena", "gta 6 30 fps", "gta 6 review español",
                                                          "gta 6 atracos", "gta 6 conducción", "gta 6 series s rendimiento"])
-PINNED = ("📌 ¿Ya lo estás jugando o esperas a tu hora? Cuéntanos qué te ha parecido la conducción y el combate 👇 "
-          "Espacio SIN SPOILERS: si comentas algo de la historia, empieza con «SPOILER». Las imágenes de misiones del vídeo están en el capítulo de los atracos, con aviso.")
+PINNED = ("📌 ¿Ya lo estás jugando? ¿Qué es lo primero que has hecho en Leonida? Cuéntanos qué te ha parecido la conducción y el combate 👇 "
+          "Espacio SIN SPOILERS: si comentas algo de la historia, empieza con «SPOILER». Las escenas de misiones del vídeo están en el capítulo de los atracos, con aviso.")
 DISCLOSE = ("ℹ️ Transparencia y derechos\n"
-            "• Imágenes: solo material oficial de Rockstar Games (rockstargames.com/VI/media): Extended Look, tráiler de lanzamiento, capturas, ilustraciones y vídeos de personajes. "
-            "La fuente aparece en pantalla en cada plano. Uso no comercial y con comentario, según la política de Rockstar sobre su material. Vídeo no monetizado. Audio oficial silenciado.\n"
+            "• Imágenes: gameplay grabado y publicado tras el lanzamiento por los creadores de la lista de abajo, usado en fragmentos breves para ilustrar el análisis, "
+            "con el autor en pantalla en cada plano, más algunas capturas y vídeos oficiales de Rockstar Games. Nada del Extended Look ni de los tráileres. "
+            "Vídeo no monetizado. Audio original silenciado. Si eres autor de alguno de estos clips y prefieres que no aparezca, escríbenos y lo cambiamos.\n"
             "• Las opiniones son de los medios citados (reseñas publicadas el 18/11/2026); las frases se muestran traducidas. Nuestra interpretación va marcada en amarillo.\n"
             "• Grand Theft Auto, GTA, Vice City y Leonida son marcas de Take-Two Interactive. Canal independiente, sin relación con Rockstar Games.\n"
             "• Narración con voz sintética (Chatterbox Multilingual, licencia MIT) a partir de una voz de referencia de OpenSLR SLR72 (Google, CC BY-SA 4.0). Música, efectos y gráficos originales.")
@@ -213,10 +219,11 @@ def chapters():
 
 def publication():
     T = tl(); ch = chapters()
-    desc = ("GTA 6 ya se juega, y la crítica ya ha hablado: 99 en Metacritic. Repasamos qué dicen de su JUGABILIDAD los medios que ya lo han jugado "
+    desc = ("GTA 6 ya se ha lanzado en todo el mundo, y la crítica ya ha hablado: 99 en Metacritic. Repasamos qué dicen de su JUGABILIDAD los medios que ya lo han jugado "
             "y los primeros jugadores de Nueva Zelanda: atracos, conducción, policía, combate, realismo, rendimiento a 30 fps e historia (sin spoilers). "
-            "Cada dato lleva su fuente en pantalla y su imagen real del juego (material oficial de Rockstar).\n\n"
-            "⚠️ AVISO: el capítulo de los atracos muestra escenas de misiones del Extended Look oficial. Si no quieres verlas, salta al capítulo siguiente.\n\n"
+            "Cada dato lleva su fuente en pantalla y su imagen de juego real, grabada ya con el juego a la venta.\n\n"
+            "⚠️ AVISO: el capítulo de los atracos muestra escenas de misiones del juego final (un asalto a un banco, la primera misión y otra misión de la historia) "
+            "que no salen en ningún tráiler. Si no quieres verlas, salta al capítulo siguiente.\n\n"
             "CAPÍTULOS\n" + "\n".join(f"{mmss(t)} {n}" for t, n in ch) + "\n\n"
             "FUENTES PRINCIPALES\n"
             "• Bloomberg: «Grand Theft Auto VI Becomes the Best-Reviewed Video Game Ever»: https://www.bloomberg.com/news/articles/2026-11-18/-grand-theft-auto-vi-becomes-the-best-reviewed-video-game-ever\n"
@@ -231,6 +238,7 @@ def publication():
             "• NZ Herald (primeros jugadores): https://www.nzherald.co.nz/world/gta-6-hits-new-zealand-kiwi-gamers-first-in-the-world-to-play-as-global-launch-begins-in-nz/JAYVNPFB45DPRJPHDWIIQNS6NQ/\n"
             "• Material oficial: https://www.rockstargames.com/VI/media\n"
             "Lista completa: FUENTES_Y_ENLACES.txt (proyecto del canal).\n\n"
+            "GAMEPLAY (créditos, por orden de uso)\n" + credits_text(credits(), short=True) + "\n\n"
             + DISCLOSE + "\n\n#GTA6 #GTAVI #ViceCity")
     open(f"{OUT}/DESCRIPCION_YOUTUBE.txt", "w", encoding="utf-8").write(desc)
     st = json.load(open(f"{OUT}/recursos/sincronia.json"))
@@ -247,7 +255,8 @@ def publication():
          "- **Contenido para niños:** No. **Restricción de edad:** no hace falta (no hay violencia explícita), pero el juego es para mayores de 18 años.",
          "- **Pantalla final (últimos 20 s):** un vídeo recomendado (sugerido: VIDEO_04, el mapa) y la lista «GTA VI explicado».",
          "- **Publicación sugerida:** cuanto antes, jueves 19/11/2026 (día del lanzamiento en América y Europa). Las notas citadas son del 18/11: si cambian, actualiza la descripción.",
-         "- **Si llega una reclamación de Content ID de Rockstar:** no la dispute. Es su material y el vídeo no se monetiza.", "",
+         "- **Si llega una reclamación de Content ID (Rockstar o IGN):** no la dispute. Es su material y el vídeo no se monetiza.",
+         "- **Si un autor pide retirar su clip:** sustituya sus planos en `engine/videos/gp.py` y vuelva a montar (ver `REGISTRO_DE_PERMISOS.txt`).", "",
          "## Control de calidad", "", f"- Sincronía imagen ↔ palabra: {st['sincronizados']}/{st['anclados']} cortes a menos de 0,10 s ({st['pct']:.1f} %).",
          "- Coincidencia guion ↔ voz: ver `recursos/control_de_voz.csv` y `AUDITORIA_FINAL.md`.", ""]
     open(f"{OUT}/PUBLICACION_YOUTUBE.md", "w", encoding="utf-8").write("\n".join(L))
@@ -258,6 +267,8 @@ def visuals():
     import skia, gfx
     T = tl(); C = ctx(); TB = R.table(C); groups = build.group_scenes(V, T); info = build.SceneInfo(groups[0])
     d = os.path.join(OUT, "RECURSOS_VISUALES"); os.makedirs(d, exist_ok=True)
+    import glob
+    for old in glob.glob(f"{d}/*_grafico_*"): os.remove(old)     # la lista de gráficos cambia entre versiones
     n = 0; seen = set()
     for s in TB["shots"]:
         k, v = s["src"].split(":", 1)
@@ -266,7 +277,7 @@ def visuals():
         tt = s["t0"] + min(1.6, (s["t1"] - s["t0"]) * 0.8)
         surf = gfx.new_surface(1920, 1080); c = surf.getCanvas(); c.clear(skia.ColorBLACK)
         R.scene(c, tt - info.start, info, C); R.overlay(c, tt, C)
-        surf.makeImageSnapshot().save(f"{d}/{n + 1:02d}_grafico_{v}{'_' + str(s['step']) if s.get('step') not in (None, 0) else ''}.png", skia.kPNG); n += 1
+        surf.makeImageSnapshot().save(f"{d}/{n + 1:02d}_grafico_{v}{'_' + str(s['step']) if s.get('step') not in (None, 0) else ''}.jpg", skia.kJPEG, 90); n += 1
     shutil.copy(f"{OUT}/MINIATURA.png", f"{d}/00_miniatura.png")
     # índice de material oficial usado
     rows = list(csv.DictReader(open(f"{OUT}/recursos/registro_de_planos.csv", encoding="utf-8"), delimiter=";"))
@@ -276,16 +287,17 @@ def visuals():
         key = (r["tipo"], r["recurso"]); idx.setdefault(key, []).append(f"{mmss(float(r['inicio']))}" + (f" (orig. {r['minuto_en_el_original']})" if r["minuto_en_el_original"] else ""))
     ZIP = {"Captura oficial": "GTAVI_Screenshots.zip", "Edición Ultimate": "GTAVI_Ultimate_Edition_Benefits.zip", "Vintage Vice City": "GTAVI_Vintage_Vice_City_Pack.zip",
            "Ilustración oficial": "GTAVI_Artwork_Wallpapers.zip", "Vídeo de personaje": "GTAVI_Videos.zip", "Portada animada": "GTAVI_Official_Cover_Art_Landscape.mp4",
-           "Extended Look": "GTAVI_An_Extended_Look.mp4", "Tráiler de lanzamiento": "GTAVI_Launch_Trailer.mp4", "Vídeo Pre-Load Now": "GTAVI_Pre-Load_Now.mp4"}
+           "Extended Look": "GTAVI_An_Extended_Look.mp4", "Tráiler de lanzamiento": "GTAVI_Launch_Trailer.mp4", "Vídeo Pre-Load Now": "GTAVI_Pre-Load_Now.mp4",
+           "Gameplay de terceros": "copia pública en Internet Archive (ver FUENTES_Y_ENLACES.txt)"}
     with open(f"{d}/indice_material_oficial.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter=";"); w.writerow(["tipo", "archivo_oficial", "paquete_de_descarga", "aparece_en_el_video (mm:ss)"])
         for (tp, rec), ts in sorted(idx.items()): w.writerow([tp, rec, ZIP.get(tp, ""), ", ".join(ts)])
     open(f"{d}/LEEME.txt", "w", encoding="utf-8").write(
         "RECURSOS VISUALES · GTA6_VIDEO_LANZAMIENTO\n\n"
-        f"1. {n} gráficos propios del vídeo en PNG 1920×1080, exportados desde el motor (títulos, línea de tiempo, mapa, ediciones…).\n"
-        "   Son diseño original de Sal y Asfalto; los que incluyen imágenes oficiales las citan en pantalla.\n"
+        f"1. {n} gráficos propios del vídeo en JPG 1920×1080, exportados desde el motor (títulos, notas, rendimiento, avisos de spoiler…).\n"
+        "   Son diseño original de Sal y Asfalto; los que llevan imágenes del juego citan su fuente en pantalla.\n"
         "2. 00_miniatura.png: la miniatura, con la captura oficial «Jason_and_Lucia_09», sin logotipo ni spoilers.\n"
-        "3. indice_material_oficial.csv: cada archivo oficial de Rockstar usado, el paquete de descarga en el que viene y los momentos del vídeo en que aparece.\n"
+        "3. indice_material_oficial.csv: cada archivo oficial de Rockstar y cada vídeo de gameplay de terceros usado, de dónde sale y los momentos del vídeo en que aparece.\n"
         "   Los archivos oficiales no se copian aquí: se descargan de https://www.rockstargames.com/VI/media (enlaces directos en FUENTES_Y_ENLACES.txt).\n"
         "   Así no se redistribuyen fuera de la página oficial y siempre se usa la versión vigente.\n"
         "4. ../recursos/hoja_de_contactos.jpg: un fotograma cada 5 s del vídeo final, para revisar el montaje de un vistazo.\n"
