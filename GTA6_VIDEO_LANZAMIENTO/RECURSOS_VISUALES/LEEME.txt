@@ -1,0 +1,10 @@
+RECURSOS VISUALES · GTA6_VIDEO_LANZAMIENTO
+
+1. 51 gráficos propios del vídeo en JPG 1920×1080 (calidad 92), exportados desde el motor (títulos, línea de tiempo, mapa, ediciones…).
+   Son diseño original de Sal y Asfalto; los que incluyen imágenes oficiales las citan en pantalla.
+2. 00_miniatura.png: la miniatura, con la captura oficial «Jason_and_Lucia_09», sin logotipo ni spoilers.
+3. indice_material_oficial.csv: cada archivo oficial de Rockstar usado, el paquete de descarga en el que viene y los momentos del vídeo en que aparece.
+   Los archivos oficiales no se copian aquí: se descargan de https://www.rockstargames.com/VI/media (enlaces directos en FUENTES_Y_ENLACES.txt).
+   Así no se redistribuyen fuera de la página oficial y siempre se usa la versión vigente.
+4. ../recursos/hoja_de_contactos.jpg: un fotograma cada 5 s del vídeo final, para revisar el montaje de un vistazo.
+5. ../recursos/registro_de_planos.csv: los planos uno a uno (inicio, palabra que lo motiva, desfase, archivo y minuto original).

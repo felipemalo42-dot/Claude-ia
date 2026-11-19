@@ -58,5 +58,5 @@ Está en `DESCRIPCION_YOUTUBE.txt` (lista para copiar y pegar, con capítulos y 
 
 ## Control de calidad
 
-- Sincronía imagen ↔ palabra: 145/145 cortes a menos de 0,10 s (100.0 %).
+- Sincronía imagen ↔ palabra: 154/154 cortes a menos de 0,10 s (100.0 %).
 - Coincidencia guion ↔ voz: ver `recursos/control_de_voz.csv` y `AUDITORIA_FINAL.md`.

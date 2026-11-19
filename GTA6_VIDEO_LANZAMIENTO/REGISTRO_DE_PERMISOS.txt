@@ -26,7 +26,7 @@ CONCLUSIÓN (léela antes de publicar)
    - el audio oficial va silenciado: los tráileres llevan música con licencia de terceros;
    - la fuente aparece en pantalla en cada plano, con el minuto exacto en los vídeos;
    - el comentario es propio y está pegado a la imagen: cada plano ilustra una frase concreta de la narración;
-   - nunca se resube un vídeo oficial entero: el plano más largo de material oficial dura {{MAX_PLANO}} s;
+   - nunca se resube un vídeo oficial entero: el plano más largo de material oficial dura 6,7 s;
    - las escenas de misiones (el atraco y la infiltración del Extended Look) solo aparecen en el capítulo 4.
      Ese capítulo va precedido de un cartel de aviso con el minuto para saltarlo, y lleva un rótulo de spoiler permanente.
      Ninguna aparece en el título ni en la miniatura;
@@ -59,7 +59,7 @@ A1. «Grand Theft Auto VI: An Extended Look» (estrenado en Netflix el 27/08/202
     Autorización: política pública + declaración pública. No hay permiso individual por escrito.
     Atribución: en pantalla, en cada plano: «Rockstar Games · An Extended Look · mm:ss».
     Limitaciones de monetización: no monetizar sin licencia escrita.
-    Uso en este vídeo: {{USO_E}}
+    Uso en este vídeo: 82 planos, 238 s en total (1 archivo)
       Tramos de vida cotidiana, conducción, actividades y paisaje. Con aviso de spoiler (capítulo 4), además:
         - el atraco (11:28-16:40);
         - la infiltración (20:43-24:20).
@@ -71,49 +71,44 @@ A2. Tráiler de lanzamiento (15/10/2026)
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Launch_Trailer/GTAVI_Launch_Trailer.mp4
     Contiene música de terceros con licencia («Flower in a Hurricane», Justice con Tame Impala, SZA y King Gizzard & The Lizard Wizard).
     Licencia comercial: NO · Reutilización: permitida sin fines comerciales (política) · Atribución: en pantalla con el minuto.
-    Uso en este vídeo: {{USO_L}}
-      Solo planos de paisaje y vehículos, sin rótulos de reserva.
-    Audio: silenciado, también para evitar reclamaciones por la música.
+    Uso en este vídeo: no se usa (en esta versión post lanzamiento no hizo falta).
     Decisión: VERDE para este uso no comercial · ROJO para uso comercial.
 
 A3. Vídeo «Pre-Load Now» (10/11/2026)
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Pre-Load_Now/GTAVI_Pre-Load_Now.mp4
     Condiciones iguales a las de A2.
-    Uso: {{USO_P}}
-    Audio silenciado.
+    Uso: no se usa en esta versión.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A4. Vídeos oficiales de personajes (8) y portada animada
     Archivos oficiales:
       https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Videos.zip
       https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Official_Cover_Art_Landscape/GTAVI_Official_Cover_Art_Landscape.mp4
-    Uso: {{USO_C}}
+    Uso: 3 planos, 7 s en total (3 archivos distintos); portada animada: 1 planos, 4 s en total (1 archivo)
       Los vídeos de personaje duran entre 1 y 1,5 s y se repiten en bucle mientras se presenta a cada personaje.
     Audio silenciado.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A5. Capturas oficiales (138 imágenes: personas y lugares)
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Screenshots.zip
-    Uso: {{USO_S}}
+    Uso: 38 planos, 111 s en total (32 archivos distintos)
     Atribución: en pantalla, con el nombre del archivo oficial.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A6. Ilustraciones, fondos y postales oficiales (incluidas la portada y la del álbum)
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/GTAVI_Artwork_Wallpapers.zip
-    Uso: {{USO_A}}
-    Se usan las versiones SIN logotipo. La miniatura lleva la ilustración «Jason_and_Lucia_01» sin logotipo.
+    Uso: 6 planos, 16 s en total (3 archivos distintos)
+    Se usan las versiones SIN logotipo. La miniatura lleva la captura oficial «Jason_and_Lucia_09» (sin logotipo ni spoilers).
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A7. Imágenes de la edición Ultimate
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Ultimate_Edition_Benefits.zip
-    Uso: {{USO_U}}
-    Todas van rotuladas «EXCLUSIVO EDICIÓN ULTIMATE» para no dar a entender que vienen en la edición estándar.
+    Uso: no se usa en esta versión.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A8. Paquete «Vintage Vice City» (bono por reservar)
     Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Vintage_Vice_City_Pack.zip
-    Uso: {{USO_V}}
-    Rotulado «BONO POR RESERVAR».
+    Uso: no se usa en esta versión.
     Decisión: VERDE (no comercial) · ROJO (comercial).
 
 A9. Logotipos y marcas (GTA VI, Rockstar Games)

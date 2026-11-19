@@ -8,7 +8,8 @@ Generado automáticamente. Tamaños aproximados.
 |---|---|
 | `ESTRATEGIA_LANZAMIENTO.md` | 5.1 KB |
 | `INFORME_INVESTIGACION.md` | 22.0 KB |
-| `INVENTARIO.md` | 6.7 KB |
+| `INVENTARIO.md` | 13.0 KB |
+| `PLANTILLA_PERMISO_STREAMERS.md` | 2.2 KB |
 | `POLITICAS_Y_DERECHOS.md` | 10.3 KB |
 
 ## CANAL_IDENTIDAD
@@ -23,6 +24,86 @@ Generado automáticamente. Tamaños aproximados.
 | `marca_de_agua_150x150.png` | 13.0 KB |
 | `paleta.png` | 57.8 KB |
 | `tipografia.png` | 72.9 KB |
+
+## GTA6_VIDEO_LANZAMIENTO
+
+| Archivo | Tamaño |
+|---|---|
+| `AUDITORIA_FINAL.md` | 5.5 KB |
+| `DESCRIPCION_YOUTUBE.txt` | 3.4 KB |
+| `FUENTES_Y_ENLACES.txt` | 10.9 KB |
+| `GUION_COMPLETO.docx` | 28.3 KB |
+| `INVESTIGACION_Y_CONCEPTO.md` | 3.9 KB |
+| `MINIATURA.png` | 871.7 KB |
+| `NARRACION.mp3` | 12.7 MB |
+| `PUBLICACION_YOUTUBE.md` | 3.5 KB |
+| `REGISTRO_DE_PERMISOS.txt` | 13.3 KB |
+| `SUBTITULOS.srt` | 15.5 KB |
+| `VIDEO_FINAL.mp4` | 87.8 MB |
+| `RECURSOS_VISUALES/00_miniatura.png` | 871.7 KB |
+| `RECURSOS_VISUALES/01_grafico_nz.jpg` | 350.8 KB |
+| `RECURSOS_VISUALES/02_grafico_meta.jpg` | 308.6 KB |
+| `RECURSOS_VISUALES/03_grafico_fps.jpg` | 356.4 KB |
+| `RECURSOS_VISUALES/04_grafico_title2.jpg` | 280.9 KB |
+| `RECURSOS_VISUALES/05_grafico_media.jpg` | 468.3 KB |
+| `RECURSOS_VISUALES/06_grafico_outlets.jpg` | 192.3 KB |
+| `RECURSOS_VISUALES/07_grafico_spoiler.jpg` | 193.8 KB |
+| `RECURSOS_VISUALES/08_grafico_meta_1.jpg` | 330.7 KB |
+| `RECURSOS_VISUALES/09_grafico_meta_2.jpg` | 338.0 KB |
+| `RECURSOS_VISUALES/10_grafico_meta_3.jpg` | 352.6 KB |
+| `RECURSOS_VISUALES/11_grafico_meta_4.jpg` | 364.4 KB |
+| `RECURSOS_VISUALES/12_grafico_quote.jpg` | 343.7 KB |
+| `RECURSOS_VISUALES/13_grafico_nz_1.jpg` | 331.3 KB |
+| `RECURSOS_VISUALES/14_grafico_nz_2.jpg` | 332.8 KB |
+| `RECURSOS_VISUALES/15_grafico_warn.jpg` | 349.5 KB |
+| `RECURSOS_VISUALES/16_grafico_postcards.jpg` | 361.0 KB |
+| `RECURSOS_VISUALES/17_grafico_map.jpg` | 187.6 KB |
+| `RECURSOS_VISUALES/18_grafico_drone.jpg` | 433.4 KB |
+| `RECURSOS_VISUALES/19_grafico_spoiler_1.jpg` | 218.1 KB |
+| `RECURSOS_VISUALES/20_grafico_el_card.jpg` | 339.4 KB |
+| `RECURSOS_VISUALES/21_grafico_spoiler_2.jpg` | 234.3 KB |
+| `RECURSOS_VISUALES/22_grafico_spoiler_end.jpg` | 251.4 KB |
+| `RECURSOS_VISUALES/23_grafico_realism.jpg` | 365.9 KB |
+| `RECURSOS_VISUALES/24_grafico_realism_1.jpg` | 349.6 KB |
+| `RECURSOS_VISUALES/25_grafico_police.jpg` | 277.7 KB |
+| `RECURSOS_VISUALES/26_grafico_police_1.jpg` | 288.6 KB |
+| `RECURSOS_VISUALES/27_grafico_poll2.jpg` | 298.7 KB |
+| `RECURSOS_VISUALES/28_grafico_fps.jpg` | 364.7 KB |
+| `RECURSOS_VISUALES/29_grafico_fps_1.jpg` | 374.0 KB |
+| `RECURSOS_VISUALES/30_grafico_fps_2.jpg` | 385.3 KB |
+| `RECURSOS_VISUALES/31_grafico_df.jpg` | 309.9 KB |
+| `RECURSOS_VISUALES/32_grafico_df_1.jpg` | 316.8 KB |
+| `RECURSOS_VISUALES/33_grafico_df_2.jpg` | 320.0 KB |
+| `RECURSOS_VISUALES/34_grafico_dfps.jpg` | 319.1 KB |
+| `RECURSOS_VISUALES/35_grafico_dfps_1.jpg` | 327.2 KB |
+| `RECURSOS_VISUALES/36_grafico_dfps_2.jpg` | 333.3 KB |
+| `RECURSOS_VISUALES/37_grafico_dfps_3.jpg` | 333.1 KB |
+| `RECURSOS_VISUALES/38_grafico_meta_5.jpg` | 370.6 KB |
+| `RECURSOS_VISUALES/39_grafico_hours.jpg` | 207.1 KB |
+| `RECURSOS_VISUALES/40_grafico_houser.jpg` | 336.5 KB |
+| `RECURSOS_VISUALES/41_grafico_stock.jpg` | 318.1 KB |
+| `RECURSOS_VISUALES/42_grafico_stock_1.jpg` | 310.5 KB |
+| `RECURSOS_VISUALES/43_grafico_stream.jpg` | 366.9 KB |
+| `RECURSOS_VISUALES/44_grafico_stream_1.jpg` | 370.5 KB |
+| `RECURSOS_VISUALES/45_grafico_stream_2.jpg` | 371.7 KB |
+| `RECURSOS_VISUALES/46_grafico_bugs.jpg` | 265.2 KB |
+| `RECURSOS_VISUALES/47_grafico_bugs_1.jpg` | 295.1 KB |
+| `RECURSOS_VISUALES/48_grafico_psn.jpg` | 367.3 KB |
+| `RECURSOS_VISUALES/49_grafico_poll3.jpg` | 299.4 KB |
+| `RECURSOS_VISUALES/50_grafico_nospoil2.jpg` | 361.4 KB |
+| `RECURSOS_VISUALES/51_grafico_subscribe.jpg` | 389.7 KB |
+| `RECURSOS_VISUALES/LEEME.txt` | 1.0 KB |
+| `RECURSOS_VISUALES/indice_material_oficial.csv` | 4.3 KB |
+| `recursos/control_de_voz.csv` | 21.1 KB |
+| `recursos/guion_con_tiempos.txt` | 12.7 KB |
+| `recursos/hoja_de_contactos.jpg` | 1.8 MB |
+| `recursos/musica_original.mp3` | 20.3 MB |
+| `recursos/narracion_original.flac` | 20.8 MB |
+| `recursos/registro_de_planos.csv` | 16.1 KB |
+| `recursos/sincronia.json` | 147 B |
+| `recursos/timeline.json` | 129.7 KB |
+| `recursos/tramos_excluidos.txt` | 1.2 KB |
+| `recursos/uso_por_material.json` | 1.2 KB |
 
 ## VIDEO_01
 
@@ -288,4 +369,4 @@ Generado automáticamente. Tamaños aproximados.
 
 ## engine
 
-Código fuente del motor (68 archivos: módulos Python, referencias de voz, tipografías OFL/Apache y datos de Natural Earth). Ver `engine/README.md`.
+Código fuente del motor (59 archivos: módulos Python, referencias de voz, tipografías OFL/Apache y datos de Natural Earth). Ver `engine/README.md`.

@@ -288,15 +288,6 @@ def clean():
         shutil.rmtree(fr)
     print("limpieza lista")
 
-if __name__ == "__main__":
-    args = set(sys.argv[1:]) or {"--log", "--docx", "--pub", "--visuals", "--clean"}
-    if "--clean" in args: clean()
-    if "--log" in args: permissions()
-    if "--pub" in args: publication()
-    if "--docx" in args: docx()
-    if "--visuals" in args: visuals()
-    if "--audit" in args: audit()
-
 # ---------------------------------------------------------------- auditoría final con cifras medidas sobre el MP4
 def audit():
     import statistics
@@ -328,3 +319,12 @@ def audit():
          f"| Planos | {st['planos']} (media {st['dur_media']:.1f} s por plano) |", ""]
     open(f"{OUT}/recursos/_auditoria_cifras.md", "w", encoding="utf-8").write("\n".join(L) + "\n")
     print("\n".join(L)); print("tomas por debajo de 99,5 %:", [(r["inicio_s"], r["coincidencia"]) for r in low])
+
+if __name__ == "__main__":
+    args = set(sys.argv[1:]) or {"--log", "--docx", "--pub", "--visuals", "--clean"}
+    if "--clean" in args: clean()
+    if "--log" in args: permissions()
+    if "--pub" in args: publication()
+    if "--docx" in args: docx()
+    if "--visuals" in args: visuals()
+    if "--audit" in args: audit()

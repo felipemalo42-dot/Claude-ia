@@ -32,7 +32,7 @@ En los 10 videos y en VIDEO_EXTRA todo el material audiovisual es **original**: 
 | 09 | 7 misterios que se resuelven el jueves | Largo | 3:03 | ✅ **Terminado** | mié 18 · 21:00 |
 | 10 | Abrimos los 7 sobres: lo comprobamos jugando | Largo (post-lanzamiento) | estimada 8-10 min | 🟡 **Preproducción**: faltan capturas propias y veredictos. El MP4 incluido es un **animático rotulado "NO PUBLICAR"** | lun 23 · 19:00 |
 | EXTRA | ¿Por qué Vice City es rosa? La historia real de sus colores | Largo 16:9 · producción especial | 9:29 | ✅ **Terminado**. Coincidencia guion ↔ voz: 99,97 % | **mié 18 · 20:00** (antes del lanzamiento: el guion dice «mañana») |
-| LANZAMIENTO | GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado | Largo 16:9 · reseñas + gameplay oficial | 11:05 | 🟡 **En render** (voz lista: 99,66 %; sincronía imagen ↔ palabra: 100 %). **Sin monetizar** | **jue 19**, cuanto antes |
+| LANZAMIENTO | GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado | Largo 16:9 · reseñas + gameplay oficial | 11:05 | ✅ **Terminado**. Voz: 99,66 %. Sincronía imagen ↔ palabra: 154/154 cortes. **Sin monetizar** | **jue 19**, cuanto antes |
 
 **Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada entre −14,1 y −14,5 LUFS.
 
