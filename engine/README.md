@@ -107,3 +107,22 @@ Material de entrada (no incluido en el repositorio). Las rutas se fijan con esta
 
 Mejora general del motor: `--jobs N` ahora une los segmentos como H.264 en bruto (`cat`). Así no se pierde ningún fotograma entre partes, como pasaba con el `concat` de MP4.
 Con `final_codec="av1"` y `target_mb`, el módulo comprime al final en AV1 de 10 bits con un tamaño objetivo.
+
+## SHORT_01 y SHORT_02 (Shorts verticales con gameplay de terceros)
+```bash
+cd engine
+python build.py s01 --stage audio && python build.py s01 --stage thumb && python build.py s01 --stage video --jobs 4
+python sh_package.py s01            # guion, fuentes y permisos fragmento a fragmento, descripción y control de calidad (con fluidez)
+```
+| Archivo | Función |
+|---|---|
+| `videos/s01.py`, `videos/s02.py` | Guion y planos de cada Short, con su aspecto propio (retransmisión de lucha / expediente de misterio) |
+| `videos/sh_render.py` | Motor vertical: recorte de la zona limpia, encuadre desde la copia 4K, golpes de zoom, subtítulos cinéticos y de máquina de escribir |
+| `sh_package.py` | Empaquetado y control de calidad de cada Short |
+
+**Fluidez (corregido el 19/11/2026):**
+- la fuente se lee a su ritmo real; si un archivo repite fotogramas (juego a 30 fps guardado a 60), se lee a 30 (`EFF_FPS`);
+- la cámara lenta mezcla dos fotogramas consecutivos, así que el movimiento no da saltos;
+- un plano nunca vuelve a empezar: si su tramo se acaba, se mantiene el último fotograma (y el control de calidad avisa);
+- `cont=True` encadena un plano con el anterior de la misma fuente, sin repetir imagen;
+- el vídeo vertical del perro (SHORT_02) se procesó antes con `mpdecimate` + `minterpolate` para tener 60 fps reales (comando en `videos/s02.py`).

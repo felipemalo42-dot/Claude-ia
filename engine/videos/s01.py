@@ -17,7 +17,8 @@ from videos import gl_render as G, sh_render as SR
 V1 = "fIWUHYFBmrI"
 def X(t): return f"x:{V1}@{t}"
 G.XBAD[V1] = [(0.0, 4.9), (11.5, 16.3), (19.4, 27.9), (146.8, 150.0)]     # rótulos del autor, cortinilla de título y cierre de IGN
-G.MANUAL_CUTS[V1] = [90.0, 91.0, 105.0, 106.0, 114.0, 117.0, 120.0, 123.0, 125.0, 126.8]
+SR.EFF_FPS[V1] = 30          # la guía de IGN es juego a 30 fps guardado a 60: la mitad de los fotogramas son copias (medido)
+G.MANUAL_CUTS[V1] = [91.0, 105.0, 106.0, 114.0, 117.0, 123.2, 125.45, 126.2, 126.85]   # medidos a 0,2 s
 RED, GOLD, INK = "#E10600", "#FFD23F", "#0B0B0F"
 
 B = []
@@ -29,19 +30,19 @@ def scene(c, t, info, ctx): return _scene(c, t, info, ctx)
 # ================================================================ GUION Y PLANOS
 beat("En GTA 6 hay un combate de lucha libre escondido en un patio. Y un solo error te mata.",
      mus=("trap26", 2), exag=0.75, pre=0.15, round=None,
-     shots=[S(None, X(110.6), cx=0.44, cy=0.45, z=(1.18, 1.0), speed=0.6, flash=True),
-            S("lucha libre", X(96.6), cx=0.47, z=(1.05, 1.15), shake=16),
+     shots=[S(None, X(110.6), cx=0.44, cy=0.45, z=(1.18, 1.0), speed=0.8, flash=True),
+            S("lucha libre", X(96.6), cx=0.47, z=(1.05, 1.15), punch=0.06),
             S("escondido en un patio", X(72.6), cx=0.42, z=(1.0, 1.08)),
-            S("un solo error", X(112.75), cx=0.45, cy=0.42, speed=0.5, minwin=0.25),
-            S("te mata", X(113.6), cx=0.42, cy=0.45, freeze=0.05, minwin=0.05, cf="bw", big=("UN ERROR", "= MUERTO"), shake=10)],
+            S("un solo error", X(112.2), cx=0.45, cy=0.42),
+            S("te mata", X(113.6), cx=0.42, cy=0.45, freeze=0.05, minwin=0.05, cf="bw", big=("UN ERROR", "= MUERTO"), punch=0.05)],
      sfx=[(0.0, "ding", 0.55), ("w:lucha", "hit", 0.4), ("w:te mata", "hit", 0.55)])
 beat("Cruza el puente hasta Hamlet y busca esta casa: detrás está el ring de Backyard American Mania.",
      mus=("trap26", 1), exag=0.7, pre=0.25, round=(1, "EL LUGAR"),
      shots=[S(None, X(31.0), cx=0.56, z=(1.0, 1.12)),
             S("Hamlet", X(35.2), cx=0.55, z=(1.05, 1.2), tag=("HAMLET", 0.5, 0.47)),
             S("esta casa", X(28.3), cx=0.4, z=(1.0, 1.08)),
-            S("el ring", X(74.0), cx=0.42, z=(1.0, 1.1)),
-            S("Backyard American Mania", X(90.1), cx=0.24, z=(1.0, 1.1), big=("BACKYARD", "AMERICAN MANIA"))],
+            S("el ring", X(75.0), cx=0.42, z=(1.0, 1.1)),
+            S("Backyard American Mania", X(90.3), cx=0.3, z=(1.0, 1.1), speed=0.84, nocut=True, big=("BACKYARD", "AMERICAN MANIA"))],
      sfx=[(0.0, "whoosh", 0.5), ("w:Hamlet", "pop", 0.4), ("w:Backyard", "hit", 0.35)])
 beat("Antes de subir: guarda la partida, compra barritas de proteína para aguantar, y llévate la carta de las gradas. Se vende en las casas de empeño.",
      mus=("trap26", 1), exag=0.7, pre=0.25, round=(2, "LA PREPARACIÓN"),
@@ -49,47 +50,48 @@ beat("Antes de subir: guarda la partida, compra barritas de proteína para aguan
             S("guarda la partida", "g:save"),
             S("barritas de proteína", X(55.6), cx=0.5, z=(1.05, 1.2), label="+ RESISTENCIA"),
             S("para aguantar", X(61.0), cx=0.36, z=(1.0, 1.1)),
-            S("la carta", X(67.4), cx=0.46, z=(1.0, 1.08)),
-            S("casas de empeño", X(70.0), cx=0.4, cy=0.5, z=(1.15, 1.3), label="SE VENDE EN CASAS DE EMPEÑO")],
+            S("la carta", X(69.42), cx=0.46, z=(1.0, 1.12), speed=0.5),
+            S("casas de empeño", X(69.42), cont=True, cx=0.4, cy=0.5, z=(1.15, 1.3), label="SE VENDE EN CASAS DE EMPEÑO")],
      sfx=[("w:guarda", "pop", 0.4), ("w:barritas", "pop", 0.35), ("w:la carta", "pop", 0.35)])
 beat("Toca la caravana. A la primera te echa; puedes tirarle latas solo por diversión. A la segunda, sale él: The Gentrifier.",
      mus=("trap26", 2), exag=0.75, pre=0.25, round=(3, "EL COMBATE"),
-     shots=[S(None, X(78.6), cx=0.5, z=(1.0, 1.08)),
-            S("A la primera", X(80.6), cx=0.5, z=(1.1, 1.2), label="1ª VEZ: TE ECHA"),
+     shots=[S(None, X(78.0), cx=0.5, z=(1.0, 1.08)),
+            S("A la primera", X(78.0), cont=True, cx=0.5, z=(1.1, 1.2), label="1ª VEZ: TE ECHA"),
             S("tirarle latas", X(86.0), cx=0.44, z=(1.0, 1.1)),
-            S("A la segunda", X(94.2), cx=0.36, z=(1.0, 1.1), shake=10),
+            S("A la segunda", X(94.2), cx=0.36, z=(1.0, 1.1), punch=0.04),
             S("sale él", X(94.97), cx=0.55, z=(1.12, 1.0), flash=True, minwin=0.3),
             S("The Gentrifier", "g:vs")],
      sfx=[("w:Toca", "tick", 0.4), ("w:latas", "pop", 0.35), ("w:sale", "ding", 0.6), ("w:The Gentrifier", "hit", 0.5)])
 beat("Machaca el botón para soltarte de sus llaves. Y cuando suba a la tercera cuerda, esquiva su salto: si te cae encima, estás muerto.",
      mus=("trap26", 2), exag=0.8, pre=0.2, round=(3, "EL COMBATE"),
-     shots=[S(None, X(97.0), cx=0.46, z=(1.05, 1.15), shake=12, mash=True),
-            S("sus llaves", X(48.8), cx=0.4, z=(1.0, 1.1), shake=18),
-            S("la tercera cuerda", X(110.0), cx=0.45, cy=0.42, z=(1.0, 1.18)),
+     shots=[S(None, X(97.0), cx=0.46, z=(1.05, 1.15), punch=0.04, mash=True),
+            S("sus llaves", X(48.8), cx=0.4, z=(1.0, 1.1), punch=0.06),
+            S("la tercera cuerda", X(102.4), cx=0.45, cy=0.42, z=(1.0, 1.18)),
             S("esquiva su salto", X(106.3), cx=0.42, z=(1.0, 1.1), label="¡RUEDA!"),
-            S("si te cae encima", X(112.85), cx=0.45, cy=0.4, speed=0.45, minwin=0.25),
+            S("si te cae encima", X(112.1), cx=0.45, cy=0.4),
             S("estás muerto", X(113.2), cx=0.45, cy=0.35, freeze=0.0, minwin=0.05, cf="bw", big=("SI TE CAE ENCIMA:", "ESTÁS MUERTO"))],
      sfx=[(0.0, "hit", 0.4), ("w:sus llaves", "hit", 0.45), ("w:esquiva", "whoosh", 0.45), ("w:estás muerto", "stamp", 0.6)])
 beat("Si falla, ahora subes tú… y se acabó.",
      mus=("trap26", 2), exag=0.85, pre=0.15, round=(3, "EL COMBATE"),
-     shots=[S(None, X(114.15), cx=0.46, z=(1.1, 1.0), shake=24, flash=True),
+     shots=[S(None, X(114.15), cx=0.46, z=(1.1, 1.0), punch=0.07, flash=True),
             S("subes tú", X(117.55), cx=0.45, z=(1.0, 1.15)),
-            S("se acabó", X(120.5), cx=0.45, z=(1.1, 1.0), shake=26, flash=True)],
+            S("se acabó", X(120.25), cx=0.45, z=(1.1, 1.0), punch=0.08, flash=True)],
      sfx=[(0.0, "hit", 0.6), ("w:se acabó", "hit", 0.7)])
 beat("¿El premio? En su caravana: adrenalina y una máscara de luchador para tapar tu cara en los golpes.",
      mus=("trap26", 1), exag=0.7, pre=0.3, round=(4, "EL PREMIO"),
-     shots=[S(None, X(125.05), cx=0.5, z=(1.0, 1.08), minwin=0.3),
-            S("adrenalina", X(124.0), cx=0.5, cy=0.55, z=(1.2, 1.35), label="ADRENALINA"),
-            S("una máscara", X(127.6), cx=0.48, z=(1.0, 1.12), label="MÁSCARA DE LUCHADOR"),
+     shots=[S(None, X(120.25), cont=True, cx=0.45, z=(1.0, 1.08)),
+            S("En su caravana", X(123.3), cx=0.5, z=(1.0, 1.08)),
+            S("adrenalina", X(123.3), cont=True, cx=0.5, cy=0.55, z=(1.2, 1.35), label="ADRENALINA"),
+            S("una máscara", X(127.42), cx=0.48, z=(1.0, 1.12), label="MÁSCARA DE LUCHADOR"),
             S("tapar tu cara", X(129.9), cx=0.88, cy=0.4, z=(1.3, 1.45))],
      sfx=[("w:premio", "ding", 0.5), ("w:máscara", "pop", 0.4)])
 beat("¿Te subes al ring?",
      mus=("trap26", 2), exag=0.75, pre=0.25, round=None, hold=0.6,
-     shots=[S(None, X(110.9), cx=0.44, cy=0.45, z=(1.0, 1.15), flash=True)],
+     shots=[S(None, X(110.0), cx=0.44, cy=0.45, z=(1.0, 1.15), flash=True)],
      sfx=[(0.0, "ding", 0.6)])
 
 # ================================================================ ESCENA
-CF = {"bw": SR.color_matrix(sat=0.0, contrast=1.25, bright=-0.05)}
+CF = {"bw": SR.color_matrix(sat=0.0, contrast=1.15, bright=0.07)}
 
 def _still(t, size=(1080, 960), cx=0.5, cy=0.5):
     """Fotograma del gameplay como imagen (para la tarjeta VS y la portada)."""

@@ -16,7 +16,11 @@ from videos import gl_render as G, sh_render as SR
 
 V2 = "CuGNTq2mFIk"
 def X(t): return f"x:{V2}@{t}"
-SR.SRC_CROP[V2] = (0, 466, 880, 822)          # zona limpia: sin el título (arriba), el subtítulo (abajo) ni el logotipo (derecha)
+# Fuente: la banda limpia del vídeo vertical de IGN (recorte 880×822 desde y=466: sin su título, su subtítulo ni su logotipo),
+# sin fotogramas duplicados (mpdecimate) y llevada a 60 fps reales por interpolación de movimiento (minterpolate):
+#   ffmpeg -i CuGNTq2mFIk.webm -vf "crop=880:822:0:466,mpdecimate=hi=64*6:lo=64*3:frac=0.5,minterpolate=fps=60:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1" CuGNTq2mFIk.mp4
+# El original era juego a 30 fps guardado a 60 (la mitad de fotogramas repetidos; en los primeros planos del perro, 4-5 veces).
+SR.SRC_CROP[V2] = (0, 0, 880, 822) if G.x_path(V2).endswith(".mp4") else (0, 466, 880, 822)
 G.XBAD[V2] = []
 G.MANUAL_CUTS[V2] = [1.5]
 PANEL = (0, 360, 1080, 1010)
@@ -31,49 +35,51 @@ def scene(c, t, info, ctx): return _scene(c, t, info, ctx)
 # ================================================================ GUION Y PLANOS (mood: "dark" = expediente, "bright" = revelación)
 beat("Lejos de la costa de Leonida hay una isla diminuta. Y alguien escribió en la arena: {S.O.S.|ese, o, ese}.",
      mus=("mystery", 1), exag=0.55, pre=0.15, mood="dark",
-     shots=[S(None, X(6.2), z=(1.0, 1.12)),
-            S("una isla diminuta", X(10.4), z=(1.0, 1.1)),
-            S("Y alguien", X(12.7), z=(1.0, 1.08), evid="PRUEBA 1 · EL MENSAJE"),
-            S("en la arena", X(10.9), cx=0.24, cy=0.78, z=(1.5, 1.75))],
+     shots=[S(None, X(5.5), z=(1.0, 1.12)),
+            S("una isla diminuta", X(5.5), cont=True, z=(1.12, 1.2)),
+            S("Y alguien", X(12.55), z=(1.0, 1.08), evid="PRUEBA 1 · EL MENSAJE"),
+            S("en la arena", X(10.25), cx=0.24, cy=0.78, z=(1.2, 1.7))],
      sfx=[(0.0, "tune", 0.3), ("w:arena", "stamp", 0.45)])
 beat("Al lado hay un teléfono con un vídeo: una pareja saluda a la cámara… y, por lo que parece, son sus últimos momentos.",
      mus=("mystery", 1), exag=0.5, pre=0.3, mood="dark",
-     shots=[S(None, X(15.3), z=(1.0, 1.1), evid="PRUEBA 2 · EL TELÉFONO"),
-            S("un vídeo", X(17.6), cx=0.55, z=(1.0, 1.12)),
-            S("saluda a la cámara", X(18.7), cx=0.55, cy=0.45, z=(1.15, 1.3)),
-            S("sus últimos momentos", X(20.3), cx=0.55, cy=0.42, z=(1.3, 1.5), glitch=True)],
+     shots=[S(None, X(15.25), z=(1.0, 1.1), evid="PRUEBA 2 · EL TELÉFONO"),
+            S("un vídeo", X(17.45), cx=0.55, z=(1.0, 1.12), speed=0.58),
+            S("saluda a la cámara", X(17.45), cont=True, cx=0.55, cy=0.45, z=(1.15, 1.3), speed=0.58),
+            S("sus últimos momentos", X(17.45), cont=True, cx=0.55, cy=0.42, z=(1.3, 1.5), speed=0.58, glitch=True)],
      sfx=[("w:teléfono", "tick", 0.35), ("w:últimos", "tune", 0.35)])
 beat("No hay nadie más. Solo agua. Así que bajas a bucear.",
      mus=("mystery", 2), exag=0.55, pre=0.3, mood="dark",
-     shots=[S(None, X(13.3), z=(1.0, 1.08)),
-            S("Solo agua", X(7.0), z=(1.0, 1.15)),
-            S("bajas a bucear", X(21.8), z=(1.0, 1.1), evid="PRUEBA 3 · EL FONDO")],
+     shots=[S(None, X(13.6), z=(1.0, 1.08), minwin=0.3),
+            S("Solo agua", X(7.2), z=(1.0, 1.15)),
+            S("bajas a bucear", X(21.75), z=(1.0, 1.1), speed=0.5, nocut=True, evid="PRUEBA 3 · EL FONDO")],
      sfx=[("w:bucear", "whoosh", 0.35)])
 beat("Y cuando vuelves a la superficie… algo viene directo hacia ti.",
      mus=("mystery", 2), exag=0.6, pre=0.25, mood="dark",
-     shots=[S(None, X(22.7), z=(1.0, 1.08), nocut=True),
-            S("algo viene", X(23.6), cx=0.47, cy=0.4, z=(1.4, 1.85), speed=0.35, nocut=True)],
+     shots=[S(None, X(21.75), cont=True, z=(1.0, 1.08), speed=0.5, nocut=True),
+            S("algo viene", X(21.75), cont=True, cx=0.47, cy=0.4, z=(1.4, 1.85), speed=0.3, nocut=True)],
      sfx=[("w:algo", "tune", 0.45)])
 beat("Es un perro. Con gafas. En moto de agua.",
      mus=("tropical", 2), exag=0.8, pre=0.35, mood="bright",
-     shots=[S(None, X(0.15), cx=0.55, cy=0.45, z=(1.12, 1.0), flash=True, reveal=True),
-            S("Con gafas", X(0.75), cx=0.6, cy=0.36, z=(1.55, 1.75), minwin=0.3),
-            S("En moto de agua", X(1.9), z=(1.0, 1.1))],
+     shots=[S(None, X(0.05), cx=0.55, cy=0.45, z=(1.12, 1.0), flash=True, reveal=True),
+            S("Con gafas", X(0.05), cont=True, cx=0.6, cy=0.36, z=(1.55, 1.75)),
+            S("En moto de agua", X(1.55), z=(1.0, 1.1))],
      sfx=[(0.0, "hit", 0.6), ("w:gafas", "pop", 0.45), ("w:moto", "pop", 0.4)])
 beat("Te subes de copiloto, él conduce, te da una vuelta… y al final te deja otra moto para ti.",
      mus=("tropical", 2), exag=0.7, pre=0.2, mood="bright",
-     shots=[S(None, X(26.9), z=(1.0, 1.1)),
-            S("él conduce", X(39.0), cx=0.6, cy=0.4, z=(1.2, 1.35)),
-            S("te da una vuelta", X(29.4), z=(1.0, 1.12)),
-            S("otra moto", X(35.4), z=(1.0, 1.1))],
+     shots=[S(None, X(26.7), z=(1.0, 1.1)),
+            S("él conduce", X(38.8), cx=0.6, cy=0.4, z=(1.2, 1.35)),
+            S("te da una vuelta", X(28.95), z=(1.0, 1.12)),
+            S("otra moto", X(34.95), z=(1.0, 1.1))],
      sfx=[("w:conduce", "pop", 0.35), ("w:otra moto", "ding", 0.35)])
 beat("Y ojo: hay jugadores que se lo han encontrado en otras zonas del mar.",
      mus=("tropical", 1), exag=0.65, pre=0.2, mood="bright",
-     shots=[S(None, X(33.4), z=(1.0, 1.15)),
-            S("en otras zonas", X(4.0), z=(1.0, 1.1))])
+     shots=[S(None, X(33.05), z=(1.0, 1.15)),
+            S("se lo han encontrado", X(31.3), z=(1.0, 1.1)),
+            S("en otras zonas", X(3.35), z=(1.0, 1.1))])
 beat("Así que dime… ¿quién escribió el {S.O.S.|ese, o, ese}?",
      mus=("mystery", 1), exag=0.6, pre=0.35, mood="dark", hold=0.7,
-     shots=[S(None, X(11.2), cx=0.24, cy=0.78, z=(1.2, 1.6))],
+     shots=[S(None, X(15.6), z=(1.05, 1.15)),
+            S("quién escribió", X(10.25), cx=0.24, cy=0.78, z=(1.2, 1.6), speed=0.47)],
      sfx=[(0.0, "tune", 0.35), ("w:escribió", "stamp", 0.5)])
 
 # ================================================================ ESCENA
@@ -90,7 +96,6 @@ def draw_shot(c, sh, tau, d, ctx, slot):
     T = G.table(ctx); b = T["beats"][sh["beat"]]["b"]; dark = b.get("mood") == "dark"
     rect(c, 0, 0, SR.W, SR.H, DARK if dark else "#0E2A3A", 1)
     sh2 = dict(sh, cf=CF_DARK if dark else CF_BRIGHT)
-    if sh.get("glitch") and int(tau * 12) % 5 == 0: sh2["cf"] = SR.color_matrix(sat=0.0, contrast=1.6)
     SR.footage(c, sh2, tau, d, PANEL, slot)
     x, y, w, h = PANEL
     if dark:
@@ -98,9 +103,9 @@ def draw_shot(c, sh, tau, d, ctx, slot):
         vg = skia.Paint(); vg.setShader(skia.GradientShader.MakeRadial((540, y + h / 2), 760, [skia.Color(0, 0, 0, 0), skia.Color(0, 0, 0, 170)], [0.55, 1.0]))
         c.drawRect(skia.Rect.MakeXYWH(x, y, w, h), vg)
     if sh.get("glitch"):
-        rnd = random.Random(int(tau * 20))
-        for _ in range(5):
-            gy = y + rnd.random() * h; rect(c, x, gy, w, 6 + rnd.random() * 18, MINT if rnd.random() < 0.5 else STAMP, 0.25)
+        rnd = random.Random(int(tau * 4))
+        for _ in range(3):
+            gy = y + rnd.random() * h; rect(c, x, gy, w, 3 + rnd.random() * 6, MINT if rnd.random() < 0.5 else STAMP, 0.14)
         draw_text(c, "● REC", x + 40, y + 70, "ovmonomd", 34, STAMP, 0.6 + 0.4 * pulse(tau, 0.8))
     if sh.get("evid"):
         p = ease_out_back(prog(tau, 0.1, 0.4))

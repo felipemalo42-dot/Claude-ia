@@ -5,7 +5,9 @@ sus créditos. Aquí se añade lo propio del formato vertical:
   - recorte de la fuente (SRC_CROP): solo la zona limpia del vídeo original, sin rótulos ni logotipos del autor;
   - encuadre vertical: cada plano elige su centro de interés (cx, cy) y un zoom; se decodifica directamente la ventana
     de la copia 4K a 1080×1920, sin reescalar dos veces;
-  - impactos (sacudida y destello), cámara lenta y congelado;
+  - lectura al ritmo nativo de la fuente (60 fps) con mezcla de fotogramas: cámara lenta fluida y sin saltos;
+  - nunca hay bucles: si un tramo se acaba, se mantiene el último fotograma; «cont» encadena planos sin repetir imagen;
+  - impactos (golpe de zoom y destello) y congelados;
   - crédito discreto en pantalla (autor y plataforma) y dos estilos de subtítulos: «cinético» y «máquina de escribir».
 Cada Short define su propio aspecto (scene, overlay, gráficos y música) en su módulo.
 """
@@ -27,26 +29,48 @@ def window(meta, crop, aspect, z, fx, fy):
     x = x0 + clamp(fx) * (w0 - cw); y = y0 + clamp(fy) * (h0 - ch)
     return _even(x), _even(y), _even(cw), _even(ch)
 
+_FPS = {}
+EFF_FPS = {}   # ID → ritmo real de imágenes distintas cuando el archivo duplica fotogramas (juego a 30 fps guardado a 60)
+def src_fps(path):
+    """Fotogramas por segundo reales de la fuente (p. ej. 60 o 59,94): se decodifica a ese ritmo, no a 30.
+    Si el archivo repite cada fotograma (30 fps de juego dentro de un archivo de 60), se decodifica a 30: así cada
+    fotograma leído es distinto y la mezcla entre dos consecutivos da un movimiento uniforme."""
+    import os
+    vid = os.path.splitext(os.path.basename(path))[0]
+    if vid in EFF_FPS: return (str(EFF_FPS[vid]), float(EFF_FPS[vid]))
+    if path not in _FPS:
+        o = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", path],
+                           capture_output=True, text=True).stdout.strip()
+        n, d_ = (o.split("/") + ["1"])[:2]; fr = float(n) / float(d_ or 1)
+        _FPS[path] = (o if fr <= 61 else "60", min(fr, 60.0))
+    return _FPS[path]
+
 class VClip:
-    """Lee un tramo de vídeo recortado a una ventana y escalado al panel. get(i) → fotograma i como skia.Image."""
+    """Lee un tramo de vídeo recortado a una ventana y escalado al panel, al ritmo nativo de la fuente.
+    frame(i) → fotograma i (desde t0). Guarda los últimos fotogramas para poder mezclar dos consecutivos."""
     def __init__(self, path, t0, dur, win, size):
         self.path, self.t0, self.win, self.size, self.dur = path, t0, win, size, dur
+        self.rate, self.fps = src_fps(path)
         self._open()
     def _open(self):
         x, y, w, h = self.win; tw, th = self.size
-        vf = f"crop={w}:{h}:{x}:{y},scale={tw}:{th}:flags=bicubic,fps={FPS},format=rgba"
-        self.p = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "fatal", "-ss", f"{max(0.0, self.t0):.3f}", "-i", self.path, "-t", f"{self.dur + 1.0:.3f}", "-an",
+        vf = f"crop={w}:{h}:{x}:{y},scale={tw}:{th}:flags=bicubic,fps={self.rate},format=rgba"
+        self.p = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "fatal", "-ss", f"{max(0.0, self.t0):.3f}", "-i", self.path, "-t", f"{self.dur + 0.5:.3f}", "-an",
                                    "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgba", "-"], stdout=subprocess.PIPE, bufsize=tw * th * 4 * 2)
-        self.i = -1; self.img = None; self.eof = False
-    def get(self, i):
+        self.i = -1; self.cache = {}; self.eof = False; self.last = None
+    def frame(self, i):
         tw, th = self.size
-        if i < self.i: self.close(); self._open()          # hace falta un fotograma anterior: se vuelve a abrir
+        if self.cache and i < min(self.cache): self.close(); self._open()     # hace falta un fotograma anterior: se vuelve a abrir
         while self.i < i and not self.eof:
             buf = self.p.stdout.read(tw * th * 4)
             if len(buf) < tw * th * 4: self.eof = True; break
             self.i += 1
-            if self.i >= i: self.img = skia.Image.fromarray(np.frombuffer(buf, np.uint8).reshape(th, tw, 4), colorType=skia.ColorType.kRGBA_8888_ColorType)
-        return self.img
+            if self.i >= i - 2:
+                self.cache[self.i] = skia.Image.fromarray(np.frombuffer(buf, np.uint8).reshape(th, tw, 4), colorType=skia.ColorType.kRGBA_8888_ColorType)
+                for k in [k for k in self.cache if k < self.i - 3]: del self.cache[k]
+            self.last = self.i
+        if i in self.cache: return self.cache[i]
+        return self.cache.get(self.last) if self.last is not None else None      # fin del tramo: se queda en el último
     def close(self):
         try: self.p.stdout.close(); self.p.kill(); self.p.wait(timeout=2)
         except Exception: pass
@@ -56,14 +80,34 @@ def focus(sh):
     if "f" in sh: return sh["f"]
     return sh.get("cx", 0.5), sh.get("cy", 0.5)
 
+def speed_of(sh, Ls, d):
+    """Velocidad del plano: 1 si el tramo de la fuente cubre todo el plano; si no, cámara lenta hasta ×0,5 (fluida porque
+    la fuente es de 60 fps y se mezclan fotogramas). Si aun así no alcanza, el último fotograma se mantiene: nunca hay bucle."""
+    if sh.get("speed"): return sh["speed"]
+    return max(0.5, min(1.0, Ls / max(d, 0.1)))
+
+def plan(T):
+    """Planos «cont»: empiezan justo donde terminó el plano anterior de la misma fuente (continuidad sin repetir imagen)."""
+    if T.get("_planned"): return
+    prev = None
+    for s in T["shots"]:
+        if not s["src"].startswith("x:"): prev = None; continue
+        vid = s["src"][2:].split("@")[0]
+        if s.get("cont") and prev and prev["src"][2:].split("@")[0] == vid:
+            pp, ploc, pLs = G.src_window(dict(prev)); pd = prev["t1"] - prev["t0"]
+            end = ploc + min(pLs, pd * speed_of(prev, pLs, pd))
+            s["src"] = f"x:{vid}@{end:.3f}"; s.setdefault("minwin", 0.05); s.pop("_win", None)
+        prev = s
+    T["_planned"] = True
+
 def footage(c, sh, tau, d, box, slot="main"):
-    """Dibuja el plano de vídeo en box = (x, y, w, h). Zoom z=(z0, z1) progresivo, cámara lenta (speed), congelado (freeze)."""
+    """Dibuja el plano de vídeo en box = (x, y, w, h). Zoom z=(z0, z1) progresivo, cámara lenta fluida (speed), congelado (freeze),
+    golpe de zoom (punch) y destello (flash). Nunca vuelve atrás: si el tramo se acaba, se mantiene el último fotograma."""
     k, v = sh["src"].split(":", 1); vid = v.split("@")[0]
     path, loc, Ls = G.src_window(sh)
     meta = G._clip_meta(path); rx, ry, rw, rh = box
     tau = max(0.0, tau)                                    # antes del primer plano (entrada) no hay tiempo negativo
     z0, z1 = sh.get("z", (1.0, 1.06)); fx, fy = focus(sh); zb = min(z0, z1)   # se decodifica al zoom menor: luego solo se amplía
-    # el foco se expresa como posición del sujeto: se convierte a desplazamiento de la ventana
     crop = SRC_CROP.get(vid); x0, y0, w0, h0 = crop or (0, 0, meta["w"], meta["h"])
     a = rw / rh
     def to_f(cx, cy, z):
@@ -74,29 +118,34 @@ def footage(c, sh, tau, d, box, slot="main"):
         return clamp(fxx), clamp(fyy)
     ffx, ffy = to_f(fx, fy, zb)
     win = window(meta, crop, a, zb, ffx, ffy)
-    sp = sh.get("speed") or max(0.5, min(1.0, Ls / max(d, 0.1)))
-    tt = min(sh["freeze"], tau * sp) if sh.get("freeze") is not None else (tau * sp) % Ls
+    sp = speed_of(sh, Ls, d)
+    tt = sh["freeze"] if sh.get("freeze") is not None else min(tau * sp, max(0.0, Ls - 0.02))
     key = (slot,)
     cl = _CL.get(key)
     if cl is None or cl.path != path or abs(cl.t0 - loc) > 1e-3 or cl.win != win or cl.size != (rw, rh):
         if cl: cl.close()
         cl = VClip(path, loc, Ls + 0.3, win, (rw, rh)); _CL[key] = cl
-    img = cl.get(int(tt * FPS))
+    fpos = tt * cl.fps; i0 = int(fpos); frac = fpos - i0
+    img = cl.frame(i0)
     if img is None: return
+    img2 = cl.frame(i0 + 1) if (frac > 0.04 and sh.get("freeze") is None) else None
     e = ease_io(clamp(tau / max(d, 0.1))) if sh.get("ease", True) else clamp(tau / max(d, 0.1))
     zz = lerp(z0, z1, e) / zb
-    # sacudida (impactos) durante los primeros 0,35 s
-    sx = sy = 0.0
-    if sh.get("shake"):
-        amp = sh["shake"] * (1 - prog(tau, 0.0, 0.35)); sx = amp * math.sin(tau * 90); sy = amp * math.cos(tau * 77)
+    if sh.get("punch"):                                    # golpe de zoom suave en los impactos (sustituye a la sacudida)
+        zz *= 1.0 + sh["punch"] * (1 - ease_out(prog(tau, 0.0, 0.32)))
     c.save(); c.clipRect(skia.Rect.MakeXYWH(rx, ry, rw, rh))
     # el zoom progresivo se centra en el sujeto (su posición dentro de la ventana decodificada)
     wx, wy, ww, wh = win
     pxf = rx + rw * clamp((x0 + fx * w0 - wx) / max(1, ww)); pyf = ry + rh * clamp((y0 + fy * h0 - wy) / max(1, wh))
-    c.translate(pxf + sx, pyf + sy); c.scale(zz, zz); c.translate(-pxf, -pyf)
+    c.translate(pxf, pyf); c.scale(zz, zz); c.translate(-pxf, -pyf)
+    samp = skia.SamplingOptions(skia.FilterMode.kLinear, skia.MipmapMode.kNone); dst = skia.Rect.MakeXYWH(rx, ry, rw, rh)
     p = skia.Paint()
     if sh.get("cf") is not None: p.setColorFilter(sh["cf"])
-    c.drawImageRect(img, skia.Rect.MakeXYWH(rx, ry, rw, rh), skia.SamplingOptions(skia.FilterMode.kLinear, skia.MipmapMode.kNone), p)
+    c.drawImageRect(img, dst, samp, p)
+    if img2 is not None and img2 is not img:               # mezcla con el fotograma siguiente: movimiento continuo a cualquier velocidad
+        p2 = skia.Paint(); p2.setAlphaf(frac)
+        if sh.get("cf") is not None: p2.setColorFilter(sh["cf"])
+        c.drawImageRect(img2, dst, samp, p2)
     c.restore()
     if sh.get("flash"):
         fa = 1 - prog(tau, 0.0, 0.18)
@@ -180,7 +229,7 @@ def make_scene(draw_shot, trans=None):
     """Devuelve scene(c, t, info, ctx). draw_shot(c, sh, tau, d, ctx, slot) lo aporta cada Short.
     trans(sh_prev, sh) → None (corte seco) o duración de un fundido corto."""
     def scene(c, t, info, ctx):
-        gt = info.start + t; T = G.table(ctx)
+        gt = info.start + t; T = G.table(ctx); plan(T)
         i = max(0, bisect.bisect_right(T["starts"], gt) - 1); sh = T["shots"][i]
         tau = gt - sh["t0"]; d = max(0.05, sh["t1"] - sh["t0"])
         draw_shot(c, sh, tau, d, ctx, "main")

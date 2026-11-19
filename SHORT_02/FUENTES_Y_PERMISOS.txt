@@ -10,31 +10,33 @@ Revisado el 19/11/2026. Este registro no sustituye una opinión jurídica profes
    Condiciones de reutilización publicadas por el autor: ninguna.
    Decisión del canal (19/11/2026): usarlo con crédito en pantalla y en la descripción, sin que la narración mencione al autor.
    Fragmentos exactos usados (minuto del Short → minuto del vídeo original · duración):
-     0:00.2 → 0:06.2 · 2.0 s · «(inicio del bloque)»
-     0:02.3 → 0:10.4 · 1.4 s · «una isla diminuta»
-     0:03.6 → 0:12.7 · 1.1 s · «Y alguien»
-     0:04.8 → 0:10.9 · 3.3 s · «en la arena»
-     0:08.0 → 0:15.3 · 1.4 s · «(inicio del bloque)»
-     0:09.4 → 0:17.6 · 1.5 s · «un vídeo»
-     0:10.9 → 0:18.7 · 2.8 s · «saluda a la cámara»
-     0:13.7 → 0:20.3 · 2.8 s · «sus últimos momentos»
-     0:16.5 → 0:13.3 · 1.3 s · «(inicio del bloque)»
-     0:17.8 → 0:07.0 · 1.5 s · «Solo agua»
+     0:00.2 → 0:05.5 · 2.0 s · «(inicio del bloque)»
+     0:02.3 → 0:07.5 · 1.4 s · «una isla diminuta»
+     0:03.6 → 0:12.6 · 1.1 s · «Y alguien»
+     0:04.8 → 0:10.2 · 3.3 s · «en la arena»
+     0:08.0 → 0:15.2 · 1.4 s · «(inicio del bloque)»
+     0:09.4 → 0:17.4 · 1.5 s · «un vídeo»
+     0:10.9 → 0:18.3 · 2.8 s · «saluda a la cámara»
+     0:13.7 → 0:20.0 · 2.8 s · «sus últimos momentos»
+     0:16.5 → 0:13.6 · 1.3 s · «(inicio del bloque)»
+     0:17.8 → 0:07.2 · 1.5 s · «Solo agua»
      0:19.3 → 0:21.8 · 2.7 s · «bajas a bucear»
-     0:22.0 → 0:22.7 · 1.9 s · «(inicio del bloque)»
-     0:23.9 → 0:23.6 · 2.3 s · «algo viene»
+     0:22.0 → 0:23.1 · 1.9 s · «(inicio del bloque)»
+     0:23.9 → 0:24.0 · 2.3 s · «algo viene»
      0:26.2 → 0:00.1 · 0.7 s · «(inicio del bloque)»
-     0:26.8 → 0:00.8 · 0.9 s · «Con gafas»
-     0:27.7 → 0:01.9 · 2.7 s · «En moto de agua»
-     0:30.4 → 0:26.9 · 1.4 s · «(inicio del bloque)»
-     0:31.8 → 0:39.0 · 1.0 s · «él conduce»
-     0:32.7 → 0:29.4 · 2.3 s · «te da una vuelta»
-     0:35.1 → 0:35.4 · 1.6 s · «otra moto»
-     0:36.7 → 0:33.4 · 2.6 s · «(inicio del bloque)»
-     0:39.2 → 0:04.0 · 3.3 s · «en otras zonas»
-     0:42.5 → 0:11.2 · 5.7 s · «(inicio del bloque)»
+     0:26.8 → 0:00.7 · 0.9 s · «Con gafas»
+     0:27.7 → 0:01.6 · 2.7 s · «En moto de agua»
+     0:30.4 → 0:26.7 · 1.4 s · «(inicio del bloque)»
+     0:31.8 → 0:38.8 · 1.0 s · «él conduce»
+     0:32.7 → 0:28.9 · 2.3 s · «te da una vuelta»
+     0:35.1 → 0:35.0 · 1.6 s · «otra moto»
+     0:36.7 → 0:33.0 · 1.5 s · «(inicio del bloque)»
+     0:38.2 → 0:31.3 · 1.0 s · «se lo han encontrado»
+     0:39.2 → 0:03.4 · 3.3 s · «en otras zonas»
+     0:42.5 → 0:15.6 · 1.1 s · «(inicio del bloque)»
+     0:43.7 → 0:10.2 · 4.6 s · «quién escribió»
 
-2. Datos del guion: lo que se ve en el gameplay (mapa, isla con S.O.S., teléfono con el vídeo, buceo, perro con gafas en la moto de agua, segunda moto) y la narración en inglés del mismo vídeo de IGN, transcrita y contada con palabras propias. No se reproduce su audio. Encuadre: solo la banda de juego del vídeo vertical; el título y los subtítulos de IGN y su logotipo quedan fuera, y el crédito a IGN aparece en pantalla y en la descripción.
+2. Datos del guion: lo que se ve en el gameplay (mapa, isla con S.O.S., teléfono con el vídeo, buceo, perro con gafas en la moto de agua, segunda moto) y la narración en inglés del mismo vídeo de IGN, transcrita y contada con palabras propias. No se reproduce su audio. Encuadre: solo la banda de juego del vídeo vertical; el título y los subtítulos de IGN y su logotipo quedan fuera, y el crédito a IGN aparece en pantalla y en la descripción. Fluidez: el vídeo de IGN era juego a 30 fps guardado a 60, con fotogramas repetidos; se quitaron los duplicados y se llevó a 60 fps reales por interpolación de movimiento (ffmpeg mpdecimate + minterpolate). No se añade ni se cambia el contenido de la imagen.
 
 3. EL JUEGO
    Las imágenes de Grand Theft Auto VI son de Rockstar Games / Take-Two Interactive. Su política solo permite usos no comerciales

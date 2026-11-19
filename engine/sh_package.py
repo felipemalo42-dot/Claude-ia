@@ -36,7 +36,7 @@ def run(vid):
     M = importlib.import_module(f"videos.{vid}"); V = M.VIDEO; G = M.G
     G._T.clear(); M.SR._SUB.clear()          # la tabla de planos se cachea por proceso: limpiarla al cambiar de Short
     out = os.path.join(build.ROOT, V["folder"]); r = os.path.join(out, "recursos")
-    tl = json.load(open(f"{r}/timeline.json")); ctx = build.Ctx(V, tl, *V["size"]); T = G.table(ctx)
+    tl = json.load(open(f"{r}/timeline.json")); ctx = build.Ctx(V, tl, *V["size"]); T = G.table(ctx); M.SR.plan(T)
     P = PUB[vid]
     # ---------------- planos y sincronía
     rows = []
@@ -93,11 +93,14 @@ def run(vid):
     # ---------------- fuentes y permisos (fragmento a fragmento)
     NOTE = {"s01": ("Datos del guion: lo que se ve en el gameplay (mapa, tienda, carta coleccionable, caravana, combate, avisos del juego "
                     "«ADRENALINE (FULL)», «MASK», «Luchador Mask») y la narración en inglés del mismo vídeo de IGN, transcrita y "
-                    "contada con palabras propias. No se reproduce su audio."),
+                    "contada con palabras propias. No se reproduce su audio. Fluidez: el vídeo es juego a 30 fps guardado a 60 "
+                    "(la mitad de los fotogramas son copias); se lee a sus 30 fps reales y la cámara lenta mezcla fotogramas consecutivos."),
             "s02": ("Datos del guion: lo que se ve en el gameplay (mapa, isla con S.O.S., teléfono con el vídeo, buceo, perro con gafas "
                     "en la moto de agua, segunda moto) y la narración en inglés del mismo vídeo de IGN, transcrita y contada con palabras "
                     "propias. No se reproduce su audio. Encuadre: solo la banda de juego del vídeo vertical; el título y los subtítulos "
-                    "de IGN y su logotipo quedan fuera, y el crédito a IGN aparece en pantalla y en la descripción.")}
+                    "de IGN y su logotipo quedan fuera, y el crédito a IGN aparece en pantalla y en la descripción. Fluidez: el vídeo de IGN "
+                    "era juego a 30 fps guardado a 60, con fotogramas repetidos; se quitaron los duplicados y se llevó a 60 fps reales por "
+                    "interpolación de movimiento (ffmpeg mpdecimate + minterpolate). No se añade ni se cambia el contenido de la imagen.")}
     F = [f"FUENTES Y PERMISOS · {V['folder']} · «{V['title']}»", "Revisado el 19/11/2026. Este registro no sustituye una opinión jurídica profesional.", "",
          "1. GAMEPLAY USADO"]
     for u in used:
@@ -153,8 +156,34 @@ QA = {
     diff="Ningún vídeo anterior cuenta una historia de misterio ni trata el mar abierto o este encuentro. Es una narración con giro, distinta de la guía del SHORT_01 y de los Shorts informativos previos.",
     orig="Presenta el encuentro como un expediente policial con «pruebas» numeradas y tono frío, que estalla en color y comedia cuando aparece el perro. Acaba con una pregunta que devuelve al principio (bucle).",
     spoil="Sí. Es un encuentro secundario en el mar, no una misión. El vídeo del teléfono solo muestra a una pareja saludando; no se revela nada de la historia.",
-    refs="lejos de la costa → el mapa con la isla · isla diminuta → la isla desde el aire · alguien escribió en la arena → Jason junto a las letras · S.O.S. → zoom a las letras · teléfono → el teléfono · vídeo y saludo → la pareja en la pantalla · solo agua → el mapa del mar · bucear → buceando · vuelves a la superficie → saliendo del agua · algo viene → punto lejano que se acerca · perro, gafas, moto → el perro con gafas al manillar · copiloto, conduce, vuelta, otra moto → los planos de cada acción · otras zonas → el perro en otro tramo de mar."),
+    refs="lejos de la costa → el mapa con la isla y su marcador · isla diminuta → el mapa alejándose hasta que la isla es un punto · alguien escribió → Jason junto a las letras · en la arena: S.O.S. → las letras desde el aire · teléfono → el teléfono · vídeo y saludo → la pareja en la pantalla · solo agua → el mapa del mar · bucear → buceando · vuelves a la superficie → saliendo del agua · algo viene → punto lejano que se acerca · perro, gafas, moto → el perro con gafas al manillar · copiloto, conduce, vuelta, otra moto → los planos de cada acción · otras zonas → el perro en otro tramo de mar."),
 }
+
+REGION = {"s01": (220, 1900, (1180, 1460)), "s02": (380, 1350, None)}     # zona de gameplay analizada (sin rótulos ni subtítulos)
+def fluidity(mp4, y0, y1, ex=None):
+    """→ (% de fotogramas repetidos en mitad de un movimiento, % de saltos irregulares entre fotogramas consecutivos)."""
+    import numpy as np
+    w, h = 270, 480
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", mp4, "-vf", f"scale={w}:{h},format=gray", "-f", "rawvideo", "-"], capture_output=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, h, w).astype(np.float32)
+    rows = [r for r in range(y0 * h // 1920, y1 * h // 1920) if not (ex and ex[0] * h // 1920 <= r < ex[1] * h // 1920)]
+    d = np.abs(np.diff(fr[:, rows, :], axis=0)).mean(axis=(1, 2))
+    mov = [i for i in range(1, len(d) - 1) if d[i - 1] > 1.5 and d[i + 1] > 1.5]; dup = sum(1 for i in mov if d[i] < 0.35)
+    J = [abs(d[i] - d[i - 1]) / ((d[i] + d[i - 1]) / 2) for i in range(2, len(d) - 2)
+         if not (d[i] > 12 or d[i - 1] > 12 or d[i + 1] > 12) and (d[i - 1] + d[i]) / 2 >= 0.8]
+    return 100 * dup / max(1, len(mov)), 100 * float(np.mean(np.array(J) > 0.6)) if J else 0.0
+
+def loops_and_repeats(M, T):
+    """Planos que se quedarían sin imagen (bucle o fotograma mantenido) y planos que repiten imagen de los 6 s anteriores."""
+    G, SR = M.G, M.SR; segs = []; hold = 0
+    for s in T["shots"]:
+        if not s["src"].startswith("x:"): continue
+        d = s["t1"] - s["t0"]; p, loc, Ls = G.src_window(dict(s)); sp = SR.speed_of(s, Ls, d)
+        used = min(Ls, d * sp) if s.get("freeze") is None else 0.05
+        if s.get("freeze") is None and d * sp > Ls + 0.01: hold += 1
+        segs.append((s["t0"], s["t1"], s["src"][2:].split("@")[0], loc, loc + used))
+    rep = sum(1 for i, (a0, a1, va, sa, ea) in enumerate(segs) for (b0, b1, vb, sb, eb) in segs[:i] if va == vb and a0 - b1 < 6 and min(ea, eb) - max(sa, sb) > 0.05)
+    return hold, rep
 
 def qa(vid):
     M = importlib.import_module(f"videos.{vid}"); V = M.VIDEO
@@ -167,6 +196,8 @@ def qa(vid):
     rows = list(csv.DictReader(open(f"{r}/control_de_voz.csv", encoding="utf-8"), delimiter=";"))
     D = sum(int(x["diferencias"] or 0) for x in rows); N = sum(int(x["sonidos"] or 0) for x in rows)
     st = json.load(open(f"{r}/sincronia.json")); q = QA[vid]; dur = float(fmt["duration"])
+    y0, y1, ex = REGION[vid]; dupp, irr = fluidity(mp4, y0, y1, ex)
+    tl = json.load(open(f"{r}/timeline.json")); M.G._T.clear(); T = M.G.table(build.Ctx(V, tl, *V["size"])); M.SR.plan(T); hold, rep = loops_and_repeats(M, T)
     low = [x for x in rows if float(x["coincidencia"]) < 0.995]
     L = [f"# {V['folder']}: control de calidad", "", f"Revisado el 19/11/2026 sobre `VIDEO_FINAL.mp4`.", "",
          "| Medida | Resultado |", "|---|---|",
@@ -174,7 +205,11 @@ def qa(vid):
          f"| Sonoridad | {lufs:.1f} LUFS (YouTube normaliza a −14) |",
          f"| Voz ↔ guion | {1 - D / max(1, N):.2%} de coincidencia fonética ({D} sonidos distintos de {N}); {len(rows) - len(low)} de {len(rows)} frases ≥ 99,5 % |",
          f"| Sincronía imagen ↔ palabra | {st['sincronizados']} de {st['anclados']} cortes a ≤ 0,10 s de su palabra |",
-         f"| Planos | {st['planos']} (media {st['dur_media']:.1f} s; el más largo {st['max_plano']:.1f} s) |", ""]
+         f"| Planos | {st['planos']} (media {st['dur_media']:.1f} s; el más largo {st['max_plano']:.1f} s) |",
+         f"| Fluidez | {dupp:.1f} % de fotogramas repetidos en mitad de un movimiento · {irr:.1f} % de saltos irregulares entre fotogramas "
+         f"(son cortes, destellos y rótulos que aparecen) |",
+         f"| Bucles y vaivenes | {hold} planos sin imagen suficiente (el motor nunca repite un tramo: si se acaba, mantiene el último fotograma) · "
+         f"{rep} planos que repiten imagen de los 6 s anteriores |", ""]
     if low:
         L += ["Frases por debajo del 99,5 % (el reconocedor escribe distinto un nombre o una palabra; se revisaron una a una):"]
         L += [f"- {x['inicio_s']} s · {float(x['coincidencia']):.1%} · reconocido: «{x['reconocido'][:140]}»" for x in low] + [""]
@@ -185,6 +220,7 @@ def qa(vid):
           f"| ¿Está libre de spoilers? | {q['spoil']} |", f"| ¿Cada elemento mencionado se ve? | Sí. {q['refs']} |",
           "| ¿La narración es natural? | Voz C del canal (español latinoamericano), frase a frase, con la energía ajustada a cada bloque. No puedo escucharla: revísala antes de publicar. |",
           f"| ¿El ritmo es adecuado? | Un plano nuevo cada {st['dur_media']:.1f} s de media y sin pantallas vacías. El gancho dura menos de 3 s. |",
+          f"| ¿La imagen es fluida? | Sí: ningún plano se repite ni vuelve atrás, la cámara lenta mezcla fotogramas y la imagen se lee a su ritmo real ({dupp:.1f} % de fotogramas repetidos). |",
           "| ¿Los subtítulos están sincronizados? | Sí: los incrustados usan los tiempos de cada palabra de la voz, y `SUBTITULOS.srt`, los de cada frase. |",
           "| ¿Los recursos tienen permisos suficientes? | **No para uso comercial.** El gameplay no tiene licencia ni permiso del autor y se usa con crédito por decisión del canal; la música, la voz y los gráficos son propios. Ver `FUENTES_Y_PERMISOS.txt`. |",
           "| ¿Cumple las políticas de YouTube? | Aporta guion, narración, montaje y gráficos propios. Aun así, al usar gameplay ajeno sin permiso: **sin monetizar** y con el riesgo de una reclamación de Content ID. Hay que marcar el contenido como sintético (voz). |", ""]
