@@ -185,6 +185,15 @@ def loops_and_repeats(M, T):
     rep = sum(1 for i, (a0, a1, va, sa, ea) in enumerate(segs) for (b0, b1, vb, sb, eb) in segs[:i] if va == vb and a0 - b1 < 6 and min(ea, eb) - max(sa, sb) > 0.05)
     return hold, rep
 
+def player_order(mp4):
+    """Saltos hacia atrás al reproducir: orden de las imágenes según las marcas de tiempo del MP4 (lo que hace un móvil o un
+    navegador) frente al orden real en que salen del decodificador. Debe ser 0."""
+    o = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "frame=pts", "-of", "csv=p=0", mp4],
+                       capture_output=True, text=True).stdout.split()
+    ts = [int(x) for x in o if x.lstrip("-").isdigit()]
+    order = sorted(range(len(ts)), key=ts.__getitem__)
+    return sum(1 for a, b in zip(order, order[1:]) if b < a), len(ts)
+
 def qa(vid):
     M = importlib.import_module(f"videos.{vid}"); V = M.VIDEO
     out = os.path.join(build.ROOT, V["folder"]); r = os.path.join(out, "recursos"); mp4 = f"{out}/VIDEO_FINAL.mp4"
@@ -196,7 +205,7 @@ def qa(vid):
     rows = list(csv.DictReader(open(f"{r}/control_de_voz.csv", encoding="utf-8"), delimiter=";"))
     D = sum(int(x["diferencias"] or 0) for x in rows); N = sum(int(x["sonidos"] or 0) for x in rows)
     st = json.load(open(f"{r}/sincronia.json")); q = QA[vid]; dur = float(fmt["duration"])
-    y0, y1, ex = REGION[vid]; dupp, irr = fluidity(mp4, y0, y1, ex)
+    y0, y1, ex = REGION[vid]; dupp, irr = fluidity(mp4, y0, y1, ex); pback, nfr = player_order(mp4)
     tl = json.load(open(f"{r}/timeline.json")); M.G._T.clear(); T = M.G.table(build.Ctx(V, tl, *V["size"])); M.SR.plan(T); hold, rep = loops_and_repeats(M, T)
     low = [x for x in rows if float(x["coincidencia"]) < 0.995]
     L = [f"# {V['folder']}: control de calidad", "", f"Revisado el 19/11/2026 sobre `VIDEO_FINAL.mp4`.", "",
@@ -208,6 +217,7 @@ def qa(vid):
          f"| Planos | {st['planos']} (media {st['dur_media']:.1f} s; el más largo {st['max_plano']:.1f} s) |",
          f"| Fluidez | {dupp:.1f} % de fotogramas repetidos en mitad de un movimiento · {irr:.1f} % de saltos irregulares entre fotogramas "
          f"(son cortes, destellos y rótulos que aparecen) |",
+         f"| Orden de reproducción | {pback} saltos hacia atrás al reproducir en un móvil o navegador ({nfr} fotogramas, marcas de tiempo en orden) |",
          f"| Bucles y vaivenes | {hold} planos sin imagen suficiente (el motor nunca repite un tramo: si se acaba, mantiene el último fotograma) · "
          f"{rep} planos que repiten imagen de los 6 s anteriores |", ""]
     if low:
@@ -220,7 +230,7 @@ def qa(vid):
           f"| ¿Está libre de spoilers? | {q['spoil']} |", f"| ¿Cada elemento mencionado se ve? | Sí. {q['refs']} |",
           "| ¿La narración es natural? | Voz C del canal (español latinoamericano), frase a frase, con la energía ajustada a cada bloque. No puedo escucharla: revísala antes de publicar. |",
           f"| ¿El ritmo es adecuado? | Un plano nuevo cada {st['dur_media']:.1f} s de media y sin pantallas vacías. El gancho dura menos de 3 s. |",
-          f"| ¿La imagen es fluida? | Sí: ningún plano se repite ni vuelve atrás, la cámara lenta mezcla fotogramas y la imagen se lee a su ritmo real ({dupp:.1f} % de fotogramas repetidos). |",
+          f"| ¿La imagen es fluida? | Sí: las imágenes se reproducen en su orden ({pback} saltos hacia atrás en un móvil), ningún plano se repite ni vuelve atrás, la cámara lenta mezcla fotogramas y la imagen se lee a su ritmo real ({dupp:.1f} % de fotogramas repetidos). |",
           "| ¿Los subtítulos están sincronizados? | Sí: los incrustados usan los tiempos de cada palabra de la voz, y `SUBTITULOS.srt`, los de cada frase. |",
           "| ¿Los recursos tienen permisos suficientes? | **No para uso comercial.** El gameplay no tiene licencia ni permiso del autor y se usa con crédito por decisión del canal; la música, la voz y los gráficos son propios. Ver `FUENTES_Y_PERMISOS.txt`. |",
           "| ¿Cumple las políticas de YouTube? | Aporta guion, narración, montaje y gráficos propios. Aun así, al usar gameplay ajeno sin permiso: **sin monetizar** y con el riesgo de una reclamación de Content ID. Hay que marcar el contenido como sintético (voz). |", ""]

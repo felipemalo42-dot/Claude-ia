@@ -386,7 +386,7 @@ def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None, seg
     if segment: mp4 = f"{outdir}/recursos/_seg_{segment[0]:02d}.h264"   # H.264 en bruto: se une con cat sin perder fotogramas
     dur = (f1 - f0) / FPS
     if master: vargs = ["-crf", "17", "-maxrate", "12M", "-bufsize", "24M"]
-    elif segment and V.get("final_codec"): vargs = ["-crf", "17"]          # intermedio de alta calidad; la compresión final va aparte
+    elif segment: vargs = ["-crf", "17" if V.get("final_codec") else "15"]   # intermedio de alta calidad; la compresión final va aparte
     else:
         cap = int(min(8000, 92 * 8 * 1000 / max(1, total) - 192)); vargs = ["-crf", "19", "-maxrate", f"{cap}k", "-bufsize", f"{cap * 2}k"]
     aud_in = [] if segment else ["-ss", f"{f0 / FPS:.3f}", "-t", f"{dur:.3f}", "-i", f"{outdir}/recursos/mezcla_final.wav"]
@@ -395,7 +395,7 @@ def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None, seg
            "-map", "0:v", *aud_out, "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-pix_fmt", "yuv420p",
            "-profile:v", "high", "-g", "60", *vargs, *(["-f", "h264"] if segment else ["-movflags", "+faststart"]),
            "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", mp4]
-    if segment and V.get("final_codec"): cmd[cmd.index("-preset") + 1] = "veryfast"
+    if segment: cmd[cmd.index("-preset") + 1] = "veryfast"
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     surf = gfx.new_surface(W, H); sA = gfx.new_surface(W, H); sB = gfx.new_surface(W, H)
     buf = np.zeros((H, W, 4), np.uint8)
@@ -450,8 +450,15 @@ def render_parallel(V, tl, outdir, vid, jobs, master=False):
         venc = ["-c:v", "libsvtav1", "-preset", str(V.get("av1_preset", 6)), "-b:v", f"{kbps}k", "-g", "240", "-pix_fmt", "yuv420p10le",
                 "-svtav1-params", "tune=0:enable-overlays=1:scd=1"]
     else:
-        abr = 192; venc = ["-c:v", "copy"]
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", allv, "-i", wav, "-map", "0:v", "-map", "1:a", *venc,
+        # Antes se copiaba el H.264 en bruto al MP4 («-c:v copy»): el contenedor quedaba sin el orden de presentación de los
+        # fotogramas B (marcas de tiempo de decodificación = de presentación) y los móviles y navegadores mostraban las
+        # imágenes desordenadas (avanzan y retroceden). Ahora se vuelve a codificar desde un intermedio de alta calidad.
+        abr = 192; cap = int(min(8000, 92 * 8 * 1000 / max(1, tl["total"]) - abr))
+        venc = ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", f"{cap}k", "-bufsize", f"{cap * 2}k",
+                "-profile:v", "high", "-pix_fmt", "yuv420p", "-g", "60", "-video_track_timescale", "15360"]
+    # marcas de tiempo nuevas y correlativas, en el orden en que el decodificador entrega las imágenes (orden de presentación)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", allv, "-i", wav, "-map", "0:v", "-map", "1:a",
+                    "-vf", f"setpts=N/({FPS}*TB)", "-fps_mode", "passthrough", *venc,
                     "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
                     "-c:a", "aac", "-b:a", f"{abr}k", "-ar", "48000", "-shortest", "-movflags", "+faststart", mp4], check=True)
     if V.get("keep_master"): os.replace(allv, f"{outdir}/recursos/master_h264_crf17.h264")

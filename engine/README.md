@@ -120,6 +120,8 @@ python sh_package.py s01            # guion, fuentes y permisos fragmento a frag
 | `videos/sh_render.py` | Motor vertical: recorte de la zona limpia, encuadre desde la copia 4K, golpes de zoom, subtítulos cinéticos y de máquina de escribir |
 | `sh_package.py` | Empaquetado y control de calidad de cada Short |
 
+**Orden de reproducción (corregido el 19/11/2026):** al montar en paralelo (`--jobs`), el MP4 final se copiaba del H.264 en bruto y quedaba sin el orden de presentación de los fotogramas B: en móviles y navegadores las imágenes salían desordenadas (el 86-90 % fuera de su sitio). Ahora `render_parallel` vuelve a codificar desde un intermedio de alta calidad con marcas de tiempo correlativas (`setpts=N/(30*TB)`). Comprobación: `sh_package.py` mide los saltos hacia atrás al reproducir (deben ser 0).
+
 **Fluidez (corregido el 19/11/2026):**
 - la fuente se lee a su ritmo real; si un archivo repite fotogramas (juego a 30 fps guardado a 60), se lee a 30 (`EFF_FPS`);
 - la cámara lenta mezcla dos fotogramas consecutivos, así que el movimiento no da saltos;
