@@ -154,6 +154,10 @@ def build_audio(V, outdir, narr=None, aligner=None):
         bstart = t + b.get("pre", 0.0); cur = bstart; sents = []; pmul = b.get("pause_mul", V.get("pause_mul", 1.0))
         for tk in plan[bi]:
             score, x, times, hyp, det = tk["best"]
+            tt_ = V.get("trim_tail"); tthr = tt_ if isinstance(tt_, float) else 0.6
+            if tt_ and times and len(x) / TSR - times[-1][1] > tthr:
+                # la síntesis a veces añade balbuceo tras la última palabra: se corta poco después, con un fundido corto
+                cut = int((times[-1][1] + min(0.25, tthr)) * TSR); x = x[:cut].copy(); fo = int(0.04 * TSR); x[-fo:] *= np.linspace(1, 0, fo)
             qa.append(dict(t=round(cur, 2), score=round(score, 4), tries=tk["tries"], guion=tk["exp"], reconocido=hyp, voz=tk["voice"], **det))
             chunks.append((cur, x)); i0 = 0
             for it in tk["take"]:
@@ -466,7 +470,7 @@ def main():
         tl = build_audio(V, outdir); print(f"{V['id']}: audio listo, {tl['total']:.1f} s ({time.time() - t0:.0f} s)")
     tl = json.load(open(f"{outdir}/recursos/timeline.json"))
     if a.stage in ("all", "thumb") and hasattr(mod, "thumbnail"):
-        s = gfx.new_surface(1280, 720); mod.thumbnail(s.getCanvas())
+        tw, th = V.get("thumb_size", (1280, 720)); s = gfx.new_surface(tw, th); mod.thumbnail(s.getCanvas())
         mk = getattr(mod, "THUMB_MARK", (1215, 655, 34))
         if mk:
             import components; components.thumb_mark(s.getCanvas(), *mk)

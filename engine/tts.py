@@ -36,7 +36,7 @@ PRON = [
     (r"\bWindows Central\b", "Uíndous Séntral"), (r"\bGameSpot\b", "Guéim Spot"), (r"\bGamesRadar\b", "Guéims Réidar"), (r"\bEurogamer\b", "Iúrogueimer"),
     (r"\bRockstar Games\b", "Rokstar Guéims"),
     (r"\bIGN\b", "i ge ene"), (r"\bForbes\b", "Forbs"), (r"\bMetacritic\b", "Metacrític"), (r"\bOpenCritic\b", "Óupen Crític"),
-    (r"\bSam Houser\b", "Sam Jáuser"), (r"\bJust Like Paradise\b", "Yast Laik Páradais"), (r"\bImponte Phoenix\b", "Impónte Fínix"), (r"\bLos Santos\b", "Los Santos"),
+    (r"\bSam Houser\b", "Sam Jáuser"), (r"\bJust Like Paradise\b", "Yast Laik Páradais"), (r"\bBackyard American Mania\b", "Bákyard Amérikan Méinia"), (r"\bThe Gentrifier\b", "Di Yéntrifaier"), (r"\bHamlet\b", "Jámlet"), (r"\bImponte Phoenix\b", "Impónte Fínix"), (r"\bLos Santos\b", "Los Santos"),
     (r"\bPSSR\b", "pe ese ese erre"), (r"\b4K\b", "cuatro ka"), (r"\bStreams Charts\b", "Strims Charts"), (r"\bPlayStation Network\b", "Pleistéishon Nétuork"),
     (r"\bThe Guardian\b", "Di Guárdian"), (r"\bDigital Foundry\b", "Díyital Fáundri"), (r"\bWorthplaying\b", "Uórzpleiing"),
     (r"\bVice\b(?! City)", "Vais"), (r"\b(\d+)p\b", r"\1 pe"), (r"(\d),(\d)", r"\1 coma \2"),

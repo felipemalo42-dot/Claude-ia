@@ -8,7 +8,7 @@ Generado automáticamente. Tamaños aproximados.
 |---|---|
 | `ESTRATEGIA_LANZAMIENTO.md` | 5.1 KB |
 | `INFORME_INVESTIGACION.md` | 22.0 KB |
-| `INVENTARIO.md` | 13.1 KB |
+| `INVENTARIO.md` | 13.0 KB |
 | `PLANTILLA_PERMISO_STREAMERS.md` | 2.2 KB |
 | `POLITICAS_Y_DERECHOS.md` | 10.3 KB |
 
@@ -103,6 +103,72 @@ Generado automáticamente. Tamaños aproximados.
 | `recursos/timeline.json` | 137.0 KB |
 | `recursos/tramos_excluidos.txt` | 978 B |
 | `recursos/uso_por_material.json` | 1015 B |
+
+## SHORT_01
+
+| Archivo | Tamaño |
+|---|---|
+| `CONTROL_DE_CALIDAD.md` | 3.5 KB |
+| `DESCRIPCION_YOUTUBE.txt` | 603 B |
+| `FUENTES_Y_PERMISOS.txt` | 4.9 KB |
+| `GUION.txt` | 3.2 KB |
+| `NARRACION.mp3` | 1010.7 KB |
+| `PORTADA.png` | 1.4 MB |
+| `PUBLICACION.md` | 1.2 KB |
+| `SUBTITULOS.srt` | 1.3 KB |
+| `VIDEO_FINAL.mp4` | 31.3 MB |
+| `recursos/control_de_voz.csv` | 1.8 KB |
+| `recursos/fotogramas/f_00000.png` | 709.1 KB |
+| `recursos/fotogramas/f_00005.png` | 1.6 MB |
+| `recursos/fotogramas/f_00010.png` | 2.0 MB |
+| `recursos/fotogramas/f_00015.png` | 47.8 KB |
+| `recursos/fotogramas/f_00020.png` | 1.2 MB |
+| `recursos/fotogramas/f_00025.png` | 1.8 MB |
+| `recursos/fotogramas/f_00030.png` | 2.4 MB |
+| `recursos/fotogramas/f_00035.png` | 1.6 MB |
+| `recursos/fotogramas/f_00040.png` | 1.1 MB |
+| `recursos/fotogramas/f_00045.png` | 712.7 KB |
+| `recursos/fotogramas/f_00050.png` | 1.5 MB |
+| `recursos/fotogramas/f_00055.png` | 762.3 KB |
+| `recursos/guion_con_tiempos.txt` | 1.3 KB |
+| `recursos/mezcla_final.wav` | 9.5 MB |
+| `recursos/musica_original.mp3` | 1.2 MB |
+| `recursos/narracion_original.flac` | 1.6 MB |
+| `recursos/registro_de_planos.csv` | 5.3 KB |
+| `recursos/sincronia.json` | 138 B |
+| `recursos/timeline.json` | 11.2 KB |
+
+## SHORT_02
+
+| Archivo | Tamaño |
+|---|---|
+| `CONTROL_DE_CALIDAD.md` | 3.4 KB |
+| `DESCRIPCION_YOUTUBE.txt` | 601 B |
+| `FUENTES_Y_PERMISOS.txt` | 4.4 KB |
+| `GUION.txt` | 2.3 KB |
+| `NARRACION.mp3` | 944.1 KB |
+| `PORTADA.png` | 1.5 MB |
+| `PUBLICACION.md` | 1.2 KB |
+| `SUBTITULOS.srt` | 1.1 KB |
+| `VIDEO_FINAL.mp4` | 20.9 MB |
+| `recursos/control_de_voz.csv` | 1.5 KB |
+| `recursos/fotogramas/f_00000.png` | 365.0 KB |
+| `recursos/fotogramas/f_00005.png` | 888.2 KB |
+| `recursos/fotogramas/f_00010.png` | 982.7 KB |
+| `recursos/fotogramas/f_00015.png` | 478.6 KB |
+| `recursos/fotogramas/f_00020.png` | 653.6 KB |
+| `recursos/fotogramas/f_00025.png` | 858.4 KB |
+| `recursos/fotogramas/f_00030.png` | 860.1 KB |
+| `recursos/fotogramas/f_00035.png` | 979.5 KB |
+| `recursos/fotogramas/f_00040.png` | 964.1 KB |
+| `recursos/fotogramas/f_00045.png` | 942.1 KB |
+| `recursos/guion_con_tiempos.txt` | 1.1 KB |
+| `recursos/mezcla_final.wav` | 8.8 MB |
+| `recursos/musica_original.mp3` | 1.1 MB |
+| `recursos/narracion_original.flac` | 1.4 MB |
+| `recursos/registro_de_planos.csv` | 3.8 KB |
+| `recursos/sincronia.json` | 137 B |
+| `recursos/timeline.json` | 9.5 KB |
 
 ## VIDEO_01
 
@@ -368,4 +434,4 @@ Generado automáticamente. Tamaños aproximados.
 
 ## engine
 
-Código fuente del motor (59 archivos: módulos Python, referencias de voz, tipografías OFL/Apache y datos de Natural Earth). Ver `engine/README.md`.
+Código fuente del motor (63 archivos: módulos Python, referencias de voz, tipografías OFL/Apache y datos de Natural Earth). Ver `engine/README.md`.

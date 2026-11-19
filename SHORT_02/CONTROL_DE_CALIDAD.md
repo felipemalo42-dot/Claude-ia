@@ -1,0 +1,33 @@
+# SHORT_02: control de calidad
+
+Revisado el 19/11/2026 sobre `VIDEO_FINAL.mp4`.
+
+| Medida | Resultado |
+|---|---|
+| Duración | 48.2 s (objetivo 35-60 s) |
+| Formato | H264 1080×1920 (9:16), 30 fps, 21.9 MB |
+| Sonoridad | -14.0 LUFS (YouTube normaliza a −14) |
+| Voz ↔ guion | 98.07% de coincidencia fonética (8 sonidos distintos de 414); 6 de 8 frases ≥ 99,5 % |
+| Sincronía imagen ↔ palabra | 15 de 15 cortes a ≤ 0,10 s de su palabra |
+| Planos | 23 (media 2.1 s; el más largo 5.7 s) |
+
+Frases por debajo del 99,5 % (el reconocedor escribe distinto un nombre o una palabra; se revisaron una a una):
+- 0.25 s · 94.3% · reconocido: «Lejos de la costa de Leonida hay una isla diminuta, y alguien escribió en la arena S o S.»
+- 42.53 s · 86.7% · reconocido: «Así que dime quién escribió el S o S.»
+
+## Lista del encargo
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Es diferente de los vídeos anteriores? | Sí. Ningún vídeo anterior cuenta una historia de misterio ni trata el mar abierto o este encuentro. Es una narración con giro, distinta de la guía del SHORT_01 y de los Shorts informativos previos. |
+| ¿Su concepto es original? | Sí. Presenta el encuentro como un expediente policial con «pruebas» numeradas y tono frío, que estalla en color y comedia cuando aparece el perro. Acaba con una pregunta que devuelve al principio (bucle). |
+| ¿Tiene gameplay auténtico? | Sí: gameplay grabado del juego ya lanzado (vídeo publicado el 19/11/2026). No hay imágenes generadas con IA. |
+| ¿Está libre de tráilers y Extended Look? | Sí: no usa ni un fotograma de los tráileres, del Extended Look ni de filtraciones. |
+| ¿Está libre de spoilers? | Sí. Es un encuentro secundario en el mar, no una misión. El vídeo del teléfono solo muestra a una pareja saludando; no se revela nada de la historia. |
+| ¿Cada elemento mencionado se ve? | Sí. lejos de la costa → el mapa con la isla · isla diminuta → la isla desde el aire · alguien escribió en la arena → Jason junto a las letras · S.O.S. → zoom a las letras · teléfono → el teléfono · vídeo y saludo → la pareja en la pantalla · solo agua → el mapa del mar · bucear → buceando · vuelves a la superficie → saliendo del agua · algo viene → punto lejano que se acerca · perro, gafas, moto → el perro con gafas al manillar · copiloto, conduce, vuelta, otra moto → los planos de cada acción · otras zonas → el perro en otro tramo de mar. |
+| ¿La narración es natural? | Voz C del canal (español latinoamericano), frase a frase, con la energía ajustada a cada bloque. No puedo escucharla: revísala antes de publicar. |
+| ¿El ritmo es adecuado? | Un plano nuevo cada 2.1 s de media y sin pantallas vacías. El gancho dura menos de 3 s. |
+| ¿Los subtítulos están sincronizados? | Sí: los incrustados usan los tiempos de cada palabra de la voz, y `SUBTITULOS.srt`, los de cada frase. |
+| ¿Los recursos tienen permisos suficientes? | **No para uso comercial.** El gameplay no tiene licencia ni permiso del autor y se usa con crédito por decisión del canal; la música, la voz y los gráficos son propios. Ver `FUENTES_Y_PERMISOS.txt`. |
+| ¿Cumple las políticas de YouTube? | Aporta guion, narración, montaje y gráficos propios. Aun así, al usar gameplay ajeno sin permiso: **sin monetizar** y con el riesgo de una reclamación de Content ID. Hay que marcar el contenido como sintético (voz). |
+

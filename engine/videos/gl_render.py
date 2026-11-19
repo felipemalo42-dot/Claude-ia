@@ -236,7 +236,7 @@ def src_window(sh):
     for _ in range(3):
         nxt = next((x for x in cs if x > loc + 0.02), limit + 0.1)
         end = min(nxt - 0.04, limit)
-        if end - loc >= 0.8 or nxt > limit: break
+        if end - loc >= sh.get("minwin", 0.8) or nxt > limit: break   # minwin: planos breves a propósito (congelados, reacciones)
         loc = nxt + 0.02     # el inicio estaba pegado a un corte: empezar en el plano siguiente
     sh["_win"] = (path, loc, max(0.4, end - loc)); return sh["_win"]
 
