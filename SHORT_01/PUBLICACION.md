@@ -1,6 +1,6 @@
 # SHORT_01: publicación
 
-**Duración:** 0:51.7 · 1080×1920 · 30 fps · H.264 + AAC (orden de reproducción verificado)
+**Duración:** 0:51.7 · 1080×1920 · 30 fps · H.264 + AAC
 
 ## Título
 

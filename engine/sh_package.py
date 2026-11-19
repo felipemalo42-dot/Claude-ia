@@ -190,7 +190,7 @@ def player_order(mp4):
     navegador) frente al orden real en que salen del decodificador. Debe ser 0."""
     o = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "frame=pts", "-of", "csv=p=0", mp4],
                        capture_output=True, text=True).stdout.split()
-    ts = [int(x) for x in o if x.lstrip("-").isdigit()]
+    ts = [int(x.split(",")[0]) for x in o if x.split(",")[0].lstrip("-").isdigit()]     # algunas líneas llevan datos extra tras una coma
     order = sorted(range(len(ts)), key=ts.__getitem__)
     return sum(1 for a, b in zip(order, order[1:]) if b < a), len(ts)
 

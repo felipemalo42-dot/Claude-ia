@@ -11,7 +11,7 @@ Revisado el 19/11/2026 sobre `VIDEO_FINAL.mp4`.
 | Sincronía imagen ↔ palabra | 17 de 17 cortes a ≤ 0,10 s de su palabra |
 | Planos | 25 (media 1.9 s; el más largo 4.6 s) |
 | Fluidez | 0.1 % de fotogramas repetidos en mitad de un movimiento · 6.1 % de saltos irregulares entre fotogramas (son cortes, destellos y rótulos que aparecen) |
-| Orden de reproducción | 0 saltos hacia atrás al reproducir en un móvil o navegador (1447 fotogramas, marcas de tiempo en orden) |
+| Orden de reproducción | 0 saltos hacia atrás al reproducir en un móvil o navegador (1448 fotogramas, marcas de tiempo en orden) |
 | Bucles y vaivenes | 0 planos sin imagen suficiente (el motor nunca repite un tramo: si se acaba, mantiene el último fotograma) · 0 planos que repiten imagen de los 6 s anteriores |
 
 Frases por debajo del 99,5 % (el reconocedor escribe distinto un nombre o una palabra; se revisaron una a una):
