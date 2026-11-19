@@ -1,0 +1,196 @@
+REGISTRO DE PERMISOS · GTA6_VIDEO_LANZAMIENTO
+«GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado» (vídeo post lanzamiento)
+Revisado el 18/11/2026. Este registro no sustituye una opinión jurídica profesional.
+
+======================================================================================================
+CONCLUSIÓN (léela antes de publicar)
+======================================================================================================
+1. El vídeo usa material oficial de Rockstar Games: imágenes y vídeo, pero no su audio.
+   Rockstar lo ofrece en rockstargames.com/VI/media con el rótulo «Download and share».
+   Las opiniones sobre la jugabilidad son reseñas publicadas el 18/11/2026: se citan breves, traducidas y atribuidas (apartado A12).
+   NO hay vídeo de streamers ni de creadores. Se intentó buscar gameplay posterior al lanzamiento, pero este entorno no tiene acceso
+   a YouTube ni a Twitch. Además, el control de permisos bloqueó la descarga de contenido de terceros sin autorización, y no se forzó.
+   Para usar clips de streamers hace falta su permiso escrito: ver 00_INFORMES/PLANTILLA_PERMISO_STREAMERS.md.
+2. NO HAY LICENCIA COMERCIAL. La política de Rockstar sobre su material con copyright solo autoriza usos NO comerciales:
+     «Non-commercial means that you don't make money through the game footage you post or use the material as part of
+      a promotion for a product or service.»
+     (Policy on posting copyrighted Rockstar Games material, actualizada el 10/01/2025)
+   Take-Two se reserva el derecho de retirar su material en cualquier momento.
+3. Por lo tanto, este vídeo se publica SIN MONETIZACIÓN:
+   - anuncios desactivados;
+   - sin patrocinios, enlaces de afiliado ni productos promocionados.
+   El canal todavía no está en el Programa de Socios de YouTube. Si entra, este vídeo debe seguir con los anuncios
+   desactivados hasta conseguir una licencia escrita de Rockstar Games / Take-Two (ver el apartado D).
+   Nadie puede garantizar la monetización, y este vídeo no está pensado para monetizarse.
+4. Condiciones que cumple el vídeo (comprobadas en el montaje):
+   - el audio oficial va silenciado: los tráileres llevan música con licencia de terceros;
+   - la fuente aparece en pantalla en cada plano, con el minuto exacto en los vídeos;
+   - el comentario es propio y está pegado a la imagen: cada plano ilustra una frase concreta de la narración;
+   - nunca se resube un vídeo oficial entero: el plano más largo de material oficial dura {{MAX_PLANO}} s;
+   - las escenas de misiones (el atraco y la infiltración del Extended Look) solo aparecen en el capítulo 4.
+     Ese capítulo va precedido de un cartel de aviso con el minuto para saltarlo, y lleva un rótulo de spoiler permanente.
+     Ninguna aparece en el título ni en la miniatura;
+   - fuera quedan los rehenes, los cuerpos, la sangre y los diálogos de trama (lista en recursos/tramos_excluidos.txt);
+   - no hay filtraciones, copias anticipadas ni vídeos de creadores;
+   - el contenido exclusivo de la edición Ultimate y del bono de reserva va rotulado como tal.
+5. Riesgo residual: Content ID de Rockstar puede reclamar el vídeo, sobre todo por los planos de los tráileres.
+   Si ocurre, NO lo dispute: es su material. La reclamación puede bloquear el vídeo en algunos países o mostrar
+   anuncios a favor de Rockstar. Es una decisión de Rockstar, no un ingreso para el canal.
+
+Clasificación
+  VERDE    = hay una autorización verificable para el uso que se le da en ESTE vídeo (no comercial).
+  AMARILLO = situación poco clara. No se usa sin autorización.
+  ROJO     = no autorizado. Descartado.
+  En el material oficial se indican dos columnas: uso no comercial (este vídeo) y uso comercial (monetizado).
+
+
+======================================================================================================
+A. MATERIAL OFICIAL DE ROCKSTAR GAMES / TAKE-TWO INTERACTIVE (propietario de todo el apartado A)
+======================================================================================================
+
+A1. «Grand Theft Auto VI: An Extended Look» (estrenado en Netflix el 27/08/2026; después, en YouTube y en la web)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_An_Extended_Look/GTAVI_An_Extended_Look.mp4
+    Página: https://www.rockstargames.com/VI/media («Download and share»)
+    Licencia comercial: NO.
+    Reutilización en YouTube: permitida sin fines comerciales (política de Rockstar). Además, Rockstar y Netflix
+      autorizaron públicamente a los creadores a reaccionar al Extended Look y a recortarlo, siempre con comentario
+      o contexto propio y sin resubir el vídeo completo sin editar (26-27/08/2026, recogido por GTA Boom,
+      Windows Report y Kotaku; enlaces en FUENTES_Y_ENLACES.txt).
+    Autorización: política pública + declaración pública. No hay permiso individual por escrito.
+    Atribución: en pantalla, en cada plano: «Rockstar Games · An Extended Look · mm:ss».
+    Limitaciones de monetización: no monetizar sin licencia escrita.
+    Uso en este vídeo: {{USO_E}}
+      Tramos de vida cotidiana, conducción, actividades y paisaje. Con aviso de spoiler (capítulo 4), además:
+        - el atraco (11:28-16:40);
+        - la infiltración (20:43-24:20).
+      Excluidos: la misión de 0:00-6:00, los diálogos de trama, los rehenes y cualquier plano con sangre o cuerpos.
+    Audio: silenciado.
+    Decisión: VERDE para este uso no comercial · ROJO para uso comercial.
+
+A2. Tráiler de lanzamiento (15/10/2026)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Launch_Trailer/GTAVI_Launch_Trailer.mp4
+    Contiene música de terceros con licencia («Flower in a Hurricane», Justice con Tame Impala, SZA y King Gizzard & The Lizard Wizard).
+    Licencia comercial: NO · Reutilización: permitida sin fines comerciales (política) · Atribución: en pantalla con el minuto.
+    Uso en este vídeo: {{USO_L}}
+      Solo planos de paisaje y vehículos, sin rótulos de reserva.
+    Audio: silenciado, también para evitar reclamaciones por la música.
+    Decisión: VERDE para este uso no comercial · ROJO para uso comercial.
+
+A3. Vídeo «Pre-Load Now» (10/11/2026)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Pre-Load_Now/GTAVI_Pre-Load_Now.mp4
+    Condiciones iguales a las de A2.
+    Uso: {{USO_P}}
+    Audio silenciado.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A4. Vídeos oficiales de personajes (8) y portada animada
+    Archivos oficiales:
+      https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Videos.zip
+      https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Official_Cover_Art_Landscape/GTAVI_Official_Cover_Art_Landscape.mp4
+    Uso: {{USO_C}}
+      Los vídeos de personaje duran entre 1 y 1,5 s y se repiten en bucle mientras se presenta a cada personaje.
+    Audio silenciado.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A5. Capturas oficiales (138 imágenes: personas y lugares)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Screenshots.zip
+    Uso: {{USO_S}}
+    Atribución: en pantalla, con el nombre del archivo oficial.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A6. Ilustraciones, fondos y postales oficiales (incluidas la portada y la del álbum)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/GTAVI_Artwork_Wallpapers.zip
+    Uso: {{USO_A}}
+    Se usan las versiones SIN logotipo. La miniatura lleva la ilustración «Jason_and_Lucia_01» sin logotipo.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A7. Imágenes de la edición Ultimate
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Ultimate_Edition_Benefits.zip
+    Uso: {{USO_U}}
+    Todas van rotuladas «EXCLUSIVO EDICIÓN ULTIMATE» para no dar a entender que vienen en la edición estándar.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A8. Paquete «Vintage Vice City» (bono por reservar)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Vintage_Vice_City_Pack.zip
+    Uso: {{USO_V}}
+    Rotulado «BONO POR RESERVAR».
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A9. Logotipos y marcas (GTA VI, Rockstar Games)
+    - El logotipo solo aparece dentro del material oficial que lo incluye: la portada animada y algún plano del Extended Look.
+    - En los gráficos propios y en la miniatura, «GTA 6» se escribe como texto, para identificar el tema (uso nominativo).
+    - No se sugiere afiliación: en la descripción hay un aviso de que el canal no tiene relación con Rockstar ni con Take-Two.
+    Decisión: VERDE en este uso.
+
+A10. Música oficial: radios, banda sonora y «Grand Theft Auto VI: The Album»
+    Decisión: ROJO. No suena en el vídeo. El álbum solo se menciona, sobre su portada oficial (A6).
+
+A12. Citas breves de reseñas de prensa (IGN, GameSpot, Eurogamer, GamesRadar+, Windows Central, Forbes, Vice, The Guardian,
+     Worthplaying y Digital Foundry) y de prensa de Nueva Zelanda (Stuff, NZ Herald)
+    Uso: frases de menos de 20 palabras, traducidas, con el medio en pantalla y el enlace en la descripción. Son objeto de análisis.
+    Autorización: derecho de cita (mismas normas que A11). Las cifras (notas, fps, resoluciones) son hechos.
+    Decisión: VERDE.
+
+A11. Citas de texto de rockstargames.com/VI
+    Uso: citas breves, traducidas y atribuidas, como objeto de análisis.
+    Derecho de cita, según la ley de cada país:
+      - art. 32 LPI (España);
+      - art. 148 LFDA (México);
+      - art. 31 de la Ley 23 de 1982 (Colombia);
+      - art. 10 de la Ley 11.723 (Argentina);
+      - 17 U.S.C. §107 (EE. UU.).
+    Decisión: VERDE.
+
+
+======================================================================================================
+B. MATERIAL DE TERCEROS QUE NO SE USA
+======================================================================================================
+B1. Vídeos de streamers y creadores (directos de lanzamiento, previews, análisis, reacciones)
+    No se descargó ni se incorporó ningún fragmento.
+    - Acceso: el entorno de producción no llega a YouTube ni a Twitch, y el control de permisos bloqueó la descarga.
+    - Derechos: el vídeo de un streamer es suyo, además de llevar material de Rockstar. Dar crédito no equivale a tener permiso:
+      sin autorización escrita, cualquier reclamación puede retirar el vídeo y sancionar al canal.
+    Para una próxima versión con clips de streamers:
+      - pedir permiso con la plantilla 00_INFORMES/PLANTILLA_PERMISO_STREAMERS.md;
+      - o usar gameplay grabado por el propio canal.
+    Decisión: ROJO sin permiso escrito · VERDE con permiso escrito.
+B2. Filtraciones, copias anticipadas, imágenes del hackeo de 2022 y vídeos filtrados en agosto de 2026
+    No se buscaron ni se usaron. Take-Two pide retirar ese material.
+    Decisión: ROJO.
+B3. Imágenes generadas con IA que imitan el juego
+    No se usan. Los gráficos explicativos son diseños propios, y donde no hay imagen oficial (por ejemplo, el perfil
+    criminal o el mapa) van rotulados «REPRESENTACIÓN».
+    Decisión: no aplica.
+
+
+======================================================================================================
+C. MATERIAL PROPIO O CON LICENCIA COMERCIAL (VERDE)
+======================================================================================================
+C1. Narración
+    - Voz sintética generada con Chatterbox Multilingual (Resemble AI, licencia MIT). Lleva marca de agua inaudible Perth.
+    - Referencia de voz: corpus OpenSLR SLR72, locutora anónima cof_03034 (Google, CC BY-SA 4.0). Se atribuye en la descripción.
+    - Divulgación: marcar «Contenido alterado o sintético: Sí» en YouTube Studio.
+C2. Música y efectos
+    Compuestos por código para este vídeo (motor del canal, engine/audio.py). Sin samples de terceros.
+C3. Gráficos, rótulos, subtítulos y miniatura
+    Diseño propio (Skia). Tipografías con licencia SIL Open Font License.
+C4. Mapa de Florida del gráfico «Leonida se inspira en Florida»
+    Datos de Natural Earth, de dominio público. Va rotulado «Representación aproximada · no es el mapa del juego».
+
+
+======================================================================================================
+D. CÓMO PEDIR UNA LICENCIA (si en el futuro quieres monetizar este vídeo)
+======================================================================================================
+1. Escribe a Rockstar Games / Take-Two Interactive desde los canales oficiales:
+   - el soporte de Rockstar (support.rockstargames.com), apartado de contacto;
+   - el área legal o de licencias de Take-Two (take2games.com).
+   No inventamos direcciones: usa las que publiquen allí.
+2. Incluye en la solicitud:
+   - el nombre y la URL del canal;
+   - este vídeo y su duración;
+   - la lista de recursos con sus minutos (recursos/registro_de_planos.csv);
+   - que el audio va silenciado y que no hay spoilers;
+   - que se pide permiso para monetizar con anuncios de YouTube;
+   - el territorio y el plazo.
+3. Guarda la respuesta por escrito.
+4. Sin respuesta afirmativa por escrito, el vídeo sigue sin monetizar.

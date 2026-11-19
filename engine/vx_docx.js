@@ -35,7 +35,7 @@ function cell(children, width, fill) {
   });
 }
 function headerRow() {
-  const labels = ["Tiempo", "Narración (negrita = énfasis · [pausa])", "Visual y sonido", "Ritmo"];
+  const labels = data.labels || ["Tiempo", "Narración (negrita = énfasis · [pausa])", "Visual y sonido", "Ritmo"];
   return new TableRow({ tableHeader: true, children: labels.map((l, i) => cell([P([{ t: l, b: true, color: "FFFFFF" }], { after: 0 })], COLS[i], C.cab)) });
 }
 function sectionRow(title) {
@@ -79,6 +79,7 @@ const children = [
   scriptTable,
   H("Fuentes por capítulo", HeadingLevel.HEADING_1),
   ...data.sources.flatMap(([sec, srcs]) => [P([{ t: sec, b: true, color: C.rosa }], { before: 120, after: 40, keepNext: true }), ...srcs.map((s) => li(s))]),
+  ...(data.extra || []).flatMap(([h, items]) => [H(h, HeadingLevel.HEADING_1), ...items.map((t) => li(t))]),
   H("Grabar la narración con voz humana", HeadingLevel.HEADING_1),
   ...data.human.map((t) => li(t)),
   H("Narración completa (texto corrido)", HeadingLevel.HEADING_1),
@@ -97,7 +98,7 @@ const doc = new Document({
   numbering: { config: [bullets] },
   sections: [{
     properties: { page: { size: { width: 11906, height: 16838, orientation: PageOrientation.LANDSCAPE }, margin: { top: MARGIN, bottom: MARGIN, left: MARGIN, right: MARGIN } } },
-    footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: "Sal y Asfalto · Guion VIDEO_EXTRA · página ", font: FONT, size: 16, color: C.gris }), new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: 16, color: C.gris })] })] }) },
+    footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: data.footer || "Sal y Asfalto · Guion VIDEO_EXTRA · página ", font: FONT, size: 16, color: C.gris }), new TextRun({ children: [PageNumber.CURRENT], font: FONT, size: 16, color: C.gris })] })] }) },
     children,
   }],
 });

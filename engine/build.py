@@ -2,7 +2,7 @@
 
 Uso:  python build.py v01 [--stage all|audio|video|thumb] [--master] [--preview SEG]
 """
-import argparse, importlib, json, math, os, re, subprocess, sys, time
+import argparse, importlib, json, math, os, re, shutil, subprocess, sys, time
 import numpy as np, soundfile as sf, skia
 sys.path.insert(0, os.path.dirname(__file__))
 import audio, gfx
@@ -379,17 +379,19 @@ def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None, seg
     if preview: a, b = preview; f0, f1 = int(a * FPS), min(nfr, int(b * FPS))
     if segment: k, n = segment; f0, f1 = nfr * k // n, nfr * (k + 1) // n
     mp4 = f"{outdir}/{V['file']}.mp4" if not preview else f"{outdir}/recursos/preview_{int(f0 / FPS)}.mp4"
-    if segment: mp4 = f"{outdir}/recursos/_seg_{segment[0]:02d}.mp4"
+    if segment: mp4 = f"{outdir}/recursos/_seg_{segment[0]:02d}.h264"   # H.264 en bruto: se une con cat sin perder fotogramas
     dur = (f1 - f0) / FPS
     if master: vargs = ["-crf", "17", "-maxrate", "12M", "-bufsize", "24M"]
+    elif segment and V.get("final_codec"): vargs = ["-crf", "17"]          # intermedio de alta calidad; la compresión final va aparte
     else:
         cap = int(min(8000, 92 * 8 * 1000 / max(1, total) - 192)); vargs = ["-crf", "19", "-maxrate", f"{cap}k", "-bufsize", f"{cap * 2}k"]
     aud_in = [] if segment else ["-ss", f"{f0 / FPS:.3f}", "-t", f"{dur:.3f}", "-i", f"{outdir}/recursos/mezcla_final.wav"]
     aud_out = [] if segment else ["-map", "1:a", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", *aud_in,
            "-map", "0:v", *aud_out, "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-pix_fmt", "yuv420p",
-           "-profile:v", "high", "-g", "60", *vargs, "-movflags", "+faststart",
+           "-profile:v", "high", "-g", "60", *vargs, *(["-f", "h264"] if segment else ["-movflags", "+faststart"]),
            "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", mp4]
+    if segment and V.get("final_codec"): cmd[cmd.index("-preset") + 1] = "veryfast"
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     surf = gfx.new_surface(W, H); sA = gfx.new_surface(W, H); sB = gfx.new_surface(W, H)
     buf = np.zeros((H, W, 4), np.uint8)
@@ -431,13 +433,25 @@ def render_parallel(V, tl, outdir, vid, jobs, master=False):
         procs.append(subprocess.Popen(cmd))
     codes = [p.wait() for p in procs]
     if any(codes): raise RuntimeError(f"falló algún segmento: {codes}")
-    lst = f"{outdir}/recursos/_segs.txt"
-    open(lst, "w").write("".join(f"file '{outdir}/recursos/_seg_{k:02d}.mp4'\n" for k in range(jobs)))
-    mp4 = f"{outdir}/{V['file']}.mp4"
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst, "-i", f"{outdir}/recursos/mezcla_final.wav",
-                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", mp4], check=True)
-    for k in range(jobs): os.remove(f"{outdir}/recursos/_seg_{k:02d}.mp4")
-    os.remove(lst)
+    # unir los segmentos H.264 en bruto (cat) conserva todos los fotogramas; el contenedor se genera al final
+    allv = f"{outdir}/recursos/_video.h264"
+    with open(allv, "wb") as fo:
+        for k in range(jobs):
+            with open(f"{outdir}/recursos/_seg_{k:02d}.h264", "rb") as fi: shutil.copyfileobj(fi, fo, 1 << 24)
+            os.remove(f"{outdir}/recursos/_seg_{k:02d}.h264")
+    mp4 = f"{outdir}/{V['file']}.mp4"; wav = f"{outdir}/recursos/mezcla_final.wav"
+    if V.get("final_codec") == "av1":
+        # tamaño objetivo (GitHub admite archivos de hasta 100 MB): AV1 de 10 bits conserva mucho más detalle que H.264 a la misma tasa
+        abr = 128; kbps = int(V.get("target_mb", 94) * 8 * 1024 / tl["total"] - abr)
+        venc = ["-c:v", "libsvtav1", "-preset", str(V.get("av1_preset", 6)), "-b:v", f"{kbps}k", "-g", "240", "-pix_fmt", "yuv420p10le",
+                "-svtav1-params", "tune=0:enable-overlays=1:scd=1"]
+    else:
+        abr = 192; venc = ["-c:v", "copy"]
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", allv, "-i", wav, "-map", "0:v", "-map", "1:a", *venc,
+                    "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
+                    "-c:a", "aac", "-b:a", f"{abr}k", "-ar", "48000", "-shortest", "-movflags", "+faststart", mp4], check=True)
+    if V.get("keep_master"): os.replace(allv, f"{outdir}/recursos/master_h264_crf17.h264")
+    else: os.remove(allv)
     return mp4
 
 def main():

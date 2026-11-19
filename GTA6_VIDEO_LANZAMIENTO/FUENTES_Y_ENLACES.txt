@@ -1,0 +1,98 @@
+FUENTES Y ENLACES · GTA6_VIDEO_LANZAMIENTO (vídeo post lanzamiento)
+«GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado»
+Consultadas el 18/11/2026, entre las 19:00 y las 21:00 UTC: las reseñas ya estaban publicadas y el juego ya estaba desbloqueado en Nueva Zelanda, Australia y Asia.
+
+Cómo leer este archivo:
+  [O] Fuente oficial de Rockstar Games, leída directamente.
+  [P] Prensa, leída mediante el buscador web: desde este entorno no se pueden abrir sus páginas. Se citan los titulares y los
+      extractos devueltos. Antes de publicar, abre los enlaces principales y comprueba las frases.
+  Las frases de las reseñas aparecen traducidas al español por Sal y Asfalto.
+
+
+1. NOTAS Y VEREDICTO (reseñas publicadas el 18/11/2026)
+   - Metacritic 99/100, más de 140 reseñas, ninguna mixta ni negativa; empata el récord de The Legend of Zelda: Ocarina of Time (1998).
+     OpenCritic 98-99, recomendado por el 100 % de la crítica.  [P]
+       https://www.bloomberg.com/news/articles/2026-11-18/-grand-theft-auto-vi-becomes-the-best-reviewed-video-game-ever
+       https://www.vice.com/en/article/gta-6-review-roundup/
+       https://dotesports.com/gta/news/gta-6-review-roundup
+       https://outputlag.com/featured-slider/gta-6-review-roundup/
+       https://happygamer.com/gta-6-reviews-metacritic-opencritic-scores-175596/
+     Los medios no coinciden en el número exacto de reseñas (109, 140 o 147, según la hora de la consulta).
+   - IGN 10/10: «el videojuego más impresionante» que ha jugado su analista; Leonida, «exquisitamente detallada» y llena de posibilidades.  [P]
+     (vía https://www.vice.com/en/article/gta-6-review-roundup/ y https://movieweb.com/gta-6-review-roundup/)
+   - GameSpot 10/10: «no será superado hasta GTA 7»; los pequeños detalles; los grandes atracos, «la joya»; la física de los coches «exigía más
+     precisión»; los requisitos de progreso cortan el ritmo.  [P]  https://www.gamespot.com/reviews/grand-theft-auto-6-review/
+   - Eurogamer 5/5: «vuelve a ampliar el horizonte de los videojuegos».  [P]  (vía Vice y Movieweb)
+   - GamesRadar+: «el sandbox de mayor fidelidad de la generación».  [P]  https://www.gamesradar.com/games/grand-theft-auto/gta-6-review/
+   - Windows Central: el mundo reacciona; los robos salen distinto según quién esté cerca; los peatones reaccionan a la mala conducción,
+     a los insultos y al claxon; caras capturadas de actores visibles en primera persona; la policía es mucho más compleja
+     (cortar alarmas y cámaras, esconderse en el coche → modo búsqueda); parte de la jugabilidad podría generar debate.  [P]
+       https://www.windowscentral.com/gaming/xbox/grand-theft-auto-6-xbox-review
+   - Forbes (Paul Tassi): la conducción, que suele ser un problema en los juegos de Rockstar, aquí funciona.  [P]
+       https://www.forbes.com/sites/paultassi/2026/11/18/grand-theft-auto-6-review-a-perfect-crime/
+   - Vice: los PNJ tienen frases propias; las actividades secundarias y los atracos se sienten como un avance, porque la historia gira en
+     torno al dinero.  [P]  https://www.vice.com/en/article/gta-6-review/
+   - The Guardian: reseñar GTA 6 es como reseñar una ciudad como París (citado por The National).  [P]
+   - Worthplaying 9,5: los primeros capítulos dedican mucho tiempo a la vida cotidiana (citado por The National).  [P]
+   - Resúmenes de lo que gusta y de lo que no:
+       - combate torpe; cuerpo a cuerpo rígido (dos reseñas);
+       - controles enrevesados a ratos;
+       - arranque lento y misiones restrictivas;
+       - realismo: coches frágiles, facturas de reparación y tareas cotidianas (seis reseñas);
+       - 30 fps en todas las consolas, PS5 Pro incluida, sin modo a 60; caídas por debajo de 30 en nueve reseñas;
+       - actividades: pesca, gimnasio, discoteca, golf, caza, buceo, observación de aves, carreras de drones;
+       - la historia de amor como gran sorpresa;
+       - sátira de conspiraciones, desigualdad e influencers;
+       - 16 de 18 reseñas hablan de Jason y Lucía.  [P]
+       https://www.thenationalnews.com/arts-culture/pop-culture/2026/11/18/gta-6-reviews-metacritic/
+       https://www.purexbox.com/news/2026/11/roundup-heres-what-the-critics-are-saying-about-gta-6-so-far
+       https://outputlag.com/featured-slider/gta-6-review-roundup/
+       https://dotesports.com/gta/news/gta-6-review-roundup
+
+2. RENDIMIENTO MEDIDO
+   - Digital Foundry: Series X, 1440p internos a 30 fps con bajadas en escenas cargadas; Series S, 720p internos y a menudo por debajo de 30;
+     recomienda jugar en PS5 o en Series X.  [P]
+       https://www.videogameschronicle.com/news/gta-6-xbox-series-s-performance-analysis-admires-the-effort-but-says-significant-frame-drops-are-a-problem/
+       https://www.levelup.com/en/news/does-gta-6-run-well-on-xbox-series-s-experts-praise-rockstars-work-but-issue-an-important-warning-about-microsofts-console/
+   - Rockstar a Wccftech: en Series S, la base es de 720p reescalada a 1080p (FSR 4).  [P] (citado en la misma cobertura)
+
+3. LANZAMIENTO Y PRIMEROS JUGADORES
+   - Desbloqueo a medianoche local; Nueva Zelanda, la primera, a las 11:00 UTC del 18/11; Australia (Sídney), a las 13:00 UTC.  [P]
+       https://mp1st.com/news/gta-6-unlock-times-revealed
+       https://stevivor.com/news/gta-6-ps5-unlock-schedule-shows-australia-among-the-first-in-hours-before-north/
+     Las horas de Japón, España y México salen del mismo criterio (medianoche local) y se rotulan como tales.
+   - Primeras impresiones en Nueva Zelanda («un festín para los ojos»; jugabilidad, gráficos e historia tras media hora).  [P]
+       https://www.nzherald.co.nz/world/gta-6-hits-new-zealand-kiwi-gamers-first-in-the-world-to-play-as-global-launch-begins-in-nz/JAYVNPFB45DPRJPHDWIIQNS6NQ/
+       https://www.stuff.co.nz/culture/361060901/after-13year-wait-grand-theft-auto-vi-arrives-enormou
+   - «Truco de Nueva Zelanda» y riesgo de sanción.  [P]
+       https://www.notebookcheck.net/Streamer-faces-ban-for-using-GTA-6-early-unlock-time-trick-on-release-date.1451653.0.html
+       https://www.newsweek.com/gta-6-players-access-game-early-with-new-zealand-timezone-trick-12732608
+       https://www.nme.com/news/gaming-news/grand-theft-auto-6-fans-new-zealand-trick-playstation-xbox-release-time-3976324
+   - Mensaje de Sam Houser.  [P]  https://www.gamesradar.com/games/grand-theft-auto/as-gta-6-finally-releases-rockstar-boss-sam-houser-issues-rare-statement-we-are-incredibly-grateful-and-look-forward-to-many-more-years-of-sharing-these-experiences-with-you/
+   - Take-Two sube un 6 % en bolsa; más de 1.500 millones de dólares en reservas (estimación).  [P]
+       https://www.forbes.com/sites/siladityaray/2026/11/18/grand-theft-auto-6-launches-to-rave-reviews-over-15-billion-in-estimated-pre-sales/
+   - Unas 80 horas de historia principal, estimación de Rob Nelson (Rockstar North) antes del lanzamiento.  [P]
+       https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/
+   - Leonida, unas dos veces el mapa de GTA 5, según Rockstar antes del lanzamiento (Aaron Garbut a Game Informer).  [P]
+       https://www.vice.com/en/article/gta-6-map-size-confirmed-rockstar-previews/
+   - Mecánicas que Rockstar adelantó antes del lanzamiento (cambio de personaje, peso, músculos, sueño).  [P] Entrevista de Dazed, vía:
+       https://pcgamer.com/games/grand-theft-auto/big-new-gta-6-gameplay-details-revealed-including-specifics-about-jason-and-lucia-character-swapping-play-as-a-couple-or-go-off-and-cause-chaos-independently
+
+4. MATERIAL OFICIAL USADO EN EL VÍDEO (descarga directa)  [O]
+   Página de medios: https://www.rockstargames.com/VI/media
+   - An Extended Look:          https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_An_Extended_Look/GTAVI_An_Extended_Look.mp4
+   - Tráiler de lanzamiento:    https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Launch_Trailer/GTAVI_Launch_Trailer.mp4
+   - Portada animada:           https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Official_Cover_Art_Landscape/GTAVI_Official_Cover_Art_Landscape.mp4
+   - Vídeos de personajes:      https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Videos.zip
+   - Capturas (138):            https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Screenshots.zip
+   - Ilustraciones (142):       https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/GTAVI_Artwork_Wallpapers.zip
+   Cada plano, con su archivo y su minuto original, está en recursos/registro_de_planos.csv.
+   El 18/11 a las 20:30 UTC, Rockstar no había publicado material nuevo tras el lanzamiento (página de medios sin cambios).
+
+5. POLÍTICA DE ROCKSTAR Y PERMISO DEL EXTENDED LOOK
+   - https://support.rockstargames.com/en-US/articles/7bNaeoMFTV0iUDGhStTXvz (uso no comercial; actualizada el 10/01/2025)
+   - https://www.gtaboom.com/netflix-just-cleared-creators-to-cover-the-gta-6-extended-look-d613 (recortar con comentario)
+
+6. VOZ, MÚSICA Y DATOS
+   - Chatterbox Multilingual (MIT): https://github.com/resemble-ai/chatterbox · Referencia de voz: OpenSLR SLR72 (CC BY-SA 4.0): https://www.openslr.org/72/
+   - Música y efectos originales (engine/audio.py).
