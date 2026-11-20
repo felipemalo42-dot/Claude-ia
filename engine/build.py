@@ -92,8 +92,41 @@ def load_take(path):
         g = gcd(TSR, sr); x = _sg.resample_poly(x, TSR // g, sr // g).astype(np.float32)
     return level(trim(x))
 
+def tail_trim(x, t_end, sr=None):
+    """Quita el balbuceo que la síntesis añade a veces tras la última palabra, sin tocar la palabra:
+    busca, desde el fin reconocido de la última palabra, el primer silencio de 120 ms (energía 38 dB por debajo del
+    nivel de la voz) y corta 60 ms después, con un fundido de 40 ms. Si en 0,8 s no hay silencio, no corta nada."""
+    sr = sr or TSR; hop = int(0.01 * sr); n = len(x) // hop
+    if n < 10: return x
+    rms = np.sqrt(np.mean(x[: n * hop].reshape(n, hop) ** 2, axis=1) + 1e-12)
+    thr = np.percentile(rms, 95) * 10 ** (-38 / 20); i0 = int(t_end / 0.01); run = 0
+    for i in range(max(0, i0), min(n, i0 + 80)):
+        run = run + 1 if rms[i] < thr else 0
+        if run >= 12:
+            cut = (i - run + 1) * hop + int(0.06 * sr)
+            if cut >= len(x) - int(0.02 * sr): return x
+            y = x[:cut].copy(); fo = int(0.04 * sr); y[-fo:] *= np.linspace(1, 0, fo); return y
+    return x
+
+def tail_clean(x, t_end, sr=None):
+    """Sin cambiar la duración de la toma: silencia lo que suene después de la última palabra (balbuceo de la síntesis)
+    cortando en el valle de energía que sigue a la palabra, y termina siempre con una caída suave (coseno de 50 ms)."""
+    sr = sr or TSR; n = len(x); y = x.copy(); hop = int(0.01 * sr); i_end = int(t_end * sr)
+    if n - i_end > int(0.25 * sr):
+        a = i_end + int(0.03 * sr); b = min(n, i_end + int(0.35 * sr)); seg = y[a:b]; m = len(seg) // hop
+        if m > 2:
+            rms = np.sqrt(np.mean(seg[: m * hop].reshape(m, hop) ** 2, axis=1))
+            cut = a + int(np.argmin(rms)) * hop + hop // 2; e = min(n, cut + int(0.06 * sr))
+            y[cut:e] *= np.linspace(1, 0, e - cut); y[e:] = 0
+    fo = int(0.05 * sr)
+    if n > fo:
+        ref = np.percentile(np.abs(y), 99) + 1e-9
+        if np.sqrt(np.mean(y[-fo:] ** 2)) / ref > 10 ** (-30 / 20): y[-fo:] *= 0.5 * (1 + np.cos(np.linspace(0, np.pi, fo)))
+    return y
+
 NAMES = dict(narr_wav="narracion.wav", narr_mp3="narracion.mp3", srt="subtitulos.srt", script="guion.txt", thumb="miniatura.png")
 def out_name(V, key): return V.get("names", {}).get(key, NAMES[key])
+def rdir(V): return V.get("res_dir", "recursos")   # carpeta de trabajo dentro de la entrega (por defecto «recursos»)
 
 def build_audio(V, outdir, narr=None, aligner=None):
     aligner = aligner or Aligner()
@@ -119,6 +152,30 @@ def build_audio(V, outdir, narr=None, aligner=None):
     def evaluate(tk, x):
         """→ (tiempos por palabra, coincidencia, texto reconocido, detalle). Métrica «fonetica»: ver voice_qa.py."""
         times, score, hyp = aligner.align(x, TSR, tk["flat"], tk["exp"])
+        if metric == "wer":
+            # WER por palabras (voice_qa.wer): Parakeet y, si hay alguna diferencia, también Whisper; cuenta la de menos errores
+            # una palabra es error solo si fallan los dos reconocedores (voice_qa.wer_combined)
+            import voice_qa
+            r = voice_qa.wer(tk["exp"], hyp); src = "parakeet"; alt = None
+            if r["err"] > 0:
+                if "w" not in W2: W2["w"] = voice_qa.Whisper()
+                alt = W2["w"].transcribe(x, TSR); r = voice_qa.wer_combined(tk["exp"], hyp, alt); src = "parakeet+whisper"
+            # y además frase a frase, igual que la verificación final sobre el audio montado
+            if r["err"] == 0 and len(tk["take"]) > 1 and V.get("qa_sentences", True):
+                bad = []; i0 = 0; dur = len(x) / TSR
+                for it in tk["take"]:
+                    ws = it["sub"].split(); wt = times[i0:i0 + len(ws)]; i0 += len(ws)
+                    if not wt: continue
+                    a_ = max(0.0, wt[0][0] - 0.15); b_ = min(dur, wt[-1][1] + 0.25)
+                    if i0 < len(times): b_ = min(b_, times[i0][0] - 0.12)
+                    seg = x[int(a_ * TSR): int(b_ * TSR)]
+                    hs, _ = aligner.transcribe(seg, TSR); rs = voice_qa.wer(it["plain"], hs)
+                    if rs["err"]:
+                        if "w" not in W2: W2["w"] = voice_qa.Whisper()
+                        rs = voice_qa.wer_combined(it["plain"], hs, W2["w"].transcribe(seg, TSR))
+                    bad += rs["diff"]
+                if bad: r = dict(r, err=len(bad), diff=bad); src += " (frase a frase)"
+            return times, 1 - r["err"] / max(1, r["n"]), hyp if alt is None else f"{hyp} ‖ {alt}", dict(d=r["err"], n=r["n"], src=src, diff=r["diff"], parakeet=hyp, whisper=alt)
         if metric != "fonetica": return times, score, hyp, dict(d=None, n=None, src="parakeet")
         import voice_qa
         sc, d, e, h = voice_qa.score(tk["exp"], hyp); src = "parakeet"; n = len(e)
@@ -142,11 +199,23 @@ def build_audio(V, outdir, narr=None, aligner=None):
         if not pend: break
         if k: print(f"  ronda {k + 1}: repitiendo {len(pend)} tomas con otra semilla")
         if VOICE_ENGINE == "chatterbox":
-            for tk in pend: tk["job"] = cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + k, tk.get("exag"), tk.get("cfg"))
+            for tk in pend: tk["job"] = cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + k + 100 * V["beats"][tk["bi"]].get("seed_off", 0), tk.get("exag"), tk.get("cfg"))
             cb_batch([tk["job"] for tk in pend])
         for tk in pend:
             x = load_take(tk["job"]["out"]) if VOICE_ENGINE == "chatterbox" else level(trim(narr.synth(tk["text"], tk["voice"], tk["speed"], take_seed(tk["text"], tk["voice"]) + k)))
-            times, score, hyp, det = evaluate(tk, x); tk["tries"] = k + 1
+            qc = None
+            if VOICE_ENGINE == "chatterbox":
+                import hashlib
+                st_ = os.stat(tk["job"]["out"])
+                key = hashlib.sha1(json.dumps([tk["job"]["out"], st_.st_size, int(st_.st_mtime), tk["exp"], tk["flat"], metric, thr,
+                                               V.get("qa_sentences", True), "qa-v2"]).encode()).hexdigest()[:16]
+                qc = f"{tk['job']['out']}.qa_{key}.json"
+            if qc and os.path.exists(qc):
+                times, score, hyp, det = json.load(open(qc, encoding="utf-8"))
+            else:
+                times, score, hyp, det = evaluate(tk, x)
+                if qc: json.dump([times, score, hyp, det], open(qc, "w", encoding="utf-8"), ensure_ascii=False)
+            tk["tries"] = k + 1
             if tk["best"] is None or score > tk["best"][0]: tk["best"] = (score, x, times, hyp, det)
     # 3) montar la línea de tiempo
     t = V.get("lead_in", 0.25); beats = []; chunks = []; qa = []
@@ -155,7 +224,11 @@ def build_audio(V, outdir, narr=None, aligner=None):
         for tk in plan[bi]:
             score, x, times, hyp, det = tk["best"]
             tt_ = V.get("trim_tail"); tthr = tt_ if isinstance(tt_, float) else 0.6
-            if tt_ and times and len(x) / TSR - times[-1][1] > tthr:
+            if tt_ == "energia" and times: x = tail_clean(tail_trim(x, times[-1][1]), times[-1][1])
+            if V.get("drone_clean"):
+                # zumbido grave que la síntesis añade a veces tras una frase (ver voice_fix.py): se silencia sin cambiar la duración
+                import voice_fix; x = voice_fix.drone_clean(x, TSR)
+            elif tt_ and times and len(x) / TSR - times[-1][1] > tthr:
                 # la síntesis a veces añade balbuceo tras la última palabra: se corta poco después, con un fundido corto
                 cut = int((times[-1][1] + min(0.25, tthr)) * TSR); x = x[:cut].copy(); fo = int(0.04 * TSR); x[-fo:] *= np.linspace(1, 0, fo)
             qa.append(dict(t=round(cur, 2), score=round(score, 4), tries=tk["tries"], guion=tk["exp"], reconocido=hyp, voz=tk["voice"], **det))
@@ -172,12 +245,16 @@ def build_audio(V, outdir, narr=None, aligner=None):
     total = t + V.get("tail", 0.4)
     # control de calidad de la voz: guion frente a lo que entiende el reconocedor
     import csv as _csv
-    with open(f"{outdir}/recursos/control_de_voz.csv", "w", encoding="utf-8", newline="") as f:
+    with open(f"{outdir}/{rdir(V)}/control_de_voz.csv", "w", encoding="utf-8", newline="") as f:
         wr = _csv.writer(f, delimiter=";")
-        wr.writerow(["inicio_s", "coincidencia", "tomas", "voz", "diferencias", "sonidos", "reconocedor", "guion", "reconocido"])
-        for q in qa: wr.writerow([q["t"], q["score"], q["tries"], q["voz"], q.get("d"), q.get("n"), q.get("src"), q["guion"], q["reconocido"]])
+        wr.writerow(["inicio_s", "coincidencia", "tomas", "voz", "diferencias", "palabras" if metric == "wer" else "sonidos", "reconocedor", "guion", "reconocido", "detalle"])
+        for q in qa: wr.writerow([q["t"], q["score"], q["tries"], q["voz"], q.get("d"), q.get("n"), q.get("src"), q["guion"], q["reconocido"],
+                                  " | ".join(f"{a}: «{b}» → «{c}»" for a, b, c in q.get("diff") or [])])
     low = [q for q in qa if q["score"] < thr]
     print(f"  voz: {len(qa)} tomas · coincidencia media {np.mean([q['score'] for q in qa]):.4f} · mínima {min(q['score'] for q in qa):.4f} · repetidas {sum(q['tries'] > 1 for q in qa)} · bajo umbral {len(low)}")
+    if metric == "wer":
+        D = sum(q["d"] for q in qa); N = sum(q["n"] for q in qa)
+        print(f"  WER por tomas guion↔voz: {D / N:.4%} ({D} errores en {N} palabras) · coincidencia {1 - D / N:.4%}")
     if metric == "fonetica":
         D = sum(q["d"] for q in qa); N = sum(q["n"] for q in qa)
         print(f"  coincidencia fonética global guion↔voz: {1 - D / N:.4%} ({D} diferencias en {N} sonidos)")
@@ -198,7 +275,7 @@ def build_audio(V, outdir, narr=None, aligner=None):
     if V.get("music_fn"): mus = V["music_fn"](total, beats)
     else: mus = audio.compose(V["music"], total, energy=energy, seed=V.get("music_seed", 1), key_shift=V.get("key_shift", 0))
     mus = mus[:n] if len(mus) >= n else np.pad(mus, ((0, n - len(mus)), (0, 0)))
-    duck = audio.duck_envelope(vox, depth=V.get("duck", 0.30))
+    duck = audio.duck_envelope(vox, depth=V.get("duck", 0.30), release=V.get("duck_release", 0.45))
     # silencios dramáticos de música
     gate = np.ones(n)
     for b, bd in zip(V["beats"], beats):
@@ -227,16 +304,26 @@ def build_audio(V, outdir, narr=None, aligner=None):
             audio.place(fx, y, max(0, ref + off))
     mix = vox * V.get("voice_gain", 1.0) + mus + fx * V.get("sfx_gain", 0.8)
     mix = mix * np.minimum(1, np.minimum(np.arange(n) / (0.02 * audio.SR), 1))[:, None]
+    pre = mix.copy()
     mix, lufs = audio.master(mix, -14.0)
+    if V.get("stems"):
+        # pistas separadas para el proyecto editable, con la misma ganancia de masterización (sin el limitador final)
+        sd = f"{outdir}/{V['stems']}"; os.makedirs(sd, exist_ok=True)
+        g = float(np.sqrt(np.mean(mix ** 2)) / (np.sqrt(np.mean(pre ** 2)) + 1e-12))
+        for nm, x_ in (("voz", vox * V.get("voice_gain", 1.0)), ("musica", mus), ("efectos", fx * V.get("sfx_gain", 0.8))):
+            sf.write(f"{sd}/{nm}.wav", np.clip(x_ * g, -1, 1).astype(np.float32), audio.SR, subtype="PCM_24")
+        json.dump(dict(ganancia_master=g, lufs_entrada=float(lufs), nota="mezcla = (voz + musica + efectos) con limitador final a -14 LUFS"),
+                  open(f"{sd}/stems.json", "w"), ensure_ascii=False, indent=1)
     gr = audio.master.last_gr; print(f"  mezcla: limitador máx. {gr['max_db']:.1f} dB · {gr['pct_over_1db']:.2f} % del tiempo por encima de 1 dB")
-    sf.write(f"{outdir}/recursos/mezcla_final.wav", mix.astype(np.float32), audio.SR, subtype="PCM_16")
-    sf.write(f"{outdir}/recursos/musica_original.wav", (mus / (np.abs(mus).max() + 1e-9) * 0.8).astype(np.float32), audio.SR, subtype="PCM_16")
+    sf.write(f"{outdir}/{rdir(V)}/mezcla_final.wav", mix.astype(np.float32), audio.SR, subtype="PCM_16")
+    sf.write(f"{outdir}/{rdir(V)}/musica_original.wav", (mus / (np.abs(mus).max() + 1e-9) * 0.8).astype(np.float32), audio.SR, subtype="PCM_16")
     # mp3 de la narración procesada
-    sf.write(f"{outdir}/recursos/_vox.wav", (vox / (np.abs(vox).max() + 1e-9) * 0.9).astype(np.float32), audio.SR, subtype="PCM_16")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{outdir}/recursos/_vox.wav", "-c:a", "libmp3lame", "-b:a", "160k", f"{outdir}/{out_name(V, 'narr_mp3')}"], check=True)
-    os.remove(f"{outdir}/recursos/_vox.wav")
-    tl = dict(total=round(total, 3), beats=beats, lufs_in=round(lufs, 2))
-    json.dump(tl, open(f"{outdir}/recursos/timeline.json", "w"), ensure_ascii=False, indent=1)
+    sf.write(f"{outdir}/{rdir(V)}/_vox.wav", (vox / (np.abs(vox).max() + 1e-9) * 0.9).astype(np.float32), audio.SR, subtype="PCM_16")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{outdir}/{rdir(V)}/_vox.wav", "-c:a", "libmp3lame", "-b:a", "160k", f"{outdir}/{out_name(V, 'narr_mp3')}"], check=True)
+    os.remove(f"{outdir}/{rdir(V)}/_vox.wav")
+    tl = dict(total=round(total, 3), beats=beats, lufs_in=round(lufs, 2),
+              takes=[[round(st, 3), round(st + len(a) / TSR, 3)] for st, a in chunks])   # inicio y fin de cada toma de voz
+    json.dump(tl, open(f"{outdir}/{rdir(V)}/timeline.json", "w"), ensure_ascii=False, indent=1)
     write_srt(tl, f"{outdir}/{out_name(V, 'srt')}", V)
     write_script(V, tl, f"{outdir}/{out_name(V, 'script')}")
     return tl
@@ -382,17 +469,17 @@ def render_video(V, tl, outdir, master=False, preview=None, frames_dir=None, seg
     f0, f1 = 0, nfr
     if preview: a, b = preview; f0, f1 = int(a * FPS), min(nfr, int(b * FPS))
     if segment: k, n = segment; f0, f1 = nfr * k // n, nfr * (k + 1) // n
-    mp4 = f"{outdir}/{V['file']}.mp4" if not preview else f"{outdir}/recursos/preview_{int(f0 / FPS)}.mp4"
-    if segment: mp4 = f"{outdir}/recursos/_seg_{segment[0]:02d}.h264"   # H.264 en bruto: se une con cat sin perder fotogramas
+    mp4 = f"{outdir}/{V['file']}.mp4" if not preview else f"{outdir}/{rdir(V)}/preview_{int(f0 / FPS)}.mp4"
+    if segment: mp4 = f"{outdir}/{rdir(V)}/_seg_{segment[0]:02d}.h264"   # H.264 en bruto: se une con cat sin perder fotogramas
     dur = (f1 - f0) / FPS
     if master: vargs = ["-crf", "17", "-maxrate", "12M", "-bufsize", "24M"]
     elif segment: vargs = ["-crf", "17" if V.get("final_codec") else "15"]   # intermedio de alta calidad; la compresión final va aparte
     else:
         cap = int(min(8000, 92 * 8 * 1000 / max(1, total) - 192)); vargs = ["-crf", "19", "-maxrate", f"{cap}k", "-bufsize", f"{cap * 2}k"]
-    aud_in = [] if segment else ["-ss", f"{f0 / FPS:.3f}", "-t", f"{dur:.3f}", "-i", f"{outdir}/recursos/mezcla_final.wav"]
+    aud_in = [] if segment else ["-ss", f"{f0 / FPS:.3f}", "-t", f"{dur:.3f}", "-i", f"{outdir}/{rdir(V)}/mezcla_final.wav"]
     aud_out = [] if segment else ["-map", "1:a", "-c:a", "aac", "-b:a", "192k", "-ar", "48000"]
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", *aud_in,
-           "-map", "0:v", *aud_out, "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-pix_fmt", "yuv420p",
+           "-map", "0:v", *aud_out, "-c:v", "libx264", "-preset", "medium", "-tune", V.get("x264_tune", "animation"), "-pix_fmt", "yuv420p",
            "-profile:v", "high", "-g", "60", *vargs, *(["-f", "h264"] if segment else ["-movflags", "+faststart"]),
            "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", mp4]
     if segment: cmd[cmd.index("-preset") + 1] = "veryfast"
@@ -438,17 +525,22 @@ def render_parallel(V, tl, outdir, vid, jobs, master=False):
     codes = [p.wait() for p in procs]
     if any(codes): raise RuntimeError(f"falló algún segmento: {codes}")
     # unir los segmentos H.264 en bruto (cat) conserva todos los fotogramas; el contenedor se genera al final
-    allv = f"{outdir}/recursos/_video.h264"
+    allv = f"{outdir}/{rdir(V)}/_video.h264"
     with open(allv, "wb") as fo:
         for k in range(jobs):
-            with open(f"{outdir}/recursos/_seg_{k:02d}.h264", "rb") as fi: shutil.copyfileobj(fi, fo, 1 << 24)
-            os.remove(f"{outdir}/recursos/_seg_{k:02d}.h264")
-    mp4 = f"{outdir}/{V['file']}.mp4"; wav = f"{outdir}/recursos/mezcla_final.wav"
+            with open(f"{outdir}/{rdir(V)}/_seg_{k:02d}.h264", "rb") as fi: shutil.copyfileobj(fi, fo, 1 << 24)
+            os.remove(f"{outdir}/{rdir(V)}/_seg_{k:02d}.h264")
+    mp4 = f"{outdir}/{V['file']}.mp4"; wav = f"{outdir}/{rdir(V)}/mezcla_final.wav"
     if V.get("final_codec") == "av1":
         # tamaño objetivo (GitHub admite archivos de hasta 100 MB): AV1 de 10 bits conserva mucho más detalle que H.264 a la misma tasa
         abr = 128; kbps = int(V.get("target_mb", 94) * 8 * 1024 / tl["total"] - abr)
         venc = ["-c:v", "libsvtav1", "-preset", str(V.get("av1_preset", 6)), "-b:v", f"{kbps}k", "-g", "240", "-pix_fmt", "yuv420p10le",
                 "-svtav1-params", "tune=0:enable-overlays=1:scd=1"]
+    elif V.get("final_codec") == "h264_hq":
+        # entrega en H.264 de alta calidad (sin límite de 100 MB): CRF 18, preset lento, tasa máxima 14 Mbit/s
+        abr = 192
+        venc = ["-c:v", "libx264", "-preset", "slow", "-crf", str(V.get("crf", 18)), "-maxrate", "14M", "-bufsize", "28M",
+                "-profile:v", "high", "-level", "4.2", "-pix_fmt", "yuv420p", "-g", "60", "-bf", "3", "-video_track_timescale", "15360"]
     else:
         # Antes se copiaba el H.264 en bruto al MP4 («-c:v copy»): el contenedor quedaba sin el orden de presentación de los
         # fotogramas B (marcas de tiempo de decodificación = de presentación) y los móviles y navegadores mostraban las
@@ -461,7 +553,7 @@ def render_parallel(V, tl, outdir, vid, jobs, master=False):
                     "-vf", f"setpts=N/({FPS}*TB)", "-fps_mode", "passthrough", *venc,
                     "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
                     "-c:a", "aac", "-b:a", f"{abr}k", "-ar", "48000", "-shortest", "-movflags", "+faststart", mp4], check=True)
-    if V.get("keep_master"): os.replace(allv, f"{outdir}/recursos/master_h264_crf17.h264")
+    if V.get("keep_master"): os.replace(allv, f"{outdir}/{rdir(V)}/master_h264_crf17.h264")
     else: os.remove(allv)
     return mp4
 
@@ -471,11 +563,11 @@ def main():
     ap.add_argument("--jobs", type=int, default=1); ap.add_argument("--segment", type=int, nargs=2)
     a = ap.parse_args()
     mod = importlib.import_module(f"videos.{a.vid}"); V = mod.VIDEO
-    outdir = os.environ.get("BUILD_OUT") or os.path.join(ROOT, V["folder"]); os.makedirs(f"{outdir}/recursos", exist_ok=True)   # BUILD_OUT: pruebas sin tocar la entrega
+    outdir = os.environ.get("BUILD_OUT") or os.path.join(ROOT, V["folder"]); os.makedirs(f"{outdir}/{rdir(V)}", exist_ok=True)   # BUILD_OUT: pruebas sin tocar la entrega
     t0 = time.time()
     if a.stage in ("all", "audio"):
         tl = build_audio(V, outdir); print(f"{V['id']}: audio listo, {tl['total']:.1f} s ({time.time() - t0:.0f} s)")
-    tl = json.load(open(f"{outdir}/recursos/timeline.json"))
+    tl = json.load(open(f"{outdir}/{rdir(V)}/timeline.json"))
     if a.stage in ("all", "thumb") and hasattr(mod, "thumbnail"):
         tw, th = V.get("thumb_size", (1280, 720)); s = gfx.new_surface(tw, th); mod.thumbnail(s.getCanvas())
         mk = getattr(mod, "THUMB_MARK", (1215, 655, 34))
@@ -483,7 +575,7 @@ def main():
             import components; components.thumb_mark(s.getCanvas(), *mk)
         s.makeImageSnapshot().save(f"{outdir}/{out_name(V, 'thumb')}", skia.kPNG); print("miniatura lista")
     if a.stage in ("all", "video"):
-        fd = f"{outdir}/recursos/fotogramas"; os.makedirs(fd, exist_ok=True)
+        fd = f"{outdir}/{rdir(V)}/fotogramas"; os.makedirs(fd, exist_ok=True)
         if a.segment:
             render_video(V, tl, outdir, a.master, None, fd, segment=tuple(a.segment)); return
         if a.jobs > 1 and not a.preview: out = render_parallel(V, tl, outdir, a.vid, a.jobs, a.master)

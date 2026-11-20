@@ -93,3 +93,90 @@ class Whisper:
         x16 = np.concatenate([np.zeros(4800, np.float32), x16, np.zeros(8000, np.float32)])
         st = self.rec.create_stream(); st.accept_waveform(16000, x16); self.rec.decode_stream(st)
         return st.result.text.strip()
+
+# ================================================================ WER: tasa de error de palabras guion ↔ voz
+# Método (GTA6 VIDEO_LARGO y SHORT_PROMOCIONAL, noviembre de 2026):
+#  1. Guion y transcripción se normalizan igual: minúsculas, sin signos de puntuación, sin tildes, cifras escritas
+#     en palabras («321» = «trescientos veintiuno»). No se toca ninguna otra palabra.
+#  2. En la transcripción se unifican SOLO las grafías distintas de un mismo nombre propio o término inglés
+#     (el reconocedor escribe «Yeison» lo que en el guion es «Jason»). Lista cerrada en WER_ALIAS.
+#  3. WER = (sustituciones + omisiones + inserciones) / palabras del guion (distancia de Levenshtein por palabras).
+#     No cuentan como error (se listan aparte): homófonos del español latinoamericano (seseo, yeísmo, b/v, h muda:
+#     «caza» = «casa») y la unión o separación de palabras cuando las letras coinciden («escapar es» = «escapares»),
+#     porque en el audio son idénticos y la diferencia solo está en cómo escribe el reconocedor.
+#  4. Cada toma se transcribe con Parakeet TDT v3; si hay alguna diferencia, también con Whisper small, y cuenta la
+#     transcripción con menos errores: un fallo de la voz aparece en los dos reconocedores, un fallo de un
+#     reconocedor normalmente no. Las dos transcripciones se guardan en el informe.
+WER_ALIAS = [
+    (r"\b(?:ge|g)[ .-]?(?:te|t)[ .-]?(?:a|á)\b", "GTA"), (r"\bGTA ?(?:VI|seis)\b", "GTA 6"), (r"\bGTA6\b", "GTA 6"), (r"\bGT ?A\b", "GTA"),
+    (r"\b[YyJj][eé][iy]?son\b", "Jason"), (r"\b[YyJj]a[iy]?son\b", "Jason"), (r"\bYason\b", "Jason"),
+    (r"\b[VvBb][aá][iy]s[ -]?[CcSs][ií]t[iy]?\b", "Vice City"), (r"\b[Bb]y ?[Cc]ity\b", "Vice City"), (r"\b[Bb]ai ?[CcSs]ity\b", "Vice City"), (r"\b[VvBb]ice[ -]?[CcSs]ity\b", "Vice City"), (r"\b[VvBb]aisiti\b", "Vice City"),
+    (r"\b[Ff][oó]u?[ck]us\b", "Focus"), (r"\b[Rr]o[ck]+ ?[Ss]tar\b", "Rockstar"), (r"\b[Rr]okstar\b", "Rockstar"),
+    (r"\b[Ss]ic[oó]patas?\b", lambda m: "Psicópata" + ("s" if m.group(0).endswith("s") else "")),
+]
+_WALIAS = [(re.compile(a, re.I), b) for a, b in WER_ALIAS]
+
+def wer_tokens(text, hyp=False):
+    from tts import canon
+    t = _pre(text)
+    if hyp:
+        for rx, rep in _WALIAS: t = rx.sub(rep, t)
+    t = re.sub(r"\bGTA VI\b", "GTA 6", t); t = re.sub(r"\bGTA V\b", "GTA 5", t)
+    t = re.sub(r"[«»“”\"¿?¡!.,;:()…—–]", " ", t)
+    # apócope de los numerales («veintiún enemigos»): misma palabra que «veintiuno» escrito con cifras
+    return ["veintiuno" if w == "veintiun" else w for w in canon(t)]
+
+def _pk(w):
+    """Clave fonética de una palabra (seseo, yeísmo, b = v, h muda): dos palabras con la misma clave suenan igual."""
+    return joined(phon(w))
+
+def join_eq(a, b, ka, kb, c, kc):
+    """¿Dos palabras seguidas (a b) suenan como una sola (c)? Mismas letras o misma pronunciación encadenada:
+    la sinalefa funde vocales iguales y consonantes iguales en la frontera («apunta a» = «apunta», «vuelve en» = «vuelven»)."""
+    return a + b == c or (bool(kc) and joined(ka + kb) == joined(kc))
+
+def wer(expected, hyp):
+    """→ dict(err, n, sub, dele, ins, diff=[(tipo, guion, reconocido)], homof=[...], uniones=[...]) con la alineación mínima por palabras.
+    Igualdades que no son errores (se listan aparte en el informe):
+      - homófonos del español latinoamericano (seseo, yeísmo, b/v, h muda): «caza» = «casa», «a» = «ha»;
+      - unión o separación de palabras: la separación entre palabras no se oye; «escapares» = «escapar es»
+        solo si las letras (o su pronunciación) coinciden exactamente."""
+    E = wer_tokens(expected); Hh = wer_tokens(hyp, True); n, m = len(E), len(Hh)
+    kE = [_pk(w) for w in E]; kH = [_pk(w) for w in Hh]
+    def eq(i, j): return E[i] == Hh[j] or (kE[i] and kE[i] == kH[j])
+    INF = 10 ** 9
+    D = np.full((n + 1, m + 1), INF, np.int64); D[0, :] = np.arange(m + 1); D[:, 0] = np.arange(n + 1)
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            best = min(D[i - 1, j] + 1, D[i, j - 1] + 1, D[i - 1, j - 1] + (0 if eq(i - 1, j - 1) else 1))
+            if i >= 2 and join_eq(E[i - 2], E[i - 1], kE[i - 2], kE[i - 1], Hh[j - 1], kH[j - 1]): best = min(best, D[i - 2, j - 1])
+            if j >= 2 and join_eq(Hh[j - 2], Hh[j - 1], kH[j - 2], kH[j - 1], E[i - 1], kE[i - 1]): best = min(best, D[i - 1, j - 2])
+            D[i, j] = best
+    i, j = n, m; ops = []; homof = []; un = []; ref_err = [None] * n; ins_at = [[] for _ in range(n + 1)]
+    while i > 0 or j > 0:
+        if i > 0 and j > 0 and D[i, j] == D[i - 1, j - 1] + (0 if eq(i - 1, j - 1) else 1):
+            if not eq(i - 1, j - 1): ops.append(("sustitución", E[i - 1], Hh[j - 1])); ref_err[i - 1] = Hh[j - 1]
+            elif E[i - 1] != Hh[j - 1]: homof.append((E[i - 1], Hh[j - 1]))
+            i -= 1; j -= 1
+        elif i >= 2 and j >= 1 and D[i, j] == D[i - 2, j - 1] and join_eq(E[i - 2], E[i - 1], kE[i - 2], kE[i - 1], Hh[j - 1], kH[j - 1]):
+            un.append((E[i - 2] + " " + E[i - 1], Hh[j - 1])); i -= 2; j -= 1
+        elif j >= 2 and i >= 1 and D[i, j] == D[i - 1, j - 2] and join_eq(Hh[j - 2], Hh[j - 1], kH[j - 2], kH[j - 1], E[i - 1], kE[i - 1]):
+            un.append((E[i - 1], Hh[j - 2] + " " + Hh[j - 1])); i -= 1; j -= 2
+        elif i > 0 and D[i, j] == D[i - 1, j] + 1: ops.append(("omisión", E[i - 1], "")); ref_err[i - 1] = ""; i -= 1
+        else: ops.append(("inserción", "", Hh[j - 1])); ins_at[i].append(Hh[j - 1]); j -= 1
+    ops.reverse()
+    s_ = sum(o[0] == "sustitución" for o in ops); d = sum(o[0] == "omisión" for o in ops); ins = sum(o[0] == "inserción" for o in ops)
+    return dict(err=s_ + d + ins, n=n, sub=s_, dele=d, ins=ins, diff=ops, homof=homof[::-1], uniones=un[::-1], E=E, ref_err=ref_err, ins_at=ins_at)
+
+def wer_combined(expected, hyp_a, hyp_b):
+    """WER con dos reconocedores independientes, palabra a palabra: una palabra del guion cuenta como error solo si los
+    DOS reconocedores la fallan (un fallo de la voz aparece en ambos; un fallo de un reconocedor, normalmente en uno);
+    una palabra de más cuenta solo si los dos la añaden en el mismo sitio."""
+    ra = wer(expected, hyp_a); rb = wer(expected, hyp_b) if hyp_b is not None else ra
+    diff = []
+    for k, w in enumerate(ra["E"]):
+        if ra["ref_err"][k] is not None and rb["ref_err"][k] is not None:
+            diff.append(("omisión" if ra["ref_err"][k] == "" and rb["ref_err"][k] == "" else "sustitución", w, f"{ra['ref_err'][k] or '—'} / {rb['ref_err'][k] or '—'}"))
+    for k in range(len(ra["ins_at"])):
+        for _ in range(min(len(ra["ins_at"][k]), len(rb["ins_at"][k]))): diff.append(("inserción", "", f"{ra['ins_at'][k][0]} / {rb['ins_at'][k][0]}"))
+    return dict(err=len(diff), n=ra["n"], diff=diff, homof=ra["homof"] + rb["homof"], uniones=ra["uniones"] + rb["uniones"], a=ra, b=rb)

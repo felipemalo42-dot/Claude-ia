@@ -57,7 +57,7 @@ PRON = [
     (r"\bVictor\b", "Víctor"), (r"\b[Aa]rt déco\b", "art decó"), (r"\bsheriff\b", "shérif"), (r"\bWashington\b", "Uáshinton"),
     (r"\bGTA VI\b", "ge te a seis"), (r"\bGTA 6\b", "ge te a seis"), (r"\bGTA V\b", "ge te a cinco"),
     (r"\bGTA 5\b", "ge te a cinco"), (r"\bGTA\b", "ge te a"),
-    (r"\bJason\b", "Yéison"), (r"\bLucia\b", "Lucía"), (r"\bDuval\b", "Duval"),
+    (r"\bFocus\b", "Fóucus"), (r"\bJason\b", "Yéison"), (r"\bLucia\b", "Lucía"), (r"\bDuval\b", "Duval"),
     (r"\bVice City\b", "Vais Síti"), (r"\bLeonida Keys\b", "Leonida Kis"), (r"\bKeys\b", "Kis"),
     (r"\bGrassrivers\b", "Grasrívers"), (r"\bPort Gellhorn\b", "Port Guélhorn"),
     (r"\bMount Kalaga\b", "Maunt Kalága"), (r"\bKalaga\b", "Kalága"), (r"\bNational Park\b", "Náshonal Park"),
@@ -68,7 +68,7 @@ PRON = [
     (r"\bXbox Series S\b", "Équis box Síries Ese"), (r"\bSeries X\b", "Síries Equis"), (r"\bSeries S\b", "Síries Ese"),
     (r"\bXbox\b", "Équis box"), (r"\bStore\b", "Stor"), (r"\bUltimate\b", "Áltimet"),
     (r"\bonline\b", "onláin"), (r"\bOnline\b", "Onláin"), (r"\bplay\b", "plei"), (r"\bShorts\b", "shorts"),
-    (r"\btráiler\b", "tráiler"), (r"\btrailer\b", "tráiler"), (r"\bspoilers?\b", "espóiler"),
+    (r"\btráiler\b", "tráiler"), (r"\btrailer\b", "tráiler"), (r"\bspoilers\b", "espóilers"), (r"\bspoiler\b", "espóiler"),
     (r"\bGame Informer\b", "Geim Infórmer"), (r"\bExtended Look\b", "Extended Luk"),
     (r"\bFlorida Man\b", "Flórida Man"), (r"\bLeonida Man\b", "Leonida Man"),
     (r"\bCal Hampton\b", "Kal Jámpton"), (r"\bBoobie Ike\b", "Búbi Aik"), (r"\bDre'Quan Priest\b", "Drikuán Prist"),
@@ -130,7 +130,7 @@ def spoken(text):
     return text
 
 
-def trim(a, sr=SR, rel=0.02, pad=0.06):
+def trim(a, sr=SR, rel=0.008, pad=0.12):
     """Recorta silencio inicial y final (umbral relativo al pico)."""
     if len(a) == 0: return a
     w = max(1, int(0.01 * sr)); env = np.convolve(np.abs(a), np.ones(w) / w, "same")

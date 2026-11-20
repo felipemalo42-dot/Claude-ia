@@ -1,0 +1,29 @@
+CONFIGURACIÓN DEL «VÍDEO RELACIONADO» (función oficial de YouTube para Shorts)
+======================================================================
+
+Objetivo: que debajo del Short aparezca un enlace directo al vídeo largo:
+  «GTA 6: qué pasa al llegar a 6 estrellas (y lo que no se borra ni muriendo)»
+
+Orden de publicación
+1. Publica primero el vídeo largo (VIDEO_LARGO_GTA6/VIDEO_FINAL.mp4). Puede estar en público, no listado o programado:
+   YouTube solo deja vincular vídeos del propio canal que ya existen.
+2. Sube el Short (SHORT_PROMOCIONAL_GTA6/SHORT_FINAL.mp4).
+
+Al subir el Short desde YouTube Studio (ordenador)
+3. En «Detalles», baja hasta el apartado «Vídeo relacionado» (en algunas versiones, «Video relacionado»).
+4. Pulsa el selector y elige el vídeo largo de la lista de vídeos del canal.
+5. Guarda o publica.
+
+Si el Short ya está publicado
+3. YouTube Studio → Contenido → pestaña «Shorts» → lápiz (Detalles) del Short.
+4. «Vídeo relacionado» → elige el vídeo largo → Guardar.
+
+Desde la app de YouTube (móvil)
+En los detalles del Short, la opción se llama «Video relacionado». Si tu versión de la app no la muestra, hazlo desde YouTube Studio en el ordenador (pasos 3-5).
+
+Comprobación
+- Abre el Short en el móvil: encima del título debe verse el enlace con el título del vídeo largo.
+- El Short ya lo anuncia en pantalla y de viva voz: «Tienes el enlace justo aquí abajo» + rótulo «VIDEO RELACIONADO» con una flecha.
+- Fija el comentario de DESCRIPCION.txt y pon el enlace del vídeo largo también en la descripción del Short cuando ya tengas su URL.
+
+Nota: el enlace del vídeo relacionado solo puede apuntar a vídeos del mismo canal. El vídeo largo debe estar disponible para quien vea el Short.
