@@ -1,73 +1,73 @@
 GUION — Jason y Lucía: todo lo que Rockstar ya contó de los protagonistas de GTA 6 (sin spoilers)
-Formato: Largo (16:9) · Duración: 00:03:07 · Voz: Kokoro (Apache-2.0), español latinoamericano
+Formato: Largo (16:9) · Duración: 00:03:21 · Voz: narradora (Chatterbox Multilingual), español
 ==============================================================================
 
 
 ## GANCHO
 
-[00:00.25] NARRADOR: Ella salió de una prisión de Leonida.
-[00:02.63] NARRADOR: Él trabaja para traficantes en los Cayos.
-[00:05.42] NARRADOR: Rockstar ya nos dio sus expedientes... y hoy los abrimos, sin un solo spoiler.
-[00:10.07] (sin narración · 2.4 s)
+[00:00.25] NARRADORA: Ella salió de una prisión de Leonida.
+[00:03.21] NARRADORA: Él trabaja para traficantes en los Cayos.
+[00:06.01] NARRADORA: Rockstar ya nos dio sus expedientes... y hoy los abrimos, sin un solo spoiler.
+[00:12.11] (sin narración · 2.4 s)
 
 ## INTRODUCCIÓN
 
-[00:12.47] NARRADOR: Esto es Sal y Asfalto.
-[00:14.29] NARRADOR: Regla de hoy: solo usamos lo que Rockstar publicó en su web y en sus tráileres, y lo que reportó la prensa que habló con el estudio.
-[00:21.70] NARRADOR: Cada dato lleva su etiqueta.
-[00:23.88] NARRADOR: Y si algo es deducción nuestra, te lo vamos a decir en voz alta.
+[00:14.51] NARRADORA: Estás en Sal y Asfalto.
+[00:16.43] NARRADORA: Regla de hoy: solo usamos lo que Rockstar publicó en su web y en sus tráileres, y lo que reportó la prensa que habló con el estudio.
+[00:24.11] NARRADORA: Cada dato lleva su etiqueta.
+[00:26.96] NARRADORA: Y si algo es deducción nuestra, te lo vamos a decir en voz alta.
 
 ## EXPEDIENTE 1 · LUCÍA
 
-[00:27.92] ANALISTA: Expediente número uno:
-[00:29.65] ANALISTA: Lucía Caminos.
-[00:30.92] ANALISTA: Según la web oficial, su padre le enseñó a pelear desde muy pequeña.
-[00:35.02] ANALISTA: Pelear por su familia la llevó a la Penitenciaría de Leonida, y salió gracias a la pura suerte.
-[00:40.86] ANALISTA: Desde entonces, dice Rockstar, solo jugadas inteligentes.
-[00:44.63] ANALISTA: En el tráiler de lanzamiento de octubre se ve una tobillera electrónica en su pierna, y la prensa que habló con Rockstar asegura que tendrá un papel en la historia.
+[00:31.67] NARRADORA: Expediente número uno:
+[00:33.27] NARRADORA: Lucía Caminos.
+[00:34.71] NARRADORA: Según la web oficial, su padre le enseñó a pelear desde muy pequeña.
+[00:39.85] NARRADORA: Pelear por su familia la llevó a la Penitenciaría de Leonida, y salió gracias a la pura suerte.
+[00:44.89] NARRADORA: Desde entonces, dice Rockstar, solo jugadas inteligentes.
+[00:49.12] NARRADORA: En el tráiler de lanzamiento de octubre se ve una tobillera electrónica en su pierna, y la prensa que habló con Rockstar asegura que tendrá un papel en la historia.
 
 ## EXPEDIENTE 2 · JASON
 
-[00:53.55] ANALISTA: Expediente número dos:
-[00:55.29] ANALISTA: Jason Duval.
-[00:56.60] ANALISTA: Rockstar cuenta que creció rodeado de estafadores y ladrones.
-[01:00.26] ANALISTA: Pasó por el ejército intentando dejar atrás una adolescencia problemática, y terminó en los Keys haciendo lo que mejor sabe: trabajar para traficantes locales.
-[01:09.82] ANALISTA: El tráiler de lanzamiento sugiere que se metió en problemas durante el servicio y que no salió en buenos términos.
+[00:58.67] NARRADORA: Expediente número dos:
+[01:00.43] NARRADORA: Jason Duval.
+[01:01.79] NARRADORA: Rockstar cuenta que creció rodeado de estafadores y ladrones.
+[01:06.17] NARRADORA: Pasó por el ejército intentando dejar atrás una adolescencia problemática, y terminó en los Keys haciendo lo que mejor sabe: trabajar para traficantes locales.
+[01:15.47] NARRADORA: El tráiler de lanzamiento sugiere que se metió en problemas durante el servicio y que no salió en buenos términos.
 
 ## LA PAREJA
 
-[01:16.27] NARRADOR: ¿Y qué los une?
-[01:17.65] NARRADOR: Rockstar los presenta así:
-[01:19.63] NARRADOR: Jason y Lucía siempre supieron que tenían las cartas en contra.
-[01:23.73] NARRADOR: Pero cuando un golpe fácil sale mal, terminan en el lado más oscuro del lugar más soleado de Estados Unidos, en medio de una conspiración criminal que atraviesa toda Leonida, obligados a confiar el uno en el otro más que nunca si quieren salir con vida.
+[01:22.98] NARRADORA: ¿Y qué los une?
+[01:24.10] NARRADORA: Rockstar los presenta así:
+[01:25.78] NARRADORA: Jason y Lucía siempre supieron que tenían las cartas en contra.
+[01:30.92] NARRADORA: Pero cuando un golpe fácil sale mal, terminan en el lado más oscuro del lugar más soleado de Estados Unidos, en medio de una conspiración criminal que atraviesa toda Leonida, obligados a confiar el uno en el otro más que nunca si quieren salir con vida.
 
 ## DOS PROTAGONISTAS
 
-[01:38.27] NARRADOR: En la jugabilidad, el Extended Look de agosto mostró algo clave: puedes cambiar entre Jason y Lucía en plena acción, sin pantalla de carga.
-[01:46.45] NARRADOR: Y un detalle que la prensa ha repetido, pero que todavía no podemos comprobar: la relación romántica entre ambos sería opcional.
+[01:46.20] NARRADORA: En la jugabilidad, el Extended Look de agosto mostró algo clave: puedes cambiar entre Jason y Lucía en plena acción, sin pantalla de carga.
+[01:54.27] NARRADORA: Y un detalle que la prensa ha repetido, pero que todavía no podemos comprobar: la relación romántica entre ambos sería opcional.
 
 ## REPARTO
 
-[01:54.14] NARRADOR: Ahora, el reparto que Rockstar ya confirmó.
-[01:56.98] NARRADOR: Cal Hampton, amigo y socio de Jason, desconfiado y amante de las teorías de conspiración.
-[02:02.65] NARRADOR: Boobie Ike, una leyenda local de Vice City con negocios que van de la noche a la música.
-[02:07.63] NARRADOR: Dre'Quan Priest, que busca su gran oportunidad en la industria musical.
-[02:11.95] NARRADOR: Real Dimez, un dúo de rap con una presencia incansable en redes.
-[02:15.69] NARRADOR: Raul Bautista, un ladrón de bancos veterano que siempre está buscando talento.
-[02:20.54] NARRADOR: Y Brian Heder, el casero de Jason, un veterano del contrabando.
+[02:01.71] NARRADORA: Ahora, el reparto que Rockstar ya confirmó.
+[02:04.48] NARRADORA: Cal Hampton, amigo y socio de Jason, desconfiado y amante de las teorías de conspiración.
+[02:10.09] NARRADORA: Boobie Ike, una leyenda local de Vice City con negocios que van de la noche a la música.
+[02:16.13] NARRADORA: Dre'Quan Priest, que busca su gran oportunidad en la industria musical.
+[02:20.52] NARRADORA: Real Dimez, un dúo de rap con una presencia incansable en redes.
+[02:25.35] NARRADORA: Raul Bautista, un ladrón de bancos veterano que siempre está buscando talento.
+[02:31.06] NARRADORA: Y Brian Heder, el casero de Jason, un veterano del contrabando.
 
 ## LO QUE NO SABEMOS
 
-[02:24.67] NARRADOR: ¿Y lo que no sabemos?
-[02:26.32] NARRADOR: No sabemos cómo termina.
-[02:28.30] NARRADOR: No sabemos si hay varios finales.
-[02:30.57] NARRADOR: Tampoco sabemos cuánto pesan tus decisiones.
-[02:33.52] NARRADOR: Lo más parecido a una pista lo dio Rob Nelson, de Rockstar: dijo que las acciones constantes pueden influir en cómo reacciona el mundo y en cómo se desarrolla la narrativa.
-[02:43.42] NARRADOR: Cualquier cosa más allá de eso, hoy, sería inventar.
+[02:35.65] NARRADORA: ¿Y lo que no sabemos?
+[02:37.33] NARRADORA: No sabemos cómo termina.
+[02:39.49] NARRADORA: No sabemos si hay varios finales.
+[02:42.27] NARRADORA: Tampoco sabemos cuánto pesan tus decisiones.
+[02:45.39] NARRADORA: Lo más parecido a una pista lo dio Rob Nelson, de Rockstar: dijo que las acciones constantes pueden influir en cómo reacciona el mundo y en cómo se desarrolla la narrativa.
+[02:57.17] NARRADORA: Cualquier cosa más allá de eso, hoy, sería inventar.
 
 ## LLAMADA A LA ACCIÓN
 
-[02:46.70] NARRADOR: El jueves empieza el caso de verdad.
-[02:49.38] NARRADOR: Si quieres un análisis de la historia sin spoilers durante la primera semana, suscríbete a Sal y Asfalto.
-[02:55.51] NARRADOR: Y cuéntame en los comentarios:
-[02:57.58] NARRADOR: ¿con quién vas a jugar más, con Jason o con Lucía?
+[03:00.74] NARRADORA: El jueves empieza el caso de verdad.
+[03:02.74] NARRADORA: Si quieres un análisis de la historia sin spoilers durante la primera semana, suscríbete a Sal y Asfalto.
+[03:08.50] NARRADORA: Y cuéntame en los comentarios:
+[03:11.03] NARRADORA: ¿con quién vas a jugar más, con Jason o con Lucía?

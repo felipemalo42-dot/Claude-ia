@@ -178,6 +178,11 @@ STYLES = {
     "nature": dict(bpm=72, prog=["Fmaj7", "Em7", "Dm9", "Cmaj9"], drums="soft", bass="sub_long", pad="soft", lead="marimba_slow", sw=0.1),
     "mystery": dict(bpm=76, prog=["Am", "F", "Dm", "E"], drums="sparse", bass="sub_long", pad="dark", lead="musicbox", sw=0.0),
     "synthpop": dict(bpm=118, prog=["F", "G", "Em", "Am"], drums="four", bass="saw8", pad="supersaw", lead="arp_saw", sw=0.0),
+    # estilos de VIDEO_EXTRA (una época por capítulo)
+    "storm": dict(bpm=70, prog=["Dm", "Bb", "Gm", "A"], drums="none", bass="sub_long", pad="dark", lead="none", sw=0.0),
+    "swing30": dict(bpm=124, prog=["Cmaj7", "A7", "Dm7", "G7"], drums="brush", bass="walk", pad="epiano", lead="vibes", sw=0.22),
+    "seventies": dict(bpm=84, prog=["Fmaj7", "Em7", "Dm7", "Cmaj7"], drums="soft", bass="sub_long", pad="epiano", lead="none", sw=0.1),
+    "trap26": dict(bpm=140, prog=["Am", "F", "C", "E"], drums="trap", bass="808", pad="dark", lead="bell_hook", sw=0.0),
 }
 
 def drum_pattern(kind):
@@ -190,10 +195,22 @@ def drum_pattern(kind):
     if kind == "chip": return {"k": [0, 8], "cn": [4, 12], "h": [2, 6, 10, 14]}
     if kind == "soft": return {"sh": [0, 4, 8, 12], "r": [6, 14]}
     if kind == "sparse": return {"k": [0], "r": [12]}
+    if kind == "brush": return {"k": [0, 8], "br": [4, 12], "rd": [0, 4, 6, 8, 12, 14]}
+    if kind == "trap": return {"k": [0, 7, 10], "c": [8], "h": [0, 2, 4, 6, 8, 10, 12, 13, 14, 15]}
     return {}
 
+def brush(dur=0.22):
+    t = t_axis(dur); return bp(noise(len(t)), 1800, 9000) * np.sin(np.pi * np.clip(t / dur, 0, 1)) ** 0.6 * np.exp(-t * 9) * 0.35
+
+def ride(dur=0.5):
+    t = t_axis(dur); tone = inst_fm(98, dur, ratio=2.76, index=2.0, decay=6, idx_decay=8)
+    return (hp(noise(len(t)), 6000) * np.exp(-t * 14) * 0.18 + tone * 0.12)
+
+def vibes(n, dur=1.4):
+    t = t_axis(dur); return inst_fm(n, dur, ratio=4.0, index=0.7, decay=2.2, idx_decay=12) * (1 + 0.25 * np.sin(2 * np.pi * 5.5 * t))
+
 DRUMS = {"k": lambda: kick(), "c": lambda: clap(), "sn": lambda: snare(), "h": lambda: hat(), "s": lambda: shaker() * 0.5,
-         "sh": lambda: shaker(), "r": lambda: rim(), "cn": lambda: chipnoise()}
+         "sh": lambda: shaker(), "r": lambda: rim(), "cn": lambda: chipnoise(), "br": lambda: brush(), "rd": lambda: ride()}
 
 def compose(style, duration, energy=None, seed=1, key_shift=0):
     """Genera una pista estéreo original de `duration` segundos.
@@ -259,10 +276,12 @@ def compose(style, duration, energy=None, seed=1, key_shift=0):
                     place(mix["drums"], dcache[inst] * g, t0 + p * step + sw)
             if b % 8 == 7 and S["drums"] in ("four", "house", "dembow"):  # relleno cada 8 compases
                 for p in (12, 13, 14, 15): place(mix["drums"], snare() * 0.5, t0 + p * step)
-        elif L == 1 and S["drums"] in ("four", "house", "dembow", "chip"):
+        elif L == 1 and S["drums"] in ("four", "house", "dembow", "chip", "trap"):
             for p in pat.get("h", []): place(mix["drums"], dcache["h"] * 0.5, t0 + p * step)
+        elif L == 1 and S["drums"] == "brush":
+            for p in pat["rd"]: place(mix["drums"], dcache["rd"] * 0.6, t0 + p * step + (S["sw"] * step if p % 2 else 0))
         # LEAD
-        if L >= 3 or (L >= 2 and S["lead"] in ("marimba", "musicbox", "marimba_slow", "ticks")):
+        if L >= 3 or (L >= 2 and S["lead"] in ("marimba", "musicbox", "marimba_slow", "ticks", "vibes")):
             ld = S["lead"]
             tones = [c + 24 for c in ch] + [ch[0] + 36]
             if ld in ("arp_saw", "arp_sq"):
@@ -280,6 +299,9 @@ def compose(style, duration, energy=None, seed=1, key_shift=0):
                 for i, p in enumerate((0, 3, 6, 10)): place(mix["lead"], bell(tones[hook[i] % len(tones)] + 12, 0.9) * 0.35, t0 + p * step)
             elif ld == "chip_arp":
                 for i in range(16): place(mix["lead"], chip(tones[i % 4] + 12, step * 0.9, 0.25), t0 + i * step)
+            elif ld == "vibes":
+                for i, p in enumerate((0, 6, 8, 14)):
+                    place(mix["lead"], vibes(tones[(hook[i % 8] + i + b) % len(tones)] + 12, 1.2) * 0.45, t0 + p * step + (S["sw"] * step if p % 2 else 0))
             elif ld == "ticks":
                 for i in range(16): place(mix["lead"], rim() * (0.35 if i % 4 else 0.6), t0 + i * step)
     # mezcla y espacialización
@@ -399,23 +421,60 @@ def sfx(name, **k):
     if name == "seal":  # lacre que se rompe
         t = t_axis(0.3); x = bp(noise(len(t)), 500, 4000) * np.exp(-t * 25) * (1 + np.sign(noise(len(t))) * 0.3)
         return reverb(pan(x * 0.7, 0), 0.2)
+    if name == "wind":  # viento de tormenta: ruido filtrado con ráfagas
+        d = d or 4.0; t = t_axis(d); x = noise(len(t)); g = 0.55 + 0.45 * np.sin(2 * np.pi * 0.35 * t + rng.random() * 6) * np.sin(2 * np.pi * 0.13 * t)
+        y = sweep_lp(x, 500, 1400, 48) * g * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 0.5
+        return np.stack([y, np.roll(y, int(0.03 * SR))], 1) * 0.5
+    if name == "rain":
+        d = d or 4.0; n_ = int(d * SR); x = hp(noise(n_), 2500) * 0.12
+        drops = (rng.random(n_) < 0.0016) * rng.standard_normal(n_) * 2.5; x += hp(lp(drops, 6000), 900) * 0.4
+        env = np.sin(np.pi * np.clip(np.arange(n_) / n_, 0, 1)) ** 0.3
+        return np.stack([x * env, np.roll(x, 113) * env], 1) * 0.6
+    if name == "thunder":
+        d = d or 3.0; t = t_axis(d); x = lp(noise(len(t)), 160) * 3.5 * np.exp(-t * 1.3) + lp(noise(len(t)), 900) * np.exp(-t * 6) * 0.9
+        return reverb(np.tanh(x) * 0.9, 0.4)
+    if name == "brush":  # brochazo de pintura
+        d = d or 0.7; t = t_axis(d); env = np.sin(np.pi * np.clip(t / d, 0, 1)) ** 1.5
+        y = bp(noise(len(t)), 700, 5000) * env * (0.6 + 0.4 * np.sin(2 * np.pi * 7 * t)) * 0.45
+        return np.stack([y * np.linspace(1, 0.4, len(t)), y * np.linspace(0.4, 1, len(t))], 1)
+    if name == "neon":  # tubo de neón que se enciende: chispazos + zumbido
+        d = d or 1.4; t = t_axis(d); out = np.zeros(len(t))
+        for o in (0.0, 0.09, 0.16, 0.31):
+            s = int(o * SR); e = min(len(t), s + int(0.03 * SR)); out[s:e] += hp(noise(e - s), 2000) * 0.5
+        hum = (np.sin(2 * np.pi * 120 * t) * 0.25 + np.sin(2 * np.pi * 240 * t) * 0.1 + sq(120, t, 0.5) * 0.03) * np.clip((t - 0.32) * 4, 0, 1) * np.exp(-np.maximum(t - 0.8, 0) * 3)
+        return pan(out + hum, k.get("p", 0)) * 0.8
+    if name == "tune":  # dial de radio que cambia de época
+        d = d or 1.1; t = t_axis(d); f = 900 + 2600 * (t / d) ** 2
+        whistle = np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.05 * np.sin(np.pi * t / d)
+        st = bp(noise(len(t)), 900, 6000) * (0.25 + 0.2 * np.sin(2 * np.pi * 11 * t)) * np.sin(np.pi * t / d) ** 0.7
+        return pan(whistle + st * 0.5, 0)
+    if name == "tv_on":  # encendido de tele de tubo
+        t = t_axis(0.9); x = np.sin(2 * np.pi * 7800 * t) * 0.02 * np.exp(-t * 2) + lp(noise(len(t)), 300) * np.exp(-t * 14) * 0.9
+        x[: int(0.02 * SR)] += hp(noise(int(0.02 * SR)), 1500) * 0.6
+        return pan(x / (np.abs(x).max() + 1e-9) * 0.6, 0)
+    if name == "rumble":  # maquinaria pesada / demolición
+        d = d or 2.5; t = t_axis(d); eng = sq(28 + 3 * np.sin(2 * np.pi * 0.7 * t), t, 0.3) * 0.15
+        x = lp(eng + noise(len(t)) * 0.5, 300) * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 0.5
+        return reverb(np.tanh(x * 2) * 0.6, 0.2)
+    if name == "phone":  # notificación genérica (dos tonos propios)
+        out = np.zeros(int(0.5 * SR)); place(out, inst_fm(88, 0.25, 2.0, 1.0, 12, 20) * 0.6, 0); place(out, inst_fm(95, 0.3, 2.0, 1.0, 10, 20) * 0.6, 0.11)
+        return pan(out, k.get("p", 0.2))
+    if name == "chime":  # revelación suave
+        out = np.zeros(int(2.4 * SR))
+        for i, nn in enumerate((76, 79, 83, 88)): place(out, bell(nn, 2.0) * 0.22, i * 0.07)
+        return reverb(out, 0.45)
     raise KeyError(name)
 
 def to_stereo(x): return x if x.ndim == 2 else np.stack([x, x], 1)
 
 # ---------------------------------------------------------------- tratamiento de voz y mezcla
-def voice_chain(v, sr_in=24000):
-    """Remuestrea a 48 kHz y aplica cadena de locución: HPF, EQ de presencia, compresión suave, aire."""
-    v = signal.resample_poly(v, SR, sr_in)
-    v = hp(v, 75, 2)
-    pres = bp(v, 2500, 5000, 1); v = v + 0.18 * pres           # presencia
-    body = bp(v, 150, 320, 1); v = v + 0.10 * body               # cuerpo
-    # compresor RMS sencillo
-    env = np.sqrt(signal.lfilter([0.002], [1, -0.998], v ** 2) + 1e-9)
-    thr = 0.08; gain = np.where(env > thr, (thr / env) ** 0.35, 1.0); v = v * gain
-    v = norm(v, 0.95)
-    st = reverb(v, 0.05, 0.6, 9.0)  # sala muy corta para quitar sequedad
-    return st
+def voice_chain(v, sr_in=44100):
+    """Voz limpia: remuestreo a 48 kHz y filtro de graves. Sin compresión rápida ni reverberación
+    (ambas añadían aspereza); el control de picos lo hace el limitador final."""
+    from math import gcd
+    g = gcd(SR, int(sr_in)); v = signal.resample_poly(v, SR // g, int(sr_in) // g)
+    sos = signal.butter(2, 70 / (SR / 2), "high", output="sos"); v = signal.sosfiltfilt(sos, v)
+    return np.stack([v, v], 1)
 
 def duck_envelope(voice_st, depth=0.32, attack=0.08, release=0.45):
     m = np.abs(voice_st).mean(axis=1)
@@ -429,11 +488,32 @@ def duck_envelope(voice_st, depth=0.32, attack=0.08, release=0.45):
         out[i:i + 240] = cur
     return 1 - (1 - depth) * out  # 1 = sin voz, depth = con voz
 
+def limiter(x, ceiling=0.84, win_ms=10.0):
+    """Limitador con anticipación (look-ahead): reduce solo los picos, con una curva de ganancia suave.
+    Mínimo deslizante + media deslizante de la misma ventana ⇒ el pico nunca supera el techo y no hay
+    recorte ni distorsión de la forma de onda."""
+    from scipy.ndimage import minimum_filter1d, uniform_filter1d
+    peak = np.abs(x).max(axis=1) if x.ndim == 2 else np.abs(x)
+    g = np.minimum(1.0, ceiling / np.maximum(peak, 1e-9))
+    W = int(win_ms * SR / 1000) | 1
+    g = minimum_filter1d(g, size=W, mode="nearest")
+    g = uniform_filter1d(g, size=W, mode="nearest")
+    g = uniform_filter1d(g, size=W, mode="nearest")  # segunda pasada: transiciones aún más suaves
+    g = np.minimum(g, 1.0)
+    y = x * (g[:, None] if x.ndim == 2 else g)
+    pk = np.abs(y).max()
+    if pk > ceiling: y *= ceiling / pk
+    return y, g
+
+
 def master(mixst, target_lufs=-14.0):
     import pyloudnorm as pyln
     meter = pyln.Meter(SR); lufs = meter.integrated_loudness(mixst)
-    g = 10 ** ((target_lufs - lufs) / 20); y = mixst * g
-    # limitador de picos simple
-    peak = np.max(np.abs(y))
-    if peak > 0.89: y = np.tanh(y / 0.89 * 1.0) * 0.89
+    y = mixst * 10 ** ((target_lufs - lufs) / 20)
+    y, g = limiter(y)
+    # el limitador baja un poco la sonoridad: se corrige una vez
+    l2 = meter.integrated_loudness(y)
+    if abs(l2 - target_lufs) > 0.3:
+        y, g = limiter(y * 10 ** ((target_lufs - l2) / 20))
+    master.last_gr = dict(max_db=float(-20 * np.log10(g.min() + 1e-9)), pct_over_1db=float((g < 0.891).mean() * 100))
     return y, lufs

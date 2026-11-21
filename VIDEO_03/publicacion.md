@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (útil también durante los 30 días posteriores)  
-**Formato:** Largo (16:9) · **Duración:** 3:24 · **Música:** estilo «tension» original · **Voz:** narrador + analista
+**Formato:** Largo (16:9) · **Duración:** 3:32 · **Música:** estilo «tension» original · **Voz:** narradora + copiloto
 
 ## A. Estrategia y posicionamiento
 
@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** gta 6 apk, gta 6 android, gta 6 gratis, gta 6 malware, gta 6 estafa, gta 6 para pc
 - **Intención de búsqueda:** Navegacional riesgosa → la convertimos en protección (servicio público).
 - **Público:** Jugadores sin PS5/Series que buscan alternativas, sobre todo en Latinoamérica; padres y familiares.
-- **Duración:** 3:24
+- **Duración:** 3:32
 - **Por qué hacer clic:** Ocupa una búsqueda masiva dominada por contenido engañoso con información verificada por empresas de seguridad (ESET, Cynet) y pasos de recuperación útiles.
 
 ## B-C. Guion, voz y subtítulos
@@ -39,16 +39,16 @@ No existe GTA 6 para PC (sin fecha anunciada), ni para Android ni para iPhone. L
 
 CAPÍTULOS
 0:00 Gancho
-0:16 Introducción
-0:28 1 · la verdad corta
-0:46 1b · por qué funciona
-1:04 2 · anatomía del anzuelo
-1:28 3 · lo que pide
-1:43 4 · lo que se lleva
-2:03 5 · variantes
-2:22 6 · si ya lo ejecutaste
-2:50 7 · regla de los 5 segundos
-3:04 Despedida
+0:17 Introducción
+0:29 1 · la verdad corta
+0:50 1b · por qué funciona
+1:09 2 · anatomía del anzuelo
+1:34 3 · lo que pide
+1:49 4 · lo que se lleva
+2:10 5 · variantes
+2:29 6 · si ya lo ejecutaste
+2:56 7 · regla de los 5 segundos
+3:11 Despedida
 
 FUENTES
 • Help Net Security (13 nov. 2026): falsa descarga de GTA 6 que roba credenciales de Steam y monederos
@@ -57,7 +57,7 @@ FUENTES
 • Neowin: estafas de descarga gratuita
 • Take-Two: sin fecha para PC
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
@@ -85,7 +85,8 @@ gta 6 pc, gta 6 pc descargar, gta 6 apk, gta 6 android, gta 6 gratis, gta 6 desc
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -99,7 +100,7 @@ gta 6 pc, gta 6 pc descargar, gta 6 apk, gta 6 android, gta 6 gratis, gta 6 desc
 | ¿Aporta valor? | Sí: prevención y pasos de recuperación |
 | ¿Guion distinto a los demás? | Sí: investigación con dos voces |
 | ¿Imágenes adecuadas y autorizadas? | Sí: interfaces genéricas inventadas |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
 | ¿Montaje con buen ritmo? | Sí |
 | ¿Título honesto? | Sí: el vídeo explica que no existe versión PC/Android |
 | ¿Miniatura corresponde? | Sí |

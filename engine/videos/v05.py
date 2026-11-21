@@ -1,7 +1,7 @@
 """VIDEO 05 — Expediente Jason y Lucía: lo que Rockstar ya contó (sin spoilers).
 Lenguaje visual: expediente policial sobre escritorio, máquina de escribir (Special Elite / Courier Prime),
 sellos de tinta, tablero de evidencias con hilo rojo, polaroids con SILUETAS GENÉRICAS (sin parecido con los personajes).
-Dos voces: narrador + analista (lee los expedientes). Música: noir original (piano eléctrico FM + batería con swing).
+Voz: narradora. Música: noir original (piano eléctrico FM + batería con swing).
 """
 import math, numpy as np, skia
 from gfx import *
@@ -231,17 +231,17 @@ def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
 beat("Ella salió de una prisión de Leonida. Él trabaja para traficantes en los Cayos. Rockstar ya nos dio sus expedientes... y hoy los abrimos, sin un solo spoiler.",
      sc_hook, section="GANCHO", energy=1, sfx=[("w:Ella", "shutter", 0.5), ("w:Él trabaja", "shutter", 0.5), ("w:los abrimos", "stamp", 0.8), ("w:sin un solo spoiler", "stamp", 0.6)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("flash", 0.3))
-beat("Esto es Sal y Asfalto. Regla de hoy: solo usamos lo que Rockstar publicó en su web y en sus tráileres, y lo que reportó la prensa que habló con el estudio. "
+beat("Estás en Sal y Asfalto. Regla de hoy: solo usamos lo que Rockstar publicó en su web y en sus tráileres, y lo que reportó la prensa que habló con el estudio. "
      "Cada dato lleva su etiqueta. Y si algo es deducción nuestra, te lo vamos a decir en voz alta.",
      sc_intro, section="INTRODUCCIÓN", energy=1, trans=("zoom", 0.5), sfx=[(0.1, "paper", 0.5), ("w:web", "stamp", 0.5), ("w:etiqueta", "stamp", 0.5), ("w:deducción", "stamp", 0.5)])
 beat("Expediente número uno: Lucía Caminos. Según la web oficial, su padre le enseñó a pelear desde muy pequeña. Pelear por su familia la llevó a la Penitenciaría de Leonida, y salió gracias a la pura suerte. "
      "Desde entonces, dice Rockstar, solo jugadas inteligentes. "
      "En el tráiler de lanzamiento de octubre se ve una tobillera electrónica en su pierna, y la prensa que habló con Rockstar asegura que tendrá un papel en la historia.",
-     sc_lucia, section="EXPEDIENTE 1 · LUCÍA", voice="analista", energy=2, trans=("whip", 0.45),
+     sc_lucia, section="EXPEDIENTE 1 · LUCÍA", energy=2, trans=("whip", 0.45),
      sfx=[(0.1, "paper", 0.5), ("w:Lucía Caminos", "typing", 0.4), ("w:Penitenciaría", "typing", 0.4), ("w:suerte", "typing", 0.4), ("w:tobillera", "typing", 0.4), ("w:Penitenciaría", "stamp", 0.5)])
 beat("Expediente número dos: Jason Duval. Rockstar cuenta que creció rodeado de estafadores y ladrones. Pasó por el ejército intentando dejar atrás una adolescencia problemática, y terminó en los Keys haciendo lo que mejor sabe: trabajar para traficantes locales. "
      "El tráiler de lanzamiento sugiere que se metió en problemas durante el servicio y que no salió en buenos términos.",
-     sc_jason, section="EXPEDIENTE 2 · JASON", voice="analista", energy=2, trans=("whip", 0.45),
+     sc_jason, section="EXPEDIENTE 2 · JASON", energy=2, trans=("whip", 0.45),
      sfx=[(0.1, "paper", 0.5), ("w:Jason Duval", "typing", 0.4), ("w:estafadores", "typing", 0.4), ("w:ejército", "typing", 0.4), ("w:tráiler de lanzamiento", "typing", 0.4), ("w:Keys", "stamp", 0.5)])
 beat("¿Y qué los une? Rockstar los presenta así: Jason y Lucía siempre supieron que tenían las cartas en contra. Pero cuando un golpe fácil sale mal, terminan en el lado más oscuro del lugar más soleado de Estados Unidos, "
      "en medio de una conspiración criminal que atraviesa toda Leonida, obligados a confiar el uno en el otro más que nunca si quieren salir con vida.",

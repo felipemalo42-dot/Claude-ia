@@ -1,49 +1,51 @@
 inicio_s;fin_s;voz;texto
-0.25;8.03;host;Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.
-8.36;9.25;host;Todo falso.
-9.58;13.62;host;Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.
-16.35;17.85;host;Esto es Sal y Asfalto.
-18.18;21.60;host;Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.
-21.93;24.38;host;Y para eso me acompaña nuestra analista.
-24.71;25.15;analista;Hola.
-25.48;28.59;analista;Vamos a abrir el archivo paso a paso, sin tecnicismos.
-28.93;31.53;host;Primero, el dato que desarma toda la estafa.
-31.86;37.04;host;GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.
-37.37;39.45;host;No hay versión de PC anunciada.
-39.78;42.26;host;Y no hay versión para Android ni para iPhone.
-42.59;46.55;host;Cualquier archivo que diga lo contrario está mintiendo desde el nombre.
-46.88;48.53;analista;¿Y por qué cae tanta gente?
-48.91;51.88;analista;Porque el anzuelo se aprovecha de tres cosas reales.
-52.21;55.71;analista;Hay millones de jugadores sin PS5 ni Xbox Series.
-56.04;57.38;analista;La espera duró años.
-57.71;60.20;analista;Y en internet abundan los trucos para todo.
-60.53;64.25;analista;La estafa no vende un juego: vende la ilusión de no quedarte afuera.
-64.58;66.37;analista;El anzuelo tiene tres piezas.
-66.70;68.76;analista;Una página que imita a una tienda.
-69.09;70.49;analista;Un botón de descarga.
-70.82;72.99;analista;Y una excusa para que bajes la guardia.
-73.32;83.16;analista;La empresa ESET detectó un archivo llamado gta6_installer.exe, que en realidad transporta Vidar: un programa diseñado para robar información.
-83.49;87.97;analista;Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.
-88.30;90.00;host;¿Y qué te pide el instalador?
-90.38;99.41;analista;Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.
-99.74;103.23;analista;En otras palabras: te pide que apagues la alarma antes de entrar.
-103.56;113.83;analista;Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.
-114.16;119.95;analista;Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.
-120.28;123.14;host;O sea que no pierdes un juego: pierdes tus cuentas.
-123.47;125.45;host;No siempre es un ejecutable.
-125.78;128.74;host;También circulan otras versiones del mismo truco.
-129.07;133.01;analista;Páginas que te piden completar encuestas antes de mostrar el enlace.
-133.34;137.43;analista;Falsos accesos anticipados o betas que exigen un pago por adelantado.
-137.75;142.07;analista;Y en Android, archivos APK que piden permisos que ningún juego necesita.
-142.40;146.73;analista;Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy.
-147.06;150.48;analista;Desconecta el equipo de internet y analízalo con tu antivirus.
-150.81;157.57;analista;Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.
-157.90;160.01;analista;Activa la verificación en dos pasos.
-160.34;170.05;analista;Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.
-170.38;172.45;host;Regla rápida para la próxima vez.
-172.78;178.40;host;Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.
-178.73;181.42;host;Si te pide desactivar el antivirus, es malware.
-181.75;183.91;host;Y si es gratis, el producto eres tú.
-184.24;188.71;host;Comparte este video con ese primo que siempre encuentra “versiones especiales”.
-189.04;194.63;host;Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.
-194.96;200.06;host;Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.
+0.25;7.09;host;Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.
+7.69;9.07;host;Todo falso.
+9.05;14.24;host;Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.
+17.04;18.64;host;Estás en Sal y Asfalto.
+19.04;22.42;host;Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.
+22.88;25.71;host;Y hoy no vengo sola: traigo copiloto.
+26.11;26.75;copiloto;Hola.
+26.75;28.67;copiloto;Yo hago las preguntas que haría cualquiera.
+29.07;31.65;host;Primero, el dato que desarma toda la estafa.
+31.87;38.45;host;GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.
+38.99;42.22;host;No hay versión de PC anunciada.
+42.62;45.01;host;Y no hay versión para Android ni para iPhone.
+45.34;49.84;host;Cualquier archivo que diga lo contrario está mintiendo desde el nombre.
+50.25;51.55;copiloto;¿Y por qué cae tanta gente?
+52.00;54.76;host;Porque el anzuelo se aprovecha de tres cosas reales.
+55.20;58.72;host;Hay millones de jugadores sin PS5 ni Xbox Series.
+59.12;60.41;host;La espera duró años.
+60.80;63.25;host;Y en internet abundan los trucos para todo.
+63.60;67.98;host;La estafa no vende un juego: vende la ilusión de no quedarte afuera.
+69.07;70.77;host;El anzuelo tiene tres piezas.
+70.91;72.68;host;Una página que imita a una tienda.
+73.15;75.42;host;Un botón de descarga.
+75.82;77.71;host;Y una excusa para que bajes la guardia.
+78.30;87.50;host;La empresa de seguridad ESET detectó un instalador falso de GTA 6 que en realidad transporta Vidar: un programa diseñado para robar información.
+87.91;93.83;host;Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.
+94.23;95.56;copiloto;¿Y qué te pide el instalador?
+95.98;105.37;host;Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.
+105.98;109.52;host;En otras palabras: te pide que apagues la alarma antes de entrar.
+109.92;119.82;host;Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.
+120.26;126.36;host;Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.
+126.80;129.75;copiloto;O sea que no pierdes un juego: pierdes tus cuentas.
+130.18;132.06;copiloto;¿Y siempre es un archivo ejecutable?
+132.51;133.17;host;No siempre.
+133.47;135.88;host;También circulan otras versiones del mismo truco.
+136.35;139.63;host;Páginas que te piden completar encuestas antes de mostrar el enlace.
+140.06;143.75;host;Falsos accesos anticipados o betas que exigen un pago por adelantado.
+144.14;148.02;host;Y en Android, archivos APK que piden permisos que ningún juego necesita.
+149.41;150.62;copiloto;¿Y si alguien ya lo ejecutó?
+151.08;153.47;host;Que no entre en pánico, pero que actúe hoy.
+154.36;157.81;host;Desconecta el equipo de internet y analízalo con tu antivirus.
+158.12;164.51;host;Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.
+164.91;166.93;host;Activa la verificación en dos pasos.
+167.07;176.03;host;Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.
+176.47;178.40;host;Regla rápida para la próxima vez.
+178.62;185.06;host;Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.
+185.34;188.22;host;Si te pide desactivar el antivirus, es malware.
+188.22;191.00;host;Y si es gratis, el producto eres tú.
+191.41;195.14;host;Comparte este video con ese primo que siempre encuentra “versiones especiales”.
+195.65;202.41;host;Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.
+202.81;208.00;host;Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.

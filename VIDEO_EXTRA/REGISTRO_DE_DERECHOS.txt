@@ -1,0 +1,156 @@
+REGISTRO DE DERECHOS · VIDEO_EXTRA
+«¿Por qué Vice City es rosa? La historia real de sus colores (GTA 6)»
+Revisado el 18/11/2026. Este registro no sustituye una opinión jurídica profesional.
+
+Clasificación
+  VERDE    = hay una autorización verificable para el uso propuesto: licencia, obra propia, dominio público o permiso legal expreso.
+  AMARILLO = la situación no está clara. No se usa hasta obtener autorización o una evaluación jurídica.
+  ROJO     = uso restringido o sin autorización suficiente. Descartado.
+
+Resultado: el video no usa NINGÚN material audiovisual de Rockstar Games ni de Take-Two.
+Todo lo que se ve y se oye es original o tiene licencia comercial. El material oficial solo se usó como fuente
+de investigación, se enlaza en la descripción y aparece en pantalla únicamente como cita breve de texto, con atribución.
+
+
+A. MATERIAL OFICIAL DE ROCKSTAR GAMES / TAKE-TWO
+
+A1. Tráiler 1 de GTA VI (05/12/2023)
+    Fuente: canal oficial de Rockstar Games en YouTube y rockstargames.com/VI · Propietario: Rockstar Games / Take-Two Interactive
+    Tipo: video con música licenciada a terceros («Love Is a Long Road», Tom Petty)
+    Uso que queríamos darle: planos de Vice City como apoyo visual
+    Licencia disponible: la política de Rockstar sobre material con copyright permite usos NO comerciales y define
+      «no comercial» como no ganar dinero con el material publicado. No hay licencia comercial.
+    ¿Uso comercial?: NO
+    Restricciones: Take-Two se reserva el derecho a retirar el material en cualquier momento. La música es de terceros.
+    Riesgo de reclamación: ALTO (Content ID por video y por música; posibles avisos de copyright)
+    Decisión: ROJO. Descartado. Solo se menciona y se enlaza.
+
+A2. Tráiler 2 (06/05/2025), tráiler de lanzamiento y «An Extended Look»
+    Igual que A1. Además, el tráiler 2 usa música de terceros («Hot Together», The Pointer Sisters).
+    Decisión: ROJO. Descartado.
+
+A3. Capturas oficiales (galería de lanzamiento y 138 capturas en rockstargames.com/VI/downloads)
+    Propietario: Rockstar Games · Tipo: imágenes fijas
+    Uso que queríamos darle: mostrar fachadas de Ocean Beach
+    Licencia disponible: la página invita a «Download and share», pero no publica términos de uso comercial.
+      La política general solo cubre usos no comerciales.
+    ¿Uso comercial?: NO VERIFICADO
+    Riesgo de reclamación: MEDIO-ALTO (copyright; además, la política de contenido reutilizado de YouTube)
+    Decisión: AMARILLO. No se usa sin autorización escrita (ver el apartado D).
+
+A4. Arte oficial, fondos de pantalla y las 12 imágenes del paquete «Vintage Vice City»
+    Igual que A3. Decisión: AMARILLO. No se usa.
+
+A5. Logotipos («GTA VI», «Vice City», «Rockstar Games») y portada del juego
+    Tipo: marcas registradas y arte · Riesgo: usar un logotipo sugiere respaldo o afiliación
+    Decisión: ROJO. No aparecen en el video, la miniatura ni los gráficos.
+
+A6. Música oficial del juego, radios y banda sonora («In-Game Radio, Soundtrack, and Score»)
+    Decisión: ROJO. Música de terceros y de Rockstar. No se usa.
+
+A7. Citas breves de texto de rockstargames.com/VI
+    Textos: «We're a long way from the '80s, but Vice City is still the sun and fun capital of America»,
+      la mención a Ocean Beach y «Flash back to when the neon burned brightest» (Vintage Vice City)
+    Uso: cita breve, traducida y con atribución en pantalla, como objeto de análisis
+    Autorización: derecho de cita. Ejemplos de las normas de cada país:
+      art. 32 de la Ley de Propiedad Intelectual (España);
+      art. 148 de la Ley Federal del Derecho de Autor (México);
+      art. 31 de la Ley 23 de 1982 (Colombia);
+      art. 10 de la Ley 11.723 (Argentina);
+      fair use, 17 U.S.C. §107 (EE. UU.).
+    Riesgo: BAJO (cita breve, con fuente, para criticar y analizar)
+    Decisión: VERDE, solo para citas breves con atribución.
+
+A8. Nombres «GTA», «Grand Theft Auto», «GTA 6», «Vice City», «Ocean Beach», «Hotel Dixon», «Vercetti», «Lance Vance»
+    Uso: descriptivo o nominativo en títulos, narración y descripción, como hace la prensa
+    Riesgo: BAJO, siempre que no se use un logotipo ni se sugiera afiliación. La descripción aclara que el canal es independiente.
+    Decisión: VERDE (uso nominativo).
+
+
+B. MATERIAL DE TERCEROS (NO ROCKSTAR)
+
+B1. Fotografías históricas de Miami Beach (Library of Congress / HABS, archivos estatales de Florida)
+    Situación: las fotos de HABS son obras del gobierno federal de EE. UU. y, en general, de dominio público. Habría que comprobarlo foto por foto.
+    Decisión: NO USADAS. Se prefirió la ilustración para mantener un lenguaje visual único y no mezclar fotos reales con escenas inventadas.
+
+B2. Fotografías o retratos de Leonard Horowitz y Barbara Capitman
+    Propietarios: fotógrafos, MDPL y medios. Licencia: desconocida.
+    Decisión: ROJO. No se usan. Se emplean tarjetas de nombre tipográficas y siluetas genéricas, sin intentar parecerse a nadie.
+
+B3. Portada de la revista Progressive Architecture (noviembre de 1982, foto de Steven Brooke)
+    Decisión: ROJO. No se usa ni se recrea.
+
+B4. Miami Vice (NBCUniversal): imágenes, logotipo y música (incluido el tema de Jan Hammer)
+    Decisión: ROJO. Solo se nombra la serie y se citan datos de producción. No hay imágenes, logotipo ni melodías parecidas:
+      la música del video es original y no imita ningún tema.
+
+B5. Textos del Servicio de Parques Nacionales de EE. UU. (NPS)
+    Situación: obra del gobierno federal de EE. UU., dominio público en EE. UU. (17 U.S.C. §105)
+    Decisión: VERDE, con atribución.
+
+B6. Citas breves de WLRN/AP, National Trust, Mental Floss y Wikipedia
+    Uso: datos (los hechos no tienen derechos de autor) y citas breves traducidas, con atribución en pantalla y en la descripción
+    Decisión: VERDE, por el derecho de cita (ver A7). No se reproducen textos largos.
+
+B7. Edificios reales (Hotel Victor y otros de Ocean Drive)
+    Uso: se nombran. Las fachadas del video son inventadas (MAREA, CORAL, BRISA y SOL): no copian edificios concretos ni marcas de hoteles.
+    Decisión: VERDE.
+
+
+C. RECURSOS PROPIOS Y CON LICENCIA COMERCIAL
+
+C1. Ilustraciones, animaciones, gráficos, mapas esquemáticos y miniatura
+    Origen: código propio del canal (engine/videos/vx_lib.py y vx_scenes.py), dibujado con Skia
+    Decisión: VERDE (obra propia).
+
+C2. Música y efectos de sonido
+    Origen: sintetizados por código propio (engine/audio.py: osciladores, FM, ruido filtrado). Sin muestras de terceros ni IA generativa.
+    Decisión: VERDE (obra propia).
+
+C3. Voz de la narradora
+    Modelo: Chatterbox Multilingual (Resemble AI), licencia MIT, con uso comercial permitido
+    Voz de referencia: corpus OpenSLR SLR72 (Google), locutora anónima cof_03034, licencia CC BY-SA 4.0
+      Atribución: Guevara-Rukoz et al., «Crowdsourcing Latin American Spanish for Low-Resource Text-to-Speech», LREC 2020
+    Marca de agua: Chatterbox incrusta una marca de agua inaudible (Perth) que identifica el audio como sintético
+    Decisión: VERDE, con la atribución obligatoria (incluida en la descripción).
+
+C4. Tipografías
+    Abril Fatface, Monoton, DM Serif Display, Special Elite, Overpass, Overpass Mono, Inter, VT323 y Caveat: SIL OFL 1.1 o Apache 2.0
+    Decisión: VERDE.
+
+C5. Verificación de la voz (reconocimiento automático)
+    Parakeet TDT v3 (NVIDIA), CC-BY-4.0. Es una herramienta de control y no aparece en el video.
+    Decisión: VERDE.
+
+
+D. CÓMO PEDIR AUTORIZACIÓN A ROCKSTAR / TAKE-TWO (si algún día se quieren usar A3 o A4)
+
+1. Leer la política vigente, «Policy on posting copyrighted Rockstar Games material»:
+   https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material
+2. Para usos que la política no cubre (comerciales o monetizados), las fuentes secundarias consultadas indican que
+   la política remite los casos dudosos a copyright@take2games.com. Verifícalo en la página oficial antes de escribir.
+3. Abrir además un caso en Rockstar Support (https://support.rockstargames.com), sección de contacto.
+4. Pedir el permiso POR ESCRITO, indicando:
+   - el canal;
+   - el video concreto, con enlace privado si existe;
+   - qué imágenes se quieren usar, con su archivo y su URL;
+   - durante cuántos segundos y con qué fin (análisis y comentario);
+   - que el video tendrá anuncios;
+   - los países de publicación.
+5. Guardar la respuesta. Sin una autorización expresa, la clasificación sigue siendo AMARILLO o ROJO.
+
+Borrador de solicitud (en inglés, como lo pide el destinatario):
+  Subject: Permission request – commercial use of official GTA VI screenshots in an analysis video
+  Hello, we run the independent Spanish-language YouTube channel "Sal y Asfalto". We are preparing a commentary video about
+  the real-world architectural history behind Vice City's Ocean Beach. We would like to include up to [N] official screenshots
+  from rockstargames.com/VI/downloads (files: [list]) for a total of [X] seconds, with on-screen credit to Rockstar Games.
+  The video will be monetized on YouTube. Could you let us know whether this use is permitted and under what conditions?
+  Thank you.
+
+
+E. OTRAS PROTECCIONES APLICADAS
+- No se esquiva Content ID con espejos, recortes ni deformaciones: simplemente no hay material ajeno.
+- Las escenas «de 2002» y «de 2026» son ilustraciones propias. La de 2002 lleva el rótulo
+  «recreación ilustrada · no es una captura del juego», y el video empieza con el aviso
+  «Ilustración original de Sal y Asfalto · no es una imagen del juego».
+- No se usan filtraciones ni contenido previo al lanzamiento que no haya publicado Rockstar.

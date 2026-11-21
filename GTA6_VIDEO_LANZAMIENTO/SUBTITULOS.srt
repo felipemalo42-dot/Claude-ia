@@ -1,0 +1,854 @@
+1
+00:00:00,650 --> 00:00:03,890
+Trece años después de GTA 5, la espera ha
+terminado:
+
+2
+00:00:03,930 --> 00:00:06,690
+GTA 6 ya se ha lanzado en todo el mundo.
+
+3
+00:00:06,730 --> 00:00:10,770
+Nueva Zelanda fue el primer país en
+desbloquearlo, y la crítica, que ya lo ha
+
+4
+00:00:10,810 --> 00:00:15,675
+jugado, ha dado su veredicto: un 99 en
+Metacritic.
+
+5
+00:00:15,715 --> 00:00:21,515
+Hoy repasamos qué dicen de su jugabilidad:
+los atracos, la conducción, el combate, el
+
+6
+00:00:21,555 --> 00:00:26,235
+realismo y lo que menos ha gustado, con
+imágenes de partidas reales, ya con el
+
+7
+00:00:26,275 --> 00:00:27,275
+juego a la venta.
+
+8
+00:00:30,099 --> 00:00:31,739
+Estás en Sal y Asfalto.
+
+9
+00:00:31,779 --> 00:00:33,259
+Tres avisos rápidos.
+
+10
+00:00:33,299 --> 00:00:37,099
+Las imágenes de juego son de partidas
+publicadas tras el lanzamiento, sobre todo
+
+11
+00:00:37,139 --> 00:00:40,158
+de IGN, y en cada plano verás de quién
+son.
+
+12
+00:00:40,198 --> 00:00:44,878
+Las opiniones son de los medios que lo han
+analizado, y te decimos cuál dice cada
+
+13
+00:00:44,918 --> 00:00:45,358
+cosa.
+
+14
+00:00:45,398 --> 00:00:49,918
+Y en el capítulo de los atracos verás
+escenas de misiones, así que antes te
+
+15
+00:00:49,958 --> 00:00:52,708
+avisaremos con un cartel de spoiler.
+
+16
+00:00:54,068 --> 00:00:55,468
+Empecemos por la nota.
+
+17
+00:00:55,508 --> 00:01:00,908
+Las reseñas se publicaron el 18 de
+noviembre, y GTA 6 tiene un 99 sobre 100
+
+18
+00:01:00,948 --> 00:01:06,223
+en Metacritic, con más de 140 análisis y
+ninguno mixto ni negativo.
+
+19
+00:01:06,263 --> 00:01:10,885
+Iguala el récord histórico de la web, que
+tenía The Legend of Zelda: Ocarina of Time
+
+20
+00:01:10,925 --> 00:01:12,725
+desde 1998.
+
+21
+00:01:12,765 --> 00:01:17,164
+En OpenCritic, el cien por cien de los
+críticos lo recomienda.
+
+22
+00:01:17,204 --> 00:01:18,844
+Algunas frases de las reseñas.
+
+23
+00:01:18,884 --> 00:01:23,164
+IGN le pone un diez y lo llama «el
+videojuego más impresionante» que ha
+
+24
+00:01:23,204 --> 00:01:24,235
+jugado su analista.
+
+25
+00:01:24,275 --> 00:01:31,015
+GameSpot, otro diez: cree que no lo
+superará nadie hasta GTA 7.
+
+26
+00:01:31,055 --> 00:01:35,998
+Eurogamer le da cinco estrellas de cinco,
+y GamesRadar habla del mundo abierto más
+
+27
+00:01:36,038 --> 00:01:37,813
+detallado de esta generación.
+
+28
+00:01:38,587 --> 00:01:42,707
+Mientras tanto, el juego ya se
+desbloqueaba país a país, a la medianoche
+
+29
+00:01:42,747 --> 00:01:43,507
+de cada uno.
+
+30
+00:01:43,547 --> 00:01:47,987
+Nueva Zelanda fue la primera, a las once
+de la mañana en hora universal del día 18,
+
+31
+00:01:48,027 --> 00:01:50,751
+y su prensa recogió las primeras
+impresiones.
+
+32
+00:01:50,791 --> 00:01:54,751
+Un día después, el juego ya estaba
+disponible en todo el mundo.
+
+33
+00:01:54,791 --> 00:02:00,111
+Un jugador, a la media hora, destacaba la
+jugabilidad, los gráficos y la historia.
+
+34
+00:02:00,151 --> 00:02:03,701
+Otro lo resumía como «un festín para los
+ojos».
+
+35
+00:02:04,470 --> 00:02:09,710
+Y un aviso: algunos jugadores cambiaron la
+región de su consola para jugar antes, el
+
+36
+00:02:09,750 --> 00:02:11,790
+llamado truco de Nueva Zelanda.
+
+37
+00:02:11,830 --> 00:02:15,745
+Hay medios que advierten de posibles
+sanciones en las cuentas.
+
+38
+00:02:15,785 --> 00:02:20,225
+Ahora que ya ha salido en todo el mundo,
+ese truco ya no tiene sentido: no te la
+
+39
+00:02:20,265 --> 00:02:21,609
+juegues con tu cuenta.
+
+40
+00:02:22,359 --> 00:02:24,635
+Lo que más repiten los análisis es el
+mundo.
+
+41
+00:02:24,675 --> 00:02:29,599
+IGN describe Leonida como un lugar
+exquisitamente detallado, que invita a
+
+42
+00:02:29,639 --> 00:02:30,923
+experimentar sin parar.
+
+43
+00:02:32,131 --> 00:02:36,914
+GameSpot destaca los pequeños detalles
+como una de las grandes razones por las
+
+44
+00:02:36,954 --> 00:02:39,229
+que la espera ha merecido la pena.
+
+45
+00:02:39,269 --> 00:02:42,909
+Y en Windows Central subrayan cómo
+reacciona el mundo a lo que haces: por
+
+46
+00:02:42,949 --> 00:02:46,109
+ejemplo, un robo no sale igual según quién
+esté cerca.
+
+47
+00:02:46,149 --> 00:02:50,669
+Y es lo que se ve en las partidas: gente
+en la calle, en la playa y en los muelles,
+
+48
+00:02:50,709 --> 00:02:53,044
+tráfico y peatones que van a lo suyo.
+
+49
+00:02:54,038 --> 00:02:56,398
+Hay más detalles sobre la gente de
+Leonida.
+
+50
+00:02:56,438 --> 00:03:01,038
+Según Windows Central, los peatones
+reaccionan si conduces mal, si los
+
+51
+00:03:01,078 --> 00:03:04,897
+insultas o si les pitas, y Vice destaca
+que tienen frases propias.
+
+52
+00:03:04,937 --> 00:03:09,137
+Incluso las caras de la gente están
+capturadas con actores, y se aprecian en
+
+53
+00:03:09,177 --> 00:03:13,953
+las conversaciones dentro del coche si
+pones la cámara en primera persona.
+
+54
+00:03:13,993 --> 00:03:17,953
+Rockstar ya había dicho que Leonida es,
+más o menos, el doble de grande que el
+
+55
+00:03:17,993 --> 00:03:21,551
+mapa de GTA 5, y este es su mapa dentro
+del juego.
+
+56
+00:03:21,591 --> 00:03:26,991
+Y el analista de The Guardian lo resume
+con una imagen: hacer la reseña de GTA 6
+
+57
+00:03:27,031 --> 00:03:31,871
+es como hacer la reseña de una ciudad
+entera, como París.
+
+58
+00:03:32,580 --> 00:03:34,140
+¿Y fuera de las misiones?
+
+59
+00:03:34,180 --> 00:03:38,060
+Las reseñas coinciden en que las
+actividades secundarias pueden comerte
+
+60
+00:03:38,100 --> 00:03:42,780
+horas: pescar, entrenar en el gimnasio,
+bailar en una discoteca, jugar al golf,
+
+61
+00:03:42,820 --> 00:03:46,224
+cazar, bucear, observar aves o correr
+carreras de drones.
+
+62
+00:03:47,282 --> 00:03:52,042
+Según Vice, además, todo empuja hacia
+algo, porque la historia gira en torno a
+
+63
+00:03:52,082 --> 00:03:53,082
+ganar dinero.
+
+64
+00:03:53,764 --> 00:03:56,284
+Ahora sí, aviso de spoiler.
+
+65
+00:03:56,324 --> 00:04:00,684
+Las próximas imágenes son de misiones del
+juego final, que no salen en ningún
+
+66
+00:04:00,724 --> 00:04:02,684
+tráiler ni en el Extended Look.
+
+67
+00:04:02,724 --> 00:04:06,764
+Si no quieres ver nada, salta al siguiente
+capítulo: el minuto está en la
+
+68
+00:04:06,804 --> 00:04:07,804
+descripción.
+
+69
+00:04:08,378 --> 00:04:11,938
+Para GameSpot, los grandes atracos son la
+joya del juego.
+
+70
+00:04:11,978 --> 00:04:15,938
+Y Windows Central explica que un robo
+puede salir distinto según quién haya
+
+71
+00:04:15,978 --> 00:04:16,744
+alrededor.
+
+72
+00:04:16,784 --> 00:04:22,104
+En el análisis en vídeo de IGN se ve el
+asalto a un banco: la entrada, los
+
+73
+00:04:22,144 --> 00:04:26,666
+guardias encañonados, la cámara acorazada
+y la huida.
+
+74
+00:04:26,706 --> 00:04:32,843
+Y la primera misión, «Just Like Paradise»,
+ya enseña cómo se juega:
+
+75
+00:04:32,883 --> 00:04:37,563
+Jason sale en lancha entre islas y
+puentes, vigila un muelle con prismáticos,
+
+76
+00:04:37,603 --> 00:04:42,207
+se cuela a escondidas en un poblado entre
+manglares y, cuando todo se tuerce, acaba
+
+77
+00:04:42,247 --> 00:04:44,166
+a tiros y huye en hidroavión.
+
+78
+00:04:44,206 --> 00:04:45,926
+Y no todo son tiroteos.
+
+79
+00:04:45,966 --> 00:04:50,566
+En otra misión, Jason cobra el alquiler de
+los negocios de Brian: puede calmar o
+
+80
+00:04:50,606 --> 00:04:54,726
+amenazar al dependiente, abre una puerta
+con un código y deja la mercancía en el
+
+81
+00:04:54,766 --> 00:04:56,038
+almacén de Brian.
+
+82
+00:04:56,078 --> 00:05:01,318
+Después busca un Imponte Phoenix rojo en
+un depósito de la policía, lo saca de allí
+
+83
+00:05:01,358 --> 00:05:03,912
+y tiene que despistar a los agentes.
+
+84
+00:05:04,698 --> 00:05:05,938
+Fin de los spoilers.
+
+85
+00:05:05,978 --> 00:05:08,498
+Vamos con la conducción, el tema que más
+divide.
+
+86
+00:05:08,538 --> 00:05:13,138
+Forbes dice que conducir, que suele ser un
+problema en los juegos de Rockstar, aquí
+
+87
+00:05:13,178 --> 00:05:14,633
+funciona perfectamente.
+
+88
+00:05:14,673 --> 00:05:19,433
+GameSpot, en cambio, admite que la física
+de los coches le exigió más precisión de
+
+89
+00:05:19,473 --> 00:05:20,503
+la que tenía.
+
+90
+00:05:20,543 --> 00:05:25,303
+Varios análisis añaden un matiz: los
+coches se rompen con más facilidad que en
+
+91
+00:05:25,343 --> 00:05:28,375
+GTA 5, y las reparaciones cuestan dinero.
+
+92
+00:05:29,023 --> 00:05:33,553
+Si vienes de conducir a lo loco por Los
+Santos, toca cambiar el chip.
+
+93
+00:05:34,204 --> 00:05:35,545
+La policía también cambia.
+
+94
+00:05:35,585 --> 00:05:40,404
+Windows Central dice que el sistema es
+mucho más complejo que en los GTA
+
+95
+00:05:40,444 --> 00:05:44,040
+anteriores, y que una persecución se puede
+torcer muy rápido.
+
+96
+00:05:44,080 --> 00:05:48,280
+Por ejemplo, puedes cortar alarmas y
+cámaras de seguridad para que la policía
+
+97
+00:05:48,320 --> 00:05:53,076
+sea menos eficaz, o esconderte dentro del
+coche para que pase a modo de búsqueda.
+
+98
+00:05:53,116 --> 00:05:57,876
+Y en las partidas se ve un detalle más:
+cambiar de gorra, de gafas o de peinado
+
+99
+00:05:57,916 --> 00:05:59,566
+hace que te reconozcan menos.
+
+100
+00:06:00,353 --> 00:06:03,513
+Con el combate, la crítica es menos
+entusiasta.
+
+101
+00:06:03,553 --> 00:06:08,153
+Una reseña lo describe como torpe, y otras
+dos dicen que el cuerpo a cuerpo es
+
+102
+00:06:08,193 --> 00:06:09,113
+rígido.
+
+103
+00:06:09,153 --> 00:06:14,208
+También hay quejas por controles algo
+enrevesados en momentos concretos.
+
+104
+00:06:14,248 --> 00:06:19,248
+Nuestra lectura: en un juego de Rockstar,
+el combate nunca ha sido lo más pulido, y
+
+105
+00:06:19,288 --> 00:06:21,088
+parece que esta vez tampoco.
+
+106
+00:06:21,128 --> 00:06:24,619
+Pero nadie lo señala como un problema
+grave.
+
+107
+00:06:25,369 --> 00:06:28,129
+Otro cambio grande es el realismo del día
+a día.
+
+108
+00:06:28,169 --> 00:06:32,929
+Seis reseñas avisan del realismo: coches
+frágiles, facturas de reparación y tareas
+
+109
+00:06:32,969 --> 00:06:37,357
+cotidianas, algo que cuesta al principio
+si vienes de GTA 5.
+
+110
+00:06:37,397 --> 00:06:41,917
+Rockstar ya había adelantado que la comida
+cambia el peso, el gimnasio se nota en los
+
+111
+00:06:41,957 --> 00:06:45,619
+músculos y la falta de sueño se ve en la
+cara.
+
+112
+00:06:45,659 --> 00:06:47,699
+Para unos es inmersión pura.
+
+113
+00:06:47,739 --> 00:06:50,899
+Para otros, una molestia.
+
+114
+00:06:50,939 --> 00:06:55,699
+Windows Central avisa de que parte de su
+jugabilidad podría generar debate en la
+
+115
+00:06:55,739 --> 00:06:57,420
+comunidad.
+
+116
+00:06:58,176 --> 00:07:00,776
+Y el punto más criticado: el rendimiento.
+
+117
+00:07:00,816 --> 00:07:06,616
+GTA 6 funciona a 30 imágenes por segundo
+en todas las consolas, incluida PS5 Pro,
+
+118
+00:07:06,656 --> 00:07:07,976
+sin modo a 60.
+
+119
+00:07:08,016 --> 00:07:12,869
+Además, nueve reseñas notaron caídas por
+debajo de 30 en momentos exigentes.
+
+120
+00:07:12,909 --> 00:07:14,869
+Digital Foundry ya lo ha medido.
+
+121
+00:07:14,909 --> 00:07:21,509
+En Xbox Series X, el juego se renderiza
+internamente a 1440p y apunta a 30, con
+
+122
+00:07:21,549 --> 00:07:24,426
+bajadas en escenas cargadas.
+
+123
+00:07:24,466 --> 00:07:31,066
+En Series S baja a 720p, que Rockstar
+reescala a 1080p, y se queda a menudo por
+
+124
+00:07:31,106 --> 00:07:32,346
+debajo de 30.
+
+125
+00:07:32,386 --> 00:07:36,495
+Su recomendación: jugarlo en PS5 o en
+Series X.
+
+126
+00:07:36,535 --> 00:07:42,735
+Y en PlayStation, según el análisis de
+Digital Foundry, PS5 y PS5 Pro renderizan
+
+127
+00:07:42,775 --> 00:07:46,941
+a unos 1440p y también apuntan a 30.
+
+128
+00:07:48,131 --> 00:07:54,091
+La Pro reescala con PSSR hasta una imagen
+casi 4K, añade sombras con trazado de
+
+129
+00:07:54,131 --> 00:08:00,418
+rayos y mantiene los 30 casi siempre: para
+ellos, es la mejor forma de jugarlo.
+
+130
+00:08:00,458 --> 00:08:05,538
+En la PS5 normal, las caídas por debajo de
+30 son más frecuentes en la acción
+
+131
+00:08:05,578 --> 00:08:06,418
+intensa.
+
+132
+00:08:06,458 --> 00:08:10,414
+Su veredicto: un rendimiento aceptable,
+pero algo decepcionante.
+
+133
+00:08:11,482 --> 00:08:16,082
+Nuestra lectura: a cambio, el juego enseña
+un nivel de detalle que pocos juegos de
+
+134
+00:08:16,122 --> 00:08:17,682
+mundo abierto alcanzan.
+
+135
+00:08:17,722 --> 00:08:21,772
+Pero si para ti los 60 son
+imprescindibles, conviene saberlo antes.
+
+136
+00:08:23,323 --> 00:08:25,603
+La historia, sin destripar nada.
+
+137
+00:08:25,643 --> 00:08:30,323
+La crítica coincide en que gana mucho con
+Jason y Lucía, la primera pareja
+
+138
+00:08:30,363 --> 00:08:35,043
+protagonista de la saga: en un resumen de
+dieciocho reseñas, dieciséis hablan de
+
+139
+00:08:35,083 --> 00:08:36,833
+ellos.
+
+140
+00:08:36,873 --> 00:08:41,633
+Las pegas: un arranque lento, misiones que
+a veces te dejan poco margen y requisitos
+
+141
+00:08:41,673 --> 00:08:45,682
+de progreso que, según GameSpot, cortan el
+ritmo de la historia.
+
+142
+00:08:45,722 --> 00:08:50,344
+Worthplaying, que le pone un 9,5, avisa de
+que los primeros capítulos dedican mucho
+
+143
+00:08:50,384 --> 00:08:51,859
+tiempo a la vida cotidiana.
+
+144
+00:08:51,899 --> 00:08:56,419
+La mayor sorpresa para muchos críticos es
+la historia de amor entre los dos.
+
+145
+00:08:56,459 --> 00:09:00,438
+Uno llega a decir que no esperaba
+emocionarse tanto.
+
+146
+00:09:00,478 --> 00:09:05,078
+Y la sátira sigue afilada: según las
+reseñas, apunta a los teóricos de la
+
+147
+00:09:05,118 --> 00:09:09,238
+conspiración, a la desigualdad y a los
+influencers.
+
+148
+00:09:09,278 --> 00:09:10,118
+¿Y cuánto dura?
+
+149
+00:09:10,158 --> 00:09:14,678
+Rob Nelson, de Rockstar North, calculó
+antes del lanzamiento unas ochenta horas
+
+150
+00:09:14,718 --> 00:09:16,278
+para la historia principal.
+
+151
+00:09:16,318 --> 00:09:19,789
+Pronto sabremos cuántas les lleva a los
+jugadores.
+
+152
+00:09:20,544 --> 00:09:25,384
+Para cerrar, Sam Houser, cofundador de
+Rockstar, publicó un mensaje poco habitual
+
+153
+00:09:25,424 --> 00:09:26,264
+en él.
+
+154
+00:09:26,304 --> 00:09:30,104
+Dio las gracias a los jugadores y dijo que
+espera seguir compartiendo estas
+
+155
+00:09:30,144 --> 00:09:31,976
+experiencias muchos años más.
+
+156
+00:09:32,016 --> 00:09:36,376
+Y en bolsa, las acciones de Take-Two
+subieron un seis por ciento el día de las
+
+157
+00:09:36,416 --> 00:09:40,616
+reseñas, con unas reservas que se estiman
+en más de mil quinientos millones de
+
+158
+00:09:40,656 --> 00:09:41,656
+dólares.
+
+159
+00:09:43,009 --> 00:09:45,289
+¿Y qué ha pasado desde que se desbloqueó?
+
+160
+00:09:45,329 --> 00:09:49,689
+Primero, un récord: entre Twitch, YouTube
+y Kick, más de seis millones de personas
+
+161
+00:09:49,729 --> 00:09:52,969
+vieron directos de GTA 6 a la vez, según
+Streams Charts.
+
+162
+00:09:53,009 --> 00:09:56,341
+Solo en Twitch se superaron los tres
+millones.
+
+163
+00:09:56,381 --> 00:10:00,206
+Es el mayor lanzamiento de un videojuego
+en la historia del streaming.
+
+164
+00:10:00,246 --> 00:10:04,286
+También han llegado las primeras quejas:
+jugadores que hablan de personajes que
+
+165
+00:10:04,326 --> 00:10:09,142
+atraviesan objetos, físicas raras y
+algunos cierres inesperados en consola.
+
+166
+00:10:09,182 --> 00:10:14,262
+De momento, Rockstar no los ha confirmado,
+y muchos otros jugadores dicen no haber
+
+167
+00:10:14,302 --> 00:10:15,782
+tenido ningún problema.
+
+168
+00:10:15,822 --> 00:10:20,502
+Antes del lanzamiento, además, PlayStation
+Network sufrió una caída que Sony
+
+169
+00:10:20,542 --> 00:10:21,811
+reconoció.
+
+170
+00:10:21,851 --> 00:10:23,011
+Pausa rápida:
+
+171
+00:10:23,051 --> 00:10:24,851
+¿tú ya lo estás jugando?
+
+172
+00:10:24,891 --> 00:10:27,171
+¿Qué es lo primero que has hecho en
+Leonida?
+
+173
+00:10:27,211 --> 00:10:30,279
+Te leemos en los comentarios.
+
+174
+00:10:31,131 --> 00:10:32,451
+¿Merece la pena?
+
+175
+00:10:32,491 --> 00:10:35,241
+Para la crítica, sin ninguna duda.
+
+176
+00:10:36,254 --> 00:10:41,574
+Nuestra lectura: si te preocupan los 30
+imágenes por segundo o el combate, dale
+
+177
+00:10:41,614 --> 00:10:46,134
+unas horas antes de juzgarlo: varias
+reseñas coinciden en que el arranque es
+
+178
+00:10:46,174 --> 00:10:49,273
+lento y en que el juego tarda en despegar.
+
+179
+00:10:49,960 --> 00:10:54,480
+Resumen: un mundo que la crítica considera
+de récord, atracos espectaculares y un
+
+180
+00:10:54,520 --> 00:10:59,520
+realismo que exige paciencia, con dos
+peros claros, el combate y los 30 imágenes
+
+181
+00:10:59,560 --> 00:11:00,560
+por segundo.
+
+182
+00:11:00,600 --> 00:11:04,560
+Si ya lo estás jugando, cuéntanos en los
+comentarios qué te ha parecido.
+
+183
+00:11:04,600 --> 00:11:06,160
+Sin spoilers, por favor.
+
+184
+00:11:06,200 --> 00:11:11,245
+Y suscríbete a Sal y Asfalto: seguimos con
+GTA 6 toda la semana.

@@ -148,7 +148,7 @@ def beat(vo="", scene=None, **k): B.append(dict(vo=vo, scene=scene, **k))
 beat("Faltan horas para el lanzamiento, y todavía hay siete preguntas que Rockstar no ha respondido. Las metimos en sobres sellados. El jueves los abrimos.",
      sc_hook, section="GANCHO", energy=1, sfx=[(0.4, "paper", 0.4), (1.2, "paper", 0.4), (2.0, "paper", 0.4), ("w:El jueves", "seal", 0.6)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("flash", 0.3))
-beat("Esto es Sal y Asfalto. Cada sobre lleva una pregunta, lo que sí sabemos con certeza y nuestra predicción, con un medidor de confianza. "
+beat("Estás en Sal y Asfalto. Cada sobre lleva una pregunta, lo que sí sabemos con certeza y nuestra predicción, con un medidor de confianza. "
      "Ojo: las predicciones son nuestras, van en amarillo y no son información.",
      sc_rules, section="REGLAS", energy=1, trans=("zoom", 0.5), sfx=[("w:pregunta", "pop", 0.4), ("w:sabemos", "pop", 0.4), ("w:predicción", "pop", 0.4), ("w:no son información", "ding", 0.3)])
 VO = [

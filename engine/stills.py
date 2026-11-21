@@ -13,5 +13,6 @@ for gt in times:
     s = gfx.new_surface(W, H); c = s.getCanvas(); c.clear(skia.ColorBLACK)
     groups[gi]["fn"](c, gt - groups[gi]["start"], infos[gi], ctx)
     if V.get("overlay"): V["overlay"](c, gt, ctx)
+    if V.get("grade"): V["grade"](c, gt, ctx)
     p = f"/tmp/claude-0/-home-user-Claude-ia/2692e1fb-2c8d-5e01-9751-d8741cc42ebb/scratchpad/stills/{vid}_{gt:07.2f}.png"
     s.makeImageSnapshot().save(p, skia.kPNG); print(p)

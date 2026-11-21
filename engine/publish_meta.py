@@ -6,12 +6,13 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 AI_NO = ("**Casilla “contenido alterado o sintético”: NO.** Todo el material visual es animación/infografía claramente no realista "
          "y la voz sintética no imita a ninguna persona real ni presenta hechos inventados como reales. Según los ejemplos de YouTube, "
          "esto no exige la etiqueta. Por transparencia, la descripción lo declara igualmente.")
-DISCLOSE_LINE = ("ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. "
+DISCLOSE_LINE = ("ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. "
                  "Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; "
                  "canal independiente, sin relación con Rockstar Games.")
 COMMON_LIC = [
     "Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.",
-    "Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).",
+    "Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.",
+    "Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.",
     "Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).",
     "Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).",
     "Codificación: FFmpeg (libx264 / AAC).",
@@ -203,7 +204,9 @@ def contact_sheet(folder):
 
 def write_all():
     import importlib
+    only = os.environ.get("ONLY")
     for vid, M in META.items():
+        if only and vid != only: continue
         V = importlib.import_module(f"videos.{vid}").VIDEO; folder = os.path.join(ROOT, V["folder"])
         tl = json.load(open(f"{folder}/recursos/timeline.json")); ch = chapters(V, tl)
         mp4 = glob.glob(f"{folder}/*.mp4")
@@ -225,11 +228,11 @@ def write_all():
         open(f"{folder}/descripcion_youtube.txt", "w", encoding="utf-8").write(desc)
         open(f"{folder}/etiquetas.txt", "w", encoding="utf-8").write(", ".join(M["tags"]) + "\n")
         L = [f"# {V['folder']} — {M['titles'][0]}", "", f"**Estado real:** {M['status']}  ", f"**Fase:** {M['phase']}  ",
-             f"**Formato:** {V['format']} · **Duración:** {fmt(tl['total'])} · **Música:** estilo «{V['music']}» original · **Voz:** {'narrador + analista' if any(b.get('voice') == 'analista' for b in V['beats']) and V.get('voice') == 'host' else ('analista' if V.get('voice') == 'analista' else 'narrador')}",
+             f"**Formato:** {V['format']} · **Duración:** {fmt(tl['total'])} · **Música:** estilo «{V['music']}» original · **Voz:** {'narradora + copiloto' if any(b.get('voice') == 'copiloto' for b in V['beats']) else 'narradora'}",
              "", "## A. Estrategia y posicionamiento", "", f"- **Título principal (SEO):** {M['titles'][0]}",
              "- **Títulos alternativos:**", *[f"  {i}. {t}" for i, t in enumerate(M['titles'][1:], 1)],
              f"- **Palabra clave principal:** {M['kw']}", f"- **Palabras clave secundarias:** {', '.join(M['kw2'])}",
-             f"- **Intención de búsqueda:** {M['intent']}", f"- **Público:** {M['audience']}", f"- **Duración:** {M['dur']}",
+             f"- **Intención de búsqueda:** {M['intent']}", f"- **Público:** {M['audience']}", f"- **Duración:** {M['dur'] if vid == 'v10' else fmt(tl['total']) + (' ' + M['dur'].split(' ', 1)[1] if ' ' in M['dur'] else '')}",
              f"- **Por qué hacer clic:** {M['why']}", "", "## B-C. Guion, voz y subtítulos", "",
              "- Guion completo con marcas de tiempo y notas visuales: `guion.txt`", "- Texto de narración: `narracion.txt` · marcas por frase: `marcas_de_tiempo.csv`",
              "- Audio de narración: `narracion.wav` (24 kHz, original) y `narracion.mp3` (procesada, 48 kHz)", "- Subtítulos: `subtitulos.srt` (súbelos como subtítulos en español en YouTube Studio)",
@@ -250,7 +253,7 @@ _AUD_ROWS = ["¿Contenido original?", "¿Aporta valor?", "¿Guion distinto a los
              "¿Montaje con buen ritmo?", "¿Título honesto?", "¿Miniatura corresponde?", "¿Información sin verificar?", "¿Riesgo de copyright?", "¿Declarar contenido sintético?", "¿Problema de monetización?"]
 def _aud(vals):
     return "| Comprobación | Resultado |\n|---|---|\n" + "\n".join(f"| {q} | {v} |" for q, v in zip(_AUD_ROWS, vals))
-_VOICE = "Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README)."
+_VOICE = "Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README)."
 AUDIT["v01"] = _aud(["Sí: guion, música, gráficos y miniatura originales", "Sí: 7 respuestas prácticas con fuentes", "Sí: estructura de lista de embarque (única)", "Sí: todo dibujado por código", _VOICE, "Sí: cambio de escena cada 20-40 s, animación sincronizada por palabra clave", "Sí", "Sí (00:00 + 210 GB + precio + idioma están en el vídeo)", "Precios locales marcados como REPORTADO; verificar en tienda antes de publicar", "No", "No (ver sección IA)", "Riesgo moderado inherente a canales nuevos con voz sintética; mitigado por originalidad y valor"])
 AUDIT["v02"] = _aud(["Sí", "Sí: hora exacta por país", "Sí: Short con globo 3D", "Sí: Natural Earth (dominio público)", _VOICE, "Sí: ritmo rápido, subtítulos palabra a palabra", "Sí", "Sí", "EE. UU. marcado como REPORTADO", "No", "No", "Bajo"])
 AUDIT["v03"] = _aud(["Sí", "Sí: prevención y pasos de recuperación", "Sí: investigación con dos voces", "Sí: interfaces genéricas inventadas", _VOICE, "Sí", "Sí: el vídeo explica que no existe versión PC/Android", "Sí", "Datos de malware atribuidos a ESET/Cynet (REPORTADO)", "No", "No", "Bajo (contenido educativo de seguridad)"])

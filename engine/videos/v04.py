@@ -247,7 +247,7 @@ beat("Rockstar todavía no ha publicado un mapa completo de Leonida. Pero sí de
      "Hoy armamos el rompecabezas, sin inventar ni una pieza.",
      sc_hook, section="GANCHO", energy=1, sfx=[("w:seis nombres", "pin", 0.5), ("w:dos ubicaciones", "pin", 0.5), ("w:un estado real", "pin", 0.5), ("w:rompecabezas", "whoosh", 0.4)])
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=1, trans=("flash", 0.3))
-beat("Esto es Sal y Asfalto. Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad. "
+beat("Estás en Sal y Asfalto. Regla del viaje: en verde, lo que Rockstar confirmó; en amarillo, lo que deducimos nosotros o la comunidad. "
      "Y una advertencia importante: el mapa que vas a ver es la Florida real, no el mapa del juego. Lo usamos porque Leonida es, claramente, su parodia.",
      sc_rules, section="INTRODUCCIÓN", energy=1, trans=("zoom", 0.5), sfx=[("w:verde", "pop", 0.4), ("w:amarillo", "pop", 0.4), ("w:advertencia", "ding", 0.3)])
 beat("Primero, el tamaño. Aaron Garbut, de Rockstar, le dijo a la revista Game Informer que el mapa es el doble de grande que el de GTA 5. "

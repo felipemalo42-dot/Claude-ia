@@ -1,80 +1,577 @@
 {
- "total": 37.523,
+ "total": 40.673,
  "beats": [
   {
    "i": 0,
    "start": 0.2,
-   "end": 36.323,
+   "end": 39.473,
    "sents": [
     {
      "text": "Más de ciento setenta especies.",
      "start": 0.2,
-     "end": 2.069,
-     "voice": "analista"
+     "end": 1.966,
+     "voice": "host",
+     "words": [
+      [
+       "Más",
+       0.2,
+       0.44
+      ],
+      [
+       "de",
+       0.44,
+       0.62
+      ],
+      [
+       "ciento",
+       0.76,
+       1.249
+      ],
+      [
+       "setenta",
+       0.76,
+       1.249
+      ],
+      [
+       "especies.",
+       1.4,
+       1.966
+      ]
+     ]
     },
     {
      "text": "Eso es lo que, según Game Informer, vive en Leonida.",
-     "start": 2.333,
-     "end": 5.13,
-     "voice": "analista"
+     "start": 2.28,
+     "end": 5.459,
+     "voice": "host",
+     "words": [
+      [
+       "Eso",
+       2.28,
+       2.62
+      ],
+      [
+       "es",
+       2.6,
+       2.78
+      ],
+      [
+       "lo",
+       2.76,
+       2.94
+      ],
+      [
+       "que,",
+       2.92,
+       3.197
+      ],
+      [
+       "según",
+       3.24,
+       3.58
+      ],
+      [
+       "Game",
+       3.58,
+       3.893
+      ],
+      [
+       "Informer,",
+       3.893,
+       4.52
+      ],
+      [
+       "vive",
+       4.52,
+       4.86
+      ],
+      [
+       "en",
+       4.84,
+       4.94
+      ],
+      [
+       "Leonida.",
+       4.92,
+       5.459
+      ]
+     ]
     },
     {
      "text": "Y Rockstar ya nombró a cuatro.",
-     "start": 5.394,
-     "end": 7.197,
-     "voice": "analista"
+     "start": 5.72,
+     "end": 8.38,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       5.72,
+       5.88
+      ],
+      [
+       "Rockstar",
+       5.88,
+       6.586
+      ],
+      [
+       "ya",
+       6.6,
+       6.86
+      ],
+      [
+       "nombró",
+       6.84,
+       7.26
+      ],
+      [
+       "a",
+       7.24,
+       7.5
+      ],
+      [
+       "cuatro.",
+       7.48,
+       8.38
+      ]
+     ]
     },
     {
      "text": "El aligátor americano, al que casi todos llamamos caimán: el rey de los pantanos, visto desde el primer tráiler.",
-     "start": 7.461,
-     "end": 13.584,
-     "voice": "analista"
+     "start": 9.207,
+     "end": 15.408,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       9.207,
+       9.287
+      ],
+      [
+       "aligátor",
+       9.287,
+       10.007
+      ],
+      [
+       "americano,",
+       10.007,
+       10.562
+      ],
+      [
+       "al",
+       10.647,
+       10.805
+      ],
+      [
+       "que",
+       10.807,
+       10.956
+      ],
+      [
+       "casi",
+       10.967,
+       11.227
+      ],
+      [
+       "todos",
+       11.207,
+       11.467
+      ],
+      [
+       "llamamos",
+       11.447,
+       11.947
+      ],
+      [
+       "caimán:",
+       11.947,
+       12.727
+      ],
+      [
+       "el",
+       12.727,
+       12.907
+      ],
+      [
+       "rey",
+       12.887,
+       13.147
+      ],
+      [
+       "de",
+       13.127,
+       13.227
+      ],
+      [
+       "los",
+       13.207,
+       13.324
+      ],
+      [
+       "pantanos,",
+       13.367,
+       14.107
+      ],
+      [
+       "visto",
+       14.087,
+       14.427
+      ],
+      [
+       "desde",
+       14.407,
+       14.587
+      ],
+      [
+       "el",
+       14.567,
+       14.597
+      ],
+      [
+       "primer",
+       14.647,
+       14.925
+      ],
+      [
+       "tráiler.",
+       14.967,
+       15.408
+      ]
+     ]
     },
     {
      "text": "El flamenco, el rosado más famoso de Florida.",
-     "start": 13.848,
-     "end": 16.42,
-     "voice": "analista"
+     "start": 15.687,
+     "end": 18.142,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       15.687,
+       15.867
+      ],
+      [
+       "flamenco,",
+       15.847,
+       16.535
+      ],
+      [
+       "el",
+       16.567,
+       16.667
+      ],
+      [
+       "rosado",
+       16.647,
+       17.147
+      ],
+      [
+       "más",
+       17.207,
+       17.387
+      ],
+      [
+       "famoso",
+       17.367,
+       17.707
+      ],
+      [
+       "de",
+       17.687,
+       17.761
+      ],
+      [
+       "Florida.",
+       17.767,
+       18.142
+      ]
+     ]
     },
     {
      "text": "El pelícano, patrullando muelles y playas.",
-     "start": 16.684,
-     "end": 19.004,
-     "voice": "analista"
+     "start": 18.327,
+     "end": 20.89,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       18.327,
+       18.487
+      ],
+      [
+       "pelícano,",
+       18.487,
+       19.1
+      ],
+      [
+       "patrullando",
+       19.127,
+       19.707
+      ],
+      [
+       "muelles",
+       19.687,
+       20.027
+      ],
+      [
+       "y",
+       20.087,
+       20.267
+      ],
+      [
+       "playas.",
+       20.247,
+       20.89
+      ]
+     ]
     },
     {
      "text": "Y el manatí, la vaca marina: lenta, enorme y pacífica.",
-     "start": 19.268,
-     "end": 22.636,
-     "voice": "analista"
+     "start": 21.25,
+     "end": 24.875,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       21.25,
+       21.28
+      ],
+      [
+       "el",
+       21.25,
+       21.43
+      ],
+      [
+       "manatí,",
+       21.41,
+       22.006
+      ],
+      [
+       "la",
+       22.13,
+       22.31
+      ],
+      [
+       "vaca",
+       22.29,
+       22.71
+      ],
+      [
+       "marina:",
+       22.69,
+       23.036
+      ],
+      [
+       "lenta,",
+       23.17,
+       23.75
+      ],
+      [
+       "enorme",
+       23.73,
+       24.112
+      ],
+      [
+       "y",
+       24.21,
+       24.39
+      ],
+      [
+       "pacífica.",
+       24.37,
+       24.875
+      ]
+     ]
     },
     {
      "text": "Además, algunos animales se podrán rastrear por rareza: raros, descubribles y legendarios.",
-     "start": 22.9,
-     "end": 28.187,
-     "voice": "analista"
+     "start": 25.33,
+     "end": 30.703,
+     "voice": "host",
+     "words": [
+      [
+       "Además,",
+       25.33,
+       25.99
+      ],
+      [
+       "algunos",
+       25.97,
+       26.39
+      ],
+      [
+       "animales",
+       26.37,
+       26.87
+      ],
+      [
+       "se",
+       26.85,
+       27.023
+      ],
+      [
+       "podrán",
+       27.01,
+       27.35
+      ],
+      [
+       "rastrear",
+       27.33,
+       27.843
+      ],
+      [
+       "por",
+       27.89,
+       28.07
+      ],
+      [
+       "rareza:",
+       28.05,
+       28.527
+      ],
+      [
+       "raros,",
+       28.69,
+       29.27
+      ],
+      [
+       "descubribles",
+       29.25,
+       29.984
+      ],
+      [
+       "y",
+       29.97,
+       30.15
+      ],
+      [
+       "legendarios.",
+       30.13,
+       30.703
+      ]
+     ]
     },
     {
      "text": "¿Cuáles serán legendarios?",
-     "start": 28.451,
-     "end": 29.87,
-     "voice": "analista"
+     "start": 31.09,
+     "end": 32.302,
+     "voice": "host",
+     "words": [
+      [
+       "¿Cuáles",
+       31.09,
+       31.51
+      ],
+      [
+       "serán",
+       31.49,
+       31.83
+      ],
+      [
+       "legendarios?",
+       31.81,
+       32.302
+      ]
+     ]
     },
     {
      "text": "Todavía nadie lo sabe.",
-     "start": 30.174,
-     "end": 31.635,
-     "voice": "analista"
+     "start": 32.67,
+     "end": 34.052,
+     "voice": "host",
+     "words": [
+      [
+       "Todavía",
+       32.67,
+       33.07
+      ],
+      [
+       "nadie",
+       33.23,
+       33.57
+      ],
+      [
+       "lo",
+       33.55,
+       33.73
+      ],
+      [
+       "sabe.",
+       33.71,
+       34.052
+      ]
+     ]
     },
     {
      "text": "Guarda este video: después del lanzamiento armamos la guía de campo completa.",
-     "start": 31.899,
-     "end": 36.059,
-     "voice": "analista"
+     "start": 34.27,
+     "end": 39.153,
+     "voice": "host",
+     "words": [
+      [
+       "Guarda",
+       34.27,
+       34.752
+      ],
+      [
+       "este",
+       34.75,
+       34.93
+      ],
+      [
+       "video:",
+       34.91,
+       35.49
+      ],
+      [
+       "después",
+       35.47,
+       35.81
+      ],
+      [
+       "del",
+       35.79,
+       35.97
+      ],
+      [
+       "lanzamiento",
+       35.95,
+       36.53
+      ],
+      [
+       "armamos",
+       36.67,
+       37.25
+      ],
+      [
+       "la",
+       37.23,
+       37.41
+      ],
+      [
+       "guía",
+       37.39,
+       37.798
+      ],
+      [
+       "de",
+       37.79,
+       37.89
+      ],
+      [
+       "campo",
+       37.87,
+       38.364
+      ],
+      [
+       "completa.",
+       38.35,
+       39.153
+      ]
+     ]
     }
    ],
    "id": "b0"
   }
  ],
- "lufs_in": -16.93
+ "lufs_in": -13.32
 }

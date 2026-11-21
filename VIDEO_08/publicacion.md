@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (evergreen)  
-**Formato:** Short vertical (9:16) · **Duración:** 0:37 · **Música:** estilo «nature» original · **Voz:** analista
+**Formato:** Short vertical (9:16) · **Duración:** 0:40 · **Música:** estilo «nature» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** fauna gta 6, caimán gta 6, gta 6 170 especies, animales legendarios gta 6
 - **Intención de búsqueda:** Curiosidad evergreen.
 - **Público:** Público curioso y jugadores exploradores.
-- **Duración:** 0:37 (Short 9:16).
+- **Duración:** 0:40 (Short 9:16).
 - **Por qué hacer clic:** Estética de cuaderno de naturalista poco común en gaming; dato llamativo (170+ especies) y pregunta abierta.
 
 ## B-C. Guion, voz y subtítulos
@@ -42,7 +42,7 @@ FUENTES
 • Michael Kane (Rockstar): caimanes, flamencos, pelícanos y manatíes, vía Gfinity
 • Rarezas: Rara, Descubrible, Legendaria (prensa)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida #shorts
 ```
@@ -68,7 +68,8 @@ gta 6 animales, fauna gta 6, gta 6 caimán, gta 6 flamenco, gta 6 manatí, gta 6
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -83,7 +84,7 @@ gta 6 animales, fauna gta 6, gta 6 caimán, gta 6 flamenco, gta 6 manatí, gta 6
 | ¿Aporta valor? | Sí |
 | ¿Guion distinto a los demás? | Sí: guía de campo ilustrada |
 | ¿Imágenes adecuadas y autorizadas? | Sí: ilustraciones originales |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). (voz femenina) |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). (voz femenina) |
 | ¿Montaje con buen ritmo? | Sí |
 | ¿Título honesto? | Sí |
 | ¿Miniatura corresponde? | Sí |

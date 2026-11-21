@@ -1,421 +1,3209 @@
 {
- "total": 204.787,
+ "total": 212.813,
  "beats": [
   {
    "i": 0,
    "start": 0.25,
-   "end": 13.95,
+   "end": 14.644,
    "sents": [
     {
      "text": "Escribe “GTA 6 descargar PC” en un buscador y vas a encontrar botones gigantes, contadores de descargas y comentarios felices.",
      "start": 0.25,
-     "end": 8.032,
-     "voice": "host"
+     "end": 7.089,
+     "voice": "host",
+     "words": [
+      [
+       "Escribe",
+       0.25,
+       0.65
+      ],
+      [
+       "“GTA",
+       0.65,
+       1.21
+      ],
+      [
+       "6",
+       1.21,
+       1.39
+      ],
+      [
+       "descargar",
+       1.39,
+       1.947
+      ],
+      [
+       "PC”",
+       1.947,
+       2.17
+      ],
+      [
+       "en",
+       2.17,
+       2.27
+      ],
+      [
+       "un",
+       2.25,
+       2.43
+      ],
+      [
+       "buscador",
+       2.41,
+       2.756
+      ],
+      [
+       "y",
+       2.89,
+       3.07
+      ],
+      [
+       "vas",
+       3.05,
+       3.31
+      ],
+      [
+       "a",
+       3.29,
+       3.39
+      ],
+      [
+       "encontrar",
+       3.37,
+       3.79
+      ],
+      [
+       "botones",
+       3.77,
+       4.19
+      ],
+      [
+       "gigantes,",
+       4.17,
+       4.756
+      ],
+      [
+       "contadores",
+       4.81,
+       5.31
+      ],
+      [
+       "de",
+       5.37,
+       5.47
+      ],
+      [
+       "descargas",
+       5.45,
+       6.022
+      ],
+      [
+       "y",
+       6.01,
+       6.11
+      ],
+      [
+       "comentarios",
+       6.09,
+       6.633
+      ],
+      [
+       "felices.",
+       6.65,
+       7.089
+      ]
+     ]
     },
     {
      "text": "Todo falso.",
-     "start": 8.362,
-     "end": 9.254,
-     "voice": "host"
+     "start": 7.69,
+     "end": 9.07,
+     "voice": "host",
+     "words": [
+      [
+       "Todo",
+       7.69,
+       8.105
+      ],
+      [
+       "falso.",
+       8.09,
+       9.07
+      ]
+     ]
     },
     {
      "text": "Y esta semana, empresas de ciberseguridad encontraron lo que hay detrás.",
-     "start": 9.584,
-     "end": 13.62,
-     "voice": "host"
+     "start": 9.05,
+     "end": 14.236,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       9.05,
+       9.39
+      ],
+      [
+       "esta",
+       9.37,
+       9.63
+      ],
+      [
+       "semana,",
+       9.61,
+       10.12
+      ],
+      [
+       "empresas",
+       10.17,
+       10.67
+      ],
+      [
+       "de",
+       10.65,
+       10.83
+      ],
+      [
+       "ciberseguridad",
+       10.81,
+       11.672
+      ],
+      [
+       "encontraron",
+       11.69,
+       12.35
+      ],
+      [
+       "lo",
+       12.33,
+       12.447
+      ],
+      [
+       "que",
+       12.49,
+       12.67
+      ],
+      [
+       "hay",
+       12.65,
+       12.789
+      ],
+      [
+       "detrás.",
+       12.81,
+       14.236
+      ]
+     ]
     }
    ],
    "id": "b0"
   },
   {
    "i": 1,
-   "start": 13.95,
-   "end": 16.35,
+   "start": 14.644,
+   "end": 17.044,
    "sents": [],
    "id": "b1"
   },
   {
    "i": 2,
-   "start": 16.35,
-   "end": 24.712,
+   "start": 17.044,
+   "end": 26.114,
    "sents": [
     {
-     "text": "Esto es Sal y Asfalto.",
-     "start": 16.35,
-     "end": 17.846,
-     "voice": "host"
+     "text": "Estás en Sal y Asfalto.",
+     "start": 17.044,
+     "end": 18.645,
+     "voice": "host",
+     "words": [
+      [
+       "Estás",
+       17.044,
+       17.444
+      ],
+      [
+       "en",
+       17.444,
+       17.624
+      ],
+      [
+       "Sal",
+       17.604,
+       17.885
+      ],
+      [
+       "y",
+       18.004,
+       18.184
+      ],
+      [
+       "Asfalto.",
+       18.164,
+       18.645
+      ]
+     ]
     },
     {
      "text": "Hoy no hablamos de Leonida: hablamos de la trampa que la rodea.",
-     "start": 18.177,
-     "end": 21.6,
-     "voice": "host"
+     "start": 19.044,
+     "end": 22.422,
+     "voice": "host",
+     "words": [
+      [
+       "Hoy",
+       19.044,
+       19.384
+      ],
+      [
+       "no",
+       19.364,
+       19.544
+      ],
+      [
+       "hablamos",
+       19.524,
+       19.864
+      ],
+      [
+       "de",
+       19.844,
+       20.024
+      ],
+      [
+       "Leonida:",
+       20.004,
+       20.824
+      ],
+      [
+       "hablamos",
+       20.804,
+       21.144
+      ],
+      [
+       "de",
+       21.124,
+       21.304
+      ],
+      [
+       "la",
+       21.284,
+       21.384
+      ],
+      [
+       "trampa",
+       21.364,
+       21.704
+      ],
+      [
+       "que",
+       21.684,
+       21.864
+      ],
+      [
+       "la",
+       21.844,
+       22.104
+      ],
+      [
+       "rodea.",
+       22.084,
+       22.422
+      ]
+     ]
     },
     {
-     "text": "Y para eso me acompaña nuestra analista.",
-     "start": 21.93,
-     "end": 24.382,
-     "voice": "host"
+     "text": "Y hoy no vengo sola: traigo copiloto.",
+     "start": 22.884,
+     "end": 25.714,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       22.884,
+       23.064
+      ],
+      [
+       "hoy",
+       23.044,
+       23.304
+      ],
+      [
+       "no",
+       23.284,
+       23.464
+      ],
+      [
+       "vengo",
+       23.444,
+       23.864
+      ],
+      [
+       "sola:",
+       23.844,
+       24.218
+      ],
+      [
+       "traigo",
+       24.244,
+       24.714
+      ],
+      [
+       "copiloto.",
+       24.724,
+       25.714
+      ]
+     ]
     }
    ],
    "id": "b2"
   },
   {
    "i": 3,
-   "start": 24.712,
-   "end": 28.925,
+   "start": 26.114,
+   "end": 29.072,
    "sents": [
     {
      "text": "Hola.",
-     "start": 24.712,
-     "end": 25.153,
-     "voice": "analista"
+     "start": 26.114,
+     "end": 26.754,
+     "voice": "copiloto",
+     "words": [
+      [
+       "Hola.",
+       26.114,
+       26.754
+      ]
+     ]
     },
     {
-     "text": "Vamos a abrir el archivo paso a paso, sin tecnicismos.",
-     "start": 25.483,
-     "end": 28.595,
-     "voice": "analista"
+     "text": "Yo hago las preguntas que haría cualquiera.",
+     "start": 26.754,
+     "end": 28.669,
+     "voice": "copiloto",
+     "words": [
+      [
+       "Yo",
+       26.754,
+       27.014
+      ],
+      [
+       "hago",
+       26.994,
+       27.334
+      ],
+      [
+       "las",
+       27.314,
+       27.436
+      ],
+      [
+       "preguntas",
+       27.474,
+       27.773
+      ],
+      [
+       "que",
+       27.794,
+       27.955
+      ],
+      [
+       "haría",
+       27.954,
+       28.374
+      ],
+      [
+       "cualquiera.",
+       28.354,
+       28.669
+      ]
+     ]
     }
    ],
    "id": "b3"
   },
   {
    "i": 4,
-   "start": 28.925,
-   "end": 46.879,
+   "start": 29.072,
+   "end": 50.251,
    "sents": [
     {
      "text": "Primero, el dato que desarma toda la estafa.",
-     "start": 28.925,
-     "end": 31.534,
-     "voice": "host"
+     "start": 29.072,
+     "end": 31.646,
+     "voice": "host",
+     "words": [
+      [
+       "Primero,",
+       29.072,
+       29.632
+      ],
+      [
+       "el",
+       29.632,
+       29.812
+      ],
+      [
+       "dato",
+       29.792,
+       30.194
+      ],
+      [
+       "que",
+       30.192,
+       30.372
+      ],
+      [
+       "desarma",
+       30.352,
+       30.932
+      ],
+      [
+       "toda",
+       30.912,
+       31.092
+      ],
+      [
+       "la",
+       31.072,
+       31.249
+      ],
+      [
+       "estafa.",
+       31.232,
+       31.646
+      ]
+     ]
     },
     {
      "text": "GTA 6 solo existe en PlayStation 5 y en Xbox Series X y Series S.",
-     "start": 31.864,
-     "end": 37.041,
-     "voice": "host"
+     "start": 31.872,
+     "end": 38.452,
+     "voice": "host",
+     "words": [
+      [
+       "GTA",
+       31.872,
+       32.452
+      ],
+      [
+       "6",
+       32.592,
+       32.772
+      ],
+      [
+       "solo",
+       32.752,
+       32.932
+      ],
+      [
+       "existe",
+       32.992,
+       33.332
+      ],
+      [
+       "en",
+       33.312,
+       33.472
+      ],
+      [
+       "PlayStation",
+       33.472,
+       34.281
+      ],
+      [
+       "5",
+       34.352,
+       34.612
+      ],
+      [
+       "y",
+       34.592,
+       34.772
+      ],
+      [
+       "en",
+       34.752,
+       35.008
+      ],
+      [
+       "Xbox",
+       34.992,
+       35.554
+      ],
+      [
+       "Series",
+       35.792,
+       36.27
+      ],
+      [
+       "X",
+       36.432,
+       36.772
+      ],
+      [
+       "y",
+       36.752,
+       37.012
+      ],
+      [
+       "Series",
+       36.992,
+       37.492
+      ],
+      [
+       "S.",
+       37.472,
+       38.452
+      ]
+     ]
     },
     {
      "text": "No hay versión de PC anunciada.",
-     "start": 37.371,
-     "end": 39.452,
-     "voice": "host"
+     "start": 38.992,
+     "end": 42.22,
+     "voice": "host",
+     "words": [
+      [
+       "No",
+       38.992,
+       39.332
+      ],
+      [
+       "hay",
+       39.312,
+       39.572
+      ],
+      [
+       "versión",
+       39.552,
+       39.972
+      ],
+      [
+       "de",
+       39.952,
+       40.132
+      ],
+      [
+       "PC",
+       40.112,
+       40.532
+      ],
+      [
+       "anunciada.",
+       40.512,
+       42.22
+      ]
+     ]
     },
     {
      "text": "Y no hay versión para Android ni para iPhone.",
-     "start": 39.782,
-     "end": 42.256,
-     "voice": "host"
+     "start": 42.622,
+     "end": 45.012,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       42.622,
+       42.652
+      ],
+      [
+       "no",
+       42.622,
+       42.882
+      ],
+      [
+       "hay",
+       42.862,
+       43.042
+      ],
+      [
+       "versión",
+       43.022,
+       43.442
+      ],
+      [
+       "para",
+       43.422,
+       43.602
+      ],
+      [
+       "Android",
+       43.582,
+       44.082
+      ],
+      [
+       "ni",
+       44.222,
+       44.402
+      ],
+      [
+       "para",
+       44.382,
+       44.642
+      ],
+      [
+       "iPhone.",
+       44.622,
+       45.012
+      ]
+     ]
     },
     {
      "text": "Cualquier archivo que diga lo contrario está mintiendo desde el nombre.",
-     "start": 42.586,
-     "end": 46.549,
-     "voice": "host"
+     "start": 45.342,
+     "end": 49.844,
+     "voice": "host",
+     "words": [
+      [
+       "Cualquier",
+       45.342,
+       45.922
+      ],
+      [
+       "archivo",
+       45.902,
+       46.402
+      ],
+      [
+       "que",
+       46.382,
+       46.562
+      ],
+      [
+       "diga",
+       46.542,
+       46.882
+      ],
+      [
+       "lo",
+       46.862,
+       47.042
+      ],
+      [
+       "contrario",
+       47.022,
+       47.442
+      ],
+      [
+       "está",
+       47.582,
+       47.842
+      ],
+      [
+       "mintiendo",
+       47.822,
+       48.322
+      ],
+      [
+       "desde",
+       48.302,
+       48.562
+      ],
+      [
+       "el",
+       48.542,
+       48.802
+      ],
+      [
+       "nombre.",
+       48.782,
+       49.844
+      ]
+     ]
     }
    ],
    "id": "b4"
   },
   {
    "i": 5,
-   "start": 46.879,
-   "end": 64.583,
+   "start": 50.251,
+   "end": 52.004,
    "sents": [
     {
      "text": "¿Y por qué cae tanta gente?",
-     "start": 46.879,
-     "end": 48.533,
-     "voice": "analista"
-    },
-    {
-     "text": "Porque el anzuelo se aprovecha de tres cosas reales.",
-     "start": 48.913,
-     "end": 51.878,
-     "voice": "analista"
-    },
-    {
-     "text": "Hay millones de jugadores sin PS5 ni Xbox Series.",
-     "start": 52.208,
-     "end": 55.707,
-     "voice": "analista"
-    },
-    {
-     "text": "La espera duró años.",
-     "start": 56.037,
-     "end": 57.377,
-     "voice": "analista"
-    },
-    {
-     "text": "Y en internet abundan los trucos para todo.",
-     "start": 57.707,
-     "end": 60.204,
-     "voice": "analista"
-    },
-    {
-     "text": "La estafa no vende un juego: vende la ilusión de no quedarte afuera.",
-     "start": 60.534,
-     "end": 64.253,
-     "voice": "analista"
+     "start": 50.251,
+     "end": 51.548,
+     "voice": "copiloto",
+     "words": [
+      [
+       "¿Y",
+       50.251,
+       50.281
+      ],
+      [
+       "por",
+       50.251,
+       50.408
+      ],
+      [
+       "qué",
+       50.411,
+       50.551
+      ],
+      [
+       "cae",
+       50.571,
+       50.911
+      ],
+      [
+       "tanta",
+       50.971,
+       51.376
+      ],
+      [
+       "gente?",
+       51.371,
+       51.548
+      ]
+     ]
     }
    ],
    "id": "b5"
   },
   {
    "i": 6,
-   "start": 64.583,
-   "end": 88.296,
+   "start": 52.004,
+   "end": 69.068,
    "sents": [
     {
-     "text": "El anzuelo tiene tres piezas.",
-     "start": 64.583,
-     "end": 66.367,
-     "voice": "analista"
+     "text": "Porque el anzuelo se aprovecha de tres cosas reales.",
+     "start": 52.004,
+     "end": 54.762,
+     "voice": "host",
+     "words": [
+      [
+       "Porque",
+       52.004,
+       52.034
+      ],
+      [
+       "el",
+       52.164,
+       52.344
+      ],
+      [
+       "anzuelo",
+       52.324,
+       52.984
+      ],
+      [
+       "se",
+       52.964,
+       53.031
+      ],
+      [
+       "aprovecha",
+       53.044,
+       53.589
+      ],
+      [
+       "de",
+       53.604,
+       53.704
+      ],
+      [
+       "tres",
+       53.684,
+       53.942
+      ],
+      [
+       "cosas",
+       53.924,
+       54.184
+      ],
+      [
+       "reales.",
+       54.324,
+       54.762
+      ]
+     ]
     },
     {
-     "text": "Una página que imita a una tienda.",
-     "start": 66.697,
-     "end": 68.757,
-     "voice": "analista"
+     "text": "Hay millones de jugadores sin PS5 ni Xbox Series.",
+     "start": 55.204,
+     "end": 58.723,
+     "voice": "host",
+     "words": [
+      [
+       "Hay",
+       55.204,
+       55.464
+      ],
+      [
+       "millones",
+       55.444,
+       55.944
+      ],
+      [
+       "de",
+       55.924,
+       56.024
+      ],
+      [
+       "jugadores",
+       56.004,
+       56.504
+      ],
+      [
+       "sin",
+       56.484,
+       56.744
+      ],
+      [
+       "PS5",
+       56.724,
+       57.224
+      ],
+      [
+       "ni",
+       57.604,
+       57.784
+      ],
+      [
+       "Xbox",
+       57.764,
+       58.344
+      ],
+      [
+       "Series.",
+       58.484,
+       58.723
+      ]
+     ]
     },
     {
-     "text": "Un botón de descarga.",
-     "start": 69.087,
-     "end": 70.486,
-     "voice": "analista"
+     "text": "La espera duró años.",
+     "start": 59.124,
+     "end": 60.405,
+     "voice": "host",
+     "words": [
+      [
+       "La",
+       59.124,
+       59.384
+      ],
+      [
+       "espera",
+       59.364,
+       59.784
+      ],
+      [
+       "duró",
+       59.764,
+       60.184
+      ],
+      [
+       "años.",
+       60.164,
+       60.405
+      ]
+     ]
     },
     {
-     "text": "Y una excusa para que bajes la guardia.",
-     "start": 70.816,
-     "end": 72.989,
-     "voice": "analista"
+     "text": "Y en internet abundan los trucos para todo.",
+     "start": 60.805,
+     "end": 63.246,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       60.805,
+       60.835
+      ],
+      [
+       "en",
+       60.805,
+       61.065
+      ],
+      [
+       "internet",
+       61.045,
+       61.385
+      ],
+      [
+       "abundan",
+       61.605,
+       62.265
+      ],
+      [
+       "los",
+       62.245,
+       62.425
+      ],
+      [
+       "trucos",
+       62.405,
+       62.825
+      ],
+      [
+       "para",
+       62.805,
+       63.065
+      ],
+      [
+       "todo.",
+       63.045,
+       63.246
+      ]
+     ]
     },
     {
-     "text": "La empresa ESET detectó un archivo llamado gta6_installer.exe, que en realidad transporta Vidar: un programa diseñado para robar información.",
-     "start": 73.319,
-     "end": 83.158,
-     "voice": "analista"
-    },
-    {
-     "text": "Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.",
-     "start": 83.488,
-     "end": 87.966,
-     "voice": "analista"
+     "text": "La estafa no vende un juego: vende la ilusión de no quedarte afuera.",
+     "start": 63.605,
+     "end": 67.98,
+     "voice": "host",
+     "words": [
+      [
+       "La",
+       63.605,
+       63.865
+      ],
+      [
+       "estafa",
+       63.845,
+       64.425
+      ],
+      [
+       "no",
+       64.405,
+       64.585
+      ],
+      [
+       "vende",
+       64.565,
+       64.976
+      ],
+      [
+       "un",
+       64.965,
+       65.065
+      ],
+      [
+       "juego:",
+       65.045,
+       65.332
+      ],
+      [
+       "vende",
+       65.605,
+       66.025
+      ],
+      [
+       "la",
+       66.005,
+       66.185
+      ],
+      [
+       "ilusión",
+       66.165,
+       66.585
+      ],
+      [
+       "de",
+       66.565,
+       66.745
+      ],
+      [
+       "no",
+       66.725,
+       66.864
+      ],
+      [
+       "quedarte",
+       66.885,
+       67.305
+      ],
+      [
+       "afuera.",
+       67.445,
+       67.98
+      ]
+     ]
     }
    ],
    "id": "b6"
   },
   {
    "i": 7,
-   "start": 88.296,
-   "end": 90.379,
+   "start": 69.068,
+   "end": 94.226,
    "sents": [
     {
-     "text": "¿Y qué te pide el instalador?",
-     "start": 88.296,
-     "end": 89.999,
-     "voice": "host"
+     "text": "El anzuelo tiene tres piezas.",
+     "start": 69.068,
+     "end": 70.773,
+     "voice": "host",
+     "words": [
+      [
+       "El",
+       69.068,
+       69.098
+      ],
+      [
+       "anzuelo",
+       69.068,
+       69.697
+      ],
+      [
+       "tiene",
+       69.868,
+       70.128
+      ],
+      [
+       "tres",
+       70.108,
+       70.368
+      ],
+      [
+       "piezas.",
+       70.348,
+       70.773
+      ]
+     ]
+    },
+    {
+     "text": "Una página que imita a una tienda.",
+     "start": 70.908,
+     "end": 72.681,
+     "voice": "host",
+     "words": [
+      [
+       "Una",
+       70.908,
+       71.168
+      ],
+      [
+       "página",
+       71.148,
+       71.488
+      ],
+      [
+       "que",
+       71.468,
+       71.728
+      ],
+      [
+       "imita",
+       71.708,
+       72.208
+      ],
+      [
+       "a",
+       72.208,
+       72.238
+      ],
+      [
+       "una",
+       72.208,
+       72.448
+      ],
+      [
+       "tienda.",
+       72.428,
+       72.681
+      ]
+     ]
+    },
+    {
+     "text": "Un botón de descarga.",
+     "start": 73.148,
+     "end": 75.417,
+     "voice": "host",
+     "words": [
+      [
+       "Un",
+       73.148,
+       73.408
+      ],
+      [
+       "botón",
+       73.388,
+       73.728
+      ],
+      [
+       "de",
+       73.708,
+       73.888
+      ],
+      [
+       "descarga.",
+       73.868,
+       75.417
+      ]
+     ]
+    },
+    {
+     "text": "Y una excusa para que bajes la guardia.",
+     "start": 75.822,
+     "end": 77.707,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       75.822,
+       75.902
+      ],
+      [
+       "una",
+       75.902,
+       76.155
+      ],
+      [
+       "excusa",
+       76.142,
+       76.482
+      ],
+      [
+       "para",
+       76.462,
+       76.642
+      ],
+      [
+       "que",
+       76.622,
+       76.764
+      ],
+      [
+       "bajes",
+       76.782,
+       77.282
+      ],
+      [
+       "la",
+       77.262,
+       77.442
+      ],
+      [
+       "guardia.",
+       77.422,
+       77.707
+      ]
+     ]
+    },
+    {
+     "text": "La empresa de seguridad ESET detectó un instalador falso de GTA 6 que en realidad transporta Vidar: un programa diseñado para robar información.",
+     "start": 78.302,
+     "end": 87.503,
+     "voice": "host",
+     "words": [
+      [
+       "La",
+       78.302,
+       78.562
+      ],
+      [
+       "empresa",
+       78.542,
+       78.962
+      ],
+      [
+       "de",
+       78.942,
+       79.122
+      ],
+      [
+       "seguridad",
+       79.102,
+       79.522
+      ],
+      [
+       "ESET",
+       79.522,
+       80.062
+      ],
+      [
+       "detectó",
+       80.062,
+       80.562
+      ],
+      [
+       "un",
+       80.622,
+       80.802
+      ],
+      [
+       "instalador",
+       80.782,
+       81.228
+      ],
+      [
+       "falso",
+       81.262,
+       81.602
+      ],
+      [
+       "de",
+       81.582,
+       81.682
+      ],
+      [
+       "GTA",
+       81.662,
+       82.158
+      ],
+      [
+       "6",
+       82.302,
+       82.461
+      ],
+      [
+       "que",
+       82.462,
+       82.722
+      ],
+      [
+       "en",
+       82.702,
+       82.802
+      ],
+      [
+       "realidad",
+       82.782,
+       83.06
+      ],
+      [
+       "transporta",
+       83.102,
+       83.602
+      ],
+      [
+       "Vidar:",
+       83.742,
+       83.953
+      ],
+      [
+       "un",
+       84.382,
+       84.562
+      ],
+      [
+       "programa",
+       84.542,
+       84.882
+      ],
+      [
+       "diseñado",
+       84.942,
+       85.427
+      ],
+      [
+       "para",
+       85.422,
+       85.682
+      ],
+      [
+       "robar",
+       85.662,
+       86.162
+      ],
+      [
+       "información.",
+       86.142,
+       87.503
+      ]
+     ]
+    },
+    {
+     "text": "Y la firma Cynet encontró otra variante, con un ladrón de datos llamado WARDEN.",
+     "start": 87.914,
+     "end": 93.826,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       87.914,
+       87.944
+      ],
+      [
+       "la",
+       87.914,
+       88.094
+      ],
+      [
+       "firma",
+       88.074,
+       88.494
+      ],
+      [
+       "Cynet",
+       88.494,
+       89.354
+      ],
+      [
+       "encontró",
+       89.354,
+       89.854
+      ],
+      [
+       "otra",
+       89.834,
+       90.174
+      ],
+      [
+       "variante,",
+       90.154,
+       90.63
+      ],
+      [
+       "con",
+       90.874,
+       91.054
+      ],
+      [
+       "un",
+       91.034,
+       91.214
+      ],
+      [
+       "ladrón",
+       91.194,
+       91.694
+      ],
+      [
+       "de",
+       91.674,
+       91.854
+      ],
+      [
+       "datos",
+       91.834,
+       92.129
+      ],
+      [
+       "llamado",
+       92.154,
+       92.734
+      ],
+      [
+       "WARDEN.",
+       92.714,
+       93.826
+      ]
+     ]
     }
    ],
    "id": "b7"
   },
   {
    "i": 8,
-   "start": 90.379,
-   "end": 103.56,
+   "start": 94.226,
+   "end": 95.985,
    "sents": [
     {
-     "text": "Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.",
-     "start": 90.379,
-     "end": 99.408,
-     "voice": "analista"
-    },
-    {
-     "text": "En otras palabras: te pide que apagues la alarma antes de entrar.",
-     "start": 99.738,
-     "end": 103.23,
-     "voice": "analista"
+     "text": "¿Y qué te pide el instalador?",
+     "start": 94.226,
+     "end": 95.565,
+     "voice": "copiloto",
+     "words": [
+      [
+       "¿Y",
+       94.226,
+       94.256
+      ],
+      [
+       "qué",
+       94.226,
+       94.423
+      ],
+      [
+       "te",
+       94.466,
+       94.646
+      ],
+      [
+       "pide",
+       94.626,
+       95.046
+      ],
+      [
+       "el",
+       95.026,
+       95.167
+      ],
+      [
+       "instalador?",
+       95.186,
+       95.565
+      ]
+     ]
     }
    ],
    "id": "b8"
   },
   {
    "i": 9,
-   "start": 103.56,
-   "end": 120.279,
+   "start": 95.985,
+   "end": 109.924,
    "sents": [
     {
-     "text": "Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.",
-     "start": 103.56,
-     "end": 113.83,
-     "voice": "analista"
+     "text": "Justo lo que un juego legítimo nunca te pediría: ejecutarlo como administrador, ignorar la advertencia de seguridad y agregar una excepción en el antivirus.",
+     "start": 95.985,
+     "end": 105.366,
+     "voice": "host",
+     "words": [
+      [
+       "Justo",
+       95.985,
+       96.385
+      ],
+      [
+       "lo",
+       96.385,
+       96.565
+      ],
+      [
+       "que",
+       96.545,
+       96.725
+      ],
+      [
+       "un",
+       96.705,
+       96.866
+      ],
+      [
+       "juego",
+       96.865,
+       97.205
+      ],
+      [
+       "legítimo",
+       97.185,
+       97.685
+      ],
+      [
+       "nunca",
+       97.825,
+       98.165
+      ],
+      [
+       "te",
+       98.145,
+       98.325
+      ],
+      [
+       "pediría:",
+       98.305,
+       98.772
+      ],
+      [
+       "ejecutarlo",
+       99.105,
+       99.875
+      ],
+      [
+       "como",
+       99.905,
+       100.165
+      ],
+      [
+       "administrador,",
+       100.145,
+       100.856
+      ],
+      [
+       "ignorar",
+       101.025,
+       101.605
+      ],
+      [
+       "la",
+       101.585,
+       101.765
+      ],
+      [
+       "advertencia",
+       101.745,
+       102.405
+      ],
+      [
+       "de",
+       102.385,
+       102.558
+      ],
+      [
+       "seguridad",
+       102.545,
+       103.045
+      ],
+      [
+       "y",
+       103.105,
+       103.285
+      ],
+      [
+       "agregar",
+       103.265,
+       103.765
+      ],
+      [
+       "una",
+       103.745,
+       103.925
+      ],
+      [
+       "excepción",
+       103.905,
+       104.461
+      ],
+      [
+       "en",
+       104.465,
+       104.645
+      ],
+      [
+       "el",
+       104.625,
+       104.805
+      ],
+      [
+       "antivirus.",
+       104.785,
+       105.366
+      ]
+     ]
     },
     {
-     "text": "Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.",
-     "start": 114.16,
-     "end": 119.949,
-     "voice": "analista"
+     "text": "En otras palabras: te pide que apagues la alarma antes de entrar.",
+     "start": 105.985,
+     "end": 109.524,
+     "voice": "host",
+     "words": [
+      [
+       "En",
+       105.985,
+       106.245
+      ],
+      [
+       "otras",
+       106.225,
+       106.565
+      ],
+      [
+       "palabras:",
+       106.545,
+       107.125
+      ],
+      [
+       "te",
+       107.105,
+       107.285
+      ],
+      [
+       "pide",
+       107.265,
+       107.605
+      ],
+      [
+       "que",
+       107.585,
+       107.765
+      ],
+      [
+       "apagues",
+       107.745,
+       108.245
+      ],
+      [
+       "la",
+       108.225,
+       108.325
+      ],
+      [
+       "alarma",
+       108.305,
+       108.805
+      ],
+      [
+       "antes",
+       108.785,
+       109.045
+      ],
+      [
+       "de",
+       109.025,
+       109.205
+      ],
+      [
+       "entrar.",
+       109.185,
+       109.524
+      ]
+     ]
     }
    ],
    "id": "b9"
   },
   {
    "i": 10,
-   "start": 120.279,
-   "end": 123.474,
+   "start": 109.924,
+   "end": 126.804,
    "sents": [
     {
-     "text": "O sea que no pierdes un juego: pierdes tus cuentas.",
-     "start": 120.279,
-     "end": 123.144,
-     "voice": "host"
+     "text": "Según los reportes, este tipo de programa busca las contraseñas guardadas en el navegador, las cookies de sesión, cuentas de Steam y de Roblox, y datos de monederos de criptomonedas.",
+     "start": 109.924,
+     "end": 119.823,
+     "voice": "host",
+     "words": [
+      [
+       "Según",
+       109.924,
+       110.244
+      ],
+      [
+       "los",
+       110.244,
+       110.423
+      ],
+      [
+       "reportes,",
+       110.404,
+       111.223
+      ],
+      [
+       "este",
+       111.204,
+       111.437
+      ],
+      [
+       "tipo",
+       111.444,
+       111.703
+      ],
+      [
+       "de",
+       111.684,
+       111.863
+      ],
+      [
+       "programa",
+       111.844,
+       112.263
+      ],
+      [
+       "busca",
+       112.244,
+       112.663
+      ],
+      [
+       "las",
+       112.644,
+       112.743
+      ],
+      [
+       "contraseñas",
+       112.724,
+       113.543
+      ],
+      [
+       "guardadas",
+       113.524,
+       113.943
+      ],
+      [
+       "en",
+       113.924,
+       114.103
+      ],
+      [
+       "el",
+       114.084,
+       114.263
+      ],
+      [
+       "navegador,",
+       114.244,
+       114.735
+      ],
+      [
+       "las",
+       114.884,
+       115.063
+      ],
+      [
+       "cookies",
+       115.044,
+       115.543
+      ],
+      [
+       "de",
+       115.524,
+       115.703
+      ],
+      [
+       "sesión,",
+       115.684,
+       116.096
+      ],
+      [
+       "cuentas",
+       116.244,
+       116.584
+      ],
+      [
+       "de",
+       116.564,
+       116.743
+      ],
+      [
+       "Steam",
+       116.724,
+       117.063
+      ],
+      [
+       "y",
+       117.044,
+       117.223
+      ],
+      [
+       "de",
+       117.204,
+       117.303
+      ],
+      [
+       "Roblox,",
+       117.284,
+       117.783
+      ],
+      [
+       "y",
+       117.924,
+       118.103
+      ],
+      [
+       "datos",
+       118.084,
+       118.343
+      ],
+      [
+       "de",
+       118.324,
+       118.424
+      ],
+      [
+       "monederos",
+       118.404,
+       119.063
+      ],
+      [
+       "de",
+       119.044,
+       119.091
+      ],
+      [
+       "criptomonedas.",
+       119.124,
+       119.823
+      ]
+     ]
+    },
+    {
+     "text": "Las cookies son lo más delicado: con ellas, alguien puede entrar a tu cuenta sin saber tu contraseña.",
+     "start": 120.262,
+     "end": 126.362,
+     "voice": "host",
+     "words": [
+      [
+       "Las",
+       120.262,
+       120.342
+      ],
+      [
+       "cookies",
+       120.342,
+       120.922
+      ],
+      [
+       "son",
+       120.902,
+       121.082
+      ],
+      [
+       "lo",
+       121.062,
+       121.242
+      ],
+      [
+       "más",
+       121.222,
+       121.402
+      ],
+      [
+       "delicado:",
+       121.382,
+       121.895
+      ],
+      [
+       "con",
+       122.102,
+       122.362
+      ],
+      [
+       "ellas,",
+       122.342,
+       122.732
+      ],
+      [
+       "alguien",
+       122.742,
+       123.162
+      ],
+      [
+       "puede",
+       123.142,
+       123.322
+      ],
+      [
+       "entrar",
+       123.462,
+       123.786
+      ],
+      [
+       "a",
+       123.782,
+       123.882
+      ],
+      [
+       "tu",
+       123.862,
+       124.042
+      ],
+      [
+       "cuenta",
+       124.022,
+       124.355
+      ],
+      [
+       "sin",
+       124.342,
+       124.522
+      ],
+      [
+       "saber",
+       124.502,
+       124.749
+      ],
+      [
+       "tu",
+       124.742,
+       124.875
+      ],
+      [
+       "contraseña.",
+       124.902,
+       126.362
+      ]
+     ]
     }
    ],
    "id": "b10"
   },
   {
    "i": 11,
-   "start": 123.474,
-   "end": 129.068,
+   "start": 126.804,
+   "end": 130.18,
    "sents": [
     {
-     "text": "No siempre es un ejecutable.",
-     "start": 123.474,
-     "end": 125.447,
-     "voice": "host"
-    },
-    {
-     "text": "También circulan otras versiones del mismo truco.",
-     "start": 125.777,
-     "end": 128.738,
-     "voice": "host"
+     "text": "O sea que no pierdes un juego: pierdes tus cuentas.",
+     "start": 126.804,
+     "end": 129.755,
+     "voice": "copiloto",
+     "words": [
+      [
+       "O",
+       126.804,
+       126.964
+      ],
+      [
+       "sea",
+       126.964,
+       127.281
+      ],
+      [
+       "que",
+       127.284,
+       127.464
+      ],
+      [
+       "no",
+       127.444,
+       127.555
+      ],
+      [
+       "pierdes",
+       127.604,
+       127.944
+      ],
+      [
+       "un",
+       128.084,
+       128.16
+      ],
+      [
+       "juego:",
+       128.164,
+       128.539
+      ],
+      [
+       "pierdes",
+       128.724,
+       129.217
+      ],
+      [
+       "tus",
+       129.284,
+       129.395
+      ],
+      [
+       "cuentas.",
+       129.444,
+       129.755
+      ]
+     ]
     }
    ],
    "id": "b11"
   },
   {
    "i": 12,
-   "start": 129.068,
-   "end": 142.403,
+   "start": 130.18,
+   "end": 132.511,
    "sents": [
     {
-     "text": "Páginas que te piden completar encuestas antes de mostrar el enlace.",
-     "start": 129.068,
-     "end": 133.014,
-     "voice": "analista"
-    },
-    {
-     "text": "Falsos accesos anticipados o betas que exigen un pago por adelantado.",
-     "start": 133.344,
-     "end": 137.425,
-     "voice": "analista"
-    },
-    {
-     "text": "Y en Android, archivos APK que piden permisos que ningún juego necesita.",
-     "start": 137.755,
-     "end": 142.073,
-     "voice": "analista"
+     "text": "¿Y siempre es un archivo ejecutable?",
+     "start": 130.18,
+     "end": 132.057,
+     "voice": "copiloto",
+     "words": [
+      [
+       "¿Y",
+       130.18,
+       130.21
+      ],
+      [
+       "siempre",
+       130.26,
+       130.6
+      ],
+      [
+       "es",
+       130.74,
+       130.907
+      ],
+      [
+       "un",
+       130.9,
+       131.08
+      ],
+      [
+       "archivo",
+       131.06,
+       131.48
+      ],
+      [
+       "ejecutable?",
+       131.46,
+       132.057
+      ]
+     ]
     }
    ],
    "id": "b12"
   },
   {
    "i": 13,
-   "start": 142.403,
-   "end": 170.384,
+   "start": 132.511,
+   "end": 149.413,
    "sents": [
     {
-     "text": "Si ya ejecutaste uno de estos archivos, no entres en pánico, pero actúa hoy.",
-     "start": 142.403,
-     "end": 146.734,
-     "voice": "analista"
+     "text": "No siempre.",
+     "start": 132.511,
+     "end": 133.174,
+     "voice": "host",
+     "words": [
+      [
+       "No",
+       132.511,
+       132.751
+      ],
+      [
+       "siempre.",
+       132.751,
+       133.174
+      ]
+     ]
     },
     {
-     "text": "Desconecta el equipo de internet y analízalo con tu antivirus.",
-     "start": 147.064,
-     "end": 150.478,
-     "voice": "analista"
+     "text": "También circulan otras versiones del mismo truco.",
+     "start": 133.471,
+     "end": 135.88,
+     "voice": "host",
+     "words": [
+      [
+       "También",
+       133.471,
+       133.891
+      ],
+      [
+       "circulan",
+       133.871,
+       134.53
+      ],
+      [
+       "otras",
+       134.511,
+       134.771
+      ],
+      [
+       "versiones",
+       134.751,
+       135.091
+      ],
+      [
+       "del",
+       135.071,
+       135.251
+      ],
+      [
+       "mismo",
+       135.231,
+       135.562
+      ],
+      [
+       "truco.",
+       135.551,
+       135.88
+      ]
+     ]
     },
     {
-     "text": "Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.",
-     "start": 150.808,
-     "end": 157.574,
-     "voice": "analista"
+     "text": "Páginas que te piden completar encuestas antes de mostrar el enlace.",
+     "start": 136.351,
+     "end": 139.631,
+     "voice": "host",
+     "words": [
+      [
+       "Páginas",
+       136.351,
+       136.851
+      ],
+      [
+       "que",
+       136.831,
+       136.926
+      ],
+      [
+       "te",
+       136.911,
+       137.091
+      ],
+      [
+       "piden",
+       137.071,
+       137.491
+      ],
+      [
+       "completar",
+       137.471,
+       137.931
+      ],
+      [
+       "encuestas",
+       137.951,
+       138.451
+      ],
+      [
+       "antes",
+       138.431,
+       138.611
+      ],
+      [
+       "de",
+       138.591,
+       138.771
+      ],
+      [
+       "mostrar",
+       138.751,
+       139.171
+      ],
+      [
+       "el",
+       139.151,
+       139.331
+      ],
+      [
+       "enlace.",
+       139.311,
+       139.631
+      ]
+     ]
     },
     {
-     "text": "Activa la verificación en dos pasos.",
-     "start": 157.904,
-     "end": 160.01,
-     "voice": "analista"
+     "text": "Falsos accesos anticipados o betas que exigen un pago por adelantado.",
+     "start": 140.063,
+     "end": 143.75,
+     "voice": "host",
+     "words": [
+      [
+       "Falsos",
+       140.063,
+       140.463
+      ],
+      [
+       "accesos",
+       140.463,
+       140.963
+      ],
+      [
+       "anticipados",
+       140.943,
+       141.523
+      ],
+      [
+       "o",
+       141.583,
+       141.763
+      ],
+      [
+       "betas",
+       141.763,
+       142.223
+      ],
+      [
+       "que",
+       142.223,
+       142.289
+      ],
+      [
+       "exigen",
+       142.303,
+       142.723
+      ],
+      [
+       "un",
+       142.703,
+       142.883
+      ],
+      [
+       "pago",
+       142.863,
+       143.087
+      ],
+      [
+       "por",
+       143.103,
+       143.283
+      ],
+      [
+       "adelantado.",
+       143.263,
+       143.75
+      ]
+     ]
     },
     {
-     "text": "Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.",
-     "start": 160.34,
-     "end": 170.054,
-     "voice": "analista"
+     "text": "Y en Android, archivos APK que piden permisos que ningún juego necesita.",
+     "start": 144.143,
+     "end": 148.021,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       144.143,
+       144.303
+      ],
+      [
+       "en",
+       144.303,
+       144.483
+      ],
+      [
+       "Android,",
+       144.463,
+       144.963
+      ],
+      [
+       "archivos",
+       145.023,
+       145.443
+      ],
+      [
+       "APK",
+       145.443,
+       146.063
+      ],
+      [
+       "que",
+       146.063,
+       146.163
+      ],
+      [
+       "piden",
+       146.143,
+       146.323
+      ],
+      [
+       "permisos",
+       146.463,
+       146.883
+      ],
+      [
+       "que",
+       146.863,
+       147.043
+      ],
+      [
+       "ningún",
+       147.023,
+       147.264
+      ],
+      [
+       "juego",
+       147.263,
+       147.683
+      ],
+      [
+       "necesita.",
+       147.663,
+       148.021
+      ]
+     ]
     }
    ],
    "id": "b13"
   },
   {
    "i": 14,
-   "start": 170.384,
-   "end": 184.237,
+   "start": 149.413,
+   "end": 151.076,
    "sents": [
     {
-     "text": "Regla rápida para la próxima vez.",
-     "start": 170.384,
-     "end": 172.45,
-     "voice": "host"
-    },
-    {
-     "text": "Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.",
-     "start": 172.78,
-     "end": 178.402,
-     "voice": "host"
-    },
-    {
-     "text": "Si te pide desactivar el antivirus, es malware.",
-     "start": 178.732,
-     "end": 181.417,
-     "voice": "host"
-    },
-    {
-     "text": "Y si es gratis, el producto eres tú.",
-     "start": 181.747,
-     "end": 183.907,
-     "voice": "host"
+     "text": "¿Y si alguien ya lo ejecutó?",
+     "start": 149.413,
+     "end": 150.622,
+     "voice": "copiloto",
+     "words": [
+      [
+       "¿Y",
+       149.413,
+       149.443
+      ],
+      [
+       "si",
+       149.413,
+       149.593
+      ],
+      [
+       "alguien",
+       149.573,
+       149.913
+      ],
+      [
+       "ya",
+       149.893,
+       150.073
+      ],
+      [
+       "lo",
+       150.053,
+       150.233
+      ],
+      [
+       "ejecutó?",
+       150.213,
+       150.622
+      ]
+     ]
     }
    ],
    "id": "b14"
   },
   {
    "i": 15,
-   "start": 184.237,
-   "end": 204.387,
+   "start": 151.076,
+   "end": 176.465,
    "sents": [
     {
-     "text": "Comparte este video con ese primo que siempre encuentra “versiones especiales”.",
-     "start": 184.237,
-     "end": 188.71,
-     "voice": "host"
+     "text": "Que no entre en pánico, pero que actúe hoy.",
+     "start": 151.076,
+     "end": 153.47,
+     "voice": "host",
+     "words": [
+      [
+       "Que",
+       151.076,
+       151.236
+      ],
+      [
+       "no",
+       151.236,
+       151.416
+      ],
+      [
+       "entre",
+       151.396,
+       151.653
+      ],
+      [
+       "en",
+       151.876,
+       151.925
+      ],
+      [
+       "pánico,",
+       151.956,
+       152.428
+      ],
+      [
+       "pero",
+       152.436,
+       152.696
+      ],
+      [
+       "que",
+       152.676,
+       152.856
+      ],
+      [
+       "actúe",
+       152.836,
+       153.416
+      ],
+      [
+       "hoy.",
+       153.396,
+       153.47
+      ]
+     ]
     },
     {
-     "text": "Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.",
-     "start": 189.04,
-     "end": 194.632,
-     "voice": "host"
+     "text": "Desconecta el equipo de internet y analízalo con tu antivirus.",
+     "start": 154.356,
+     "end": 157.81,
+     "voice": "host",
+     "words": [
+      [
+       "Desconecta",
+       154.356,
+       155.256
+      ],
+      [
+       "el",
+       155.236,
+       155.378
+      ],
+      [
+       "equipo",
+       155.396,
+       155.736
+      ],
+      [
+       "de",
+       155.716,
+       155.816
+      ],
+      [
+       "internet",
+       155.796,
+       156.216
+      ],
+      [
+       "y",
+       156.196,
+       156.376
+      ],
+      [
+       "analízalo",
+       156.356,
+       156.936
+      ],
+      [
+       "con",
+       156.996,
+       157.096
+      ],
+      [
+       "tu",
+       157.076,
+       157.256
+      ],
+      [
+       "antivirus.",
+       157.236,
+       157.81
+      ]
+     ]
     },
     {
-     "text": "Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.",
-     "start": 194.962,
-     "end": 200.057,
-     "voice": "host"
+     "text": "Cambia tus contraseñas desde otro dispositivo limpio, empezando por el correo, y cierra todas las sesiones abiertas.",
+     "start": 158.116,
+     "end": 164.513,
+     "voice": "host",
+     "words": [
+      [
+       "Cambia",
+       158.116,
+       158.376
+      ],
+      [
+       "tus",
+       158.516,
+       158.682
+      ],
+      [
+       "contraseñas",
+       158.676,
+       159.378
+      ],
+      [
+       "desde",
+       159.396,
+       159.736
+      ],
+      [
+       "otro",
+       159.716,
+       159.976
+      ],
+      [
+       "dispositivo",
+       159.956,
+       160.536
+      ],
+      [
+       "limpio,",
+       160.516,
+       161.096
+      ],
+      [
+       "empezando",
+       161.076,
+       161.643
+      ],
+      [
+       "por",
+       161.636,
+       161.816
+      ],
+      [
+       "el",
+       161.796,
+       161.896
+      ],
+      [
+       "correo,",
+       161.876,
+       162.296
+      ],
+      [
+       "y",
+       162.276,
+       162.536
+      ],
+      [
+       "cierra",
+       162.516,
+       163.016
+      ],
+      [
+       "todas",
+       162.996,
+       163.176
+      ],
+      [
+       "las",
+       163.156,
+       163.496
+      ],
+      [
+       "sesiones",
+       163.476,
+       163.896
+      ],
+      [
+       "abiertas.",
+       164.036,
+       164.513
+      ]
+     ]
+    },
+    {
+     "text": "Activa la verificación en dos pasos.",
+     "start": 164.915,
+     "end": 166.93,
+     "voice": "host",
+     "words": [
+      [
+       "Activa",
+       164.915,
+       165.315
+      ],
+      [
+       "la",
+       165.395,
+       165.575
+      ],
+      [
+       "verificación",
+       165.555,
+       166.135
+      ],
+      [
+       "en",
+       166.115,
+       166.295
+      ],
+      [
+       "dos",
+       166.275,
+       166.447
+      ],
+      [
+       "pasos.",
+       166.515,
+       166.93
+      ]
+     ]
+    },
+    {
+     "text": "Y si escribiste la frase de recuperación de una billetera de criptomonedas, considérala comprometida: mueve los fondos a una billetera nueva desde un dispositivo limpio.",
+     "start": 167.075,
+     "end": 176.026,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       167.075,
+       167.235
+      ],
+      [
+       "si",
+       167.235,
+       167.495
+      ],
+      [
+       "escribiste",
+       167.475,
+       168.135
+      ],
+      [
+       "la",
+       168.115,
+       168.295
+      ],
+      [
+       "frase",
+       168.275,
+       168.535
+      ],
+      [
+       "de",
+       168.515,
+       168.695
+      ],
+      [
+       "recuperación",
+       168.675,
+       169.255
+      ],
+      [
+       "de",
+       169.235,
+       169.415
+      ],
+      [
+       "una",
+       169.395,
+       169.575
+      ],
+      [
+       "billetera",
+       169.555,
+       170.055
+      ],
+      [
+       "de",
+       170.035,
+       170.115
+      ],
+      [
+       "criptomonedas,",
+       170.115,
+       170.985
+      ],
+      [
+       "considérala",
+       170.985,
+       171.955
+      ],
+      [
+       "comprometida:",
+       171.955,
+       172.535
+      ],
+      [
+       "mueve",
+       172.675,
+       173.095
+      ],
+      [
+       "los",
+       173.075,
+       173.255
+      ],
+      [
+       "fondos",
+       173.235,
+       173.575
+      ],
+      [
+       "a",
+       173.555,
+       173.655
+      ],
+      [
+       "una",
+       173.635,
+       173.815
+      ],
+      [
+       "billetera",
+       173.795,
+       174.375
+      ],
+      [
+       "nueva",
+       174.355,
+       174.603
+      ],
+      [
+       "desde",
+       174.675,
+       175.015
+      ],
+      [
+       "un",
+       174.995,
+       175.095
+      ],
+      [
+       "dispositivo",
+       175.075,
+       175.735
+      ],
+      [
+       "limpio.",
+       175.715,
+       176.026
+      ]
+     ]
     }
    ],
    "id": "b15"
+  },
+  {
+   "i": 16,
+   "start": 176.465,
+   "end": 191.412,
+   "sents": [
+    {
+     "text": "Regla rápida para la próxima vez.",
+     "start": 176.465,
+     "end": 178.396,
+     "voice": "host",
+     "words": [
+      [
+       "Regla",
+       176.465,
+       176.785
+      ],
+      [
+       "rápida",
+       176.945,
+       177.445
+      ],
+      [
+       "para",
+       177.425,
+       177.605
+      ],
+      [
+       "la",
+       177.585,
+       177.765
+      ],
+      [
+       "próxima",
+       177.745,
+       178.165
+      ],
+      [
+       "vez.",
+       178.145,
+       178.396
+      ]
+     ]
+    },
+    {
+     "text": "Si no viene de PlayStation Store, de Microsoft Store o de una tienda de confianza, no es GTA 6.",
+     "start": 178.625,
+     "end": 185.055,
+     "voice": "host",
+     "words": [
+      [
+       "Si",
+       178.625,
+       178.805
+      ],
+      [
+       "no",
+       178.785,
+       178.965
+      ],
+      [
+       "viene",
+       178.945,
+       179.285
+      ],
+      [
+       "de",
+       179.265,
+       179.395
+      ],
+      [
+       "PlayStation",
+       179.425,
+       180.273
+      ],
+      [
+       "Store,",
+       180.465,
+       181.009
+      ],
+      [
+       "de",
+       181.105,
+       181.285
+      ],
+      [
+       "Microsoft",
+       181.265,
+       181.967
+      ],
+      [
+       "Store",
+       181.985,
+       182.322
+      ],
+      [
+       "o",
+       182.305,
+       182.485
+      ],
+      [
+       "de",
+       182.465,
+       182.645
+      ],
+      [
+       "una",
+       182.625,
+       182.796
+      ],
+      [
+       "tienda",
+       182.785,
+       183.125
+      ],
+      [
+       "de",
+       183.105,
+       183.285
+      ],
+      [
+       "confianza,",
+       183.265,
+       183.925
+      ],
+      [
+       "no",
+       183.905,
+       184.085
+      ],
+      [
+       "es",
+       184.065,
+       184.325
+      ],
+      [
+       "GTA",
+       184.305,
+       184.885
+      ],
+      [
+       "6.",
+       185.025,
+       185.055
+      ]
+     ]
+    },
+    {
+     "text": "Si te pide desactivar el antivirus, es malware.",
+     "start": 185.345,
+     "end": 188.225,
+     "voice": "host",
+     "words": [
+      [
+       "Si",
+       185.345,
+       185.525
+      ],
+      [
+       "te",
+       185.505,
+       185.685
+      ],
+      [
+       "pide",
+       185.665,
+       186.005
+      ],
+      [
+       "desactivar",
+       185.985,
+       186.565
+      ],
+      [
+       "el",
+       186.545,
+       186.725
+      ],
+      [
+       "antivirus,",
+       186.705,
+       187.285
+      ],
+      [
+       "es",
+       187.265,
+       187.445
+      ],
+      [
+       "malware.",
+       187.445,
+       188.225
+      ]
+     ]
+    },
+    {
+     "text": "Y si es gratis, el producto eres tú.",
+     "start": 188.225,
+     "end": 190.999,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       188.225,
+       188.405
+      ],
+      [
+       "si",
+       188.385,
+       188.485
+      ],
+      [
+       "es",
+       188.465,
+       188.645
+      ],
+      [
+       "gratis,",
+       188.625,
+       189.012
+      ],
+      [
+       "el",
+       189.025,
+       189.136
+      ],
+      [
+       "producto",
+       189.185,
+       189.605
+      ],
+      [
+       "eres",
+       189.585,
+       189.937
+      ],
+      [
+       "tú.",
+       189.985,
+       190.999
+      ]
+     ]
+    }
+   ],
+   "id": "b16"
+  },
+  {
+   "i": 17,
+   "start": 191.412,
+   "end": 212.413,
+   "sents": [
+    {
+     "text": "Comparte este video con ese primo que siempre encuentra “versiones especiales”.",
+     "start": 191.412,
+     "end": 195.136,
+     "voice": "host",
+     "words": [
+      [
+       "Comparte",
+       191.412,
+       191.972
+      ],
+      [
+       "este",
+       191.972,
+       192.232
+      ],
+      [
+       "video",
+       192.212,
+       192.472
+      ],
+      [
+       "con",
+       192.452,
+       192.712
+      ],
+      [
+       "ese",
+       192.692,
+       192.952
+      ],
+      [
+       "primo",
+       192.932,
+       193.352
+      ],
+      [
+       "que",
+       193.332,
+       193.512
+      ],
+      [
+       "siempre",
+       193.492,
+       193.752
+      ],
+      [
+       "encuentra",
+       193.732,
+       194.232
+      ],
+      [
+       "“versiones",
+       194.212,
+       194.697
+      ],
+      [
+       "especiales”.",
+       194.692,
+       195.136
+      ]
+     ]
+    },
+    {
+     "text": "Y si quieres jugar GTA 6 de verdad, en la descripción tienes nuestra guía con la hora de tu país.",
+     "start": 195.652,
+     "end": 202.406,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       195.652,
+       195.812
+      ],
+      [
+       "si",
+       195.812,
+       196.072
+      ],
+      [
+       "quieres",
+       196.052,
+       196.392
+      ],
+      [
+       "jugar",
+       196.372,
+       196.712
+      ],
+      [
+       "GTA",
+       196.692,
+       197.352
+      ],
+      [
+       "6",
+       197.332,
+       197.672
+      ],
+      [
+       "de",
+       197.652,
+       197.752
+      ],
+      [
+       "verdad,",
+       197.812,
+       198.022
+      ],
+      [
+       "en",
+       198.372,
+       198.552
+      ],
+      [
+       "la",
+       198.532,
+       198.712
+      ],
+      [
+       "descripción",
+       198.692,
+       199.272
+      ],
+      [
+       "tienes",
+       199.252,
+       199.672
+      ],
+      [
+       "nuestra",
+       199.652,
+       199.992
+      ],
+      [
+       "guía",
+       199.972,
+       200.309
+      ],
+      [
+       "con",
+       200.292,
+       200.472
+      ],
+      [
+       "la",
+       200.452,
+       200.632
+      ],
+      [
+       "hora",
+       200.612,
+       200.901
+      ],
+      [
+       "de",
+       200.932,
+       201.032
+      ],
+      [
+       "tu",
+       201.012,
+       201.272
+      ],
+      [
+       "país.",
+       201.252,
+       202.406
+      ]
+     ]
+    },
+    {
+     "text": "Suscríbete a Sal y Asfalto: aquí, la única descarga que recomendamos es la oficial.",
+     "start": 202.811,
+     "end": 207.996,
+     "voice": "host",
+     "words": [
+      [
+       "Suscríbete",
+       202.811,
+       203.451
+      ],
+      [
+       "a",
+       203.451,
+       203.631
+      ],
+      [
+       "Sal",
+       203.611,
+       203.871
+      ],
+      [
+       "y",
+       204.011,
+       204.191
+      ],
+      [
+       "Asfalto:",
+       204.171,
+       204.991
+      ],
+      [
+       "aquí,",
+       204.971,
+       205.292
+      ],
+      [
+       "la",
+       205.371,
+       205.551
+      ],
+      [
+       "única",
+       205.531,
+       205.871
+      ],
+      [
+       "descarga",
+       205.851,
+       206.339
+      ],
+      [
+       "que",
+       206.331,
+       206.511
+      ],
+      [
+       "recomendamos",
+       206.491,
+       207.231
+      ],
+      [
+       "es",
+       207.211,
+       207.391
+      ],
+      [
+       "la",
+       207.371,
+       207.627
+      ],
+      [
+       "oficial.",
+       207.611,
+       207.996
+      ]
+     ]
+    }
+   ],
+   "id": "b17"
   }
  ],
- "lufs_in": -18.54
+ "lufs_in": -13.41
 }

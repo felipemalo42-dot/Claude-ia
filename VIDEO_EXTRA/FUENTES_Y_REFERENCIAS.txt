@@ -1,0 +1,222 @@
+FUENTES Y REFERENCIAS · VIDEO_EXTRA
+«¿Por qué Vice City es rosa? La historia real de sus colores (GTA 6)»
+Investigación realizada el 18/11/2026.
+
+Cómo leer esta lista
+  [D] = página leída directamente (descargada y revisada el 18/11/2026).
+  [B] = contenido verificado a través de extractos de un buscador web; la página no se pudo abrir desde el entorno de producción.
+        Conviene volver a revisarla antes de publicar.
+  Cada fuente indica qué datos del guion respalda y en qué capítulo aparecen.
+  Ningún dato del guion depende de una sola fuente [B].
+
+
+1. FUENTES OFICIALES (ROCKSTAR GAMES)
+
+[D] Rockstar Games: página oficial de Grand Theft Auto VI
+    https://www.rockstargames.com/VI
+    - Fecha de lanzamiento: 19 de noviembre de 2026.
+    - Paquete «Vintage Vice City»: «Flash back to when the neon burned brightest», con el '55 Vapid Stanier,
+      un garaje junto a «the world-famous Ocean Beach» y estilos «that echo the excess of the past».
+    - Revólveres «with classic Vice City stylings sourced from the Vercetti Estate».
+    - Texto alternativo de imagen oficial: «Jason and Lucia standing outside the Ocean View Hotel».
+    → Capa 7 (guiños a 2002).
+
+[D] Rockstar Games: «Only in Leonida», sección Vice City
+    https://www.rockstargames.com/VI/only-in-leonida/vice-city
+    - «We're a long way from the '80s, but Vice City is still the sun and fun capital of America.»
+    - «Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach,
+      to the bustling panaderías of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port,
+      the cruise ship capital of the world.»
+    - Textos alternativos de imágenes oficiales con celulares: una mujer se toma una selfi junto a un arresto; público con
+      celulares en alto; «Viral videos. Viral hooks.» (Real Dimez).
+    → «Lo que dice Rockstar», Capa 1, Capa 7 y guía de campo.
+
+[D] Rockstar Games: descargas oficiales («Download and share trailers, imagery, and more»)
+    https://www.rockstargames.com/VI/downloads
+    → Solo para el registro de derechos. No se usó ningún archivo.
+
+[B] Rockstar Games Support: «Policy on posting copyrighted Rockstar Games material» (última actualización: 10/01/2025)
+    https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material
+    → Registro de derechos. La página no respondió desde el entorno de producción (tiempo de espera agotado).
+
+
+2. HISTORIA REAL DE MIAMI BEACH (EL MODELO DE OCEAN BEACH)
+
+[D] City of Miami Beach: «This Month in Miami Beach History: How Miami Beach Began – a plat, a plan, a vision (July 1912)»
+    https://www.miamibeachfl.gov/this-month-in-miami-beach-history-july-1912/
+    - En julio de 1912, John Newton y James Edward Lummus registraron el primer plano oficial de la isla.
+    - La empresa se llamaba Ocean Beach Realty Company.
+    - La isla era una barra de arena con manglares.
+    - Miami Beach se incorporó como pueblo el 26 de marzo de 1915.
+    → Capa 1.
+
+[D] Wikipedia: «Miami Beach, Florida»
+    https://en.wikipedia.org/wiki/Miami_Beach,_Florida
+    - «The Lummus property was called Ocean Beach».
+    - La bahía de Biscayne separa Miami Beach de la ciudad de Miami: son municipios distintos.
+    - El huracán de 1926 terminó con el boom.
+    - En los años 30 se construyeron «small-scale, stucco hotels and rooming houses, for seasonal rental».
+    - Los hoteles art déco de Ocean Drive se levantaron entre 1935 y 1941.
+    → Capas 1 y 2.
+
+[D] Wikipedia: «1926 Miami hurricane»
+    https://en.wikipedia.org/wiki/1926_Miami_hurricane
+    - Tocó tierra el 18 de septiembre de 1926, con fuerza equivalente a categoría 4.
+    - Puso fin al boom inmobiliario de Florida y adelantó la Gran Depresión en el estado.
+    - La marejada inundó las calles de Miami Beach y derrumbó casinos frente al mar.
+    → La tormenta.
+
+[D] U.S. National Park Service (NPS): Tania Alam, «Color Palettes to the Rescue: Saving Buildings from Demolition»
+    (actas de «Are We There Yet? Preserving Roadside Architecture and Attractions», 2018)
+    https://www.nps.gov/articles/000/color-pallets-saving-buildings-from-demolition.htm
+    - «Historically, the hotels, apartment buildings and stores were mostly painted white with little touches of jade green, ochre, or coral.»
+    - El distrito entró al Registro Nacional en mayo de 1979: «the nation's first 20th-century neighborhood to be recognized as historic».
+    - El registro no impidió las demoliciones (Boulevard, 1980; New Yorker, 1981).
+    - Friedman's Bakery, en la calle 7 y la avenida Washington, fue el primer edificio pintado: «cotton candy pink, periwinkle blue,
+      buttercream and mint green», con aspecto de «fancy birthday cake».
+    - Continuidad: «The body color of one building would transfer to the trim of the next».
+    - Miami Vice: «the colors of the food carts that appeared in the opening credits were chosen by Leonard Horowitz».
+    - Hoy es obligatorio usar tonos pastel claros, «an aesthetic that in reality first appeared in the 1980s and is now considered historic».
+    - Desplazamiento de los jubilados para quienes había empezado la preservación.
+    → Capas 2, 3, 4 y 5, y «El precio del pastel».
+
+[D] WLRN (radio pública de Miami): «Meet The Man Behind All Those South Beach Pastels» (2013)
+    https://www.wlrn.org/culture/2013-11-16/meet-the-man-behind-all-those-south-beach-pastels
+    - Biografía de Leonard Horowitz: diseñador en Nueva York; a los 29 años su padre le retiró el apoyo económico al saber que era gay.
+    - Fundó con Barbara Capitman la Miami Design Preservation League.
+    - Paleta inspirada en el sol, el cielo, el mar y la playa.
+    - «Friedman's building was all white».
+    - Reacción de una vecina: «this is not us… Deco schmeco». El video traduce la primera parte («esto no somos nosotros») y muestra la segunda en pantalla.
+    - Portada de Progressive Architecture en noviembre de 1982.
+    - Murió de sida en 1989, a los 43 años, un año después del documental «Pastel Paradise» (1988).
+    - Sus amigos esparcieron sus cenizas en el mar, frente a los hoteles de Ocean Drive.
+    → Gancho, Capas 4 y 5.
+
+[D] National Trust for Historic Preservation (Saving Places): Sophia Dembling, «Barbara Baer Capitman: South Beach's Art Deco Hero» (2014)
+    https://savingplaces.org/stories/barbara-baer-capitman-south-beach-art-deco-hero
+    - Capitman era «shy and soft-spoken» y viuda desde 1975.
+    - En los 70 los vecinos eran sobre todo jubilados judíos, muchos sobrevivientes del Holocausto.
+    - La MDPL la fundó con Leonard Horowitz y se constituyó legalmente en 1977.
+    - Demolición del hotel Senator (1988).
+    - Cita de su hijo, John Capitman: «How did that happen, and is that what we wanted?»
+    → Capa 3 y «El precio del pastel».
+
+[D] Wikipedia: «Barbara Baer Capitman»
+    https://en.wikipedia.org/wiki/Barbara_Baer_Capitman
+    - Fechas: 9/4/1920 a 29/3/1990.
+    - En 1976 formó la MDPL; organizó vigilias y marchas y se plantó delante de las excavadoras.
+    → Capa 3.
+
+[D] Wikipedia: «Miami Beach Architectural District»
+    https://en.wikipedia.org/wiki/Miami_Beach_Architectural_District
+    - Inscrito en el Registro Nacional el 14 de mayo de 1979; 960 edificios históricos.
+    - Hotel Victor (1937), en el 1144 de Ocean Drive.
+    → Capas 3 y 7.
+
+[B] Inventario de edificios del distrito (Miami Design Preservation League / Ruskin Arc): 1144 Ocean Dr
+    https://www.ruskinarc.com/mdpl/Ocean-CollinsDistrict/4652-1144%20Ocean%20Dr/view
+    - Hotel Victor: 1937, arquitecto L. Murray Dixon.
+    → Capa 7.
+
+[B] Rasgos del art déco tropical (cejas, ojos de buey, regla de tres, bloques de vidrio, terrazo, neón):
+    - Time Out Miami, «Iconic Miami: The Art Deco District»: https://www.timeout.com/miami/things-to-do/iconic-miami-the-art-deco-district
+    - Ciudad de Miami, Preservación Histórica (materiales del Streamline Moderne: bloque de vidrio, terrazo, neón):
+      https://www.miami.gov/My-Government/Departments/Planning/Historic-Preservation-Main-Page
+    - Greater Miami & Miami Beach (turismo oficial), «Art Deco architecture»:
+      https://www.miamiandbeaches.com/things-to-do/history-and-heritage/art-deco-architecture
+    → Capa 2 y guía de campo.
+
+
+3. MIAMI VICE (1984)
+
+[D] Wikipedia: «Miami Vice»
+    https://en.wikipedia.org/wiki/Miami_Vice
+    - Estreno en NBC el 16 de septiembre de 1984; productor ejecutivo, Michael Mann.
+    - «No "earth tones" were allowed to be used in the production by executive producer Michael Mann».
+      Wikipedia cita a TIME, «Cool Cops, Hot Show», 16/9/1985: https://time.com/archive/6704652/video-cool-cops-hot-show
+    - El equipo repintaba fachadas antes de filmar.
+    - Rodaje en South Beach y su efecto en la preservación del distrito.
+    → Capa 5.
+
+[D] Mental Floss: «20 Fashionable Facts About Miami Vice»
+    https://www.mentalfloss.com/article/77272/20-fashionable-facts-about-miami-vice
+    - Michael Mann sobre las muestras de una tienda de pintura: «three colors become thematic, two colors don't…
+      Three colors, you can actually start telling a chromatic story» (Los Angeles Times, 1987).
+    - La regla de no usar tonos tierra; la colaboración de la MDPL con los productores.
+    → Capa 5.
+
+
+4. HISTORIA DE VICE CITY EN LA SAGA
+
+[D] Wikipedia: «Grand Theft Auto (video game)» (1997)
+    https://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)
+    - Tres ciudades: Liberty City, San Andreas y Vice City (basada en Miami). Vista cenital.
+    → Capa 6.
+
+[D] Wikipedia: «Grand Theft Auto: Vice City» (2002), con sus fuentes citadas (IGN, GameSpot, entrevistas del equipo)
+    https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
+    - Lanzamiento el 29 de octubre de 2002; ambientado en 1986.
+    - El equipo veía Miami Vice durante el desarrollo.
+    - El director de arte, Aaron Garbut, usó la serie como referencia para la luz de neón.
+    - Lance Vance tiene la voz de Philip Michael Thomas (Tubbs en Miami Vice).
+    → Capa 6.
+
+[B] GamesRadar+: «With GTA 6 taking us back to Miami, here's how the original GTA Vice City came to life»
+    https://www.gamesradar.com/with-gta-6-taking-us-back-to-miami-heres-how-the-original-gta-vice-city-came-to-life/
+    → Contexto del desarrollo de 2002 (complementa la entrada anterior).
+
+
+5. GTA VI, VICE CITY Y LA MIAMI REAL (2023-2026)
+
+[D] Associated Press (David Fischer), publicado por WLRN: «Miami embraces its Vice City alter ego, seizing buzz around 'GTA VI' release» (17/11/2026)
+    https://www.wlrn.org/arts-culture/2026-11-17/miami-embraces-its-vice-city-alter-ego-seizing-buzz-around-gta-vi-release
+    - Aaron Garbut: el equipo recorrió el sur de Florida e investigó la historia y la arquitectura de Miami.
+    - La guía de la MDPL Julie Fornary destaca el cambio de «Hotel Victor» a «Hotel Dixon», un guiño a Lawrence Murray Dixon.
+    - Miami-Dade firmó un acuerdo de 3,9 millones de dólares con Rockstar que incluye un letrero «Welcome to Vice City»
+      en el techo del Kaseya Center, la arena del Heat.
+    - Se opusieron la sheriff Rosie Cordero-Stutz y el comisionado de Miami Beach David Suarez.
+    → Capa 7 y «La vuelta completa».
+
+[B] Axios Miami: «Every Miami landmark in Grand Theft Auto VI» (05/12/2023)
+    https://www.axios.com/local/miami/2023/12/05/gta-6-trailer-vice-city-landmarks
+    - Hotel Victor → Hotel Dixon en el tráiler 1.
+    → Capa 7. Confirma el dato de AP.
+
+[B] Miami New Times: «Interactive map: 20 Miami landmarks in GTA 6 and where to find them»
+    https://www.miaminewtimes.com/arts/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001
+    → Capa 7. Confirma el dato de AP.
+
+
+6. POLÍTICAS DE YOUTUBE (para la auditoría)
+
+[D] YouTube Help: «Disclosing use of GenAI content»
+    https://support.google.com/youtube/answer/14328491
+[D] YouTube Help: «YouTube channel monetization policies» (contenido inauténtico y contenido reutilizado)
+    https://support.google.com/youtube/answer/1311392
+
+
+7. DEMANDA Y COMPETENCIA (solo para el análisis; no aparecen en el video)
+
+[B] Video Games Chronicle: «At nearly half a billion views, Rockstar says GTA 6's new trailer is 'the biggest video launch of all time'»
+    https://www.videogameschronicle.com/news/at-nearly-half-a-billion-views-rockstar-says-gta-6s-new-trailer-is-the-biggest-video-launch-of-all-time/
+[B] GTABase: «How GTA 6's Leonida compares to real life Florida locations»
+    https://www.gtabase.com/articles/gta-6/how-gta-6-s-leonida-compares-to-real-life-florida-locations
+[B] Sportskeeda: «GTA 6 vs real life: Does the game truly capture Miami vibes?»
+    https://www.sportskeeda.com/gta/gta-6-vs-real-life-does-game-truly-capture-miami-vibes
+
+
+8. QUÉ ES HECHO, QUÉ ES INTERPRETACIÓN Y QUÉ NO SE AFIRMA
+
+HECHOS DOCUMENTADOS (verde en pantalla)
+  Todo lo listado arriba, siempre con su fuente.
+
+INTERPRETACIONES DEL CANAL (amarillo en pantalla)
+  - «En 2026, la brocha de Vice City es la cámara del celular»: lectura propia a partir de las imágenes oficiales.
+  - «Una ciudad que se burla del exceso… y que nació de él»: lectura propia.
+  - «Una copia de una copia de una copia»: síntesis editorial de la cadena documentada (edificios → paleta → serie → juego).
+
+LO QUE EL VIDEO NO AFIRMA
+  - No dice que Rockstar se inspirara en la Ocean Beach Realty Company. Solo dice que el nombre existió antes.
+  - No dice que cada hotel de Vice City copie un edificio concreto, salvo el caso documentado del Hotel Dixon.
+  - No promete que el juego tenga cada rasgo de la guía de campo. La guía es una lista para comprobar jugando.
+  - No da cifras de búsqueda ni de audiencia que no estén en estas fuentes.

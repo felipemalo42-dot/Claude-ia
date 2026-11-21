@@ -2,7 +2,7 @@
 
 **Estado real:** PREPRODUCCIÓN · NO PUBLICABLE todavía (faltan capturas y veredictos)  
 **Fase:** Post-lanzamiento (grabar 19-23 nov.)  
-**Formato:** Largo (16:9) · POST-LANZAMIENTO · animático de preproducción · **Duración:** 2:40 · **Música:** estilo «mystery» original · **Voz:** narrador
+**Formato:** Largo (16:9) · POST-LANZAMIENTO · animático de preproducción · **Duración:** 2:49 · **Música:** estilo «mystery» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -41,7 +41,7 @@ FUENTES
 • Capturas propias del juego (fecha, consola)
 • Newswire / soporte de Rockstar en la fecha de publicación
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
@@ -66,7 +66,8 @@ gta 6, gta 6 probado, gta 6 gameplay español, gta 6 60 fps, gta 6 online, gta 6
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
