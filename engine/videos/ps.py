@@ -15,7 +15,7 @@ def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 TOA = "cEDUO1zjB5c"
 TOP = dict(z=(1.38, 1.42), fy=0.0)      # deja fuera los subtítulos incrustados (73-86 % de la altura)
 
-beat("Así reacciona un habitante de GTA 6 cuando invades su espacio.", pre=0.15, exag=0.7, id="s1",
+beat("Así reacciona un habitante de GTA 6 si alguien invade su espacio.", pre=0.15, exag=0.7, id="s1",
      shots=[S(None, f"v:{TOA}@3.0@0.62", **TOP)], sfx=[(0.0, "riser", 0.3)])
 beat("Primero, te lo dice claro: «No me hables». «Aléjate de mí».", exag=0.7, id="s2",
      shots=[S(None, f"v:{TOA}@6.5@0.62", **TOP), S("«No me", f"v:{TOA}@9.0@0.62", say="Don't talk to me.", **TOP),
