@@ -28,3 +28,13 @@ VIDEO_LARGO_GTA6/PROYECTO_DE_EDICION/short_promocional/_video.h264
 VIDEO_LARGO_GTA6/PROYECTO_DE_EDICION/short_promocional/fotogramas/
 VIDEO_LARGO_GTA6/PROYECTO_DE_EDICION/short_promocional/preview_*
 VIDEO_LARGO_GTA6/PROYECTO_DE_EDICION/short_promocional/narracion_original.wav
+# vídeos 2 y 3 tras el lanzamiento y sus Shorts: solo se suben los entregables; el material de trabajo pesado se regenera
+VIDEO_LARGO_2_*/trabajo/**/*.wav
+VIDEO_LARGO_3_*/trabajo/**/*.wav
+SHORT_2_*/trabajo/**/*.wav
+SHORT_3_*/trabajo/**/*.wav
+*/trabajo/_*
+*/trabajo/fotogramas/
+*/trabajo/preview_*
+*/trabajo/miniatura_*.png
+*/trabajo/**/pistas/

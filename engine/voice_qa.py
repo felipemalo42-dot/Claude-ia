@@ -113,6 +113,18 @@ WER_ALIAS = [
     (r"\b[VvBb][aá][iy]s[ -]?[CcSs][ií]t[iy]?\b", "Vice City"), (r"\b[Bb]y ?[Cc]ity\b", "Vice City"), (r"\b[Bb]ai ?[CcSs]ity\b", "Vice City"), (r"\b[VvBb]ice[ -]?[CcSs]ity\b", "Vice City"), (r"\b[VvBb]aisiti\b", "Vice City"),
     (r"\b[Ff][oó]u?[ck]us\b", "Focus"), (r"\b[Rr]o[ck]+ ?[Ss]tar\b", "Rockstar"), (r"\b[Rr]okstar\b", "Rockstar"),
     (r"\b[Ss]ic[oó]patas?\b", lambda m: "Psicópata" + ("s" if m.group(0).endswith("s") else "")),
+    # vídeos 2 y 3 (Planeta Vice City, GTA 6 a juicio): grafías de nombres propios y términos ingleses
+    (r"\b[Gg]ran[dt]?[ -]?(?:th|z|s|t)?e[fp]?t[ -]?[aoó]u?to\b", "Grand Theft Auto"), (r"\b[CcKk]arl\b", "Karl"),
+    (r"\b(?:M[ae]?c?[ -]?)?[CcKk]+[ií]+t+r[ií]+[ck]+k?\b", "McKittrick"), (r"\bR[aáe][iy]?[sz]+[ie]ng?\b", "Rising"),
+    (r"\b(?:e?s[ck]o?u?n[ck]?k?[ -]?(?:qu|k)?e?i?p|skunk ?ape)\b", "Skunk Ape"), (r"\b(?:K|C|Qu)[eiu]r[ck]k?\b", "Kirk"),
+    (r"\b(?:Key|K[iy]|Qu?i)[ -]?[Ll]ento\b", "Key Lento"), (r"\bBr[aá]?[iy]+[aá]n\b", "Brian"),
+    (r"\b(?:g?[uü]|w|b)[eéa][iy]?st[eé]d\b", "wasted"), (r"\be?s?trip[ -]?t[iíe]+[aá]?[sz]e?\b", "striptease"),
+    (r"\binfluen[cs]er\b", "influencer"), (r"\b[OoÓó]u?[sc]h?[eé]?a?n[ -]?B[ie]+a?[ct]?ch\b", "Ocean Beach"),
+    (r"\bMiami[ -]?B[ie]+a?ch\b", "Miami Beach"), (r"\bMiami[ -]?D[eé]i?de?\b", "Miami-Dade"),
+    (r"\b(?:the|de|di|za|da)[ -]?[Gg]u?[aá]rdi[aá]n\b", "The Guardian"), (r"\b(?:pe ?ce|p ?c)[ -]?[Gg]u?[aeé]i?mer\b", "PC Gamer"),
+    (r"\b(?:equis|x)[ -]?box\b", "Xbox"), (r"\bs[ií]ries\b", "Series"), (r"\bNor[tzs]h?\b", "North"),
+    (r"\bRed[ -]?D[eé]d\b", "Red Dead"), (r"\bR[ei]d[eé]mp?(?:sh|ch|s)[ie]?[oó]n\b", "Redemption"),
+    (r"\bP[aá]r+o[td]\b", "Parrot"), (r"\bP[aá]r[aá]d[aá][iy]s[e]?\b", "Paradise"),
 ]
 _WALIAS = [(re.compile(a, re.I), b) for a, b in WER_ALIAS]
 

@@ -24,15 +24,29 @@ DECIMATE = "mpdecimate=hi=64*12:lo=64*5:frac=0.33,fps=30000/1001"
 # Con GTAsatara, mpdecimate (umbrales amplios) descartaba también imágenes distintas pero muy parecidas en escenas lentas y
 # el vídeo repetía fotogramas que el original no repite (comprobado contra el original: 34 de 35 repeticiones).
 DECIMATE2 = "decimate=cycle=2"
-DEC = {"gJyMGHxCKHU": DECIMATE2}
+DEC = {"gJyMGHxCKHU": DECIMATE2, "cEDUO1zjB5c": DECIMATE2, "-UuHA1h-Cf8": DECIMATE2, "gvlY1gVmSKM": DECIMATE2, "NwQKirh2dxE": DECIMATE2}
 
 # fuente → (fps del archivo, ¿HDR?)
 SRC = {"Om4W6tYMF-0": (29.97, False), "gJyMGHxCKHU": (59.94, False), "ey0qks0aQ-c": (59.94, True),
+       # vídeos 2 y 3 (Planeta Vice City, GTA 6 a juicio): 30 o 60 fps exactos (juego a 30 grabado a 60 → decimate)
+       "cEDUO1zjB5c": (60.0, False), "-UuHA1h-Cf8": (60.0, False), "3UiRmXUIE9k": (30.0, False), "xnNu7YybiCM": (30.0, False),
+       "jZka1Ay1-gI": (29.97, False), "gvlY1gVmSKM": (59.94, False), "NwQKirh2dxE": (60.0, False), "4HCd052lpnA": (30.0, False), "gN5qaT7u-uM": (29.97, False), "R9r9ew12GcA": (30.0, False),
        "qbhJRtgCx30": (59.94, False), "eD5ndr0OMM0": (30.0, False),
        "JHRVSzM2O2M": (59.94, False), "uMYUjOLOOVQ": (59.94, False)}   # estos dos: vídeos verticales de 1080×1920
-VERTICAL = {"JHRVSzM2O2M", "uMYUjOLOOVQ"}
+VERTICAL = {"JHRVSzM2O2M", "uMYUjOLOOVQ", "R9r9ew12GcA"}
+# fuentes que no son copias de YouTube: URL directa y recorte de la imagen de juego (sin los rótulos del montaje original)
+SRC["vpHospital1"] = (30.0, False)
+SRC_URL = {"vpHospital1": "https://archive.org/download/videopump-2026-11-20-hospital-bill/24-hospital-bill-1191.mp4"}
+SRC_CROP = {"vpHospital1": "crop=1080:608:0:656"}   # franja 16:9 con la partida dentro del vertical de Video Pump
+def rate(vid):
+    """Segundos del original por segundo del tramo: 1,001 si el original va a 29,97/59,94 fps; 1 si va a 30/60 fps exactos."""
+    return 1.0 if abs(SRC[vid][0] - round(SRC[vid][0])) < 1e-3 else 1.001
 # tramos (segundos del original) que usa el montaje; se amplían 1 s por cada lado para poder ajustar los planos
-WINDOWS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos", "gx_windows.json"), encoding="utf-8"))
+_VD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos")
+WINDOWS = {}
+for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
+    if os.path.exists(os.path.join(_VD, _f)):
+        for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 
 def name(vid, a, b): return f"{OUT}/{vid}_{a:07.2f}_{b:07.2f}.mp4"
 
@@ -40,13 +54,13 @@ def build(vid, a, b):
     out = name(vid, a, b)
     if os.path.exists(out): return out
     fps, hdr = SRC[vid]
-    vf = [TONEMAP if hdr else (SCALE.replace("1920:1080", "1080:1920") if vid in VERTICAL else SCALE)]
+    vf = ([SRC_CROP[vid]] if vid in SRC_CROP else []) + [TONEMAP if hdr else (SCALE.replace("1920:1080", "1080:1920") if vid in VERTICAL else SCALE)]
     if fps > 50: vf.append(DEC.get(vid, DECIMATE))
     vf.append("setpts=N/(30*TB)")
-    url = f"https://archive.org/download/youtube-{vid}/{vid}.webm"
+    url = SRC_URL.get(vid) or f"https://archive.org/download/youtube-{vid}/{vid}.webm"
     tmp = out + ".part.mp4"; t0 = time.time()
-    cmd = ["nice", "-n", "8", "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
-           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", "slow", "-crf", "14", "-pix_fmt", "yuv420p",
+    cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
+           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
     for k in range(3):
         r = subprocess.run(cmd)
@@ -59,8 +73,10 @@ def build(vid, a, b):
 def windows_for(vid): return [(float(w[0]), float(w[1])) for w in WINDOWS.get(vid, [])]
 
 # ---------------------------------------------------------------- recortes verticales 9:16 para el Short (desde la copia 4K)
-VWIN = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos", "gs_windows.json"), encoding="utf-8")) \
-    if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos", "gs_windows.json")) else {}
+VWIN = {}
+for _f in ("gs_windows.json", "ps_windows.json", "js_windows.json"):
+    if os.path.exists(os.path.join(_VD, _f)):
+        for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): VWIN.setdefault(_k, []).extend(_v)
 def vname(vid, a, b, cx): return f"{OUT}/{vid}_{a:07.2f}_{b:07.2f}_v{cx:.2f}.mp4"
 
 def build_v(vid, a, b, cx):
@@ -72,9 +88,9 @@ def build_v(vid, a, b, cx):
     vf = [crop, (TONEMAP.replace("w=1920:h=1080", "w=1080:h=1920") if hdr else "scale=1080:1920:flags=lanczos,format=yuv420p")]
     if fps > 50: vf.append(DEC.get(vid, DECIMATE))
     vf.append("setpts=N/(30*TB)")
-    url = f"https://archive.org/download/youtube-{vid}/{vid}.webm"; tmp = out + ".part.mp4"; t0 = time.time()
-    cmd = ["nice", "-n", "8", "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
-           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", "slow", "-crf", "14", "-pix_fmt", "yuv420p",
+    url = SRC_URL.get(vid) or f"https://archive.org/download/youtube-{vid}/{vid}.webm"; tmp = out + ".part.mp4"; t0 = time.time()
+    cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
+           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
     for k in range(3):
         if subprocess.run(cmd).returncode == 0: break
@@ -87,7 +103,7 @@ def locate_v(vid, T, cx=None):
         a, b, c_ = float(w[0]), float(w[1]), float(w[2])
         if a <= T < b and (cx is None or abs(c_ - cx) < 1e-3):
             p = vname(vid, a, b, c_)
-            if os.path.exists(p): return p, (T - a) / 1.001, (b - T) / 1.001 - 0.12
+            if os.path.exists(p): return p, (T - a) / rate(vid), (b - T) / rate(vid) - 0.12
     return None
 
 def locate(vid, T):
@@ -95,13 +111,14 @@ def locate(vid, T):
     for a, b in windows_for(vid):
         if a <= T < b:
             p = name(vid, a, b)
-            if os.path.exists(p): return p, (T - a) / 1.001
+            if os.path.exists(p): return p, (T - a) / rate(vid)
     return None
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     if sys.argv[1:2] == ["--short"]:
         for vid, ws in VWIN.items():
+            if sys.argv[2:] and vid not in sys.argv[2:]: continue   # python mezzanine.py --short [ID ...]
             for w in ws: build_v(vid, float(w[0]), float(w[1]), float(w[2]))
         print("FIN", flush=True); sys.exit(0)
     ids = sys.argv[1:] or list(WINDOWS)

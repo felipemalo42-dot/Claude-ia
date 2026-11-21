@@ -30,8 +30,9 @@ def player_order(mp4):
     return sum(1 for a, b in zip(order, order[1:]) if b < a), len(ts), (len(set(durs.tolist())) if len(durs) else 0)
 
 def main(vid):
-    mod = importlib.import_module(f"videos.{vid}"); V = mod.VIDEO; R = sys.modules[mod.__name__.replace(vid, vid + "_render")] if False else None
-    R = importlib.import_module(f"videos.{vid}_render")
+    mod = importlib.import_module(f"videos.{vid}"); V = mod.VIDEO
+    R = sys.modules[V["overlay"].__module__]          # el renderizador del vídeo (gx_render, gs_render, dc_render o ds_render)
+    longv = hasattr(R, "x_window") and V.get("size", (1920, 1080))[0] > V.get("size", (1920, 1080))[1]
     out = os.path.join(build.ROOT, V["folder"]); res = os.path.join(out, V["res_dir"]); mp4 = os.path.join(out, V["file"] + ".mp4")
     rep_dir = os.path.join(out, "PROYECTO_DE_EDICION") if vid == "gx" else res
     Wv, Hv = V.get("size", (1920, 1080))
@@ -50,16 +51,16 @@ def main(vid):
     ctx = build.Ctx(V, tl, Wv, Hv); R._T.clear(); T = R.table(ctx)
     bad = R.validate(ctx, verbose=False)
     # zona de imagen sin rótulos ni subtítulos
-    crop = "crop=iw:ih*0.62:0:ih*0.16" if vid == "gx" else "crop=iw:ih*0.45:0:ih*0.17"
+    crop = "crop=iw:ih*0.62:0:ih*0.16" if longv else "crop=iw:ih*0.45:0:ih*0.17"
     dout, nout = diffs(mp4, crop=crop)
     shots = [s for s in T["shots"] if not s["src"].startswith("g:")]
     froz = 0; rep = 0; checked = 0; worst = []; src_rep = 0
     for s in shots:
         f0 = int(np.ceil(s["t0"] * 30)) + 2; f1 = int(np.floor(s["t1"] * 30)) - 2
         if f1 - f0 < 6: continue
-        if vid == "gx":
+        if longv:
             path, loc, avail, vert = R.x_window(s)
-            if vert: continue          # tarjeta vertical: imagen pequeña sobre fondo desenfocado
+            if vert or s.get("card"): continue   # tarjeta: imagen pequeña sobre fondo desenfocado
             if s.get("zoom"): continue  # el zoom animado cambia la imagen aunque el original esté quieto
         else:
             path, loc, avail, kind = R.window(s)
@@ -94,8 +95,8 @@ def main(vid):
     offs = [s["t0"] - s["word_t"] for s in T["shots"] if s.get("word_t")]
     L = [f"# Control de calidad — {V['folder']}/{V['file']}.mp4", "",
          "| Medida | Resultado | Objetivo |", "|---|---|---|",
-         f"| Duración | {dur:.1f} s ({int(dur // 60)}:{int(dur % 60):02d}) | {'≥ 10 min' if vid == 'gx' else '35-60 s'} |",
-         f"| Vídeo | {vs['codec_name'].upper()} {vs.get('profile', '')} · {vs['width']}×{vs['height']} · {vs['pix_fmt']} | {'1920×1080' if vid == 'gx' else '1080×1920'} |",
+         f"| Duración | {dur:.1f} s ({int(dur // 60)}:{int(dur % 60):02d}) | {'≥ 10 min' if longv else '35-60 s'} |",
+         f"| Vídeo | {vs['codec_name'].upper()} {vs.get('profile', '')} · {vs['width']}×{vs['height']} · {vs['pix_fmt']} | {'1920×1080' if longv else '1080×1920'} |",
          f"| Fotogramas por segundo | {vs['r_frame_rate']} (media {vs['avg_frame_rate']}) · {ndur} duración(es) de fotograma distinta(s) | 30 constantes |",
          f"| Fotogramas | {nfr} (esperados por la duración de la pista de vídeo: {round(float(vs.get('duration') or dur) * 30)}) | iguales |",
          f"| Tasa de bits | {int(fmt['bit_rate']) / 1e6:.1f} Mbit/s · {int(fmt['size']) / 1e6:.0f} MB | H.264 de alta calidad |",
