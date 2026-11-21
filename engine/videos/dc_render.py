@@ -66,6 +66,7 @@ def x_window(sh):
         if a <= T < b:
             path = MZ.name(vid, a, b); loc = (T - a) / rt; avail = (b - T) / rt - 0.12
             if os.path.exists(path):
+                avail = min(avail, file_dur(path) - loc - 0.12)
                 cs = mez_cuts(path, vid, a) if (vid in EDITED and not sh.get("nocut")) else []
                 nxt = next((x for x in cs if x > loc + 0.05), None)
                 if nxt is not None: avail = min(avail, nxt - loc - 0.05)
@@ -198,6 +199,13 @@ def table(ctx):
 FIT_MIN = 1.2
 FIT_LOG = []
 
+_DUR = {}
+def file_dur(path):
+    """Duración real del archivo del tramo (por si quedó más corto que la ventana)."""
+    if path not in _DUR:
+        _DUR[path] = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
+    return _DUR[path]
+
 def _segments(vid):
     """Tramos sin cortes de las ventanas extraídas de una fuente, en segundos del original: [(Ta, Tb)]."""
     out = []; rt = MZ.rate(vid)
@@ -205,7 +213,7 @@ def _segments(vid):
         p = MZ.name(vid, a, b)
         if not os.path.exists(p): continue
         cs = sorted(mez_cuts(p, vid, a)) if vid in EDITED else []
-        end = (b - a) / rt - 0.12; edges = [0.0] + [c for c in cs if 0.0 < c < end] + [end]
+        end = min((b - a) / rt, file_dur(p)) - 0.12; edges = [0.0] + [c for c in cs if 0.0 < c < end] + [end]
         for x0, x1 in zip(edges, edges[1:]):
             s0 = x0 + (0.10 if x0 > 0 else 0.0); s1 = x1 - 0.06
             if s1 - s0 > 0.35: out.append((a + s0 * rt, a + s1 * rt))

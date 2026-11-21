@@ -48,6 +48,14 @@ for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json"):   # un arch
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 
+def complete(path, expected):
+    """¿El tramo tiene toda su duración? Si la conexión se corta a mitad de descarga, ffmpeg termina «bien» con un
+    archivo más corto: eso no puede pasar por bueno (los planos leerían más allá del final)."""
+    try: d = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path]))
+    except Exception: return False
+    if d < expected - 0.4: print(f"  incompleto: {os.path.basename(path)} dura {d:.2f} s de {expected:.2f}", flush=True); return False
+    return True
+
 def name(vid, a, b): return f"{OUT}/{vid}_{a:07.2f}_{b:07.2f}.mp4"
 
 def build(vid, a, b):
@@ -62,9 +70,9 @@ def build(vid, a, b):
     cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
            "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
-    for k in range(3):
+    for k in range(4):
         r = subprocess.run(cmd)
-        if r.returncode == 0: break
+        if r.returncode == 0 and complete(tmp, (b - a) / rate(vid)): break
         print(f"  reintento {k + 1} de {vid} {a}-{b}", flush=True); time.sleep(5 * (k + 1))
     else: raise RuntimeError(f"no se pudo extraer {vid} {a}-{b}")
     os.replace(tmp, out); print(f"  {os.path.basename(out)} · {time.time() - t0:.0f} s", flush=True)
@@ -92,9 +100,9 @@ def build_v(vid, a, b, cx):
     cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
            "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
-    for k in range(3):
-        if subprocess.run(cmd).returncode == 0: break
-        time.sleep(5 * (k + 1))
+    for k in range(4):
+        if subprocess.run(cmd).returncode == 0 and complete(tmp, (b - a) / rate(vid)): break
+        print(f"  reintento {k + 1} de {vid} {a}-{b} (vertical)", flush=True); time.sleep(5 * (k + 1))
     else: raise RuntimeError(f"no se pudo extraer {vid} {a}-{b} (vertical)")
     os.replace(tmp, out); print(f"  {os.path.basename(out)} · {time.time() - t0:.0f} s", flush=True); return out
 
