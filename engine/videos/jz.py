@@ -91,6 +91,10 @@ beat("El método es llegar en lancha hasta la base aérea, robar un blindado del
      shots=[S(None, X(JET, 70.0), z=(1.0, 1.05)), S("saltar la valla", X(JET, 84.0), z=(1.0, 1.05)),
             S("cinco estrellas", X(JET, 108.0), z=(1.0, 1.06), big="5 ESTRELLAS DE GOLPE")],
      sfx=[("w:cinco estrellas", "alarm", 0.3)])
+beat("Ya en la base, encender el avión lleva su tiempo, y mientras tanto te disparan sin parar. Pero cuando por fin despegas, la guía te felicita: ya eres piloto… aunque sea por poco tiempo.",
+     mus=("tension", 2), id="a055", cert="GUIA",
+     shots=[S(None, X(JET, 164.0), z=(1.0, 1.06))],
+     sfx=[("w:despegas", "whoosh", 0.4), ("w:poco tiempo", "impact", 0.35)])
 beat("Y la propia guía avisa de cómo termina. Recomienda llevar objetos de curación y guardar la partida, porque tendrás unos momentos de libertad antes de que te derribe, en sus palabras, «la policía de la diversión». Lo recomienda incluso desde el título: puedes robar un caza… aunque probablemente no deberías.",
      mus=("tension", 2), id="a06", cert="GUIA",
      shots=[S(None, X(JET, 140.0), z=(1.0, 1.05)), S("antes de que", X(JET, 156.0), z=(1.0, 1.06)),
@@ -105,7 +109,7 @@ beat("Y la cuarta prueba es la más curiosa. En China circula un documento filtr
      mus=("noir", 2), id="a08",
      shots=[S(None, X(TAN, 222.0), z=(1.0, 1.05), prueba="PRUEBA D", lado="acusacion"), S("con reglas", X(TAN, 112.0), z=(1.0, 1.05))],
      sfx=[("w:cuarta prueba", "stamp", 0.5), ("w:con reglas", "paper", 0.4)])
-beat("Según ese documento, en pantalla no se podría robar autos, ni atacar a la policía o a los peatones. Ni siquiera mostrar sangre roja.",
+beat("Según ese documento, en pantalla no se podría robar autos, ni atacar a la policía o a los peatones. Ni siquiera mostrar sangre roja. En un foro, un jugador lo resumió así: con esas reglas, GTA 6 sería un simulador de paisajes.",
      mus=("noir", 2), id="a09",
      shots=[S(None, "g:list", title="DOCUMENTO FILTRADO", subt="Reglas para transmitir GTA 6 en China · sin confirmar", cert="FILTRADO",
               items=["Nada de robar autos", "Nada de atacar a la policía", "Nada de atacar a los peatones", "Nada de sangre roja"],
@@ -128,7 +132,7 @@ beat("Hay que reparar la pared del dormitorio y elegir el color de la pintura, c
             S("clavar las tejas", X(CAS, 66.5), z=(1.0, 1.05)), S("arreglar la baranda", X(CAS, 94.0), z=(1.0, 1.05)),
             S("cambiar los escalones", X(CAS, 105.0), z=(1.0, 1.05))],
      sfx=[("w:pared", "brush", 0.3), ("w:tejas", "hit", 0.25), ("w:baranda", "hit", 0.25)])
-beat("Además, en el dormitorio puedes dormir para que pase el tiempo y guardar tu dinero escondido. Y la recompensa por arreglar la casa no es dinero: según la guía, hace feliz a Lucía y mejora la relación entre los dos, con un corazón en pantalla.",
+beat("Además, en el dormitorio puedes dormir para que pase el tiempo y guardar tu dinero escondido. Y la recompensa por arreglar la casa no es dinero: según la guía, hace feliz a Lucía y mejora la relación entre los dos, con un corazón en pantalla. Eso sí, hay que hacerlo antes de ir a buscar a Lucía: en cuanto sales, las reparaciones pendientes se bloquean.",
      mus=("tropical", 1), id="d03", cert="GUIA",
      shots=[S(None, X(CAS, 112.0), z=(1.0, 1.05)), S("la recompensa", "g:list", title="LA RECOMPENSA", subt="Según la guía de IGN",
               items=["No es dinero", "Lucía, más feliz", "Mejora la relación (corazón en pantalla)"], cues=["no es dinero", "feliz a Lucía", "un corazón"])],
@@ -147,7 +151,11 @@ beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el
 beat("Dodo Rising, un grupo que defiende a los animales, protesta contra un santuario de chimpancés cerca del aeropuerto, y te pide ayuda para salvarlos. Es solo el primero de varios encargos con ese grupo.",
      mus=("tropical", 2), id="d06", cert="GUIA",
      shots=[S(None, X(MIS, 270.0), z=(1.0, 1.05)), S("y te pide", X(MIS, 282.0), z=(1.0, 1.05))])
-beat("Y por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos. Si los lees, aparece un contacto nuevo en tu teléfono: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
+beat("Otra misión empieza de forma inquietante. Navegando por los pantanos, oyes unos aullidos espantosos. Si sigues el olor de un ciervo muerto, llegas a un tótem escondido entre la maleza… y te desmayas. Lo último que ves es un par de piernas.",
+     mus=("noir", 1), id="d065", cert="GUIA",
+     shots=[S(None, X(MIS, 62.5), z=(1.0, 1.05)), S("Si sigues el olor", X(MIS, 78.0), z=(1.0, 1.05)), S("llegas a un tótem", X(MIS, 88.0), z=(1.0, 1.08))],
+     sfx=[("w:aullidos", "riser", 0.3), ("w:te desmayas", "impact", 0.35)])
+beat("La historia podría acabar ahí, pero por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos. Si los lees, aparece un contacto nuevo en tu teléfono: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
      mus=("tropical", 1), id="d07", cert="GUIA",
      shots=[S(None, X(MIS, 101.0), z=(1.0, 1.06)), S("una especie de Pie", X(MIS, 107.0), z=(1.0, 1.1)), S("Si los lees", X(MIS, 112.0), z=(1.0, 1.05))])
 beat("Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo. Según la guía, beber de ella te mejora todas las estadísticas al instante. Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.",
@@ -159,13 +167,17 @@ beat("¡Objeción!, interrumpe la acusación. No todas esas misiones son tan ino
      mus=("noir", 2), id="d09",
      shots=[S(None, "g:cargo", kicker="LA ACUSACIÓN INTERRUMPE", txt="¡OBJECIÓN!", lado="acusacion")],
      sfx=[(0.05, "stamp", 0.6), ("w:¡Objeción!", "impact", 0.4)])
-beat("Un influencer de Ocean Beach te mete en las campañas de su propia criptomoneda. Y una vieja amiga de Lucía la invita a hacer entregas para un negocio muy raro, que hasta la guía describe como una mala idea.",
+beat("Un influencer de Ocean Beach te mete en las campañas de su propia criptomoneda, y de paso te enseña los desafíos de acrobacias del mundo abierto. Y una vieja amiga de Lucía la invita a hacer entregas para un negocio muy raro, que hasta la guía describe como una mala idea.",
      mus=("noir", 1), id="d10", cert="GUIA",
      shots=[S(None, X(MIS, 345.0), z=(1.0, 1.05)), S("su propia criptomoneda", X(MIS, 372.0), z=(1.0, 1.05)),
             S("Y una vieja amiga", X(MIS, 404.0), z=(1.0, 1.05)), S("un negocio", X(MIS, 432.0), z=(1.0, 1.05))])
 beat("Objeción aceptada: en GTA 6, hasta las buenas acciones pueden tener trampa. Pero también hay historias más humanas, como la de Yago, un aspirante a piloto de carreras callejeras que, según la guía, esconde mucho más de lo que parece.",
      mus=("synthwave", 1), id="d11", cert="GUIA",
      shots=[S(None, X(MIS, 300.0), z=(1.0, 1.05)), S("como la de Yago", X(MIS, 318.0), z=(1.0, 1.05)), S("según la guía", X(MIS, 330.0), z=(1.0, 1.05))])
+beat("Y hay misterios que la guía ni siquiera resuelve. Si ves un auto abandonado junto a un motel, con un rastro de ropa que se mete en el bosque, ve a mirar… si te atreves.",
+     mus=("noir", 1), id="d115", cert="GUIA",
+     shots=[S(None, X(MIS, 474.5), z=(1.0, 1.05)), S("un rastro de ropa", X(MIS, 480.0), z=(1.0, 1.06))],
+     sfx=[("w:si te atreves", "riser", 0.3)])
 
 # ================================================================ SESIÓN 3 · LOS TESTIGOS
 beat("Llamamos a los testigos. El primero es la propia Rockstar.",
