@@ -14,9 +14,9 @@ def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 HOS, CAS, JET, TAN = "vpHospital1", "3UiRmXUIE9k", "4HCd052lpnA", "-UuHA1h-Cf8"
 
 beat("Si te matan en GTA 6, te cobran el hospital.", pre=0.15, exag=0.7, id="s1",
-     shots=[S(None, f"c:{HOS}@1.0", top="PARTIDA REAL · VIDEO PUMP")], sfx=[(0.0, "riser", 0.3), ("w:hospital", "coin", 0.4)])
+     shots=[S(None, f"c:{HOS}@6.6", top="PARTIDA REAL · VIDEO PUMP")], sfx=[(0.0, "riser", 0.3), ("w:hospital", "coin", 0.4)])
 beat("Este jugador recibe un disparo, muere, y despierta junto a la carretera con un cargo de mil ciento noventa y un dólares.", exag=0.7, id="s2",
-     shots=[S(None, f"c:{HOS}@4.5"), S("despierta", f"c:{HOS}@9.0"), S("con un cargo", f"c:{HOS}@14.0", crop=(0.55, 0.05, 1.0, 0.6), top="EL CARGO, EN LA ESQUINA")],
+     shots=[S(None, f"c:{HOS}@0.0"), S("muere", f"c:{HOS}@2.5"), S("despierta", f"c:{HOS}@10.4"), S("con un cargo", f"c:{HOS}@13.45", crop=(0.55, 0.05, 1.0, 0.6), top="EL CARGO, EN LA ESQUINA")],
      sfx=[("w:muere", "impact", 0.35), ("w:mil ciento", "coin", 0.45)])
 beat("Pero si sacas la basura, el juego te premia: la barra de Focus sube un tres por ciento.", exag=0.7, id="s3",
      shots=[S(None, f"v:{CAS}@79.0@0.5", prueba="+3 % FOCUS", lado="defensa"), S("la barra", f"v:{CAS}@86.0@0.5")],
