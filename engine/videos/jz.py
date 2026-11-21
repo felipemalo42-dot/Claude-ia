@@ -52,7 +52,7 @@ beat("Antes de empezar, estas son las reglas del juicio. Todo lo que vas a ver s
             S("Todo lo que", "g:creators", title="LAS PRUEBAS", subt="Partidas reales publicadas tras el lanzamiento (19/11/2026)",
               rows=[("GameV", "Un tanque contra seis estrellas"), ("IGN", "Guías: casa, misiones, caza, fuente"), ("Video Pump", "La factura del hospital")],
               foot="Créditos de cada plano en pantalla y en la descripción"),
-            S("Lo que dijeron", X(MIS, 104.5), z=(1.0, 1.05))],
+            S("Lo que dijeron", X(TAN, 125.0), z=(1.0, 1.05))],
      sfx=[(0.0, "logo", 0.5), ("w:Todo lo que", "paper", 0.4)])
 beat("Y no hay spoilers de la historia: solo cosas que puedes hacer por tu cuenta, cuando el juego te deja libre. Se abre la sesión.",
      mus=("noir", 1), id="j05",
@@ -80,7 +80,10 @@ beat("Lo que viene después es una persecución de seis estrellas: puentes, auto
             S("puentes", X(TAN, 172.0), z=(1.0, 1.06)),
             S("helicópteros", X(TAN, 203.0), z=(1.0, 1.06)),
             S("una pista", X(TAN, 287.0), z=(1.0, 1.05)),
-            S("envuelto en llamas", X(TAN, 299.0), z=(1.0, 1.08))],
+            S("envuelto en llamas", X(TAN, 305.5), z=(1.0, 1.08)),
+            S("Y nada de esto", X(TAN, 214.0), z=(1.0, 1.05)),
+            S("Al final, el tanque", X(TAN, 240.5), z=(1.0, 1.06)),
+            S("pantalla de muerte", X(TAN, 246.6), z=(1.0, 1.03))],
      sfx=[("w:helicópteros", "whoosh", 0.35), ("w:llamas", "impact", 0.45)])
 beat("Segunda prueba. Una guía en vídeo explica, paso a paso, cómo robar un avión de combate en el primer capítulo del juego.",
      mus=("tension", 2), id="a04", cert="GUIA",
@@ -93,11 +96,11 @@ beat("El método es llegar en lancha hasta la base aérea, robar un blindado del
      sfx=[("w:cinco estrellas", "alarm", 0.3)])
 beat("Ya en la base, encender el avión lleva su tiempo, y mientras tanto te disparan sin parar. Pero cuando por fin despegas, la guía te felicita: ya eres piloto… aunque sea por poco tiempo.",
      mus=("tension", 2), id="a055", cert="GUIA",
-     shots=[S(None, X(JET, 164.0), z=(1.0, 1.06))],
+     shots=[S(None, X(JET, 162.3), z=(1.0, 1.06))],   # de noche: el caza en la pista, el despegue y la explosión, sin cortes
      sfx=[("w:despegas", "whoosh", 0.4), ("w:poco tiempo", "impact", 0.35)])
 beat("Y la propia guía avisa de cómo termina. Recomienda llevar objetos de curación y guardar la partida, porque tendrás unos momentos de libertad antes de que te derribe, en sus palabras, «la policía de la diversión». Lo recomienda incluso desde el título: puedes robar un caza… aunque probablemente no deberías.",
      mus=("tension", 2), id="a06", cert="GUIA",
-     shots=[S(None, X(JET, 140.0), z=(1.0, 1.05)), S("antes de que", X(JET, 156.0), z=(1.0, 1.06)),
+     shots=[S(None, X(JET, 140.0), z=(1.0, 1.05)), S("antes de que", X(JET, 148.0), z=(1.0, 1.06)),
             S("puedes robar", "g:quote", q="Puedes robar un avión de combate en el capítulo 1 (aunque probablemente no deberías)", who="TÍTULO DE LA GUÍA DE IGN · 20/11/2026", tag="GUIA")],
      sfx=[("w:puedes robar", "paper", 0.4)])
 beat("Tercera prueba. La declaración de la sheriff de Miami-Dade, recogida por PC Gamer: «Grand Theft Auto es una saga de videojuegos construida alrededor de la actividad criminal».",
@@ -123,8 +126,8 @@ beat("La pregunta de la acusación es simple: si le quitas los crímenes a GTA 6
 # ================================================================ SESIÓN 2 · LA DEFENSA
 beat("Prueba uno: la casa. La primera casa de Jason se la alquila a Brian, y es un desastre. Otra guía explica cómo arreglarla.",
      chapter=(2, "LA DEFENSA"), mus=("tropical", 1), pre=1.4, id="d01", cert="GUIA",
-     shots=[S(None, X(CAS, 37.0), z=(1.0, 1.05), prueba="PRUEBA 1", lado="defensa"), S("hecha un desastre", X(CAS, 61.0), z=(1.0, 1.05)),
-            S("Una guía", X(CAS, 63.5), z=(1.0, 1.05))],
+     shots=[S(None, X(CAS, 37.0), z=(1.0, 1.05), prueba="PRUEBA 1", lado="defensa"), S("es un desastre", X(CAS, 61.0), z=(1.0, 1.05)),
+            S("Otra guía", X(CAS, 63.5), z=(1.0, 1.05))],
      sfx=[("w:Prueba uno", "stamp", 0.5)])
 beat("Hay que reparar la pared del dormitorio y elegir el color de la pintura, clavar las tejas sueltas del techo, arreglar la baranda del gimnasio de la terraza y cambiar los escalones podridos de la entrada.",
      mus=("tropical", 1), id="d02", cert="GUIA",
@@ -157,7 +160,9 @@ beat("Otra misión empieza de forma inquietante. Navegando por los pantanos, oye
      sfx=[("w:aullidos", "riser", 0.3), ("w:te desmayas", "impact", 0.35)])
 beat("La historia podría acabar ahí, pero por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos. Si los lees, aparece un contacto nuevo en tu teléfono: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
      mus=("tropical", 1), id="d07", cert="GUIA",
-     shots=[S(None, X(MIS, 101.0), z=(1.0, 1.06)), S("una especie de Pie", X(MIS, 107.0), z=(1.0, 1.1)), S("Si los lees", X(MIS, 112.0), z=(1.0, 1.05))])
+     shots=[S(None, X(MIS, 100.0), z=(1.0, 1.05)), S("por la zona de Key Lento", X(MIS, 104.0), z=(1.0, 1.05)),
+            S("hay carteles", X(MIS, 107.6), z=(1.0, 1.1)), S("aparece un contacto", X(MIS, 115.5), z=(1.0, 1.05)),
+            S("Hay hasta un movimiento", X(MIS, 204.0), z=(1.0, 1.05)), S("y el autor de la guía", X(MIS, 216.0), z=(1.0, 1.05))])
 beat("Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo. Según la guía, beber de ella te mejora todas las estadísticas al instante. Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.",
      mus=("tropical", 1), id="d08", cert="GUIA",
      shots=[S(None, X(FUE, 1.0), prueba="PRUEBA 4", lado="defensa", vtitle="LA FUENTE DE LA ETERNA JUVENTUD"),
@@ -198,19 +203,22 @@ beat("Segundo testigo: Rob Nelson, uno de los responsables de Rockstar North. En
      sfx=[(0.1, "paper", 0.4)])
 beat("Su respuesta fue: «Yo diría que sí». Y añadió que el juego ofrece formas de fomentarla, para quien quiera usarlas. Según la prensa que recogió la entrevista, eso no significa que el juego castigue a quien prefiere el caos.",
      mus=("noir", 1), id="t05", cert="PRENSA",
-     shots=[S(None, X(CAS, 99.0), z=(1.0, 1.05)), S("para quien quiera", X(MIS, 420.0), z=(1.0, 1.05))])
+     shots=[S("para quien quiera", X(MIS, 420.0), z=(1.0, 1.05))])   # hasta ahí sigue en pantalla la tarjeta del testigo
 beat("Y el tercer testigo es el propio juego. Este jugador recibe un disparo y muere.",
      mus=("tension", 1), id="t06", cert="PARTIDA",
-     shots=[S(None, X(HOS, 0.5), card=True, prueba="TESTIGO 3", lado="testigo")],
+     shots=[S(None, "g:cargo", kicker="TERCER TESTIGO", txt="EL PROPIO JUEGO", lado="testigo"),
+            S("Este jugador", X(HOS, 0.0), card=True, prueba="TESTIGO 3", lado="testigo")],
      sfx=[("w:muere", "impact", 0.4)])
 beat("Cuando despierta, está junto a la carretera, y en la esquina de la pantalla aparece el cargo, justo debajo del aviso de que se actualizó el mapa: mil ciento noventa y un dólares de hospital.",
      mus=("tension", 1), id="t07", cert="PARTIDA",
-     shots=[S(None, X(HOS, 7.5), card=True, card_zoom=(0.84, 0.17, 1.0, 0.47), zoom_at=2.6)],
+     shots=[S(None, X(HOS, 6.2), card=True),
+            S("aparece el cargo", X(HOS, 13.45), card=True, card_zoom=(0.84, 0.17, 1.0, 0.47), zoom_at=0.3),
+            S("mil ciento", "g:cover", kicker="LA FACTURA DEL HOSPITAL", lines=["1.191", "DÓLARES"], sub="Partida real · Video Pump")],
      sfx=[("w:mil ciento", "coin", 0.45)])
 beat("En GTA 6, hasta morir sale caro. Y hay otra consecuencia que ya te explicamos en este canal: el perfil criminal, que te va poniendo una etiqueta según cómo juegas, de Profesional hasta Irredimible. Y si llegas a Irredimible, ya no hay vuelta atrás.",
      mus=("tension", 1), id="t08",
-     shots=[S(None, X(TAN, 246.5), z=(1.0, 1.04)),
-            S("el perfil criminal", "g:list", title="EL PERFIL CRIMINAL", subt="Ya lo explicamos en «GTA 6 te está vigilando»",
+     shots=[S(None, X(TAN, 224.0), z=(1.0, 1.04)),
+            S("el perfil criminal", "g:list", title="EL PERFIL CRIMINAL", subt="Lo explicamos en el canal: «Qué pasa al llegar a 6 estrellas»",
               items=["Profesional", "Curtido", "Violento", "Psicópata", ("Irredimible", R.RED)],
               cues=["el perfil", "una etiqueta", "según cómo", "de Profesional", "Irredimible"])],
      sfx=[("w:Irredimible", "glitch", 0.4)])
@@ -218,13 +226,13 @@ beat("En GTA 6, hasta morir sale caro. Y hay otra consecuencia que ya te explica
 # ================================================================ SESIÓN 4 · ALEGATOS FINALES
 beat("Alegato final de la acusación: GTA 6 te deja robar un tanque y un avión de combate, y aguantar seis estrellas en una persecución. Sigue llamándose Grand Theft Auto, que en inglés es el nombre del delito de robar vehículos.",
      chapter=(4, "ALEGATOS FINALES"), mus=("tension", 2), pre=1.4, id="f01", cert="PARTIDA",
-     shots=[S(None, X(TAN, 177.0), z=(1.0, 1.06)), S("un avión de combate", X(JET, 160.0), z=(1.0, 1.06)),
+     shots=[S(None, X(TAN, 177.0), z=(1.0, 1.06)), S("un avión de combate", X(JET, 155.8), z=(1.0, 1.06)),
             S("Sigue llamándose", X(TAN, 309.0), z=(1.0, 1.05))],
      sfx=[(0.0, "stamp", 0.45)])
 beat("Alegato final de la defensa: GTA 6 te premia por arreglar la casa, por cuidar de tu pareja y hasta por sacar la basura. Y casi nada de lo que has visto es obligatorio. La relación con Lucía, el Focus de la basura y las estadísticas de la fuente se ganan sin disparar ni una bala.",
      mus=("tropical", 1), id="f02", cert="GUIA",
-     shots=[S(None, X(CAS, 72.0), z=(1.0, 1.05)), S("por sacar la basura", X(CAS, 87.0), z=(1.0, 1.05)),
-            S("Y casi nada", X(MIS, 178.0), z=(1.0, 1.05))],
+     shots=[S(None, X(CAS, 28.3), z=(1.0, 1.05)), S("Y casi nada", X(MIS, 178.0), z=(1.0, 1.05)),
+            S("se ganan sin disparar", "g:cover", kicker="ALEGATO DE LA DEFENSA", lines=["SIN DISPARAR", "NI UNA BALA"])],
      sfx=[(0.0, "stamp", 0.45)])
 beat("Antes del veredicto, repasemos las pruebas. La acusación presentó un tanque, un avión de combate, a una sheriff y un documento filtrado. La defensa, una casa arreglada, unas latas en el contenedor, varias misiones secundarias y una fuente.",
      mus=("noir", 1), id="f025",
@@ -234,10 +242,14 @@ beat("Antes del veredicto, repasemos las pruebas. La acusación presentó un tan
      sfx=[("w:un tanque", "pop", 0.3), ("w:una casa", "pop", 0.3)])
 beat("Nuestra conclusión no es un veredicto. Que en GTA puedas elegir entre el caos y la vida tranquila no es nuevo: en GTA 5 también podías jugar al golf, al tenis o hacer yoga.",
      mus=("noir", 1), id="f03",
-     shots=[S(None, X(MIS, 190.0), z=(1.0, 1.05)), S("no es nuevo", X(CAS, 101.0), z=(1.0, 1.05))])
+     shots=[S(None, X(MIS, 190.0), z=(1.0, 1.05)),
+            S("no es nuevo", "g:list", title="EN GTA 5 YA PODÍAS", subt="Elegir la vida tranquila no es nuevo",
+              items=["Jugar al golf", "Jugar al tenis", "Hacer yoga"], cues=["golf", "tenis", "yoga"])])
 beat("Lo nuevo es que ahora el juego toma nota: de tu relación con Lucía, de tu perfil criminal, y hasta de lo que haces con una lata vacía.",
      mus=("noir", 1), id="f04",
-     shots=[S(None, X(CAS, 82.0), z=(1.0, 1.06)), S("de tu perfil", X(TAN, 32.0), z=(1.0, 1.05)), S("una lata vacía", X(CAS, 90.5), z=(1.0, 1.08))],
+     shots=[S(None, X(TAN, 32.0), z=(1.0, 1.05)),
+            S("de tu relación", "g:list", title="AHORA EL JUEGO TOMA NOTA", subt="Lo nuevo de GTA 6",
+              items=["Tu relación con Lucía", "Tu perfil criminal", "Lo que haces con una lata vacía"], cues=["relación con Lucía", "perfil criminal", "lata vacía"])],
      sfx=[("w:lata vacía", "pop", 0.4)])
 
 # ================================================================ VEREDICTO Y CIERRE

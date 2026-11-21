@@ -123,7 +123,7 @@ def footage(c, sh, tau, d, ctx, slot="main"):
             u0, v0, u1, v1 = sh["card_zoom"]; p = ease_out_back(prog(tau, sh.get("zoom_at", 1.0), sh.get("zoom_at", 1.0) + 0.4))
             if p > 0:
                 iw, ih = img.width(), img.height(); zw = 560; zh = zw * (v1 - v0) * ih / ((u1 - u0) * iw)
-                zx, zy = W - zw - 70, 120
+                zx, zy = (70 if (u0 + u1) / 2 > 0.5 else W - zw - 70), 120   # en el lado contrario a la zona ampliada, para que se vean las dos
                 c.save(); c.translate(zx + zw / 2, zy + zh / 2); c.scale(p, p); c.translate(-(zx + zw / 2), -(zy + zh / 2))
                 rect(c, zx + 8, zy + 10, zw, zh, "#000000", 0.6, r=14, blur=12)
                 c.save(); c.clipRRect(skia.RRect.MakeRectXY(skia.Rect.MakeXYWH(zx, zy, zw, zh), 14, 14), True)
@@ -184,8 +184,95 @@ def table(ctx):
             pT, pt0 = lastx[vid]; T = pT + (s["t0"] - pt0) * MZ.rate(vid); s["src"] = f"x:{vid}@{T:.3f}"
         lastx[vid] = (T, s["t0"])
     for i, s in enumerate(shots): s["t1"] = shots[i + 1]["t0"] if i + 1 < len(shots) else tl["total"]
+    shots = fit(shots, tl["total"])
     _T.update(shots=shots, starts=[s["t0"] for s in shots], beats=beats, chapters=chapters, bstarts=[x["bd"]["start"] for x in beats])
     return _T
+
+# ================================================================ ajuste automático de los planos de gameplay
+# Los vídeos de origen están montados (cortes) y la narración marca cuánto dura cada plano. Si un plano no cabe en el
+# material continuo que hay desde su segundo de origen, o pisa material que ya salió antes, se ajusta así:
+#  1) se mantiene el momento anclado mientras haya material continuo y sin usar (si hay al menos FIT_MIN s);
+#  2) el resto continúa en el tramo libre y sin cortes más cercano de la MISMA fuente (primero hacia delante, que suele
+#     ser la misma escena o la siguiente de la guía), sin repetir nunca material.
+# Los rótulos del plano (etiqueta de prueba, frase original, texto grande, ampliación) solo van en el primer trozo.
+FIT_MIN = 1.2
+FIT_LOG = []
+
+def _segments(vid):
+    """Tramos sin cortes de las ventanas extraídas de una fuente, en segundos del original: [(Ta, Tb)]."""
+    out = []; rt = MZ.rate(vid)
+    for a, b in MZ.windows_for(vid):
+        p = MZ.name(vid, a, b)
+        if not os.path.exists(p): continue
+        cs = sorted(mez_cuts(p, vid, a)) if vid in EDITED else []
+        end = (b - a) / rt - 0.12; edges = [0.0] + [c for c in cs if 0.0 < c < end] + [end]
+        for x0, x1 in zip(edges, edges[1:]):
+            s0 = x0 + (0.10 if x0 > 0 else 0.0); s1 = x1 - 0.06
+            if s1 - s0 > 0.35: out.append((a + s0 * rt, a + s1 * rt))
+    return out
+
+def _free(segs, used):
+    """Partes de los tramos que no se han usado todavía (margen de 0,06 s)."""
+    out = []
+    for a, b in segs:
+        pieces = [(a, b)]
+        for u0, u1 in used:
+            nxt = []
+            for x0, x1 in pieces:
+                if u1 + 0.06 <= x0 or u0 - 0.06 >= x1: nxt.append((x0, x1)); continue
+                if u0 - 0.06 > x0: nxt.append((x0, u0 - 0.06))
+                if u1 + 0.06 < x1: nxt.append((u1 + 0.06, x1))
+            pieces = nxt
+        out += [(x0, x1) for x0, x1 in pieces if x1 - x0 > 0.35]
+    return sorted(out)
+
+def _place(free, T0, needT, minT):
+    """Mejor inicio para needT segundos de material: (inicio, longitud disponible) o None.
+    Coste: distancia al segundo pedido (hacia atrás pesa más) + lo que falte para cubrirlo todo."""
+    best = None
+    for a, b in free:
+        if a <= T0 < b and b - T0 >= minT: st = T0; cost = 0.0
+        elif a >= T0: st = a; cost = a - T0
+        else: st = max(a, b - needT); cost = 2.5 * (T0 - st) + 6.0   # volver atrás se nota: solo si no hay nada cerca hacia delante
+        ln = b - st
+        if ln < minT: continue
+        if ln < needT: cost += 0.5 * (needT - ln)
+        if best is None or cost < best[2]: best = (st, ln, cost)
+    return best and best[:2]
+
+def fit(shots, total):
+    FIT_LOG.clear(); used = {}; out = []; segs = {}
+    for i, s in enumerate(shots):
+        if not s["src"].startswith("x:") or s.get("cont") or s.get("nofit"):
+            out.append(s)
+            if s["src"].startswith("x:"):
+                vid, T = parse_x(s["src"]); used.setdefault(vid, []).append((T, T + (s["t1"] - s["t0"]) * MZ.rate(vid)))
+            continue
+        vid, T0 = parse_x(s["src"]); rt = MZ.rate(vid)
+        if vid not in segs: segs[vid] = _segments(vid)
+        nx = shots[i + 1] if i + 1 < len(shots) else None
+        trd = (nx.get("tr") or (0, 0.13 if nx["src"].startswith("g:") else 0.0))[1] if nx else 0.0
+        t, left = s["t0"], (s["t1"] - s["t0"]) + trd + 0.05; first = True; T = T0; pieces = []
+        while left > 0.02:
+            fr = _free(segs[vid], used.get(vid, [])); minT = min(FIT_MIN, left) * rt
+            here = next(((a, b) for a, b in fr if a <= T < b and b - T >= minT), None)
+            pl = (T, here[1] - T) if (first and here) else _place(fr, T, left * rt, minT)   # el momento anclado, si se puede
+            if pl is None: raise ValueError(f"no queda material libre de {vid} para el plano de {s['t0']:.2f} s («{s.get('anchor')}»)")
+            st, ln = pl; take = min(left, ln / rt); rem = left - take
+            if 0 < rem < FIT_MIN and take - (FIT_MIN - rem) >= FIT_MIN: take -= FIT_MIN - rem   # que el último trozo no sea un destello
+            d = take - (0.05 + trd if take >= left - 1e-6 else 0.05)
+            ns = {k: v for k, v in s.items() if k != "_xw"}
+            if not first:
+                for k in ("prueba", "lado", "say", "big", "card_zoom", "zoom_at", "cues", "st", "top"): ns.pop(k, None)
+                ns["fit"] = True
+            ns["src"] = f"x:{vid}@{st:.3f}"; ns["t0"] = t
+            pieces.append(ns); used.setdefault(vid, []).append((st, st + take * rt))
+            t += d; left -= d if take < left else left; T = st + take * rt; first = False
+        if len(pieces) > 1 or abs(parse_x(pieces[0]["src"])[1] - T0) > 0.01:
+            FIT_LOG.append((s["t0"], s.get("anchor"), vid, T0, [(round(p["t0"], 2), round(parse_x(p["src"])[1], 2)) for p in pieces]))
+        out += pieces
+    for i, s in enumerate(out): s["t1"] = out[i + 1]["t0"] if i + 1 < len(out) else total
+    return out
 
 def validate(ctx, verbose=True):
     """Cada plano de gameplay debe tener material continuo para toda su duración (más su transición hacia el siguiente)."""

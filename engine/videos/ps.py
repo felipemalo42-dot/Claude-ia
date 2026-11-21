@@ -24,9 +24,9 @@ beat("Primero, te lo dice claro: «No me hables». «Aléjate de mí».", exag=0
 beat("Si lo tocas, la cosa se pone seria: «¿Quién te dio permiso para tocarme?».", exag=0.7, id="s3",
      shots=[S(None, f"v:{TOA}@168.0@0.55", **TOP), S("«¿Quién", f"v:{TOA}@178.0@0.55", say="Who said you could touch me?", **TOP)],
      sfx=[("w:seria", "hit", 0.35)])
-beat("Y a veces, el que ataca es él. Este te exige la bolsa. Si te niegas, empieza la pelea, y los testigos gritan: «¡Que alguien llame a la policía!».", exag=0.7, id="s4",
+beat("Y a veces, el que ataca es él. Este te exige la bolsa. Si te niegas, empieza la pelea, y se oye un grito: «¡Que alguien llame a la policía!».", exag=0.7, id="s4",
      shots=[S(None, f"v:{TOA}@20.0@0.45", **TOP), S("te exige", f"v:{TOA}@24.0@0.45", say="Give bag / Decline", **TOP),
-            S("empieza la pelea", f"v:{TOA}@30.0@0.45", **TOP), S("los testigos", f"v:{TOA}@37.0@0.45", say="Someone call the cops!", **TOP)],
+            S("empieza la pelea", f"v:{TOA}@30.0@0.45", **TOP), S("se oye un grito", f"v:{TOA}@37.0@0.45", say="Someone call the cops!", **TOP)],
      sfx=[("w:pelea", "impact", 0.4)])
 beat("Lo estudiamos como a un animal salvaje en Planeta Vice City: el documental de los humanos de GTA 6.", exag=0.65, id="s5",
      shots=[S(None, "g:sq", lines=["PLANETA", "VICE CITY"], sub="El documental de los humanos de GTA 6", hl=[1])],
