@@ -62,7 +62,8 @@ def x_window(sh):
     """→ (archivo del tramo, inicio dentro del tramo, segundos continuos disponibles, ¿vertical?)"""
     if "_xw" in sh: return sh["_xw"]
     vid, T = parse_x(sh["src"]); rt = MZ.rate(vid)
-    for a, b in MZ.windows_for(vid):
+    # si dos ventanas solapadas contienen T, la que más material deja por delante
+    for a, b in sorted(MZ.windows_for(vid), key=lambda w: -(w[1] - T) if w[0] <= T < w[1] else 1e9):
         if a <= T < b:
             path = MZ.name(vid, a, b); loc = (T - a) / rt; avail = (b - T) / rt - 0.12
             if os.path.exists(path):
@@ -264,7 +265,9 @@ def fit(shots, total):
         while left > 0.02:
             fr = _free(segs[vid], used.get(vid, [])); minT = min(FIT_MIN, left) * rt
             here = next(((a, b) for a, b in fr if a <= T < b and b - T >= minT), None)
-            pl = (T, here[1] - T) if (first and here) else _place(fr, T, left * rt, minT)   # el momento anclado, si se puede
+            # trozo siguiente justo a continuación del anterior (ventanas solapadas): mismo fotograma, sin saltos
+            nxt = None if first else next(((a, b) for a, b in fr if a - 0.08 <= T < a + 1e-6 and b - T >= minT), None)
+            pl = (T, here[1] - T) if (first and here) else ((T, nxt[1] - T) if nxt else _place(fr, T, left * rt, minT))
             if pl is None: raise ValueError(f"no queda material libre de {vid} para el plano de {s['t0']:.2f} s («{s.get('anchor')}»)")
             st, ln = pl; take = min(left, ln / rt); rem = left - take
             if 0 < rem < FIT_MIN and take - (FIT_MIN - rem) >= FIT_MIN: take -= FIT_MIN - rem   # que el último trozo no sea un destello
