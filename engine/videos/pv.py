@@ -37,7 +37,7 @@ beat("Durante días la hemos observado en su hábitat natural, a través de part
      sfx=[("w:Bienvenidos", "chime", 0.45)])
 beat("Este es un documental de naturaleza diferente. No vamos a estudiar caimanes ni flamencos, sino a las personas que el juego mueve por su cuenta: los habitantes de Vice City. Aquí no hay misiones ni historia: solo la vida diaria de una ciudad que sigue funcionando aunque nadie la mire. Como en todo buen documental, la regla es no intervenir. El problema es que aquí el equipo de grabación lleva un mando en la mano, y no siempre resiste la tentación.",
      mus=("nature", 1), pre=0.4, id="p03",
-     shots=[S(None, "g:sting"), S("sino a las personas", X(THA, 818.0), z=(1.0, 1.05)), S("los habitantes", X(THA, 832.0), z=(1.0, 1.05)),
+     shots=[S(None, X(THA, 800.0), z=(1.0, 1.05)), S("sino a las personas", X(THA, 818.0), z=(1.0, 1.05)), S("los habitantes", X(THA, 832.0), z=(1.0, 1.05)),
             S("Como en todo buen documental", X(THA, 676.0), z=(1.0, 1.05))],
      sfx=[(0.0, "logo", 0.5)])
 beat("Todo lo que vas a ver son partidas reales, grabadas por jugadores en los primeros días después del lanzamiento. Las frases de los habitantes son las originales del juego: en pantalla las ves en inglés, y aquí te las traducimos.",
