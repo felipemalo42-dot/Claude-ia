@@ -13,7 +13,7 @@ def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), *
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 HOS, CAS, JET, TAN = "vpHospital1", "3UiRmXUIE9k", "4HCd052lpnA", "-UuHA1h-Cf8"
 
-beat("GTA 6 te cobra el hospital si te matan.", pre=0.15, exag=0.7, id="s1",
+beat("Si te matan en GTA 6, te cobran el hospital.", pre=0.15, exag=0.7, id="s1",
      shots=[S(None, f"c:{HOS}@1.0", top="PARTIDA REAL · VIDEO PUMP")], sfx=[(0.0, "riser", 0.3), ("w:hospital", "coin", 0.4)])
 beat("Este jugador recibe un disparo, muere, y despierta junto a la carretera con un cargo de mil ciento noventa y un dólares.", exag=0.7, id="s2",
      shots=[S(None, f"c:{HOS}@4.5"), S("despierta", f"c:{HOS}@9.0"), S("con un cargo", f"c:{HOS}@14.0", crop=(0.55, 0.05, 1.0, 0.6), top="EL CARGO, EN LA ESQUINA")],
@@ -24,8 +24,8 @@ beat("Pero si sacas la basura, el juego te premia: la barra de Focus sube un tre
 beat("Y en el primer capítulo ya puedes robar un avión de combate.", exag=0.7, id="s4",
      shots=[S(None, f"v:{JET}@134.0@0.55", prueba="ROBO DE UN CAZA", lado="acusacion"), S("un avión", f"v:{JET}@163.0@0.42")],
      sfx=[("w:robar", "whoosh", 0.35)])
-beat("Entonces, ¿GTA 6 es un juego de crímenes o un simulador de vida? Lo llevamos a juicio, con pruebas reales.", exag=0.65, id="s5",
-     shots=[S(None, "g:sq", lines=["¿CRÍMENES", "O VIDA?"], hl=[1]), S("Lo llevamos", "g:sq", lines=["GTA 6", "A JUICIO"], sub="Con pruebas reales", hl=[1])],
+beat("Entonces, ¿GTA 6 es un juego de crímenes o un simulador de vida? Por eso hicimos un juicio, con pruebas reales.", exag=0.65, id="s5",
+     shots=[S(None, "g:sq", lines=["¿CRÍMENES", "O VIDA?"], hl=[1]), S("Por eso hicimos", "g:sq", lines=["GTA 6", "A JUICIO"], sub="Con pruebas reales", hl=[1])],
      sfx=[(0.0, "whoosh", 0.35), ("w:juicio", "stamp", 0.5)])
 beat("El veredicto lo pones tú. El video completo está en el canal.", exag=0.65, hold=1.6, id="s6",
      shots=[S(None, "g:scta", thumb=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "VIDEO_LARGO_3_GTA6_A_JUICIO", "MINIATURA.png"),
