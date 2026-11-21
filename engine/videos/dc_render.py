@@ -475,7 +475,7 @@ def g_quote(c, t, d, sh, ctx):
     c.restore()
     if sh.get("tag"): cert(c, sh["tag"], ease_out(prog(t, 0.3, 0.6)), y=y0 - 80 + (1 - p) * 40)
     if sh.get("sub"):
-        q = ease_out(prog(t, sh.get("sub_at", 1.5), sh.get("sub_at", 1.5) + 0.4)); draw_text(c, sh["sub"], W / 2, min(H - 90, y0 + hh + 90), "intersb", 38, GRAY, q, align="center")
+        q = ease_out(prog(t, sh.get("sub_at", 1.5), sh.get("sub_at", 1.5) + 0.4)); draw_text(c, sh["sub"], W / 2, min(890, y0 + hh + 90), "intersb", 38, GRAY, q, align="center")
 
 def g_list(c, t, d, sh, ctx):
     """Lista que aparece punto a punto al ritmo de la voz (cues)."""
@@ -502,7 +502,7 @@ def g_creators(c, t, d, sh, ctx):
         rect(c, W / 2 - 640, y - 52, 1280, 104, INK, 0.9, r=16); rect(c, W / 2 - 640, y - 52, 12, 104, TH["acc"], 1)
         draw_text(c, a_, W / 2 - 590, y + 20, "anton", 60, WHITE, 1, tracking=1)
         draw_text(c, b_, W / 2 + 600, y + 12, "intersb", 32, TH["acc"], 1, align="right"); c.restore()
-    if sh.get("foot"): draw_text(c, sh["foot"], W / 2, 960, "ovmonomd", 26, GRAY, ease_out(prog(t, 0.8, 1.2)), align="center")
+    if sh.get("foot"): draw_text(c, sh["foot"], W / 2, 890, "ovmonomd", 26, GRAY, ease_out(prog(t, 0.8, 1.2)), align="center")
 
 # ---------------------------------------------------------------- Planeta Vice City
 def leaf(c, x, y, s, col, a=1.0, rot=0.0):
@@ -528,7 +528,7 @@ def g_especie(c, t, d, sh, ctx):
         draw_text(c, k_.upper(), x0 + 54, y, "ovmonomd", 28, "#5A6B5E", q, tracking=3)
         draw_text(c, v_, x0 + 380, y + 4, "intersb", 40, INK, q)
         line(c, x0 + 50, y + 26, x0 + w0 - 50, y + 26, "#5A6B5E", 0.25 * q, w=2)
-    if sh.get("note"): draw_text(c, sh["note"], W / 2, y0 + h0 + 70, "ovmonomd", 24, GRAY, p, align="center")
+    if sh.get("note"): draw_text(c, sh["note"], W / 2, min(890, y0 + h0 + 70), "ovmonomd", 24, GRAY, p, align="center")
 
 # ---------------------------------------------------------------- GTA 6 a juicio
 def gavel(c, x, y, s, col, a=1.0, ang=0.0, base=True):
@@ -580,7 +580,7 @@ def g_testigo(c, t, d, sh, ctx):
     draw_text(c, sh["role"], 200, 440, "intersb", 40, GRAY, p)
     q = ease_out(prog(t, 0.6, 1.0))
     for j, ln in enumerate(wrap(f"«{sh['q']}»", "dmserif", 62, W - 460)): draw_text(c, ln, 200, 580 + j * 80, "dmserif", 62, WHITE, q)
-    draw_text(c, sh["fuente"], 200, 960, "ovmonomd", 26, TH["acc"], q, tracking=1)
+    draw_text(c, sh["fuente"], 200, 890, "ovmonomd", 26, TH["acc"], q, tracking=1)
     gavel(c, W - 260, 300, 110, TH["acc"], 0.25 * p, ang=-0.4)
 
 def g_veredicto(c, t, d, sh, ctx):

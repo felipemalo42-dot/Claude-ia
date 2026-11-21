@@ -110,7 +110,7 @@ beat("Tercera prueba. La declaración de la sheriff de Miami-Dade, recogida por 
      sfx=[(0.1, "stamp", 0.5)])
 beat("Y la cuarta prueba es la más curiosa. En China circula un documento filtrado, que nadie ha confirmado, con reglas para quien quiera transmitir el juego en directo.",
      mus=("noir", 2), id="a08",
-     shots=[S(None, X(TAN, 222.0), z=(1.0, 1.05), prueba="PRUEBA D", lado="acusacion"), S("con reglas", X(TAN, 112.0), z=(1.0, 1.05))],
+     shots=[S(None, "g:cargo", kicker="PRUEBA D · SIN CONFIRMAR", txt="UN DOCUMENTO FILTRADO EN CHINA", lado="acusacion")],
      sfx=[("w:cuarta prueba", "stamp", 0.5), ("w:con reglas", "paper", 0.4)])
 beat("Según ese documento, en pantalla no se podría robar autos, ni atacar a la policía o a los peatones. Ni siquiera mostrar sangre roja. En un foro, un jugador lo resumió así: con esas reglas, GTA 6 sería un simulador de paisajes.",
      mus=("noir", 2), id="a09",
