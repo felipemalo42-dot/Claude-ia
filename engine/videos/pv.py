@@ -215,7 +215,7 @@ beat("En este zoológico hay grandes felinos, un aviario lleno de guacamayos y u
      mus=("nature", 1), id="e02", cert="OBSERVADO",
      shots=[S(None, X(LAZ, 366.0), **NOCAM), S("un aviario", X(LAZ, 423.0), **NOCAM), S("un oceanario", X(LAZ, 437.0), **NOCAM),
             S("La entrada", X(LAZ, 392.5), **NOCAM)])
-beat("Dentro, los visitantes pasean entre los pájaros sin prisa. El jugador, en cambio, vuelve a demostrar que es la especie más imprudente del ecosistema: se mete en el recinto de los tigres, y la visita termina en la pantalla de «wasted».",
+beat("Dentro, los visitantes pasean entre los pájaros sin prisa. El jugador, en cambio, vuelve a demostrar que es la especie más imprudente del ecosistema: se mete en el recinto de los tigres, y la visita termina en la pantalla de muerte.",
      mus=("nature", 1), id="e03", cert="OBSERVADO",
      shots=[S(None, X(LAZ, 395.0), **NOCAM), S("se mete en el recinto", X(LAZ, 368.5), **NOCAM), S("y la visita termina", X(LAZ, 386.0), **NOCAM)])
 beat("Y en el oceanario, se lanza al tanque para nadar junto a las orcas.",
