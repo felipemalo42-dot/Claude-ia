@@ -147,7 +147,7 @@ beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el
 beat("Dodo Rising, un grupo que defiende a los animales, protesta contra un santuario de chimpancés cerca del aeropuerto, y te pide ayuda para salvarlos. Es solo el primero de varios encargos con ese grupo.",
      mus=("tropical", 2), id="d06", cert="GUIA",
      shots=[S(None, X(MIS, 270.0), z=(1.0, 1.05)), S("y te pide", X(MIS, 282.0), z=(1.0, 1.05))])
-beat("Y por la zona de Key Lento hay carteles que preguntan si has visto a una especie de Pie Grande de los pantanos. Si los lees, se añade a tu teléfono un contacto nuevo: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
+beat("Y por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos. Si los lees, se añade a tu teléfono un contacto nuevo: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
      mus=("tropical", 1), id="d07", cert="GUIA",
      shots=[S(None, X(MIS, 101.0), z=(1.0, 1.06)), S("una especie de Pie", X(MIS, 107.0), z=(1.0, 1.1)), S("Si los lees", X(MIS, 112.0), z=(1.0, 1.05))])
 beat("Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo. Según la guía, beber de ella te mejora todas las estadísticas al instante. Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.",
@@ -163,7 +163,7 @@ beat("Un influencer de Ocean Beach te mete en las campañas de su propia criptom
      mus=("noir", 1), id="d10", cert="GUIA",
      shots=[S(None, X(MIS, 345.0), z=(1.0, 1.05)), S("su propia criptomoneda", X(MIS, 372.0), z=(1.0, 1.05)),
             S("Y una vieja amiga", X(MIS, 404.0), z=(1.0, 1.05)), S("un negocio", X(MIS, 432.0), z=(1.0, 1.05))])
-beat("Objeción aceptada: en GTA 6, hasta las buenas obras pueden tener trampa. Pero también hay historias más humanas, como la de Yago, un aspirante a piloto de carreras callejeras que, según la guía, esconde mucho más de lo que parece.",
+beat("Objeción aceptada: en GTA 6, hasta las buenas acciones pueden tener trampa. Pero también hay historias más humanas, como la de Yago, un aspirante a piloto de carreras callejeras que, según la guía, esconde mucho más de lo que parece.",
      mus=("synthwave", 1), id="d11", cert="GUIA",
      shots=[S(None, X(MIS, 300.0), z=(1.0, 1.05)), S("como la de Yago", X(MIS, 318.0), z=(1.0, 1.05)), S("según la guía", X(MIS, 330.0), z=(1.0, 1.05))])
 
@@ -179,7 +179,7 @@ beat("«Todo lo que hemos incluido en GTA 6 está ahí para apoyar el espíritu 
      shots=[S(None, "g:testigo", name="ROCKSTAR GAMES", role="Comunicado sobre las funciones que no están en GTA 6",
               q="Todo lo que hemos incluido en GTA 6 está ahí para apoyar el espíritu de la historia que queríamos contar.", fuente="SHACKNEWS · RECOGIDO POR IGN DAILY FIX, 19/11/2026")],
      sfx=[(0.1, "paper", 0.4)])
-beat("Segundo testigo: Rob Nelson, uno de los responsables de Rockstar North. En una entrevista con The Guardian le preguntaron si este es el primer juego de la saga que fomenta la empatía.",
+beat("Segundo testigo: Rob Nelson, uno de los responsables de Rockstar North. En una entrevista con The Guardian le preguntaron si GTA 6 es el primero de la saga que fomenta la empatía.",
      mus=("noir", 1), id="t04",
      shots=[S(None, "g:testigo", name="ROB NELSON", role="Codirector de Rockstar North",
               q="¿Es el primer GTA que fomenta la empatía? Yo diría que sí.", fuente="ENTREVISTA EN THE GUARDIAN · RECOGIDA POR LA PRENSA")],

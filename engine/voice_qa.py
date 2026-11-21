@@ -120,7 +120,7 @@ WER_ALIAS = [
     (r"\b(?:Key|K[iy]|Qu?i)[ -]?[Ll]ento\b", "Key Lento"), (r"\bBr[aá]?[iy]+[aá]n\b", "Brian"),
     (r"\b(?:g?[uü]|w|b)[eéa][iy]?st[eé]d\b", "wasted"), (r"\be?s?trip[ -]?t[iíe]+[aá]?[sz]e?\b", "striptease"),
     (r"\binfluen[cs]er\b", "influencer"), (r"\b[OoÓó]u?[sc]h?[eé]?a?n[ -]?B[ie]+a?[ct]?ch\b", "Ocean Beach"),
-    (r"\bMiami[ -]?B[ie]+a?ch\b", "Miami Beach"), (r"\bMiami[ -]?D[eé]i?de?\b", "Miami-Dade"),
+    (r"\bMiami[ -]?B[ie]+a?ch\b", "Miami Beach"), (r"\bMiami,?[ -]?D[aeé]i?(?:gh)?[dt]e?\b", "Miami-Dade"),
     (r"\b(?:the|de|di|za|da)[ -]?[Gg]u?[aá]rdi[aá]n\b", "The Guardian"), (r"\b(?:pe ?ce|p ?c)[ -]?[Gg]u?[aeé]i?mer\b", "PC Gamer"),
     (r"\b(?:equis|x)[ -]?box\b", "Xbox"), (r"\bs[ií]ries\b", "Series"), (r"\bNor[tzs]h?\b", "North"),
     (r"\bRed[ -]?D[eé]d\b", "Red Dead"), (r"\bR[ei]d[eé]mp?(?:sh|ch|s)[ie]?[oó]n\b", "Redemption"),
