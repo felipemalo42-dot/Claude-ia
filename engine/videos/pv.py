@@ -28,7 +28,7 @@ TOACAP = dict(z=(1.40, 1.44), f=(0.5, 0.0))
 beat("En el sureste de un país que no existe vive una especie fascinante. Pasa el día tumbada al sol, hace ejercicio delante de desconocidos y, cuando alguien invade su espacio, se lo dice a la cara.",
      mus=("nature", 1), pre=0.3, id="p01", cert="OBSERVADO",
      shots=[S(None, X(THA, 646.0), z=(1.0, 1.06)), S("tumbada al sol", X(THA, 781.0), z=(1.0, 1.06)),
-            S("hace ejercicio", X(THA, 1300.0), z=(1.0, 1.06)), S("se lo dice", X(TOA, 9.0), **TOACAP)],
+            S("hace ejercicio", X(THA, 1300.0), z=(1.0, 1.06)), S("se lo dice", X(TOA, 78.0), **TOACAP)],
      sfx=[(0.0, "bird", 0.3), ("w:a la cara", "pop", 0.35)])
 beat("Durante días la hemos observado en su hábitat natural, a través de partidas reales de GTA 6. Bienvenidos a Planeta Vice City.",
      mus=("nature", 2), id="p02",
@@ -45,7 +45,7 @@ beat("Todo lo que vas a ver son partidas reales, grabadas por jugadores en los p
      shots=[S(None, "g:creators", title="EL EQUIPO DE OBSERVACIÓN", subt="Partidas reales publicadas tras el lanzamiento (19/11/2026)",
               rows=[("toaster", "Encuentros con los habitantes"), ("Yamatum O", "Un día entero por Vice City"), ("LazarBeam", "Visita al zoológico")],
               foot="Créditos de cada plano en pantalla y en la descripción"),
-            S("Las frases", X(TOA, 2.0), **TOACAP)],
+            S("Las frases", X(TOA, 84.0), **TOACAP)],
      sfx=[(0.1, "paper", 0.35)])
 beat("Primero, su ficha. Nombre común: habitante de Vice City. Nombre científico: ninguno, porque nos lo acabamos de inventar. Hábitat: playas, avenidas y gimnasios al aire libre. Y su mayor amenaza, como verás, suele ser el jugador.",
      mus=("nature", 1), id="p05",
@@ -117,13 +117,13 @@ beat("Y a cualquier hora, algunos ejemplares se refugian en las tiendas de conve
 # ================================================================ 3 · COMUNICACIÓN
 beat("La especie se comunica sobre todo con la voz. Y cuando un desconocido se acerca demasiado, el mensaje es muy claro.",
      chapter=(3, "COMUNICACIÓN"), mus=("nature", 1), pre=1.4, id="c01", cert="OBSERVADO",
-     shots=[S(None, X(TOA, 4.0), **TOACAP)])
+     shots=[S(None, X(TOA, 46.2), **TOACAP)])
 beat("«No me hables». «Aléjate de mí».",
      mus=("nature", 1), id="c02", cert="OBSERVADO",
      shots=[S(None, X(TOA, 8.0), **TOACAP, say="Don't talk to me."), S("«Aléjate", X(TOA, 12.5), **TOACAP, say="Get away from me.")])
 beat("Estas dos habitantes, a la puerta de una barbería, lo dejan claro también con las manos: la conversación ha terminado antes de empezar.",
      mus=("nature", 1), id="c03", cert="OBSERVADO",
-     shots=[S(None, X(TOA, 15.0), **TOACAP)])
+     shots=[S(None, X(TOA, 15.0), **TOACAP), S("lo dejan claro", X(TOA, 0.3), **TOACAP)])
 beat("Si el intruso insiste, el tono sube. «¿Tienes algún problema? ¿Lo tienes?».",
      mus=("nature", 2), id="c04", cert="OBSERVADO",
      shots=[S(None, X(TOA, 104.0), **TOACAP), S("«¿Tienes", X(TOA, 110.0), **TOACAP, say="You got a problem? Do you?")])
@@ -182,7 +182,7 @@ beat("Y de noche aparece el gran depredador del jugador: la policía. En este es
      sfx=[("w:policía", "alarm", 0.25)])
 beat("Moraleja de este capítulo: en este ecosistema, la mayoría de los habitantes no busca problemas. Pero tampoco se deja. Nota de campo número cuatro: quien te pide la bolsa no siempre lleva uniforme.",
      mus=("tension", 1), id="d07", cert="OBSERVADO",
-     shots=[S(None, X(TOA, 196.0), **TOACAP)])
+     shots=[S(None, X(TOA, 90.0), **TOACAP)])
 
 # ================================================================ 5 · LA MANADA
 beat("Como muchas especies sociales, el habitante de Vice City también reacciona en grupo.",
@@ -230,7 +230,7 @@ beat("Después de tantas horas de observación, hay una conclusión que se repit
 beat("La especie, en sí, no es especialmente peligrosa. Toma el sol, entrena, trabaja y vuelve a casa. Casi todo el caos que hemos visto empezó igual: alguien con un mando en la mano se acercó demasiado. Si algo enseñan estas partidas es que Vice City no está hecha solo de persecuciones: está hecha de miles de pequeñas rutinas.",
      mus=("nature", 1), id="o02", cert="OBSERVADO",
      shots=[S(None, X(THA, 702.0), z=(1.0, 1.05)), S("entrena", X(THA, 1228.0), z=(1.0, 1.05)), S("trabaja", X(TOA, 528.0), **TOACAP),
-            S("Casi todo el caos", X(TOA, 393.0), **TOACAP), S("alguien con un mando", X(TOA, 0.5), **TOACAP)])
+            S("Casi todo el caos", X(TOA, 393.0), **TOACAP), S("alguien con un mando", X(TOA, 66.0), **TOACAP)])
 beat("Según Rockstar, GTA 6 lleva las interacciones con sus habitantes más lejos que Red Dead Redemption 2. Y después de este documental, cuesta llevarle la contraria.",
      mus=("nature", 1), id="o03",
      shots=[S(None, "g:quote", q="GTA 6 lleva las interacciones con los personajes de su mundo más lejos que Red Dead Redemption 2.", who="SEGÚN ROCKSTAR · DECLARACIONES RECOGIDAS POR LA PRENSA", tag="ROCKSTAR"),

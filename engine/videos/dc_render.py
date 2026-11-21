@@ -249,9 +249,32 @@ def _place(free, T0, needT, minT):
         if best is None or cost < best[2]: best = (st, ln, cost)
     return best and best[:2]
 
+def _trd(shots, i):
+    nx = shots[i + 1] if i + 1 < len(shots) else None
+    return (nx.get("tr") or (0, 0.13 if nx["src"].startswith("g:") else 0.0))[1] if nx else 0.0
+
 def fit(shots, total):
-    FIT_LOG.clear(); used = {}; out = []; segs = {}
+    FIT_LOG.clear(); used = {}; out = []; segs = {}; reserved = {}
+    # pase 1: los planos anclados a una palabra (o con la frase original en pantalla) se quedan con su momento exacto;
+    # el resto de planos (comienzos de bloque y continuaciones) se ajusta después alrededor de esos momentos
+    prio = [i for i, s in enumerate(shots) if s["src"].startswith("x:") and not s.get("cont") and not s.get("nofit")
+            and (s.get("anchor") is not None or s.get("say"))]
+    starts = {}
+    for i in prio: vid, T0 = parse_x(shots[i]["src"]); starts.setdefault(vid, []).append(T0)
+    for i in prio:
+        s = shots[i]; vid, T0 = parse_x(s["src"]); rt = MZ.rate(vid)
+        if vid not in segs: segs[vid] = _segments(vid)
+        # un ancla que cae justo antes de un corte (≤ 0,25 s) empieza en el primer fotograma del plano siguiente
+        here = next(((a, b) for a, b in _free(segs[vid], used.get(vid, [])) if a - 0.25 <= T0 < b and b - max(a, T0) >= FIT_MIN * rt), None)
+        if not here: continue
+        T0 = max(here[0], T0); s["src"] = f"x:{vid}@{T0:.3f}"
+        # la reserva no invade el momento anclado de otro plano de la misma fuente
+        cap = min([x for x in starts[vid] if x > T0 + 0.01] + [here[1]]) - 0.06
+        take = min((s["t1"] - s["t0"]) + _trd(shots, i) + 0.05, (cap - T0) / rt)
+        if take * rt < FIT_MIN * rt * 0.5: continue
+        reserved[i] = (vid, (T0, T0 + take * rt)); used.setdefault(vid, []).append(reserved[i][1])
     for i, s in enumerate(shots):
+        if i in reserved: used[reserved[i][0]].remove(reserved[i][1])   # su propio momento vuelve a quedar libre para él
         if not s["src"].startswith("x:") or s.get("cont") or s.get("nofit"):
             out.append(s)
             if s["src"].startswith("x:"):
@@ -259,8 +282,7 @@ def fit(shots, total):
             continue
         vid, T0 = parse_x(s["src"]); rt = MZ.rate(vid)
         if vid not in segs: segs[vid] = _segments(vid)
-        nx = shots[i + 1] if i + 1 < len(shots) else None
-        trd = (nx.get("tr") or (0, 0.13 if nx["src"].startswith("g:") else 0.0))[1] if nx else 0.0
+        trd = _trd(shots, i)
         t, left = s["t0"], (s["t1"] - s["t0"]) + trd + 0.05; first = True; T = T0; pieces = []
         while left > 0.02:
             fr = _free(segs[vid], used.get(vid, [])); minT = min(FIT_MIN, left) * rt
