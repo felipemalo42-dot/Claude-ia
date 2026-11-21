@@ -14,7 +14,7 @@ Uso: python wer_final.py gx      (o el id del Short)
 6. Música y efectos frente a voz (pistas separadas): relación en dB mientras hay voz.
 Resultado: PROYECTO_DE_EDICION/CONTROL_VOZ_WER.md y control_voz_wer.csv
 """
-import csv, importlib, json, os, sys
+import re, csv, importlib, json, os, sys
 import numpy as np, soundfile as sf
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tts import Aligner, canon
@@ -35,6 +35,19 @@ def main(vid):
     if x.ndim > 1: x = x.mean(axis=1)
     A = Aligner(); Wh = Q.Whisper()
     sents = [s for b in tl["beats"] for s in b["sents"]]
+    only = os.environ.get("WER_ONLY")   # comprobación parcial: solo las frases que coinciden con esta expresión (p. ej. tras cambiar unas pocas)
+    if only:
+        n = e = 0
+        for i, s in enumerate(sents):
+            if not re.search(only, s["text"]): continue
+            a = s["start"] - 0.15; b = s["end"] + 0.25
+            if i > 0: a = max(a, sents[i - 1]["end"] + 0.02)
+            if i + 1 < len(sents): b = min(b, sents[i + 1]["start"] - 0.12)
+            seg = x[max(0, int(a * sr)): int(b * sr)]
+            hp, _ = A.transcribe(seg, sr); hw = Wh.transcribe(seg, sr); best = Q.wer_combined(s["text"], hp, hw)
+            n += best["n"] if "n" in best else len(s["text"].split()); e += best["err"]
+            print(f"  {s['start']:7.2f} s · errores {best['err']} · «{s['text']}»\n     P: {hp}\n     W: {hw}", flush=True)
+        print(f"  parcial: {e} errores en {n} palabras"); return
     rows = []; tot = dict(n=0, comb=0, par=0, whi=0); key_miss = []
     for i, s in enumerate(sents):
         a = s["start"] - 0.15; b = s["end"] + 0.25

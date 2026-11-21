@@ -1,5 +1,5 @@
 GUION — Llevamos GTA 6 a juicio: ¿juego de crímenes o simulador de vida?
-Formato: Largo (16:9, 1920×1080, 30 fps) · gameplay real posterior al lanzamiento · Duración: 00:10:30 · Voz: narradora (Chatterbox Multilingual), español
+Formato: Largo (16:9, 1920×1080, 30 fps) · gameplay real posterior al lanzamiento · Duración: 00:10:32 · Voz: narradora (Chatterbox Multilingual), español
 ==============================================================================
 
 [00:00.55] NARRADORA: Dos días antes del lanzamiento de GTA 6, la policía de Atlanta publicó un aviso para los jugadores:
@@ -53,71 +53,70 @@ Formato: Largo (16:9, 1920×1080, 30 fps) · gameplay real posterior al lanzamie
 [04:04.48] NARRADORA: Y la recompensa por arreglar la casa no es dinero: según la guía, hace feliz a Lucía y mejora la relación entre los dos, con un corazón en pantalla.
 [04:13.08] NARRADORA: Eso sí, hay que hacerlo antes de ir a buscar a Lucía: en cuanto sales, las reparaciones pendientes se bloquean.
 [04:20.18] NARRADORA: Prueba dos, la favorita de la defensa.
-[04:22.42] NARRADORA: Después de tomarte una cerveza, si tiras las latas vacías al contenedor, la barra de Focus sube un tres por ciento.
-[04:28.16] NARRADORA: GTA 6 te premia por sacar la basura.
-[04:31.15] NARRADORA: Prueba tres: las misiones secundarias.
-[04:33.39] NARRADORA: Karl McKittrick, un granjero con el brazo roto, necesita un piloto para fumigar sus cultivos, y ese piloto eres tú.
-[04:40.91] NARRADORA: Tienes que seguir su auto desde el aire y regar sus plantas.
-[04:45.39] NARRADORA: Según la guía, la primera vez parece un encargo aburrido, pero si vuelves cada vez que te necesita, la historia cambia por completo.
-[04:54.63] NARRADORA: Dodo Rising, un grupo que defiende a los animales, protesta contra un santuario de chimpancés cerca del aeropuerto, y te pide ayuda para salvarlos.
-[05:03.35] NARRADORA: Es solo el primero de varios encargos con ese grupo.
-[05:06.50] NARRADORA: Otra misión empieza de forma inquietante.
-[05:08.74] NARRADORA: Navegando por los pantanos, oyes unos aullidos espantosos.
-[05:12.34] NARRADORA: Si sigues el olor de un ciervo muerto, llegas a un tótem escondido entre la maleza… y te desmayas.
-[05:18.10] NARRADORA: Lo último que ves es un par de piernas.
-[05:20.63] NARRADORA: La historia podría acabar ahí, pero por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos.
-[05:28.15] NARRADORA: Si los lees, aparece un contacto nuevo en tu teléfono:
-[05:31.43] NARRADORA: Kirk, que te propone quedar de noche para buscarlo.
-[05:35.71] NARRADORA: Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.
-[05:47.47] NARRADORA: Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo.
-[05:53.47] NARRADORA: Según la guía, beber de ella te mejora todas las estadísticas al instante.
-[05:57.71] NARRADORA: Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.
-[06:01.90] NARRADORA: ¡Objeción!, interrumpe la acusación.
-[06:04.78] NARRADORA: No todas esas misiones son tan inocentes.
-[06:08.38] NARRADORA: Un influencer de Ocean Beach te mete en las campañas de su propia criptomoneda, y de paso te enseña los desafíos de acrobacias del mundo abierto.
-[06:18.88] NARRADORA: Y una vieja amiga de Lucía la invita a hacer entregas para un negocio muy raro, que hasta la guía describe como una mala idea.
-[06:26.84] NARRADORA: Objeción aceptada: en GTA 6, hasta las buenas acciones pueden tener trampa.
-[06:31.88] NARRADORA: Pero también hay historias más humanas, como la de Yago, un aspirante a piloto de carreras callejeras que, según la guía, esconde mucho más de lo que parece.
-[06:41.08] NARRADORA: Y hay misterios que la guía ni siquiera resuelve.
-[06:43.88] NARRADORA: Si ves un auto abandonado junto a un motel, con un rastro de ropa que se mete en el bosque, ve a mirar… si te atreves.
-[06:52.63] NARRADORA: Llamamos a los testigos.
-[06:54.47] NARRADORA: El primero es la propia Rockstar.
-[06:57.13] NARRADORA: GTA 6 ya no deja hacer algunas cosas que sí estaban en entregas anteriores, como contratar a trabajadoras sexuales.
-[07:03.64] NARRADORA: En un comunicado recogido por la prensa, Rockstar explicó por qué.
-[07:08.90] NARRADORA: Eso sí, los clubes de striptease siguen ahí, y Jason y Lucía pueden ir juntos, como pareja.
-[07:16.47] NARRADORA: «Todo lo que hemos incluido en GTA 6 está ahí para apoyar el espíritu de la historia que queríamos contar».
-[07:22.19] NARRADORA: Y añadió que muchas cosas de juegos anteriores no están, pero que todo lo que sí está es necesario para lo que querían que sintieras en la historia de Jason y Lucía: una pareja.
-[07:32.65] NARRADORA: Segundo testigo:
-[07:33.93] NARRADORA: Rob Nelson, uno de los responsables de Rockstar North.
-[07:37.85] NARRADORA: En una entrevista con The Guardian le preguntaron si GTA 6 es el primero de la saga que fomenta la empatía.
-[07:45.37] NARRADORA: Su respuesta fue:
-[07:46.65] NARRADORA: «Yo diría que sí».
-[07:47.93] NARRADORA: Y añadió que el juego ofrece formas de fomentarla, para quien quiera usarlas.
-[07:52.58] NARRADORA: Según la prensa que recogió la entrevista, eso no significa que el juego castigue a quien prefiere el caos.
-[07:59.46] NARRADORA: Y el tercer testigo es el propio juego.
-[08:02.02] NARRADORA: Este jugador recibe un disparo y muere.
-[08:05.54] NARRADORA: Cuando despierta, está junto a la carretera, y en la esquina de la pantalla aparece el cargo, justo debajo del aviso de que se actualizó el mapa: mil ciento noventa y un dólares de hospital.
-[08:16.25] NARRADORA: En GTA 6, hasta morir sale caro.
-[08:18.81] NARRADORA: Y hay otra consecuencia que ya te explicamos en este canal: el perfil criminal, que te va poniendo una etiqueta según cómo juegas, de Profesional hasta Irredimible.
-[08:28.39] NARRADORA: Y si llegas a Irredimible, ya no hay vuelta atrás.
-[08:33.82] NARRADORA: Alegato final de la acusación:
-[08:35.58] NARRADORA: GTA 6 te deja robar un tanque y un avión de combate, y aguantar seis estrellas en una persecución.
-[08:41.50] NARRADORA: Sigue llamándose Grand Theft Auto, que en inglés es el nombre del delito de robar vehículos.
-[08:47.25] NARRADORA: Alegato final de la defensa:
-[08:48.69] NARRADORA: GTA 6 te premia por arreglar la casa, por cuidar de tu pareja y hasta por sacar la basura.
-[08:54.35] NARRADORA: Y casi nada de lo que has visto es obligatorio.
-[08:57.19] NARRADORA: La relación con Lucía, el Focus de la basura y las estadísticas de la fuente se ganan sin disparar ni una bala.
-[09:04.73] NARRADORA: Antes del veredicto, repasemos las pruebas.
-[09:07.53] NARRADORA: La acusación presentó un tanque, un avión de combate, a una sheriff y un documento filtrado.
-[09:12.73] NARRADORA: La defensa, una casa arreglada, unas latas en el contenedor, varias misiones secundarias y una fuente.
-[09:19.97] NARRADORA: Nuestra conclusión no es un veredicto.
-[09:21.89] NARRADORA: Que en GTA puedas elegir entre el caos y la vida tranquila no es nuevo: en GTA 5 también podías jugar al golf, al tenis o hacer yoga.
-[09:31.45] NARRADORA: Lo nuevo es que ahora el juego toma nota: de tu relación con Lucía, de tu perfil criminal, y hasta de lo que haces con una lata vacía.
-[09:41.53] NARRADORA: Así que te toca a ti.
-[09:42.89] NARRADORA: ¿GTA 6 es culpable de ser un juego de crímenes, o es inocente, porque en el fondo es un simulador de vida?
-[09:49.07] NARRADORA: Escribe tu veredicto en los comentarios: culpable o inocente, y qué prueba te convenció.
-[09:53.87] NARRADORA: En este juicio no hay respuesta correcta, solo buenos argumentos.
-[09:57.23] NARRADORA: Y si todavía no viste cómo te vigila la policía de GTA 6, tienes ese video en el canal.
-[10:02.13] NARRADORA: Y si quieres más GTA 6 contado de otra forma, suscríbete a Sal y Asfalto.
-[10:07.17] NARRADORA: Se levanta la sesión.
-[10:10.49] (sin narración · 20.0 s)
+[04:22.66] NARRADORA: Después de tomarte una cerveza, si tiras las latas vacías al contenedor, la barra de Focus sube un tres por ciento.
+[04:29.22] NARRADORA: El juego te premia por sacar la basura.
+[04:32.23] NARRADORA: Prueba tres: las misiones secundarias.
+[04:34.47] NARRADORA: Karl McKittrick, un granjero con el brazo roto, necesita un piloto para fumigar sus cultivos, y ese piloto eres tú.
+[04:41.99] NARRADORA: Tienes que seguir su auto desde el aire y regar sus plantas.
+[04:46.47] NARRADORA: Según la guía, la primera vez parece un encargo aburrido, pero si vuelves cada vez que te necesita, la historia cambia por completo.
+[04:55.71] NARRADORA: Dodo Rising, un grupo que defiende a los animales, protesta contra un santuario de chimpancés cerca del aeropuerto, y te pide ayuda para salvarlos.
+[05:04.43] NARRADORA: Es solo el primero de varios encargos con ese grupo.
+[05:07.58] NARRADORA: Otra misión empieza de forma inquietante.
+[05:09.82] NARRADORA: Navegando por los pantanos, oyes unos aullidos espantosos.
+[05:13.42] NARRADORA: Si sigues el olor de un ciervo muerto, llegas a un tótem escondido entre la maleza… y te desmayas.
+[05:19.18] NARRADORA: Lo último que ves es un par de piernas.
+[05:21.71] NARRADORA: La historia podría acabar ahí, pero por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos.
+[05:29.23] NARRADORA: Si los lees, aparece un contacto nuevo en tu teléfono:
+[05:32.51] NARRADORA: Kirk, que te propone quedar de noche para buscarlo.
+[05:36.79] NARRADORA: Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.
+[05:48.55] NARRADORA: Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo.
+[05:54.55] NARRADORA: Según la guía, beber de ella te mejora todas las estadísticas al instante.
+[05:58.79] NARRADORA: Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.
+[06:02.98] NARRADORA: ¡Objeción!, interrumpe la acusación.
+[06:05.86] NARRADORA: No todas esas misiones son tan inocentes.
+[06:09.46] NARRADORA: Un influencer de Ocean Beach te mete en las campañas de su propia criptomoneda, y de paso te enseña los desafíos de acrobacias del mundo abierto.
+[06:19.96] NARRADORA: Y una vieja amiga de Lucía la invita a hacer entregas para un negocio muy raro, que hasta la guía describe como una mala idea.
+[06:27.92] NARRADORA: Objeción aceptada: en GTA 6, hasta las buenas acciones pueden tener trampa.
+[06:32.96] NARRADORA: Pero también hay historias más humanas, como la de Yago, un aspirante a piloto de carreras callejeras que, según la guía, esconde mucho más de lo que parece.
+[06:42.16] NARRADORA: Y hay misterios que la guía ni siquiera resuelve.
+[06:44.96] NARRADORA: Si ves un auto abandonado junto a un motel, con un rastro de ropa que se mete en el bosque, ve a mirar… si te atreves.
+[06:53.71] NARRADORA: Llamamos a los testigos.
+[06:55.55] NARRADORA: El primero es la propia Rockstar.
+[06:58.21] NARRADORA: GTA 6 ya no deja hacer algunas cosas que sí estaban en entregas anteriores, como contratar a trabajadoras sexuales.
+[07:04.72] NARRADORA: En un comunicado recogido por la prensa, Rockstar explicó por qué.
+[07:09.98] NARRADORA: Eso sí, los clubes de striptease siguen ahí, y Jason y Lucía pueden ir juntos, como pareja.
+[07:17.55] NARRADORA: «Todo lo que hemos incluido en GTA 6 está ahí para apoyar el espíritu de la historia que queríamos contar».
+[07:23.27] NARRADORA: Y añadió que muchas cosas de juegos anteriores no están, pero que todo lo que sí está es necesario para lo que querían que sintieras en la historia de Jason y Lucía: una pareja.
+[07:33.73] NARRADORA: Segundo testigo:
+[07:35.01] NARRADORA: Rob Nelson, uno de los responsables de Rockstar North.
+[07:38.93] NARRADORA: En una entrevista con The Guardian le preguntaron si GTA 6 es el primero de la saga que fomenta la empatía.
+[07:46.45] NARRADORA: Su respuesta fue:
+[07:47.73] NARRADORA: «Yo diría que sí».
+[07:49.01] NARRADORA: Y añadió que el juego ofrece formas de fomentarla, para quien quiera usarlas.
+[07:53.66] NARRADORA: Según la prensa que recogió la entrevista, eso no significa que el juego penalice a quien prefiere el caos.
+[08:01.10] NARRADORA: Y el tercer testigo es el propio juego.
+[08:03.66] NARRADORA: Este jugador recibe un disparo y muere.
+[08:07.18] NARRADORA: Cuando despierta, está junto a la carretera, y en la esquina de la pantalla aparece el cargo, justo debajo del aviso de que se actualizó el mapa: mil ciento noventa y un dólares de hospital.
+[08:17.89] NARRADORA: En GTA 6, hasta morir sale caro.
+[08:20.45] NARRADORA: Y hay otra consecuencia que ya te explicamos en este canal: el perfil criminal, que te va poniendo una etiqueta según cómo juegas, de Profesional hasta Irredimible.
+[08:30.03] NARRADORA: Y si llegas a Irredimible, ya no hay vuelta atrás.
+[08:35.46] NARRADORA: Alegato final de la acusación:
+[08:37.22] NARRADORA: GTA 6 te deja robar un tanque y un avión de combate, y aguantar seis estrellas en una persecución.
+[08:43.14] NARRADORA: Sigue llamándose Grand Theft Auto, que en inglés es el nombre del delito de robar vehículos.
+[08:48.79] NARRADORA: Alegato final de la defensa: el juego te premia por arreglar la casa, por cuidar de tu pareja y hasta por sacar la basura.
+[08:56.15] NARRADORA: Y casi nada de lo que has visto es obligatorio.
+[08:58.95] NARRADORA: La relación con Lucía, el Focus de la basura y las estadísticas de la fuente se ganan sin disparar ni una bala.
+[09:06.49] NARRADORA: Antes del veredicto, repasemos las pruebas.
+[09:09.29] NARRADORA: La acusación presentó un tanque, un avión de combate, a una sheriff y un documento filtrado.
+[09:14.49] NARRADORA: La defensa, una casa arreglada, unas latas en el contenedor, varias misiones secundarias y una fuente.
+[09:21.73] NARRADORA: Nuestra conclusión no es un veredicto.
+[09:24.29] NARRADORA: Poder elegir entre el caos y la vida tranquila no es nuevo en GTA: en GTA 5 también podías jugar al golf, al tenis o hacer yoga.
+[09:32.99] NARRADORA: Lo nuevo es que ahora el juego toma nota: de tu relación con Lucía, de tu perfil criminal, y hasta de lo que haces con una lata vacía.
+[09:43.07] NARRADORA: Así que te toca a ti.
+[09:44.43] NARRADORA: ¿GTA 6 es culpable de ser un juego de crímenes, o es inocente, porque en el fondo es un simulador de vida?
+[09:50.60] NARRADORA: Escribe tu veredicto en los comentarios: culpable o inocente, y qué prueba te convenció.
+[09:55.40] NARRADORA: En este juicio no hay respuesta correcta, solo buenos argumentos.
+[09:58.76] NARRADORA: Y si todavía no viste cómo te vigila la policía de GTA 6, tienes ese video en el canal.
+[10:03.66] NARRADORA: Y si quieres más GTA 6 contado de otra forma, suscríbete a Sal y Asfalto.
+[10:08.70] NARRADORA: Se levanta la sesión.
+[10:12.02] (sin narración · 20.0 s)

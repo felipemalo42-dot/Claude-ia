@@ -361,473 +361,469 @@ buscar a Lucía: en cuanto sales, las
 reparaciones pendientes se bloquean.
 
 81
-00:04:20,182 --> 00:04:22,382
+00:04:20,182 --> 00:04:22,622
 Prueba dos, la favorita de la defensa.
 
 82
-00:04:22,422 --> 00:04:26,542
+00:04:22,662 --> 00:04:27,262
 Después de tomarte una cerveza, si tiras
 las latas vacías al contenedor, la barra
 
 83
-00:04:26,582 --> 00:04:28,129
+00:04:27,302 --> 00:04:29,182
 de Focus sube un tres por ciento.
 
 84
-00:04:28,169 --> 00:04:31,117
-GTA 6 te premia por sacar la basura.
+00:04:29,222 --> 00:04:32,196
+El juego te premia por sacar la basura.
 
 85
-00:04:31,157 --> 00:04:33,352
+00:04:32,236 --> 00:04:34,431
 Prueba tres: las misiones secundarias.
 
 86
-00:04:33,392 --> 00:04:38,477
+00:04:34,471 --> 00:04:39,556
 Karl McKittrick, un granjero con el brazo
 roto, necesita un piloto para fumigar sus
 
 87
-00:04:38,517 --> 00:04:40,877
+00:04:39,596 --> 00:04:41,956
 cultivos, y ese piloto eres tú.
 
 88
-00:04:40,917 --> 00:04:45,357
+00:04:41,996 --> 00:04:46,436
 Tienes que seguir su auto desde el aire y
 regar sus plantas.
 
 89
-00:04:45,397 --> 00:04:50,237
+00:04:46,476 --> 00:04:51,316
 Según la guía, la primera vez parece un
 encargo aburrido, pero si vuelves cada vez
 
 90
-00:04:50,277 --> 00:04:53,907
+00:04:51,356 --> 00:04:54,986
 que te necesita, la historia cambia por
 completo.
 
 91
-00:04:54,637 --> 00:04:59,157
+00:04:55,716 --> 00:05:00,236
 Dodo Rising, un grupo que defiende a los
 animales, protesta contra un santuario de
 
 92
-00:04:59,197 --> 00:05:03,317
+00:05:00,276 --> 00:05:04,396
 chimpancés cerca del aeropuerto, y te pide
 ayuda para salvarlos.
 
 93
-00:05:03,357 --> 00:05:06,461
+00:05:04,436 --> 00:05:07,540
 Es solo el primero de varios encargos con
 ese grupo.
 
 94
-00:05:06,501 --> 00:05:08,701
+00:05:07,580 --> 00:05:09,780
 Otra misión empieza de forma inquietante.
 
 95
-00:05:08,741 --> 00:05:12,301
+00:05:09,820 --> 00:05:13,380
 Navegando por los pantanos, oyes unos
 aullidos espantosos.
 
 96
-00:05:12,341 --> 00:05:16,461
+00:05:13,420 --> 00:05:17,540
 Si sigues el olor de un ciervo muerto,
 llegas a un tótem escondido entre la
 
 97
-00:05:16,501 --> 00:05:18,061
+00:05:17,580 --> 00:05:19,140
 maleza… y te desmayas.
 
 98
-00:05:18,101 --> 00:05:20,591
+00:05:19,180 --> 00:05:21,670
 Lo último que ves es un par de piernas.
 
 99
-00:05:20,631 --> 00:05:25,071
+00:05:21,710 --> 00:05:26,150
 La historia podría acabar ahí, pero por la
 zona de Key Lento hay carteles que
 
 100
-00:05:25,111 --> 00:05:28,111
+00:05:26,190 --> 00:05:29,190
 preguntan por una especie de Pie Grande de
 los pantanos.
 
 101
-00:05:28,151 --> 00:05:31,391
+00:05:29,230 --> 00:05:32,470
 Si los lees, aparece un contacto nuevo en
 tu teléfono:
 
 102
-00:05:31,431 --> 00:05:35,671
+00:05:32,510 --> 00:05:36,750
 Kirk, que te propone quedar de noche para
 buscarlo.
 
 103
-00:05:35,711 --> 00:05:40,071
+00:05:36,790 --> 00:05:41,150
 Hay hasta un movimiento con una teoría
 conspirativa sobre las aguas residuales:
 
 104
-00:05:40,111 --> 00:05:44,471
+00:05:41,190 --> 00:05:45,550
 primero lo oyes en las noticias de la
 radio, y el autor de la guía tardó ochenta
 
 105
-00:05:44,511 --> 00:05:47,431
+00:05:45,590 --> 00:05:48,510
 horas en dar con sus miembros.
 
 106
-00:05:47,471 --> 00:05:52,151
+00:05:48,550 --> 00:05:53,230
 Prueba cuatro: esta fuente de Capri, la
 Fuente de la Eterna Juventud, al sureste
 
 107
-00:05:52,191 --> 00:05:53,431
+00:05:53,270 --> 00:05:54,510
 del centro del pueblo.
 
 108
-00:05:53,471 --> 00:05:57,671
+00:05:54,550 --> 00:05:58,750
 Según la guía, beber de ella te mejora
 todas las estadísticas al instante.
 
 109
-00:05:57,711 --> 00:06:01,861
+00:05:58,790 --> 00:06:02,940
 Eso sí, el cartel avisa que bebes bajo tu
 propia responsabilidad.
 
 110
-00:06:01,901 --> 00:06:04,741
+00:06:02,980 --> 00:06:05,820
 ¡Objeción!, interrumpe la acusación.
 
 111
-00:06:04,781 --> 00:06:08,341
+00:06:05,860 --> 00:06:09,420
 No todas esas misiones son tan inocentes.
 
 112
-00:06:08,381 --> 00:06:14,421
+00:06:09,460 --> 00:06:15,500
 Un influencer de Ocean Beach te mete en
 las campañas de su propia criptomoneda, y
 
 113
-00:06:14,461 --> 00:06:18,847
+00:06:15,540 --> 00:06:19,926
 de paso te enseña los desafíos de
 acrobacias del mundo abierto.
 
 114
-00:06:18,887 --> 00:06:23,247
+00:06:19,966 --> 00:06:24,326
 Y una vieja amiga de Lucía la invita a
 hacer entregas para un negocio muy raro,
 
 115
-00:06:23,287 --> 00:06:26,807
+00:06:24,366 --> 00:06:27,886
 que hasta la guía describe como una mala
 idea.
 
 116
-00:06:26,847 --> 00:06:31,267
+00:06:27,926 --> 00:06:32,346
 Objeción aceptada: en GTA 6, hasta las
 buenas acciones pueden tener trampa.
 
 117
-00:06:31,887 --> 00:06:36,727
+00:06:32,966 --> 00:06:37,806
 Pero también hay historias más humanas,
 como la de Yago, un aspirante a piloto de
 
 118
-00:06:36,767 --> 00:06:41,047
+00:06:37,846 --> 00:06:42,126
 carreras callejeras que, según la guía,
 esconde mucho más de lo que parece.
 
 119
-00:06:41,087 --> 00:06:43,847
+00:06:42,166 --> 00:06:44,926
 Y hay misterios que la guía ni siquiera
 resuelve.
 
 120
-00:06:43,887 --> 00:06:48,167
+00:06:44,966 --> 00:06:49,246
 Si ves un auto abandonado junto a un
 motel, con un rastro de ropa que se mete
 
 121
-00:06:48,207 --> 00:06:50,973
+00:06:49,286 --> 00:06:52,052
 en el bosque, ve a mirar… si te atreves.
 
 122
-00:06:52,636 --> 00:06:54,436
+00:06:53,715 --> 00:06:55,515
 Llamamos a los testigos.
 
 123
-00:06:54,476 --> 00:06:57,091
+00:06:55,555 --> 00:06:58,170
 El primero es la propia Rockstar.
 
 124
-00:06:57,131 --> 00:07:01,369
+00:06:58,210 --> 00:07:02,448
 GTA 6 ya no deja hacer algunas cosas que
 sí estaban en entregas anteriores, como
 
 125
-00:07:01,409 --> 00:07:03,609
+00:07:02,488 --> 00:07:04,688
 contratar a trabajadoras sexuales.
 
 126
-00:07:03,649 --> 00:07:08,865
+00:07:04,728 --> 00:07:09,944
 En un comunicado recogido por la prensa,
 Rockstar explicó por qué.
 
 127
-00:07:08,905 --> 00:07:14,225
+00:07:09,984 --> 00:07:15,304
 Eso sí, los clubes de striptease siguen
 ahí, y Jason y Lucía pueden ir juntos,
 
 128
-00:07:14,265 --> 00:07:16,431
+00:07:15,344 --> 00:07:17,510
 como pareja.
 
 129
-00:07:16,471 --> 00:07:20,671
+00:07:17,550 --> 00:07:21,750
 «Todo lo que hemos incluido en GTA 6 está
 ahí para apoyar el espíritu de la historia
 
 130
-00:07:20,711 --> 00:07:22,151
+00:07:21,790 --> 00:07:23,230
 que queríamos contar».
 
 131
-00:07:22,191 --> 00:07:26,631
+00:07:23,270 --> 00:07:27,710
 Y añadió que muchas cosas de juegos
 anteriores no están, pero que todo lo que
 
 132
-00:07:26,671 --> 00:07:30,711
+00:07:27,750 --> 00:07:31,790
 sí está es necesario para lo que querían
 que sintieras en la historia de Jason y
 
 133
-00:07:30,751 --> 00:07:32,612
+00:07:31,830 --> 00:07:33,691
 Lucía: una pareja.
 
 134
-00:07:32,652 --> 00:07:33,892
+00:07:33,731 --> 00:07:34,971
 Segundo testigo:
 
 135
-00:07:33,932 --> 00:07:37,812
+00:07:35,011 --> 00:07:38,891
 Rob Nelson, uno de los responsables de
 Rockstar North.
 
 136
-00:07:37,852 --> 00:07:42,292
+00:07:38,931 --> 00:07:43,371
 En una entrevista con The Guardian le
 preguntaron si GTA 6 es el primero de la
 
 137
-00:07:42,332 --> 00:07:45,331
+00:07:43,411 --> 00:07:46,410
 saga que fomenta la empatía.
 
 138
-00:07:45,371 --> 00:07:46,611
+00:07:46,450 --> 00:07:47,690
 Su respuesta fue:
 
 139
-00:07:46,651 --> 00:07:47,891
+00:07:47,730 --> 00:07:48,970
 «Yo diría que sí».
 
 140
-00:07:47,931 --> 00:07:52,541
+00:07:49,010 --> 00:07:53,620
 Y añadió que el juego ofrece formas de
 fomentarla, para quien quiera usarlas.
 
 141
-00:07:52,581 --> 00:07:56,941
+00:07:53,660 --> 00:07:58,500
 Según la prensa que recogió la entrevista,
-eso no significa que el juego castigue a
+eso no significa que el juego penalice a
 
 142
-00:07:56,981 --> 00:07:59,421
+00:07:58,540 --> 00:08:01,060
 quien prefiere el caos.
 
 143
-00:07:59,461 --> 00:08:01,981
+00:08:01,100 --> 00:08:03,620
 Y el tercer testigo es el propio juego.
 
 144
-00:08:02,021 --> 00:08:05,501
+00:08:03,660 --> 00:08:07,140
 Este jugador recibe un disparo y muere.
 
 145
-00:08:05,541 --> 00:08:09,421
+00:08:07,180 --> 00:08:11,060
 Cuando despierta, está junto a la
 carretera, y en la esquina de la pantalla
 
 146
-00:08:09,461 --> 00:08:13,341
+00:08:11,100 --> 00:08:14,980
 aparece el cargo, justo debajo del aviso
 de que se actualizó el mapa: mil ciento
 
 147
-00:08:13,381 --> 00:08:16,217
+00:08:15,020 --> 00:08:17,856
 noventa y un dólares de hospital.
 
 148
-00:08:16,257 --> 00:08:18,777
+00:08:17,896 --> 00:08:20,416
 En GTA 6, hasta morir sale caro.
 
 149
-00:08:18,817 --> 00:08:22,777
+00:08:20,456 --> 00:08:24,416
 Y hay otra consecuencia que ya te
 explicamos en este canal: el perfil
 
 150
-00:08:22,817 --> 00:08:27,097
+00:08:24,456 --> 00:08:28,736
 criminal, que te va poniendo una etiqueta
 según cómo juegas, de Profesional hasta
 
 151
-00:08:27,137 --> 00:08:28,352
+00:08:28,776 --> 00:08:29,991
 Irredimible.
 
 152
-00:08:28,392 --> 00:08:32,213
+00:08:30,031 --> 00:08:33,852
 Y si llegas a Irredimible, ya no hay
 vuelta atrás.
 
 153
-00:08:33,822 --> 00:08:35,542
+00:08:35,461 --> 00:08:37,181
 Alegato final de la acusación:
 
 154
-00:08:35,582 --> 00:08:40,022
+00:08:37,221 --> 00:08:41,661
 GTA 6 te deja robar un tanque y un avión
 de combate, y aguantar seis estrellas en
 
 155
-00:08:40,062 --> 00:08:41,462
+00:08:41,701 --> 00:08:43,101
 una persecución.
 
 156
-00:08:41,502 --> 00:08:45,622
+00:08:43,141 --> 00:08:47,261
 Sigue llamándose Grand Theft Auto, que en
 inglés es el nombre del delito de robar
 
 157
-00:08:45,662 --> 00:08:47,216
+00:08:47,301 --> 00:08:48,752
 vehículos.
 
 158
-00:08:47,256 --> 00:08:48,653
-Alegato final de la defensa:
+00:08:48,792 --> 00:08:53,872
+Alegato final de la defensa: el juego te
+premia por arreglar la casa, por cuidar de
 
 159
-00:08:48,693 --> 00:08:53,673
-GTA 6 te premia por arreglar la casa, por
-cuidar de tu pareja y hasta por sacar la
+00:08:53,912 --> 00:08:56,112
+tu pareja y hasta por sacar la basura.
 
 160
-00:08:53,713 --> 00:08:54,313
-basura.
-
-161
-00:08:54,353 --> 00:08:57,154
+00:08:56,152 --> 00:08:58,914
 Y casi nada de lo que has visto es
 obligatorio.
 
-162
-00:08:57,194 --> 00:09:02,354
+161
+00:08:58,954 --> 00:09:04,114
 La relación con Lucía, el Focus de la
 basura y las estadísticas de la fuente se
 
-163
-00:09:02,394 --> 00:09:04,699
+162
+00:09:04,154 --> 00:09:06,459
 ganan sin disparar ni una bala.
 
-164
-00:09:04,739 --> 00:09:07,499
+163
+00:09:06,499 --> 00:09:09,259
 Antes del veredicto, repasemos las
 pruebas.
 
-165
-00:09:07,539 --> 00:09:11,979
+164
+00:09:09,299 --> 00:09:13,739
 La acusación presentó un tanque, un avión
 de combate, a una sheriff y un documento
 
-166
-00:09:12,019 --> 00:09:12,699
+165
+00:09:13,779 --> 00:09:14,459
 filtrado.
 
-167
-00:09:12,739 --> 00:09:16,939
+166
+00:09:14,499 --> 00:09:18,699
 La defensa, una casa arreglada, unas latas
 en el contenedor, varias misiones
 
-168
-00:09:16,979 --> 00:09:19,249
+167
+00:09:18,739 --> 00:09:21,009
 secundarias y una fuente.
 
-169
-00:09:19,979 --> 00:09:21,859
+168
+00:09:21,739 --> 00:09:24,259
 Nuestra conclusión no es un veredicto.
 
-170
-00:09:21,899 --> 00:09:27,059
-Que en GTA puedas elegir entre el caos y
-la vida tranquila no es nuevo: en GTA 5
+169
+00:09:24,299 --> 00:09:29,139
+Poder elegir entre el caos y la vida
+tranquila no es nuevo en GTA: en GTA 5
 
-171
-00:09:27,099 --> 00:09:31,419
+170
+00:09:29,179 --> 00:09:32,955
 también podías jugar al golf, al tenis o
 hacer yoga.
 
-172
-00:09:31,459 --> 00:09:36,299
+171
+00:09:32,995 --> 00:09:37,835
 Lo nuevo es que ahora el juego toma nota:
 de tu relación con Lucía, de tu perfil
 
-173
-00:09:36,339 --> 00:09:40,774
+172
+00:09:37,875 --> 00:09:42,309
 criminal, y hasta de lo que haces con una
 lata vacía.
 
-174
-00:09:41,539 --> 00:09:42,859
+173
+00:09:43,075 --> 00:09:44,395
 Así que te toca a ti.
 
-175
-00:09:42,899 --> 00:09:47,099
+174
+00:09:44,435 --> 00:09:48,635
 ¿GTA 6 es culpable de ser un juego de
 crímenes, o es inocente, porque en el
 
-176
-00:09:47,139 --> 00:09:49,030
+175
+00:09:48,675 --> 00:09:50,565
 fondo es un simulador de vida?
 
-177
-00:09:49,070 --> 00:09:53,110
+176
+00:09:50,605 --> 00:09:54,645
 Escribe tu veredicto en los comentarios:
 culpable o inocente, y qué prueba te
 
-178
-00:09:53,150 --> 00:09:53,830
+177
+00:09:54,685 --> 00:09:55,365
 convenció.
 
-179
-00:09:53,870 --> 00:09:57,190
+178
+00:09:55,405 --> 00:09:58,725
 En este juicio no hay respuesta correcta,
 solo buenos argumentos.
 
-180
-00:09:57,230 --> 00:10:01,510
+179
+00:09:58,765 --> 00:10:03,045
 Y si todavía no viste cómo te vigila la
 policía de GTA 6, tienes ese video en el
 
-181
-00:10:01,550 --> 00:10:02,090
+180
+00:10:03,085 --> 00:10:03,625
 canal.
 
-182
-00:10:02,130 --> 00:10:07,130
+181
+00:10:03,665 --> 00:10:08,665
 Y si quieres más GTA 6 contado de otra
 forma, suscríbete a Sal y Asfalto.
 
-183
-00:10:07,170 --> 00:10:09,734
+182
+00:10:08,705 --> 00:10:11,269
 Se levanta la sesión.

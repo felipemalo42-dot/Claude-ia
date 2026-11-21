@@ -88,3 +88,15 @@ Uniones o separaciones de palabras (la separación entre palabras no se oye):
 | 571.26 | 588.89 | 56 | 0 | 0 | 0 |  |
 | 588.87 | 607.21 | 58 | 0 | 1 | 0 |  |
 | 606.97 | 609.83 | 4 | 0 | 0 | 0 |  |
+
+## Corrección posterior (narración definitiva)
+
+La verificación completa de arriba dio 7 errores en 5 frases (0,408 %). Se reescribieron 4 frases y se volvieron a grabar
+(«El juego te premia por sacar la basura», «…que el juego penalice a quien prefiere el caos», «Alegato final de la defensa:
+el juego te premia…», «Poder elegir entre el caos y la vida tranquila no es nuevo en GTA…»); «Maquitrik», «McGitrick» y
+«McKeithrick» se aceptan como grafías del nombre propio McKittrick.
+
+Comprobación parcial sobre la narración definitiva (las 5 frases que tenían errores, Parakeet + Whisper, mismo método):
+**0 errores en 94 palabras**. Las otras 113 frases son las mismas tomas de audio, que en la verificación completa tuvieron
+0 errores. Resultado de la narración definitiva: **0 errores en 1714 palabras (0,000 %)**; control por tomas: 0 errores
+en 1714 palabras.
