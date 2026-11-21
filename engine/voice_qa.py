@@ -114,7 +114,7 @@ WER_ALIAS = [
     (r"\b[Ff][oó]u?[ck]us\b", "Focus"), (r"\b[Rr]o[ck]+ ?[Ss]tar\b", "Rockstar"), (r"\b[Rr]okstar\b", "Rockstar"),
     (r"\b[Ss]ic[oó]patas?\b", lambda m: "Psicópata" + ("s" if m.group(0).endswith("s") else "")),
     # vídeos 2 y 3 (Planeta Vice City, GTA 6 a juicio): grafías de nombres propios y términos ingleses
-    (r"\b[Gg]ran[dt]?[ -]?(?:th|z|s|t|c)?e(?:ph|[fp])?t[ -]?[aoó]u?to\b", "Grand Theft Auto"), (r"\b[CcKk]arl\b", "Karl"),
+    (r"\b[Gg]ran[dt]?[ -]?(?:th|z|s|t|c)?e(?:ph|[fp])?t,?[ -]?[aoó]u?t+o\b", "Grand Theft Auto"), (r"\bTheft,? ?otro\b", "Theft Auto"), (r"\b[CcKk]arl\b", "Karl"),
     (r"\b(?:M[ae]?c?[ -]?)?[CcKk]+[ií]+t+r[ií]+[ck]+k?\b", "McKittrick"), (r"\bR[aáe][iy]?[sz]+[ie]ng?\b", "Rising"),
     (r"\b(?:e?s[ck]o?u?n[ck]?k?[ -]?(?:qu|k)?e?i?p|skunk ?ape)\b", "Skunk Ape"), (r"\b(?:K|C|Qu)[eiu]r[ck]k?\b", "Kirk"),
     (r"\b(?:Key|K[iy]|Qu?i)[ -]?[Ll]ento\b", "Key Lento"), (r"\bBr[aá]?[iy]+[aá]n\b", "Brian"),

@@ -27,12 +27,12 @@ FUE = "R9r9ew12GcA"   # IGN · Short de la fuente de Capri (vertical)
 HOS = "vpHospital1"   # Video Pump · «Wasted in GTA 6, Then a $1,191 Hospital Bill» (solo la imagen de juego)
 
 # ================================================================ APERTURA
-beat("Dos días antes del lanzamiento de GTA 6, la policía de Atlanta publicó un aviso para los jugadores: «Que se quede en el juego. No lo traigas a nuestras calles». Y recordaba que conducir borracho o de forma temeraria, robar autos y la violencia tienen consecuencias reales.",
+beat("Dos días antes del lanzamiento de GTA 6, la policía de Atlanta publicó un aviso para los jugadores: «Déjalo en el juego. No lo traigas a nuestras calles». Y recordaba que conducir borracho o de forma temeraria, robar autos y la violencia tienen consecuencias reales.",
      mus=("noir", 2), pre=0.3, id="j01", cert="PRENSA",
      shots=[S(None, X(TAN, 292.0), z=(1.0, 1.06)),
-            S("«Que se quede", "g:quote", q="Que se quede en el juego. No lo traigas a nuestras calles.", who="POLICÍA DE ATLANTA · 17/11/2026", tag="PRENSA",
+            S("«Déjalo", "g:quote", q="Déjalo en el juego. No lo traigas a nuestras calles.", who="POLICÍA DE ATLANTA · 17/11/2026", tag="PRENSA",
               sub="«GTA no es un lugar real, pero Atlanta sí»")],
-     sfx=[(0.0, "riser", 0.35), ("w:«Que se quede", "stamp", 0.45)])
+     sfx=[(0.0, "riser", 0.35), ("w:«Déjalo", "stamp", 0.45)])
 beat("En Miami fueron más lejos. La sheriff del condado se opuso a que la ciudad se disfrazara de Vice City para promocionar el juego, porque, según ella, Grand Theft Auto es una saga construida alrededor del crimen.",
      mus=("noir", 2), id="j02", cert="PRENSA",
      shots=[S(None, X(TAN, 118.0), z=(1.0, 1.06)),
@@ -82,7 +82,7 @@ beat("Lo que viene después es una persecución de seis estrellas: puentes, auto
             S("una pista", X(TAN, 287.0), z=(1.0, 1.05)),
             S("envuelto en llamas", X(TAN, 299.0), z=(1.0, 1.08))],
      sfx=[("w:helicópteros", "whoosh", 0.35), ("w:llamas", "impact", 0.45)])
-beat("Segunda prueba. Una guía de IGN explica, paso a paso, cómo robar un avión de combate en el primer capítulo del juego.",
+beat("Segunda prueba. Una guía en vídeo explica, paso a paso, cómo robar un avión de combate en el primer capítulo del juego.",
      mus=("tension", 2), id="a04", cert="GUIA",
      shots=[S(None, X(JET, 62.0), z=(1.0, 1.05), prueba="PRUEBA B", lado="acusacion"), S("cómo robar", X(JET, 134.0), z=(1.0, 1.06))],
      sfx=[("w:Segunda prueba", "stamp", 0.5)])
@@ -117,7 +117,7 @@ beat("La pregunta de la acusación es simple: si le quitas los crímenes a GTA 6
      sfx=[("w:La defensa", "stamp", 0.5)])
 
 # ================================================================ SESIÓN 2 · LA DEFENSA
-beat("Prueba uno: la casa. La primera casa de Jason se la alquila a Brian, y está hecha un desastre. Otra guía del mismo medio explica cómo arreglarla.",
+beat("Prueba uno: la casa. La primera casa de Jason se la alquila a Brian, y es un desastre. Otra guía explica cómo arreglarla.",
      chapter=(2, "LA DEFENSA"), mus=("tropical", 1), pre=1.4, id="d01", cert="GUIA",
      shots=[S(None, X(CAS, 37.0), z=(1.0, 1.05), prueba="PRUEBA 1", lado="defensa"), S("hecha un desastre", X(CAS, 61.0), z=(1.0, 1.05)),
             S("Una guía", X(CAS, 63.5), z=(1.0, 1.05))],
@@ -147,7 +147,7 @@ beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el
 beat("Dodo Rising, un grupo que defiende a los animales, protesta contra un santuario de chimpancés cerca del aeropuerto, y te pide ayuda para salvarlos. Es solo el primero de varios encargos con ese grupo.",
      mus=("tropical", 2), id="d06", cert="GUIA",
      shots=[S(None, X(MIS, 270.0), z=(1.0, 1.05)), S("y te pide", X(MIS, 282.0), z=(1.0, 1.05))])
-beat("Y por la zona de Key Lento hay carteles que preguntan si has visto a una especie de Pie Grande de los pantanos. Si los lees, puedes llamar a un tal Kirk y salir a buscarlo de noche. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
+beat("Y por la zona de Key Lento hay carteles que preguntan si has visto a una especie de Pie Grande de los pantanos. Si los lees, se añade a tu teléfono un contacto nuevo: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
      mus=("tropical", 1), id="d07", cert="GUIA",
      shots=[S(None, X(MIS, 101.0), z=(1.0, 1.06)), S("una especie de Pie", X(MIS, 107.0), z=(1.0, 1.1)), S("Si los lees", X(MIS, 112.0), z=(1.0, 1.05))])
 beat("Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo. Según la guía, beber de ella te mejora todas las estadísticas al instante. Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.",
