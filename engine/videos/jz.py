@@ -139,7 +139,7 @@ beat("Prueba dos, la favorita de la defensa. Después de tomarte una cerveza, si
             S("tres por ciento", X(CAS, 89.0), z=(1.0, 1.06), big="+3 % DE FOCUS"),
             S("GTA 6 te premia", X(CAS, 116.5), z=(1.0, 1.05))],
      sfx=[("w:Prueba dos", "stamp", 0.5), ("w:tres por", "coin", 0.4)])
-beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el brazo roto, necesita un piloto para fumigar sus cultivos, y ese piloto eres tú. Sigues su auto desde el aire y riegas sus plantas. Según la guía, la primera vez parece un encargo aburrido, pero si vuelves cada vez que te necesita, la historia cambia por completo.",
+beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el brazo roto, necesita un piloto para fumigar sus cultivos, y ese piloto eres tú. Tienes que seguir su auto desde el aire y regar sus plantas. Según la guía, la primera vez parece un encargo aburrido, pero si vuelves cada vez que te necesita, la historia cambia por completo.",
      mus=("tropical", 2), id="d05", cert="GUIA",
      shots=[S(None, X(MIS, 150.0), z=(1.0, 1.05), prueba="PRUEBA 3", lado="defensa"), S("necesita un piloto", X(MIS, 157.0), z=(1.0, 1.05)),
             S("y ese piloto", X(MIS, 166.0), z=(1.0, 1.06))],
@@ -147,7 +147,7 @@ beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el
 beat("Dodo Rising, un grupo que defiende a los animales, protesta contra un santuario de chimpancés cerca del aeropuerto, y te pide ayuda para salvarlos. Es solo el primero de varios encargos con ese grupo.",
      mus=("tropical", 2), id="d06", cert="GUIA",
      shots=[S(None, X(MIS, 270.0), z=(1.0, 1.05)), S("y te pide", X(MIS, 282.0), z=(1.0, 1.05))])
-beat("Y por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos. Si los lees, se añade a tu teléfono un contacto nuevo: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
+beat("Y por la zona de Key Lento hay carteles que preguntan por una especie de Pie Grande de los pantanos. Si los lees, aparece un contacto nuevo en tu teléfono: Kirk, que te propone quedar de noche para buscarlo. Hay hasta un movimiento con una teoría conspirativa sobre las aguas residuales: primero lo oyes en las noticias de la radio, y el autor de la guía tardó ochenta horas en dar con sus miembros.",
      mus=("tropical", 1), id="d07", cert="GUIA",
      shots=[S(None, X(MIS, 101.0), z=(1.0, 1.06)), S("una especie de Pie", X(MIS, 107.0), z=(1.0, 1.1)), S("Si los lees", X(MIS, 112.0), z=(1.0, 1.05))])
 beat("Prueba cuatro: esta fuente de Capri, la Fuente de la Eterna Juventud, al sureste del centro del pueblo. Según la guía, beber de ella te mejora todas las estadísticas al instante. Eso sí, el cartel avisa que bebes bajo tu propia responsabilidad.",
