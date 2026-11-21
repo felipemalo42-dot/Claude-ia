@@ -48,6 +48,13 @@ for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json"):   # un arch
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 
+def source(vid):
+    """Copia local completa del original si existe (descargada con reanudación: la red corta las lecturas largas);
+    si no, la URL de Internet Archive. → (lista de argumentos de entrada de ffmpeg sin -ss)"""
+    loc = f"{OUT}/_src/{vid}.webm"
+    if os.path.exists(loc): return [loc]
+    return [*PROXY, SRC_URL.get(vid) or f"https://archive.org/download/youtube-{vid}/{vid}.webm"]
+
 def complete(path, expected):
     """¿El tramo tiene toda su duración? Si la conexión se corta a mitad de descarga, ffmpeg termina «bien» con un
     archivo más corto: eso no puede pasar por bueno (los planos leerían más allá del final)."""
@@ -65,9 +72,9 @@ def build(vid, a, b):
     vf = ([SRC_CROP[vid]] if vid in SRC_CROP else []) + [TONEMAP if hdr else (SCALE.replace("1920:1080", "1080:1920") if vid in VERTICAL else SCALE)]
     if fps > 50: vf.append(DEC.get(vid, DECIMATE))
     vf.append("setpts=N/(30*TB)")
-    url = SRC_URL.get(vid) or f"https://archive.org/download/youtube-{vid}/{vid}.webm"
+    inp = source(vid)
     tmp = out + ".part.mp4"; t0 = time.time()
-    cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
+    cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *inp[:-1], "-ss", f"{a:.3f}", "-i", inp[-1], "-t", f"{b - a:.3f}", "-an",
            "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
     for k in range(4):
@@ -96,8 +103,8 @@ def build_v(vid, a, b, cx):
     vf = [crop, (TONEMAP.replace("w=1920:h=1080", "w=1080:h=1920") if hdr else "scale=1080:1920:flags=lanczos,format=yuv420p")]
     if fps > 50: vf.append(DEC.get(vid, DECIMATE))
     vf.append("setpts=N/(30*TB)")
-    url = SRC_URL.get(vid) or f"https://archive.org/download/youtube-{vid}/{vid}.webm"; tmp = out + ".part.mp4"; t0 = time.time()
-    cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *PROXY, "-ss", f"{a:.3f}", "-i", url, "-t", f"{b - a:.3f}", "-an",
+    inp = source(vid); tmp = out + ".part.mp4"; t0 = time.time()
+    cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *inp[:-1], "-ss", f"{a:.3f}", "-i", inp[-1], "-t", f"{b - a:.3f}", "-an",
            "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
     for k in range(4):
