@@ -16,7 +16,7 @@ TOA = "cEDUO1zjB5c"
 TOP = dict(z=(1.38, 1.42), fy=0.0)      # deja fuera los subtítulos incrustados (73-86 % de la altura)
 
 beat("Así reacciona un habitante de GTA 6 si alguien invade su espacio.", pre=0.15, exag=0.7, id="s1",
-     shots=[S(None, f"v:{TOA}@3.0@0.62", **TOP)], sfx=[(0.0, "riser", 0.3)])
+     shots=[S(None, f"v:{TOA}@15.4@0.62", **TOP)], sfx=[(0.0, "riser", 0.3)])
 beat("Primero, te lo dice claro: «No me hables». «Aléjate de mí».", exag=0.7, id="s2",
      shots=[S(None, f"v:{TOA}@6.5@0.62", **TOP), S("«No me", f"v:{TOA}@9.0@0.62", say="Don't talk to me.", **TOP),
             S("«Aléjate", f"v:{TOA}@12.5@0.62", say="Get away from me.", **TOP)],
@@ -25,7 +25,7 @@ beat("Si lo tocas, la cosa se pone seria: «¿Quién te dio permiso para tocarme
      shots=[S(None, f"v:{TOA}@168.0@0.55", **TOP), S("«¿Quién", f"v:{TOA}@178.0@0.55", say="Who said you could touch me?", **TOP)],
      sfx=[("w:seria", "hit", 0.35)])
 beat("Y a veces, el que ataca es él. Este te exige la bolsa. Si te niegas, empieza la pelea, y se oye un grito: «¡Que alguien llame a la policía!».", exag=0.7, id="s4",
-     shots=[S(None, f"v:{TOA}@20.0@0.45", **TOP), S("te exige", f"v:{TOA}@24.0@0.45", say="Give bag / Decline", **TOP),
+     shots=[S(None, f"v:{TOA}@20.2@0.45", **TOP), S("te exige", f"v:{TOA}@24.0@0.45", say="Give bag / Decline", **TOP),
             S("empieza la pelea", f"v:{TOA}@30.0@0.45", **TOP), S("se oye un grito", f"v:{TOA}@37.0@0.45", say="Someone call the cops!", **TOP)],
      sfx=[("w:pelea", "impact", 0.4)])
 beat("Lo estudiamos como a un animal salvaje en Planeta Vice City: el documental de los humanos de GTA 6.", exag=0.65, id="s5",

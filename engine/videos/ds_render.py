@@ -114,12 +114,17 @@ def table(ctx):
     _T.update(shots=shots, starts=[s["t0"] for s in shots]); return _T
 
 def validate(ctx, verbose=True):
-    T = table(ctx); bad = []
+    T = table(ctx); bad = []; used = {}
     for s in T["shots"]:
         if s["src"].startswith("g:"): continue
         d = s["t1"] - s["t0"] + 0.17; path, loc, avail, kind = window(s)
         if not os.path.exists(path): bad.append((s, "falta el tramo")); continue
         if d > avail: bad.append((s, f"dura {d:.2f} s y solo hay {avail:.2f} s continuos"))
+        # el mismo momento del original no sale dos veces (aunque sea con otro encuadre)
+        k, vid, T0, cx = parse(s["src"]); seg = (T0, T0 + (s["t1"] - s["t0"]) * MZ.rate(vid))
+        for o in used.get(vid, []):
+            if seg[0] < o[1] - 0.05 and o[0] < seg[1] - 0.05: bad.append((s, f"repite material de {vid} ({o[0]:.1f}-{o[1]:.1f})"))
+        used.setdefault(vid, []).append(seg)
     if verbose:
         for s, why in bad: print(f"  [plano] {s['t0']:6.2f} s · {s['src']} · {why}")
         print(f"  validación de planos del Short: {len(T['shots'])} planos · {len(bad)} con problemas")
