@@ -92,7 +92,7 @@ def main(vid):
         if len(mm) == 2: times.append([int(h) * 3600 + int(m_) * 60 + int(s_) + int(ms) / 1000 for h, m_, s_, ms in mm])
     overl = sum(1 for a, b in zip(times, times[1:]) if b[0] < a[1] - 1e-3)
     # sincronía corte ↔ palabra
-    offs = [s["t0"] - s["word_t"] for s in T["shots"] if s.get("word_t")]
+    offs = [s["t0"] - s["word_t"] for s in T["shots"] if s.get("word_t") and not s.get("fit")]   # los trozos de continuación del ajuste no son cortes anclados
     L = [f"# Control de calidad — {V['folder']}/{V['file']}.mp4", "",
          "| Medida | Resultado | Objetivo |", "|---|---|---|",
          f"| Duración | {dur:.1f} s ({int(dur // 60)}:{int(dur % 60):02d}) | {'≥ 10 min' if longv else '35-60 s'} |",

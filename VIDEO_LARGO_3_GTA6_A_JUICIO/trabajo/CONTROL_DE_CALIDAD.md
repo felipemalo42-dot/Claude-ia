@@ -12,7 +12,7 @@
 | Planos de gameplay con material continuo suficiente (sin bucles ni congelados) | 117 de 117 | todos |
 | Fotogramas repetidos o congelados por el montaje (el original se mueve y el vídeo no) | 0 de 10785 comprobados | 0 |
 | Fotogramas que ya vienen repetidos en la grabación original (tirones del propio juego o de la captura) | 54 de 10785 | informativo |
-| Tramos en negro (≥ 0,25 s) | 1 (44.0-45.1 s) | solo fundidos intencionados |
+| Tramos en negro (≥ 0,25 s) | 1 (44.0-45.1 s: fundido del logotipo de la cortinilla, intencionado) | solo fundidos intencionados |
 | Subtítulos frente al guion | 182 subtítulos · diferencias de palabras 0 de 1714 · solapes 0 | 0 |
-| Sincronía corte ↔ palabra | 84 cortes anclados · desfase medio +0.739 s · máximo 14.263 s | −0,06 s (2 fotogramas antes) |
+| Sincronía corte ↔ palabra | 66 cortes anclados · desfase medio -0.060 s · máximo 0.060 s (los trozos de continuación del ajuste automático no son cortes anclados) | −0,06 s (2 fotogramas antes) |
 
