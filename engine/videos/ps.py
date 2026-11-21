@@ -29,7 +29,8 @@ beat("Y a veces, el que ataca es él. Este te exige la bolsa. Si te niegas, empi
             S("empieza la pelea", f"v:{TOA}@30.0@0.45", **TOP), S("se oye un grito", f"v:{TOA}@37.0@0.45", say="Someone call the cops!", **TOP)],
      sfx=[("w:pelea", "impact", 0.4)])
 beat("Lo estudiamos como a un animal salvaje en Planeta Vice City: el documental de los humanos de GTA 6.", exag=0.65, id="s5",
-     shots=[S(None, "g:sq", lines=["PLANETA", "VICE CITY"], sub="El documental de los humanos de GTA 6", hl=[1])],
+     shots=[S(None, f"v:{TOA}@186.0@0.55", **TOP),
+            S("en Planeta", "g:sq", lines=["PLANETA", "VICE CITY"], sub="El documental de los humanos de GTA 6", hl=[1])],
      sfx=[(0.0, "whoosh", 0.35)])
 beat("Lo tienes completo en el canal.", exag=0.65, hold=1.6, id="s6",
      shots=[S(None, "g:scta", thumb=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "VIDEO_LARGO_2_PLANETA_VICE_CITY", "MINIATURA.png"),
