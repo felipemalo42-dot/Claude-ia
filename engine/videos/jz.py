@@ -140,11 +140,11 @@ beat("Además, en el dormitorio puedes dormir para que pase el tiempo y guardar 
      shots=[S(None, X(CAS, 112.0), z=(1.0, 1.05)), S("la recompensa", "g:list", title="LA RECOMPENSA", subt="Según la guía de IGN",
               items=["No es dinero", "Lucía, más feliz", "Mejora la relación (corazón en pantalla)"], cues=["no es dinero", "feliz a Lucía", "un corazón"])],
      sfx=[("w:corazón", "chime", 0.45)])
-beat("Prueba dos, la favorita de la defensa. Después de tomarte una cerveza, si tiras las latas vacías al contenedor, la barra de Focus sube un tres por ciento. GTA 6 te premia por sacar la basura.",
+beat("Prueba dos, la favorita de la defensa. Después de tomarte una cerveza, si tiras las latas vacías al contenedor, la barra de Focus sube un tres por ciento. El juego te premia por sacar la basura.",
      mus=("tropical", 2), id="d04", cert="GUIA",
      shots=[S(None, X(CAS, 79.0), z=(1.0, 1.05), prueba="PRUEBA 2", lado="defensa"), S("si tiras", X(CAS, 85.0), z=(1.0, 1.06)),
             S("tres por ciento", X(CAS, 89.0), z=(1.0, 1.06), big="+3 % DE FOCUS"),
-            S("GTA 6 te premia", X(CAS, 116.5), z=(1.0, 1.05))],
+            S("El juego te premia", X(CAS, 116.5), z=(1.0, 1.05))],
      sfx=[("w:Prueba dos", "stamp", 0.5), ("w:tres por", "coin", 0.4)])
 beat("Prueba tres: las misiones secundarias. Karl McKittrick, un granjero con el brazo roto, necesita un piloto para fumigar sus cultivos, y ese piloto eres tú. Tienes que seguir su auto desde el aire y regar sus plantas. Según la guía, la primera vez parece un encargo aburrido, pero si vuelves cada vez que te necesita, la historia cambia por completo.",
      mus=("tropical", 2), id="d05", cert="GUIA",
@@ -201,7 +201,7 @@ beat("Segundo testigo: Rob Nelson, uno de los responsables de Rockstar North. En
      shots=[S(None, "g:testigo", name="ROB NELSON", role="Codirector de Rockstar North",
               q="¿Es el primer GTA que fomenta la empatía? Yo diría que sí.", fuente="ENTREVISTA EN THE GUARDIAN · RECOGIDA POR LA PRENSA")],
      sfx=[(0.1, "paper", 0.4)])
-beat("Su respuesta fue: «Yo diría que sí». Y añadió que el juego ofrece formas de fomentarla, para quien quiera usarlas. Según la prensa que recogió la entrevista, eso no significa que el juego castigue a quien prefiere el caos.",
+beat("Su respuesta fue: «Yo diría que sí». Y añadió que el juego ofrece formas de fomentarla, para quien quiera usarlas. Según la prensa que recogió la entrevista, eso no significa que el juego penalice a quien prefiere el caos.",
      mus=("noir", 1), id="t05", cert="PRENSA",
      shots=[S("para quien quiera", X(MIS, 420.0), z=(1.0, 1.05))])   # hasta ahí sigue en pantalla la tarjeta del testigo
 beat("Y el tercer testigo es el propio juego. Este jugador recibe un disparo y muere.",
@@ -229,7 +229,7 @@ beat("Alegato final de la acusación: GTA 6 te deja robar un tanque y un avión 
      shots=[S(None, X(TAN, 177.0), z=(1.0, 1.06)), S("un avión de combate", X(JET, 155.8), z=(1.0, 1.06)),
             S("Sigue llamándose", X(TAN, 309.0), z=(1.0, 1.05))],
      sfx=[(0.0, "stamp", 0.45)])
-beat("Alegato final de la defensa: GTA 6 te premia por arreglar la casa, por cuidar de tu pareja y hasta por sacar la basura. Y casi nada de lo que has visto es obligatorio. La relación con Lucía, el Focus de la basura y las estadísticas de la fuente se ganan sin disparar ni una bala.",
+beat("Alegato final de la defensa: el juego te premia por arreglar la casa, por cuidar de tu pareja y hasta por sacar la basura. Y casi nada de lo que has visto es obligatorio. La relación con Lucía, el Focus de la basura y las estadísticas de la fuente se ganan sin disparar ni una bala.",
      mus=("tropical", 1), id="f02", cert="GUIA",
      shots=[S(None, X(CAS, 28.3), z=(1.0, 1.05)), S("Y casi nada", X(MIS, 178.0), z=(1.0, 1.05)),
             S("se ganan sin disparar", "g:cover", kicker="ALEGATO DE LA DEFENSA", lines=["SIN DISPARAR", "NI UNA BALA"])],
@@ -240,7 +240,7 @@ beat("Antes del veredicto, repasemos las pruebas. La acusación presentó un tan
               **{"def": ["1 · Arreglar la casa", "2 · Sacar la basura", "3 · Misiones secundarias", "4 · La fuente de Capri"]},
               cues=["un tanque", "un avión", "una sheriff", "un documento", "una casa", "unas latas", "varias misiones", "una fuente"])],
      sfx=[("w:un tanque", "pop", 0.3), ("w:una casa", "pop", 0.3)])
-beat("Nuestra conclusión no es un veredicto. Que en GTA puedas elegir entre el caos y la vida tranquila no es nuevo: en GTA 5 también podías jugar al golf, al tenis o hacer yoga.",
+beat("Nuestra conclusión no es un veredicto. Poder elegir entre el caos y la vida tranquila no es nuevo en GTA: en GTA 5 también podías jugar al golf, al tenis o hacer yoga.",
      mus=("noir", 1), id="f03",
      shots=[S(None, X(MIS, 190.0), z=(1.0, 1.05)),
             S("no es nuevo", "g:list", title="EN GTA 5 YA PODÍAS", subt="Elegir la vida tranquila no es nuevo",
