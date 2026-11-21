@@ -37,7 +37,8 @@ _ALIAS = [(re.compile(a, re.I), b) for a, b in ALIAS]
 _ROMAN = {"xx": "veinte", "xix": "diecinueve", "xxi": "veintiuno"}
 
 def _pre(text):
-    t = re.sub(r"(\d+),(\d+)", r"\1 coma \2", text)
+    t = re.sub(r"\$\s?(\d{1,3}),(\d{3})\b", r"$\1\2", text)   # «$1,191»: separador de miles a la inglesa en cantidades en dólares
+    t = re.sub(r"(\d+),(\d+)", r"\1 coma \2", t)
     t = re.sub(r"\b(XX|XIX|XXI)\b", lambda m: _ROMAN[m.group(1).lower()], t)
     return t
 
@@ -134,9 +135,12 @@ def wer_tokens(text, hyp=False):
     if hyp:
         for rx, rep in _WALIAS: t = rx.sub(rep, t)
     t = re.sub(r"\bGTA VI\b", "GTA 6", t); t = re.sub(r"\bGTA V\b", "GTA 5", t)
+    t = re.sub(r"(\d),(\d{3})\b", r"\1\2", t)   # separador de miles a la inglesa («$1,191»): es el mismo número
+    t = re.sub(r"\$\s?(\d)", r"\1", t)             # «$1191 dólares»: el símbolo no se pronuncia (ya se dice «dólares»)
     t = re.sub(r"[«»“”\"¿?¡!.,;:()…—–]", " ", t)
-    # apócope de los numerales («veintiún enemigos»): misma palabra que «veintiuno» escrito con cifras
-    return ["veintiuno" if w == "veintiun" else w for w in canon(t)]
+    # apócope de los numerales («veintiún enemigos», «noventa y un dólares»): misma palabra que el número escrito con cifras
+    ws = ["veintiuno" if w == "veintiun" else w for w in canon(t)]
+    return ["uno" if w == "un" and i and ws[i - 1] == "y" else w for i, w in enumerate(ws)]
 
 def _pk(w):
     """Clave fonética de una palabra (seseo, yeísmo, b = v, h muda): dos palabras con la misma clave suenan igual."""

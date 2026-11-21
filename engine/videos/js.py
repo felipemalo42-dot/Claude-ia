@@ -13,7 +13,7 @@ def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), *
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 HOS, CAS, JET, TAN = "vpHospital1", "3UiRmXUIE9k", "4HCd052lpnA", "-UuHA1h-Cf8"
 
-beat("En GTA 6, si te matan, el juego te cobra el hospital.", pre=0.15, exag=0.7, id="s1",
+beat("GTA 6 te cobra el hospital si te matan.", pre=0.15, exag=0.7, id="s1",
      shots=[S(None, f"c:{HOS}@1.0", top="PARTIDA REAL · VIDEO PUMP")], sfx=[(0.0, "riser", 0.3), ("w:hospital", "coin", 0.4)])
 beat("Este jugador recibe un disparo, muere, y despierta junto a la carretera con un cargo de mil ciento noventa y un dólares.", exag=0.7, id="s2",
      shots=[S(None, f"c:{HOS}@4.5"), S("despierta", f"c:{HOS}@9.0"), S("con un cargo", f"c:{HOS}@14.0", crop=(0.55, 0.05, 1.0, 0.6), top="EL CARGO, EN LA ESQUINA")],
