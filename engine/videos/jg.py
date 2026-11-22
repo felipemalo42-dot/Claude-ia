@@ -18,7 +18,7 @@ VPG = (0.0, 0.12, 0.88, 0.75)   # sin los subtítulos y el logo que la edición 
 def N(anchor, n, name): return S(anchor, "g:sq", lines=[n, name], hl=[0], y=760)
 
 beat("GTA 6 tiene cuatro videojuegos completos dentro. Y no son minijuegos de relleno.", pre=0.15, exag=0.7, id="s1",
-     shots=[S(None, f"c:vpGame@4.0", crop=VPG, top="UN JUEGO DENTRO DEL JUEGO"), S("Y no son", f"c:{IGN}@2563.0", top="CUATRO JUEGOS COMPLETOS")],
+     shots=[S(None, f"c:vpGame@4.0", crop=VPG, top="UN JUEGO DENTRO DEL JUEGO"), S("Y no son", f"c:{IGN}@1219.0", top="CUATRO JUEGOS COMPLETOS")],
      sfx=[(0.0, "riser", 0.3), ("w:cuatro videojuegos", "stamp", 0.45)])
 beat("Cuatro: Street Trash Tres. Un juego de zombis visto desde arriba, que Jason juega en el sofá con su amigo Cal.", exag=0.7, id="s2",
      shots=[N(None, "4", "STREET TRASH III"), S("Un juego de zombis", "c:vpGame@15.8", crop=VPG, top="STREET TRASH III: DEZOMBIFIER"),
