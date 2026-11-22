@@ -28,11 +28,11 @@ beat("Canal dos: un anuncio en el que las hamburguesas se fabrican como canicas.
      shots=[ST(None, "CH 02"), CH("un anuncio", "vpBurger", 3.4, "CANAL 2 · ANUNCIO"), CH("como canicas", "vpBurger", 12.4, "CANAL 2 · ANUNCIO"),
             CH("Se llaman", "vpBurger", 21.6, "BIG BALL BURGER")],
      sfx=[("w:Canal dos", "pop", 0.35)])
-beat("Canal tres: un abogado que te busca si has sufrido un accidente. Su número: uno, nueve, nueve, nueve, Brad Law.", exag=0.7, id="s4",
-     shots=[ST(None, "CH 03"), CH("un abogado", "vpBradlaw", 11.6, "CANAL 3 · ANUNCIO"), CH("Su número", "vpBradlaw", 18.4, "1-9-9-9 BRAD-LAW")],
+beat("Canal tres: un abogado que te busca si has sufrido un accidente, y te pide que llames a Brad Law.", exag=0.7, id="s4",
+     shots=[ST(None, "CH 03"), CH("un abogado", "vpBradlaw", 11.6, "CANAL 3 · ANUNCIO"), CH("y te pide", "vpBradlaw", 18.4, "1-9-9-9 BRAD-LAW")],
      sfx=[("w:Canal tres", "pop", 0.35), ("w:Brad Law", "ding", 0.4)])
-beat("Canal cuatro: los gofres de Hank, desde mil novecientos ochenta y cuatro. El dueño presume de familia, mientras un empleado está en el baño, bajo un cartel que dice que la familia es para siempre.", exag=0.7, id="s5",
-     shots=[ST(None, "CH 04"), CH("los gofres", "vpWaffles", 24.6, "CANAL 4 · ANUNCIO"), CH("El dueño", "vpWaffles", 0.6, "HANK'S WAFFLES"),
+beat("Canal cuatro: los waffles de Hank, desde mil novecientos ochenta y cuatro. El dueño presume de familia, mientras un empleado está en el baño, bajo un cartel que dice que la familia es para siempre.", exag=0.7, id="s5",
+     shots=[ST(None, "CH 04"), CH("los waffles", "vpWaffles", 24.6, "CANAL 4 · ANUNCIO"), CH("El dueño", "vpWaffles", 0.6, "HANK'S WAFFLES"),
             CH("mientras un empleado", "vpWaffles", 12.6, "«FAMILY... FOREVER»")],
      sfx=[("w:Canal cuatro", "pop", 0.35), ("w:baño", "pop", 0.3)])
 beat("Y canal cinco: un western, con vaqueros, tiroteos… y un vaquero abrazando a un puma.", exag=0.7, id="s6",

@@ -91,7 +91,7 @@ PRON = [
     (r"\bupdate\b", "ápdeit"), (r"\bpatch\b", "pach"), (r"\bpreload\b", "prilóud"), (r"\bslow motion\b", "slou móshon"),
     (r"\bwanted\b", "uónted"), (r"\bfeed\b", "fid"), (r"\binfluencers?\b", "influénser"), (r"\bmemes?\b", "mem"),
     (r"\bNewswire\b", "Niúsguaier"), (r"\bCloud Gaming\b", "Cláud Guéimin"), (r"\bCustoms\b", "Cástoms"),
-    (r"\bOne-Eyed Willie's\b", "Uán Áid Uílis"), (r"\bRideout\b", "Ráidaut"), (r"\bWeazel News\b", "Uísel Nius"), (r"\bBig Ball Burger\b", "Big Bol Bérguer"), (r"\bBrad Law\b", "Brad Lo"), (r"\bHank\b", "Jank"), (r"\bStreet Trash\b", "Strit Trash"), (r"\bTime Jackers\b", "Taim Yákers"), (r"\bTenebrae Lux\b", "Ténebre Lux"), (r"\bBang For Your Buck\b", "Bang for yur Bak"), (r"\bshooter\b", "shúter"), (r"\bcyberpunk\b", "sáiberpank"),
+    (r"\bOne-Eyed Willie's\b", "Uán Áid Uílis"), (r"\bRideout\b", "Ráidaut"), (r"\bWeazel News\b", "Uísel Nius"), (r"\bBig Ball Burger\b", "Big Bol Bérguer"), (r"\bzapping\b", "sápin"), (r"\bwestern\b", "wéstern"), (r"\bwaffles\b", "guáfols"), (r"\bBrad Law\b", "Brad Lo"), (r"\bHank\b", "Jank"), (r"\bStreet Trash\b", "Strit Trash"), (r"\bTime Jackers\b", "Taim Yákers"), (r"\bTenebrae Lux\b", "Ténebre Lux"), (r"\bBang For Your Buck\b", "Bang for yur Bak"), (r"\bshooter\b", "shúter"), (r"\bcyberpunk\b", "sáiberpank"),
     (r"\bJustice\b", "Yóstis"), (r"\bNetflix\b", "Nétflix"), (r"\bYouTube\b", "Yutub"), (r"\bTikTok\b", "Tíktok"),
     (r"\bReddit\b", "Rédit"), (r"\bGoogle\b", "Gúgol"), (r"\bAndroid\b", "Ándroid"), (r"\biPhone\b", "áifon"),
     (r"\bWindows\b", "Uíndous"), (r"\blink\b", "link"), (r"\bbeta\b", "beta"), (r"\bcheat\b", "chit"),
