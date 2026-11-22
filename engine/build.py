@@ -83,14 +83,22 @@ def cb_job(text, voice, seed, exag=None, cfg=None):
     return dict(text=text, seed=int(seed), ref=v["ref"], exaggeration=v["exaggeration"], cfg=v["cfg"], temperature=0.8,
                 out=os.path.join(CB["cache"], f"{key}.wav"))
 
-def load_take(path):
+def stretch(x, tempo):
+    """Más ritmo sin cambiar el timbre: estiramiento temporal con Rubber Band (formantes preservados)."""
+    if not tempo or abs(tempo - 1.0) < 1e-3: return x
+    p = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-f", "f32le", "-ar", str(TSR), "-ac", "1", "-i", "-",
+                        "-af", f"rubberband=tempo={tempo}:formant=preserved:pitchq=quality", "-f", "f32le", "-ar", str(TSR), "-ac", "1", "-"],
+                       input=np.ascontiguousarray(x, dtype=np.float32).tobytes(), capture_output=True, check=True)
+    return np.frombuffer(p.stdout, dtype=np.float32).copy()
+
+def load_take(path, tempo=None):
     from scipy import signal as _sg
     x, sr = sf.read(path, dtype="float32")
     if x.ndim > 1: x = x.mean(axis=1)
     if sr != TSR:
         from math import gcd
         g = gcd(TSR, sr); x = _sg.resample_poly(x, TSR // g, sr // g).astype(np.float32)
-    return level(trim(x))
+    return level(trim(stretch(x, tempo)))
 
 def tail_trim(x, t_end, sr=None):
     """Quita el balbuceo que la síntesis añade a veces tras la última palabra, sin tocar la palabra:
@@ -202,13 +210,13 @@ def build_audio(V, outdir, narr=None, aligner=None):
             for tk in pend: tk["job"] = cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + k + 100 * V["beats"][tk["bi"]].get("seed_off", 0), tk.get("exag"), tk.get("cfg"))
             cb_batch([tk["job"] for tk in pend])
         for tk in pend:
-            x = load_take(tk["job"]["out"]) if VOICE_ENGINE == "chatterbox" else level(trim(narr.synth(tk["text"], tk["voice"], tk["speed"], take_seed(tk["text"], tk["voice"]) + k)))
+            x = load_take(tk["job"]["out"], V.get("tempo")) if VOICE_ENGINE == "chatterbox" else level(trim(narr.synth(tk["text"], tk["voice"], tk["speed"], take_seed(tk["text"], tk["voice"]) + k)))
             qc = None
             if VOICE_ENGINE == "chatterbox":
                 import hashlib
                 st_ = os.stat(tk["job"]["out"])
                 key = hashlib.sha1(json.dumps([tk["job"]["out"], st_.st_size, int(st_.st_mtime), tk["exp"], tk["flat"], metric, thr,
-                                               V.get("qa_sentences", True), "qa-v2"]).encode()).hexdigest()[:16]
+                                               V.get("qa_sentences", True), "qa-v2"] + ([V["tempo"]] if V.get("tempo") else [])).encode()).hexdigest()[:16]
                 qc = f"{tk['job']['out']}.qa_{key}.json"
             if qc and os.path.exists(qc):
                 times, score, hyp, det = json.load(open(qc, encoding="utf-8"))

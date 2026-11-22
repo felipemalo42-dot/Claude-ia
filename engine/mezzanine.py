@@ -36,6 +36,8 @@ SRC = {"Om4W6tYMF-0": (29.97, False), "gJyMGHxCKHU": (59.94, False), "ey0qks0aQ-
 VERTICAL = {"JHRVSzM2O2M", "uMYUjOLOOVQ", "R9r9ew12GcA"}
 # fuentes que no son copias de YouTube: URL directa y recorte de la imagen de juego (sin los rótulos del montaje original)
 # vídeo 4 (GTA 5 vs GTA 6): GTA 5 de Kotaku y The Escapist (2013), GTA 5 Enhanced de LOCAL GAMING (4K60) y la base de GTA 6 de Sirloin
+SRC.update({"igPenta": (30.0, False), "igFP": (30.0, False), "igRocket": (30.0, False), "igPlaneV": (30.0, False),
+            "NKq2GOBaJV8": (29.97, False), "QBMZ1ZXlflk": (60.0, False), "HAIx2b9ThL8": (59.94, False)})   # Shorts rt/gr/fp/am (IGN; tiras limpias de los verticales ya recortadas en xmez)
 SRC.update({"vpWestern": (30.0, False), "vpWaffles": (30.0, False), "vpWeazel": (30.0, False), "vpBurger": (30.0, False), "vpBradlaw": (30.0, False),
             "vpDive": (30.0, False), "vpGame": (30.0, False), "P-BbiYUPD-o": (30.0, False)})   # Shorts zp/jg/tb (Video Pump, CC BY 4.0; tiras limpias ya recortadas en xmez) e IGN
 SRC.update({"IG2hfrBVjh4": (29.97, False), "Q5XgKNEnbP4": (30.0, False), "V99Ng_VTBUs": (59.94, False), "nqmpDCbz3lA": (30.0, False)})

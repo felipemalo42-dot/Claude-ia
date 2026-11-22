@@ -156,6 +156,8 @@ def overlay(c, gt, ctx):
     if ctx.V.get("theme") == "juicio": D.gavel(c, 128, 166, 40, TH["acc"], p, base=False)
     elif ctx.V.get("theme") == "combate":
         for k in range(3): star(c, 98 + k * 46, 172, 19, TH["acc"], p)
+    elif ctx.V.get("theme") == "terror":
+        draw_poly(c, [(112 + 26 * math.sin(k * 4 * math.pi / 5), 168 - 26 * math.cos(k * 4 * math.pi / 5)) for k in range(5)], TH["acc"], p, stroke=4)
     elif ctx.V.get("theme") == "tv":
         rect(c, 76, 146, 70, 50, TH["acc"], p, r=8, stroke=5); line(c, 98, 146, 86, 128, TH["acc"], p, w=4); line(c, 124, 146, 136, 128, TH["acc"], p, w=4)
     elif ctx.V.get("theme") == "arcade":
@@ -244,5 +246,25 @@ def g_review(c, t, d, sh, ctx):
         if q > 0: star(c, 175 + k * 120, y0 + 430, 48 * q, "#F5B700" if k < n else "#D6D2C4", 1)
     if sh.get("sub"): draw_text(c, sh["sub"], 140, y0 + 540, "intersb", 40, "#444444", ease_out(prog(t, 0.8, 1.1)))
     c.restore()
+
+def g_sub(c, t, d, sh, ctx):
+    """Cierre de canal: emblema, nombre, «SUSCRÍBETE» (latiendo) y «DALE LIKE»."""
+    panel(c, t, ctx); TH = th(ctx)
+    p = ease_out_back(prog(t, 0.0, 0.45))
+    if p > 0:
+        c.save(); c.translate(W / 2, 560); c.scale(p, p); c.translate(-W / 2, -560)
+        draw_badge(c, W / 2, 560, 150, t=t); c.restore()
+    wordmark(c, W / 2, 820, 92, ease_out(prog(t, 0.2, 0.6)), align="center")
+    for j, ln in enumerate(sh.get("lines", [])):
+        draw_text(c, ln, W / 2, 960 + j * 70, "intersb", 52, WHITE, ease_out(prog(t, 0.35 + 0.1 * j, 0.7 + 0.1 * j)), align="center")
+    q = ease_out_back(prog(t, 0.6, 1.0))
+    if q > 0:
+        beat_ = 1 + 0.05 * math.sin(t * 7)
+        c.save(); c.translate(W / 2, 1120); c.scale(q * beat_, q * beat_)
+        rect(c, -330, -72, 660, 144, "#E62117", 1, r=72); draw_text(c, "SUSCRÍBETE", 0, 26, "anton", 80, WHITE, 1, align="center", tracking=3); c.restore()
+    q2 = ease_out_back(prog(t, 0.85, 1.25))
+    if q2 > 0:
+        c.save(); c.translate(W / 2, 1275); c.scale(q2, q2)
+        rect(c, -250, -56, 500, 112, WHITE, 0.95, r=56); draw_text(c, "DALE LIKE", 0, 20, "anton", 58, INK, 1, align="center", tracking=2); c.restore()
 
 GFX = {k[2:]: v for k, v in list(globals().items()) if k.startswith("g_")}
