@@ -135,6 +135,7 @@ def wer_tokens(text, hyp=False):
     if hyp:
         for rx, rep in _WALIAS: t = rx.sub(rep, t)
     t = re.sub(r"\bGTA VI\b", "GTA 6", t); t = re.sub(r"\bGTA V\b", "GTA 5", t)
+    t = re.sub(r"\b(Theft Auto) VI\b", r"\1 6", t); t = re.sub(r"\b(Theft Auto) V\b", r"\1 5", t)   # número romano del título = el número dicho
     t = re.sub(r"(\d),(\d{3})\b", r"\1\2", t)   # separador de miles a la inglesa («$1,191»): es el mismo número
     t = re.sub(r"\$\s?(\d)", r"\1", t)             # «$1191 dólares»: el símbolo no se pronuncia (ya se dice «dólares»)
     t = re.sub(r"[«»“”\"¿?¡!.,;:()…—–]", " ", t)

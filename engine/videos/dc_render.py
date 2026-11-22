@@ -43,6 +43,8 @@ AUTHOR = {"IG2hfrBVjh4": "Kotaku", "Q5XgKNEnbP4": "The Escapist", "V99Ng_VTBUs":
 EDITED = set(AUTHOR)          # todas son vídeos montados: un plano no puede cruzar un corte (detección de escena + cortes a mano)
 MANUAL_CUTS = {"3UiRmXUIE9k": [33.0, 36.0],      # icono de IGN sobre la imagen
                "xnNu7YybiCM": []}
+# tramos que nunca se usan como gameplay (en segundos del original): carteles negros con texto de la guía de The Escapist
+EXCLUDE = {"Q5XgKNEnbP4": [(53.4, 55.9), (62.0, 64.9), (70.6, 73.3), (78.2, 82.2), (90.7, 93.9), (102.8, 106.0), (116.4, 121.7), (132.1, 134.8)]}
 
 # ================================================================ material
 def parse_x(src):
@@ -224,6 +226,8 @@ def _segments(vid):
         for x0, x1 in zip(edges, edges[1:]):
             s0 = x0 + (0.10 if x0 > 0 else 0.0); s1 = x1 - 0.06
             if s1 - s0 > 0.35: out.append((a + s0 * rt, a + s1 * rt))
+    for e0, e1 in EXCLUDE.get(vid, []):
+        out = [p for a_, b_ in out for p in ((a_, min(b_, e0)), (max(a_, e1), b_)) if p[1] - p[0] > 0.35]
     return out
 
 def _free(segs, used):

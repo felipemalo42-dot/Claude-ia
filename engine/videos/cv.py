@@ -103,7 +103,7 @@ beat("Tercer asalto: robar un avión de combate. Es casi una tradición de la sa
 beat("Una guía en vídeo de dos mil trece lo hace con una partida de solo dos horas: entra en la base, se sube a un caza y despega mientras le lanzan misiles. Otra guía de la misma época avisaba de que la base, tanques incluidos, se pone en alerta en cuanto entras, de que está rodeada por una valla alta, y de que su autor murió muchas veces antes de conseguirlo. Su receta: un auto rápido, embestir la puerta, ir directo a los hangares, subirse al primer caza y despegar cuanto antes.",
      mus=("tension", 2), id="j02", cert="GUIA",
      shots=[S(None, X(K5, 72.0), z=(1.0, 1.05), **V5), S("y despega", X(K5, 84.0), z=(1.0, 1.06)), S("Otra guía", X(E5, 5.0), z=(1.0, 1.05), **V5),
-            S("una valla alta", X(E5, 40.0), z=(1.0, 1.05)), S("murió muchas veces", X(E5, 44.0), z=(1.0, 1.04)), S("Su receta", X(E5, 93.0), z=(1.0, 1.05)), S("ir directo a los hangares", X(E5, 106.0), z=(1.0, 1.05))],
+            S("una valla alta", X(E5, 40.0), z=(1.0, 1.05)), S("murió muchas veces", X(E5, 44.0), z=(1.0, 1.04)), S("Su receta", X(E5, 65.5), z=(1.0, 1.05)), S("ir directo a los hangares", X(E5, 106.3), z=(1.0, 1.05))],
      sfx=[("w:murió", "impact", 0.4)])
 beat("En GTA 6, el caza está en una base aérea, al oeste de la casa de Jason. Según otra guía, la forma de entrar es llegar en lancha, robar un blindado del ejército y saltar la valla. Y al subir al blindado, el juego te pone cinco estrellas de golpe. La propia guía recomienda guardar la partida antes y llevar objetos de curación, porque morir es casi seguro.",
      mus=("tension", 2), id="j03", cert="GUIA",
@@ -161,7 +161,7 @@ beat("Sexto asalto: morir. En los dos juegos, cuando te matan, aparece el mensaj
      sfx=[("w:mensaje de muerte", "impact", 0.4)])
 beat("En GTA 5, despertabas en el hospital y te cobraban la factura: según la wiki de GTA, depende del dinero que lleves encima, y llega hasta cinco mil dólares.",
      mus=("noir", 1), id="m02", cert="PRENSA",
-     shots=[S(None, X(E5, 52.0), z=(1.0, 1.04), **V5), S("según la wiki", "g:list", title="EL HOSPITAL EN GTA 5", subt="Según la GTA Wiki",
+     shots=[S(None, X(L5, 204.0), z=(1.0, 1.04), **V5), S("según la wiki", "g:list", title="EL HOSPITAL EN GTA 5", subt="Según la GTA Wiki",
               items=["Despiertas en el hospital", "La factura depende de tu dinero", "Máximo: 5.000 dólares"], cues=["despertabas", "depende del dinero", "cinco mil"])],
      sfx=[("w:cinco mil", "coin", 0.45)])
 beat("En GTA 6, este jugador recibe un disparo, despierta junto a la carretera, y en la esquina de la pantalla aparece el cargo: mil ciento noventa y un dólares de hospital.",
@@ -181,7 +181,7 @@ beat("Séptimo asalto: los poderes. En GTA 5, cada uno de sus tres protagonistas
      sfx=[("w:Michael", "pop", 0.3), ("w:Franklin", "pop", 0.3), ("w:Trevor", "pop", 0.3)])
 beat("Tanto, que una de aquellas guías recomendaba cambiar a Franklin para robar el caza: su habilidad hacía más fácil cruzar la entrada de la base. Y en GTA 5 podías cambiar de protagonista casi en cualquier momento, con la cámara alejándose sobre el mapa.",
      mus=("synthwave", 2), id="h02", cert="GUIA",
-     shots=[S(None, X(E5, 80.0), z=(1.0, 1.05), **V5), S("cruzar la entrada", X(E5, 96.0), z=(1.0, 1.06)), S("podías cambiar", X(L5, 620.0), z=(1.0, 1.05), **V5)])
+     shots=[S(None, X(E5, 83.0), z=(1.0, 1.05), **V5), S("cruzar la entrada", X(E5, 94.2), z=(1.0, 1.06)), S("podías cambiar", X(E5, 56.0), z=(1.0, 1.03), **V5)])
 beat("En GTA 6, Jason y Lucía comparten el mismo sistema, el Focus, una barra que, por ejemplo, sube un tres por ciento si tiras las latas vacías a la basura. Y GTA 6 también te deja cambiar entre los dos protagonistas, sin pantalla de carga.",
      mus=("tropical", 1), id="h03", cert="GUIA",
      shots=[S(None, X(CAS, 79.0), z=(1.0, 1.05), **V6), S("sube un tres", X(CAS, 86.0), z=(1.0, 1.06), big="+3 % FOCUS"), S("cambiar entre los dos", X(CAS, 28.3), z=(1.0, 1.05))],

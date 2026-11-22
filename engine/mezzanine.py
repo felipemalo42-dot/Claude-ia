@@ -139,6 +139,8 @@ if __name__ == "__main__":
             if sys.argv[2:] and vid not in sys.argv[2:]: continue   # python mezzanine.py --short [ID ...]
             for w in ws: build_v(vid, float(w[0]), float(w[1]), float(w[2]))
         print("FIN", flush=True); sys.exit(0)
+    if os.environ.get("MEZ_ONLY"):   # p. ej. MEZ_ONLY=cv: solo los tramos de ese vídeo (las fuentes se comparten entre vídeos)
+        WINDOWS = {k: v for k, v in json.load(open(os.path.join(_VD, os.environ["MEZ_ONLY"] + "_windows.json"), encoding="utf-8")).items()}
     ids = sys.argv[1:] or list(WINDOWS)
     for vid in ids:
         for a, b in windows_for(vid): build(vid, a, b)
