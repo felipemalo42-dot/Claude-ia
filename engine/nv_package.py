@@ -1,6 +1,6 @@
 """Título y descripción (con capítulos sacados de la línea de tiempo real) de los vídeos 2 y 3 y sus Shorts.
 
-Uso: python nv_package.py [jz|pv|js|ps|cv|tk|rc|tl ...]   (sin argumentos: todos)
+Uso: python nv_package.py [jz|pv|js|ps|cv|zp|jg|tb ...]   (sin argumentos: todos)
 Escribe TITULO_Y_DESCRIPCION.txt en la carpeta de cada vídeo.
 """
 import json, os, sys
@@ -149,43 +149,55 @@ V["cv"] = dict(
     tags="#GTA6 #GTA5 #GTAVI",
     keywords="GTA 5 vs GTA 6, GTA V vs GTA VI, GTA 6 vs GTA 5 comparación, GTA 6 diferencias con GTA 5, GTA 6 seis estrellas, GTA 6 policía testigos, GTA 6 robar avión de combate, GTA 5 Fort Zancudo, GTA 6 tanque, GTA 6 NPC calmar provocar, GTA 6 factura del hospital, GTA 5 habilidades especiales, GTA 6 Focus, GTA 6 30 fps, GTA 5 60 fps, GTA 6 gameplay en español, Vice City, Los Santos, Sal y Asfalto")
 
-V["tk"] = dict(
-    folder="SHORT_4_GTA6_ESCAPAR_ES_IMPOSIBLE", long=False,
-    title="GTA 6 te lo avisa: con 6 estrellas, escapar es imposible #shorts",
-    alts=["El mensaje que GTA 6 te muestra a seis estrellas #shorts",
-          "«Escapar es imposible»: así te avisa GTA 6 #shorts"],
-    intro=("Cuando llegas a seis estrellas en GTA 6, el juego te lo dice con todas las letras: «Escapar es imposible, y la policía no se "
-           "rendirá hasta darte caza». Y al robar el tanque ya te había avisado de otra cosa: lleva un rastreador militar. Este jugador lo "
-           "intentó igual: puentes, helicópteros y el ejército detrás. Partida real, sin spoilers de la historia."),
-    credits=[("-UuHA1h-Cf8", "toda la partida: el paracaídas, el tanque, los dos mensajes del juego y la persecución de seis estrellas")],
-    prensa=["• PC Gamer: cómo se llega a seis estrellas y por qué ya no se pueden perder — https://www.pcgamer.com/games/grand-theft-auto/gta-6-six-stars/"],
-    outro="¿Tú habrías llegado más lejos?", tags="#GTA6 #GTAVI #shorts",
-    keywords="GTA 6, GTA VI, GTA 6 seis estrellas, GTA 6 6 estrellas, GTA 6 escapar es imposible, GTA 6 tanque, GTA 6 rastreador militar, GTA 6 policía, GTA 6 persecución, Sal y Asfalto")
-V["rc"] = dict(
-    folder="SHORT_5_GTA6_VUELA_BAJO", long=False,
-    title="El consejo de GTA 6 cuando robas un avión de combate #shorts",
-    alts=["GTA 6 te dice cómo esquivar a la policía en un avión #shorts",
-          "Robar un caza en GTA 6: el juego te da este consejo #shorts"],
-    intro=("Si robas un avión de combate en GTA 6, el juego te da un consejo al despegar: «Volar a menos altura puede reducir la "
-           "probabilidad de que la policía te vea». Antes, cinco estrellas al subir a un blindado del ejército y un salto sobre la valla "
-           "de la base que el juego marca como salto acrobático fallido. Partida real, sin spoilers de la historia."),
-    credits=[("4HCd052lpnA", "toda la partida: la lancha, el blindado, las cinco estrellas, el salto de la valla, el consejo del juego y el derribo")],
-    prensa=["• PC Gamer: la base militar Mile Zero y el salto sobre la valla para entrar — https://www.pcgamer.com/games/grand-theft-auto/gta-6-military-base-location/"],
-    outro="¿Tú habrías volado más bajo?", tags="#GTA6 #GTAVI #shorts",
-    keywords="GTA 6, GTA VI, GTA 6 avión de combate, GTA 6 robar caza, GTA 6 volar bajo, GTA 6 policía avión, GTA 6 base militar, GTA 6 Mile Zero, GTA 6 salto acrobático, GTA 6 cinco estrellas, Sal y Asfalto")
-V["tl"] = dict(
-    folder="SHORT_6_GTA6_TURISTA_O_LOCAL", long=False,
-    title="¿Turista o local? GTA 6 te lo dice antes de hablar #shorts",
-    alts=["GTA 6 sabe si alguien es turista o local #shorts",
-          "La etiqueta secreta de los NPC de GTA 6 #shorts"],
-    intro=("En GTA 6, al acercarte a alguien, el menú para hablar le pone una etiqueta: «TOURIST» a esta mujer en la playa y «LOCAL» a "
-           "este hombre del gimnasio de la playa. Y las opciones cambian: primero saludar o burlarte, después calmar o provocar. ¿Para qué "
-           "sirve la etiqueta? No hemos encontrado ninguna explicación oficial. Partida real, sin spoilers de la historia."),
-    credits=[("gvlY1gVmSKM", "toda la partida: la playa, el gimnasio al atardecer y el menú de interacción")],
-    prensa=["• GTA Boom: las opciones de interacción con los NPC (saludar, burlarse, provocar, calmar) — https://www.gtaboom.com/gta-6-npc-interactions-and-world-encounters-bcf3",
-            "• Dot Esports: el nuevo sistema de diálogo con los NPC — https://dotesports.com/gta/news/gta-6-new-dialogue-system-npc-conversations"],
-    outro="¿Tú qué crees que cambia: turista o local?", tags="#GTA6 #GTAVI #shorts",
-    keywords="GTA 6, GTA VI, GTA 6 NPC, GTA 6 turista, GTA 6 local, GTA 6 hablar con NPC, GTA 6 provocar, GTA 6 calmar, GTA 6 detalles, Vice City, Sal y Asfalto")
+VP = "Video Pump"
+SRC.update({
+    "vpWeazel": (VP, "Weazel Cartoon", "19/11/2026", "https://archive.org/details/videopump-2026-11-19-weazel-cartoon"),
+    "vpBurger": (VP, "Big Ball Burger", "19/11/2026", "https://archive.org/details/videopump-2026-11-19-big-ball-burger"),
+    "vpBradlaw": (VP, "The Brad-Law Commercial", "19/11/2026", "https://archive.org/details/videopump-2026-11-19-brad-law"),
+    "vpWaffles": (VP, "They Put This Ad on TV in GTA 6: Hank's Waffles Est. 1984", "20/11/2026", "https://archive.org/details/videopump-2026-11-20-hanks-waffles"),
+    "vpWestern": (VP, "They Put a Western on TV in GTA 6", "20/11/2026", "https://archive.org/details/videopump-2026-11-20-western-on-tv"),
+    "vpGame": (VP, "GTA 6 has a full game inside the game (Street Trash III)", "21/11/2026", "https://archive.org/details/videopump-2026-11-21-midday"),
+    "vpDive": (VP, "GTA 6 Treasure Dive Gone Wrong", "21/11/2026", "https://archive.org/details/videopump-2026-11-21-midday"),
+    "P-BbiYUPD-o": ("IGN", "GTA 6 : Playing Every Arcade and Console Game", "21/11/2026", yt("P-BbiYUPD-o")),
+})
+CCBY = " · licencia CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); recortado y sin los textos de la edición original"
+V["zp"] = dict(
+    folder="SHORT_4_GTA6_ZAPPING", long=False,
+    title="Hice zapping en la tele de GTA 6 #shorts",
+    alts=["Esto es lo que dan en la tele de GTA 6 #shorts", "Los anuncios más locos de la tele de GTA 6 #shorts"],
+    intro=("Encendimos la tele de GTA 6 y fuimos cambiando de canal: un dibujo animado con un caimán, un flamenco y un manatí, el anuncio "
+           "de Big Ball Burger, el abogado 1-9-9-9 BRAD-LAW, los gofres de Hank «desde 1984» y un western con un vaquero abrazando a un puma. "
+           "Todo son emisiones reales de la tele del juego, grabadas en partida."),
+    credits=[(k, u + CCBY) for k, u in (("vpWeazel", "canal 1: el dibujo animado de Weazel"), ("vpBurger", "canal 2: el anuncio de Big Ball Burger"),
+             ("vpBradlaw", "canal 3: el anuncio de BRAD-LAW"), ("vpWaffles", "canal 4: el anuncio de Hank's Waffles"), ("vpWestern", "canal 5 y gancho: el western"))],
+    prensa=[], outro="¿Qué canal dejarías puesto?", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 tele, GTA 6 televisión, GTA 6 anuncios, GTA 6 Weazel, GTA 6 Big Ball Burger, GTA 6 Brad Law, GTA 6 Hank's Waffles, GTA 6 western, GTA 6 detalles, Sal y Asfalto")
+V["jg"] = dict(
+    folder="SHORT_5_GTA6_JUEGOS_DENTRO", long=False,
+    title="GTA 6 tiene 4 videojuegos completos dentro #shorts",
+    alts=["Los 4 juegos escondidos dentro de GTA 6 #shorts", "Un juego dentro del juego: los 4 de GTA 6 #shorts"],
+    intro=("GTA 6 trae cuatro videojuegos completos dentro: Street Trash III: Dezombifier (zombis vistos desde arriba, que Jason juega con "
+           "Cal en el sofá), Time Jackers (un shooter cyberpunk), Tenebrae Lux (en blanco y negro, una parodia de los juegos de exploración "
+           "más pretenciosos) y Bang! For Your Buck (una recreativa de caza que hay que buscar por el mapa). Spoiler leve: la escena del sofá "
+           "es de una misión del primer capítulo."),
+    credits=[("vpGame", "Street Trash III y la escena del sofá" + CCBY), ("P-BbiYUPD-o", "Time Jackers, Tenebrae Lux y Bang! For Your Buck")],
+    prensa=["• IGN: los cuatro juegos y sus géneros (descripción del vídeo) — " + yt("P-BbiYUPD-o"),
+            "• Kotaku: los juegos de la consola y las recreativas de GTA 6 — https://kotaku.com/gta-6-arcade-games-console-rob-nelson-vice-city-interview-gta6-2000757904",
+            "• Mobalytics: cómo jugar a los juegos de la consola — https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-how-to-play-console-games"],
+    outro="¿Cuál jugarías primero?", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 minijuegos, GTA 6 juegos dentro del juego, GTA 6 Street Trash, GTA 6 Time Jackers, GTA 6 Tenebrae Lux, GTA 6 Bang For Your Buck, GTA 6 arcade, GTA 6 consola, Sal y Asfalto")
+V["tb"] = dict(
+    folder="SHORT_6_GTA6_TOUR_DE_BUCEO", long=False,
+    title="Reseña: el tour de buceo de GTA 6 ⭐ (SPOILER) #shorts",
+    alts=["El peor tour de buceo de GTA 6 (SPOILER) #shorts", "Le doy una estrella a este tour de GTA 6 (SPOILER) #shorts"],
+    intro=("AVISO: spoilers de una misión del primer capítulo. Reseñamos el tour de buceo de GTA 6: el capitán bromea con que ha hecho un "
+           "agujero en el barco, el guía es en realidad Jason, el tour es una tapadera para buscar tesoros y los turistas ni siquiera lo "
+           "terminan. Nota: una estrella. ¿Tú le darías más?"),
+    credits=[("vpDive", "toda la partida de la misión" + CCBY)],
+    prensa=["• VGC: guía de la misión del tour de buceo (la tapadera del capitán) — https://www.videogameschronicle.com/guide/gta-6-island-dreams-walkthrough/",
+            "• games.gg: guía de la misión — https://games.gg/grand-theft-auto-vi/guides/island-dreams-mission-walkthrough-grand-theft-auto-6/"],
+    outro="¿Tú le darías más de una estrella?", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 buceo, GTA 6 tesoro, GTA 6 doblones, GTA 6 tour de buceo, GTA 6 misión, GTA 6 spoiler, Sal y Asfalto")
 
 def chapters(v):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -207,7 +219,7 @@ def write(k):
     if v["long"]:
         ch, total = chapters(v)
         L += ["CAPÍTULOS"] + [f"{mmss(t)} {n}" for t, n in ch] + [""]
-    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("tk", "rc", "tl")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
+    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
     if v["prensa"]: L += ["FUENTES"] + v["prensa"] + [""]
     L += [v["outro"], "", v["tags"], "", "ETIQUETAS (palabras clave)", v["keywords"], ""]
     if v["long"]: L += [f"Duración del vídeo: {mmss(total)}", ""]
