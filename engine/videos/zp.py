@@ -29,7 +29,7 @@ beat("Canal dos: un anuncio en el que las hamburguesas se fabrican como canicas.
             CH("Se llaman", "vpBurger", 21.6, "BIG BALL BURGER")],
      sfx=[("w:Canal dos", "pop", 0.35)])
 beat("Canal tres: un abogado que te busca si sufriste un accidente, y te pide que llames a Brad Law.", exag=0.7, id="s4",
-     shots=[ST(None, "CH 03"), CH("un abogado", "vpBradlaw", 11.6, "CANAL 3 · ANUNCIO"), CH("y te pide", "vpBradlaw", 18.4, "1-9-9-9 BRAD-LAW")],
+     shots=[ST(None, "CH 03"), CH("un abogado", "vpBradlaw", 11.6, "CANAL 3 · ANUNCIO"), CH("y te pide", "vpBradlaw", 21.3, "1-9-9-9 BRAD-LAW")],
      sfx=[("w:Canal tres", "pop", 0.35), ("w:Brad Law", "ding", 0.4)])
 beat("Canal cuatro: el restaurante de Hank, abierto desde mil novecientos ochenta y cuatro. El dueño presume de familia, mientras un empleado está en el baño, bajo un cartel que dice que la familia es para siempre.", exag=0.7, id="s5",
      shots=[ST(None, "CH 04"), CH("el restaurante", "vpWaffles", 24.6, "CANAL 4 · ANUNCIO"), CH("El dueño", "vpWaffles", 0.6, "HANK'S WAFFLES"),
@@ -37,7 +37,7 @@ beat("Canal cuatro: el restaurante de Hank, abierto desde mil novecientos ochent
      sfx=[("w:Canal cuatro", "pop", 0.35), ("w:baño", "pop", 0.3)])
 beat("Y canal cinco: una película del oeste, con vaqueros, tiroteos… y un vaquero abrazándose con un puma.", exag=0.7, id="s6",
      shots=[ST(None, "CH 05"), CH("una película", "vpWestern", 1.0, "CANAL 5 · WESTERN"), CH("tiroteos", "vpWestern", 15.0, "CANAL 5 · WESTERN"),
-            CH("y un vaquero", "vpWestern", 43.6, "CANAL 5 · WESTERN")],
+            CH("y un vaquero", "vpWestern", 41.0, "CANAL 5 · WESTERN")],
      sfx=[("w:canal cinco", "pop", 0.35), ("w:tiroteos", "impact", 0.35)])
 beat("Todo esto, en una tele que puedes no encender nunca. ¿Qué canal dejarías puesto?", exag=0.65, hold=1.4, id="s7",
      shots=[S(None, "g:sq", lines=["¿QUÉ CANAL", "DEJARÍAS?"], sub="Emisiones reales de la tele de GTA 6", hl=[1])],
