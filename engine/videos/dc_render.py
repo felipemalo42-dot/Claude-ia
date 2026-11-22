@@ -74,7 +74,8 @@ def x_window(sh):
     for a, b in sorted(MZ.windows_for(vid), key=lambda w: -(w[1] - T) if w[0] <= T < w[1] else 1e9):
         if a <= T < b:
             path = MZ.name(vid, a, b); loc = (T - a) / rt; avail = (b - T) / rt - 0.12
-            if os.path.exists(path):
+            if not os.path.exists(path): continue   # ventana de otro vídeo que ya no está extraída
+            if True:
                 avail = min(avail, file_dur(path) - loc - 0.12)
                 cs = mez_cuts(path, vid, a) if (vid in EDITED and not sh.get("nocut")) else []
                 nxt = next((x for x in cs if x > loc + 0.05), None)

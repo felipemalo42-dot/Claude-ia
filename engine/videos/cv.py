@@ -42,7 +42,7 @@ V6 = dict(prueba="GTA VI", lado="gta6")
 beat("Trece años separan a GTA 5 de GTA 6. Y la pregunta que todo el mundo se hace es la misma: ¿de verdad ha cambiado tanto? Para responderla, hemos puesto a los dos juegos frente a frente, en las mismas situaciones, con partidas reales. Ocho asaltos. Y al final, el marcador.",
      mus=("synthwave", 2), pre=0.3, id="o01",
      shots=[S(None, X(L5, 5.0), z=(1.0, 1.05), **V5), S("de GTA 6", X(THA, 212.0), z=(1.0, 1.05), **V6),
-            S("frente a frente", X(K5, 52.0), z=(1.0, 1.05), **V5), S("con partidas reales", X(TAN, 150.0), z=(1.0, 1.05), **V6),
+            S("frente a frente", X(K5, 108.0), z=(1.0, 1.05), **V5), S("con partidas reales", X(TAN, 150.0), z=(1.0, 1.05), **V6),
             S("Ocho asaltos", "g:cover", kicker="SAL Y ASFALTO PRESENTA", lines=["GTA 5", "VS GTA 6"], sub="Ocho asaltos con partidas reales")],
      sfx=[(0.0, "riser", 0.35), ("w:Ocho asaltos", "stamp", 0.5)])
 beat("Las reglas del combate. Todas las imágenes son partidas reales de jugadores y medios, con su crédito en pantalla. Las de GTA 5 vienen de versiones distintas, de dos mil trece y de la edición mejorada para PC, así que aquí no vamos a comparar gráficos: vamos a comparar lo que puedes hacer. Y no hay spoilers de la historia de GTA 6.",
@@ -77,7 +77,7 @@ beat("Los dos mapas tienen su estilo, y aquí no hay trampa posible: depende de 
 # ================================================================ 2 · LA POLICÍA
 beat("Segundo asalto: la policía. En GTA 5, el nivel de búsqueda máximo era de cinco estrellas, y cuando la policía te perdía de vista, las estrellas parpadeaban mientras te buscaban, hasta apagarse. En GTA 6, hay una sexta. Y si nadie te ha identificado, las estrellas aparecen vacías: la policía sabe que hubo un delito, pero no sabe quién fue.",
      chapter=(2, "LA POLICÍA"), mus=("tension", 2), pre=1.4, id="p01",
-     shots=[S(None, X(K5, 56.0), z=(1.0, 1.05), **V5), S("En GTA 6", X(TAN, 160.0), z=(1.0, 1.05), **V6),
+     shots=[S(None, X(E5, 122.0), z=(1.0, 1.05), **V5), S("En GTA 6", X(TAN, 160.0), z=(1.0, 1.05), **V6),
             S("una sexta", X(TAN, 172.0), z=(1.0, 1.06), big="6 ESTRELLAS"), S("si nadie te ha identificado", X(TAN, 176.0), z=(1.0, 1.05))],
      sfx=[("w:una sexta", "alarm", 0.3)])
 beat("Y la diferencia no es solo de número. Como ya te explicamos en el canal, en GTA 6 la policía necesita que alguien te vea o que salte una alarma. Y según PC Gamer, con seis estrellas ya no puedes bajar el nivel: la única salida es morir.",
@@ -98,7 +98,7 @@ beat("Esta persecución real lo demuestra: un tanque contra seis estrellas, puen
 # ================================================================ 3 · EL CAZA
 beat("Tercer asalto: robar un avión de combate. Es casi una tradición de la saga, y los dos juegos la cumplen. En GTA 5, el lugar es Fort Zancudo, la base militar del oeste del mapa.",
      chapter=(3, "EL CAZA"), mus=("tension", 2), pre=1.4, id="j01", seed_off=1, cert="GUIA",
-     shots=[S(None, X(K5, 22.0), z=(1.0, 1.04), **V5), S("En GTA 5", X(K5, 36.0), z=(1.0, 1.05)), S("la base militar", X(K5, 64.0), z=(1.0, 1.05))],
+     shots=[S(None, X(K5, 96.5), z=(1.0, 1.04), **V5), S("En GTA 5", X(K5, 20.0), z=(1.0, 1.05)), S("la base militar", X(K5, 66.0), z=(1.0, 1.05))],
      sfx=[(0.0, "whoosh", 0.35)])
 beat("Una guía en vídeo de dos mil trece lo hace con una partida de solo dos horas: entra en la base, se sube a un caza y despega mientras le lanzan misiles. Otra guía de la misma época avisaba de que la base, tanques incluidos, se pone en alerta en cuanto entras, de que está rodeada por una valla alta, y de que su autor murió muchas veces antes de conseguirlo. Su receta: un auto rápido, embestir la puerta, ir directo a los hangares, subirse al primer caza y despegar cuanto antes.",
      mus=("tension", 2), id="j02", cert="GUIA",
@@ -118,7 +118,7 @@ beat("Después, encender el avión lleva su tiempo, y la libertad dura poco. En 
 # ================================================================ 4 · EL TANQUE
 beat("Cuarto asalto: el tanque. En la misma base de GTA 5, la guía de dos mil trece entra con el coche, y la alarma no salta al instante. Entonces encuentra un tanque casi por suerte, se sube, y sale a la carretera disparando.",
      chapter=(4, "EL TANQUE"), mus=("tension", 2), pre=1.4, id="t01", cert="GUIA",
-     shots=[S(None, X(K5, 36.0), z=(1.0, 1.05), **V5), S("Entonces encuentra", X(K5, 44.0), z=(1.0, 1.05)), S("se sube", X(K5, 49.0), z=(1.0, 1.06)), S("sale a la carretera", X(K5, 58.0), z=(1.0, 1.05))],
+     shots=[S(None, X(K5, 36.0), z=(1.0, 1.05), **V5), S("Entonces encuentra", X(K5, 44.0), z=(1.0, 1.05)), S("se sube", X(K5, 49.0), z=(1.0, 1.06)), S("sale a la carretera", X(K5, 56.0), z=(1.0, 1.05))],
      sfx=[("w:disparando", "impact", 0.4)])
 beat("En GTA 6, este jugador se lanza en paracaídas sobre una base militar, se sube a un tanque, y aguanta una persecución de seis estrellas por toda la ciudad, hasta una pista de aterrizaje donde un avión acaba envuelto en llamas.",
      mus=("tension", 3), id="t02", cert="PARTIDA",
@@ -145,7 +145,7 @@ beat("Y las respuestas son de todo tipo: «No me hables». «Aléjate de mí»."
      shots=[S(None, X(TOA, 4.0), **TOACAP, **V6), S("«No me", X(TOA, 8.0), **TOACAP, say="Don't talk to me."), S("«Aléjate", X(TOA, 12.5), **TOACAP, say="Get away from me.")])
 beat("Y a veces es la gente la que viene a ti. Este desconocido quiere la bolsa del jugador, y en pantalla aparecen dos opciones: entregársela o negarse. El jugador se niega, empieza una pelea, y alrededor alguien grita: «¡Que alguien llame a la policía!».",
      mus=("tension", 1), id="g035", cert="OBSERVADO",
-     shots=[S(None, X(TOA, 18.0), **TOACAP, **V6), S("dos opciones", X(TOA, 24.0), **TOACAP, say="Give bag / Decline"), S("El jugador se niega", X(TOA, 28.0), **TOACAP),
+     shots=[S(None, X(THA, 684.0), z=(1.0, 1.05), **V6), S("quiere la bolsa", X(TOA, 19.6), **TOACAP), S("dos opciones", X(TOA, 24.0), **TOACAP, say="Give bag / Decline"), S("El jugador se niega", X(TOA, 28.0), **TOACAP),
             S("alguien grita", X(TOA, 38.5), **TOACAP, say="Someone call the cops!")],
      sfx=[("w:pelea", "impact", 0.35)])
 beat("Según Rockstar, GTA 6 lleva las interacciones con los personajes más lejos que Red Dead Redemption 2. Quinto asalto, sin discusión, para GTA 6.",
@@ -157,20 +157,21 @@ beat("Según Rockstar, GTA 6 lleva las interacciones con los personajes más lej
 # ================================================================ 6 · MORIR
 beat("Sexto asalto: morir. En los dos juegos, cuando te matan, aparece el mensaje de muerte: en GTA 5, sobre una imagen en gris; en GTA 6, sobre una imagen en rojo.",
      chapter=(6, "MORIR"), mus=("noir", 1), pre=1.4, id="m01",
-     shots=[S(None, X(E5, 47.0), z=(1.0, 1.04), **V5), S("en GTA 6, sobre", X(TAN, 247.0), z=(1.0, 1.03), **V6)],
+     shots=[S(None, X(E5, 20.0), z=(1.0, 1.04), **V5), S("en GTA 5, sobre", X(E5, 49.5), z=(1.0, 1.03)), S("en GTA 6, sobre", X(TAN, 247.0), z=(1.0, 1.03), **V6)],
      sfx=[("w:mensaje de muerte", "impact", 0.4)])
 beat("En GTA 5, despertabas en el hospital y te cobraban la factura: según la wiki de GTA, depende del dinero que lleves encima, y llega hasta cinco mil dólares.",
      mus=("noir", 1), id="m02", cert="PRENSA",
      shots=[S(None, X(L5, 204.0), z=(1.0, 1.04), **V5), S("según la wiki", "g:list", title="EL HOSPITAL EN GTA 5", subt="Según la GTA Wiki",
-              items=["Despiertas en el hospital", "La factura depende de tu dinero", "Máximo: 5.000 dólares"], cues=["despertabas", "depende del dinero", "cinco mil"])],
+              items=["Despiertas en el hospital", "La factura depende de tu dinero", "Máximo: 5.000 dólares"], cues=["según la wiki", "depende del dinero", "cinco mil"])],
      sfx=[("w:cinco mil", "coin", 0.45)])
 beat("En GTA 6, este jugador recibe un disparo, despierta junto a la carretera, y en la esquina de la pantalla aparece el cargo: mil ciento noventa y un dólares de hospital.",
      mus=("noir", 1), id="m03", cert="PARTIDA",
-     shots=[S(None, X(HOS, 6.3), card=True, **V6), S("en la esquina", X(HOS, 13.45), card=True, card_zoom=(0.84, 0.17, 1.0, 0.47), zoom_at=0.3)],
+     shots=[S(None, X(HOS, 6.3), card=True, **V6), S("en la esquina", X(HOS, 13.45), card=True, card_zoom=(0.84, 0.17, 1.0, 0.47), zoom_at=0.3),
+            S("mil ciento noventa", "g:cover", kicker="GTA 6 · FACTURA DEL HOSPITAL", lines=["1.191", "DÓLARES"], sub="En esta partida real")],
      sfx=[("w:mil ciento", "coin", 0.45)])
 beat("Pero no es una comparación justa: en GTA 5 la cifra depende de lo que lleves, y en GTA 6 solo tenemos este caso. Así que el sexto asalto queda en empate.",
      mus=("noir", 1), id="m04",
-     shots=[S(None, X(HOS, 0.0), card=True, **V6), S("Así que", "g:ronda", n=6, tema="MORIR", gana="empate", razon="Cifras que no se pueden comparar todavía", score=(0, 3))],
+     shots=[S(None, X(L5, 330.0), z=(1.0, 1.04), **V5), S("y en GTA 6 solo", X(HOS, 0.0), card=True, **V6), S("Así que", "g:ronda", n=6, tema="MORIR", gana="empate", razon="Cifras que no se pueden comparar todavía", score=(0, 3))],
      sfx=[("w:empate", "stamp", 0.45)])
 
 # ================================================================ 7 · LOS PODERES
@@ -184,11 +185,11 @@ beat("Tanto, que una de aquellas guías recomendaba cambiar a Franklin para roba
      shots=[S(None, X(E5, 83.0), z=(1.0, 1.05), **V5), S("cruzar la entrada", X(E5, 94.2), z=(1.0, 1.06)), S("podías cambiar", X(E5, 56.0), z=(1.0, 1.03), **V5)])
 beat("En GTA 6, Jason y Lucía comparten el mismo sistema, el Focus, una barra que, por ejemplo, sube un tres por ciento si tiras las latas vacías a la basura. Y GTA 6 también te deja cambiar entre los dos protagonistas, sin pantalla de carga.",
      mus=("tropical", 1), id="h03", cert="GUIA",
-     shots=[S(None, X(CAS, 79.0), z=(1.0, 1.05), **V6), S("sube un tres", X(CAS, 86.0), z=(1.0, 1.06), big="+3 % FOCUS"), S("cambiar entre los dos", X(CAS, 28.3), z=(1.0, 1.05))],
+     shots=[S(None, X(CAS, 78.5), z=(1.0, 1.05), **V6), S("sube un tres", X(CAS, 86.0), z=(1.0, 1.06), big="+3 % FOCUS"), S("Y GTA 6 también", X(CAS, 28.3), z=(1.0, 1.05)), S("sin pantalla de carga", X(JET, 148.0), z=(1.0, 1.05))],
      sfx=[("w:tres por ciento", "ding", 0.4)])
 beat("Y en lo que mostró Rockstar antes del lanzamiento, el Focus también sirve en los tiroteos: el tiempo se ralentiza y se marcan los puntos débiles del enemigo. Algo que recuerda mucho a la habilidad de Michael. Pero es la misma barra para los dos protagonistas.",
      mus=("synthwave", 1), id="h035", cert="ROCKSTAR",
-     shots=[S(None, X(B6, 440.0), z=(1.0, 1.05), **V6), S("Algo que recuerda", X(L5, 680.0), z=(1.0, 1.05), **V5), S("Pero es la misma", X(CAS, 82.0), z=(1.0, 1.05), **V6)])
+     shots=[S(None, X(B6, 440.0), z=(1.0, 1.05), **V6), S("Algo que recuerda", X(L5, 680.0), z=(1.0, 1.05), **V5), S("Pero es la misma", X(JET, 130.0), z=(1.0, 1.05), **V6)])
 beat("Tres poderes distintos contra un mismo sistema para los dos. Séptimo asalto para GTA 5.",
      mus=("synthwave", 2), id="h04",
      shots=[S(None, X(L5, 640.0), z=(1.0, 1.05), **V5),
@@ -203,7 +204,7 @@ beat("Octavo y último asalto: la fluidez. En PlayStation 5 y Xbox Series, GTA 5
 beat("GTA 6, según Rockstar, funciona a treinta, y su equipo técnico aún no tenía claro si habrá un modo de sesenta. Ojo: este vídeo va a treinta imágenes por segundo, así que aquí no lo vas a notar. Pero con el mando en la mano, se nota. Octavo asalto para GTA 5.",
      mus=("synthwave", 1), id="f02", cert="PRENSA",
      shots=[S(None, "g:cover", kicker="GTA 6 · SEGÚN ROCKSTAR", lines=["30", "IMÁGENES/S"], sub="Sin un modo de 60 confirmado"),
-            S("Ojo", X(THA, 245.0), z=(1.0, 1.05), **V6), S("con el mando", X(L5, 690.0), z=(1.0, 1.05), **V5),
+            S("Ojo", X(JET, 75.0), z=(1.0, 1.05), **V6), S("con el mando", X(L5, 690.0), z=(1.0, 1.05), **V5),
             S("Octavo asalto", "g:ronda", n=8, tema="LA FLUIDEZ", gana="gta5", razon="60 imágenes por segundo contra 30", score=(2, 3))],
      sfx=[("w:Octavo asalto", "stamp", 0.45)])
 
@@ -217,7 +218,7 @@ beat("Fin del combate. Repasemos el marcador. Para GTA 5: los poderes y la fluid
 beat("Resultado: tres asaltos para GTA 6, dos para GTA 5 y tres empates. GTA 6 gana, pero a los puntos, y no por paliza. Trece años después, el veterano todavía da guerra. Lo que deja claro este combate es que GTA 6 no gana por fuerza bruta, sino por los detalles: una policía que necesita testigos, un menú para hablar con la gente, y una persecución que no se acaba hasta que caes. Y GTA 5 sigue ganando en lo que mejor hacía: tres personajes con su propio poder, y un juego que va como la seda.",
      mus=("noir", 2), id="r02", seed_off=1,
      shots=[S(None, "g:cover", kicker="RESULTADO FINAL", lines=["GTA 6 GANA", "A LOS PUNTOS"], sub="3 asaltos para GTA 6 · 2 para GTA 5 · 3 empates"),
-            S("Trece años después", X(L5, 12.0), z=(1.0, 1.05), **V5), S("Lo que deja claro", X(TAN, 300.0), z=(1.0, 1.05), **V6), S("Y GTA 5 sigue", X(L5, 330.0), z=(1.0, 1.05), **V5)],
+            S("Trece años después", X(L5, 12.0), z=(1.0, 1.05), **V5), S("Lo que deja claro", X(JET, 100.0), z=(1.0, 1.05), **V6), S("un menú para hablar", X(THA, 1266.0), z=(1.0, 1.05)), S("y una persecución", X(TAN, 300.0), z=(1.0, 1.05)), S("Y GTA 5 sigue", X(L5, 330.0), z=(1.0, 1.05), **V5)],
      sfx=[(0.0, "stamp", 0.5)])
 beat("¿Y tú? ¿Cuál es tu marcador? Escribe en los comentarios qué asalto le darías a cada uno. Y si quieres ver a GTA 6 en un juicio de verdad, tienes ese video en el canal.",
      mus=("tropical", 1), pre=0.6, id="r03",
