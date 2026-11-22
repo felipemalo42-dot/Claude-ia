@@ -38,7 +38,7 @@ beat("Canal cuatro: el restaurante de Hank, abierto desde mil novecientos ochent
 beat("Y canal cinco: una película del oeste, con vaqueros, tiroteos… y un vaquero abrazándose con un puma.", exag=0.7, id="s6",
      shots=[ST(None, "CH 05"), CH("una película", "vpWestern", 1.0, "CANAL 5 · WESTERN"), CH("tiroteos", "vpWestern", 15.0, "CANAL 5 · WESTERN"),
             CH("y un vaquero", "vpWestern", 43.6, "CANAL 5 · WESTERN")],
-     sfx=[("w:Canal cinco", "pop", 0.35), ("w:tiroteos", "impact", 0.35)])
+     sfx=[("w:canal cinco", "pop", 0.35), ("w:tiroteos", "impact", 0.35)])
 beat("Todo esto, en una tele que puedes no encender nunca. ¿Qué canal dejarías puesto?", exag=0.65, hold=1.4, id="s7",
      shots=[S(None, "g:sq", lines=["¿QUÉ CANAL", "DEJARÍAS?"], sub="Emisiones reales de la tele de GTA 6", hl=[1])],
      sfx=[(0.0, "pop", 0.45)])
