@@ -31,6 +31,7 @@ VIDEO_LARGO_GTA6/PROYECTO_DE_EDICION/short_promocional/narracion_original.wav
 # vídeos 2 y 3 tras el lanzamiento y sus Shorts: solo se suben los entregables; el material de trabajo pesado se regenera
 VIDEO_LARGO_2_*/trabajo/**/*.wav
 VIDEO_LARGO_3_*/trabajo/**/*.wav
+VIDEO_LARGO_4_*/trabajo/**/*.wav
 SHORT_2_*/trabajo/**/*.wav
 SHORT_3_*/trabajo/**/*.wav
 */trabajo/_*
@@ -40,5 +41,6 @@ SHORT_3_*/trabajo/**/*.wav
 */trabajo/**/pistas/
 VIDEO_LARGO_2_*/trabajo/NARRACION.mp3
 VIDEO_LARGO_3_*/trabajo/NARRACION.mp3
+VIDEO_LARGO_4_*/trabajo/NARRACION.mp3
 SHORT_2_*/trabajo/NARRACION.mp3
 SHORT_3_*/trabajo/NARRACION.mp3

@@ -1,6 +1,6 @@
 """Título y descripción (con capítulos sacados de la línea de tiempo real) de los vídeos 2 y 3 y sus Shorts.
 
-Uso: python nv_package.py [jz|pv|js|ps ...]   (sin argumentos: los cuatro)
+Uso: python nv_package.py [jz|pv|js|ps|cv ...]   (sin argumentos: todos)
 Escribe TITULO_Y_DESCRIPCION.txt en la carpeta de cada vídeo.
 """
 import json, os, sys
@@ -22,6 +22,10 @@ SRC = {
     "cEDUO1zjB5c": ("toaster", "GTA 6 NPC Interactions Are UNREAL", "19/11/2026", yt("cEDUO1zjB5c")),
     "gvlY1gVmSKM": ("Yamatum O", "พาเที่ยวเมือง Vice City | GTA 6", "19/11/2026", yt("gvlY1gVmSKM")),
     "NwQKirh2dxE": ("LazarBeam", "Testing Everything In GTA 6", "20/11/2026", yt("NwQKirh2dxE")),
+    "IG2hfrBVjh4": ("Kotaku", "How To Get A Tank And Fighter Jet In GTA 5", "16/09/2013", yt("IG2hfrBVjh4")),
+    "Q5XgKNEnbP4": ("The Escapist", "HOW TO STEAL A FIGHTER JET IN GTA V", "25/09/2013", yt("Q5XgKNEnbP4")),
+    "V99Ng_VTBUs": ("LOCAL GAMING", "GTA 5: Enhanced in RTX 5090 -Franklin & Chop-INSANE Ray-Tracing Ultra Realistic Graphics Gameplay 4K", "29/03/2025", yt("V99Ng_VTBUs")),
+    "nqmpDCbz3lA": ("Sirloin", "The Military Base in GTA 6 - First Look", "18/11/2026", yt("nqmpDCbz3lA")),
 }
 def credit(i, uso): a, t, f, u = SRC[i]; return f"• {a} — {t} ({f}) — {u}\n  Usado para: {uso}"
 
@@ -109,6 +113,41 @@ V["ps"] = dict(
     credits=[("cEDUO1zjB5c", "los encuentros con los habitantes y sus frases")],
     prensa=[], outro="¿Qué es lo más raro que te ha dicho un habitante de Vice City?", tags="#GTA6 #GTAVI #shorts",
     keywords="GTA 6, GTA VI, GTA 6 NPC, GTA 6 reacciones, GTA 6 frases, Planeta Vice City, Sal y Asfalto")
+
+V["cv"] = dict(
+    folder="VIDEO_LARGO_4_GTA5_VS_GTA6", long=True,
+    title="GTA 5 vs GTA 6: 8 asaltos con partidas reales",
+    alts=["GTA 5 contra GTA 6: el combate (sin comparar gráficos)",
+          "¿De verdad ha cambiado tanto? GTA 5 vs GTA 6 en 8 asaltos",
+          "Pusimos a GTA 5 y GTA 6 frente a frente: este es el marcador"],
+    intro=("Trece años separan a GTA 5 de GTA 6. ¿De verdad ha cambiado tanto? Los ponemos frente a frente en un combate de ocho "
+           "asaltos, con la misma situación en los dos juegos y partidas reales de cada uno: la ciudad, la policía, robar un avión de "
+           "combate, el tanque, la gente, morir, los poderes y la fluidez. Cada asalto tiene un veredicto razonado, y si no hay forma "
+           "justa de decidirlo, es empate.\n\n"
+           "No comparamos gráficos: las imágenes de GTA 5 vienen de versiones distintas (2013 y la edición mejorada para PC). "
+           "Sin spoilers de la historia de GTA 6: solo cosas que puedes hacer por tu cuenta. Los datos de prensa se dicen con su fuente."),
+    chapters=[("o01", "El combate"), ("c01", "Asalto 1 · La ciudad"), ("p01", "Asalto 2 · La policía"), ("j01", "Asalto 3 · El caza"),
+              ("t01", "Asalto 4 · El tanque"), ("g01", "Asalto 5 · La gente"), ("m01", "Asalto 6 · Morir"), ("h01", "Asalto 7 · Los poderes"),
+              ("f01", "Asalto 8 · La fluidez"), ("r01", "El marcador final")],
+    credits=[("IG2hfrBVjh4", "GTA 5: Fort Zancudo, el tanque y el caza (guía de 2013)"),
+             ("Q5XgKNEnbP4", "GTA 5: cómo robar el caza con Franklin y la pantalla de muerte (guía de 2013)"),
+             ("V99Ng_VTBUs", "GTA 5 (edición mejorada para PC): Los Santos, Grove Street, Franklin y Chop"),
+             ("-UuHA1h-Cf8", "GTA 6: el tanque y la persecución de seis estrellas"),
+             ("4HCd052lpnA", "GTA 6: cómo robar un avión de combate en el primer capítulo"),
+             ("nqmpDCbz3lA", "GTA 6: la base militar, el blindado y la valla"),
+             ("cEDUO1zjB5c", "GTA 6: el menú para hablar con la gente, sus respuestas y el robo de la bolsa"),
+             ("gvlY1gVmSKM", "GTA 6: Vice City, la playa, el gimnasio al aire libre y la etiqueta de turista o local"),
+             ("3UiRmXUIE9k", "GTA 6: el Focus (+3 % al tirar las latas a la basura)"),
+             ("vpHospital1", "GTA 6: la factura del hospital (solo la imagen de juego)")],
+    prensa=["• Newsweek: la nueva policía de GTA 6 (testigos, alarmas, cámaras, estrellas vacías y lo que sabe de ti) — https://www.newsweek.com/gta-6s-new-police-system-ends-the-easy-getaway-with-flock-like-cameras-12743394",
+            "• PC Gamer: cómo se llega a seis estrellas y por qué ya no se pueden perder — https://www.pcgamer.com/games/grand-theft-auto/gta-6-six-stars/",
+            "• GTA Wiki: la factura del hospital en GTA 5 (hasta 5.000 dólares, según el dinero que lleves) — https://gta.wiki/w/Hospitals",
+            "• TweakTown: GTA 5 en PS5 y Xbox Series con modo de 60 imágenes por segundo (2022) — https://www.tweaktown.com/news/84910/gta-has-4k-60fps-raytracing-mode-on-ps5-xbox-series/index.html",
+            "• TweakTown: según Rockstar, GTA 6 funciona a 30 y su equipo técnico aún no tenía claro un modo de 60 — https://www.tweaktown.com/news/113337/rockstar-says-gta-6-will-run-at-30-fps-and-its-tech-team-is-still-unsure-about-a-60-fps-mode/index.html",
+            PRENSA_PV[2]],
+    outro="¿Cuál es tu marcador? Escribe en los comentarios qué asalto le darías a cada uno.",
+    tags="#GTA6 #GTA5 #GTAVI",
+    keywords="GTA 5 vs GTA 6, GTA V vs GTA VI, GTA 6 vs GTA 5 comparación, GTA 6 diferencias con GTA 5, GTA 6 seis estrellas, GTA 6 policía testigos, GTA 6 robar avión de combate, GTA 5 Fort Zancudo, GTA 6 tanque, GTA 6 NPC calmar provocar, GTA 6 factura del hospital, GTA 5 habilidades especiales, GTA 6 Focus, GTA 6 30 fps, GTA 5 60 fps, GTA 6 gameplay en español, Vice City, Los Santos, Sal y Asfalto")
 
 def chapters(v):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

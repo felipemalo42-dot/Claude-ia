@@ -28,11 +28,17 @@ THEMES = {
     "planeta": dict(acc="#9BE38D", acc2="#F2C94C", bg="#07110C", glow1="#2FBF71", glow2="#F2C94C", chap="CAPÍTULO"),
     # sala de juicio: dorado y madera; rojo acusación, azul defensa
     "juicio": dict(acc="#E8C468", acc2="#F5E6B8", bg="#0E0B08", glow1="#E5484D", glow2="#4C8DF6", chap="SESIÓN"),
+    # combate por asaltos: oro de cinturón de campeón; verde GTA V, rosa GTA VI
+    "combate": dict(acc="#F5C542", acc2="#FFFFFF", bg="#0B0B10", glow1="#5BC26A", glow2="#F25C9B", chap="ASALTO"),
 }
+G5, G6 = "#5BC26A", "#F25C9B"
+LADO_COL = {"acusacion": "#E5484D", "defensa": "#4C8DF6", "gta5": G5, "gta6": G6}
+LADO_TXT = {"acusacion": "ACUSACIÓN", "defensa": "DEFENSA", "gta5": "LOS SANTOS · 2013", "gta6": "VICE CITY · 2026"}
 def th(ctx): return THEMES[ctx.V.get("theme", "planeta")]
 
 # fuentes (copias públicas en Internet Archive; créditos en pantalla y en la descripción)
-AUTHOR = {"cEDUO1zjB5c": "toaster", "-UuHA1h-Cf8": "GameV", "3UiRmXUIE9k": "IGN", "xnNu7YybiCM": "IGN", "jZka1Ay1-gI": "IGN",
+AUTHOR = {"IG2hfrBVjh4": "Kotaku", "Q5XgKNEnbP4": "The Escapist", "V99Ng_VTBUs": "LOCAL GAMING", "nqmpDCbz3lA": "Sirloin",
+          "cEDUO1zjB5c": "toaster", "-UuHA1h-Cf8": "GameV", "3UiRmXUIE9k": "IGN", "xnNu7YybiCM": "IGN", "jZka1Ay1-gI": "IGN",
           "4HCd052lpnA": "IGN", "gN5qaT7u-uM": "IGN", "R9r9ew12GcA": "IGN", "vpHospital1": "Video Pump", "gvlY1gVmSKM": "Yamatum O", "NwQKirh2dxE": "LazarBeam"}
 EDITED = set(AUTHOR)          # todas son vídeos montados: un plano no puede cruzar un corte (detección de escena + cortes a mano)
 MANUAL_CUTS = {"3UiRmXUIE9k": [33.0, 36.0],      # icono de IGN sobre la imagen
@@ -389,10 +395,10 @@ def big_text(c, lines, tau, d, col):
 
 def exhibit_tag(c, txt, lado, tau, d, ctx):
     """Etiqueta de prueba (juicio): «PRUEBA A» en rojo (acusación) o azul (defensa), arriba a la izquierda."""
-    col = {"acusacion": RED, "defensa": BLUE}.get(lado, "#B8860B")
+    col = LADO_COL.get(lado, "#B8860B")
     p = ease_out_back(prog(tau, 0.1, 0.45)) * (1 - prog(tau, d - 0.15, d))
     if p <= 0: return
-    side = {"acusacion": "ACUSACIÓN", "defensa": "DEFENSA"}.get(lado, "DECLARA")
+    side = LADO_TXT.get(lado, "DECLARA")
     f = font("anton", 64); w = max(330, text_w(txt, f, 2) + 80)
     c.save(); c.translate(70 + w / 2, 230); c.rotate(-4 * (1 - p)); c.scale(p, p)
     rect(c, -w / 2, -66, w, 132, "#F4EBD0", 0.97, r=10); rect(c, -w / 2, -66, w, 132, col, 1, r=10, stroke=6)
@@ -567,7 +573,7 @@ def gavel(c, x, y, s, col, a=1.0, ang=0.0, base=True):
 def g_cargo(c, t, d, sh, ctx):
     """Cargo de la acusación o argumento de la defensa: número, texto y lado."""
     panel(c, t, ctx); TH = th(ctx)
-    col = RED if sh.get("lado", "acusacion") == "acusacion" else BLUE
+    col = LADO_COL.get(sh.get("lado", "acusacion"), th(ctx)["acc"])
     p = ease_out_back(prog(t, 0.05, 0.45))
     draw_text(c, sh.get("kicker", "CARGO"), W / 2, 300, "ovmonomd", 40, col, clamp(p), align="center", tracking=8)
     for j, ln in enumerate(wrap(sh["txt"], "anton", 110, W - 300)):
@@ -579,7 +585,8 @@ def g_marcador(c, t, d, sh, ctx):
     """Marcador del juicio: pruebas de la acusación (rojo) y de la defensa (azul)."""
     panel(c, t, ctx); TH = th(ctx)
     title_top(c, sh.get("title", "LAS PRUEBAS"), ease_out(prog(t, 0, 0.3)), ctx)
-    cols = [("ACUSACIÓN", RED, sh.get("acu", []), W / 2 - 470), ("DEFENSA", BLUE, sh.get("def", []), W / 2 + 470)]
+    names = sh.get("names", ("ACUSACIÓN", "DEFENSA")); colors = sh.get("colors", (RED, BLUE))
+    cols = [(names[0], colors[0], sh.get("acu", []), W / 2 - 470), (names[1], colors[1], sh.get("def", []), W / 2 + 470)]
     st = sh.get("st") or []; k = 0
     for name, col, items, cx in cols:
         p = ease_out(prog(t, 0.1, 0.4))
@@ -618,6 +625,24 @@ def g_veredicto(c, t, d, sh, ctx):
         draw_text(c, sub, 0, 110, "intersb", 42, WHITE, 1, align="center"); c.restore()
     q = ease_out(prog(t, st[-1] + 0.6, st[-1] + 1.0))
     if sh.get("foot"): draw_text(c, sh["foot"], W / 2, 920, "anton", 60, WHITE, q, align="center", tracking=2)
+
+def g_ronda(c, t, d, sh, ctx):
+    """Resultado de un asalto: quién lo gana (o empate), por qué y el marcador acumulado GTA V – GTA VI."""
+    panel(c, t, ctx); TH = th(ctx)
+    p = ease_out(prog(t, 0.05, 0.4))
+    draw_text(c, f"ASALTO {sh['n']}", W / 2, 230, "ovmonomd", 40, TH["acc"], p, align="center", tracking=10)
+    draw_text(c, sh["tema"], W / 2, 330, "anton", 86, WHITE, p, align="center", tracking=2)
+    g = sh["gana"]; col = {"gta5": G5, "gta6": G6}.get(g, TH["acc"]); txt = {"gta5": "GANA GTA V", "gta6": "GANA GTA VI"}.get(g, "EMPATE")
+    q = ease_out_back(prog(t, 0.45, 0.85))
+    if q > 0:
+        c.save(); c.translate(W / 2, 520); c.scale(q, q); f = font("anton", 120); w = text_w(txt, f, 3) + 140
+        rect(c, -w / 2, -100, w, 200, col, 1, r=24); draw_text(c, txt, 0, 46, "anton", 120, INK, 1, align="center", tracking=3); c.restore()
+    r = ease_out(prog(t, 1.0, 1.4))
+    for j, ln in enumerate(wrap(sh.get("razon", ""), "intersb", 44, W - 500)): draw_text(c, ln, W / 2, 720 + j * 58, "intersb", 44, GRAY, r, align="center")
+    a5, a6 = sh["score"]; m = ease_out(prog(t, 1.4, 1.8))
+    draw_text(c, "GTA V", W / 2 - 260, 880, "anton", 54, G5, m, align="center", tracking=2)
+    draw_text(c, f"{a5}  –  {a6}", W / 2, 884, "anton", 64, WHITE, m, align="center", tracking=4)
+    draw_text(c, "GTA VI", W / 2 + 260, 880, "anton", 54, G6, m, align="center", tracking=2)
 
 def g_subscribe(c, t, d, sh, ctx):
     panel(c, t, ctx)
@@ -658,6 +683,22 @@ def thumb_juicio(c):
     rect(c, 250, 500, 780, 180, "#0E0B08", 0.94, r=22); rect(c, 250, 500, 780, 180, "#E8C468", 1, r=22, stroke=7)
     draw_text(c, "GTA 6 A JUICIO", 640, 618, "anton", 124, "#E8C468", 1, align="center", tracking=3)
     draw_text(c, "CON PRUEBAS REALES", 640, 474, "ovmono", 30, WHITE, 0.95, align="center", tracking=4)
+
+def thumb_combate(c):
+    """Tanque contra tanque: GTA 5 (guía de Kotaku, 2013) a la izquierda, GTA 6 (persecución de seis estrellas de GameV) a la derecha."""
+    Wt, Ht = 1280, 720; base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "VIDEO_LARGO_4_GTA5_VS_GTA6", "trabajo")
+    _bg(c, os.path.join(base, "miniatura_gta5.png"), 0, 0, 660, Ht, crop=(0.26, 0.22, 0.86, 1.0), tint=("#0E3B1A", 0.12))
+    _bg(c, os.path.join(base, "miniatura_gta6.png"), 620, 0, 660, Ht, crop=(0.16, 0.16, 0.70, 1.0), tint=("#4A0B2A", 0.12))
+    pth = skia.Path(); pth.moveTo(612, 0); pth.lineTo(688, 0); pth.lineTo(652, Ht); pth.lineTo(576, Ht); pth.close(); c.drawPath(pth, paint("#0B0B10", 1))
+    g = skia.Paint(); g.setShader(skia.GradientShader.MakeLinear([(0, 0), (0, Ht)], [skia.Color(0, 0, 0, 190), skia.Color(0, 0, 0, 0), skia.Color(0, 0, 0, 0), skia.Color(0, 0, 0, 225)], [0, 0.32, 0.62, 1]))
+    c.drawRect(skia.Rect.MakeWH(Wt, Ht), g)
+    draw_text(c, "GTA V", 300, 160, "anton", 150, G5, 1, align="center", tracking=3)
+    draw_text(c, "GTA VI", 985, 160, "anton", 150, G6, 1, align="center", tracking=3)
+    circle(c, 632, 330, 92, "#0B0B10", 1); circle(c, 632, 330, 92, "#F5C542", 1, stroke=8)
+    draw_text(c, "VS", 632, 366, "anton", 100, "#F5C542", 1, align="center", tracking=2)
+    rect(c, 330, 600, 620, 96, "#0B0B10", 0.94, r=18); rect(c, 330, 600, 620, 96, "#F5C542", 1, r=18, stroke=6)
+    draw_text(c, "8 ASALTOS", 640, 676, "anton", 74, "#F5C542", 1, align="center", tracking=4)
+    draw_text(c, "CON PARTIDAS REALES", 640, 586, "ovmono", 26, WHITE, 0.95, align="center", tracking=4)
 
 def thumb_planeta(c):
     """Fotograma real (dos habitantes rechazan a Jason a la puerta de una barbería, partida de toaster) con ficha de documental."""

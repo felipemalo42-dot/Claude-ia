@@ -35,6 +35,9 @@ SRC = {"Om4W6tYMF-0": (29.97, False), "gJyMGHxCKHU": (59.94, False), "ey0qks0aQ-
        "JHRVSzM2O2M": (59.94, False), "uMYUjOLOOVQ": (59.94, False)}   # estos dos: vídeos verticales de 1080×1920
 VERTICAL = {"JHRVSzM2O2M", "uMYUjOLOOVQ", "R9r9ew12GcA"}
 # fuentes que no son copias de YouTube: URL directa y recorte de la imagen de juego (sin los rótulos del montaje original)
+# vídeo 4 (GTA 5 vs GTA 6): GTA 5 de Kotaku y The Escapist (2013), GTA 5 Enhanced de LOCAL GAMING (4K60) y la base de GTA 6 de Sirloin
+SRC.update({"IG2hfrBVjh4": (29.97, False), "Q5XgKNEnbP4": (30.0, False), "V99Ng_VTBUs": (59.94, False), "nqmpDCbz3lA": (30.0, False)})
+DEC["V99Ng_VTBUs"] = "fps=30000/1001"   # GTA 5 en PC a 60 imágenes distintas por segundo: se toma una de cada dos (sin mpdecimate)
 SRC["vpHospital1"] = (30.0, False)
 SRC_URL = {"vpHospital1": "https://archive.org/download/videopump-2026-11-20-hospital-bill/24-hospital-bill-1191.mp4"}
 SRC_CROP = {"vpHospital1": "crop=1080:608:0:656"}   # franja 16:9 con la partida dentro del vertical de Video Pump
@@ -44,7 +47,7 @@ def rate(vid):
 # tramos (segundos del original) que usa el montaje; se amplían 1 s por cada lado para poder ajustar los planos
 _VD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos")
 WINDOWS = {}
-for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
+for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 

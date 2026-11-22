@@ -44,7 +44,7 @@ PRON = [
     (r"\bOnly Raw Records\b", "Óunli Ro Récords"), (r"\bSnapmatic\b", "Snápmatic"), (r"\bBae-Luxe\b", "Béi Lux"), (r"\bRoxy\b", "Róxi"),
     (r"\bElectric Fang\b", "Eléctric Fang"), (r"\bStock 305\b", "Stok tres cero cinco"), (r"\bGrotti Cheetah\b", "Gróti Chíta"),
     (r"\bSqualo\b", "Scuálo"), (r"\bVapid Stanier\b", "Vápid Stánier"), (r"\bLiberty City\b", "Líberti Síti"),
-    (r"\bRockstar North\b", "Rokstar Norz"), (r"\bPC Gamer\b", "pe ce Guéimer"), (r"\bGrand Theft Auto\b", "Grand Zeft Óto"), (r"\bSkunk Ape\b", "Escónk Eip"),
+    (r"\bRockstar North\b", "Rokstar Norz"), (r"\bPC Gamer\b", "pe ce Guéimer"), (r"\bNewsweek\b", "Niúsuik"), (r"\bGrand Theft Auto\b", "Grand Zeft Óto"), (r"\bSkunk Ape\b", "Escónk Eip"),
     (r"\bKirk\b", "Kerk"), (r"\bDodo Rising\b", "Dódo Ráising"), (r"\bKarl McKittrick\b", "Karl Makítrik"), (r"\bKey Lento\b", "Ki Lento"),
     (r"\bParrot Paradise\b", "Párot Páradais"), (r"\bBrian\b", "Bráian"), (r"\bRob Nelson\b", "Rob Nélson"), (r"\bwasted\b", "uéisted"), (r"\bstriptease\b", "estriptís"),
     (r"\binfluencer\b", "influénser"), (r"\bXbox Series\b(?! [XS])", "Équis box Síries"), (r"\bTwitch\b", "Tuích"), (r"\bLori\b", "Lóri"),
