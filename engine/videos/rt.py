@@ -17,11 +17,11 @@ def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 P = "igPenta"
 
 beat("En GTA 6 hay un ritual secreto. Y si lo completas… pasa esto.", pre=0.1, id="s1",
-     shots=[S(None, f"c:{P}@74.6", top="EL RITUAL SECRETO"), S("pasa esto", f"c:{P}@62.0", top="¿TE ATREVES?")],
+     shots=[S(None, f"c:{P}@73.9", top="EL RITUAL SECRETO"), S("pasa esto", f"c:{P}@62.0", top="¿TE ATREVES?")],
      sfx=[(0.0, "riser", 0.35), ("w:pasa esto", "impact", 0.5)])
 beat("En un edificio de Capri hay un pentagrama, con velas y unas notas. ¡Y a ese círculo le falta algo: un sacrificio!", id="s2",
      shots=[S(None, f"c:{P}@6.4", top="CAPRI"), S("con velas", f"c:{P}@20.6", top="EL PENTAGRAMA"), S("unas notas", f"c:{P}@0.2", top="LAS NOTAS"),
-            S("un sacrificio", f"c:{P}@2.6", top="«SACRIFICE»")],
+            S("un sacrificio", f"c:{P}@3.0", top="«SACRIFICE»")],
      sfx=[("w:sacrificio", "stamp", 0.45)])
 beat("Así que dejas inconsciente a alguien… y lo llevas hasta allí.", id="s3",
      shots=[S(None, f"c:{P}@11.4", top="EL «SACRIFICIO»")], sfx=[("w:inconsciente", "impact", 0.35)])
