@@ -19,10 +19,10 @@ beat("Reseña de un tour de buceo en GTA 6. Nota: una estrella.", pre=0.15, exag
      shots=[D(None, 38.5, "TOUR DE BUCEO · GTA 6"), S("Nota", "g:review", kicker="RESEÑA · CON SPOILERS", title="TOUR DE BUCEO EN GTA 6", stars=1, sub="Misión del primer capítulo")],
      sfx=[(0.0, "riser", 0.3), ("w:una estrella", "stamp", 0.45)])
 beat("Para empezar, el capitán bromea con que ha hecho un agujero en el barco.", exag=0.7, id="s2",
-     shots=[D(None, 4.2, "EL CAPITÁN", say="I just put a hole in the boat.")],
+     shots=[D(None, 0.3, "EL CAPITÁN", say="I just put a hole in the boat.")],
      sfx=[("w:agujero", "impact", 0.35)])
 beat("Luego le pregunta al guía quién es. Respuesta: «Nadie. Solo el guía de buceo». Es Jason.", exag=0.7, id="s3",
-     shots=[D(None, 6.6, "EL CAPITÁN"), D("Respuesta", 8.6, "EL GUÍA", say="Nobody, bud. Just the dive guide."), D("Es Jason", 10.6, "ES JASON")],
+     shots=[D(None, 5.6, "EL CAPITÁN"), D("Respuesta", 8.3, "EL GUÍA", say="Nobody, bud. Just the dive guide."), D("Es Jason", 96.9, "ES JASON")],
      sfx=[("w:Es Jason", "pop", 0.4)])
 beat("Y es que el tour es una tapadera: según las guías, al capitán le quitaron el permiso para buscar tesoros, y usa una despedida de soltero como excusa.", exag=0.7, id="s4",
      shots=[D(None, 13.6, "LA TAPADERA"), D("y usa una despedida", 27.4, "LA DESPEDIDA DE SOLTERO")],
@@ -31,7 +31,7 @@ beat("Bajo el agua, el guía deja solos a los turistas y se va directo a por el 
      shots=[D(None, 44.0, "BAJO EL AGUA"), D("se va directo", 63.0, "+ GOLD DOUBLOONS"), D("Doblones", 88.6, "DOBLONES ESPAÑOLES", say="I think these might be Spanish doubloons.")],
      sfx=[("w:oro", "ding", 0.45)])
 beat("¿Resultado? Los turistas no terminan el tour, y se despiden como «hermanos de buceo». ¿Tú le darías más de una estrella?", exag=0.65, hold=1.4, id="s6",
-     shots=[D(None, 92.0, "NI LA MITAD DEL TOUR", say="We didn't even get to finish the tour."), D("y se despiden", 108.4, "«DIVE BROS»"),
+     shots=[D(None, 92.6, "NI LA MITAD DEL TOUR", say="We didn't even get to finish the tour."), D("y se despiden", 108.4, "«DIVE BROS»"),
             S("¿Tú le darías", "g:review", kicker="TU NOTA", title="¿MÁS DE UNA ESTRELLA?", stars=1, sub="Te leo en los comentarios")],
      sfx=[("w:hermanos", "pop", 0.4)])
 
