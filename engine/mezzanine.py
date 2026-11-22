@@ -47,7 +47,7 @@ def rate(vid):
 # tramos (segundos del original) que usa el montaje; se amplían 1 s por cada lado para poder ajustar los planos
 _VD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos")
 WINDOWS = {}
-for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
+for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json", "shx_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 
@@ -92,7 +92,7 @@ def windows_for(vid): return [(float(w[0]), float(w[1])) for w in WINDOWS.get(vi
 
 # ---------------------------------------------------------------- recortes verticales 9:16 para el Short (desde la copia 4K)
 VWIN = {}
-for _f in ("gs_windows.json", "ps_windows.json", "js_windows.json"):
+for _f in ("gs_windows.json", "ps_windows.json", "js_windows.json", "rc_windows.json", "tk_windows.json", "tl_windows.json"):
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): VWIN.setdefault(_k, []).extend(_v)
 def vname(vid, a, b, cx): return f"{OUT}/{vid}_{a:07.2f}_{b:07.2f}_v{cx:.2f}.mp4"

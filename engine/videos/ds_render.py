@@ -71,7 +71,7 @@ def footage(c, sh, tau, d, ctx, slot="main"):
             rect(c, 60, y, W - 120, hh, INK, 0.82 * p, r=28); rect(c, 60, y, W - 120, hh, th(ctx)["acc"], p, r=28, stroke=4)
             for j, ln in enumerate(lines): draw_text(c, ln, W / 2, y + 62 + j * 62, "dmserifi", 50, WHITE, p, align="center")
     if sh.get("prueba"):
-        col = {"acusacion": RED, "defensa": BLUE}.get(sh.get("lado"), "#B8860B")
+        col = {"acusacion": RED, "defensa": BLUE, "gta5": "#2E8B47", "gta6": "#C2185B"}.get(sh.get("lado"), "#B8860B")
         p = ease_out_back(prog(tau, 0.1, 0.45)) * (1 - prog(tau, d - 0.15, d))
         if p > 0:
             c.save(); c.translate(W / 2, 360); c.rotate(-4 * (1 - p)); c.scale(p, p)
@@ -154,14 +154,21 @@ def overlay(c, gt, ctx):
     p = ease_out(prog(gt, 0.0, 0.4))
     rect(c, 40, 120, W - 80, 104, INK, 0.78 * p, r=52)
     if ctx.V.get("theme") == "juicio": D.gavel(c, 128, 166, 40, TH["acc"], p, base=False)
+    elif ctx.V.get("theme") == "combate":
+        for k in range(3): star(c, 98 + k * 46, 172, 19, TH["acc"], p)
     else:
         for k in range(3): D.leaf(c, 100 + k * 34, 172, 20, TH["glow1"], p, rot=k * 35)
     draw_text(c, ctx.V.get("header", ""), W - 90, 188, "anton", 50, TH["acc"], p, align="right", tracking=2)
-    if not sh["src"].startswith("g:"):
+    if not sh["src"].startswith("g:") and ctx.V.get("credit", True):   # credit=False: el crédito va solo en la descripción
         _, vid, _, _ = parse(sh["src"])
         f = font("ovmonomd", 24); txt = f"Gameplay: {D.AUTHOR.get(vid, vid)}"; w = text_w(txt, f, 0.5) + 36
         rect(c, W - w - 36, 246, w, 40, "#000000", 0.55, r=6); draw_text(c, txt, W - w - 18, 274, "ovmonomd", 24, "#F3F0E9", 0.9, tracking=0.5)
     if not sh.get("nocap"): K.short_captions(c, gt, ctx, y=1420, size=86, maxw=960)
+
+def star(c, x, y, r, col, a=1.0):
+    """Estrella de cinco puntas (las del nivel de búsqueda)."""
+    pts = [(x + (r if k % 2 == 0 else r * 0.45) * math.sin(k * math.pi / 5), y - (r if k % 2 == 0 else r * 0.45) * math.cos(k * math.pi / 5)) for k in range(10)]
+    draw_poly(c, pts, col, a)
 
 # ================================================================ gráficos verticales
 def panel(c, t, ctx):

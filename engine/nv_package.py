@@ -1,6 +1,6 @@
 """Título y descripción (con capítulos sacados de la línea de tiempo real) de los vídeos 2 y 3 y sus Shorts.
 
-Uso: python nv_package.py [jz|pv|js|ps|cv ...]   (sin argumentos: todos)
+Uso: python nv_package.py [jz|pv|js|ps|cv|tk|rc|tl ...]   (sin argumentos: todos)
 Escribe TITULO_Y_DESCRIPCION.txt en la carpeta de cada vídeo.
 """
 import json, os, sys
@@ -149,6 +149,44 @@ V["cv"] = dict(
     tags="#GTA6 #GTA5 #GTAVI",
     keywords="GTA 5 vs GTA 6, GTA V vs GTA VI, GTA 6 vs GTA 5 comparación, GTA 6 diferencias con GTA 5, GTA 6 seis estrellas, GTA 6 policía testigos, GTA 6 robar avión de combate, GTA 5 Fort Zancudo, GTA 6 tanque, GTA 6 NPC calmar provocar, GTA 6 factura del hospital, GTA 5 habilidades especiales, GTA 6 Focus, GTA 6 30 fps, GTA 5 60 fps, GTA 6 gameplay en español, Vice City, Los Santos, Sal y Asfalto")
 
+V["tk"] = dict(
+    folder="SHORT_4_GTA6_ESCAPAR_ES_IMPOSIBLE", long=False,
+    title="GTA 6 te lo avisa: con 6 estrellas, escapar es imposible #shorts",
+    alts=["El mensaje que GTA 6 te muestra a seis estrellas #shorts",
+          "«Escapar es imposible»: así te avisa GTA 6 #shorts"],
+    intro=("Cuando llegas a seis estrellas en GTA 6, el juego te lo dice con todas las letras: «Escapar es imposible, y la policía no se "
+           "rendirá hasta darte caza». Y al robar el tanque ya te había avisado de otra cosa: lleva un rastreador militar. Este jugador lo "
+           "intentó igual: puentes, helicópteros y el ejército detrás. Partida real, sin spoilers de la historia."),
+    credits=[("-UuHA1h-Cf8", "toda la partida: el paracaídas, el tanque, los dos mensajes del juego y la persecución de seis estrellas")],
+    prensa=["• PC Gamer: cómo se llega a seis estrellas y por qué ya no se pueden perder — https://www.pcgamer.com/games/grand-theft-auto/gta-6-six-stars/"],
+    outro="¿Tú habrías llegado más lejos?", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 seis estrellas, GTA 6 6 estrellas, GTA 6 escapar es imposible, GTA 6 tanque, GTA 6 rastreador militar, GTA 6 policía, GTA 6 persecución, Sal y Asfalto")
+V["rc"] = dict(
+    folder="SHORT_5_GTA6_VUELA_BAJO", long=False,
+    title="El consejo de GTA 6 cuando robas un avión de combate #shorts",
+    alts=["GTA 6 te dice cómo esquivar a la policía en un avión #shorts",
+          "Robar un caza en GTA 6: el juego te da este consejo #shorts"],
+    intro=("Si robas un avión de combate en GTA 6, el juego te da un consejo al despegar: «Volar a menos altura puede reducir la "
+           "probabilidad de que la policía te vea». Antes, cinco estrellas al subir a un blindado del ejército y un salto sobre la valla "
+           "de la base que el juego marca como salto acrobático fallido. Partida real, sin spoilers de la historia."),
+    credits=[("4HCd052lpnA", "toda la partida: la lancha, el blindado, las cinco estrellas, el salto de la valla, el consejo del juego y el derribo")],
+    prensa=["• PC Gamer: la base militar Mile Zero y el salto sobre la valla para entrar — https://www.pcgamer.com/games/grand-theft-auto/gta-6-military-base-location/"],
+    outro="¿Tú habrías volado más bajo?", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 avión de combate, GTA 6 robar caza, GTA 6 volar bajo, GTA 6 policía avión, GTA 6 base militar, GTA 6 Mile Zero, GTA 6 salto acrobático, GTA 6 cinco estrellas, Sal y Asfalto")
+V["tl"] = dict(
+    folder="SHORT_6_GTA6_TURISTA_O_LOCAL", long=False,
+    title="¿Turista o local? GTA 6 te lo dice antes de hablar #shorts",
+    alts=["GTA 6 sabe si alguien es turista o local #shorts",
+          "La etiqueta secreta de los NPC de GTA 6 #shorts"],
+    intro=("En GTA 6, al acercarte a alguien, el menú para hablar le pone una etiqueta: «TOURIST» a esta mujer en la playa y «LOCAL» a "
+           "este hombre del gimnasio de la playa. Y las opciones cambian: primero saludar o burlarte, después calmar o provocar. ¿Para qué "
+           "sirve la etiqueta? No hemos encontrado ninguna explicación oficial. Partida real, sin spoilers de la historia."),
+    credits=[("gvlY1gVmSKM", "toda la partida: la playa, el gimnasio al atardecer y el menú de interacción")],
+    prensa=["• GTA Boom: las opciones de interacción con los NPC (saludar, burlarse, provocar, calmar) — https://www.gtaboom.com/gta-6-npc-interactions-and-world-encounters-bcf3",
+            "• Dot Esports: el nuevo sistema de diálogo con los NPC — https://dotesports.com/gta/news/gta-6-new-dialogue-system-npc-conversations"],
+    outro="¿Tú qué crees que cambia: turista o local?", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 NPC, GTA 6 turista, GTA 6 local, GTA 6 hablar con NPC, GTA 6 provocar, GTA 6 calmar, GTA 6 detalles, Vice City, Sal y Asfalto")
+
 def chapters(v):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import importlib
@@ -169,7 +207,7 @@ def write(k):
     if v["long"]:
         ch, total = chapters(v)
         L += ["CAPÍTULOS"] + [f"{mmss(t)} {n}" for t, n in ch] + [""]
-    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; también en pantalla)"] + [credit(i, u) for i, u in v["credits"]] + [""]
+    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("tk", "rc", "tl")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
     if v["prensa"]: L += ["FUENTES"] + v["prensa"] + [""]
     L += [v["outro"], "", v["tags"], "", "ETIQUETAS (palabras clave)", v["keywords"], ""]
     if v["long"]: L += [f"Duración del vídeo: {mmss(total)}", ""]
