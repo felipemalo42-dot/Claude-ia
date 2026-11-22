@@ -46,7 +46,7 @@ beat("Trece años separan a GTA 5 de GTA 6. Y la pregunta que todo el mundo se h
             S("Ocho asaltos", "g:cover", kicker="SAL Y ASFALTO PRESENTA", lines=["GTA 5", "VS GTA 6"], sub="Ocho asaltos con partidas reales")],
      sfx=[(0.0, "riser", 0.35), ("w:Ocho asaltos", "stamp", 0.5)])
 beat("Las reglas del combate. Todas las imágenes son partidas reales de jugadores y medios, con su crédito en pantalla. Las de GTA 5 vienen de versiones distintas, de dos mil trece y de la edición mejorada para PC, así que aquí no vamos a comparar gráficos: vamos a comparar lo que puedes hacer. Y no hay spoilers de la historia de GTA 6.",
-     mus=("synthwave", 1), pre=0.4, id="o02",
+     mus=("synthwave", 1), pre=0.4, id="o02", seed_off=1,
      shots=[S(None, "g:creators", title="LAS REGLAS", subt="Partidas reales de los dos juegos · créditos en pantalla",
               rows=[("GTA 5", "Kotaku y The Escapist (2013) · LOCAL GAMING (PC)"), ("GTA 6", "GameV, IGN, Sirloin, toaster, Yamatum O, Video Pump"),
                     ("Sin spoilers", "Solo cosas que puedes hacer por tu cuenta")],
@@ -97,7 +97,7 @@ beat("Esta persecución real lo demuestra: un tanque contra seis estrellas, puen
 
 # ================================================================ 3 · EL CAZA
 beat("Tercer asalto: robar un avión de combate. Es casi una tradición de la saga, y los dos juegos la cumplen. En GTA 5, el lugar es Fort Zancudo, la base militar del oeste del mapa.",
-     chapter=(3, "EL CAZA"), mus=("tension", 2), pre=1.4, id="j01", cert="GUIA",
+     chapter=(3, "EL CAZA"), mus=("tension", 2), pre=1.4, id="j01", seed_off=1, cert="GUIA",
      shots=[S(None, X(K5, 22.0), z=(1.0, 1.04), **V5), S("En GTA 5", X(K5, 36.0), z=(1.0, 1.05)), S("la base militar", X(K5, 64.0), z=(1.0, 1.05))],
      sfx=[(0.0, "whoosh", 0.35)])
 beat("Una guía en vídeo de dos mil trece lo hace con una partida de solo dos horas: entra en la base, se sube a un caza y despega mientras le lanzan misiles. Otra guía de la misma época avisaba de que la base, tanques incluidos, se pone en alerta en cuanto entras, de que está rodeada por una valla alta, y de que su autor murió muchas veces antes de conseguirlo. Su receta: un auto rápido, embestir la puerta, ir directo a los hangares, subirse al primer caza y despegar cuanto antes.",
@@ -180,7 +180,7 @@ beat("Séptimo asalto: los poderes. En GTA 5, cada uno de sus tres protagonistas
               items=["Michael · cámara lenta en los tiroteos", "Franklin · cámara lenta al volante", "Trevor · modo furia"], cues=["Michael", "Franklin", "Trevor"])],
      sfx=[("w:Michael", "pop", 0.3), ("w:Franklin", "pop", 0.3), ("w:Trevor", "pop", 0.3)])
 beat("Tanto, que una de aquellas guías recomendaba cambiar a Franklin para robar el caza: su habilidad hacía más fácil cruzar la entrada de la base. Y en GTA 5 podías cambiar de protagonista casi en cualquier momento, con la cámara alejándose sobre el mapa.",
-     mus=("synthwave", 2), id="h02", cert="GUIA",
+     mus=("synthwave", 2), id="h02", seed_off=1, cert="GUIA",
      shots=[S(None, X(E5, 83.0), z=(1.0, 1.05), **V5), S("cruzar la entrada", X(E5, 94.2), z=(1.0, 1.06)), S("podías cambiar", X(E5, 56.0), z=(1.0, 1.03), **V5)])
 beat("En GTA 6, Jason y Lucía comparten el mismo sistema, el Focus, una barra que, por ejemplo, sube un tres por ciento si tiras las latas vacías a la basura. Y GTA 6 también te deja cambiar entre los dos protagonistas, sin pantalla de carga.",
      mus=("tropical", 1), id="h03", cert="GUIA",
@@ -208,14 +208,14 @@ beat("GTA 6, según Rockstar, funciona a treinta, y su equipo técnico aún no t
      sfx=[("w:Octavo asalto", "stamp", 0.45)])
 
 # ================================================================ VEREDICTO
-beat("Fin del combate. Repasemos el marcador. Para GTA 5: los poderes y la fluidez. Para GTA 6: la policía, el tanque y la gente. Y quedan en empate la ciudad, el caza y morir.",
+beat("Fin del combate. Repasemos el marcador. Para GTA 5: los poderes y la fluidez. Para GTA 6: la policía, el tanque y la gente. Y terminan en empate la ciudad, el caza y morir.",
      mus=("noir", 2), pre=0.8, id="r01",
      shots=[S(None, "g:marcador", title="EL MARCADOR", names=("GTA V", "GTA VI"), colors=(R.G5, R.G6),
               acu=["Los poderes", "La fluidez"], **{"def": ["La policía", "El tanque", "La gente"]},
               cues=["los poderes", "la fluidez", "la policía", "el tanque", "la gente"])],
      sfx=[("w:los poderes", "pop", 0.3), ("w:la fluidez", "pop", 0.3), ("w:la policía", "pop", 0.3), ("w:el tanque", "pop", 0.3), ("w:la gente", "pop", 0.3)])
 beat("Resultado: tres asaltos para GTA 6, dos para GTA 5 y tres empates. GTA 6 gana, pero a los puntos, y no por paliza. Trece años después, el veterano todavía da guerra. Lo que deja claro este combate es que GTA 6 no gana por fuerza bruta, sino por los detalles: una policía que necesita testigos, un menú para hablar con la gente, y una persecución que no se acaba hasta que caes. Y GTA 5 sigue ganando en lo que mejor hacía: tres personajes con su propio poder, y un juego que va como la seda.",
-     mus=("noir", 2), id="r02",
+     mus=("noir", 2), id="r02", seed_off=1,
      shots=[S(None, "g:cover", kicker="RESULTADO FINAL", lines=["GTA 6 GANA", "A LOS PUNTOS"], sub="3 asaltos para GTA 6 · 2 para GTA 5 · 3 empates"),
             S("Trece años después", X(L5, 12.0), z=(1.0, 1.05), **V5), S("Lo que deja claro", X(TAN, 300.0), z=(1.0, 1.05), **V6), S("Y GTA 5 sigue", X(L5, 330.0), z=(1.0, 1.05), **V5)],
      sfx=[(0.0, "stamp", 0.5)])

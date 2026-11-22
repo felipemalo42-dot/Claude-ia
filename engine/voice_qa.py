@@ -109,7 +109,7 @@ class Whisper:
 #     transcripción con menos errores: un fallo de la voz aparece en los dos reconocedores, un fallo de un
 #     reconocedor normalmente no. Las dos transcripciones se guardan en el informe.
 WER_ALIAS = [
-    (r"\b(?:ge|g)[ .-]?(?:te|t)[ .-]?(?:a|á)\b", "GTA"), (r"\bGTA ?(?:VI|seis)\b", "GTA 6"), (r"\bGTA6\b", "GTA 6"), (r"\bGT ?6\b", "GTA 6"), (r"\bGT ?A\b", "GTA"),
+    (r"\b(?:ge|g)[ .-]?(?:te|t)[ .-]?(?:a|á)\b", "GTA"), (r"\bGTA ?(?:VI|seis)\b", "GTA 6"), (r"\bGTA6\b", "GTA 6"), (r"\bGT ?6\b", "GTA 6"), (r"\bGT ?5\b", "GTA 5"), (r"\bGT ?A\b", "GTA"),
     (r"\b[YyJj][eé][iy]?son\b", "Jason"), (r"\b[YyJj]a[iy]?son\b", "Jason"), (r"\bYason\b", "Jason"),
     (r"\b[VvBb][aá][iy]s[ -]?[CcSs][ií]t[iy]?\b", "Vice City"), (r"\b[Bb]y ?[Cc]ity\b", "Vice City"), (r"\b[Bb]ai ?[CcSs]ity\b", "Vice City"), (r"\b[VvBb]ice[ -]?[CcSs]ity\b", "Vice City"), (r"\b[VvBb]aisiti\b", "Vice City"),
     (r"\b[Ff][oó]u?[ck]us\b", "Focus"), (r"\b[Rr]o[ck]+ ?[Ss]tar\b", "Rockstar"), (r"\b[Rr]okstar\b", "Rockstar"),
