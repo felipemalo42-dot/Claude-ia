@@ -423,7 +423,8 @@ def say_chip(c, txt, tau, d, ctx):
 # ================================================================ rótulos fijos
 TAGS = {"PARTIDA": (GRN, "SE VE EN LA PARTIDA"), "GUIA": ("#36E3FF", "SEGÚN LA GUÍA DE IGN"), "PRENSA": ("#36E3FF", "SEGÚN LA PRENSA"),
         "ROCKSTAR": (YEL, "SEGÚN ROCKSTAR"), "FILTRADO": ("#FF8A1F", "DOCUMENTO FILTRADO · SIN CONFIRMAR"),
-        "OBSERVADO": ("#9BE38D", "OBSERVADO EN PARTIDAS REALES")}
+        "OBSERVADO": ("#9BE38D", "OBSERVADO EN PARTIDAS REALES"),
+        "GUIA2013": ("#36E3FF", "SEGÚN UNA GUÍA DE 2013"), "GUIAS": ("#36E3FF", "SEGÚN LAS GUÍAS")}
 def cert(c, kind, a=1.0, y=82, left=False):
     if a <= 0 or kind not in TAGS: return
     col, txt = TAGS[kind]; size = 24; f = font("ovmono", size); w = text_w(txt, f, 1) + size * 2.2; h = size * 1.75
