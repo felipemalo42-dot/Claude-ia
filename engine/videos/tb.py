@@ -12,17 +12,17 @@ from videos import ds_render as R
 B = []
 def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), **k))
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
-DV = (0.04, 0.13, 0.88, 0.75)   # sin los subtítulos, el título y el logo que la edición de Video Pump lleva incrustados
+DV = (0.0, 0.17, 0.87, 0.76)   # sin los subtítulos, el título y el logo que la edición de Video Pump lleva incrustados
 def D(anchor, t, top, **k): return S(anchor, f"c:vpDive@{t}", crop=k.pop("crop", DV), top=top, **k)
 
 beat("Reseña de un tour de buceo en GTA 6. Nota: una estrella.", pre=0.15, exag=0.7, id="s1",
      shots=[D(None, 38.5, "TOUR DE BUCEO · GTA 6"), S("Nota", "g:review", kicker="RESEÑA · CON SPOILERS", title="TOUR DE BUCEO EN GTA 6", stars=1, sub="Misión del primer capítulo")],
      sfx=[(0.0, "riser", 0.3), ("w:una estrella", "stamp", 0.45)])
 beat("Para empezar, el capitán bromea con que ha hecho un agujero en el barco.", exag=0.7, id="s2",
-     shots=[D(None, 0.3, "EL CAPITÁN", say="I just put a hole in the boat.")],
+     shots=[D(None, 0.3, "EL CAPITÁN", crop=(0.0, 0.18, 0.87, 0.75), say="I just put a hole in the boat.")],
      sfx=[("w:agujero", "impact", 0.35)])
 beat("Luego le pregunta al guía quién es. Respuesta: «Nadie. Solo el guía de buceo». Es Jason.", exag=0.7, id="s3",
-     shots=[D(None, 5.6, "EL CAPITÁN"), D("Respuesta", 8.3, "EL GUÍA", say="Nobody, bud. Just the dive guide."), D("Es Jason", 96.9, "ES JASON")],
+     shots=[D(None, 6.6, "EL CAPITÁN", crop=(0.0, 0.22, 1.0, 0.76)), D("Respuesta", 8.9, "EL GUÍA", say="Nobody, bud. Just the dive guide."), D("Es Jason", 96.9, "ES JASON")],
      sfx=[("w:Es Jason", "pop", 0.4)])
 beat("Y es que el tour es una tapadera: según las guías, al capitán le quitaron el permiso para buscar tesoros, y usa una despedida de soltero como excusa.", exag=0.7, id="s4",
      shots=[D(None, 13.6, "LA TAPADERA"), D("y usa una despedida", 27.4, "LA DESPEDIDA DE SOLTERO")],
