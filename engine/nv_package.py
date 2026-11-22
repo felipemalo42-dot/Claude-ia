@@ -199,6 +199,48 @@ V["tb"] = dict(
     outro="¿Tú le darías más de una estrella?", tags="#GTA6 #GTAVI #shorts",
     keywords="GTA 6, GTA VI, GTA 6 buceo, GTA 6 tesoro, GTA 6 doblones, GTA 6 tour de buceo, GTA 6 misión, GTA 6 spoiler, Sal y Asfalto")
 
+SRC.update({
+    "igPenta": ("IGN", "Have you found the pentagram in GTA 6?", "20/11/2026", yt("xPeXDRxVGVs")),
+    "igRocket": ("IGN", "Here's how to get a free rocket launcher early in GTA 6!", "19/11/2026", yt("J-0ssekfWuc")),
+    "igPlaneV": ("IGN", "You can start flying very early and easily in GTA 6", "21/11/2026", yt("WflJVoqAQQg")),
+    "QBMZ1ZXlflk": ("IGN", "GTA 6 - How to Get a Free Plane or Helicopter", "20/11/2026", yt("QBMZ1ZXlflk")),
+    "NKq2GOBaJV8": ("IGN", "How to Get Infinite Money in GTA 6 Very Early On", "20/11/2026", yt("NKq2GOBaJV8")),
+    "igFP": ("IGN", "GTA 6 First-Person Mode Glitch: Here's how to do it!", "20/11/2026", yt("0zCHQjDWF20")),
+})
+V["rt"] = dict(
+    folder="SHORT_7_GTA6_RITUAL_SECRETO", long=False,
+    title="El ritual secreto de GTA 6 😱 #shorts",
+    alts=["El secreto más terrorífico de GTA 6 #shorts", "No hagas este ritual en GTA 6 #shorts"],
+    intro=("En un edificio de Capri hay un pentagrama con velas y unas notas. Si llevas a alguien inconsciente, se apagan las luces, se "
+           "encienden las velas y oyes la voz de tu pareja… pero no es ella: con Lucía aparece una versión demoníaca de su madre, y con "
+           "Jason, Cal. Y el cuerpo se levanta y te ataca: solo el fuego lo detiene. Spoiler leve de personajes."),
+    credits=[("igPenta", "toda la partida del ritual (recorte sin los rótulos del vídeo original)")],
+    prensa=[], outro="¿Te atreverías a hacerlo? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 secreto, GTA 6 pentagrama, GTA 6 ritual, GTA 6 easter egg, GTA 6 terror, GTA 6 Capri, GTA 6 Lucía, GTA 6 Cal, Sal y Asfalto")
+V["gr"] = dict(
+    folder="SHORT_8_GTA6_3_COSAS_GRATIS", long=False,
+    title="3 cosas GRATIS al empezar GTA 6 #shorts",
+    alts=["Consigue esto GRATIS al empezar GTA 6 #shorts", "Lanzacohetes, avión y dinero gratis en GTA 6 #shorts"],
+    intro=("Tres cosas gratis al empezar GTA 6: un lanzacohetes en una caravana con búnker junto al campo de tiro Griffin (con cuatro "
+           "cohetes: guarda antes de disparar), aviones y un helicóptero en la pista de Southwind, al suroeste de Key Lento (sin "
+           "policía, pero no vueles sobre la base militar), y una fábrica al este de Hamlet con un botín de unos 7.000 dólares que se "
+           "repone si te alejas y vuelves (puede que lo arreglen en una actualización)."),
+    credits=[("igRocket", "el lanzacohetes"), ("QBMZ1ZXlflk", "la pista de Southwind y el vuelo"), ("igPlaneV", "el avión gratis"),
+             ("NKq2GOBaJV8", "la fábrica y el botín que se repone")],
+    prensa=[], outro="¿Cuál vas a probar primero? Suscríbete para más trucos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 trucos, GTA 6 gratis, GTA 6 lanzacohetes, GTA 6 avión gratis, GTA 6 dinero infinito, GTA 6 dinero fácil, GTA 6 al empezar, Sal y Asfalto")
+V["fp"] = dict(
+    folder="SHORT_9_GTA6_PRIMERA_PERSONA", long=False,
+    title="GTA 6 no tiene primera persona… pero hay un truco #shorts",
+    alts=["Cómo jugar GTA 6 en primera persona #shorts", "El truco de la primera persona en GTA 6 #shorts"],
+    intro=("GTA 6 no tiene un modo oficial en primera persona, pero hay un truco: en los ajustes del mando, cambia el botón del panel "
+           "táctil (o Vista) de Mapa a Cámara; entra en un coche, saca el teléfono y guárdalo mientras pulsas sin parar el botón de "
+           "cámara. Se mantiene aunque mueras y se va al cargar la partida o salir del juego. No es oficial: tiene fallos."),
+    credits=[("igFP", "toda la partida en primera persona (recorte sin los rótulos del vídeo original)")],
+    prensa=["• IGN: los pasos, en la guía «How to Play GTA 6 in First-Person (It's a Glitch!)» — " + yt("MVBOE2aAY_g")],
+    outro="¿Lo vas a probar? Suscríbete para más trucos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 primera persona, GTA 6 first person, GTA 6 truco, GTA 6 glitch, GTA 6 cámara, Sal y Asfalto")
+
 def chapters(v):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import importlib
@@ -219,7 +261,7 @@ def write(k):
     if v["long"]:
         ch, total = chapters(v)
         L += ["CAPÍTULOS"] + [f"{mmss(t)} {n}" for t, n in ch] + [""]
-    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
+    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb", "rt", "gr", "fp")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
     if v["prensa"]: L += ["FUENTES"] + v["prensa"] + [""]
     L += [v["outro"], "", v["tags"], "", "ETIQUETAS (palabras clave)", v["keywords"], ""]
     if v["long"]: L += [f"Duración del vídeo: {mmss(total)}", ""]
