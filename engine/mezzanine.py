@@ -36,6 +36,8 @@ SRC = {"Om4W6tYMF-0": (29.97, False), "gJyMGHxCKHU": (59.94, False), "ey0qks0aQ-
 VERTICAL = {"JHRVSzM2O2M", "uMYUjOLOOVQ", "R9r9ew12GcA"}
 # fuentes que no son copias de YouTube: URL directa y recorte de la imagen de juego (sin los rótulos del montaje original)
 # vídeo 4 (GTA 5 vs GTA 6): GTA 5 de Kotaku y The Escapist (2013), GTA 5 Enhanced de LOCAL GAMING (4K60) y la base de GTA 6 de Sirloin
+SRC.update({"vpWestern": (30.0, False), "vpWaffles": (30.0, False), "vpWeazel": (30.0, False), "vpBurger": (30.0, False), "vpBradlaw": (30.0, False),
+            "vpDive": (30.0, False), "vpGame": (30.0, False), "P-BbiYUPD-o": (30.0, False)})   # Shorts zp/jg/tb (Video Pump, CC BY 4.0; tiras limpias ya recortadas en xmez) e IGN
 SRC.update({"IG2hfrBVjh4": (29.97, False), "Q5XgKNEnbP4": (30.0, False), "V99Ng_VTBUs": (59.94, False), "nqmpDCbz3lA": (30.0, False)})
 DEC["V99Ng_VTBUs"] = "fps=30000/1001"   # GTA 5 en PC a 60 imágenes distintas por segundo: se toma una de cada dos (sin mpdecimate)
 SRC["vpHospital1"] = (30.0, False)
@@ -92,7 +94,7 @@ def windows_for(vid): return [(float(w[0]), float(w[1])) for w in WINDOWS.get(vi
 
 # ---------------------------------------------------------------- recortes verticales 9:16 para el Short (desde la copia 4K)
 VWIN = {}
-for _f in ("gs_windows.json", "ps_windows.json", "js_windows.json", "rc_windows.json", "tk_windows.json", "tl_windows.json"):
+for _f in ("gs_windows.json", "ps_windows.json", "js_windows.json", "zp_windows.json"):
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): VWIN.setdefault(_k, []).extend(_v)
 def vname(vid, a, b, cx): return f"{OUT}/{vid}_{a:07.2f}_{b:07.2f}_v{cx:.2f}.mp4"

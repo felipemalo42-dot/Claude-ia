@@ -29,6 +29,9 @@ THEMES = {
     # sala de juicio: dorado y madera; rojo acusación, azul defensa
     "juicio": dict(acc="#E8C468", acc2="#F5E6B8", bg="#0E0B08", glow1="#E5484D", glow2="#4C8DF6", chap="SESIÓN"),
     # combate por asaltos: oro de cinturón de campeón; verde GTA V, rosa GTA VI
+    "arcade": dict(acc="#36E3FF", acc2="#FFFFFF", bg="#07060F", glow1="#FF2BD6", glow2="#36E3FF", chap="NIVEL"),
+    "tv": dict(acc="#FFD23F", acc2="#FFFFFF", bg="#0A0A0C", glow1="#FF4D4D", glow2="#3DDC97", chap="CANAL"),
+    "playa": dict(acc="#FFB347", acc2="#FFFFFF", bg="#061218", glow1="#2EC4B6", glow2="#FF6B6B", chap="PARADA"),
     "combate": dict(acc="#F5C542", acc2="#FFFFFF", bg="#0B0B10", glow1="#5BC26A", glow2="#F25C9B", chap="ASALTO"),
 }
 G5, G6 = "#5BC26A", "#F25C9B"

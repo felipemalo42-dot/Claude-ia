@@ -156,6 +156,12 @@ def overlay(c, gt, ctx):
     if ctx.V.get("theme") == "juicio": D.gavel(c, 128, 166, 40, TH["acc"], p, base=False)
     elif ctx.V.get("theme") == "combate":
         for k in range(3): star(c, 98 + k * 46, 172, 19, TH["acc"], p)
+    elif ctx.V.get("theme") == "tv":
+        rect(c, 76, 146, 70, 50, TH["acc"], p, r=8, stroke=5); line(c, 98, 146, 86, 128, TH["acc"], p, w=4); line(c, 124, 146, 136, 128, TH["acc"], p, w=4)
+    elif ctx.V.get("theme") == "arcade":
+        rect(c, 78, 150, 74, 42, TH["acc"], p, r=12, stroke=5); circle(c, 98, 171, 7, TH["glow1"], p); circle(c, 134, 171, 7, TH["acc"], p)
+    elif ctx.V.get("theme") == "playa":
+        circle(c, 112, 166, 26, TH["acc"], p); rect(c, 74, 176, 76, 22, TH["glow1"], p, r=8)
     else:
         for k in range(3): D.leaf(c, 100 + k * 34, 172, 20, TH["glow1"], p, rot=k * 35)
     draw_text(c, ctx.V.get("header", ""), W - 90, 188, "anton", 50, TH["acc"], p, align="right", tracking=2)
@@ -208,5 +214,35 @@ def g_scta(c, t, d, sh, ctx):
     if q > 0:
         c.save(); c.translate(W / 2, 1650 + 14 * math.sin(t * 5)); c.scale(q, q)
         rect(c, -400, -66, 800, 120, TH["acc"], 1, r=60); draw_text(c, "EN EL CANAL", 0, 22, "anton", 70, INK, 1, align="center", tracking=3); c.restore()
+
+def g_static(c, t, d, sh, ctx):
+    """Cambio de canal: nieve de televisión y el número del canal (zapping)."""
+    rng = np.random.default_rng(int(t * 30) + 7)
+    rect(c, 0, 0, W, H, "#111111", 1)
+    for k in range(260):
+        y = float(rng.integers(0, H)); hh = float(rng.integers(2, 9)); g = int(rng.integers(40, 235))
+        rect(c, 0, y, W, hh, "#%02x%02x%02x" % (g, g, g), 0.55)
+    for k in range(900):
+        x = float(rng.integers(0, W)); y = float(rng.integers(0, H)); g = int(rng.integers(120, 255))
+        rect(c, x, y, float(rng.integers(3, 14)), float(rng.integers(3, 9)), "#%02x%02x%02x" % (g, g, g), 0.8)
+    if sh.get("ch"):
+        rect(c, W - 330, 330, 270, 120, "#000000", 0.6, r=10)
+        draw_text(c, sh["ch"], W - 195, 418, "ovmonomd", 84, "#3DDC97", 1, align="center", tracking=2)
+
+def g_review(c, t, d, sh, ctx):
+    """Tarjeta de reseña con estrellas (formato «una estrella»)."""
+    panel(c, t, ctx); TH = th(ctx)
+    p = ease_out_back(prog(t, 0.0, 0.4)); y0 = sh.get("y", 560)
+    c.save(); c.translate(W / 2, y0 + 300); c.scale(p, p); c.translate(-W / 2, -(y0 + 300))
+    rect(c, 80, y0, W - 160, 600, "#F7F4EC", 0.98, r=32); rect(c, 80, y0, W - 160, 600, TH["acc"], 1, r=32, stroke=6)
+    draw_text(c, sh.get("kicker", "RESEÑA"), 140, y0 + 80, "ovmonomd", 34, "#6B6B6B", 1, tracking=3)
+    for j, ln in enumerate(wrap(sh["title"], "anton", 82, W - 300)):
+        draw_text(c, ln, 140, y0 + 190 + j * 92, "anton", 82, INK, 1, tracking=1)
+    n = sh.get("stars", 1)
+    for k in range(5):
+        q = ease_out_back(prog(t, 0.35 + 0.12 * k, 0.6 + 0.12 * k))
+        if q > 0: star(c, 175 + k * 120, y0 + 430, 48 * q, "#F5B700" if k < n else "#D6D2C4", 1)
+    if sh.get("sub"): draw_text(c, sh["sub"], 140, y0 + 540, "intersb", 40, "#444444", ease_out(prog(t, 0.8, 1.1)))
+    c.restore()
 
 GFX = {k[2:]: v for k, v in list(globals().items()) if k.startswith("g_")}
