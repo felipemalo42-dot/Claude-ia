@@ -25,12 +25,12 @@ beat("Uno: un lanzacohetes. Está en una caravana llena de antenas, en un depós
             S("Abres la trampilla", f"c:{R1}@27.6", top="EL BÚNKER"), S("y ahí está", f"c:{R1}@31.0", top="HAUNERS H-AT")],
      sfx=[("w:Uno", "ding", 0.45), ("w:cuatro cohetes", "impact", 0.45)])
 beat("Ojo: no puedes comprar más munición, así que guarda la partida antes de disparar.", id="s3",
-     shots=[S(None, f"c:{R1}@40.6", top="GUARDA ANTES DE DISPARAR")], sfx=[("w:Ojo", "pop", 0.4)])
-beat("Dos: un avión. En una pista de Southwind, al suroeste de Key Lento, hay aviones y un helicóptero, sin policía. Eso sí: no vueles sobre la base militar de al lado, ¡o te caen cuatro estrellas!", id="s4",
+     shots=[S(None, f"c:{R1}@39.7", top="GUARDA ANTES DE DISPARAR")], sfx=[("w:Ojo", "pop", 0.4)])
+beat("Dos: un avión. En una pista de Southwind, al suroeste de Key Lento, hay aviones y un helicóptero, sin policía. Eso sí: si pasas volando sobre la base militar de al lado, ¡te caen cuatro estrellas!", id="s4",
      shots=[N(None, "2", "UN AVIÓN"), S("En una pista", f"c:{PL}@38.6", top="SOUTHWIND"), S("sin policía", f"c:{PV}@4.0", top="GRATIS Y SIN POLICÍA"),
-            S("no vueles", f"c:{PL}@46.0", top="CUIDADO CON LA BASE")],
+            S("si pasas volando", f"c:{PL}@46.0", top="CUIDADO CON LA BASE")],
      sfx=[("w:Dos", "ding", 0.45), ("w:cuatro estrellas", "alarm", 0.35)])
-beat("Y tres: dinero que se repone. En una fábrica al este de Hamlet hay un botín de unos siete mil dólares. Te alejas un poco, vuelves… ¡y está otra vez! Eso sí: puede que lo arreglen pronto.", id="s5",
+beat("Y tres: dinero que se repone. En una fábrica, al este de Hamlet, hay un botín de unos siete mil dólares. Te alejas un poco, vuelves… ¡y está otra vez! Eso sí: puede que lo arreglen pronto.", id="s5",
      shots=[N(None, "3", "DINERO"), S("En una fábrica", f"c:{MO}@17.0", top="LA FÁBRICA"), S("siete mil", f"c:{MO}@41.0", top="UNOS 7.000 $"),
             S("Te alejas", f"c:{MO}@47.0", top="TE ALEJAS…"), S("y está otra vez", f"c:{MO}@54.6", top="…Y VUELVE A ESTAR")],
      sfx=[("w:Y tres", "ding", 0.45), ("w:siete mil", "coin", 0.5)])

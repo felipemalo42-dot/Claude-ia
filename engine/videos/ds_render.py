@@ -252,19 +252,19 @@ def g_sub(c, t, d, sh, ctx):
     panel(c, t, ctx); TH = th(ctx)
     p = ease_out_back(prog(t, 0.0, 0.45))
     if p > 0:
-        c.save(); c.translate(W / 2, 560); c.scale(p, p); c.translate(-W / 2, -560)
-        draw_badge(c, W / 2, 560, 150, t=t); c.restore()
-    wordmark(c, W / 2, 820, 92, ease_out(prog(t, 0.2, 0.6)), align="center")
+        c.save(); c.translate(W / 2, 470); c.scale(p, p); c.translate(-W / 2, -470)
+        draw_badge(c, W / 2, 470, 150, t=t); c.restore()
+    wordmark(c, W / 2, 730, 92, ease_out(prog(t, 0.2, 0.6)), align="center")
     for j, ln in enumerate(sh.get("lines", [])):
-        draw_text(c, ln, W / 2, 960 + j * 70, "intersb", 52, WHITE, ease_out(prog(t, 0.35 + 0.1 * j, 0.7 + 0.1 * j)), align="center")
+        draw_text(c, ln, W / 2, 870 + j * 70, "intersb", 52, WHITE, ease_out(prog(t, 0.35 + 0.1 * j, 0.7 + 0.1 * j)), align="center")
     q = ease_out_back(prog(t, 0.6, 1.0))
     if q > 0:
         beat_ = 1 + 0.05 * math.sin(t * 7)
-        c.save(); c.translate(W / 2, 1120); c.scale(q * beat_, q * beat_)
+        c.save(); c.translate(W / 2, 1030); c.scale(q * beat_, q * beat_)
         rect(c, -330, -72, 660, 144, "#E62117", 1, r=72); draw_text(c, "SUSCRÍBETE", 0, 26, "anton", 80, WHITE, 1, align="center", tracking=3); c.restore()
     q2 = ease_out_back(prog(t, 0.85, 1.25))
     if q2 > 0:
-        c.save(); c.translate(W / 2, 1275); c.scale(q2, q2)
+        c.save(); c.translate(W / 2, 1175); c.scale(q2, q2)
         rect(c, -250, -56, 500, 112, WHITE, 0.95, r=56); draw_text(c, "DALE LIKE", 0, 20, "anton", 58, INK, 1, align="center", tracking=2); c.restore()
 
 GFX = {k[2:]: v for k, v in list(globals().items()) if k.startswith("g_")}

@@ -15,21 +15,24 @@ EX = dict(exag=1.0, cfg=0.3)   # voz más expresiva (parámetros de Chatterbox p
 def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), **{**EX, **k}))
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 F = "igFP"
+def N(anchor, n, name): return S(anchor, "g:sq", lines=[n, name], hl=[0], y=760)
 
 beat("GTA 6 no tiene modo en primera persona… ¡pero hay un truco para jugar así!", pre=0.1, id="s1",
-     shots=[S(None, f"c:{F}@0.2", top="PRIMERA PERSONA EN GTA 6")], sfx=[(0.0, "riser", 0.35), ("w:truco", "stamp", 0.45)])
+     shots=[S(None, f"c:{F}@0.36", top="PRIMERA PERSONA EN GTA 6"), S("¡pero hay un truco", f"c:{F}@16.8", top="¡CON UN TRUCO!")], sfx=[(0.0, "riser", 0.35), ("w:truco", "stamp", 0.45)])
 beat("Paso uno: en los ajustes del mando, cambia el botón del panel táctil, o el botón Vista, de Mapa a Cámara.", id="s2",
-     shots=[S(None, f"c:{F}@4.2", top="PASO 1 · AJUSTES"), S("de Mapa a Cámara", f"c:{F}@7.4", crop=(0.0, 0.3, 0.75, 1.0), top="MAPA → CÁMARA")],
+     shots=[N(None, "1", "AJUSTES DEL MANDO"), S("panel táctil", f"c:{F}@4.32", top="PASO 1 · AJUSTES"),
+            S("de Mapa a Cámara", f"c:{F}@6.02", crop=(0.0, 0.3, 0.75, 1.0), top="MAPA → CÁMARA")],
      sfx=[("w:Paso uno", "ding", 0.45)])
 beat("Paso dos: súbete a un coche y saca el teléfono.", id="s3",
-     shots=[S(None, f"c:{F}@10.0", top="PASO 2 · EL TELÉFONO")], sfx=[("w:Paso dos", "ding", 0.45)])
+     shots=[N(None, "2", "EL TELÉFONO"), S("súbete", f"c:{F}@8.9", top="PASO 2 · EL TELÉFONO")], sfx=[("w:Paso dos", "ding", 0.45)])
 beat("Paso tres, el difícil: guarda el teléfono mientras pulsas el botón de cámara sin parar. ¡Puede costar varios intentos!", id="s4",
-     shots=[S(None, f"c:{F}@13.2", top="PASO 3 · SIN PARAR")], sfx=[("w:Paso tres", "ding", 0.45)])
-beat("Cuando entra, te quedas en primera persona… ¡aunque mueras! Solo se va si cargas la partida o sales del juego.", id="s5",
-     shots=[S(None, f"c:{F}@18.4", top="¡DENTRO!"), S("Solo se va", f"c:{F}@26.4", top="SE VA SI CARGAS O SALES")],
+     shots=[N(None, "3", "GUARDA EL TELÉFONO"), S("mientras pulsas", f"c:{F}@11.66", top="PASO 3 · SIN PARAR")], sfx=[("w:Paso tres", "ding", 0.45)])
+beat("Cuando entra, te quedas en primera persona… ¡aunque mueras! Solo se quita al cargar la partida o al salir del juego.", id="s5",
+     shots=[S(None, f"c:{F}@18.8", top="¡DENTRO!"), S("¡aunque mueras", f"c:{F}@22.9", top="AUNQUE MUERAS"),
+            S("Solo se quita", f"c:{F}@23.88", top="SE QUITA AL CARGAR O SALIR")],
      sfx=[("w:aunque mueras", "impact", 0.4)])
 beat("No es un modo oficial, así que tiene fallos. Pero se ve increíble.", id="s6",
-     shots=[S(None, f"c:{F}@30.2", top="NO ES OFICIAL")], sfx=[("w:increíble", "whoosh", 0.35)])
+     shots=[S(None, f"c:{F}@27.93", top="NO ES OFICIAL")], sfx=[("w:increíble", "whoosh", 0.35)])
 beat("Suscríbete para más trucos de GTA 6, ¡y dale like si lo vas a probar!", hold=1.6, id="s7",
      shots=[S(None, "g:sub", lines=["Más trucos de GTA 6", "con partidas reales"])], sfx=[(0.0, "pop", 0.45), ("w:dale like", "ding", 0.45)])
 

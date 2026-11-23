@@ -28,8 +28,8 @@ beat("Así que dejas inconsciente a alguien… y lo llevas hasta allí.", id="s3
 beat("Se apagan las luces. Se encienden las velas. ¡Y oyes la voz de tu pareja en otra habitación!", id="s4",
      shots=[S(None, f"c:{P}@22.8", top="SE APAGAN LAS LUCES"), S("Y oyes", f"c:{P}@26.6", top="UNA VOZ")],
      sfx=[("w:velas", "whoosh", 0.35), ("w:otra habitación", "heartbeat", 0.45)])
-beat("Pero no es ella. Si juegas con Lucía, aparece una versión demoníaca de su madre. ¡Y con Jason, es Cal!", id="s5",
-     shots=[S(None, f"c:{P}@31.6", top="NO ES ELLA"), S("Si juegas con Lucía", f"c:{P}@41.4", top="CON LUCÍA"), S("Y con Jason", f"c:{P}@51.4", top="CON JASON")],
+beat("Pero no es ella. Si juegas con Lucía, aparece una versión demoníaca de su madre. ¡Mira al fondo!", id="s5",
+     shots=[S(None, f"c:{P}@31.6", top="NO ES ELLA"), S("Si juegas con Lucía", f"c:{P}@41.4", top="CON LUCÍA"), S("Mira al fondo", f"c:{P}@48.6", top="SU MADRE")],
      sfx=[("w:demoníaca", "impact", 0.45)])
 beat("Y cuando vuelves al pentagrama, el cuerpo que sacrificaste se levanta y te ataca. ¡Solo el fuego lo detiene!", id="s6",
      shots=[S(None, f"c:{P}@56.4", top="SE LEVANTA"), S("Solo el fuego", f"c:{P}@69.8", top="SOLO EL FUEGO")],

@@ -212,11 +212,11 @@ V["rt"] = dict(
     title="El ritual secreto de GTA 6 😱 #shorts",
     alts=["El secreto más terrorífico de GTA 6 #shorts", "No hagas este ritual en GTA 6 #shorts"],
     intro=("En un edificio de Capri hay un pentagrama con velas y unas notas. Si llevas a alguien inconsciente, se apagan las luces, se "
-           "encienden las velas y oyes la voz de tu pareja… pero no es ella: con Lucía aparece una versión demoníaca de su madre, y con "
-           "Jason, Cal. Y el cuerpo se levanta y te ataca: solo el fuego lo detiene. Spoiler leve de personajes."),
+           "encienden las velas y oyes la voz de tu pareja… pero no es ella: con Lucía aparece una versión demoníaca de su madre "
+           "(según IGN, con Jason es Cal). Y el cuerpo se levanta y te ataca: solo el fuego lo detiene. Spoiler leve de personajes."),
     credits=[("igPenta", "toda la partida del ritual (recorte sin los rótulos del vídeo original)")],
     prensa=[], outro="¿Te atreverías a hacerlo? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
-    keywords="GTA 6, GTA VI, GTA 6 secreto, GTA 6 pentagrama, GTA 6 ritual, GTA 6 easter egg, GTA 6 terror, GTA 6 Capri, GTA 6 Lucía, GTA 6 Cal, Sal y Asfalto")
+    keywords="GTA 6, GTA VI, GTA 6 secreto, GTA 6 pentagrama, GTA 6 ritual, GTA 6 easter egg, GTA 6 terror, GTA 6 Capri, GTA 6 Lucía, Sal y Asfalto")
 V["gr"] = dict(
     folder="SHORT_8_GTA6_3_COSAS_GRATIS", long=False,
     title="3 cosas GRATIS al empezar GTA 6 #shorts",
