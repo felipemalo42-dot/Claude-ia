@@ -21,7 +21,7 @@ beat("GTA 6 no tiene modo en primera persona… ¡pero hay un truco para jugar a
      shots=[S(None, f"c:{F}@0.36", top="PRIMERA PERSONA EN GTA 6"), S("¡pero hay un truco", f"c:{F}@16.8", top="¡CON UN TRUCO!")], sfx=[(0.0, "riser", 0.35), ("w:truco", "stamp", 0.45)])
 beat("Paso uno: en los ajustes del mando, cambia el botón del panel táctil, o el botón Vista, de Mapa a Cámara.", id="s2",
      shots=[N(None, "1", "AJUSTES DEL MANDO"), S("panel táctil", f"c:{F}@4.32", top="PASO 1 · AJUSTES"),
-            S("de Mapa a Cámara", f"c:{F}@6.02", crop=(0.0, 0.3, 0.75, 1.0), top="MAPA → CÁMARA")],
+            S("de Mapa a Cámara", f"c:{F}@6.02", crop=(0.55, 0.45, 1.0, 0.68), top="MAPA → CÁMARA")],
      sfx=[("w:Paso uno", "ding", 0.45)])
 beat("Paso dos: súbete a un coche y saca el teléfono.", id="s3",
      shots=[N(None, "2", "EL TELÉFONO"), S("súbete", f"c:{F}@8.9", top="PASO 2 · EL TELÉFONO")], sfx=[("w:Paso dos", "ding", 0.45)])
