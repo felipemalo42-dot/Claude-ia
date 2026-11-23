@@ -27,7 +27,8 @@ beat("Uno: un lanzacohetes. Está en una caravana llena de antenas, en un depós
 beat("Ojo: no puedes comprar más munición, así que guarda la partida antes de disparar.", id="s3",
      shots=[S(None, f"c:{R1}@39.7", top="GUARDA ANTES DE DISPARAR")], sfx=[("w:Ojo", "pop", 0.4)])
 beat("Dos: un avión. En una pista de Southwind, al suroeste de Key Lento, hay aviones y un helicóptero, sin policía. Eso sí: si pasas volando sobre la base militar de al lado, ¡te caen cuatro estrellas!", id="s4",
-     shots=[N(None, "2", "UN AVIÓN"), S("En una pista", f"c:{PL}@38.6", top="SOUTHWIND"), S("sin policía", f"c:{PV}@4.0", top="GRATIS Y SIN POLICÍA"),
+     shots=[N(None, "2", "UN AVIÓN"), S("En una pista", f"c:{PV}@2.5", top="SOUTHWIND"), S("hay aviones", f"c:{PL}@38.6", top="AVIONES GRATIS"),
+            S("sin policía", f"c:{PV}@16.0", top="Y SIN POLICÍA"),
             S("si pasas volando", f"c:{PL}@46.0", top="CUIDADO CON LA BASE")],
      sfx=[("w:Dos", "ding", 0.45), ("w:cuatro estrellas", "alarm", 0.35)])
 beat("Y tres: dinero que se repone. En una fábrica, al este de Hamlet, hay un botín de unos siete mil dólares. Te alejas un poco, vuelves… ¡y está otra vez! Eso sí: puede que lo arreglen pronto.", id="s5",
