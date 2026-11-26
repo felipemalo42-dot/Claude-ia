@@ -72,7 +72,16 @@ def cb_batch(jobs):
     for th in ths: th.start()
     for p in procs: p.wait()
     for th in ths: th.join(timeout=5)
-    if any(p.returncode for p in procs): raise RuntimeError("Falló la síntesis con Chatterbox")
+    if any(p.returncode for p in procs):
+        # un proceso puede morir (p. ej. por falta de memoria): se repite una vez lo que falte, con un solo proceso
+        falta = [j for j in todo if not os.path.exists(j["out"])]
+        if falta and n > 1:
+            print(f"    un proceso de síntesis falló: se repiten {len(falta)} tomas con un solo proceso", flush=True)
+            jf = os.path.join(CB["cache"], f"lote_{os.getpid()}_r.json"); json.dump(falta, open(jf, "w", encoding="utf-8"), ensure_ascii=False)
+            r = subprocess.run([CB["python"], os.path.join(os.path.dirname(__file__), "tts_chatterbox.py"), jf, "--threads", str(os.cpu_count() or 4)],
+                               env=dict(os.environ, CHATTERBOX_DIR=CB["dir"]), capture_output=True, text=True)
+            if r.returncode == 0: return
+        raise RuntimeError("Falló la síntesis con Chatterbox")
 
 def cb_job(text, voice, seed, exag=None, cfg=None):
     import hashlib

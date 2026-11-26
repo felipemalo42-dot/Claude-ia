@@ -137,6 +137,8 @@ def wer_tokens(text, hyp=False):
     t = _pre(text)
     if hyp:
         for rx, rep in _WALIAS: t = rx.sub(rep, t)
+    # letras sueltas del subtítulo («la J», «la L») = la letra dicha («la jota», «la ele»), igual que en la transcripción
+    t = re.sub(r"(?<=la )\bJ\b", "jota", t); t = re.sub(r"(?<=la )\bL\b", "ele", t)
     t = re.sub(r"\bGTA VI\b", "GTA 6", t); t = re.sub(r"\bGTA V\b", "GTA 5", t)
     t = re.sub(r"\b(Theft Auto) VI\b", r"\1 6", t); t = re.sub(r"\b(Theft Auto) V\b", r"\1 5", t)   # número romano del título = el número dicho
     t = re.sub(r"(\d),(\d{3})\b", r"\1\2", t)   # separador de miles a la inglesa («$1,191»): es el mismo número

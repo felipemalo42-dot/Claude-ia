@@ -25,13 +25,13 @@ beat("Adentro hay algo de dinero… y una pipa. ¡Úsala!", id="s3",
      shots=[S(None, f"c:{H}@27.0", top="PASO 2 · ADENTRO"), S("Úsala", f"c:{H}@40.0", top="LA PIPA")],
      sfx=[("w:Úsala", "whoosh", 0.4)])
 beat("Y de repente, sobre las ruinas, aparece un bloque flotando en el aire.", id="s4",
-     shots=[S(None, f"c:{H}@45.0", top="PASO 3 · EL BLOQUE")],
+     shots=[S(None, f"c:{H}@50.2", top="PASO 3 · EL BLOQUE")],
      sfx=[("w:bloque", "stamp", 0.4)])
 beat("Súbete justo debajo… ¡y salta, como en Mario!", id="s5",
-     shots=[S(None, f"c:{H}@50.6", top="SALTA DEBAJO")],
+     shots=[S(None, f"c:{H}@56.0", top="SALTA DEBAJO")],
      sfx=[("w:salta", "pop", 0.5)])
 beat("¡Pum! Salen dos gorras: una con la {J|jota} y otra con la {L|ele}. ¡Igualitas a las de Mario y Luigi!", id="s6",
-     shots=[S(None, f"c:{H}@62.4", top="¡PUM!"), S("una con la", f"c:{H}@77.2", top="LA J Y LA L")],
+     shots=[S(None, f"c:{H}@60.6", top="¡PUM!"), S("una con la", f"c:{H}@77.2", crop=(0.28, 0.14, 0.80, 0.62), top="LA J Y LA L")],
      sfx=[("w:Pum", "impact", 0.5), ("w:Igualitas", "coin", 0.5)])
 beat("Una te la pones al momento; la de tu pareja, en el armario.", id="s7",
      shots=[S(None, f"c:{H}@82.6", top="PARA LOS DOS")],
