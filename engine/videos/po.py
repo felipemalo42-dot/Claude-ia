@@ -25,7 +25,7 @@ beat("Luego vienen doce subestaciones eléctricas. Sus letras, juntas, forman un
      shots=[S(None, f"c:{P}@54.0", top="12 SUBESTACIONES"), S("Sus letras", f"c:{P}@91.0", top="LAS LETRAS"), S("un truco", "g:sq", lines=["LIFE IS", "PASSING ME BY"], hl=[1], y=700)],
      sfx=[("w:truco", "stamp", 0.45)])
 beat("En cada una pulsas un botón, en el orden de ese truco. Sin viajar rápido, sin morir… y sin que te arresten.", id="s4",
-     shots=[S(None, f"c:{P}@58.0", top="EN ORDEN"), S("Sin viajar rápido", f"c:{P}@71.0", top="SIN ATAJOS")],
+     shots=[S(None, f"c:{P}@58.0", top="EN ORDEN"), S("Sin viajar rápido", f"c:{P}@71.5", top="SIN ATAJOS")],
      sfx=[])
 beat("Si lo haces bien, te llega un mensaje: «Reactor 2».", id="s5",
      shots=[S(None, f"c:{P}@421.0", top="EL MENSAJE")],
@@ -37,7 +37,7 @@ beat("…y al cruzarlo, ¡todo se ve como en 2002!", id="s7",
      shots=[S(None, f"c:{P}@484.0", top="COMO EN 2002")],
      sfx=[("w:2002", "whoosh", 0.4)])
 beat("Y vuelves con la camisa hawaiana de Tommy Vercetti.", id="s8",
-     shots=[S(None, f"c:{P}@6.0", top="LA CAMISA DE TOMMY")],
+     shots=[S(None, f"c:{P}@4.0", crop=(0.0, 0.0, 1.0, 0.80), top="LA CAMISA DE TOMMY")],
      sfx=[])
 beat("¿Lo intentarías? Suscríbete para más secretos de GTA 6, ¡y dale like si jugaste la Vice City original!", id="s9", hold=1.6,
      shots=[S(None, f"c:{P}@501.0", top="¿LO INTENTARÍAS?"), S("Suscríbete", "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
