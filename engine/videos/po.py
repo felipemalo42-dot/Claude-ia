@@ -40,7 +40,7 @@ beat("Y vuelves con la camisa hawaiana de Tommy Vercetti.", id="s8",
      shots=[S(None, f"c:{P}@6.0", top="LA CAMISA DE TOMMY")],
      sfx=[])
 beat("¿Lo intentarías? Suscríbete para más secretos de GTA 6, ¡y dale like si jugaste la Vice City original!", id="s9", hold=1.6,
-     shots=[S(None, "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
+     shots=[S(None, f"c:{P}@501.0", top="¿LO INTENTARÍAS?"), S("Suscríbete", "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
      sfx=[(0.0, "pop", 0.45), ("w:dale like", "ding", 0.45)])
 
 def music_fn(total, beats_tl):
