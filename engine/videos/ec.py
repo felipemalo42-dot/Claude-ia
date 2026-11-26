@@ -25,19 +25,19 @@ beat("Está en un garaje de Vespucci.", id="s3",
      shots=[S(None, f"c:{E}@36.0", top="VESPUCCI")],
      sfx=[("w:Vespucci", "ding", 0.45)])
 beat("Entras por la puerta lateral, abres el portón, rompes el cristal… ¡y le haces el puente!", id="s4",
-     shots=[S(None, f"c:{E}@74.0", top="LA PUERTA LATERAL"), S("abres el portón", f"c:{E}@88.0", top="EL PORTÓN"), S("rompes el cristal", f"c:{E}@58.0", top="EL CRISTAL"), S("le haces el puente", f"c:{E}@62.0", top="¡EL PUENTE!")],
+     shots=[S(None, f"c:{E}@74.0", top="LA PUERTA LATERAL"), S("abres el portón", f"c:{E}@61.6", top="EL PORTÓN"), S("rompes el cristal", f"c:{E}@87.2", top="EL CRISTAL"), S("le haces el puente", f"c:{E}@90.0", top="¡EL PUENTE!")],
      sfx=[("w:cristal", "impact", 0.4)])
 beat("Si no quieres a la policía detrás, desactiva antes la alarma.", id="s5",
      shots=[S(None, f"c:{E}@79.0", top="LA ALARMA")],
      sfx=[])
 beat("Luego llévaselo a Moses para registrarlo. ¡Si es tu primer auto, te sale gratis!", id="s6",
-     shots=[S(None, f"c:{E}@107.0", top="MOSES"), S("Si es tu primer", f"c:{E}@115.0", top="¡GRATIS!")],
+     shots=[S(None, f"c:{E}@112.6", top="MOSES"), S("Si es tu primer", f"c:{E}@118.4", top="¡GRATIS!")],
      sfx=[("w:gratis", "coin", 0.5)])
 beat("Es rapidísimo, pero frágil: mejor no lo choques.", id="s7",
      shots=[S(None, f"c:{E}@146.0", top="RAPIDÍSIMO"), S("pero frágil", f"c:{E}@156.0", top="PERO FRÁGIL")],
      sfx=[])
 beat("¿Vas a ir por él? Suscríbete para más secretos de GTA 6, ¡y dale like en honor a Paul Walker!", id="s8", hold=1.6,
-     shots=[S(None, "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
+     shots=[S(None, f"c:{E}@164.0", top="¿VAS A IR POR ÉL?"), S("Suscríbete", "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
      sfx=[(0.0, "pop", 0.45), ("w:dale like", "ding", 0.45)])
 
 def music_fn(total, beats_tl):
