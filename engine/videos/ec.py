@@ -19,7 +19,7 @@ beat("¡El auto de Brian O'Conner, de Rápido y Furioso, está en GTA 6!", id="s
      shots=[S(None, f"c:{E}@126.4", top="RÁPIDO Y FURIOSO"), S("está en GTA 6", f"c:{E}@19.0", top="EN GTA 6")],
      sfx=[(0.0, "riser", 0.35), ("w:GTA 6", "impact", 0.5)])
 beat("Es el Eclipse verde de la primera película; aquí se llama Penumbra {FF|efe efe}. Y mira la matrícula: otro guiño a la peli.", id="s2",
-     shots=[S(None, f"c:{E}@6.0", top="PENUMBRA FF"), S("Y mira la matrícula", f"c:{E}@27.4", crop=(0.42, 0.42, 1.0, 0.95), top="MATRÍCULA: «HAD YOU»")],
+     shots=[S(None, f"c:{E}@6.0", top="PENUMBRA FF"), S("Y mira la matrícula", f"c:{E}@26.6", crop=(0.42, 0.42, 1.0, 0.95), top="MATRÍCULA: «HAD YOU»"), S("otro guiño", f"c:{E}@141.0", top="UN GUIÑO A LA PELI")],
      sfx=[("w:matrícula", "stamp", 0.4)])
 beat("Está en un garaje de Vespucci.", id="s3",
      shots=[S(None, f"c:{E}@36.0", top="VESPUCCI")],
