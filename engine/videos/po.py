@@ -19,13 +19,13 @@ beat("En GTA 6 hay un portal… ¡a la Vice City de PlayStation 2!", id="s1", pr
      shots=[S(None, f"c:{P}@470.4", top="UN PORTAL"), S("a la Vice City", f"c:{P}@478.0", top="VICE CITY · 2002")],
      sfx=[(0.0, "riser", 0.35), ("w:PlayStation", "impact", 0.5)])
 beat("Pero abrirlo es el reto más difícil del juego. Primero, sube a la torre de radio de Key Lento y activa el interruptor.", id="s2",
-     shots=[S(None, f"c:{P}@40.6", top="EL RETO"), S("activa el interruptor", f"c:{P}@45.0", top="LA TORRE DE RADIO")],
+     shots=[S(None, f"c:{P}@40.4", top="EL RETO"), S("activa el interruptor", f"c:{P}@48.2", top="LA TORRE DE RADIO")],
      sfx=[("w:Primero", "ding", 0.45)])
 beat("Luego vienen doce subestaciones eléctricas. Sus letras, juntas, forman un truco de la Vice City original: el que adelantaba el tiempo.", id="s3",
-     shots=[S(None, f"c:{P}@52.0", top="12 SUBESTACIONES"), S("Sus letras", f"c:{P}@89.0", top="LAS LETRAS"), S("un truco", "g:sq", lines=["LIFE IS", "PASSING ME BY"], hl=[1], y=700)],
+     shots=[S(None, f"c:{P}@54.0", top="12 SUBESTACIONES"), S("Sus letras", f"c:{P}@91.0", top="LAS LETRAS"), S("un truco", "g:sq", lines=["LIFE IS", "PASSING ME BY"], hl=[1], y=700)],
      sfx=[("w:truco", "stamp", 0.45)])
 beat("En cada una pulsas un botón, en el orden de ese truco. Sin viajar rápido, sin morir… y sin que te arresten.", id="s4",
-     shots=[S(None, f"c:{P}@96.0", top="EN ORDEN"), S("Sin viajar rápido", f"c:{P}@73.0", top="SIN ATAJOS")],
+     shots=[S(None, f"c:{P}@58.0", top="EN ORDEN"), S("Sin viajar rápido", f"c:{P}@71.0", top="SIN ATAJOS")],
      sfx=[])
 beat("Si lo haces bien, te llega un mensaje: «Reactor 2».", id="s5",
      shots=[S(None, f"c:{P}@421.0", top="EL MENSAJE")],
