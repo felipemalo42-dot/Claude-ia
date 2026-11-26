@@ -37,7 +37,7 @@ beat("Vuelve al faro, mira con binoculares… y ahí está: ¡el barco fantasma!
      shots=[S(None, f"c:{K}@139.0", top="VUELVE AL FARO"), S("y ahí está", f"c:{K}@143.0", top="EL BARCO FANTASMA")],
      sfx=[("w:barco fantasma", "heartbeat", 0.5)])
 beat("¿Irías de noche? Suscríbete para más secretos de GTA 6, ¡y dale like si te dio escalofríos!", id="s8", hold=1.6,
-     shots=[S(None, "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
+     shots=[S(None, f"c:{K}@150.0", top="¿IRÍAS DE NOCHE?"), S("Suscríbete", "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
      sfx=[(0.0, "pop", 0.45), ("w:dale like", "ding", 0.45)])
 
 def music_fn(total, beats_tl):

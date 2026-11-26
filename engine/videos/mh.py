@@ -16,7 +16,7 @@ def N(anchor, n, name): return S(anchor, "g:sq", lines=[n, name], hl=[0], y=760)
 H = "GByO53W1-fI"
 
 beat("¿Mario y Luigi… en GTA 6? ¡Pues sí! Y el truco para encontrarlos es rarísimo.", id="s1", pre=0.1,
-     shots=[S(None, f"c:{H}@73.8", top="¿MARIO Y LUIGI?"), S("el truco", f"c:{H}@53.6", top="UN TRUCO RARÍSIMO")],
+     shots=[S(None, f"c:{H}@73.8", top="¿MARIO Y LUIGI?"), S("el truco", f"c:{H}@42.0", top="UN TRUCO RARÍSIMO")],
      sfx=[(0.0, "riser", 0.35), ("w:rarísimo", "pop", 0.45)])
 beat("Primero, ve a unas ruinas junto a un río, lejos de la ciudad.", id="s2",
      shots=[S(None, f"c:{H}@15.6", top="PASO 1 · LAS RUINAS"), S("junto a un río", f"c:{H}@6.0", top="JUNTO AL RÍO")],
@@ -31,13 +31,13 @@ beat("Súbete justo debajo… ¡y salta, como en Mario!", id="s5",
      shots=[S(None, f"c:{H}@50.6", top="SALTA DEBAJO")],
      sfx=[("w:salta", "pop", 0.5)])
 beat("¡Pum! Salen dos gorras: una con la {J|jota} y otra con la {L|ele}. ¡Igualitas a las de Mario y Luigi!", id="s6",
-     shots=[S(None, f"c:{H}@62.4", top="¡PUM!"), S("una con la", f"c:{H}@79.6", top="LA J Y LA L")],
+     shots=[S(None, f"c:{H}@62.4", top="¡PUM!"), S("una con la", f"c:{H}@77.2", top="LA J Y LA L")],
      sfx=[("w:Pum", "impact", 0.5), ("w:Igualitas", "coin", 0.5)])
 beat("Una te la pones al momento; la de tu pareja, en el armario.", id="s7",
-     shots=[S(None, f"c:{H}@83.0", top="PARA LOS DOS")],
+     shots=[S(None, f"c:{H}@82.6", top="PARA LOS DOS")],
      sfx=[])
 beat("¿Qué otro guiño crees que esconde Rockstar? Suscríbete para más secretos de GTA 6, ¡y dale like si te gustó!", id="s8", hold=1.6,
-     shots=[S(None, "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
+     shots=[S(None, f"c:{H}@66.6", top="¿QUÉ MÁS ESCONDE?"), S("Suscríbete", "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
      sfx=[(0.0, "pop", 0.45), ("w:dale like", "ding", 0.45)])
 
 def music_fn(total, beats_tl):
