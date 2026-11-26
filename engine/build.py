@@ -202,6 +202,54 @@ def build_audio(V, outdir, narr=None, aligner=None):
     synth = [tk for tk in takes if tk["voice"] != "humana"]
     if VOICE_ENGINE == "supertonic":
         narr = narr or Supertonic()
+    EP = V.get("expr_pick")
+    if EP and VOICE_ENGINE == "chatterbox" and synth:
+        # voz de siempre, varias tomas por frase (semillas × ajustes suaves) y se queda la más animada que pase el control
+        import hashlib, voice_expr
+        allj = []
+        for tk in synth:
+            tk["cands"] = [cb_job(tk["text"], tk["voice"], take_seed(tk["text"], tk["voice"]) + 1000 * (ci + 1) + s, ex, cf)
+                           for ci, (ex, cf) in enumerate(EP["confs"]) for s in range(EP["seeds"])]
+            allj += tk["cands"]
+        print(f"  voz: {len(allj)} tomas candidatas ({len(synth)} frases × {len(allj) // len(synth)}) para elegir la más animada")
+        cb_batch(allj)
+        for tk in synth:
+            ev = []
+            for j in tk["cands"]:
+                x = load_take(j["out"])
+                st_ = os.stat(j["out"])
+                key = hashlib.sha1(json.dumps([j["out"], st_.st_size, int(st_.st_mtime), tk["exp"], tk["flat"], metric, thr,
+                                               V.get("qa_sentences", True), "qa-v2", "expr-v1"]).encode()).hexdigest()[:16]
+                qc = f"{j['out']}.qa_{key}.json"
+                if os.path.exists(qc): times, score, hyp, det, f = json.load(open(qc, encoding="utf-8"))
+                else:
+                    times, score, hyp, det = evaluate(tk, x); f = voice_expr.feats(x, TSR, times, tk["exp"])
+                    json.dump([times, score, hyp, det, f], open(qc, "w", encoding="utf-8"), ensure_ascii=False)
+                ev.append((score, x, times, hyp, det, f, j))
+            def end_ok(x, times):
+                """El final de la toma, ya recortado como en el montaje, no debe cortar voz ni llevar un ruidito tras un silencio."""
+                if not times: return True
+                y = tail_clean(tail_trim(x, times[-1][1]), times[-1][1]) if V.get("trim_tail") == "energia" else x
+                ref = np.percentile(np.abs(y), 99) + 1e-9
+                if 20 * np.log10(np.sqrt(np.mean(y[-int(0.03 * TSR):] ** 2)) / ref + 1e-9) > -26: return False
+                hop = int(0.01 * TSR); n = len(y) // hop; rms = np.sqrt(np.mean(y[: n * hop].reshape(n, hop) ** 2, axis=1) + 1e-12)
+                loud = rms > np.percentile(rms, 95) * 10 ** (-38 / 20); tail = loud[-70:]
+                if tail.any():
+                    last = len(tail) - 1 - int(np.argmax(tail[::-1]))           # último tramo con sonido
+                    first = last
+                    while first > 0 and tail[first - 1]: first -= 1
+                    gap = 0; i = first - 1
+                    while i >= 0 and not tail[i]: gap += 1; i -= 1
+                    if gap >= 12 and (last - first + 1) < 35 and i >= 0: return False   # silencio ≥ 120 ms y luego un sonido corto al final
+                return True
+            ok = [e for e in ev if e[0] >= thr and voice_expr.clean(e[5]) and end_ok(e[1], e[2])]
+            tk["tries"] = len(ev)
+            if ok:
+                sc = voice_expr.scores([e[5] for e in ok]); i = int(np.argmax(sc)); e = ok[i]
+                tk["best"] = e[:5]; tk["job"] = e[6]; tk["expr"] = dict(ok=len(ok), de=len(ev), exag=e[6]["exaggeration"], cfg=e[6]["cfg"], seed=e[6]["seed"])
+            else:
+                e = max(ev, key=lambda e: e[0]); tk["best"] = e[:5]; tk["job"] = e[6]
+        print("  voz: tomas elegidas", sum(1 for tk in synth if tk.get("expr")), "de", len(synth), "(las demás siguen con rondas normales)")
     for k in range(V.get("max_tries", MAX_TRIES)):
         pend = [tk for tk in synth if tk["best"] is None or tk["best"][0] < thr]
         if not pend: break

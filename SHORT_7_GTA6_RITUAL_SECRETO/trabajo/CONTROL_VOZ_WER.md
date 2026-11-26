@@ -7,13 +7,13 @@ Audio comprobado: `trabajo/narracion_original.wav` (narración final, la misma q
 | Palabras del guion | 117 |
 | Errores (por frase; una palabra es error si la fallan los dos reconocedores) | 0 |
 | **WER final** | **0.000%** (coincidencia 100.000%) |
-| WER solo con Parakeet TDT v3 | 0.000% (0 errores) |
-| WER solo con Whisper small | 4.274% (5 errores) |
+| WER solo con Parakeet TDT v3 | 0.855% (1 errores) |
+| WER solo con Whisper small | 1.709% (2 errores) |
 | WER en bloques de ~20 s (uniones entre tomas) | 0.000% (0 errores en 117 palabras, 3 bloques) |
 | Términos clave no reconocidos por ningún reconocedor | 0 |
 | Tomas solapadas | 0 |
 | Tomas que terminan de golpe con voz | 0 |
-| Voz frente a música y efectos | voz por encima de música + efectos mientras hay voz: mediana 18.4 dB · percentil 5 1.5 dB · mínimo -3.2 dB (70 ventanas de 0,5 s) |
+| Voz frente a música y efectos | voz por encima de música + efectos mientras hay voz: mediana 18.3 dB · percentil 5 3.3 dB · mínimo -1.7 dB (81 ventanas de 0,5 s) |
 
 Objetivo del encargo: WER ≤ 0,2 % (coincidencia ≥ 99,8 %). Resultado: **CUMPLE**.
 
@@ -35,6 +35,6 @@ Todos los nombres propios, cifras y términos de GTA del guion los reconoce al m
 
 | Desde | Hasta | Palabras | Errores Parakeet | Errores Whisper | Errores (mejor) | Detalle |
 |---|---|---|---|---|---|---|
-| 0.15 | 18.9 | 50 | 0 | 0 | 0 |  |
-| 18.82 | 37.13 | 53 | 0 | 0 | 0 |  |
-| 36.75 | 42.43 | 14 | 0 | 0 | 0 |  |
+| 0.15 | 19.74 | 46 | 0 | 0 | 0 |  |
+| 19.61 | 39.96 | 55 | 0 | 0 | 0 |  |
+| 39.88 | 46.61 | 16 | 0 | 0 | 0 |  |

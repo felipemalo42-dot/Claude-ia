@@ -11,17 +11,17 @@ import audio
 from videos import ds_render as R
 
 B = []
-EX = dict(exag=1.0, cfg=0.3)   # voz más expresiva (parámetros de Chatterbox para habla animada)
+EX = dict(exag=0.6, cfg=0.4)   # la voz de siempre (las rondas de repetición usan estos ajustes)
 def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), **{**EX, **k}))
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 P = "igPenta"
 
 beat("En GTA 6 hay un ritual secreto. Y si lo completas… pasa esto.", pre=0.1, id="s1",
-     shots=[S(None, f"c:{P}@73.9", top="EL RITUAL SECRETO"), S("pasa esto", f"c:{P}@62.0", top="¿TE ATREVES?")],
+     shots=[S(None, f"c:{P}@73.75", top="EL RITUAL SECRETO"), S("pasa esto", f"c:{P}@62.0", top="¿TE ATREVES?")],
      sfx=[(0.0, "riser", 0.35), ("w:pasa esto", "impact", 0.5)])
 beat("En un edificio de Capri hay un pentagrama, con velas y unas notas. ¡Y a ese círculo le falta algo: un sacrificio!", id="s2",
-     shots=[S(None, f"c:{P}@6.4", top="CAPRI"), S("con velas", f"c:{P}@20.6", top="EL PENTAGRAMA"), S("unas notas", f"c:{P}@0.2", top="LAS NOTAS"),
-            S("un sacrificio", f"c:{P}@3.0", top="«SACRIFICE»")],
+     shots=[S(None, f"c:{P}@6.4", top="CAPRI"), S("con velas", f"c:{P}@20.6", top="EL PENTAGRAMA"), S("unas notas", f"c:{P}@0.0", top="LAS NOTAS"),
+            S("un sacrificio", f"c:{P}@3.3", top="«SACRIFICE»")],
      sfx=[("w:sacrificio", "stamp", 0.45)])
 beat("Así que dejas inconsciente a alguien… y lo llevas hasta allí.", id="s3",
      shots=[S(None, f"c:{P}@11.4", top="EL «SACRIFICIO»")], sfx=[("w:inconsciente", "impact", 0.35)])
@@ -50,7 +50,8 @@ os.makedirs(os.path.join(_ROOT, FOLDER, "trabajo"), exist_ok=True)
 VIDEO = dict(id=VID, folder=FOLDER, file="SHORT_FINAL", res_dir="trabajo", theme=THEME, header=HEADER, credit=False,
              title=TITLE, format="Short (9:16, 1080×1920, 30 fps)", music=MOOD, music_fn=music_fn,
              voice="host", beats=B, overlay=R.overlay, grade=None, music_gain=0.36, duck=0.24, duck_release=0.9, sfx_gain=0.6, size=(1080, 1920),
-             tempo=1.15, pause_mul=0.65,   # voz de Shorts: más ritmo (estiramiento con timbre intacto) y pausas más cortas
+             pause_mul=0.9,   # pausas algo más cortas que en los vídeos largos, sin acelerar la voz
+             expr_pick=dict(seeds=4, confs=[(0.6, 0.4), (0.7, 0.45)]),   # 8 tomas por frase: se elige la más animada (voice_expr.py)
              max_tries=6, qa_metric="wer", qa_thr=1.0, drone_clean=True, trim_tail="energia", stems="trabajo/pistas", trans=("cut", 0.0),
              final_codec="h264_hq", crf=18, x264_tune="film", thumb_size=(1080, 1920),
              names=dict(narr_wav="trabajo/narracion_original.wav", narr_mp3="trabajo/NARRACION.mp3", srt="SUBTITULOS.srt",

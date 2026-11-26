@@ -11,7 +11,7 @@ import audio
 from videos import ds_render as R
 
 B = []
-EX = dict(exag=1.0, cfg=0.3)   # voz más expresiva (parámetros de Chatterbox para habla animada)
+EX = dict(exag=0.6, cfg=0.4)   # la voz de siempre (las rondas de repetición usan estos ajustes)
 def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), **{**EX, **k}))
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 F = "igFP"
@@ -49,7 +49,8 @@ os.makedirs(os.path.join(_ROOT, FOLDER, "trabajo"), exist_ok=True)
 VIDEO = dict(id=VID, folder=FOLDER, file="SHORT_FINAL", res_dir="trabajo", theme=THEME, header=HEADER, credit=False,
              title=TITLE, format="Short (9:16, 1080×1920, 30 fps)", music=MOOD, music_fn=music_fn,
              voice="host", beats=B, overlay=R.overlay, grade=None, music_gain=0.36, duck=0.24, duck_release=0.9, sfx_gain=0.6, size=(1080, 1920),
-             tempo=1.15, pause_mul=0.65,   # voz de Shorts: más ritmo (estiramiento con timbre intacto) y pausas más cortas
+             pause_mul=0.9,   # pausas algo más cortas que en los vídeos largos, sin acelerar la voz
+             expr_pick=dict(seeds=4, confs=[(0.6, 0.4), (0.7, 0.45)]),   # 8 tomas por frase: se elige la más animada (voice_expr.py)
              max_tries=6, qa_metric="wer", qa_thr=1.0, drone_clean=True, trim_tail="energia", stems="trabajo/pistas", trans=("cut", 0.0),
              final_codec="h264_hq", crf=18, x264_tune="film", thumb_size=(1080, 1920),
              names=dict(narr_wav="trabajo/narracion_original.wav", narr_mp3="trabajo/NARRACION.mp3", srt="SUBTITULOS.srt",
