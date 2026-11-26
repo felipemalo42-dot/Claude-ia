@@ -19,10 +19,10 @@ beat("En GTA 6 hay un tipo que vive en un búnker esperando el apocalipsis… ¡
      shots=[S(None, f"c:{U}@772.0", top="¿EL APOCALIPSIS?"), S("en un búnker", f"c:{U}@178.0", top="EL BÚNKER")],
      sfx=[(0.0, "riser", 0.35), ("w:tiene razón", "impact", 0.5)])
 beat("Se llama Freddie, y su casa está protegida con minas y drones.", id="s2",
-     shots=[S(None, f"c:{U}@124.0", top="FREDDIE"), S("minas y drones", f"c:{U}@60.0", top="MINAS Y DRONES")],
+     shots=[S(None, f"c:{U}@641.0", top="FREDDIE"), S("minas y drones", f"c:{U}@77.0", top="MINAS Y DRONES")],
      sfx=[("w:drones", "alarm", 0.35)])
 beat("Si logras atravesar sus defensas, no se enfada… ¡te invita a su pódcast!", id="s3",
-     shots=[S(None, f"c:{U}@140.0", top="LAS DEFENSAS"), S("te invita", f"c:{U}@605.0", top="SU PÓDCAST")],
+     shots=[S(None, f"c:{U}@140.0", top="LAS DEFENSAS"), S("te invita", f"c:{U}@623.0", top="SU PÓDCAST")],
      sfx=[("w:pódcast", "pop", 0.45)])
 beat("Pero entonces su cámara ve algo afuera, y salta una alerta: ¡huracán!", id="s4",
      shots=[S(None, f"c:{U}@692.0", top="LA CÁMARA"), S("salta una alerta", f"c:{U}@713.0", top="¡ALERTA!")],
@@ -34,7 +34,7 @@ beat("…porque al salir, el huracán ya está aquí.", id="s6",
      shots=[S(None, f"c:{U}@752.0", top="AL SALIR…"), S("ya está aquí", f"c:{U}@781.0", top="EL HURACÁN")],
      sfx=[("w:huracán", "whoosh", 0.5)])
 beat("¿Te quedarías en el búnker? Suscríbete para más secretos de GTA 6, ¡y dale like si sobreviviste!", id="s7", hold=1.6,
-     shots=[S(None, "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
+     shots=[S(None, f"c:{U}@650.0", top="¿TE QUEDARÍAS?"), S("Suscríbete", "g:sub", lines=["Más secretos de GTA 6", "con partidas reales"])],
      sfx=[(0.0, "pop", 0.45), ("w:dale like", "ding", 0.45)])
 
 def music_fn(total, beats_tl):
