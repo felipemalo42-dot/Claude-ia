@@ -37,7 +37,11 @@ VERTICAL = {"JHRVSzM2O2M", "uMYUjOLOOVQ", "R9r9ew12GcA"}
 # fuentes que no son copias de YouTube: URL directa y recorte de la imagen de juego (sin los rótulos del montaje original)
 # vídeo 4 (GTA 5 vs GTA 6): GTA 5 de Kotaku y The Escapist (2013), GTA 5 Enhanced de LOCAL GAMING (4K60) y la base de GTA 6 de Sirloin
 SRC.update({"igPenta": (30.0, False), "igFP": (30.0, False), "igRocket": (30.0, False), "igPlaneV": (30.0, False),
-            "NKq2GOBaJV8": (29.97, False), "QBMZ1ZXlflk": (60.0, False), "HAIx2b9ThL8": (59.94, False)})   # Shorts rt/gr/fp/am (IGN; tiras limpias de los verticales ya recortadas en xmez)
+            "NKq2GOBaJV8": (29.97, False), "QBMZ1ZXlflk": (60.0, False), "HAIx2b9ThL8": (59.94, False)})
+# Shorts 10-14 (guías IGN 4K y la misión del huracán de Lootward)
+SRC.update({"B0b5JhrGUJQ": (30.0, False)})
+SRC.update({"rK6MXJpcaIA": (59.94, False)}); DEC["rK6MXJpcaIA"] = DECIMATE2   # vídeo largo de la policía (Cynic, 4K a 59,94)
+SRC.update({"GByO53W1-fI": (60.0, False), "IqKb-yJGroE": (30.0, False), "gNMTCbS8Ytg": (60.0, False), "mMBdAMjCEnE": (60.0, False), "JPnJPuH4N6Q": (30.0, False)})   # Shorts rt/gr/fp/am (IGN; tiras limpias de los verticales ya recortadas en xmez)
 SRC.update({"vpWestern": (30.0, False), "vpWaffles": (30.0, False), "vpWeazel": (30.0, False), "vpBurger": (30.0, False), "vpBradlaw": (30.0, False),
             "vpDive": (30.0, False), "vpGame": (30.0, False), "P-BbiYUPD-o": (30.0, False)})   # Shorts zp/jg/tb (Video Pump, CC BY 4.0; tiras limpias ya recortadas en xmez) e IGN
 SRC.update({"IG2hfrBVjh4": (29.97, False), "Q5XgKNEnbP4": (30.0, False), "V99Ng_VTBUs": (59.94, False), "nqmpDCbz3lA": (30.0, False)})
@@ -45,13 +49,15 @@ DEC["V99Ng_VTBUs"] = "fps=30000/1001"   # GTA 5 en PC a 60 imágenes distintas p
 SRC["vpHospital1"] = (30.0, False)
 SRC_URL = {"vpHospital1": "https://archive.org/download/videopump-2026-11-20-hospital-bill/24-hospital-bill-1191.mp4"}
 SRC_CROP = {"vpHospital1": "crop=1080:608:0:656"}   # franja 16:9 con la partida dentro del vertical de Video Pump
+# vídeo largo de los finales: recopilación con rótulos arriba, marcas de agua y subtítulos abajo → recorte 16:9 central (76 %)
+SRC_CROP["B0b5JhrGUJQ"] = "crop=1938:1090:70:60"
 def rate(vid):
     """Segundos del original por segundo del tramo: 1,001 si el original va a 29,97/59,94 fps; 1 si va a 30/60 fps exactos."""
     return 1.0 if abs(SRC[vid][0] - round(SRC[vid][0])) < 1e-3 else 1.001
 # tramos (segundos del original) que usa el montaje; se amplían 1 s por cada lado para poder ajustar los planos
 _VD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos")
 WINDOWS = {}
-for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json", "shx_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
+for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json", "shx_windows.json", "sh2_windows.json", "fn_windows.json", "pl_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 
@@ -82,7 +88,7 @@ def build(vid, a, b):
     inp = source(vid)
     tmp = out + ".part.mp4"; t0 = time.time()
     cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *inp[:-1], "-ss", f"{a:.3f}", "-i", inp[-1], "-t", f"{b - a:.3f}", "-an",
-           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
+           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", os.environ.get("MEZ_CRF", "14"), "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
     for k in range(4):
         r = subprocess.run(cmd)
@@ -112,7 +118,7 @@ def build_v(vid, a, b, cx):
     vf.append("setpts=N/(30*TB)")
     inp = source(vid); tmp = out + ".part.mp4"; t0 = time.time()
     cmd = ["nice", "-n", os.environ.get("MEZ_NICE", "8"), "ffmpeg", "-nostdin", "-v", "error", "-y", *inp[:-1], "-ss", f"{a:.3f}", "-i", inp[-1], "-t", f"{b - a:.3f}", "-an",
-           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", "14", "-pix_fmt", "yuv420p",
+           "-vf", ",".join(vf), "-r", "30", "-fps_mode", "cfr", "-c:v", "libx264", "-preset", os.environ.get("MEZ_PRESET", "slow"), "-crf", os.environ.get("MEZ_CRF", "14"), "-pix_fmt", "yuv420p",
            "-g", "30", "-bf", "2", "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", "-movflags", "+faststart", tmp]
     for k in range(4):
         if subprocess.run(cmd).returncode == 0 and complete(tmp, (b - a) / rate(vid)): break

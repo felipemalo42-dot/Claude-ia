@@ -164,6 +164,19 @@ def overlay(c, gt, ctx):
         rect(c, 78, 150, 74, 42, TH["acc"], p, r=12, stroke=5); circle(c, 98, 171, 7, TH["glow1"], p); circle(c, 134, 171, 7, TH["acc"], p)
     elif ctx.V.get("theme") == "playa":
         circle(c, 112, 166, 26, TH["acc"], p); rect(c, 74, 176, 76, 22, TH["glow1"], p, r=8)
+    elif ctx.V.get("theme") == "retro":   # bloque «?»
+        rect(c, 84, 140, 56, 56, TH["acc"], p, r=6); draw_text(c, "?", 112, 186, "anton", 46, "#7A4A00", p, align="center")
+    elif ctx.V.get("theme") == "fantasma":   # fantasma
+        circle(c, 112, 158, 22, TH["acc"], p); rect(c, 90, 158, 44, 30, TH["acc"], p, r=4)
+        circle(c, 104, 156, 4, "#02140E", p); circle(c, 120, 156, 4, "#02140E", p)
+    elif ctx.V.get("theme") == "neon":   # sol ochentero
+        circle(c, 112, 168, 28, TH["acc"], p)
+        for k in range(3): rect(c, 82, 170 + k * 9, 60, 4, TH["bg"] if "bg" in TH else "#0A0614", p)
+    elif ctx.V.get("theme") == "tormenta":   # remolino
+        for k in range(3): circle(c, 112, 168, 10 + k * 9, TH["acc"], p * (1 - k * 0.25), stroke=4)
+    elif ctx.V.get("theme") == "racing":   # bandera a cuadros
+        for i in range(4):
+            for j in range(3): rect(c, 84 + i * 14, 148 + j * 14, 14, 14, TH["acc"] if (i + j) % 2 == 0 else "#FFFFFF", p)
     else:
         for k in range(3): D.leaf(c, 100 + k * 34, 172, 20, TH["glow1"], p, rot=k * 35)
     draw_text(c, ctx.V.get("header", ""), W - 90, 188, "anton", 50, TH["acc"], p, align="right", tracking=2)

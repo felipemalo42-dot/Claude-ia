@@ -34,6 +34,13 @@ THEMES = {
     "tv": dict(acc="#FFD23F", acc2="#FFFFFF", bg="#0A0A0C", glow1="#FF4D4D", glow2="#3DDC97", chap="CANAL"),
     "playa": dict(acc="#FFB347", acc2="#FFFFFF", bg="#061218", glow1="#2EC4B6", glow2="#FF6B6B", chap="PARADA"),
     "combate": dict(acc="#F5C542", acc2="#FFFFFF", bg="#0B0B10", glow1="#5BC26A", glow2="#F25C9B", chap="ASALTO"),
+    "retro": dict(acc="#FFD23F", acc2="#FFFFFF", bg="#0B0710", glow1="#E52521", glow2="#43B047", chap="NIVEL"),
+    "fantasma": dict(acc="#7CFFB2", acc2="#E6FFF3", bg="#030C0A", glow1="#0F5E46", glow2="#1E3A5F", chap="PISTA"),
+    "neon": dict(acc="#FF4FD8", acc2="#FFFFFF", bg="#0A0614", glow1="#22D3EE", glow2="#FF4FD8", chap="PASO"),
+    "tormenta": dict(acc="#FF9F1C", acc2="#FFFFFF", bg="#070B12", glow1="#3A6EA5", glow2="#9FB8D0", chap="ALERTA"),
+    "racing": dict(acc="#39FF14", acc2="#FFFFFF", bg="#05090A", glow1="#2F80FF", glow2="#39FF14", chap="VUELTA"),
+    "finales": dict(acc="#FF5A5F", acc2="#FFFFFF", bg="#0A0708", glow1="#7A1020", glow2="#2B3A67", chap="PARTE"),
+    "policia": dict(acc="#4DA3FF", acc2="#FFFFFF", bg="#05080F", glow1="#E5484D", glow2="#2F6BFF", chap="NIVEL"),
 }
 G5, G6 = "#5BC26A", "#F25C9B"
 LADO_COL = {"acusacion": "#E5484D", "defensa": "#4C8DF6", "gta5": G5, "gta6": G6}
@@ -464,9 +471,20 @@ def overlay(c, gt, ctx):
     if not sh.get("clean"):
         ck = sh.get("cert", b.get("cert"))
         if ck and (not sh["src"].startswith("g:") or sh.get("cert")): cert(c, ck, 1.0, y=82 if not sh["src"].startswith("g:") else 92, left=sh["src"].startswith("g:"))
-        if sh["src"].startswith("x:"): credit(c, sh)
+        if sh["src"].startswith("x:") and ctx.V.get("credit", True): credit(c, sh)   # credit=False: créditos solo en la descripción
+    if b.get("cta"): cta_pill(c, gt - T["bstarts"][bi], ctx)
     G.subtitles(c, gt, ctx)
     if gt > 3: K.watermark(c, W, H, 0.45, corner="tl", size=40)
+
+def cta_pill(c, tt, ctx):
+    """Llamada a mitad del vídeo sin tapar la partida: «DALE LIKE» y «SUSCRÍBETE» abajo a la izquierda, con un pulso."""
+    TH = th(ctx); p = ease_out_back(prog(tt, 0.2, 0.7)) * (1 - prog(tt, 7.0, 7.5))
+    if p <= 0: return
+    beat_ = 1 + 0.04 * math.sin(tt * 6)
+    c.save(); c.translate(70, H - 250); c.scale(p * beat_, p * beat_)
+    rect(c, 0, 0, 330, 84, WHITE, 0.96, r=42); draw_text(c, "DALE LIKE", 165, 56, "anton", 44, INK, 1, align="center", tracking=1)
+    rect(c, 350, 0, 360, 84, "#E62117", 1, r=42); draw_text(c, "SUSCRÍBETE", 530, 56, "anton", 44, WHITE, 1, align="center", tracking=2)
+    c.restore()
 
 # ================================================================ gráficos propios (g:)
 def panel(c, t, ctx, dark=0.0):

@@ -241,6 +241,108 @@ V["fp"] = dict(
     outro="¿Lo vas a probar? Suscríbete para más trucos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
     keywords="GTA 6, GTA VI, GTA 6 primera persona, GTA 6 first person, GTA 6 truco, GTA 6 glitch, GTA 6 cámara, Sal y Asfalto")
 
+SRC.update({
+    "GByO53W1-fI": ("IGN", "GTA 6 - How to Get the Mario and Luigi Hat Easter Egg", "23/11/2026", yt("GByO53W1-fI")),
+    "IqKb-yJGroE": ("IGN", "GTA 6: How to Get the Cursed Knife | Ghost Ship Lighthouse Easter Egg", "24/11/2026", yt("IqKb-yJGroE")),
+    "gNMTCbS8Ytg": ("IGN", "GTA 6 - How to Find the PS2 Vice City Easter Egg", "25/11/2026", yt("gNMTCbS8Ytg")),
+    "mMBdAMjCEnE": ("Lootward", "You Can Actually Unlock HURRICANE Weather in GTA 6", "23/11/2026", yt("mMBdAMjCEnE")),
+    "JPnJPuH4N6Q": ("IGN", "GTA 6: How to Get Paul Walker's Eclipse (The Fast and the Furious)", "22/11/2026", yt("JPnJPuH4N6Q")),
+})
+SRC.update({
+    "B0b5JhrGUJQ": ("TheGamingRevolution", "GTA 6 - ALL 9 Endings Story Explained (Jason & Lucia Cutscenes)", "21/11/2026", yt("B0b5JhrGUJQ")),
+    "rK6MXJpcaIA": ("Cynic", "How GTA 6's Wanted System Actually Works", "24/11/2026", yt("rK6MXJpcaIA")),
+})
+V["fn"] = dict(
+    folder="VIDEO_LARGO_5_GTA6_FINALES", long=True,
+    title="Todos los finales de GTA 6 explicados (y cómo conseguir el bueno) ⚠️ SPOILERS",
+    alts=["GTA 6: los 7 finales y cómo desbloquear el final feliz (SPOILERS)",
+          "¿Qué final de GTA 6 te tocó? Todos explicados (SPOILERS)",
+          "El final feliz de GTA 6: requisitos y todos los demás finales (SPOILERS)"],
+    intro=("⚠️ SPOILERS DEL FINAL DE GTA 6. Todos los finales, del más trágico al más feliz: los dos del ascensor, el del pantano, "
+           "los del puente (Bonnie y Clyde, el salto fallido y su variante), el de la cárcel y el reencuentro familiar. Además, lo que piden "
+           "las partidas publicadas para conseguir el final feliz (dos millones en el ahorro familiar, un perfil criminal bajo y perdonar al "
+           "policía), la escena de después de los créditos y el misterio del archivo de Cal.\n\n"
+           "Rockstar no ha dicho cuál es el final oficial. La versión «Jason libre y Lucía presa» no aparece en ninguna partida publicada: "
+           "se menciona solo como rumor."),
+    chapters=[("o01", "Aviso y presentación"), ("c1a", "El último golpe"), ("c2a", "Los finales del ascensor"), ("c3a", "El final del pantano"),
+              ("c4a", "Los finales del puente"), ("c5a", "El final de la cárcel"), ("c6a", "El reencuentro familiar"),
+              ("c7a", "Cómo conseguir el final feliz"), ("c8a", "Después de los créditos"), ("r01", "¿Cuál es el oficial?")],
+    credits=[("B0b5JhrGUJQ", "todas las escenas de los finales (recortadas, sin sus rótulos ni marcas de agua). Ese vídeo reúne a su vez "
+              "partidas de Sirloin (youtube.com/@Sirloin1), meloo (youtube.com/@meloo), BabyZoneGaming y Ben-Gun: gracias a todos")],
+    prensa=[], outro="¿Qué final conseguiste tú? Cuéntalo en los comentarios y suscríbete para más GTA 6 contado a fondo.",
+    tags="#GTA6 #GTAVI #GTA6Finales",
+    keywords="GTA 6, GTA VI, GTA 6 finales, GTA 6 final feliz, GTA 6 final bueno, GTA 6 ending, GTA 6 spoilers, GTA 6 Jason Lucía, GTA 6 reencuentro, Sal y Asfalto")
+V["pl"] = dict(
+    folder="VIDEO_LARGO_6_GTA6_POLICIA", long=True,
+    title="La policía de GTA 6: qué significa cada estrella (y cómo escapar siempre)",
+    alts=["GTA 6: el sistema de búsqueda explicado con partidas reales",
+          "Cómo escapar de la policía en GTA 6 (guía de estrellas e iconos)",
+          "GTA 6: cómo robar sin que te atrapen"],
+    intro=("Guía sin spoilers del sistema de búsqueda de GTA 6 con una partida real: las seis estrellas, qué significa cada color y forma "
+           "(grises, huecas, sólidas, apagadas y rojas), los círculos del minimapa, los siete iconos de lo que la policía sabe de ti y cómo "
+           "borrar cada pista, el robo limpio (cámaras, alarma y caja fuerte), joyerías, escondites de bandas y cómo huir (ruedas, helicópteros, "
+           "separarse de tu pareja).\n\nLos consejos son de la partida de Cynic y de lo que se ve en ella, no reglas oficiales de Rockstar."),
+    chapters=[("o01", "Presentación"), ("c1a", "Seis estrellas"), ("c2a", "Cómo leer las estrellas"), ("c3a", "Lo que saben de ti"),
+              ("c4a", "El robo limpio"), ("c5p", "Joyerías y bandas"), ("c5a", "La huida"), ("r01", "Resumen")],
+    credits=[("rK6MXJpcaIA", "toda la partida de la guía (sus explicaciones y consejos, contados en español)")],
+    prensa=[], outro="¿Cuál es tu mejor huida? Cuéntala en los comentarios y suscríbete para más guías de GTA 6.",
+    tags="#GTA6 #GTAVI #GTA6Guia",
+    keywords="GTA 6, GTA VI, GTA 6 policía, GTA 6 estrellas, GTA 6 nivel de búsqueda, GTA 6 wanted, GTA 6 escapar, GTA 6 robos, GTA 6 guía, Sal y Asfalto")
+V["mh"] = dict(
+    folder="SHORT_10_GTA6_GORRAS_MARIO_LUIGI", long=False,
+    title="¿Mario y Luigi en GTA 6? 🍄 #shorts",
+    alts=["Las gorras de Mario y Luigi en GTA 6 #shorts", "El easter egg de Nintendo en GTA 6 #shorts"],
+    intro=("Rockstar escondió en GTA 6 dos gorras que parecen las de Mario y Luigi. En unas ruinas junto a un río hay algo de dinero y "
+           "una pipa: al usarla aparece un bloque flotando sobre las ruinas. Ponte debajo, salta… y salen dos gorras, una con la J y otra "
+           "con la L. Una te la pones al momento; la de tu pareja, en el armario."),
+    credits=[("GByO53W1-fI", "toda la partida del secreto")],
+    prensa=[], outro="¿Qué otro guiño crees que esconde Rockstar? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 easter egg, GTA 6 Mario, GTA 6 Luigi, GTA 6 Nintendo, GTA 6 gorras, GTA 6 secretos, Sal y Asfalto")
+V["ck"] = dict(
+    folder="SHORT_11_GTA6_BARCO_FANTASMA", long=False,
+    title="El barco fantasma de GTA 6 👻 #shorts",
+    alts=["No vayas a este faro a medianoche en GTA 6 #shorts", "El cuchillo maldito de GTA 6 #shorts"],
+    intro=("A medianoche, en un faro al norte de Vice City, dos fantasmas discuten arriba y uno empuja al otro. Abajo hay una foto que "
+           "lleva a una casa en un islote con un libro en la chimenea; después, con equipo de buceo, hay que nadar mar adentro entre la "
+           "niebla hasta un bote hundido con un cuchillo verde: el cuchillo maldito. De vuelta en el faro, con binoculares, se ve el "
+           "barco fantasma."),
+    credits=[("IqKb-yJGroE", "toda la partida del secreto")],
+    prensa=[], outro="¿Irías de noche? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 barco fantasma, GTA 6 faro, GTA 6 cuchillo maldito, GTA 6 fantasmas, GTA 6 easter egg, GTA 6 misterio, Sal y Asfalto")
+V["po"] = dict(
+    folder="SHORT_12_GTA6_PORTAL_VICE_CITY_PS2", long=False,
+    title="GTA 6 tiene un portal a la Vice City de PS2 😱 #shorts",
+    alts=["Volví a la Vice City original dentro de GTA 6 #shorts", "El secreto más difícil de GTA 6 #shorts"],
+    intro=("El secreto más elaborado de GTA 6: activar la torre de radio de Key Lento y recorrer doce subestaciones cuyas letras "
+           "forman «Life is passing me by», el truco de GTA Vice City que adelantaba el tiempo. En cada una se pulsa un botón en el orden "
+           "de ese truco, sin viaje rápido, sin conducción automática, sin morir y sin que te arresten (más o menos una hora). Al final "
+           "llega el mensaje «U-235 REACTOR2» y, de noche, en la central eléctrica se abre un portal a la Vice City con aspecto de 2002. "
+           "Vuelves con la camisa hawaiana de Tommy Vercetti. Lo descubrió Memeio (youtube.com/c/Memeio): todo el mérito para él."),
+    credits=[("gNMTCbS8Ytg", "toda la partida del secreto")],
+    prensa=[], outro="¿Lo intentarías? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 Vice City, GTA Vice City, GTA 6 PS2, GTA 6 portal, GTA 6 Tommy Vercetti, GTA 6 easter egg, GTA 6 secretos, Sal y Asfalto")
+V["hu"] = dict(
+    folder="SHORT_13_GTA6_HURACAN_SECRETO", long=False,
+    title="La misión secreta del HURACÁN en GTA 6 🌀 #shorts",
+    alts=["Este tipo de GTA 6 sabía que venía el huracán #shorts", "El búnker del apocalipsis en GTA 6 #shorts"],
+    intro=("En GTA 6, Freddie vive en un búnker esperando el apocalipsis, protegido con minas y drones. Si atraviesas sus defensas te "
+           "invita a su pódcast… hasta que su cámara ve algo y salta el aviso de huracán. Te da dinero, te dice que lo gastes rápido y, al "
+           "salir, el huracán ya está ahí. (Quien grabó la partida dice que así se desbloquea el clima de huracán; no lo hemos comprobado.)"),
+    credits=[("mMBdAMjCEnE", "toda la partida de la misión")],
+    prensa=[], outro="¿Te quedarías en el búnker? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 huracán, GTA 6 hurricane, GTA 6 misión secreta, GTA 6 búnker, GTA 6 Freddie, GTA 6 clima, Sal y Asfalto")
+V["ec"] = dict(
+    folder="SHORT_14_GTA6_AUTO_PAUL_WALKER", long=False,
+    title="El auto de Paul Walker está en GTA 6 💚 #shorts",
+    alts=["El Eclipse de Rápido y Furioso en GTA 6 #shorts", "Cómo conseguir el auto de Brian O'Conner en GTA 6 #shorts"],
+    intro=("El Eclipse verde de Brian O'Conner en la primera Rápido y Furioso está en GTA 6 como Penumbra FF, con la matrícula «HAD YOU». "
+           "Está en un garaje de Vespucci: entra por la puerta lateral, abre el portón, rompe el cristal y hazle el puente (si desactivas "
+           "antes la alarma, evitas a la policía). Moses lo registra gratis si es tu primer auto; si no, cuesta 6.750 dólares. Es rapidísimo "
+           "pero frágil."),
+    credits=[("JPnJPuH4N6Q", "toda la partida del auto")],
+    prensa=[], outro="¿Vas a ir por él? Suscríbete para más secretos de GTA 6.", tags="#GTA6 #GTAVI #shorts",
+    keywords="GTA 6, GTA VI, GTA 6 Paul Walker, GTA 6 Rápido y Furioso, GTA 6 Eclipse, GTA 6 Brian O'Conner, GTA 6 autos, GTA 6 easter egg, Sal y Asfalto")
+
 def chapters(v):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import importlib
