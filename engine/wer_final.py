@@ -8,6 +8,8 @@ Uso: python wer_final.py gx      (o el id del Short)
    (minúsculas, sin puntuación ni tildes, cifras en palabras, grafías alternativas de nombres propios, homófonos del
    seseo y fusión de palabras en el habla encadenada). Una palabra cuenta como error solo si la fallan los DOS
    reconocedores (voice_qa.wer_combined); también se dan los totales de cada reconocedor por separado.
+   Frases de 3 palabras o menos que fallan solas: se repiten con la frase anterior delante (un recorte de 1-2 s sin
+   contexto confunde a los dos reconocedores) y cuentan solo los errores que añade esa frase.
 3. Comprobación en bloques de ~20 s (varias frases seguidas): detecta problemas en las uniones entre tomas.
 4. Términos clave (nombres propios, cifras, términos de GTA): uno a uno, ¿lo reconoce al menos un reconocedor?
 5. Uniones: ninguna toma se solapa con la siguiente; ninguna termina de golpe con voz (energía en los últimos 30 ms).
@@ -57,6 +59,14 @@ def main(vid):
         hp, _ = A.transcribe(seg, sr); hw = Wh.transcribe(seg, sr)
         rp = Q.wer(s["text"], hp); rw = Q.wer(s["text"], hw)
         best = Q.wer_combined(s["text"], hp, hw)   # error solo si fallan los dos reconocedores
+        if best["err"] and i > 0 and len(s["text"].split()) <= 3 and rows:
+            # frase muy corta («Se acabó.»): los reconocedores fallan con un recorte de 1-2 s sin contexto; se repite con la
+            # frase anterior delante y se cuentan solo los errores que añade esta frase
+            pv = sents[i - 1]; a2 = max(0, pv["start"] - 0.15)
+            seg2 = x[int(a2 * sr): int(b * sr)]; hp2, _ = A.transcribe(seg2, sr); hw2 = Wh.transcribe(seg2, sr)
+            b2 = Q.wer_combined(pv["text"] + " " + s["text"], hp2, hw2)
+            if max(0, b2["err"] - rows[-1]["err"]) < best["err"]:
+                best = dict(b2, err=max(0, b2["err"] - rows[-1]["err"])); hp = f"{hp} (con la frase anterior: {hp2})"; hw = f"{hw} (con la frase anterior: {hw2})"
         tot["n"] += rp["n"]; tot["comb"] += best["err"]; tot["par"] += rp["err"]; tot["whi"] += rw["err"]
         E = Q.wer_tokens(s["text"]); Hp = set(Q.wer_tokens(hp, True)); Hw = set(Q.wer_tokens(hw, True))
         # un término unido a la palabra vecina en la transcripción («en curtido» → «encurtido») está reconocido: la unión no se oye
