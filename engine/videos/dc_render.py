@@ -55,6 +55,11 @@ EDITED = set(AUTHOR)          # todas son vídeos montados: un plano no puede cr
 MANUAL_CUTS = {"3UiRmXUIE9k": [33.0, 36.0],      # icono de IGN sobre la imagen
                "xnNu7YybiCM": []}
 # tramos que nunca se usan como gameplay (en segundos del original): carteles negros con texto de la guía de The Escapist
+# Rótulos del montaje original en la franja de arriba (filas 20-91 de 1080) que no se pueden evitar sin cambiar los planos:
+# en los planos que los pisan se amplía la imagen un 9-12 % anclada abajo, de modo que la franja queda fuera del encuadre.
+# B0b5JhrGUJQ (recopilación de los finales): título blanco de cada final arriba a la izquierda (detectado fotograma a fotograma)
+TOPMASK = {"B0b5JhrGUJQ": [(113.0, 116.0), (144.4, 147.4), (170.6, 173.6), (230.4, 233.4), (309.0, 312.0), (359.4, 362.4),
+                           (405.4, 408.4), (529.6, 532.6), (678.4, 681.4), (724.0, 727.0)]}
 EXCLUDE = {"Q5XgKNEnbP4": [(53.4, 55.9), (62.0, 64.9), (70.6, 73.3), (78.2, 82.2), (90.7, 93.9), (102.8, 106.0), (116.4, 121.7), (132.1, 134.8)]}
 
 # ================================================================ material
@@ -207,6 +212,10 @@ def table(ctx):
         lastx[vid] = (T, s["t0"])
     for i, s in enumerate(shots): s["t1"] = shots[i + 1]["t0"] if i + 1 < len(shots) else tl["total"]
     shots = fit(shots, tl["total"])
+    for s_ in shots:
+        if not s_["src"].startswith("x:") or s_.get("zoom"): continue
+        vid_, T_ = parse_x(s_["src"]); T1_ = T_ + (s_["t1"] - s_["t0"] + 0.2) * MZ.rate(vid_)
+        if any(T_ < b_ + 0.3 and T1_ > a_ - 0.3 for a_, b_ in TOPMASK.get(vid_, [])): s_["z"] = (1.09, 1.12); s_["f"] = (0.5, 1.0); s_["topmask"] = True
     _T.update(shots=shots, starts=[s["t0"] for s in shots], beats=beats, chapters=chapters, bstarts=[x["bd"]["start"] for x in beats])
     return _T
 
