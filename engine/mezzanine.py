@@ -53,7 +53,7 @@ SRC_CROP = {"vpHospital1": "crop=1080:608:0:656"}   # franja 16:9 con la partida
 SRC_CROP["B0b5JhrGUJQ"] = "crop=1938:1090:70:60"
 # vídeo largo de los viejos protagonistas: Puzzle Knows (1080p30), Nostix Gaming (4K60, con rótulos arriba: se recorta la franja de abajo, 85 %) e IGN (4K)
 SRC.update({"a8fK-RLK4qM": (30.0, False), "I1cHE-udf-Y": (60.0, False), "mlnfgO4G0n0": (60.0, False)})
-SRC_CROP["I1cHE-udf-Y"] = "crop=3264:1836:288:324"
+SRC_CROP["I1cHE-udf-Y"] = "crop=3164:1780:338:380"   # sin los rótulos de dos líneas de arriba (82 %)
 def rate(vid):
     """Segundos del original por segundo del tramo: 1,001 si el original va a 29,97/59,94 fps; 1 si va a 30/60 fps exactos."""
     return 1.0 if abs(SRC[vid][0] - round(SRC[vid][0])) < 1e-3 else 1.001

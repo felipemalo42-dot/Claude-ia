@@ -23,11 +23,11 @@ def Q(anchor, q, who): return S(anchor, "g:quote", q=q, who=who)
 beat("En GTA 6 aparece Niko Bellic. Sí: el de GTA 4. Y no es un parecido ni una teoría: el juego dice su nombre. Pero no es el único que vuelve. Michael, Franklin, Trevor… y hasta Arthur Morgan dejan huella en Leonida. Hoy te los enseño todos, con partidas reales.",
      pre=0.3, id="o01", mus=("tension", 2),
      shots=[S(None, "g:cover", kicker="SPOILERS SOLO AL FINAL", lines=["NIKO BELLIC", "ESTÁ EN GTA 6"], sub="Y no es el único que vuelve"),
-            XA("Sí: el de GTA 4", P, 339.0), XA("el juego dice su nombre", P, 325.0), XA("Michael, Franklin", P, 92.0), XA("Arthur Morgan", H, 12.0)],
+            XA("Sí: el de GTA 4", P, 339.0), XA("el juego dice su nombre", P, 325.0), XA("Michael, Franklin", P, 92.0), XA("Arthur Morgan", H, 100.5)],
      sfx=[(0.0, "riser", 0.35), ("w:Niko", "stamp", 0.5)])
 beat("Vamos de menos a más. Primero, las pistas que puedes encontrar tú mismo. Y al final, la escena de Niko, que tiene spoilers de la historia: te avisaré antes, para que decidas si la ves. Y quédate hasta el final, porque lo de Niko no es un simple guiño: es una escena entera.",
      id="o02", mus=("tension", 1),
-     shots=[X(N, 86.0), XA("la escena de Niko", D, 2.0)], sfx=[])
+     shots=[X(N, 86.0), XA("la escena de Niko", P, 272.0)], sfx=[])
 
 # ================================================================ 1. EL PÓDCAST DE WADE
 beat("Empezamos por GTA 5. En la radio de GTA 6 hay un pódcast de crímenes reales. Quien lo presenta lleva tiempo investigando un caso de Los Santos, y tiene su gracia: entre episodio y episodio se queja de sus audiciones fallidas y de las facturas que no puede pagar. Y en esta entrega acaba sentándose a hablar con alguien que conocemos muy bien: Wade.",
@@ -58,10 +58,10 @@ beat("Pero algunos jugadores creen haber encontrado algo más. Este velero está
      shots=[X(N, 24.0), XA("es casi idéntico", N, 88.0), Q("el que su hijo Jimmy", "Jimmy intenta vender el barco de Michael… y acaba remolcado por la autopista.", "GTA 5 (2013)")], sfx=[])
 beat("En GTA 5, ese barco era el orgullo de Michael. En una de las primeras misiones, Jimmy se lo intenta vender a unos tipos que se lo llevan por la autopista, y Franklin acaba saltando al barco en marcha para recuperarlo. Aquí se puede subir a bordo. Y en la pantalla de navegación, el jugador que lo encontró asegura que hay un guiño a GTA 5. Rockstar no ha dicho nada, así que tómatelo como lo que es: un parecido muy sospechoso.",
      id="c2b", mus=("tropical", 2),
-     shots=[X(N, 67.5), XA("en la pantalla de navegación", N, 79.5), XA("Rockstar no ha dicho nada", N, 33.0)], sfx=[])
+     shots=[X(N, 67.5), XA("en la pantalla de navegación", N, 80.0), XA("Rockstar no ha dicho nada", N, 33.0)], sfx=[])
 beat("Y el mismo jugador encontró otra cosa en el móvil de Jason: un tono de llamada que se llama «Wind Chimes». Según él, es el mismo tono que sonaba en el móvil de Michael. Si te pasaste GTA 5 con ese sonido en el bolsillo, dinos en los comentarios si lo reconoces.",
      id="c2c", mus=("tropical", 1),
-     shots=[X(N, 104.0), XA("Wind Chimes", N, 113.0)], sfx=[("w:Wind Chimes", "ding", 0.4)])
+     shots=[X(N, 105.0), XA("Wind Chimes", N, 113.0)], sfx=[("w:Wind Chimes", "ding", 0.4)])
 
 # ================================================================ 3. EL SOMBRERO DE ARTHUR
 beat("De Red Dead Redemption 2, de dos mil dieciocho, también hay un recuerdo. Arthur Morgan, su protagonista, nunca se quitaba su sombrero de vaquero… y en GTA 6 puedes llevarte uno igual. Bueno, uno que se le parece muchísimo. A partir del capítulo dos, en una casa azul con una bandera de Estados Unidos muy alta, al noroeste de la casa de Jason y Lucía, hay una venta de garaje.",
@@ -75,18 +75,18 @@ beat("Es la única casa de la calle con mercadillo, así que no tiene pérdida. 
 # ================================================================ 4. DEXTER EN VICE CITY
 beat("Y hay un protagonista que ni siquiera es de Rockstar: Dexter Morgan, el forense de la policía de Miami que, en la serie, es un asesino de asesinos. Tiene sentido: la serie pasa en Miami, la ciudad en la que se inspira Vice City. En Vice City hay un edificio de apartamentos que se parece muchísimo al suyo… y se llama Trinity Apartments.",
      id="c4a", chapter=(4, "DEXTER EN VICE CITY"), mus=("synthwave", 2),
-     shots=[X(D, 0.0), XA("En Vice City hay un edificio", D, 30.0), XA("Trinity Apartments", D, 55.0)], sfx=[("w:Trinity", "stamp", 0.4)])
+     shots=[X(D, 0.0), XA("En Vice City hay un edificio", D, 32.0), XA("Trinity Apartments", D, 55.0)], sfx=[("w:Trinity", "stamp", 0.4)])
 beat("En la serie, Trinity era el asesino de la cuarta temporada, uno de sus peores enemigos. Y la cosa no acaba ahí: en el canal de al lado hay un barco igual que el suyo, el «Slice of Life», en el que se deshacía de los cuerpos, y en la azotea, sus herramientas: un cuchillo, cinta, una jeringuilla, una bolsa de plástico y cuerda. Hasta el aparato de aire acondicionado del apartamento está en su sitio: en la serie, ahí es donde Dexter escondía sus recuerdos de cada víctima.",
      id="c4b", mus=("synthwave", 2),
-     shots=[X(D, 40.0), XA("en el canal de al lado", D, 65.0), XA("en la azotea", D, 86.0)], sfx=[])
+     shots=[X(D, 40.0), XA("en el canal de al lado", D, 67.0), XA("en la azotea", D, 86.0)], sfx=[])
 beat("Y en Key Lento hay una casa que esconde algo peor: una habitación forrada de plástico, como las que preparaba Dexter. Eso sí, primero tendrás que vértelas con el hombre armado que vive allí. Dentro hay armas, un chaleco antibalas… y hasta un lanzacohetes escondido en la bañera.",
      id="c4c", mus=("synthwave", 1),
-     shots=[X(D, 96.0), XA("una habitación forrada", D, 156.0), XA("primero tendrás que", D, 113.0), XA("Dentro hay armas", D, 125.0)], sfx=[])
+     shots=[X(D, 96.0), XA("una habitación forrada", D, 158.5), XA("primero tendrás que", D, 114.0), XA("Dentro hay armas", D, 125.5), XA("y hasta un lanzacohetes", D, 130.5)], sfx=[])
 
 # ================================================================ LLAMADA A MITAD
 beat("Si te está gustando este repaso, dale like y suscríbete a Sal y Asfalto: así sabemos que quieres más secretos de GTA 6. Y ahora, sí: el plato fuerte.",
      id="cta", cta=True, mus=("tropical", 1),
-     shots=[X(D, 120.0), XA("dale like", H, 98.0)], sfx=[("w:dale like", "ding", 0.45), ("w:suscríbete", "pop", 0.45)])
+     shots=[X(D, 120.0), XA("dale like", H, 30.5)], sfx=[("w:dale like", "ding", 0.45), ("w:suscríbete", "pop", 0.45)])
 
 # ================================================================ 5. NIKO BELLIC
 beat("Antes de Niko, un poco de contexto: Rockstar ya lo había hecho. En GTA 5, en su primera escena, Trevor mata a Johnny Klebitz, el protagonista de un episodio de GTA 4. Y Packie McReary, de GTA 4, podía unirse a tus atracos en Los Santos. Los personajes de un juego siguen vivos en el siguiente.",
