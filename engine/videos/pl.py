@@ -100,13 +100,13 @@ beat("¿Y si asaltas el escondite de una banda? Aunque oigas que llega la polic�
      shots=[X(1152.0), XA("primero montan un perímetro", 1168.0), XA("hasta que te ven", 1200.0)], sfx=[])
 
 # ================================================================ 6. LA HUIDA
-beat("¿Y si todo sale mal? Lo primero: no te pares a pelear. El sistema está hecho para frenarte, y cada segundo que te quedas llegan más refuerzos con más potencia de fuego.",
+beat("¿Y si todo sale mal? Lo primero: no te quedes a pelear. El sistema está hecho para frenarte, y cada segundo que te quedas llegan más refuerzos con más potencia de fuego.",
      id="c5a", chapter=(6, "LA HUIDA"), mus=("storm", 3),
      shots=[X(960.0), XA("El sistema está hecho", 896.0)], sfx=[("w:refuerzos", "alarm", 0.35)])
-beat("Si te persiguen en coche, dispara a las ruedas. Y si hay un helicóptero, dispárale: se retira o pierde de vista. Además, los helicópteros tienen que irse a repostar… y ese es tu momento.",
+beat("Si te persiguen en coche, dispara a las ruedas. Y si hay un helicóptero, dispárale: se aleja o te pierde de vista. Además, los helicópteros tienen que irse a repostar… y ese es tu momento.",
      id="c5b", mus=("storm", 3),
      shots=[X(912.0), XA("si hay un helicóptero", 832.0), XA("ese es tu momento", 816.0)], sfx=[])
-beat("Si te reconocen a ti y a tu pareja, sepárense: puedes darle la bolsa del botín o un arma. Luego te escribe para quedar o para venderlo; si lo vende ella, ganas un poco menos, pero te ahorras el viaje.",
+beat("Si te reconocen a ti y a tu pareja, sepárense: puedes darle la bolsa del botín o un arma. Luego te escribe para quedar o para venderlo; si lo vende ella, ganas un poco menos, pero no tienes que ir tú.",
      id="c5c", mus=("storm", 2),
      shots=[X(704.0), XA("sepárense", 720.0), XA("Luego te escribe", 736.0)], sfx=[])
 beat("Y si pierdes al helicóptero de vista, concéntrate: el juego te marca de dónde viene el ruido de las aspas. Escóndete, cámbiate de ropa, vuelve más tarde… y nadie sabrá que fuiste tú.",
@@ -118,7 +118,7 @@ beat("En resumen: mira el color de las estrellas, borra cada pista que tengan de
      id="r01", mus=("tropical", 1),
      shots=[S(None, "g:list", title="PARA ESCAPAR SIEMPRE", subt="Resumen de la guía",
               items=["Mira el color de las estrellas", "Borra cada pista", "Desaparece, no pelees"], st=[0.6, 2.6, 4.8])], sfx=[])
-beat("¿Cuál es tu mejor huida en GTA 6? Cuéntamela en los comentarios. Y si quieres más guías con partidas reales, suscríbete a Sal y Asfalto. Nos vemos en el próximo vídeo.",
+beat("¿Cuál ha sido tu mejor escape en GTA 6? Escríbelo en los comentarios. Y si quieres más guías con partidas reales, suscríbete a Sal y Asfalto. Nos vemos en el próximo vídeo.",
      id="r02", mus=("tropical", 1), hold=0.6,
      shots=[X(1120.0), XA("suscríbete", 1104.0), S("Nos vemos", "g:subscribe")], sfx=[("w:suscríbete", "pop", 0.45)])
 beat("", dur=20.0, mus=("tropical", 1), id="end", shots=[S(None, "g:end")], trans="fade")
