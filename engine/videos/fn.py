@@ -28,33 +28,45 @@ beat("Aviso: en este vídeo te cuento todo el final de GTA 6. Si todavía no lo 
 beat("Vamos a verlos todos, del más trágico al más feliz. Y al final, te explico qué tienes que hacer para conseguir el mejor de todos.",
      id="o02", mus=("tension", 1),
      shots=[X(256.0), XA("al más feliz", 644.0)], sfx=[])
+beat("Y ojo, porque aquí no basta con la última decisión. Como en Red Dead Redemption 2, el juego recuerda quién has sido. Jason y Lucía tienen cada uno su propio perfil criminal, y también cuentan su relación, algunas decisiones de la historia y el dinero que hayan ahorrado. Por eso, dos personas pueden elegir lo mismo… y ver finales distintos.",
+     id="o03", mus=("tension", 2),
+     shots=[X(98.0), S("Jason y Lucía tienen", "g:list", title="LO QUE EL JUEGO RECUERDA", subt="Como en Red Dead Redemption 2",
+                       items=["El perfil criminal de cada uno", "Su relación", "Decisiones de la historia", "El dinero ahorrado"], st=[0.4, 4.0, 5.4, 7.4]),
+            XA("Por eso", 66.0)],
+     sfx=[("w:recuerda", "ding", 0.4)])
 
 # ================================================================ 1. EL ÚLTIMO GOLPE
-beat("Todo empieza en la última misión. Jason y Lucía ya no se fían de nadie: les prometieron un indulto y los traicionaron. Su única carta es un disco duro con pruebas que alguien muy poderoso no puede permitirse perder.",
+beat("Todo empieza en la última misión, que tiene un nombre que lo dice todo: «el final del camino». Jason y Lucía ya no se fían de nadie: les prometieron un indulto y los traicionaron. Su única carta es un disco duro con pruebas que alguien muy poderoso no puede permitirse perder.",
      id="c1a", chapter=(1, "EL ÚLTIMO GOLPE"), mus=("tension", 2),
-     shots=[X(120.0), XA("les prometieron", 104.0), XA("Su única carta", 128.0)], sfx=[("w:disco duro", "stamp", 0.4)])
-beat("Así que se abren paso a tiros por una torre, llegan al despacho y se llevan el disco. Y aquí llega la primera gran decisión, aunque no lo parezca: cómo salir de ese edificio.",
+     shots=[X(113.6), XA("les prometieron", 106.0), XA("Su única carta", 121.0)], sfx=[("w:disco duro", "stamp", 0.4)])
+beat("Esas pruebas están en el ordenador de un ático, en lo alto de una torre. Así que se abren paso a tiros, llegan al despacho y se llevan el disco.",
      id="c1b", mus=("tension", 3),
-     shots=[X(136.0), XA("llegan al despacho", 144.0), XA("cómo salir", 150.0)], sfx=[("w:a tiros", "impact", 0.35)])
+     shots=[X(125.5), XA("se abren paso", 118.0), XA("llegan al despacho", 130.0)], sfx=[("w:a tiros", "impact", 0.35)])
+beat("Y aquí llega la primera gran decisión, aunque no lo parezca: cómo salir de ese edificio. La salida buena es trepar al techo del ascensor de la grúa antes de que llegue abajo… y terminar de bajar por la propia grúa. Esa es la que lleva a los finales del puente.",
+     id="c1c", mus=("tension", 3),
+     shots=[X(136.0), XA("La salida buena", 145.0)], sfx=[])
 
 # ================================================================ 2. EL ASCENSOR
-beat("Si bajan en el ascensor hasta el final, la policía los está esperando cuando se abren las puertas. Y pasa en un segundo: disparan a Jason, Lucía agarra un arma y responde… y muere a su lado. Sin despedidas, sin música épica. Se acabó.",
+beat("Si bajan en el ascensor hasta el final, la policía los está esperando cuando se abren las puertas. Jason empuja a Lucía a un lado para protegerla… y le disparan. Lucía tiene un segundo para decidir. Si agarra un arma y responde, muere a su lado. Sin despedidas, sin música épica. Se acabó.",
      id="c2a", chapter=(2, "EL ASCENSOR"), mus=("storm", 2),
-     shots=[X(158.0), XA("disparan a Jason", 166.0), XA("Sin despedidas", 172.0)], sfx=[("w:disparan", "impact", 0.5)])
-beat("Hay una segunda versión de esa misma emboscada. Jason muere, pero a Lucía la arrestan y, con el tiempo, sale libre. Conduce hasta Liberty City para ver a su hijo… y cuando está a punto de llegar, da la vuelta.",
+     shots=[X(150.0), XA("le disparan", 164.0), XA("Si agarra un arma", 168.0), XA("Sin despedidas", 172.0)], sfx=[("w:disparan", "impact", 0.5)])
+beat("Si se queda quieta, la arrestan y, con el tiempo, sale libre. Conduce hasta Liberty City para ver a su hijo… y cuando está a punto de llegar, da la vuelta.",
      id="c2b", mus=("storm", 1),
      shots=[X(176.0), XA("Conduce hasta Liberty City", 184.0), XA("da la vuelta", 196.0)], sfx=[("w:da la vuelta", "whoosh", 0.4)])
-beat("Vuelve a Vice City, a la cafetería de siempre… y al crimen. Es un final pequeño y muy triste: Lucía se convence de que, si se acerca a su hijo, tarde o temprano también le hará daño.",
+beat("Vuelve a Vice City, a la cafetería de siempre… y al crimen. Se quedó a medias de lo que quería hacer, y Jason murió por ello. Es un final pequeño y muy triste: Lucía se convence de que, si se acerca a su hijo, tarde o temprano también le hará daño.",
      id="c2c", mus=("storm", 1),
      shots=[X(200.0), XA("Es un final pequeño", 224.0)], sfx=[])
+beat("Y fíjate en un detalle que se repite: Jason casi siempre se juega la vida por Lucía. En el ascensor, en el puente… siempre es él quien intenta salvarla a ella.",
+     id="c2d", mus=("storm", 1),
+     shots=[X(210.0), XA("en el puente", 520.0)], sfx=[])
 
 # ================================================================ 3. EL PANTANO
-beat("El tercer final es el castigo por fiarte de quien no debías. Si en la torre perdonas a Mendes y aceptas trabajar con él, cuando salen del ascensor él está esperando. Los esposa delante de la policía y les dice que el arresto es solo teatro.",
+beat("El tercer final es el castigo por fiarte de quien no debías. Si en la torre perdonas a Mendes y aceptas trabajar con él, el golpe lo hacen con él, y no con Cal y el equipo de siempre. Cuando salen del ascensor, él está esperando. Los esposa delante de la policía y les dice que el arresto es solo teatro.",
      id="c3a", chapter=(3, "EL PANTANO"), mus=("mystery", 2),
-     shots=[X(208.0), XA("cuando salen del ascensor", 248.0), XA("es solo teatro", 252.0)], sfx=[("w:castigo", "stamp", 0.4)])
-beat("Pero el coche no va hacia ninguna comisaría: va hacia el pantano. Jason y Lucía se miran y lo entienden a la vez. El juego no enseña lo que pasa… pero después de los créditos vemos sus calaveras en el agua, y un caimán acercándose.",
+     shots=[X(556.0), XA("Cuando salen del ascensor", 248.0), XA("es solo teatro", 252.0)], sfx=[("w:castigo", "stamp", 0.4)])
+beat("Pero el coche no va hacia ninguna comisaría: va hacia el pantano. Jason y Lucía se miran y lo entienden a la vez. El juego ni siquiera te enseña lo que pasa: solo, después de los créditos, sus calaveras en el agua… y un caimán acercándose. Es su manera de castigarte por haberte fiado.",
      id="c3b", mus=("mystery", 3),
-     shots=[X(256.0), XA("se miran", 272.0), XA("después de los créditos", 262.0)], sfx=[("w:caimán", "heartbeat", 0.5)])
+     shots=[X(250.0), XA("se miran", 272.0), XA("después de los créditos", 262.0)], sfx=[("w:caimán", "heartbeat", 0.5)])
 
 # ================================================================ LLAMADA A MITAD
 beat("Antes de seguir con los finales del puente: si este vídeo te está sirviendo, dale like y suscríbete a Sal y Asfalto. Así sabemos que quieres más historias de GTA 6 contadas a fondo.",
@@ -65,40 +77,53 @@ beat("Antes de seguir con los finales del puente: si este vídeo te está sirvie
 beat("Si consiguen bajar de la torre por la grúa, van a casa de Cal para huir en barco. Pero Cal ve que llegan y les hace un gesto para que se vayan, sin decir nada: la policía ya está allí. Así que escapan hacia el aeródromo… y los encierran en un puente.",
      id="c4a", chapter=(4, "EL PUENTE"), mus=("tension", 2),
      shots=[X(232.0), XA("Pero Cal", 288.6), XA("y los encierran", 304.0)], sfx=[("w:puente", "stamp", 0.4)])
-beat("Ahí Lucía le recuerda a Jason que el trato era para ella. Él puede darle el disco y una oportunidad de quedar libre… pero nadie promete que él vaya con ella. Y aquí elegimos.",
+beat("Ahí Lucía le recuerda a Jason que el trato era para ella. Él puede darle el disco y una oportunidad de quedar libre… pero nadie promete que él vaya con ella. Hasta en el final en el que los dos se salvan, esa parte no cambia. Y aquí elegimos.",
      id="c4b", mus=("tension", 2),
      shots=[X(312.0), XA("Él puede darle", 320.0), XA("Y aquí elegimos", 328.0)], sfx=[])
-beat("Si no se rinden, llega el final de Bonnie y Clyde. Lucía se queda con Jason, intentan atravesar el control con el coche, y la policía los acribilla juntos. Su hijo se queda con la familia de Lucía.",
+beat("Si no se rinden, llega el final de Bonnie y Clyde, el que muchos adivinaron antes del lanzamiento. Lucía se queda con Jason, intentan atravesar el control con el coche, y la policía los acribilla juntos. Su hijo se queda con la familia de Lucía.",
      id="c4c", mus=("storm", 3),
      shots=[X(336.0), XA("intentan atravesar", 352.0), XA("Su hijo", 368.0)], sfx=[("w:acribilla", "impact", 0.5)])
+beat("Por si no lo sabías, Bonnie y Clyde fueron una pareja de atracadores de verdad: en mil novecientos treinta y cuatro, la policía los mató a tiros en una emboscada, dentro de su coche.",
+     id="c4c2", mus=("storm", 1),
+     shots=[S(None, "g:quote", q="Bonnie y Clyde: una pareja de atracadores real, abatida a tiros por la policía en 1934, dentro de su coche.", who="LA HISTORIA REAL")], sfx=[])
 beat("Es el final más trágico, pero también el más romántico: eligen no separarse. Y cobra otro sentido cuando sabes que tienen un hijo, y que Lucía llega a pensar que él estará mejor sin ellos.",
      id="c4d", mus=("storm", 1),
      shots=[X(376.0), XA("eligen no separarse", 384.0)], sfx=[])
-beat("Si en cambio intentan saltar al agua y sale mal, también mueren los dos, pero sin ningún romanticismo: los abaten como a dos fugitivos más, con Jason todavía con un arma en la mano. Y ojo: con esa misma elección, en otra partida, a Jason simplemente lo arrestan. Lo que cambia es cómo jugaste antes.",
+beat("Si en cambio intentan saltar al agua y sale mal, también mueren los dos, pero sin ningún romanticismo: los abaten como a dos fugitivos más. Y fíjate: Jason sale con el arma todavía en la mano. Ninguno piensa en lo que verá la policía; solo en salir de ese puente.",
      id="c4e", mus=("storm", 2),
-     shots=[X(392.0), XA("con Jason todavía", 400.0), XA("Lo que cambia", 384.4)], sfx=[])
+     shots=[X(392.0), XA("Jason sale con el arma", 400.0)], sfx=[])
+beat("Y ojo: con esa misma elección, en otra partida, a Jason simplemente lo arrestan. La decisión en pantalla es la misma. Lo que cambia es cómo jugaste antes.",
+     id="c4f", mus=("storm", 1),
+     shots=[X(384.4), XA("Lo que cambia", 68.0)], sfx=[])
 
 # ================================================================ 5. LA CÁRCEL
 beat("Si el salto sale bien, se acercan a la barandilla, se dan la mano, cuentan hasta tres… y Jason deja que Lucía salte sola. Mientras la policía lo detiene a él, Lucía escapa nadando.",
      id="c5a", chapter=(5, "LA CÁRCEL"), mus=("nature", 2),
      shots=[X(404.0), XA("Lucía salte sola", 412.0), XA("Lucía escapa", 478.0)], sfx=[("w:salte sola", "whoosh", 0.45)])
-beat("Lucía firma el trato y va a Liberty City a buscar a su hijo. Jason entra en prisión. Y el juego empieza a saltar entre las dos vidas: él, peleando en el comedor de la cárcel; los años pasando, con barba y el pelo largo.",
+beat("Lucía firma el trato y va a Liberty City a buscar a su hijo. Jason entra en prisión. Y el juego empieza a saltar entre las dos vidas: su hijo crece jugando con su pelota… mientras él pelea en el comedor de la cárcel. Cuando lo volvemos a ver, han pasado años: tiene barba, el pelo largo, y está leyendo en su celda cuando vienen a buscarlo.",
      id="c5b", mus=("nature", 1),
-     shots=[X(424.0), XA("Jason entra en prisión", 432.0), XA("los años pasando", 440.0)], sfx=[])
-beat("Hasta que Lucía lleva a su hijo a visitarlo, y padre e hijo ponen la mano contra el cristal. Jason se sacrificó para que ellos tuvieran una vida… y esto es lo más cerca que puede estar de ellos.",
+     shots=[X(422.9), XA("Jason entra en prisión", 420.0), XA("su hijo crece", 433.5), XA("mientras él pelea", 427.5), XA("Cuando lo volvemos a ver", 439.5)], sfx=[])
+beat("Hasta que Lucía lleva a su hijo a visitarlo, y padre e hijo ponen la mano contra el cristal. En el puente, Jason le soltó la mano a Lucía para que ella pudiera vivir… y esto es lo más cerca que puede estar de ellos.",
      id="c5c", mus=("nature", 1),
-     shots=[X(448.0), XA("ponen la mano", 456.0)], sfx=[])
+     shots=[X(448.0), XA("ponen la mano", 456.0), XA("y esto es lo más cerca", 464.0)], sfx=[])
+
+beat("Funciona como final, pero deja con ganas de algo mejor para Jason: en casi todos los finales, o muere o se queda en la cárcel. Por eso el siguiente es tan especial.",
+     id="c5d", mus=("nature", 1),
+     shots=[X(405.0), XA("Por eso el siguiente", 535.0)], sfx=[])
 
 # ================================================================ 6. EL REENCUENTRO
-beat("Y llegamos al mejor final: el reencuentro familiar. Al principio parece el de la cárcel: Lucía salta, a Jason lo detienen… Pero un día, en la cafetería, a Lucía le llega un mensaje de Abe: la inversión ha dado dinero.",
+beat("Y llegamos al mejor final: el reencuentro familiar. Al principio parece el de la cárcel: Lucía salta, a Jason lo detienen… Pero un día, en la cafetería, a Lucía le llega un mensaje de Abe: la inversión en el extranjero ha dado dinero, y ya está en su cuenta.",
      id="c6a", chapter=(6, "EL REENCUENTRO"), mus=("tropical", 2),
-     shots=[X(540.0), XA("Pero un día", 588.0), XA("la inversión", 600.0)], sfx=[("w:mensaje", "ding", 0.45)])
-beat("Se reúnen con unos señores de traje, y poco después llega otro mensaje: «Ya está». De su cuenta salen dos millones y medio de dólares… y Jason sale de la cárcel.",
+     shots=[X(540.0), XA("Pero un día", 586.0), XA("la inversión", 591.0)], sfx=[("w:mensaje", "ding", 0.45)])
+beat("Se reúnen con unos señores de traje, y al salir, Abe suelta un comentario sobre el amor verdadero. Poco después llega otro mensaje: «Ya está». De su cuenta salen dos millones y medio de dólares… y Jason sale de la cárcel. Son los dos millones que ahorraron, más lo que ganó la inversión.",
      id="c6b", mus=("tropical", 2),
-     shots=[X(594.0), XA("Ya está", 604.0), XA("y Jason sale", 616.0)], sfx=[("w:Ya está", "stamp", 0.45)])
+     shots=[X(595.0), XA("Ya está", 602.5), XA("De su cuenta", 607.0), XA("y Jason sale", 613.0)], sfx=[("w:Ya está", "stamp", 0.45)])
 beat("Lucía lo espera en la puerta de la misma prisión donde él la recogió al principio del juego. Esta vez es ella quien viene a buscarlo, con su hijo. Jason le da la mano, los tres se suben al coche… y se van juntos a Liberty City.",
      id="c6c", mus=("tropical", 3),
      shots=[X(620.0), XA("Jason le da la mano", 628.0), XA("y se van juntos", 644.0)], sfx=[])
+beat("Y fíjate: el puente nunca le dio a Jason un indulto. Fue Lucía la que volvió a por él, con el dinero que habían ahorrado juntos.",
+     id="c6d", mus=("tropical", 2),
+     shots=[X(655.0), XA("Fue Lucía", 617.5)], sfx=[])
 
 # ================================================================ 7. CÓMO CONSEGUIRLO
 beat("¿Cómo se consigue? Según las partidas que ya se han publicado, hacen falta tres cosas antes de la última misión.",
@@ -114,22 +139,38 @@ beat("Una: tener al menos dos millones de dólares en la cuenta de ahorros famil
 beat("Y un detalle: perdonar a Mendes no es lo mismo que dejar que él te saque de ahí. Lo primero puede ayudarte. Lo segundo, ya viste a dónde lleva.",
      id="c7c", mus=("synthwave", 1),
      shots=[X(260.0)], sfx=[])
+beat("Y cuida la relación: pasar tiempo juntos y salir a citas también cuenta. Lo mejor es que esa cuenta de ahorros parece un extra más del móvil… y al final resulta que es lo único que puede sacar a Jason de la cárcel.",
+     id="c7d", mus=("synthwave", 1),
+     shots=[X(20.5), XA("esa cuenta de ahorros", 680.0)], sfx=[])
 
 # ================================================================ 8. DESPUÉS DE LOS CRÉDITOS
-beat("Esos ahorros cuentan incluso si todo sale mal. Si tienes los dos millones pero mueren en el ascensor o en el puente, hay una escena dos años después: Abe aparece en casa de la familia que está criando a su hijo y les entrega el dinero.",
+beat("Esos ahorros cuentan incluso si todo sale mal. Si tienes los dos millones pero mueren en el ascensor o en el puente, hay una escena dos años después: Abe aparece en casa de la familia que está criando a su hijo y les entrega el dinero. Y también puede pasar si Lucía sobrevive, pero vuelve al crimen, lejos de su hijo.",
      id="c8a", chapter=(8, "DESPUÉS DE LOS CRÉDITOS"), mus=("mystery", 2),
-     shots=[X(692.0), XA("hay una escena", 700.0), XA("les entrega el dinero", 714.0)], sfx=[])
-beat("Y queda un misterio. En los finales del puente, Cal abre por fin el archivo que estaba esperando, dice que no se lo puede creer… y la pantalla se va a negro. Nunca vemos qué hay dentro.",
+     shots=[X(692.0), XA("hay una escena", 700.0), XA("les entrega el dinero", 714.0), XA("Y también puede pasar", 718.0)], sfx=[])
+beat("Y queda un misterio. En los finales del puente, Cal abre por fin el archivo que estaba esperando, dice que no se lo puede creer… y la pantalla se va a negro. Nunca vemos qué hay dentro. Una posibilidad es que sean las pruebas de ese disco duro. Pero eso, por ahora, es solo una teoría.",
      id="c8b", mus=("mystery", 2),
-     shots=[X(722.0), XA("dice que no se lo puede creer", 734.0), XA("Nunca vemos", 740.0)], sfx=[("w:a negro", "stamp", 0.4)])
+     shots=[X(722.0), XA("dice que no se lo puede creer", 734.0), XA("Nunca vemos", 740.0), XA("Una posibilidad", 727.0)], sfx=[("w:a negro", "stamp", 0.4)])
 beat("También se habla de un final en el que Jason sale libre y Lucía acaba presa. Pero hasta ahora nadie ha enseñado una partida con ese final, así que, por ahora, es solo un rumor.",
      id="c8c", mus=("mystery", 1),
      shots=[S(None, "g:quote", q="¿Jason libre y Lucía presa? Nadie ha enseñado una partida con ese final.", who="RUMOR SIN PRUEBAS")], sfx=[])
 
+# ================================================================ 9. ¿Y AHORA QUÉ?
+beat("¿Y ahora qué? Rockstar no ha dicho cuál de todos es el final oficial, ni ha anunciado ninguna expansión. Pero Liberty City aparece una y otra vez: Lucía conduce hasta allí en dos finales, y el reencuentro termina con los tres de camino.",
+     id="c9a", chapter=(9, "¿Y AHORA QUÉ?"), mus=("synthwave", 1),
+     shots=[S(None, "g:quote", q="Rockstar no ha dicho cuál es el final oficial, ni ha anunciado expansiones.", who="LO QUE SABEMOS"),
+            XA("Pero Liberty City", 189.5), XA("y el reencuentro termina", 660.0)], sfx=[])
+beat("Y hay un dato que alimenta las teorías. En dos mil veintidós, el periodista Jason Schreier contó en Bloomberg que Rockstar quería ir ampliando GTA 6 con el tiempo, con nuevas misiones y nuevas ciudades. Y según él, la idea original, con el nombre en clave Project Americas, abarcaba partes de Norteamérica y Sudamérica.",
+     id="c9b", mus=("synthwave", 2),
+     shots=[S(None, "g:quote", q="Rockstar quiere ir ampliando GTA 6 con el tiempo: nuevas misiones y nuevas ciudades.", who="JASON SCHREIER · BLOOMBERG, 2022"),
+            S("Y según él", "g:quote", q="Project Americas: la idea original abarcaba partes de Norteamérica y Sudamérica.", who="SEGÚN JASON SCHREIER")], sfx=[])
+beat("Nada de eso está confirmado. Pero Rockstar ya ha hecho volver a sus protagonistas: años después de GTA 5, Franklin regresó en GTA Online. Y Liberty City ya fue el escenario de GTA 4. Así que, si algún día volvemos a ver a Jason y Lucía, muchos apuestan por el reencuentro… y por Liberty City.",
+     id="c9c", mus=("tropical", 1),
+     shots=[S(None, "g:quote", q="Años después del final de GTA 5, Franklin volvió en GTA Online.", who="UN PRECEDENTE"), XA("muchos apuestan", 650.0)], sfx=[])
+
 # ================================================================ CIERRE
-beat("Rockstar no ha dicho cuál de todos es el oficial. Pero si alguna vez volvemos a ver a Jason y Lucía, muchos apuestan por el reencuentro en Liberty City.",
+beat("Al final, lo que más me gusta es que Rockstar enseña la misma decisión desde los dos lados. Lucía puede llegar hasta su hijo y alejarse… o volver a por Jason y darles a los tres una oportunidad. Y los finales del fracaso terminan mal, sin ninguna despedida: a veces, una mala decisión es solo eso.",
      id="r01", mus=("tropical", 1),
-     shots=[S(None, "g:quote", q="Rockstar no ha dicho cuál es el final oficial.", who="LOS FINALES DE GTA 6"), XA("muchos apuestan", 650.0)], sfx=[])
+     shots=[X(436.6), XA("o volver a por Jason", 640.0), XA("Y los finales del fracaso", 215.0)], sfx=[])
 beat("Y tú, ¿qué final conseguiste? ¿Y cuál crees que se merecían? Escríbelo en los comentarios. Si quieres más GTA 6 contado a fondo, suscríbete a Sal y Asfalto. Nos vemos en el próximo vídeo.",
      id="r02", mus=("tropical", 1), hold=0.6,
      shots=[S(None, "g:quote", q="¿Qué final conseguiste tú? ¿Cuál se merecían?", who="ESCRÍBELO EN LOS COMENTARIOS"), S("suscríbete", "g:subscribe")], sfx=[("w:suscríbete", "pop", 0.45)])

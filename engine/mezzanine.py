@@ -51,13 +51,16 @@ SRC_URL = {"vpHospital1": "https://archive.org/download/videopump-2026-11-20-hos
 SRC_CROP = {"vpHospital1": "crop=1080:608:0:656"}   # franja 16:9 con la partida dentro del vertical de Video Pump
 # vídeo largo de los finales: recopilación con rótulos arriba, marcas de agua y subtítulos abajo → recorte 16:9 central (76 %)
 SRC_CROP["B0b5JhrGUJQ"] = "crop=1938:1090:70:60"
+# vídeo largo de los viejos protagonistas: Puzzle Knows (1080p30), Nostix Gaming (4K60, con rótulos arriba: se recorta la franja de abajo, 85 %) e IGN (4K)
+SRC.update({"a8fK-RLK4qM": (30.0, False), "I1cHE-udf-Y": (60.0, False), "mlnfgO4G0n0": (60.0, False)})
+SRC_CROP["I1cHE-udf-Y"] = "crop=3264:1836:288:324"
 def rate(vid):
     """Segundos del original por segundo del tramo: 1,001 si el original va a 29,97/59,94 fps; 1 si va a 30/60 fps exactos."""
     return 1.0 if abs(SRC[vid][0] - round(SRC[vid][0])) < 1e-3 else 1.001
 # tramos (segundos del original) que usa el montaje; se amplían 1 s por cada lado para poder ajustar los planos
 _VD = os.path.join(os.path.dirname(os.path.abspath(__file__)), "videos")
 WINDOWS = {}
-for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json", "shx_windows.json", "sh2_windows.json", "fn_windows.json", "pl_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
+for _f in ("gx_windows.json", "pv_windows.json", "jz_windows.json", "cv_windows.json", "shx_windows.json", "sh2_windows.json", "fn_windows.json", "pl_windows.json", "vc_windows.json"):   # un archivo por vídeo; se suman las ventanas de cada fuente
     if os.path.exists(os.path.join(_VD, _f)):
         for _k, _v in json.load(open(os.path.join(_VD, _f), encoding="utf-8")).items(): WINDOWS.setdefault(_k, []).extend(_v)
 

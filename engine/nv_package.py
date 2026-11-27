@@ -261,17 +261,45 @@ V["fn"] = dict(
     intro=("⚠️ SPOILERS DEL FINAL DE GTA 6. Todos los finales, del más trágico al más feliz: los dos del ascensor, el del pantano, "
            "los del puente (Bonnie y Clyde, el salto fallido y su variante), el de la cárcel y el reencuentro familiar. Además, lo que piden "
            "las partidas publicadas para conseguir el final feliz (dos millones en el ahorro familiar, un perfil criminal bajo y perdonar al "
-           "policía), la escena de después de los créditos y el misterio del archivo de Cal.\n\n"
+           "policía), la escena de después de los créditos, el misterio del archivo de Cal y qué puede venir después (Liberty City).\n\n"
            "Rockstar no ha dicho cuál es el final oficial. La versión «Jason libre y Lucía presa» no aparece en ninguna partida publicada: "
-           "se menciona solo como rumor."),
+           "se menciona solo como rumor. Lo de Project Americas y la ampliación con nuevas ciudades es lo que contó el periodista Jason Schreier "
+           "(Bloomberg); Rockstar no ha anunciado ninguna expansión."),
     chapters=[("o01", "Aviso y presentación"), ("c1a", "El último golpe"), ("c2a", "Los finales del ascensor"), ("c3a", "El final del pantano"),
               ("c4a", "Los finales del puente"), ("c5a", "El final de la cárcel"), ("c6a", "El reencuentro familiar"),
-              ("c7a", "Cómo conseguir el final feliz"), ("c8a", "Después de los créditos"), ("r01", "¿Cuál es el oficial?")],
+              ("c7a", "Cómo conseguir el final feliz"), ("c8a", "Después de los créditos"), ("c9a", "¿Y ahora qué? Liberty City"), ("r01", "Las dos caras de la misma decisión")],
     credits=[("B0b5JhrGUJQ", "todas las escenas de los finales (recortadas, sin sus rótulos ni marcas de agua). Ese vídeo reúne a su vez "
               "partidas de Sirloin (youtube.com/@Sirloin1), meloo (youtube.com/@meloo), BabyZoneGaming y Ben-Gun: gracias a todos")],
     prensa=[], outro="¿Qué final conseguiste tú? Cuéntalo en los comentarios y suscríbete para más GTA 6 contado a fondo.",
     tags="#GTA6 #GTAVI #GTA6Finales",
     keywords="GTA 6, GTA VI, GTA 6 finales, GTA 6 final feliz, GTA 6 final bueno, GTA 6 ending, GTA 6 spoilers, GTA 6 Jason Lucía, GTA 6 reencuentro, Sal y Asfalto")
+SRC.update({
+    "a8fK-RLK4qM": ("Puzzle Knows", "GTA 6: ALL Easter Eggs - Niko Bellic, Trevor, Michael & Franklin! STILL ALIVE?! SECRETS and Details", "20/11/2026", yt("a8fK-RLK4qM")),
+    "I1cHE-udf-Y": ("Nostix Gaming", "I Found Michael's Boat in GTA 6! (Easter Egg)", "20/11/2026", yt("I1cHE-udf-Y")),
+    "HAIx2b9ThL8": ("IGN", "How to Find Arthur Morgan's Hat in GTA 6 | Red Dead Redemption 2 Easter Egg", "20/11/2026", yt("HAIx2b9ThL8")),
+    "mlnfgO4G0n0": ("IGN", "GTA 6 - How to Find the Dexter Easter Egg (Apartment, Boat, and Kill Room)", "21/11/2026", yt("mlnfgO4G0n0")),
+})
+V["vc"] = dict(
+    folder="VIDEO_LARGO_6_GTA6_VIEJOS_PROTAGONISTAS", long=True,
+    title="Niko Bellic está en GTA 6… y no es el único ⚠️ SPOILERS",
+    alts=["GTA 6: los viejos protagonistas escondidos (Niko, Michael, Franklin, Trevor y Arthur)",
+          "El cameo de Niko Bellic en GTA 6 y todos los guiños a GTA 5 y Red Dead (SPOILERS)",
+          "¿Qué fue de Michael, Franklin y Trevor? Lo que dice GTA 6"],
+    intro=("Todos los viejos conocidos que aparecen en GTA 6, con partidas reales y los subtítulos del propio juego: el pódcast de crímenes "
+           "reales en el que Wade reconoce a Michael De Santa y a Franklin Clinton (y no se atreve a decir el nombre de Trevor), el velero que "
+           "parece el de Michael y el tono «Wind Chimes», el sombrero de Arthur Morgan, el apartamento de Dexter en Vice City… y, con aviso de "
+           "spoilers, la escena de Niko Bellic con Giorgio Gallo.\n\n"
+           "Lo del barco y el tono de Michael es lo que afirma el jugador que los encontró: Rockstar no lo ha confirmado."),
+    chapters=[("o01", "Presentación"), ("c1a", "El pódcast de Wade: Michael, Franklin y Trevor"), ("c2a", "¿El barco de Michael?"),
+              ("c3a", "El sombrero de Arthur Morgan"), ("c4a", "Dexter en Vice City"), ("c5p", "Niko Bellic (spoilers)"), ("r0a", "Resumen")],
+    credits=[("a8fK-RLK4qM", "el pódcast con Wade y la escena de Niko Bellic"),
+             ("I1cHE-udf-Y", "el velero y el tono de llamada (sin sus rótulos)"),
+             ("HAIx2b9ThL8", "el sombrero de Arthur Morgan"),
+             ("mlnfgO4G0n0", "el apartamento, el barco y la habitación de Dexter"),
+             ("B0b5JhrGUJQ", "el cartel hacia Alderney (de uno de los finales)")],
+    prensa=[], outro="¿A quién te gustaría ver volver? Cuéntalo en los comentarios y suscríbete para más secretos de GTA 6.",
+    tags="#GTA6 #GTAVI #NikoBellic",
+    keywords="GTA 6, GTA VI, GTA 6 Niko Bellic, GTA 6 easter eggs, GTA 6 Michael, GTA 6 Franklin, GTA 6 Trevor, GTA 6 Arthur Morgan, GTA 6 secretos, GTA 6 Wade, Sal y Asfalto")
 V["pl"] = dict(
     folder="VIDEO_LARGO_6_GTA6_POLICIA", long=True,
     title="La policía de GTA 6: qué significa cada estrella (y cómo escapar siempre)",
@@ -363,7 +391,7 @@ def write(k):
     if v["long"]:
         ch, total = chapters(v)
         L += ["CAPÍTULOS"] + [f"{mmss(t)} {n}" for t, n in ch] + [""]
-    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb", "rt", "gr", "fp", "mh", "ck", "po", "hu", "ec", "fn", "pl")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
+    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb", "rt", "gr", "fp", "mh", "ck", "po", "hu", "ec", "fn", "pl", "vc")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
     if v["prensa"]: L += ["FUENTES"] + v["prensa"] + [""]
     L += [v["outro"], "", v["tags"], "", "ETIQUETAS (palabras clave)", v["keywords"], ""]
     if v["long"]: L += [f"Duración del vídeo: {mmss(total)}", ""]
