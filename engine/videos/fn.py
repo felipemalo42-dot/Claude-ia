@@ -27,7 +27,7 @@ beat("Aviso: en este vídeo te cuento todo el final de GTA 6. Si todavía no lo 
      sfx=[(0.0, "riser", 0.35), ("w:siete", "stamp", 0.5)])
 beat("Vamos a verlos todos, del más trágico al más feliz. Y al final, te explico qué tienes que hacer para conseguir el mejor de todos.",
      id="o02", mus=("tension", 1),
-     shots=[X(256.0), XA("del más feliz", 644.0)], sfx=[])
+     shots=[X(256.0), XA("al más feliz", 644.0)], sfx=[])
 
 # ================================================================ 1. EL ÚLTIMO GOLPE
 beat("Todo empieza en la última misión. Jason y Lucía ya no se fían de nadie: les prometieron un indulto y los traicionaron. Su única carta es un disco duro con pruebas que alguien muy poderoso no puede permitirse perder.",
