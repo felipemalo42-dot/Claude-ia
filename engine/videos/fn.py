@@ -124,7 +124,7 @@ beat("Y queda un misterio. En los finales del puente, Cal abre por fin el archiv
      shots=[X(722.0), XA("dice que no se lo puede creer", 734.0), XA("Nunca vemos", 740.0)], sfx=[("w:a negro", "stamp", 0.4)])
 beat("También se habla de un final en el que Jason sale libre y Lucía acaba presa. Pero hasta ahora nadie ha enseñado una partida con ese final, así que, por ahora, es solo un rumor.",
      id="c8c", mus=("mystery", 1),
-     shots=[X(684.0), XA("nadie ha enseñado", 748.0 - 3.0)], sfx=[])
+     shots=[S(None, "g:quote", q="¿Jason libre y Lucía presa? Nadie ha enseñado una partida con ese final.", who="RUMOR SIN PRUEBAS")], sfx=[])
 
 # ================================================================ CIERRE
 beat("Rockstar no ha dicho cuál de todos es el oficial. Pero si alguna vez volvemos a ver a Jason y Lucía, muchos apuestan por el reencuentro en Liberty City.",
