@@ -55,18 +55,18 @@ beat("Un truco: si ves que esas estrellas rojas parpadean en blanco, un agente e
 # ================================================================ 3. LOS ICONOS
 beat("Al lado de las estrellas aparecen iconos con lo que la policía sabe de ti. El juego tiene siete: tu cara, tu ropa, tu vehículo, un arma a la vista, tu pareja reconocida, y si te grabó una cámara de seguridad… o una cámara conectada a la nube.",
      id="c3a", chapter=(3, "LO QUE SABEN DE TI"), mus=("synthwave", 2),
-     shots=[X(316.0), XA("El juego tiene siete", 320.0)], sfx=[("w:siete", "ding", 0.45)])
+     shots=[X(699.6, zoom=(0.93, 0.06, 2.4, 0.6), zoom_at=0.8), XA("El juego tiene siete", 310.2)], sfx=[("w:siete", "ding", 0.45)])
 beat("Y cada pista se puede borrar. Si conocen tu cara, ponte o quítate un sombrero, unas gafas, una máscara, o cámbiate el peinado. Si conocen tu ropa, cámbiate: puedes llevar otra en el maletero.",
      id="c3b", mus=("synthwave", 2),
-     shots=[X(336.0), XA("cámbiate", 352.0)], sfx=[])
+     shots=[X(684.0), XA("Si conocen tu ropa", 705.0)], sfx=[])
 beat("Si conocen tu vehículo, píntalo en un taller o simplemente roba otro donde no te vean. Y si abandonas tu coche, mira lo que pasa: la policía lo encuentra, acordona la zona… y se lo lleva al depósito.",
      id="c3c", mus=("synthwave", 2),
-     shots=[X(368.0), XA("Y si abandonas", 384.0), XA("se lo lleva", 512.0)], sfx=[])
+     shots=[X(380.0), XA("Y si abandonas", 389.5)], sfx=[])
 
 # ================================================================ LLAMADA A MITAD
 beat("Por cierto: si esta guía te está ayudando, dale like y suscríbete a Sal y Asfalto. Así sabemos que quieres más guías de GTA 6 con partidas reales.",
      id="cta", cta=True, mus=("tropical", 1),
-     shots=[X(288.0), XA("dale like", 304.0)], sfx=[("w:dale like", "ding", 0.45), ("w:suscríbete", "pop", 0.45)])
+     shots=[X(40.0), XA("dale like", 300.0)], sfx=[("w:dale like", "ding", 0.45), ("w:suscríbete", "pop", 0.45)])
 
 # ================================================================ 4. EL ROBO LIMPIO
 beat("Ahora, lo bueno: cómo robar una tienda sin que te atrapen. Antes de entrar, mantén pulsados los dos sticks para concentrarte: el juego te marca si hay cámaras dentro.",
@@ -108,7 +108,7 @@ beat("Si te persiguen en coche, dispara a las ruedas. Y si hay un helicóptero, 
      shots=[X(912.0), XA("si hay un helicóptero", 832.0), XA("ese es tu momento", 816.0)], sfx=[])
 beat("Si te reconocen a ti y a tu pareja, sepárense: puedes darle la bolsa del botín o un arma. Luego te escribe para quedar o para venderlo; si lo vende ella, ganas un poco menos, pero no tienes que ir tú.",
      id="c5c", mus=("storm", 2),
-     shots=[X(704.0), XA("sepárense", 720.0), XA("Luego te escribe", 736.0)], sfx=[])
+     shots=[X(709.5), XA("Luego te escribe", 739.5)], sfx=[])
 beat("Y si pierdes al helicóptero de vista, concéntrate: el juego te marca de dónde viene el ruido de las aspas. Escóndete, cámbiate de ropa, vuelve más tarde… y nadie sabrá que fuiste tú.",
      id="c5d", mus=("storm", 2),
      shots=[X(784.0), XA("Escóndete", 800.0), XA("y nadie sabrá", 864.0)], sfx=[])
