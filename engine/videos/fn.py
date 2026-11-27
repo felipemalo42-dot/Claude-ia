@@ -20,7 +20,7 @@ def X(t, **k): return S(None, f"x:{F}@{t}", z=(1.0, 1.05), **k)
 def XA(anchor, t, **k): return S(anchor, f"x:{F}@{t}", z=(1.0, 1.05), **k)
 
 # ================================================================ APERTURA
-beat("Aviso: este vídeo destripa el final de GTA 6. Si todavía no lo has terminado, guárdalo para después. ¿Sigues aquí? Perfecto. Porque GTA 6 no tiene un final: tiene siete, y un par de variantes. Y lo que hiciste durante toda la partida decide cuál ves.",
+beat("Aviso: en este vídeo te cuento todo el final de GTA 6. Si todavía no lo has terminado, guárdalo para después. ¿Sigues aquí? Perfecto. Porque GTA 6 no tiene un final: tiene siete, y un par de variantes. Y lo que hiciste durante toda la partida decide cuál ves.",
      pre=0.3, id="o01", mus=("tension", 2),
      shots=[S(None, "g:cover", kicker="AVISO: SPOILERS", lines=["TODOS LOS FINALES", "DE GTA 6"], sub="Y cómo conseguir el bueno"),
             XA("¿Sigues aquí?", 312.0), XA("tiene siete", 344.0), XA("lo que hiciste", 628.0)],
@@ -62,7 +62,7 @@ beat("Antes de seguir con los finales del puente: si este vídeo te está sirvie
      shots=[X(288.0), XA("dale like", 296.0)], sfx=[("w:dale like", "ding", 0.45), ("w:suscríbete", "pop", 0.45)])
 
 # ================================================================ 4. EL PUENTE
-beat("Si consiguen bajar de la torre por la grúa, van a casa de Cal para huir en barco. Pero Cal los ve llegar y les hace un gesto para que se vayan, sin decir nada: la policía ya está allí. Así que escapan hacia el aeródromo… y los encierran en un puente.",
+beat("Si consiguen bajar de la torre por la grúa, van a casa de Cal para huir en barco. Pero Cal ve que llegan y les hace un gesto para que se vayan, sin decir nada: la policía ya está allí. Así que escapan hacia el aeródromo… y los encierran en un puente.",
      id="c4a", chapter=(4, "EL PUENTE"), mus=("tension", 2),
      shots=[X(232.0), XA("Pero Cal", 288.6), XA("y los encierran", 304.0)], sfx=[("w:puente", "stamp", 0.4)])
 beat("Ahí Lucía le recuerda a Jason que el trato era para ella. Él puede darle el disco y una oportunidad de quedar libre… pero nadie promete que él vaya con ella. Y aquí elegimos.",
@@ -79,9 +79,9 @@ beat("Si en cambio intentan saltar al agua y sale mal, también mueren los dos, 
      shots=[X(392.0), XA("con Jason todavía", 400.0), XA("Lo que cambia", 384.4)], sfx=[])
 
 # ================================================================ 5. LA CÁRCEL
-beat("Si el salto sale bien, se acercan a la barandilla, se dan la mano, cuentan hasta tres… y Jason deja que Lucía salte sola. Mientras la policía lo detiene a él, ella se escapa nadando.",
+beat("Si el salto sale bien, se acercan a la barandilla, se dan la mano, cuentan hasta tres… y Jason deja que Lucía salte sola. Mientras la policía lo detiene a él, Lucía escapa nadando.",
      id="c5a", chapter=(5, "LA CÁRCEL"), mus=("nature", 2),
-     shots=[X(404.0), XA("Lucía salte sola", 412.0), XA("ella se escapa", 478.0)], sfx=[("w:salte sola", "whoosh", 0.45)])
+     shots=[X(404.0), XA("Lucía salte sola", 412.0), XA("Lucía escapa", 478.0)], sfx=[("w:salte sola", "whoosh", 0.45)])
 beat("Lucía firma el trato y va a Liberty City a buscar a su hijo. Jason entra en prisión. Y el juego empieza a saltar entre las dos vidas: él, peleando en el comedor de la cárcel; los años pasando, con barba y el pelo largo.",
      id="c5b", mus=("nature", 1),
      shots=[X(424.0), XA("Jason entra en prisión", 432.0), XA("los años pasando", 440.0)], sfx=[])
@@ -111,7 +111,7 @@ beat("Una: tener al menos dos millones de dólares en la cuenta de ahorros famil
      shots=[S(None, "g:list", title="EL FINAL FELIZ", subt="Lo que piden las partidas publicadas",
               items=["2 millones en el ahorro familiar", "Perfil criminal bajo", "Perdonar al policía"], st=[0.2, 5.6, 10.6])],
      sfx=[("w:Una", "ding", 0.4), ("w:Dos", "ding", 0.4), ("w:tres", "ding", 0.4)])
-beat("Y un detalle: perdonar a Mendes no es lo mismo que confiarle tu huida. Lo primero puede ayudarte. Lo segundo, ya viste a dónde lleva.",
+beat("Y un detalle: perdonar a Mendes no es lo mismo que dejar que él te saque de ahí. Lo primero puede ayudarte. Lo segundo, ya viste a dónde lleva.",
      id="c7c", mus=("synthwave", 1),
      shots=[X(260.0)], sfx=[])
 
