@@ -2,3 +2,5 @@ VIDEO_LARGO_GTA6/VIDEO_FINAL.mp4 filter=lfs diff=lfs merge=lfs -text
 VIDEO_LARGO_2_PLANETA_VICE_CITY/VIDEO_FINAL.mp4 filter=lfs diff=lfs merge=lfs -text
 VIDEO_LARGO_3_GTA6_A_JUICIO/VIDEO_FINAL.mp4 filter=lfs diff=lfs merge=lfs -text
 VIDEO_LARGO_4_GTA5_VS_GTA6/VIDEO_FINAL.mp4 filter=lfs diff=lfs merge=lfs -text
+VIDEO_LARGO_5_GTA6_FINALES/VIDEO_FINAL.mp4 filter=lfs diff=lfs merge=lfs -text
+VIDEO_LARGO_6_GTA6_POLICIA/VIDEO_FINAL.mp4 filter=lfs diff=lfs merge=lfs -text

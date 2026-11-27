@@ -363,7 +363,7 @@ def write(k):
     if v["long"]:
         ch, total = chapters(v)
         L += ["CAPÍTULOS"] + [f"{mmss(t)} {n}" for t, n in ch] + [""]
-    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb", "rt", "gr", "fp")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
+    L += ["CRÉDITOS DEL GAMEPLAY (gracias a sus autores; " + ("también en pantalla" if v.get("onscreen", k not in ("zp", "jg", "tb", "rt", "gr", "fp", "mh", "ck", "po", "hu", "ec", "fn", "pl")) else "pégalos también en un comentario fijado") + ")"] + [credit(i, u) for i, u in v["credits"]] + [""]
     if v["prensa"]: L += ["FUENTES"] + v["prensa"] + [""]
     L += [v["outro"], "", v["tags"], "", "ETIQUETAS (palabras clave)", v["keywords"], ""]
     if v["long"]: L += [f"Duración del vídeo: {mmss(total)}", ""]
