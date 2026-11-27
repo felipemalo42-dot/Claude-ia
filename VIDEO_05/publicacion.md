@@ -2,7 +2,7 @@
 
 **Estado real:** TERMINADO · listo para publicar  
 **Fase:** Pre-lanzamiento (válido durante la primera semana)  
-**Formato:** Largo (16:9) · **Duración:** 3:07 · **Música:** estilo «noir» original · **Voz:** narrador + analista
+**Formato:** Largo (16:9) · **Duración:** 3:21 · **Música:** estilo «noir» original · **Voz:** narradora
 
 ## A. Estrategia y posicionamiento
 
@@ -15,7 +15,7 @@
 - **Palabras clave secundarias:** lucia gta 6, jason gta 6, personajes gta 6, historia gta 6, reparto gta 6, cal hampton, boobie ike
 - **Intención de búsqueda:** Narrativa / contexto de historia sin spoilers.
 - **Público:** Jugadores que quieren llegar al juego entendiendo a los personajes; público que sigue la historia.
-- **Duración:** 3:06
+- **Duración:** 3:21
 - **Por qué hacer clic:** Formato de expediente con fuentes y etiquetas de certeza; evita spoilers y especulación disfrazada.
 
 ## B-C. Guion, voz y subtítulos
@@ -39,14 +39,14 @@ Lo que Rockstar publicó sobre Jason Duval y Lucía Caminos (web oficial y trái
 
 CAPÍTULOS
 0:00 Gancho
-0:12 Introducción
-0:27 Expediente 1 · Lucía
-0:53 Expediente 2 · Jason
-1:16 La pareja
-1:38 Dos protagonistas
-1:54 Reparto
-2:24 Lo que no sabemos
-2:46 Despedida
+0:14 Introducción
+0:31 Expediente 1 · Lucía
+0:58 Expediente 2 · Jason
+1:22 La pareja
+1:46 Dos protagonistas
+2:01 Reparto
+2:35 Lo que no sabemos
+3:00 Despedida
 
 FUENTES
 • Web oficial de Rockstar (perfiles de personajes, mayo 2025) vía VGC / GamesRadar / PCGamesN
@@ -55,7 +55,7 @@ FUENTES
 • Extended Look (agosto 2026) vía TechRadar / Red Bull
 • Rob Nelson (Rockstar) sobre el Perfil Criminal, vía prensa
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida
 ```
@@ -83,7 +83,8 @@ jason y lucia, lucia gta 6, jason gta 6, personajes gta 6, historia gta 6, gta 6
 ## Recursos utilizados y licencias
 
 - Música y efectos: compuestos y sintetizados por código para este video (engine/audio.py) · obra original, sin muestras de terceros.
-- Voz: Kokoro-82M (Apache 2.0) vía sherpa-onnx (Apache 2.0); fonemización espeak-ng (herramienta GPL, no afecta al audio generado).
+- Voz: Chatterbox Multilingual de Resemble AI (licencia MIT) con referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0; atribución: Guevara-Rukoz et al., LREC 2020). Ver engine/voces/README.md.
+- Verificación y sincronización de la voz: reconocedor Parakeet TDT v3 de NVIDIA (CC-BY-4.0), usado solo como herramienta; no aparece en el video.
 - Tipografías: Google Fonts con licencia SIL OFL 1.1 o Apache 2.0 (Anton, Inter, JetBrains Mono y las específicas del video).
 - Gráficos: dibujados por código con Skia (BSD) · iconos propios (rutas SVG originales en engine/gfx.py).
 - Codificación: FFmpeg (libx264 / AAC).
@@ -98,7 +99,7 @@ jason y lucia, lucia gta 6, jason gta 6, personajes gta 6, historia gta 6, gta 6
 | ¿Aporta valor? | Sí: contexto sin spoilers |
 | ¿Guion distinto a los demás? | Sí: expediente con dos voces |
 | ¿Imágenes adecuadas y autorizadas? | Sí: siluetas genéricas, sin arte oficial |
-| ¿Voz con calidad profesional? | Aceptable-buena: Kokoro con fonemas de español latinoamericano; transcripción automática sin errores en las pruebas. Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
+| ¿Voz con calidad profesional? | Buena: voz femenina expresiva (Chatterbox Multilingual), leída por frases y párrafos cortos; cada toma verificada con reconocimiento de voz (ver recursos/control_de_voz.csv). Es una voz sintética: grabar con voz humana mejora autenticidad (ver README). |
 | ¿Montaje con buen ritmo? | Sí |
 | ¿Título honesto? | Sí |
 | ¿Miniatura corresponde? | Sí (siluetas, no los personajes) |

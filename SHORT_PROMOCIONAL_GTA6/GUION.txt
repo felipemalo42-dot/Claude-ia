@@ -1,0 +1,30 @@
+GUION — Short promocional (9:16) · «Si ves este mensaje en GTA 6, ya es demasiado tarde»
+Duración: 43.7 s · Voz: la narradora del canal · Material: partida real de IGN (19/11/2026), la misma del vídeo largo
+
+ESTRUCTURA: gancho → contexto → pregunta → corte antes de resolver → llamada al vídeo largo
+
+[GANCHO]
+  00:00.4  Si ves este mensaje en GTA 6, ya es demasiado tarde.
+
+[CONTEXTO]
+  00:04.0  Aparece cuando llegas a 6 estrellas: escapar es imposible, y la policía no se rendirá hasta darte caza.
+
+[CONTEXTO]
+  00:11.5  No puedes esconderte, ni bajar el nivel de búsqueda.
+  00:14.2  La única salida es morir.
+
+[GIRO]
+  00:16.5  Pero ojo: morir no lo arregla todo.
+  00:18.9  En esa misma prueba, el juego lanzó otro aviso:
+  00:21.8  Lucía estaba cerca de volverse Irredimible.
+
+[PREGUNTA (sin resolver)]
+  00:24.8  Y eso, según Rockstar, tiene un impacto duradero.
+  00:28.2  ¿Qué es el perfil criminal, y cómo evitas que te marque para siempre?
+
+[LLAMADA AL VÍDEO LARGO]
+  00:33.4  Te lo explicamos paso a paso, con partidas reales, en nuestro video completo.
+  00:38.0  Tienes el enlace justo aquí abajo.
+
+TEXTO COMPLETO
+Si ves este mensaje en GTA 6, ya es demasiado tarde. Aparece cuando llegas a 6 estrellas: escapar es imposible, y la policía no se rendirá hasta darte caza. No puedes esconderte, ni bajar el nivel de búsqueda. La única salida es morir. Pero ojo: morir no lo arregla todo. En esa misma prueba, el juego lanzó otro aviso: Lucía estaba cerca de volverse Irredimible. Y eso, según Rockstar, tiene un impacto duradero. ¿Qué es el perfil criminal, y cómo evitas que te marque para siempre? Te lo explicamos paso a paso, con partidas reales, en nuestro video completo. Tienes el enlace justo aquí abajo.

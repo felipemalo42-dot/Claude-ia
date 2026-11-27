@@ -1,0 +1,51 @@
+GTA 6: la isla del S.O.S. y el perro de la moto de agua
+Short vertical 9:16 · 0:48.3 · voz C (español latinoamericano, Chatterbox) · mystery
+
+GANCHO: Una isla perdida con un S.O.S. en la arena y un vídeo inquietante… y el giro: un perro pilotando una moto de agua.
+
+GUION CON TIEMPOS (el plano que acompaña a cada frase, entre corchetes)
+
+[0:00.2] Lejos de la costa de Leonida hay una isla diminuta. Y alguien escribió en la arena: S.O.S..
+      0:00.2  «inicio» → IGN 0:05.5
+      0:02.3  «una isla diminuta» → IGN 0:07.5
+      0:03.6  «Y alguien» → IGN 0:12.6 · rótulo: PRUEBA 1 · EL MENSAJE
+      0:04.8  «en la arena» → IGN 0:10.2
+
+[0:08.0] Al lado hay un teléfono con un vídeo: una pareja saluda a la cámara… y, por lo que parece, son sus últimos momentos.
+      0:08.0  «inicio» → IGN 0:15.2 · rótulo: PRUEBA 2 · EL TELÉFONO
+      0:09.4  «un vídeo» → IGN 0:17.4
+      0:10.9  «saluda a la cámara» → IGN 0:18.3
+      0:13.7  «sus últimos momentos» → IGN 0:20.0
+
+[0:16.5] No hay nadie más. Solo agua. Así que bajas a bucear.
+      0:16.5  «inicio» → IGN 0:13.6
+      0:17.8  «Solo agua» → IGN 0:07.2
+      0:19.3  «bajas a bucear» → IGN 0:21.8 · rótulo: PRUEBA 3 · EL FONDO
+
+[0:22.0] Y cuando vuelves a la superficie… algo viene directo hacia ti.
+      0:22.0  «inicio» → IGN 0:23.1
+      0:23.9  «algo viene» → IGN 0:24.0
+
+[0:26.2] Es un perro. Con gafas. En moto de agua.
+      0:26.2  «inicio» → IGN 0:00.1
+      0:26.8  «Con gafas» → IGN 0:00.7
+      0:27.7  «En moto de agua» → IGN 0:01.6
+
+[0:30.4] Te subes de copiloto, él conduce, te da una vuelta… y al final te deja otra moto para ti.
+      0:30.4  «inicio» → IGN 0:26.7
+      0:31.8  «él conduce» → IGN 0:38.8
+      0:32.7  «te da una vuelta» → IGN 0:28.9
+      0:35.1  «otra moto» → IGN 0:35.0
+
+[0:36.7] Y ojo: hay jugadores que se lo han encontrado en otras zonas del mar.
+      0:36.7  «inicio» → IGN 0:33.0
+      0:38.2  «se lo han encontrado» → IGN 0:31.3
+      0:39.2  «en otras zonas» → IGN 0:03.4
+
+[0:42.5] Así que dime… ¿quién escribió el S.O.S.?
+      0:42.5  «inicio» → IGN 0:15.6
+      0:43.7  «quién escribió» → IGN 0:10.2
+
+CIERRE: la última frase vuelve a la imagen o la pregunta del principio, para que el Short se vea en bucle.
+
+Palabras: 111 · planos: 25 · media 1.9 s por plano · sincronía imagen ↔ palabra: 17/17 cortes a ≤ 0,10 s

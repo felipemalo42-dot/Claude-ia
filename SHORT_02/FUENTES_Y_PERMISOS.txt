@@ -1,0 +1,65 @@
+FUENTES Y PERMISOS · SHORT_02 · «GTA 6: la isla del S.O.S. y el perro de la moto de agua»
+Revisado el 19/11/2026. Este registro no sustituye una opinión jurídica profesional.
+
+1. GAMEPLAY USADO
+   Autor: IGN (canal de YouTube)
+   Vídeo: «WE LOVE JET SKI DOG! #gta6 #jetski #dog #jetskidog #ign» · publicado el 2026-11-19
+   Enlace original: https://www.youtube.com/watch?v=CuGNTq2mFIk
+   Copia descargada: https://archive.org/details/youtube-CuGNTq2mFIk (copia pública en Internet Archive; YouTube bloquea la descarga desde el servidor de producción)
+   ¿Autorización comercial? NO. El vídeo no tiene licencia Creative Commons ni permiso del autor: todos los derechos reservados.
+   Condiciones de reutilización publicadas por el autor: ninguna.
+   Decisión del canal (19/11/2026): usarlo con crédito en pantalla y en la descripción, sin que la narración mencione al autor.
+   Fragmentos exactos usados (minuto del Short → minuto del vídeo original · duración):
+     0:00.2 → 0:05.5 · 2.0 s · «(inicio del bloque)»
+     0:02.3 → 0:07.5 · 1.4 s · «una isla diminuta»
+     0:03.6 → 0:12.6 · 1.1 s · «Y alguien»
+     0:04.8 → 0:10.2 · 3.3 s · «en la arena»
+     0:08.0 → 0:15.2 · 1.4 s · «(inicio del bloque)»
+     0:09.4 → 0:17.4 · 1.5 s · «un vídeo»
+     0:10.9 → 0:18.3 · 2.8 s · «saluda a la cámara»
+     0:13.7 → 0:20.0 · 2.8 s · «sus últimos momentos»
+     0:16.5 → 0:13.6 · 1.3 s · «(inicio del bloque)»
+     0:17.8 → 0:07.2 · 1.5 s · «Solo agua»
+     0:19.3 → 0:21.8 · 2.7 s · «bajas a bucear»
+     0:22.0 → 0:23.1 · 1.9 s · «(inicio del bloque)»
+     0:23.9 → 0:24.0 · 2.3 s · «algo viene»
+     0:26.2 → 0:00.1 · 0.7 s · «(inicio del bloque)»
+     0:26.8 → 0:00.7 · 0.9 s · «Con gafas»
+     0:27.7 → 0:01.6 · 2.7 s · «En moto de agua»
+     0:30.4 → 0:26.7 · 1.4 s · «(inicio del bloque)»
+     0:31.8 → 0:38.8 · 1.0 s · «él conduce»
+     0:32.7 → 0:28.9 · 2.3 s · «te da una vuelta»
+     0:35.1 → 0:35.0 · 1.6 s · «otra moto»
+     0:36.7 → 0:33.0 · 1.5 s · «(inicio del bloque)»
+     0:38.2 → 0:31.3 · 1.0 s · «se lo han encontrado»
+     0:39.2 → 0:03.4 · 3.3 s · «en otras zonas»
+     0:42.5 → 0:15.6 · 1.1 s · «(inicio del bloque)»
+     0:43.7 → 0:10.2 · 4.6 s · «quién escribió»
+
+2. Datos del guion: lo que se ve en el gameplay (mapa, isla con S.O.S., teléfono con el vídeo, buceo, perro con gafas en la moto de agua, segunda moto) y la narración en inglés del mismo vídeo de IGN, transcrita y contada con palabras propias. No se reproduce su audio. Encuadre: solo la banda de juego del vídeo vertical; el título y los subtítulos de IGN y su logotipo quedan fuera, y el crédito a IGN aparece en pantalla y en la descripción. Fluidez: el vídeo de IGN era juego a 30 fps guardado a 60, con fotogramas repetidos; se quitaron los duplicados y se llevó a 60 fps reales por interpolación de movimiento (ffmpeg mpdecimate + minterpolate). No se añade ni se cambia el contenido de la imagen.
+
+3. EL JUEGO
+   Las imágenes de Grand Theft Auto VI son de Rockstar Games / Take-Two Interactive. Su política solo permite usos no comerciales
+   («Policy on posting copyrighted Rockstar Games material», actualizada el 10/01/2025). Por eso: MONETIZACIÓN DESACTIVADA.
+   No se usa nada de los tráileres, del Extended Look ni de filtraciones.
+
+4. LO PROPIO DEL CANAL (VERDE)
+   - Guion y montaje: Sal y Asfalto.
+   - Narración: voz sintética Chatterbox Multilingual (licencia MIT) a partir de la referencia de voz OpenSLR SLR72 (CC BY-SA 4.0). Lleva marca de agua inaudible.
+   - Música y efectos: compuestos por código para este Short (engine/audio.py). Sin música comercial.
+   - Gráficos, rótulos y subtítulos: diseño propio; tipografías con licencia SIL Open Font License.
+
+5. POLÍTICAS DE YOUTUBE
+   - Aportación propia: guion original, narración, montaje, gráficos, música y subtítulos. No es una resubida con cambios superficiales:
+     cada fragmento ilustra una frase concreta y se recorta, reencuadra y comenta.
+   - Aun así, usa gameplay ajeno sin permiso. YouTube puede considerarlo contenido reutilizado, e IGN o Rockstar pueden reclamarlo
+     por Content ID. No se promete monetización: se publica con los anuncios desactivados.
+   - Divulgación: marcar «Contenido alterado o sintético: Sí» (la voz es sintética).
+
+6. SI ALGUIEN RECLAMA
+   - Content ID: no disputarlo.
+   - Si el autor pide retirarlo: retirar el Short o sustituir sus planos (engine/videos/s02.py) y volver a montarlo.
+   - Para pedir permiso: adaptar 00_INFORMES/PLANTILLA_PERMISO_STREAMERS.md, con los fragmentos de la lista de arriba. Guardar la respuesta por escrito.
+
+7. REGISTRO DE AUTORIZACIONES
+   Ninguna autorización recibida a 19/11/2026. No se ha marcado ningún recurso como aprobado.

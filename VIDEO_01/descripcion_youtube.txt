@@ -4,16 +4,16 @@ En Sal y Asfalto manda el semáforo: lo OFICIAL en verde, lo DEDUCIDO en amarill
 
 CAPÍTULOS
 0:00 Gancho
-0:17 Introducción
-0:31 1 · plataforma
-1:02 2 · espacio
-1:32 3 · precarga
-1:51 4 · hora
-2:32 5 · precio
-3:11 6 · idioma
-3:32 7 · online
-3:55 Cierre
-4:09 Despedida
+0:19 Introducción
+0:34 1 · plataforma
+1:07 2 · espacio
+1:38 3 · precarga
+2:00 4 · hora
+2:47 5 · precio
+3:28 6 · idioma
+3:49 7 · online
+4:17 Cierre
+4:31 Despedida
 
 FUENTES
 • Forbes (12 y 16 nov. 2026): hora de desbloqueo y tamaño
@@ -27,6 +27,6 @@ FUENTES
 • Wccftech / Digital Citizen: sin fecha de PC
 • GameSpot: espacio útil de PS5 (667 GB) y Series S (364 GB)
 
-ℹ️ Transparencia: narración con voz sintética (modelo Kokoro, licencia Apache 2.0) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
+ℹ️ Transparencia: narración con voz sintética (modelo Chatterbox de Resemble AI, licencia MIT, con marca de agua inaudible) y animaciones originales de Sal y Asfalto. Este video NO contiene imágenes, música ni material de Rockstar Games. GTA y Grand Theft Auto son marcas de Take-Two Interactive; canal independiente, sin relación con Rockstar Games.
 
 #GTA6 #GTAVI #Leonida

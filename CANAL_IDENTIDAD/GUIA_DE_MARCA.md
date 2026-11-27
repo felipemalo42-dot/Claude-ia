@@ -82,13 +82,13 @@ Todo es dibujo vectorial original (`engine/brand.py`).
 6. **Formato:** PNG de 1280×720 (`VIDEO_XX/miniatura.png`).
 
 ## 8. Personalidad de la narración
-- **El Narrador:**
-  - "El copiloto que conoce la ruta": cercano, directo y con humor seco.
+- **La Narradora (voz principal, femenina):**
+  - "La que conoce la ruta": cercana, directa y con humor seco.
   - Tutea, usa frases cortas y no exagera.
   - Dice en voz alta cuándo algo es deducción.
   - Español latinoamericano neutro.
-- **La Analista:** calmada y precisa. Aparece en investigación (V03), expediente (V05) y guía de campo (V08).
-- **Fórmula de presentación:** "Esto es Sal y Asfalto, y aquí manda el semáforo…"
+- **El Copiloto (voz masculina ocasional):** solo hace las preguntas que se haría el espectador. Aparece en la investigación (V03).
+- **Fórmula de presentación:** "Estás en Sal y Asfalto, y aquí manda el semáforo…"
 - **Fórmulas recurrentes:**
   - Fuentes visibles en pantalla.
   - Semáforo de certeza.

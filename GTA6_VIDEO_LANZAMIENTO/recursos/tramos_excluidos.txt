@@ -1,0 +1,11 @@
+Versión 2 · tramos del gameplay de terceros que el montaje NO muestra (rótulos finales, mapa de transición).
+Además, cada plano empieza y acaba dentro de una misma toma (cortes de escena detectados) y se revisó a mano: se descartaron
+los planos con cuerpos, sangre o desnudos, la cámara de los creadores y los fragmentos de otros juegos que IGN intercala
+en su análisis (Red Dead Redemption 2, GTA IV, GTA V, Cyberpunk 2077, GTA: San Andreas).
+Código: engine/videos/gp.py (R.XBAD) y engine/videos/gl_render.py (src_window).
+
+  IGN · «15 Minutes of GTA 6 PS5 Pro Gameplay (First Mission)» (3PiR0G3rVw8): 14:46-15:00
+  IGN · «GTA 6 Series S Gameplay - It's Shockingly Good» (7j-Ylv-BSXk): 22:48-23:20
+  IGN · «GTA 6 Gameplay on Xbox Series X, Finally!» (w9Y1xXSzQbs): 21:26-21:40
+  IGN · «GTA 6 PS5 Pro vs Xbox Series S Gameplay - Closer Than You'd » (aRRNSVwx8UM): 8:39-8:50
+  Sirloin1 · «The Military Base in GTA 6 - First Look» (nqmpDCbz3lA): 1:24-1:40

@@ -1,9 +1,11 @@
-# Sal y Asfalto: paquete de lanzamiento del canal de GTA VI (10 videos)
+# Sal y Asfalto: paquete de lanzamiento del canal de GTA VI (10 videos + 2 producciones especiales)
 
 > **Nombre e identidad nuevos (17/11/2026):** el nombre anterior, *Caimán Neón*, ya estaba en uso en YouTube. Se rediseñó toda la marca y se volvieron a producir los 10 videos con la identidad nueva. Ver `CANAL_IDENTIDAD/GUIA_DE_MARCA.md`.
 
 Canal hispanohablante dedicado a **Grand Theft Auto VI**, preparado para el lanzamiento del **jueves 19 de noviembre de 2026**.
-Todo el material audiovisual es **original**: guiones, voces sintéticas con licencia comercial, música y efectos sintetizados por código, animaciones e infografías vectoriales, mapas de dominio público. **No hay imágenes, música ni recursos de Rockstar Games.**
+En los 10 videos y en VIDEO_EXTRA todo el material audiovisual es **original**: guiones, voces sintéticas con licencia comercial, música y efectos sintetizados por código, animaciones e infografías vectoriales, mapas de dominio público. En esos 11 no hay imágenes, música ni recursos de Rockstar Games.
+
+**Excepción: `GTA6_VIDEO_LANZAMIENTO/`.** Usa gameplay grabado por terceros tras el lanzamiento (IGN y otros), sin audio y con el autor en pantalla en cada plano, más algo de material oficial de Rockstar. **Debe publicarse sin monetizar**: ver su `REGISTRO_DE_PERMISOS.txt`.
 
 ## Por dónde empezar
 1. `00_INFORMES/INFORME_INVESTIGACION.md`: demanda, tabla de palabras clave y hechos verificados, con su nivel de certeza.
@@ -11,24 +13,31 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
 3. `00_INFORMES/ESTRATEGIA_LANZAMIENTO.md`: calendario con horarios para México, Colombia, Argentina y España.
 4. `CANAL_IDENTIDAD/`: nombre, logotipo, avatar, banner, marca de agua y guía de marca.
 5. `VIDEO_01` … `VIDEO_10`: cada carpeta tiene su `publicacion.md` (paquete completo) y los archivos para subir.
-6. `00_INFORMES/INVENTARIO.md`: lista completa de archivos.
+6. `VIDEO_EXTRA/`: la producción especial de 9:29, «¿Por qué Vice City es rosa?». Empieza por `ANALISIS_Y_CONCEPTO.md` y `AUDITORIA_FINAL.md`.
+7. `GTA6_VIDEO_LANZAMIENTO/`: vídeo posterior al lanzamiento (11:32, versión 2 con gameplay del juego ya lanzado), «GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado». Empieza por `AUDITORIA_FINAL.md` y `REGISTRO_DE_PERMISOS.txt`.
+8. `SHORT_01/` y `SHORT_02/`: dos Shorts verticales con descubrimientos de jugadores (el ring secreto de Hamlet y el perro de la moto de agua). Empieza por `CONTROL_DE_CALIDAD.md` y `FUENTES_Y_PERMISOS.txt`.
+9. `00_INFORMES/INVENTARIO.md`: lista completa de archivos.
 
 ## Estado real de producción
 
 | # | Video | Formato | Duración | Estado | Publicación sugerida (UTC) |
 |---|---|---|---|---|---|
-| 01 | GTA 6: hora exacta, precio, peso e idioma (7 comprobaciones) | Largo 16:9 | 4:29 | ✅ **Terminado** | mar 17 · 20:00 |
-| 02 | ¿A qué hora sale GTA 6 en tu país? | Short 9:16 | 0:41 | ✅ **Terminado** | mié 18 · 12:00 |
-| 03 | GTA 6 para PC y Android: la estafa que roba cuentas | Largo | 3:24 | ✅ **Terminado** | mié 18 · 15:00 |
-| 04 | El mapa de Leonida: 6 regiones y sus lugares reales | Largo | 3:31 | ✅ **Terminado** | mié 18 · 19:00 |
-| 05 | Jason y Lucía: el expediente (sin spoilers) | Largo | 3:06 | ✅ **Terminado** | vie 20 · 18:00 |
-| 06 | GTA 6 vs GTA 5: 10 cambios confirmados | Largo | 3:19 | ✅ **Terminado** | sáb 21 · 17:00 |
-| 07 | GTA 6 pesa 210 GB: ¿te cabe? | Short | 0:44 | ✅ **Terminado** | mar 17 · 23:00 |
-| 08 | Fauna de Leonida: guía de campo | Short | 0:37 | ✅ **Terminado** | jue 19 · 17:00 |
-| 09 | 7 misterios que se resuelven el jueves | Largo | 2:55 | ✅ **Terminado** | mié 18 · 21:00 |
+| 01 | GTA 6: hora exacta, precio, peso e idioma (7 comprobaciones) | Largo 16:9 | 4:52 | ✅ **Terminado** | mar 17 · 20:00 |
+| 02 | ¿A qué hora sale GTA 6 en tu país? | Short 9:16 | 0:45 | ✅ **Terminado** | mié 18 · 12:00 |
+| 03 | GTA 6 para PC y Android: la estafa que roba cuentas | Largo | 3:32 | ✅ **Terminado** | mié 18 · 15:00 |
+| 04 | El mapa de Leonida: 6 regiones y sus lugares reales | Largo | 3:40 | ✅ **Terminado** | mié 18 · 19:00 |
+| 05 | Jason y Lucía: el expediente (sin spoilers) | Largo | 3:21 | ✅ **Terminado** | vie 20 · 18:00 |
+| 06 | GTA 6 vs GTA 5: 10 cambios confirmados | Largo | 3:37 | ✅ **Terminado** | sáb 21 · 17:00 |
+| 07 | GTA 6 pesa 210 GB: ¿te cabe? | Short | 0:48 | ✅ **Terminado** | mar 17 · 23:00 |
+| 08 | Fauna de Leonida: guía de campo | Short | 0:40 | ✅ **Terminado** | jue 19 · 17:00 |
+| 09 | 7 misterios que se resuelven el jueves | Largo | 3:03 | ✅ **Terminado** | mié 18 · 21:00 |
 | 10 | Abrimos los 7 sobres: lo comprobamos jugando | Largo (post-lanzamiento) | estimada 8-10 min | 🟡 **Preproducción**: faltan capturas propias y veredictos. El MP4 incluido es un **animático rotulado "NO PUBLICAR"** | lun 23 · 19:00 |
+| EXTRA | ¿Por qué Vice City es rosa? La historia real de sus colores | Largo 16:9 · producción especial | 9:29 | ✅ **Terminado**. Coincidencia guion ↔ voz: 99,97 % | **mié 18 · 20:00** (antes del lanzamiento: el guion dice «mañana») |
+| LANZAMIENTO | GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado | Largo 16:9 · reseñas + gameplay posterior al lanzamiento (IGN y otros, con crédito) | 11:32 | ✅ **Versión 2 terminada**. Voz: 99,65 %. Sincronía imagen ↔ palabra: 165/165 cortes. **Sin monetizar** | **jue 19**, cuanto antes |
+| SHORT_01 | GTA 6 tiene un ring de lucha libre secreto (y un error te mata) | Short 9:16 · gameplay post lanzamiento (IGN, con crédito) | 0:52 | ✅ **Terminado**. **Sin monetizar** | jue 19 · cuanto antes |
+| SHORT_02 | GTA 6: la isla del S.O.S. y el perro de la moto de agua | Short 9:16 · gameplay post lanzamiento (IGN, con crédito) | 0:48 | ✅ **Terminado**. **Sin monetizar** | vie 20 |
 
-**Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada −14,4/−14,5 LUFS.
+**Especificaciones verificadas de todos los MP4:** H.264 High, 1920×1080 (Shorts 1080×1920), 30 fps, yuv420p, AAC 48 kHz estéreo ~200 kbps, sonoridad integrada entre −14,1 y −14,5 LUFS.
 
 ## Contenido de cada carpeta `VIDEO_XX`
 | Archivo | Qué es |
@@ -49,14 +58,15 @@ Todo el material audiovisual es **original**: guiones, voces sintéticas con lic
    - La investigación se hizo con búsqueda web, citando prensa y fuentes secundarias. **No hay volúmenes de búsqueda inventados.**
    - **Antes de publicar, comprueba tres datos en tus propias fuentes:** la hora en el soporte de Rockstar, el precio en tu tienda y el tamaño en tu consola.
 2. **Voz:**
-   - Kokoro (Apache 2.0) con pronunciación latinoamericana (seseo). La verifiqué por métodos objetivos (transcripción automática sin errores y análisis de entonación), pero **no puedo escucharla**.
+   - Voz femenina expresiva generada con **Chatterbox Multilingual** (Resemble AI, licencia MIT), a partir de una referencia de una locutora anónima del corpus abierto OpenSLR SLR72 (Google, CC BY-SA 4.0). Lee frase a frase con entonación natural; la voz la elegiste tú entre cuatro candidatas (voz C). Chatterbox añade una marca de agua inaudible que identifica el audio como sintético.
+   - Cada toma se comprueba con reconocimiento de voz y se repite si no coincide con el guion. El resultado de cada video está en `recursos/control_de_voz.csv`. Aun así, **no puedo escucharla**: revisa el resultado.
    - Revisa cada narración antes de publicar.
    - Para reducir el riesgo de "contenido inauténtico", lo más eficaz es **grabar la narración con tu voz**. El motor lo admite: ver `engine/README.md`.
 3. **Imagen:**
    - No había un generador de imágenes con IA disponible. Todo está dibujado por código (motion graphics vectoriales, mapa 3D en perspectiva, globo 3D).
    - Esto además **evita el riesgo legal de las imágenes de IA que imitan el juego**, que Take-Two ya persigue.
 4. **Duración:**
-   - Los videos largos duran entre 2:55 y 4:29: densos y sin relleno.
+   - Los videos largos duran entre 3:03 y 4:52: densos y sin relleno.
    - **Sin anuncios intermedios** (YouTube exige 8 minutos o más).
    - Para videos más largos, la estructura está lista para ampliar los guiones y volver a renderizar.
 5. **Calidad del MP4:** se codificó compacto (5-28 MB) para que entrara en GitHub. Para subir a YouTube con la máxima calidad: `python engine/build.py vXX --master`.

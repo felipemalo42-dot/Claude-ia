@@ -1,286 +1,1353 @@
 {
- "total": 160.251,
+ "total": 169.092,
  "beats": [
   {
    "i": 0,
    "start": 0.25,
-   "end": 15.247,
+   "end": 16.921,
    "sents": [
     {
      "text": "Hace unos días metimos siete preguntas sobre GTA 6 en sobres sellados, cada una con una predicción y un porcentaje de confianza.",
      "start": 0.25,
-     "end": 8.146,
-     "voice": "host"
+     "end": 8.114,
+     "voice": "host",
+     "words": [
+      [
+       "Hace",
+       0.25,
+       0.49
+      ],
+      [
+       "unos",
+       0.49,
+       0.75
+      ],
+      [
+       "días",
+       0.73,
+       1.07
+      ],
+      [
+       "metimos",
+       1.05,
+       1.63
+      ],
+      [
+       "siete",
+       1.61,
+       1.87
+      ],
+      [
+       "preguntas",
+       1.93,
+       2.35
+      ],
+      [
+       "sobre",
+       2.33,
+       2.59
+      ],
+      [
+       "GTA",
+       2.57,
+       3.135
+      ],
+      [
+       "6",
+       3.29,
+       3.422
+      ],
+      [
+       "en",
+       3.45,
+       3.63
+      ],
+      [
+       "sobres",
+       3.63,
+       4.149
+      ],
+      [
+       "sellados,",
+       4.149,
+       4.89
+      ],
+      [
+       "cada",
+       4.89,
+       5.23
+      ],
+      [
+       "una",
+       5.21,
+       5.537
+      ],
+      [
+       "con",
+       5.53,
+       5.71
+      ],
+      [
+       "una",
+       5.69,
+       5.958
+      ],
+      [
+       "predicción",
+       6.01,
+       6.59
+      ],
+      [
+       "y",
+       6.57,
+       6.75
+      ],
+      [
+       "un",
+       6.73,
+       6.86
+      ],
+      [
+       "porcentaje",
+       6.89,
+       7.536
+      ],
+      [
+       "de",
+       7.53,
+       7.63
+      ],
+      [
+       "confianza.",
+       7.61,
+       8.114
+      ]
+     ]
     },
     {
      "text": "Hoy, con el juego en las manos, los abrimos.",
-     "start": 8.476,
-     "end": 10.816,
-     "voice": "host"
+     "start": 8.89,
+     "end": 11.497,
+     "voice": "host",
+     "words": [
+      [
+       "Hoy,",
+       8.89,
+       9.39
+      ],
+      [
+       "con",
+       9.37,
+       9.55
+      ],
+      [
+       "el",
+       9.53,
+       9.71
+      ],
+      [
+       "juego",
+       9.69,
+       10.11
+      ],
+      [
+       "en",
+       10.09,
+       10.19
+      ],
+      [
+       "las",
+       10.17,
+       10.35
+      ],
+      [
+       "manos,",
+       10.33,
+       10.67
+      ],
+      [
+       "los",
+       10.81,
+       11.07
+      ],
+      [
+       "abrimos.",
+       11.05,
+       11.497
+      ]
+     ]
     },
     {
      "text": "Y vamos a contar los aciertos y los fallos, sin maquillar ninguno.",
-     "start": 11.146,
-     "end": 14.917,
-     "voice": "host"
+     "start": 11.93,
+     "end": 16.513,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       11.93,
+       12.19
+      ],
+      [
+       "vamos",
+       12.17,
+       12.43
+      ],
+      [
+       "a",
+       12.41,
+       12.59
+      ],
+      [
+       "contar",
+       12.57,
+       12.91
+      ],
+      [
+       "los",
+       12.89,
+       13.07
+      ],
+      [
+       "aciertos",
+       13.05,
+       13.63
+      ],
+      [
+       "y",
+       13.61,
+       13.71
+      ],
+      [
+       "los",
+       13.69,
+       13.79
+      ],
+      [
+       "fallos,",
+       13.77,
+       14.196
+      ],
+      [
+       "sin",
+       14.25,
+       14.51
+      ],
+      [
+       "maquillar",
+       14.49,
+       15.15
+      ],
+      [
+       "ninguno.",
+       15.13,
+       16.513
+      ]
+     ]
     }
    ],
    "id": "b0"
   },
   {
    "i": 1,
-   "start": 15.247,
-   "end": 17.647,
+   "start": 16.921,
+   "end": 19.321,
    "sents": [],
    "id": "b1"
   },
   {
    "i": 2,
-   "start": 17.647,
-   "end": 31.041,
+   "start": 19.321,
+   "end": 35.112,
    "sents": [
     {
      "text": "Las reglas.",
-     "start": 17.647,
-     "end": 18.448,
-     "voice": "host"
+     "start": 19.321,
+     "end": 20.083,
+     "voice": "host",
+     "words": [
+      [
+       "Las",
+       19.321,
+       19.561
+      ],
+      [
+       "reglas.",
+       19.561,
+       20.083
+      ]
+     ]
     },
     {
      "text": "Todas las pruebas son capturas nuestras, jugando.",
-     "start": 18.778,
-     "end": 21.643,
-     "voice": "host"
+     "start": 20.361,
+     "end": 23.242,
+     "voice": "host",
+     "words": [
+      [
+       "Todas",
+       20.361,
+       20.781
+      ],
+      [
+       "las",
+       20.761,
+       20.941
+      ],
+      [
+       "pruebas",
+       20.921,
+       21.421
+      ],
+      [
+       "son",
+       21.401,
+       21.581
+      ],
+      [
+       "capturas",
+       21.561,
+       22.061
+      ],
+      [
+       "nuestras,",
+       22.121,
+       22.704
+      ],
+      [
+       "jugando.",
+       22.761,
+       23.242
+      ]
+     ]
     },
     {
      "text": "Nada de spoilers de la historia más allá de las primeras horas.",
-     "start": 21.973,
-     "end": 25.379,
-     "voice": "host"
+     "start": 24.041,
+     "end": 28.251,
+     "voice": "host",
+     "words": [
+      [
+       "Nada",
+       24.041,
+       24.461
+      ],
+      [
+       "de",
+       24.441,
+       24.701
+      ],
+      [
+       "spoilers",
+       24.701,
+       25.241
+      ],
+      [
+       "de",
+       25.241,
+       25.421
+      ],
+      [
+       "la",
+       25.401,
+       25.571
+      ],
+      [
+       "historia",
+       25.561,
+       25.981
+      ],
+      [
+       "más",
+       25.961,
+       26.141
+      ],
+      [
+       "allá",
+       26.121,
+       26.461
+      ],
+      [
+       "de",
+       26.441,
+       26.621
+      ],
+      [
+       "las",
+       26.601,
+       26.679
+      ],
+      [
+       "primeras",
+       26.761,
+       27.341
+      ],
+      [
+       "horas.",
+       27.321,
+       28.251
+      ]
+     ]
     },
     {
      "text": "Y si algo todavía no se puede comprobar, lo marcamos como sin datos, no como acierto.",
-     "start": 25.709,
-     "end": 30.711,
-     "voice": "host"
+     "start": 28.689,
+     "end": 34.709,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       28.689,
+       28.719
+      ],
+      [
+       "si",
+       28.689,
+       28.949
+      ],
+      [
+       "algo",
+       28.929,
+       29.269
+      ],
+      [
+       "todavía",
+       29.249,
+       29.669
+      ],
+      [
+       "no",
+       29.649,
+       29.749
+      ],
+      [
+       "se",
+       29.729,
+       29.872
+      ],
+      [
+       "puede",
+       29.889,
+       30.229
+      ],
+      [
+       "comprobar,",
+       30.209,
+       30.666
+      ],
+      [
+       "lo",
+       30.849,
+       31.029
+      ],
+      [
+       "marcamos",
+       31.009,
+       31.552
+      ],
+      [
+       "como",
+       31.569,
+       31.829
+      ],
+      [
+       "sin",
+       31.809,
+       31.989
+      ],
+      [
+       "datos,",
+       32.129,
+       32.43
+      ],
+      [
+       "no",
+       32.769,
+       33.029
+      ],
+      [
+       "como",
+       33.009,
+       33.269
+      ],
+      [
+       "acierto.",
+       33.249,
+       34.709
+      ]
+     ]
     }
    ],
    "id": "b2"
   },
   {
    "i": 3,
-   "start": 31.041,
-   "end": 45.401,
+   "start": 35.112,
+   "end": 50.036,
    "sents": [
     {
      "text": "Sobre uno:",
-     "start": 31.041,
-     "end": 31.824,
-     "voice": "host"
+     "start": 35.112,
+     "end": 35.692,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       35.112,
+       35.512
+      ],
+      [
+       "uno:",
+       35.512,
+       35.692
+      ]
+     ]
     },
     {
      "text": "¿Cuándo llega el online?",
-     "start": 32.104,
-     "end": 33.535,
-     "voice": "host"
+     "start": 35.992,
+     "end": 37.157,
+     "voice": "host",
+     "words": [
+      [
+       "¿Cuándo",
+       35.992,
+       36.252
+      ],
+      [
+       "llega",
+       36.232,
+       36.652
+      ],
+      [
+       "el",
+       36.652,
+       36.792
+      ],
+      [
+       "online?",
+       36.792,
+       37.157
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción fue: no antes de 2027.",
-     "start": 33.915,
-     "end": 37.071,
-     "voice": "host"
+     "start": 37.592,
+     "end": 41.633,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       37.592,
+       38.012
+      ],
+      [
+       "predicción",
+       37.992,
+       38.652
+      ],
+      [
+       "fue:",
+       38.632,
+       38.892
+      ],
+      [
+       "no",
+       39.112,
+       39.372
+      ],
+      [
+       "antes",
+       39.352,
+       39.673
+      ],
+      [
+       "de",
+       39.672,
+       39.852
+      ],
+      [
+       "2027.",
+       39.992,
+       41.633
+      ]
+     ]
     }
    ],
    "id": "b3"
   },
   {
    "i": 4,
-   "start": 45.401,
-   "end": 60.326,
+   "start": 50.036,
+   "end": 65.846,
    "sents": [
     {
      "text": "Sobre dos:",
-     "start": 45.401,
-     "end": 46.146,
-     "voice": "host"
+     "start": 50.036,
+     "end": 50.842,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       50.036,
+       50.536
+      ],
+      [
+       "dos:",
+       50.676,
+       50.842
+      ]
+     ]
     },
     {
      "text": "¿Habrá modo a 60 fps?",
-     "start": 46.426,
-     "end": 48.849,
-     "voice": "host"
+     "start": 51.156,
+     "end": 53.766,
+     "voice": "host",
+     "words": [
+      [
+       "¿Habrá",
+       51.156,
+       51.656
+      ],
+      [
+       "modo",
+       51.636,
+       51.896
+      ],
+      [
+       "a",
+       52.036,
+       52.216
+      ],
+      [
+       "60",
+       52.276,
+       52.585
+      ],
+      [
+       "fps?",
+       52.596,
+       53.766
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción fue: no el día del lanzamiento.",
-     "start": 49.229,
-     "end": 51.996,
-     "voice": "host"
+     "start": 54.196,
+     "end": 57.428,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       54.196,
+       54.456
+      ],
+      [
+       "predicción",
+       54.596,
+       55.251
+      ],
+      [
+       "fue:",
+       55.236,
+       55.496
+      ],
+      [
+       "no",
+       55.636,
+       55.976
+      ],
+      [
+       "el",
+       55.956,
+       56.136
+      ],
+      [
+       "día",
+       56.116,
+       56.376
+      ],
+      [
+       "del",
+       56.356,
+       56.536
+      ],
+      [
+       "lanzamiento.",
+       56.516,
+       57.428
+      ]
+     ]
     }
    ],
    "id": "b4"
   },
   {
    "i": 5,
-   "start": 60.326,
-   "end": 74.116,
+   "start": 65.846,
+   "end": 80.589,
    "sents": [
     {
      "text": "Sobre tres:",
-     "start": 60.326,
-     "end": 61.146,
-     "voice": "host"
+     "start": 65.846,
+     "end": 66.664,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       65.846,
+       66.166
+      ],
+      [
+       "tres:",
+       66.326,
+       66.664
+      ]
+     ]
     },
     {
      "text": "¿Cuántos interiores?",
-     "start": 61.426,
-     "end": 62.663,
-     "voice": "host"
+     "start": 66.726,
+     "end": 67.972,
+     "voice": "host",
+     "words": [
+      [
+       "¿Cuántos",
+       66.726,
+       67.306
+      ],
+      [
+       "interiores?",
+       67.286,
+       67.972
+      ]
+     ]
     },
     {
-     "text": "Nuestra predicción fue: más que en gta 5.",
-     "start": 63.043,
-     "end": 65.786,
-     "voice": "host"
+     "text": "Nuestra predicción fue: más que en GTA 5.",
+     "start": 68.166,
+     "end": 72.151,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       68.166,
+       68.506
+      ],
+      [
+       "predicción",
+       68.646,
+       69.196
+      ],
+      [
+       "fue:",
+       69.206,
+       69.466
+      ],
+      [
+       "más",
+       69.606,
+       69.946
+      ],
+      [
+       "que",
+       69.926,
+       70.091
+      ],
+      [
+       "en",
+       70.086,
+       70.186
+      ],
+      [
+       "GTA",
+       70.186,
+       71.126
+      ],
+      [
+       "5.",
+       71.126,
+       72.151
+      ]
+     ]
     }
    ],
    "id": "b5"
   },
   {
    "i": 6,
-   "start": 74.116,
-   "end": 88.978,
+   "start": 80.589,
+   "end": 95.864,
    "sents": [
     {
      "text": "Sobre cuatro:",
-     "start": 74.116,
-     "end": 75.031,
-     "voice": "host"
+     "start": 80.589,
+     "end": 81.418,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       80.589,
+       80.989
+      ],
+      [
+       "cuatro:",
+       80.989,
+       81.418
+      ]
+     ]
     },
     {
      "text": "¿Cuánto pesa el perfil criminal?",
-     "start": 75.311,
-     "end": 77.258,
-     "voice": "host"
+     "start": 81.469,
+     "end": 83.174,
+     "voice": "host",
+     "words": [
+      [
+       "¿Cuánto",
+       81.469,
+       81.889
+      ],
+      [
+       "pesa",
+       81.869,
+       82.264
+      ],
+      [
+       "el",
+       82.269,
+       82.369
+      ],
+      [
+       "perfil",
+       82.349,
+       82.769
+      ],
+      [
+       "criminal?",
+       82.749,
+       83.174
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción fue: más en el mundo que en la trama.",
-     "start": 77.638,
-     "end": 80.648,
-     "voice": "host"
+     "start": 83.469,
+     "end": 87.459,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       83.469,
+       83.883
+      ],
+      [
+       "predicción",
+       83.869,
+       84.473
+      ],
+      [
+       "fue:",
+       84.509,
+       84.849
+      ],
+      [
+       "más",
+       84.829,
+       85.089
+      ],
+      [
+       "en",
+       85.069,
+       85.169
+      ],
+      [
+       "el",
+       85.149,
+       85.329
+      ],
+      [
+       "mundo",
+       85.309,
+       85.649
+      ],
+      [
+       "que",
+       85.629,
+       85.809
+      ],
+      [
+       "en",
+       85.789,
+       85.969
+      ],
+      [
+       "la",
+       85.949,
+       86.209
+      ],
+      [
+       "trama.",
+       86.189,
+       87.459
+      ]
+     ]
     }
    ],
    "id": "b6"
   },
   {
    "i": 7,
-   "start": 88.978,
-   "end": 102.986,
+   "start": 95.864,
+   "end": 109.925,
    "sents": [
     {
      "text": "Sobre cinco:",
-     "start": 88.978,
-     "end": 89.896,
-     "voice": "host"
+     "start": 95.864,
+     "end": 96.654,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       95.864,
+       96.264
+      ],
+      [
+       "cinco:",
+       96.264,
+       96.654
+      ]
+     ]
     },
     {
      "text": "¿Huracanes dinámicos?",
-     "start": 90.176,
-     "end": 91.567,
-     "voice": "host"
+     "start": 96.664,
+     "end": 97.976,
+     "voice": "host",
+     "words": [
+      [
+       "¿Huracanes",
+       96.664,
+       97.404
+      ],
+      [
+       "dinámicos?",
+       97.384,
+       97.976
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción fue: ambos: clima y misiones.",
-     "start": 91.947,
-     "end": 94.656,
-     "voice": "host"
+     "start": 98.584,
+     "end": 101.525,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       98.584,
+       99.084
+      ],
+      [
+       "predicción",
+       99.064,
+       99.644
+      ],
+      [
+       "fue:",
+       99.624,
+       99.804
+      ],
+      [
+       "ambos:",
+       100.024,
+       100.444
+      ],
+      [
+       "clima",
+       100.424,
+       100.764
+      ],
+      [
+       "y",
+       100.904,
+       101.084
+      ],
+      [
+       "misiones.",
+       101.064,
+       101.525
+      ]
+     ]
     }
    ],
    "id": "b7"
   },
   {
    "i": 8,
-   "start": 102.986,
-   "end": 117.318,
+   "start": 109.925,
+   "end": 125.136,
    "sents": [
     {
      "text": "Sobre seis:",
-     "start": 102.986,
-     "end": 103.778,
-     "voice": "host"
+     "start": 109.925,
+     "end": 110.796,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       109.925,
+       110.325
+      ],
+      [
+       "seis:",
+       110.325,
+       110.796
+      ]
+     ]
     },
     {
      "text": "¿Qué animal será legendario?",
-     "start": 104.058,
-     "end": 105.737,
-     "voice": "host"
+     "start": 110.965,
+     "end": 112.494,
+     "voice": "host",
+     "words": [
+      [
+       "¿Qué",
+       110.965,
+       111.304
+      ],
+      [
+       "animal",
+       111.285,
+       111.704
+      ],
+      [
+       "será",
+       111.685,
+       112.024
+      ],
+      [
+       "legendario?",
+       112.005,
+       112.494
+      ]
+     ]
     },
     {
-     "text": "Nuestra predicción fue: uno emblemático de florida.",
-     "start": 106.117,
-     "end": 108.988,
-     "voice": "host"
+     "text": "Nuestra predicción fue: uno emblemático de Florida.",
+     "start": 112.725,
+     "end": 116.721,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       112.725,
+       113.144
+      ],
+      [
+       "predicción",
+       113.125,
+       113.704
+      ],
+      [
+       "fue:",
+       113.685,
+       113.913
+      ],
+      [
+       "uno",
+       114.165,
+       114.325
+      ],
+      [
+       "emblemático",
+       114.485,
+       115.224
+      ],
+      [
+       "de",
+       115.205,
+       115.384
+      ],
+      [
+       "Florida.",
+       115.365,
+       116.721
+      ]
+     ]
     }
    ],
    "id": "b8"
   },
   {
    "i": 9,
-   "start": 117.318,
-   "end": 131.851,
+   "start": 125.136,
+   "end": 140.692,
    "sents": [
     {
      "text": "Sobre siete:",
-     "start": 117.318,
-     "end": 118.219,
-     "voice": "host"
+     "start": 125.136,
+     "end": 125.742,
+     "voice": "host",
+     "words": [
+      [
+       "Sobre",
+       125.136,
+       125.456
+      ],
+      [
+       "siete:",
+       125.456,
+       125.742
+      ]
+     ]
     },
     {
      "text": "¿Hay más de seis regiones?",
-     "start": 118.499,
-     "end": 120.041,
-     "voice": "host"
+     "start": 126.016,
+     "end": 127.475,
+     "voice": "host",
+     "words": [
+      [
+       "¿Hay",
+       126.016,
+       126.276
+      ],
+      [
+       "más",
+       126.256,
+       126.436
+      ],
+      [
+       "de",
+       126.416,
+       126.596
+      ],
+      [
+       "seis",
+       126.736,
+       126.916
+      ],
+      [
+       "regiones?",
+       126.896,
+       127.475
+      ]
+     ]
     },
     {
      "text": "Nuestra predicción fue: más zonas, no otra gran región.",
-     "start": 120.421,
-     "end": 123.521,
-     "voice": "host"
+     "start": 127.616,
+     "end": 132.284,
+     "voice": "host",
+     "words": [
+      [
+       "Nuestra",
+       127.616,
+       128.067
+      ],
+      [
+       "predicción",
+       128.096,
+       128.596
+      ],
+      [
+       "fue:",
+       128.576,
+       128.836
+      ],
+      [
+       "más",
+       128.836,
+       129.265
+      ],
+      [
+       "zonas,",
+       129.265,
+       130.016
+      ],
+      [
+       "no",
+       130.016,
+       130.356
+      ],
+      [
+       "otra",
+       130.336,
+       130.676
+      ],
+      [
+       "gran",
+       130.656,
+       130.996
+      ],
+      [
+       "región.",
+       130.976,
+       132.284
+      ]
+     ]
     }
    ],
    "id": "b9"
   },
   {
    "i": 10,
-   "start": 131.851,
-   "end": 139.851,
+   "start": 140.692,
+   "end": 148.692,
    "sents": [],
    "id": "b10"
   },
   {
    "i": 11,
-   "start": 139.851,
-   "end": 159.851,
+   "start": 148.692,
+   "end": 168.692,
    "sents": [
     {
      "text": "¿Qué otra pregunta quieres que comprobemos jugando?",
-     "start": 139.851,
-     "end": 142.707,
-     "voice": "host"
+     "start": 148.692,
+     "end": 151.354,
+     "voice": "host",
+     "words": [
+      [
+       "¿Qué",
+       148.692,
+       148.932
+      ],
+      [
+       "otra",
+       148.932,
+       149.136
+      ],
+      [
+       "pregunta",
+       149.172,
+       149.671
+      ],
+      [
+       "quieres",
+       149.652,
+       150.061
+      ],
+      [
+       "que",
+       150.052,
+       150.188
+      ],
+      [
+       "comprobemos",
+       150.212,
+       150.951
+      ],
+      [
+       "jugando?",
+       150.932,
+       151.354
+      ]
+     ]
     },
     {
      "text": "Déjala en los comentarios.",
-     "start": 143.087,
-     "end": 144.608,
-     "voice": "host"
+     "start": 151.492,
+     "end": 152.833,
+     "voice": "host",
+     "words": [
+      [
+       "Déjala",
+       151.492,
+       151.911
+      ],
+      [
+       "en",
+       151.972,
+       152.151
+      ],
+      [
+       "los",
+       152.132,
+       152.231
+      ],
+      [
+       "comentarios.",
+       152.212,
+       152.833
+      ]
+     ]
     },
     {
      "text": "Y si quieres más pruebas con método, suscríbete a Sal y Asfalto.",
-     "start": 144.938,
-     "end": 148.668,
-     "voice": "host"
+     "start": 153.092,
+     "end": 157.143,
+     "voice": "host",
+     "words": [
+      [
+       "Y",
+       153.092,
+       153.351
+      ],
+      [
+       "si",
+       153.332,
+       153.511
+      ],
+      [
+       "quieres",
+       153.492,
+       153.831
+      ],
+      [
+       "más",
+       153.812,
+       153.991
+      ],
+      [
+       "pruebas",
+       153.972,
+       154.391
+      ],
+      [
+       "con",
+       154.372,
+       154.631
+      ],
+      [
+       "método,",
+       154.612,
+       155.062
+      ],
+      [
+       "suscríbete",
+       155.092,
+       155.751
+      ],
+      [
+       "a",
+       155.732,
+       155.831
+      ],
+      [
+       "Sal",
+       155.812,
+       155.992
+      ],
+      [
+       "y",
+       156.132,
+       156.378
+      ],
+      [
+       "Asfalto.",
+       156.372,
+       157.143
+      ]
+     ]
     }
    ],
    "id": "b11"
   }
  ],
- "lufs_in": -18.22
+ "lufs_in": -15.38
 }

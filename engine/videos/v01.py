@@ -348,7 +348,7 @@ beat("El jueves diecinueve de noviembre, a la medianoche, millones de consolas v
      sc_hook, section="GANCHO", energy=1, sfx=[(0.1, "flap", 0.5), (0.6, "flap", 0.4), ("w:puerta", "buzz", 0.5), ("w:Por la hora", "hit", 0.5), ("w:Por el espacio", "hit", 0.5), ("w:descarga", "hit", 0.6)],
      note="Tablero de salidas: vuelos a Leonida 'A TIEMPO'; dos cambian a 'PUERTA CERRADA'. Aparecen las tres causas.")
 beat("", sc_sting, dur=2.4, sfx=[(0.0, "logo", 0.9)], energy=2, trans=("flash", 0.3), note="Cortinilla de marca.")
-beat("Esto es Sal y Asfalto, y aquí manda el semáforo: lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rojo. "
+beat("Estás en Sal y Asfalto, y aquí manda el semáforo: lo oficial va en verde, lo que deducimos va en amarillo y el rumor, en rojo. "
      "Hoy hacemos la lista de abordaje: siete comprobaciones para que a medianoche solo tengas que darle a play.",
      sc_intro, section="INTRODUCCIÓN", energy=2, trans=("zoom", 0.5), sfx=[(0.2, "paper", 0.5), ("w:verde", "pop", 0.4), ("w:amarillo", "pop", 0.4), ("w:en rojo", "pop", 0.4)],
      note="Tarjeta de embarque + semáforo de certeza de la marca.")

@@ -1,0 +1,178 @@
+REGISTRO DE PERMISOS · GTA6_VIDEO_LANZAMIENTO (versión 2)
+«GTA 6 ya se juega: qué dicen de su jugabilidad quienes ya lo han jugado» (vídeo post lanzamiento)
+Revisado el 19/11/2026. Este registro no sustituye una opinión jurídica profesional.
+
+======================================================================================================
+CONCLUSIÓN (léela antes de publicar)
+======================================================================================================
+1. En la versión 2 casi todas las imágenes son GAMEPLAY GRABADO POR TERCEROS después del lanzamiento:
+   IGN, Lootward, Sirloin1, Swiss001 y RedArcade (apartado B). El vídeo ya no usa nada del Extended Look ni de los tráileres.
+   Esos vídeos NO tienen licencia de reutilización: no son Creative Commons. Se usan por decisión del canal
+   («si lo sacas de algún lado se le da el crédito y no pasa nada, no importa si no se puede monetizar»), con estas condiciones:
+     - fragmentos breves: el plano más largo de material ajeno dura 7,5 s;
+     - cada fragmento ilustra una frase concreta del comentario: la opinión de un medio, una mecánica o una cifra;
+     - el autor aparece en pantalla en cada plano (autor, título del vídeo y minuto);
+     - todos los vídeos usados están enlazados en la descripción;
+     - audio original silenciado: solo se oye la narración y la música propia;
+     - vídeo SIN MONETIZAR.
+   Base legal invocada: derecho de cita con fines de análisis y crítica (art. 32 LPI en España; 17 U.S.C. §107, fair use, en EE. UU.).
+   Dar crédito NO equivale a tener permiso. Si un autor reclama, se acepta y se retira o se cambia el plano (punto 5).
+2. Las imágenes del juego son de Rockstar Games / Take-Two. Su política solo autoriza usos NO comerciales:
+     «Non-commercial means that you don't make money through the game footage you post or use the material as part of
+      a promotion for a product or service.»
+     (Policy on posting copyrighted Rockstar Games material, actualizada el 10/01/2025)
+3. Por lo tanto, este vídeo se publica SIN MONETIZACIÓN: anuncios desactivados, sin patrocinios, enlaces de afiliado ni productos.
+   Aunque el canal entre en el Programa de Socios de YouTube, este vídeo sigue sin anuncios.
+4. Condiciones que cumple el vídeo (comprobadas en el montaje):
+   - las escenas de misiones (asalto a un banco del análisis de IGN, primera misión «Just Like Paradise» y misión del alquiler de Brian)
+     solo aparecen en el capítulo 4. Antes hay un cartel de aviso con el minuto para saltarlo, y durante todo el capítulo
+     un rótulo rojo de spoiler. Ninguna aparece en el título ni en la miniatura;
+   - fuera quedan los planos con cuerpos, sangre o desnudos, y los fragmentos de otros juegos que IGN intercala en su análisis
+     (Red Dead Redemption 2, GTA IV, GTA V, Cyberpunk 2077 y GTA: San Andreas, rotulados por IGN): cada plano se revisó;
+   - no hay filtraciones, copias anticipadas ni imágenes generadas con IA.
+5. Riesgos y qué hacer:
+   - Content ID: IGN y Rockstar pueden reclamar el vídeo. Una reclamación puede bloquearlo en algunos países o poner anuncios a su favor.
+     No la dispute.
+   - Retirada por copyright: si un autor pide retirar su material, YouTube puede quitar el vídeo y poner un aviso al canal.
+     Si alguien escribe pidiéndolo, hay que sustituir sus planos y volver a montar el vídeo
+     (engine/videos/gp.py: cambiar la fuente del plano y ejecutar build.py gp).
+   - Para reducir el riesgo, se puede pedir permiso a IGN y a los demás autores con la plantilla 00_INFORMES/PLANTILLA_PERMISO_STREAMERS.md.
+
+Clasificación
+  VERDE    = hay una autorización verificable para el uso que se le da en ESTE vídeo (no comercial).
+  AMARILLO = sin autorización expresa; se usa como cita breve, con crédito y sin monetizar, asumiendo el riesgo del punto 5.
+  ROJO     = no autorizado. Descartado.
+
+
+======================================================================================================
+A. MATERIAL OFICIAL DE ROCKSTAR GAMES / TAKE-TWO INTERACTIVE
+======================================================================================================
+
+A1. «An Extended Look», tráiler de lanzamiento y vídeo «Pre-Load Now»
+    Uso en esta versión: NINGUNO (petición del canal: nada del Extended Look ni de los tráileres).
+
+A2. Vídeos oficiales de personajes (8)
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/videos/GTAVI_Videos.zip
+    Uso: 3 planos, 7 s en total (3 archivos distintos)
+    Solo en el capítulo de la historia, para presentar a Jason y a Lucía sin spoilers. Audio silenciado.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A3. Capturas oficiales
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/screenshots/GTAVI_Screenshots.zip
+    Uso: 6 planos, 9 s en total (6 archivos distintos)
+    Solo donde no hay gameplay del tema (golf, caza, observación de aves) y en el capítulo de la historia, para no hacer spoilers.
+    Atribución: en pantalla, con el nombre del archivo oficial.
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A4. Ilustraciones oficiales
+    Archivo oficial: https://media-rockstargames-com.akamaized.net/VI/downloads/artwork_wallpapers/GTAVI_Artwork_Wallpapers.zip
+    Uso: 2 planos, 8 s en total (1 archivo distinto)
+    La miniatura lleva la captura oficial «Jason_and_Lucia_09» (sin logotipo ni spoilers).
+    Decisión: VERDE (no comercial) · ROJO (comercial).
+
+A5. Logotipos y marcas (GTA VI, Rockstar Games)
+    «GTA 6» se escribe como texto para identificar el tema (uso nominativo). La descripción avisa de que el canal no tiene relación
+    con Rockstar ni con Take-Two.
+    Decisión: VERDE en este uso.
+
+A6. Citas breves de reseñas de prensa (IGN, GameSpot, Eurogamer, GamesRadar+, Windows Central, Forbes, Vice, The Guardian,
+    Worthplaying y Digital Foundry), de prensa de Nueva Zelanda (Stuff, NZ Herald) y datos de audiencia (Streams Charts, TalkEsport, Win.gg)
+    Uso: frases de menos de 20 palabras, traducidas, con el medio en pantalla y el enlace en la descripción. Son objeto de análisis.
+    Autorización: derecho de cita (art. 32 LPI; art. 148 LFDA en México; art. 31 de la Ley 23 de 1982 en Colombia;
+    art. 10 de la Ley 11.723 en Argentina; 17 U.S.C. §107 en EE. UU.). Las cifras (notas, fps, resoluciones) son hechos.
+    Decisión: VERDE.
+
+
+======================================================================================================
+B. GAMEPLAY DE TERCEROS PUBLICADO TRAS EL LANZAMIENTO (AMARILLO)
+======================================================================================================
+Origen: vídeos publicados en YouTube el 18 y el 19/11/2026. Se obtuvieron de sus copias públicas en Internet Archive (archive.org),
+porque YouTube bloquea la descarga desde el servidor de producción. Ese bloqueo no se esquivó.
+Se eligieron por el tema de cada frase. Ejemplos: las opiniones de IGN van sobre el análisis en vídeo de IGN, el rendimiento sobre
+sus vídeos en Xbox Series X, Series S y PS5 Pro, y la policía sobre una persecución de seis estrellas.
+Uso total: 134 planos, 393 s en total (10 archivos distintos)
+Ninguno tiene licencia Creative Commons. Para cada uno: sin permiso expreso · crédito en pantalla y en la descripción · sin monetizar.
+
+Detalle por vídeo (autor · título · enlace original · licencia · planos y segundos · dónde aparece en el vídeo):
+- IGN · «Grand Theft Auto 6 (GTA 6) Review» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=agBEh5aZ_Go
+  Copia usada: https://archive.org/details/youtube-agBEh5aZ_Go
+  Sin licencia de reutilización: cita breve con crédito · 70 planos, 210 s · aparece en 0:00, 0:03, 0:09, 0:19, 0:20, 0:21, 0:24, 0:54, 1:17, 1:38, 1:50, 1:55 …
+- IGN · «GTA 6 Gameplay on Xbox Series X, Finally!» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=w9Y1xXSzQbs
+  Copia usada: https://archive.org/details/youtube-w9Y1xXSzQbs
+  Sin licencia de reutilización: cita breve con crédito · 28 planos, 78 s · aparece en 2:48, 2:49, 2:50, 3:01, 3:03, 3:05, 3:09, 3:19, 3:38, 4:44, 4:50, 4:52 …
+- Lootward · «What Happens If You Get 6 Stars in GTA 6» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=ORYwlJXszi4
+  Copia usada: https://archive.org/details/youtube-ORYwlJXszi4
+  Sin licencia de reutilización: cita breve con crédito · 9 planos, 33 s · aparece en 0:15, 5:16, 5:31, 5:34, 5:42, 6:00, 6:14, 6:21, 7:11
+- IGN · «15 Minutes of GTA 6 PS5 Pro Gameplay (First Mission)» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=3PiR0G3rVw8
+  Copia usada: https://archive.org/details/youtube-3PiR0G3rVw8
+  Sin licencia de reutilización: cita breve con crédito · 8 planos, 20 s · aparece en 4:26, 4:33, 4:36, 4:38, 4:39, 4:42, 4:43, 7:57
+- Sirloin1 · «The Military Base in GTA 6 - First Look» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=nqmpDCbz3lA
+  Copia usada: https://archive.org/details/youtube-nqmpDCbz3lA
+  Sin licencia de reutilización: cita breve con crédito · 5 planos, 15 s · aparece en 2:01, 2:37, 9:16, 9:24, 10:49
+- IGN · «GTA 6 PS5 Pro vs Xbox Series S Gameplay - Closer Than You'd Think» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=aRRNSVwx8UM
+  Copia usada: https://archive.org/details/youtube-aRRNSVwx8UM
+  Sin licencia de reutilización: cita breve con crédito · 3 planos, 12 s · aparece en 6:58, 7:45, 7:52
+- IGN · «GTA 6: Gorgeous Underwater Gameplay | Scuba Diving & Treasure Hunting» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=JKjf8-mt1X8
+  Copia usada: https://archive.org/details/youtube-JKjf8-mt1X8
+  Sin licencia de reutilización: cita breve con crédito · 5 planos, 9 s · aparece en 1:58, 3:43, 6:10, 8:11, 9:30
+- RedArcade · «GTA 6 FAILS - #1 (GTA 6 Funny Moments)» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=0zFpvGl7a3A
+  Copia usada: https://archive.org/details/youtube-0zFpvGl7a3A
+  Sin licencia de reutilización: cita breve con crédito · 2 planos, 6 s · aparece en 9:43, 10:05
+- Swiss001 · «I Stole An Airliner In GTA 6 And It Went Wrong» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=9K-S0pNsRu4
+  Copia usada: https://archive.org/details/youtube-9K-S0pNsRu4
+  Sin licencia de reutilización: cita breve con crédito · 2 planos, 6 s · aparece en 3:16, 10:47
+- IGN · «GTA 6 Series S Gameplay - It's Shockingly Good» (publicado el 2026-11-18)
+  https://www.youtube.com/watch?v=7j-Ylv-BSXk
+  Copia usada: https://archive.org/details/youtube-7j-Ylv-BSXk
+  Sin licencia de reutilización: cita breve con crédito · 2 planos, 4 s · aparece en 4:00, 7:30
+
+Notas:
+  - «RedArcade» es una recopilación de momentos de directos. En sus planos se ve también el nombre del streamer original,
+    que RedArcade muestra en pantalla.
+  - Swiss001 tiene su cámara en una esquina: sus planos van encuadrados para dejarla fuera.
+  - Los 14 vídeos con licencia CC BY de CLIPS_POSTLANZAMIENTO_CC.md no se pudieron usar: no hay copia en Internet Archive
+    y YouTube bloquea la descarga. Con ellos el riesgo sería menor, porque su licencia permite reutilizarlos citando al autor.
+
+
+======================================================================================================
+C. MATERIAL QUE NO SE USA
+======================================================================================================
+C1. Filtraciones, copias anticipadas, imágenes del hackeo de 2022 y vídeos filtrados en agosto de 2026
+    No se buscaron ni se usaron. Decisión: ROJO.
+C2. Imágenes generadas con IA que imitan el juego
+    No se usan. Decisión: no aplica.
+C3. Música del juego y de los vídeos de terceros
+    No suena: todo el audio original va silenciado. Decisión: ROJO.
+
+
+======================================================================================================
+D. MATERIAL PROPIO O CON LICENCIA COMERCIAL (VERDE)
+======================================================================================================
+D1. Narración
+    - Voz sintética generada con Chatterbox Multilingual (Resemble AI, licencia MIT). Lleva marca de agua inaudible Perth.
+    - Referencia de voz: corpus OpenSLR SLR72, locutora anónima cof_03034 (Google, CC BY-SA 4.0). Se atribuye en la descripción.
+    - Divulgación: marcar «Contenido alterado o sintético: Sí» en YouTube Studio.
+D2. Música y efectos
+    Compuestos por código para este vídeo (motor del canal, engine/audio.py). Sin samples de terceros.
+D3. Gráficos, rótulos, subtítulos y miniatura
+    Diseño propio (Skia). Tipografías con licencia SIL Open Font License.
+
+
+======================================================================================================
+E. CÓMO PEDIR PERMISO O UNA LICENCIA
+======================================================================================================
+1. A los autores del gameplay (IGN y los demás del apartado B): adapta 00_INFORMES/PLANTILLA_PERMISO_STREAMERS.md.
+   Indica qué fragmentos usas (recursos/registro_de_planos.csv y recursos/creditos_gameplay.json), que van con crédito
+   y que el vídeo no se monetiza. Guarda la respuesta por escrito.
+2. A Rockstar Games / Take-Two, solo si en el futuro quieres monetizar: usa los canales oficiales que publiquen en
+   support.rockstargames.com y take2games.com. No inventamos direcciones.
+3. Sin respuesta afirmativa por escrito, el vídeo sigue sin monetizar.

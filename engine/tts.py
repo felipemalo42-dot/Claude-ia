@@ -1,43 +1,77 @@
-"""Narración en español latinoamericano con Kokoro-82M (licencia Apache-2.0).
+"""Narración en español con Supertonic 3 (voz femenina, 44,1 kHz) + verificación y alineación automáticas.
 
-- Fonemización propia con espeak-ng en variante `es-419` (seseo, yeísmo): evita el
-  acento castellano que produce la variante `es`.
-- Diccionario de pronunciación para nombres en inglés (Jason → "Yéison", etc.).
-- Síntesis frase a frase: devuelve marcas de tiempo exactas para SRT y para sincronizar
-  la animación con la voz.
+- Motor de voz: Supertonic 3 (Supertone) vía sherpa-onnx. Código MIT; pesos del modelo bajo licencia
+  OpenRAIL-M (uso comercial permitido con restricciones de uso responsable). Voces preestablecidas
+  del propio modelo: no imitan a ninguna persona conocida.
+- Diccionario de pronunciación: los nombres en inglés se reescriben con ortografía española
+  ("Jason" → "Yéison") para que el modelo no cambie a entonación inglesa.
+- Síntesis por párrafos (varias frases seguidas) para que el ritmo y las pausas suenen naturales.
+- Cada toma se verifica con reconocimiento de voz (Parakeet TDT v3): si el texto reconocido no coincide
+  con el guion, se repite con otra semilla. El mismo reconocedor da el tiempo exacto de cada palabra,
+  que se usa para subtítulos y para sincronizar la animación.
 
-Modelos (no incluidos en el repositorio por tamaño): descarga
-https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_0.tar.bz2
-y apunta la variable de entorno KOKORO_DIR a la carpeta descomprimida.
+Modelos (no incluidos en el repositorio por tamaño):
+  https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-supertonic-3-tts-int8-2026-05-11.tar.bz2
+  https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2
+Variables de entorno: SUPERTONIC_DIR y ALIGN_ASR_DIR (carpetas descomprimidas).
 """
-import os, re, numpy as np
-import onnxruntime as ort
-import espeakng_loader
-from phonemizer.backend.espeak.wrapper import EspeakWrapper
-EspeakWrapper.set_library(espeakng_loader.get_library_path())
-EspeakWrapper.set_data_path(espeakng_loader.get_data_path())
-from phonemizer.backend import EspeakBackend
+import difflib, os, re, unicodedata, zlib
+import numpy as np
+from scipy import signal
 
-KOKORO_DIR = os.environ.get("KOKORO_DIR", "/tmp/claude-0/-home-user-Claude-ia/2692e1fb-2c8d-5e01-9751-d8741cc42ebb/scratchpad/voices/kokoro-multi-lang-v1_0")
-SR = 24000
-VOICES = {"host": 29, "analista": 28}  # em_alex (masculina), ef_dora (femenina)
+_SCR = "/tmp/claude-0/-home-user-Claude-ia/2692e1fb-2c8d-5e01-9751-d8741cc42ebb/scratchpad"
+SUPERTONIC_DIR = os.environ.get("SUPERTONIC_DIR", f"{_SCR}/voices/sherpa-onnx-supertonic-3-tts-int8-2026-05-11")
+ALIGN_ASR_DIR = os.environ.get("ALIGN_ASR_DIR", f"{_SCR}/asr/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8")
+SR = 44100
+# Voces de Supertonic 3 (sid 0-4 femeninas F1-F5; 5-9 masculinas M1-M5)
+VOICES = {
+    "host": dict(sid=2, speed=1.06),      # F3: clara, articulada, estilo locutora
+    "copiloto": dict(sid=5, speed=1.06),  # M1: animada (segunda voz ocasional)
+}
+STEPS = int(os.environ.get("TTS_STEPS", "16"))
 
 # Pronunciación: (regex, reemplazo hablado). Solo afecta al audio, nunca a subtítulos.
 PRON = [
+    # GTA6_VIDEO_LANZAMIENTO (post lanzamiento): medios y nombres
+    (r"\bWindows Central\b", "Uíndous Séntral"), (r"\bGameSpot\b", "Guéim Spot"), (r"\bGamesRadar\b", "Guéims Réidar"), (r"\bEurogamer\b", "Iúrogueimer"),
+    (r"\bRockstar Games\b", "Rokstar Guéims"),
+    (r"\bIGN\b", "i ge ene"), (r"\bForbes\b", "Forbs"), (r"\bMetacritic\b", "Metacrític"), (r"\bOpenCritic\b", "Óupen Crític"),
+    (r"\bSam Houser\b", "Sam Jáuser"), (r"\bJust Like Paradise\b", "Yast Laik Páradais"), (r"\bBackyard American Mania\b", "Bákyard Amérikan Méinia"), (r"\bThe Gentrifier\b", "Di Yéntrifaier"), (r"\bHamlet\b", "Jámlet"), (r"\bImponte Phoenix\b", "Impónte Fínix"), (r"\bLos Santos\b", "Los Santos"),
+    (r"\bPSSR\b", "pe ese ese erre"), (r"\b4K\b", "cuatro ka"), (r"\bStreams Charts\b", "Strims Charts"), (r"\bPlayStation Network\b", "Pleistéishon Nétuork"),
+    (r"\bThe Guardian\b", "Di Guárdian"), (r"\bDigital Foundry\b", "Díyital Fáundri"), (r"\bWorthplaying\b", "Uórzpleiing"),
+    (r"\bVice\b(?! City)", "Vais"), (r"\b(\d+)p\b", r"\1 pe"), (r"(\d),(\d)", r"\1 coma \2"),
+    # GTA6_VIDEO_LANZAMIENTO: nombres oficiales en inglés
+    (r"\bOnly Raw Records\b", "Óunli Ro Récords"), (r"\bSnapmatic\b", "Snápmatic"), (r"\bBae-Luxe\b", "Béi Lux"), (r"\bRoxy\b", "Róxi"),
+    (r"\bElectric Fang\b", "Eléctric Fang"), (r"\bStock 305\b", "Stok tres cero cinco"), (r"\bGrotti Cheetah\b", "Gróti Chíta"),
+    (r"\bSqualo\b", "Scuálo"), (r"\bVapid Stanier\b", "Vápid Stánier"), (r"\bLiberty City\b", "Líberti Síti"),
+    (r"\bRockstar North\b", "Rokstar Norz"), (r"\bPC Gamer\b", "pe ce Guéimer"), (r"\bNewsweek\b", "Niúsuik"), (r"\bGrand Theft Auto\b", "Grand Zeft Óto"), (r"\bSkunk Ape\b", "Escónk Eip"),
+    (r"\bKirk\b", "Kerk"), (r"\bDodo Rising\b", "Dódo Ráising"), (r"\bKarl McKittrick\b", "Karl Makítrik"), (r"\bKey Lento\b", "Ki Lento"),
+    (r"\bParrot Paradise\b", "Párot Páradais"), (r"\bBrian\b", "Bráian"), (r"\bRob Nelson\b", "Rob Nélson"), (r"\bwasted\b", "uéisted"), (r"\bstriptease\b", "estriptís"),
+    (r"\binfluencer\b", "influénser"), (r"\bXbox Series\b(?! [XS])", "Équis box Síries"), (r"\bTwitch\b", "Tuích"), (r"\bLori\b", "Lóri"),
+    # VIDEO_EXTRA (Vice City capa por capa): nombres propios en inglés
+    (r"\bOcean Beach Realty Company\b", "Óushen Bich Rílti Cómpani"), (r"\bOcean Beach\b", "Óushen Bich"), (r"\bOcean Drive\b", "Óushen Dráiv"),
+    (r"\bOcean View Hotel\b", "Óushen Viu Hotel"), (r"\bMiami Beach\b", "Miami Bich"), (r"\bSouth Beach\b", "Sáuz Bich"),
+    (r"\bMiami Vice\b", "Maiami Vais"), (r"\bMiami-Dade\b", "Miami Déid"), (r"\bMichael Mann\b", "Máikol Man"), (r"\bMann\b", "Man"),
+    (r"\bLeonard Horowitz\b", "Léonard Jórouits"), (r"\bHorowitz\b", "Jórouits"), (r"\bBarbara Capitman\b", "Bárbara Cápitman"),
+    (r"\bCapitman\b", "Cápitman"), (r"\bL\. Murray Dixon\b", "Él Múrrei Díxon"), (r"\bDixon\b", "Díxon"), (r"\bLummus\b", "Lámus"),
+    (r"\bFriedman's\b", "Frídmans"), (r"\bDeco schmeco\b", "Déco shméco"), (r"\bPhilip Michael Thomas\b", "Fílip Máikol Tómas"),
+    (r"\bLance Vance\b", "Lans Vans"), (r"\bTommy Vercetti\b", "Tómi Verchéti"), (r"\bVercetti\b", "Verchéti"), (r"\bTubbs\b", "Tabs"),
+    (r"\bVintage\b", "Víntach"), (r"\bWelcome to\b", "Güélcom tu"), (r"\bHeat\b", "Jit"), (r"\bNBC\b", "ene be ce"), (r"\bAP\b", "a pe"),
+    (r"\bVictor\b", "Víctor"), (r"\b[Aa]rt déco\b", "art decó"), (r"\bsheriff\b", "shérif"), (r"\bWashington\b", "Uáshinton"),
     (r"\bGTA VI\b", "ge te a seis"), (r"\bGTA 6\b", "ge te a seis"), (r"\bGTA V\b", "ge te a cinco"),
     (r"\bGTA 5\b", "ge te a cinco"), (r"\bGTA\b", "ge te a"),
-    (r"\bJason\b", "Yéison"), (r"\bLucia\b", "Lucía"), (r"\bDuval\b", "Duval"),
+    (r"\bFocus\b", "Fóucus"), (r"\bJason\b", "Yéison"), (r"\bLucia\b", "Lucía"), (r"\bDuval\b", "Duval"),
     (r"\bVice City\b", "Vais Síti"), (r"\bLeonida Keys\b", "Leonida Kis"), (r"\bKeys\b", "Kis"),
     (r"\bGrassrivers\b", "Grasrívers"), (r"\bPort Gellhorn\b", "Port Guélhorn"),
     (r"\bMount Kalaga\b", "Maunt Kalága"), (r"\bKalaga\b", "Kalága"), (r"\bNational Park\b", "Náshonal Park"),
     (r"\bRockstar Games\b", "Rokstar Geims"), (r"\bRockstar\b", "Rokstar"), (r"\bTake-Two\b", "Teik Tu"),
     (r"\bPlayStation 5\b", "Pleistéishon cinco"), (r"\bPlayStation\b", "Pleistéishon"), (r"\bPS5 Pro\b", "pe ese cinco Pro"),
-    (r"\bPS5\b", "pe ese cinco"), (r"\bPS4\b", "pe ese cuatro"), (r"\bPS Store\b", "pe ese Stor"),
+    (r"\bPS5\b", "pe ese cinco"), (r"\bPS4\b", "pe ese cuatro"), (r"\bPS3\b", "pe ese tres"), (r"\bPS Store\b", "pe ese Stor"),
     (r"\bXbox Series X\|S\b", "Équis box Síries Equis y Ese"), (r"\bXbox Series X\b", "Équis box Síries Equis"),
     (r"\bXbox Series S\b", "Équis box Síries Ese"), (r"\bSeries X\b", "Síries Equis"), (r"\bSeries S\b", "Síries Ese"),
     (r"\bXbox\b", "Équis box"), (r"\bStore\b", "Stor"), (r"\bUltimate\b", "Áltimet"),
     (r"\bonline\b", "onláin"), (r"\bOnline\b", "Onláin"), (r"\bplay\b", "plei"), (r"\bShorts\b", "shorts"),
-    (r"\btráiler\b", "tráiler"), (r"\btrailer\b", "tráiler"), (r"\bspoilers?\b", "espóiler"),
+    (r"\btráiler\b", "tráiler"), (r"\btrailer\b", "tráiler"), (r"\bspoilers\b", "espóilers"), (r"\bspoiler\b", "espóiler"),
     (r"\bGame Informer\b", "Geim Infórmer"), (r"\bExtended Look\b", "Extended Luk"),
     (r"\bFlorida Man\b", "Flórida Man"), (r"\bLeonida Man\b", "Leonida Man"),
     (r"\bCal Hampton\b", "Kal Jámpton"), (r"\bBoobie Ike\b", "Búbi Aik"), (r"\bDre'Quan Priest\b", "Drikuán Prist"),
@@ -57,7 +91,7 @@ PRON = [
     (r"\bupdate\b", "ápdeit"), (r"\bpatch\b", "pach"), (r"\bpreload\b", "prilóud"), (r"\bslow motion\b", "slou móshon"),
     (r"\bwanted\b", "uónted"), (r"\bfeed\b", "fid"), (r"\binfluencers?\b", "influénser"), (r"\bmemes?\b", "mem"),
     (r"\bNewswire\b", "Niúsguaier"), (r"\bCloud Gaming\b", "Cláud Guéimin"), (r"\bCustoms\b", "Cástoms"),
-    (r"\bOne-Eyed Willie's\b", "Uán Áid Uílis"), (r"\bRideout\b", "Ráidaut"), (r"\bWeazel News\b", "Uísel Nius"),
+    (r"\bOne-Eyed Willie's\b", "Uán Áid Uílis"), (r"\bRideout\b", "Ráidaut"), (r"\bWeazel News\b", "Uísel Nius"), (r"\bBig Ball Burger\b", "Big Bol Bérguer"), (r"\bzapping\b", "sápin"), (r"\blike\b", "láik"), (r"\bHauners\b", "Jáuners"), (r"\bSouthwind\b", "Sáuzuind"), (r"\bKey Lento\b", "Ki Lento"), (r"\bHamlet\b", "Jámlet"), (r"\bCapri\b", "Cápri"), (r"\bArthur Morgan\b", "Árzur Mórgan"), (r"\bRed Dead Redemption\b", "Red Ded Ridémpshon"), (r"\bwestern\b", "wéstern"), (r"\bwaffles\b", "guáfols"), (r"\bBrad Law\b", "Brad Lo"), (r"\bHank\b", "Jank"), (r"\bStreet Trash\b", "Strit Trash"), (r"\bTime Jackers\b", "Taim Yákers"), (r"\bTenebrae Lux\b", "Ténebre Lux"), (r"\bBang For Your Buck\b", "Bang for yur Bak"), (r"\bshooter\b", "shúter"), (r"\bcyberpunk\b", "sáiberpank"), (r"\bMoses\b", "Móuses"), (r"\bVespucci\b", "Vespúchi"), (r"\bFreddie\b", "Frédi"), (r"\bPaul Walker\b", "Pol Uóker"), (r"\bLuigi\b", "Luíyi"), (r"\bO'Conner\b", "Ocónor"), (r"\bPlayStation 2\b", "Pleistéishon dos"), (r"\bRockstar\b(?! Games| North)", "Rokstar"), (r"\bBonnie y Clyde\b", "Bóni y Cláid"), (r"\bWind Chimes\b", "Uind Cháims"), (r"\bKlebitz\b", "Klébits"), (r"\bPackie McReary\b", "Páki Macríri"), (r"\bNiko Bellic\b", "Níko Bélik"), (r"\bGiorgio Gallo\b", "Yóryo Gálo"), (r"\bGiorgio\b", "Yóryo"), (r"\bGigi\b", "Yíyi"), (r"\bTrinity Apartments\b", "Tríniti Apártments"), (r"\bTrinity\b", "Tríniti"), (r"\bSlice of Life\b", "Sláis of Láif"), (r"\bMichael De Santa\b", "Máikol De Sánta"), (r"\bFranklin Clinton\b", "Fránklin Clínton"), (r"\bAlderney\b", "Óldernei"), (r"\bDexter Morgan\b", "Déxter Mórgan"), (r"\bOlaf\b", "Ólaf"), (r"\bWade\b", "Uéid"), (r"\bKate\b", "Kéit"), (r"\bCJ\b", "Si Yei"), (r"\bMichael\b", "Máikol"), (r"\bJohnny\b", "Yóni"), (r"\bJimmy\b", "Yími"), (r"\bRoman\b", "Róman"), (r"\bFloyd\b", "Flóid"), (r"\bDeborah\b", "Débora"), (r"\bDexter\b", "Déxter"), (r"\bSchreier\b", "Shráier"), (r"\bBloomberg\b", "Blúmberg"), (r"\bProject Americas\b", "Próyect Américas"),
     (r"\bJustice\b", "Yóstis"), (r"\bNetflix\b", "Nétflix"), (r"\bYouTube\b", "Yutub"), (r"\bTikTok\b", "Tíktok"),
     (r"\bReddit\b", "Rédit"), (r"\bGoogle\b", "Gúgol"), (r"\bAndroid\b", "Ándroid"), (r"\biPhone\b", "áifon"),
     (r"\bWindows\b", "Uíndous"), (r"\blink\b", "link"), (r"\bbeta\b", "beta"), (r"\bcheat\b", "chit"),
@@ -75,62 +109,231 @@ def split_markup(text):
 def spoken(text):
     for rx, rep in _PRON:
         text = rx.sub(rep, text)
-    text = text.replace("—", ", ").replace("–", ", ").replace("…", "...").replace("%", " por ciento")
+    text = re.sub(r"\s*[—–]\s*", ", ", text).replace("…", "...").replace("%", " por ciento")
+    text = digits_to_words(text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
-class Kokoro:
-    def __init__(self, d=KOKORO_DIR):
-        so = ort.SessionOptions(); so.intra_op_num_threads = int(os.environ.get("TTS_THREADS", "4"))
-        self.sess = ort.InferenceSession(f"{d}/model.onnx", so, providers=["CPUExecutionProvider"])
-        self.vocab = {}
-        for line in open(f"{d}/tokens.txt", encoding="utf-8"):
-            line = line.rstrip("\n")
-            if not line: continue
-            sym, idx = line.rsplit(" ", 1) if not line.startswith(" ") else (" ", line.strip())
-            self.vocab[sym] = int(idx)
-        self.voices = np.fromfile(f"{d}/voices.bin", dtype=np.float32).reshape(-1, 510, 256)
-        self.ph = EspeakBackend("es-419", preserve_punctuation=True, with_stress=True,
-                                language_switch="remove-flags")
 
-    def phonemes(self, text):
-        p = self.ph.phonemize([text], strip=True)[0]
-        return p
-
-    def synth(self, text, voice="host", speed=1.0):
-        ph = self.phonemes(text)
-        ids = [self.vocab[c] for c in ph if c in self.vocab]
-        if len(ids) > 500:
-            raise ValueError(f"Frase demasiado larga para Kokoro ({len(ids)} tokens): {text[:60]}")
-        sid = VOICES.get(voice, voice)
-        style = self.voices[sid][min(len(ids), 509)].reshape(1, 256)
-        tok = np.array([[0] + ids + [0]], dtype=np.int64)
-        out = self.sess.run(None, {"tokens": tok, "style": style, "speed": np.array([speed], dtype=np.float32)})[0]
-        a = np.asarray(out, dtype=np.float32).reshape(-1)
-        return trim(a)
+def split_markup(text):
+    """'{sub|habla}' → (subtítulo, texto hablado)."""
+    sub = re.sub(r"\{([^|}]*)\|([^}]*)\}", r"\1", text)
+    spk = re.sub(r"\{([^|}]*)\|([^}]*)\}", r"\2", text)
+    return sub, spk
 
 
-def trim(a, thr=0.008, pad=0.03):
-    env = np.convolve(np.abs(a), np.ones(240) / 240, "same")
-    idx = np.where(env > thr)[0]
+def spoken(text):
+    for rx, rep in _PRON:
+        text = rx.sub(rep, text)
+    text = re.sub(r"\s*[—–]\s*", ", ", text).replace("…", "...").replace("%", " por ciento")
+    text = text.replace("“", "").replace("”", "").replace("«", "").replace("»", "").replace('"', "")
+    text = digits_to_words(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def trim(a, sr=SR, rel=0.008, pad=0.12):
+    """Recorta silencio inicial y final (umbral relativo al pico)."""
+    if len(a) == 0: return a
+    w = max(1, int(0.01 * sr)); env = np.convolve(np.abs(a), np.ones(w) / w, "same")
+    idx = np.where(env > rel * (np.abs(a).max() + 1e-9))[0]
     if len(idx) == 0: return a
-    s = max(0, idx[0] - int(pad * SR)); e = min(len(a), idx[-1] + int(pad * SR))
-    return a[s:e]
+    s = max(0, idx[0] - int(pad * sr)); e = min(len(a), idx[-1] + int(pad * sr))
+    a = a[s:e].copy(); f = min(len(a) // 2, int(0.012 * sr))
+    if f > 1: a[:f] *= np.linspace(0, 1, f); a[-f:] *= np.linspace(1, 0, f)  # sin clics en los cortes
+    return a
 
 
-SENT_RX = re.compile(r"(?<=[\.\?\!…:])\s+(?=[¿¡A-ZÁÉÍÓÚÑ0-9\"«(])")
-
-
-def sentences(text):
-    parts = [p.strip() for p in SENT_RX.split(text.strip()) if p.strip()]
-    return parts
+def level(a, target_rms=0.2):
+    """Iguala el volumen de cada toma (RMS de los tramos con voz)."""
+    w = 1024; n = len(a) // w
+    if n < 2: return a
+    fr = np.sqrt((a[: n * w].reshape(n, w) ** 2).mean(axis=1)); act = fr[fr > 0.1 * fr.max()]
+    g = target_rms / (np.sqrt((act ** 2).mean()) + 1e-9)
+    return a * min(g, 8.0)
 
 
 def pause_after(s):
     s = s.rstrip()
-    if s.endswith("..."): return 0.48
-    if s.endswith("?") or s.endswith("!"): return 0.38
-    if s.endswith(":"): return 0.28
-    if s.endswith("."): return 0.33
-    return 0.22
+    if s.endswith("..."): return 0.50
+    if s.endswith("?") or s.endswith("!"): return 0.42
+    if s.endswith(":"): return 0.30
+    if s.endswith("."): return 0.40
+    return 0.25
+
+
+_U = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "trece", "catorce", "quince",
+      "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte", "veintiuno", "veintidós", "veintitrés", "veinticuatro", "veinticinco",
+      "veintiséis", "veintisiete", "veintiocho", "veintinueve"]
+_T = {3: "treinta", 4: "cuarenta", 5: "cincuenta", 6: "sesenta", 7: "setenta", 8: "ochenta", 9: "noventa"}
+_C = {2: "doscientos", 3: "trescientos", 4: "cuatrocientos", 5: "quinientos", 6: "seiscientos", 7: "setecientos", 8: "ochocientos", 9: "novecientos"}
+
+
+def n2w(n):
+    """Entero → palabras en español (lista)."""
+    if n < 30: return [_U[n]]
+    if n < 100:
+        t, u = divmod(n, 10); return [_T[t]] + (["y", _U[u]] if u else [])
+    if n < 1000:
+        c, r = divmod(n, 100)
+        head = ["cien"] if (c == 1 and r == 0) else (["ciento"] if c == 1 else [_C[c]])
+        return head + (n2w(r) if r else [])
+    if n < 1_000_000:
+        m, r = divmod(n, 1000); head = ["mil"] if m == 1 else n2w(m) + ["mil"]
+        return head + (n2w(r) if r else [])
+    m, r = divmod(n, 1_000_000); head = ["un", "millón"] if m == 1 else n2w(m) + ["millones"]
+    return head + (n2w(r) if r else [])
+
+
+_NUM_RX = re.compile(r"(?<![A-Za-z0-9])(?:\d{1,3}(?:\.\d{3})+|\d+)(?![A-Za-z0-9])")
+
+
+def digits_to_words(text):
+    """Convierte los números escritos con cifras en palabras ('2027' → 'dos mil veintisiete')."""
+    def rep(m):
+        v = int(m.group(0).replace(".", ""))
+        return " ".join(n2w(v)) if v < 10 ** 9 else m.group(0)
+    return _NUM_RX.sub(rep, text)
+
+
+_EQUIV = {"gb": ["gigas"], "tb": ["teras"], "ps5": ["ps", "cinco"], "ps4": ["ps", "cuatro"], "ps3": ["ps", "tres"], "vs": ["versus"],
+          "playstation5": ["playstation", "cinco"], "pc": ["pc"], "fps": ["cuadros", "por", "segundo"], "untera": ["un", "tera"], "tera": ["tera"], "ee": ["estados"], "uu": ["unidos"]}
+
+
+def norm_tokens(word):
+    """Normaliza una palabra a tokens comparables: minúsculas, sin tildes ni signos, cifras en palabras."""
+    w = digits_to_words(word.lower())
+    s = unicodedata.normalize("NFD", w); s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    out = []
+    s = s.replace("%", " por ciento ")
+    for tk in re.findall(r"[a-z0-9]+", s):
+        out += _EQUIV.get(tk, [tk])
+    return out
+
+
+def canon(text):
+    """Texto → lista de tokens canónicos (para puntuar la coincidencia guion ↔ voz reconocida)."""
+    toks = []
+    for w in text.split(): toks += norm_tokens(w)
+    for i in range(1, len(toks)):  # 'GTA VI' / 'GTA V' → seis / cinco
+        if toks[i - 1] == "gta" and toks[i] in ("vi", "v"): toks[i] = "seis" if toks[i] == "vi" else "cinco"
+    return toks
+
+
+class Supertonic:
+    sr = SR
+
+    def __init__(self, d=SUPERTONIC_DIR, threads=None):
+        import sherpa_onnx
+        self._so = sherpa_onnx
+        threads = threads or int(os.environ.get("TTS_THREADS", "4"))
+        cfg = sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
+            supertonic=sherpa_onnx.OfflineTtsSupertonicModelConfig(
+                duration_predictor=f"{d}/duration_predictor.int8.onnx", text_encoder=f"{d}/text_encoder.int8.onnx",
+                vector_estimator=f"{d}/vector_estimator.int8.onnx", vocoder=f"{d}/vocoder.int8.onnx",
+                tts_json=f"{d}/tts.json", unicode_indexer=f"{d}/unicode_indexer.bin", voice_style=f"{d}/voice.bin"),
+            debug=False, num_threads=threads, provider="cpu"))
+        if not cfg.validate():
+            raise RuntimeError(f"No se encontró el modelo Supertonic 3 en {d}. Ver instrucciones en engine/README.md")
+        self.tts = sherpa_onnx.OfflineTts(cfg)
+
+    def synth(self, text, voice="host", speed=1.0, seed=0, steps=None):
+        v = VOICES.get(voice, VOICES["host"])
+        g = self._so.GenerationConfig(); g.sid = v["sid"]; g.num_steps = steps or STEPS; g.speed = v["speed"] * speed
+        g.extra["lang"] = "es"; g.extra["seed"] = int(seed); g.extra["max_len"] = 2000
+        a = self.tts.generate(text, g)
+        return np.asarray(a.samples, dtype=np.float32)
+
+
+class Aligner:
+    """Reconocimiento de voz con tiempos por palabra (solo como herramienta de verificación y sincronización)."""
+
+    def __init__(self, d=ALIGN_ASR_DIR, threads=None):
+        import sherpa_onnx
+        if not os.path.exists(f"{d}/encoder.int8.onnx"):
+            raise RuntimeError(f"No se encontró el reconocedor de voz en {d}. Ver instrucciones en engine/README.md")
+        threads = threads or int(os.environ.get("TTS_THREADS", "4"))
+        self.rec = sherpa_onnx.OfflineRecognizer.from_transducer(
+            encoder=f"{d}/encoder.int8.onnx", decoder=f"{d}/decoder.int8.onnx", joiner=f"{d}/joiner.int8.onnx",
+            tokens=f"{d}/tokens.txt", model_type="nemo_transducer", num_threads=threads)
+
+    def transcribe(self, x, sr):
+        """→ (texto, [(palabra, inicio, fin)])"""
+        PAD0, PAD1 = 0.32, 0.56  # silencio de relleno: el reconocedor falla menos en la primera y la última palabra
+        x16 = signal.resample_poly(x, 16000, sr).astype(np.float32)
+        x16 = np.concatenate([np.zeros(int(PAD0 * 16000), np.float32), x16, np.zeros(int(PAD1 * 16000), np.float32)])
+        st = self.rec.create_stream(); st.accept_waveform(16000, x16); self.rec.decode_stream(st); r = st.result
+        words = []; cur = None
+        durs = list(getattr(r, "durations", [])) or [0.16] * len(r.tokens)
+        for tok, t, d in zip(r.tokens, [tt - PAD0 for tt in r.timestamps], durs):
+            if tok.startswith(" ") or cur is None:
+                if cur and cur[0]: words.append(cur)
+                cur = [tok.strip(), None if not tok.strip() else t, t + d]
+            else:
+                cur[0] += tok
+                if cur[1] is None: cur[1] = t
+                cur[2] = t + d
+        if cur and cur[0]: words.append(cur)
+        dur = len(x) / sr
+        # el fin de cada palabra no puede pasar del último instante con voz antes de la palabra siguiente
+        w = max(1, int(0.01 * sr)); env = np.convolve(np.abs(x), np.ones(w) / w, "same"); act = env > 0.03 * (env.max() + 1e-9)
+        out = []
+        words = [wd for wd in words if wd[1] is not None]
+        for i, (wd, s0, e0) in enumerate(words):
+            nxt = words[i + 1][1] if i + 1 < len(words) else dur
+            e0 = min(e0, nxt, dur); a = int(s0 * sr); b = max(a + 1, int(e0 * sr))
+            seg = np.where(act[a:b])[0]
+            e1 = (a + seg[-1]) / sr + 0.02 if len(seg) else e0
+            out.append((wd, max(0.0, s0), max(min(e1, e0 + 0.02), s0 + 0.03)))
+        return r.text, out
+
+    def align(self, x, sr, sub_words, expected_text=None):
+        """Alinea las palabras del subtítulo con el audio.
+        → ([(inicio, fin)] por palabra, puntuación 0-1 de coincidencia con el guion, texto reconocido)"""
+        text, hyp = self.transcribe(x, sr)
+        dur = len(x) / sr
+        w = max(1, int(0.01 * sr)); env = np.convolve(np.abs(x), np.ones(w) / w, "same"); on = np.where(env > 0.03 * (env.max() + 1e-9))[0]
+        t_on = on[0] / sr if len(on) else 0.0; t_off = on[-1] / sr if len(on) else dur
+        E = []; emap = []
+        for i, sw in enumerate(sub_words):
+            for tk in norm_tokens(sw): E.append(tk); emap.append(i)
+        Hh = []; hmap = []
+        for j, (hw, hs, he) in enumerate(hyp):
+            for tk in norm_tokens(hw): Hh.append(tk); hmap.append(j)
+        for toks in (E, Hh):
+            for i in range(1, len(toks)):
+                if toks[i - 1] == "gta" and toks[i] in ("vi", "v"): toks[i] = "seis" if toks[i] == "vi" else "cinco"
+        sm = difflib.SequenceMatcher(None, E, Hh, autojunk=False)
+        times = [None] * len(sub_words)
+        for a, b, n in sm.get_matching_blocks():
+            for k in range(n):
+                i = emap[a + k]; j = hmap[b + k]
+                s, e = hyp[j][1], hyp[j][2]
+                times[i] = (s, e) if times[i] is None else (min(times[i][0], s), max(times[i][1], e))
+        # puntuación: guion hablado (números en palabras, nombres con su ortografía normal) frente a lo reconocido
+        Es = canon(expected_text) if expected_text else E
+        score = difflib.SequenceMatcher(None, Es, Hh, autojunk=False).ratio() if Es else 1.0
+        # palabras sin ancla: se reparte el hueco por número de caracteres
+        i = 0; n = len(sub_words)
+        while i < n:
+            if times[i] is not None: i += 1; continue
+            j = i
+            while j < n and times[j] is None: j += 1
+            left = times[i - 1][1] if i > 0 else t_on
+            right = times[j][0] if j < n else t_off
+            right = max(right, left + 0.01)
+            tot = sum(len(sub_words[k]) + 1 for k in range(i, j)); acc = 0
+            for k in range(i, j):
+                s = left + (right - left) * acc / tot; acc += len(sub_words[k]) + 1
+                times[k] = (s, left + (right - left) * acc / tot)
+            i = j
+        out = []; prev = 0.0
+        for (s, e) in times:
+            s = min(max(s, prev, 0.0), dur); e = min(max(e, s + 0.03), dur); out.append((s, e)); prev = s
+        if out and t_off - out[-1][1] < 0.5: out[-1] = (out[-1][0], max(out[-1][1], t_off))
+        return out, score, text
+
+
+def take_seed(text, voice):
+    return zlib.crc32((voice + "|" + text).encode("utf-8")) % 100000

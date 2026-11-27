@@ -94,7 +94,7 @@ beat("Las reglas. Todas las pruebas son capturas nuestras, jugando. Nada de spoi
      sc_rules, section="REGLAS (narración lista)", energy=1, trans=("zoom", 0.5), sfx=[("w:capturas", "pop", 0.4), ("w:spoilers", "pop", 0.4), ("w:sin datos", "pop", 0.4)])
 for i, m in enumerate(MYST):
     beat(f"Sobre {['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete'][i]}: {m['q'].capitalize().replace('¿c', '¿C').replace('¿h', '¿H').replace('¿q', '¿Q')} "
-         f"Nuestra predicción fue: {m['pred'].lower()}.",
+         f"Nuestra predicción fue: {m['pred'][0].lower() + m['pred'][1:]}.",
          make_open(i), section=f"SOBRE {i + 1} — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]", hold=8.0, energy=1, trans=("slide_up", 0.5),
          note=f"PROTOCOLO: {TEST[i]}", sfx=[(0.2, "seal", 0.5)])
 beat("", sc_score, dur=8.0, section="MARCADOR — [COMPLETAR CON RESULTADOS REALES]", energy=2, trans=("fade", 0.5))

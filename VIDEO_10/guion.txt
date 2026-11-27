@@ -1,77 +1,77 @@
 GUION — Abrimos los 7 sobres: comprobamos los misterios de GTA 6 jugando (¿acertamos?)
-Formato: Largo (16:9) · POST-LANZAMIENTO · animático de preproducción · Duración: 00:02:40 · Voz: Kokoro (Apache-2.0), español latinoamericano
+Formato: Largo (16:9) · POST-LANZAMIENTO · animático de preproducción · Duración: 00:02:49 · Voz: narradora (Chatterbox Multilingual), español
 ==============================================================================
 
 
 ## GANCHO (narración lista)
 
-[00:00.25] NARRADOR: Hace unos días metimos siete preguntas sobre GTA 6 en sobres sellados, cada una con una predicción y un porcentaje de confianza.
-[00:08.47] NARRADOR: Hoy, con el juego en las manos, los abrimos.
-[00:11.14] NARRADOR: Y vamos a contar los aciertos y los fallos, sin maquillar ninguno.
-[00:15.24] (sin narración · 2.4 s)
+[00:00.25] NARRADORA: Hace unos días metimos siete preguntas sobre GTA 6 en sobres sellados, cada una con una predicción y un porcentaje de confianza.
+[00:08.89] NARRADORA: Hoy, con el juego en las manos, los abrimos.
+[00:11.93] NARRADORA: Y vamos a contar los aciertos y los fallos, sin maquillar ninguno.
+[00:16.92] (sin narración · 2.4 s)
 
 ## REGLAS (narración lista)
 
-[00:17.64] NARRADOR: Las reglas.
-[00:18.77] NARRADOR: Todas las pruebas son capturas nuestras, jugando.
-[00:21.97] NARRADOR: Nada de spoilers de la historia más allá de las primeras horas.
-[00:25.70] NARRADOR: Y si algo todavía no se puede comprobar, lo marcamos como sin datos, no como acierto.
+[00:19.32] NARRADORA: Las reglas.
+[00:20.36] NARRADORA: Todas las pruebas son capturas nuestras, jugando.
+[00:24.04] NARRADORA: Nada de spoilers de la historia más allá de las primeras horas.
+[00:28.68] NARRADORA: Y si algo todavía no se puede comprobar, lo marcamos como sin datos, no como acierto.
 
 ## SOBRE 1 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: Menú principal y Newswire de Rockstar del 19-20 nov.: ¿hay opción online o fecha anunciada?
-[00:31.04] NARRADOR: Sobre uno:
-[00:32.10] NARRADOR: ¿Cuándo llega el online?
-[00:33.91] NARRADOR: Nuestra predicción fue: no antes de 2027.
+[00:35.11] NARRADORA: Sobre uno:
+[00:35.99] NARRADORA: ¿Cuándo llega el online?
+[00:37.59] NARRADORA: Nuestra predicción fue: no antes de 2027.
 
 ## SOBRE 2 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: Menú de ajustes gráficos en PS5 / PS5 Pro / Series X: ¿existe modo rendimiento o 60 fps?
-[00:45.40] NARRADOR: Sobre dos:
-[00:46.42] NARRADOR: ¿Habrá modo a 60 fps?
-[00:49.22] NARRADOR: Nuestra predicción fue: no el día del lanzamiento.
+[00:50.03] NARRADORA: Sobre dos:
+[00:51.15] NARRADORA: ¿Habrá modo a 60 fps?
+[00:54.19] NARRADORA: Nuestra predicción fue: no el día del lanzamiento.
 
 ## SOBRE 3 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: Recorrido fijo de 3 zonas (centro de Vice City, Port Gellhorn, Ambrosia): contar edificios con interior.
-[01:00.32] NARRADOR: Sobre tres:
-[01:01.42] NARRADOR: ¿Cuántos interiores?
-[01:03.04] NARRADOR: Nuestra predicción fue: más que en gta 5.
+[01:05.84] NARRADORA: Sobre tres:
+[01:06.72] NARRADORA: ¿Cuántos interiores?
+[01:08.16] NARRADORA: Nuestra predicción fue: más que en GTA 5.
 
 ## SOBRE 4 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: Misma zona, dos estilos de juego (agresivo vs. discreto) durante 2 h: anotar reacciones del mundo.
-[01:14.11] NARRADOR: Sobre cuatro:
-[01:15.31] NARRADOR: ¿Cuánto pesa el perfil criminal?
-[01:17.63] NARRADOR: Nuestra predicción fue: más en el mundo que en la trama.
+[01:20.58] NARRADORA: Sobre cuatro:
+[01:21.46] NARRADORA: ¿Cuánto pesa el perfil criminal?
+[01:23.46] NARRADORA: Nuestra predicción fue: más en el mundo que en la trama.
 
 ## SOBRE 5 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: 10 días de juego libre: ¿aparece un huracán fuera de misión? Registrar fecha y hora del juego.
-[01:28.97] NARRADOR: Sobre cinco:
-[01:30.17] NARRADOR: ¿Huracanes dinámicos?
-[01:31.94] NARRADOR: Nuestra predicción fue: ambos: clima y misiones.
+[01:35.86] NARRADORA: Sobre cinco:
+[01:36.66] NARRADORA: ¿Huracanes dinámicos?
+[01:38.58] NARRADORA: Nuestra predicción fue: ambos: clima y misiones.
 
 ## SOBRE 6 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: Menú o compendio de fauna: ¿qué especies figuran como legendarias? (sin revelar ubicaciones).
-[01:42.98] NARRADOR: Sobre seis:
-[01:44.05] NARRADOR: ¿Qué animal será legendario?
-[01:46.11] NARRADOR: Nuestra predicción fue: uno emblemático de florida.
+[01:49.92] NARRADORA: Sobre seis:
+[01:50.96] NARRADORA: ¿Qué animal será legendario?
+[01:52.72] NARRADORA: Nuestra predicción fue: uno emblemático de Florida.
 
 ## SOBRE 7 — [GRABAR PRUEBA] + [ESCRIBIR Y GRABAR VEREDICTO]
 
    [VISUAL] PROTOCOLO: Mapa del menú: contar regiones con nombre y anotar zonas nuevas sin spoilers de historia.
-[01:57.31] NARRADOR: Sobre siete:
-[01:58.49] NARRADOR: ¿Hay más de seis regiones?
-[02:00.42] NARRADOR: Nuestra predicción fue: más zonas, no otra gran región.
+[02:05.13] NARRADORA: Sobre siete:
+[02:06.01] NARRADORA: ¿Hay más de seis regiones?
+[02:07.61] NARRADORA: Nuestra predicción fue: más zonas, no otra gran región.
 
 ## MARCADOR — [COMPLETAR CON RESULTADOS REALES]
 
-[02:11.85] (sin narración · 8.0 s)
+[02:20.69] (sin narración · 8.0 s)
 
 ## LLAMADA A LA ACCIÓN (narración lista)
 
-[02:19.85] NARRADOR: ¿Qué otra pregunta quieres que comprobemos jugando?
-[02:23.08] NARRADOR: Déjala en los comentarios.
-[02:24.93] NARRADOR: Y si quieres más pruebas con método, suscríbete a Sal y Asfalto.
+[02:28.69] NARRADORA: ¿Qué otra pregunta quieres que comprobemos jugando?
+[02:31.49] NARRADORA: Déjala en los comentarios.
+[02:33.09] NARRADORA: Y si quieres más pruebas con método, suscríbete a Sal y Asfalto.

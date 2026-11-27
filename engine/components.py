@@ -4,7 +4,8 @@ from gfx import *
 from brand import PAL, wordmark, draw_badge, guide_sign, traffic_light, coast_scene, BRAND
 
 CERT = {"OFICIAL": (PAL["verde"], 0), "DEDUCCIÓN": (PAL["ambar"], 1), "RUMOR": (PAL["rojo"], 2), "SIN CONFIRMAR": (PAL["rojo"], 2),
-        "REPORTADO": (PAL["mar"], None), "HIPÓTESIS": (PAL["ambar"], 1), "COMPROBAR EN EL JUEGO": (PAL["mar"], None)}
+        "REPORTADO": (PAL["mar"], None), "HIPÓTESIS": (PAL["ambar"], 1), "COMPROBAR EN EL JUEGO": (PAL["mar"], None),
+        "DOCUMENTADO": (PAL["verde"], 0), "INTERPRETACIÓN": (PAL["ambar"], 1)}
 
 def cert_tag(c, x, y, kind, a=1.0, size=30, align="left", t=1.0):
     """Etiqueta del semáforo de certeza: mini semáforo + rótulo. t = progreso de aparición 0..1."""
@@ -90,6 +91,7 @@ def thumb_mark(c, x, y, r=34):
     draw_badge(c, x, y, r)
 
 def word_times(sent):
+    if sent.get("words"): return [(w, s, e) for w, s, e in sent["words"]]
     words = sent["text"].split(); tot = sum(len(w) + 1 for w in words); d = sent["end"] - sent["start"]; acc = 0; out = []
     for w in words:
         st = sent["start"] + d * acc / tot; acc += len(w) + 1; out.append((w, st, sent["start"] + d * acc / tot))

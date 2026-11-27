@@ -1,273 +1,281 @@
 1
-00:00:00,250 --> 00:00:04,546
+00:00:00,250 --> 00:00:04,130
 Escribe “GTA 6 descargar PC” en un
 buscador y vas a encontrar botones
 
 2
-00:00:04,546 --> 00:00:08,032
+00:00:04,170 --> 00:00:07,650
 gigantes, contadores de descargas y
 comentarios felices.
 
 3
-00:00:08,362 --> 00:00:09,254
+00:00:07,690 --> 00:00:09,010
 Todo falso.
 
 4
-00:00:09,584 --> 00:00:13,620
+00:00:09,050 --> 00:00:14,486
 Y esta semana, empresas de ciberseguridad
 encontraron lo que hay detrás.
 
 5
-00:00:16,350 --> 00:00:17,846
-Esto es Sal y Asfalto.
+00:00:17,044 --> 00:00:19,004
+Estás en Sal y Asfalto.
 
 6
-00:00:18,177 --> 00:00:21,600
+00:00:19,044 --> 00:00:22,844
 Hoy no hablamos de Leonida: hablamos de la
 trampa que la rodea.
 
 7
-00:00:21,930 --> 00:00:24,382
-Y para eso me acompaña nuestra analista.
+00:00:22,884 --> 00:00:26,074
+Y hoy no vengo sola: traigo copiloto.
 
 8
-00:00:24,712 --> 00:00:25,153
+00:00:26,114 --> 00:00:26,714
 Hola.
 
 9
-00:00:25,483 --> 00:00:28,595
-Vamos a abrir el archivo paso a paso, sin
-tecnicismos.
+00:00:26,754 --> 00:00:29,032
+Yo hago las preguntas que haría
+cualquiera.
 
 10
-00:00:28,925 --> 00:00:31,534
+00:00:29,072 --> 00:00:31,832
 Primero, el dato que desarma toda la
 estafa.
 
 11
-00:00:31,864 --> 00:00:37,041
+00:00:31,872 --> 00:00:38,952
 GTA 6 solo existe en PlayStation 5 y en
 Xbox Series X y Series S.
 
 12
-00:00:37,371 --> 00:00:39,452
+00:00:38,992 --> 00:00:42,582
 No hay versión de PC anunciada.
 
 13
-00:00:39,782 --> 00:00:42,256
+00:00:42,622 --> 00:00:45,302
 Y no hay versión para Android ni para
 iPhone.
 
 14
-00:00:42,586 --> 00:00:46,549
+00:00:45,342 --> 00:00:50,211
 Cualquier archivo que diga lo contrario
 está mintiendo desde el nombre.
 
 15
-00:00:46,879 --> 00:00:48,533
+00:00:50,251 --> 00:00:51,964
 ¿Y por qué cae tanta gente?
 
 16
-00:00:48,913 --> 00:00:51,878
+00:00:52,004 --> 00:00:55,164
 Porque el anzuelo se aprovecha de tres
 cosas reales.
 
 17
-00:00:52,208 --> 00:00:55,707
+00:00:55,204 --> 00:00:59,084
 Hay millones de jugadores sin PS5 ni Xbox
 Series.
 
 18
-00:00:56,037 --> 00:00:57,377
+00:00:59,124 --> 00:01:00,765
 La espera duró años.
 
 19
-00:00:57,707 --> 00:01:00,204
+00:01:00,805 --> 00:01:03,565
 Y en internet abundan los trucos para
 todo.
 
 20
-00:01:00,534 --> 00:01:04,253
+00:01:03,605 --> 00:01:08,230
 La estafa no vende un juego: vende la
 ilusión de no quedarte afuera.
 
 21
-00:01:04,583 --> 00:01:06,367
+00:01:09,068 --> 00:01:10,868
 El anzuelo tiene tres piezas.
 
 22
-00:01:06,697 --> 00:01:08,757
+00:01:10,908 --> 00:01:13,108
 Una página que imita a una tienda.
 
 23
-00:01:09,087 --> 00:01:10,486
+00:01:13,148 --> 00:01:15,782
 Un botón de descarga.
 
 24
-00:01:10,816 --> 00:01:12,989
+00:01:15,822 --> 00:01:18,262
 Y una excusa para que bajes la guardia.
 
 25
-00:01:13,319 --> 00:01:18,801
-La empresa ESET detectó un archivo llamado
-gta6_installer.exe, que en realidad
+00:01:18,302 --> 00:01:23,062
+La empresa de seguridad ESET detectó un
+instalador falso de GTA 6 que en realidad
 
 26
-00:01:18,801 --> 00:01:23,158
+00:01:23,102 --> 00:01:27,874
 transporta Vidar: un programa diseñado
 para robar información.
 
 27
-00:01:23,488 --> 00:01:27,966
+00:01:27,914 --> 00:01:34,186
 Y la firma Cynet encontró otra variante,
 con un ladrón de datos llamado WARDEN.
 
 28
-00:01:28,296 --> 00:01:29,999
+00:01:34,226 --> 00:01:35,945
 ¿Y qué te pide el instalador?
 
 29
-00:01:30,379 --> 00:01:34,981
+00:01:35,985 --> 00:01:40,985
 Justo lo que un juego legítimo nunca te
 pediría: ejecutarlo como administrador,
 
 30
-00:01:34,981 --> 00:01:39,408
+00:01:41,025 --> 00:01:45,945
 ignorar la advertencia de seguridad y
 agregar una excepción en el antivirus.
 
 31
-00:01:39,738 --> 00:01:43,230
+00:01:45,985 --> 00:01:49,884
 En otras palabras: te pide que apagues la
 alarma antes de entrar.
 
 32
-00:01:43,560 --> 00:01:48,067
+00:01:49,924 --> 00:01:54,204
 Según los reportes, este tipo de programa
 busca las contraseñas guardadas en el
 
 33
-00:01:48,067 --> 00:01:52,860
+00:01:54,244 --> 00:01:59,004
 navegador, las cookies de sesión, cuentas
 de Steam y de Roblox, y datos de monederos
 
 34
-00:01:52,860 --> 00:01:53,830
+00:01:59,044 --> 00:02:00,222
 de criptomonedas.
 
 35
-00:01:54,160 --> 00:01:58,560
+00:02:00,262 --> 00:02:04,302
 Las cookies son lo más delicado: con
 ellas, alguien puede entrar a tu cuenta
 
 36
-00:01:58,560 --> 00:01:59,949
+00:02:04,342 --> 00:02:06,764
 sin saber tu contraseña.
 
 37
-00:02:00,279 --> 00:02:03,144
+00:02:06,804 --> 00:02:10,140
 O sea que no pierdes un juego: pierdes tus
 cuentas.
 
 38
-00:02:03,474 --> 00:02:05,447
-No siempre es un ejecutable.
+00:02:10,180 --> 00:02:12,471
+¿Y siempre es un archivo ejecutable?
 
 39
-00:02:05,777 --> 00:02:08,738
+00:02:12,511 --> 00:02:13,431
+No siempre.
+
+40
+00:02:13,471 --> 00:02:16,311
 También circulan otras versiones del mismo
 truco.
 
-40
-00:02:09,068 --> 00:02:13,014
+41
+00:02:16,351 --> 00:02:20,023
 Páginas que te piden completar encuestas
 antes de mostrar el enlace.
 
-41
-00:02:13,344 --> 00:02:17,425
+42
+00:02:20,063 --> 00:02:24,103
 Falsos accesos anticipados o betas que
 exigen un pago por adelantado.
 
-42
-00:02:17,755 --> 00:02:22,073
+43
+00:02:24,143 --> 00:02:28,271
 Y en Android, archivos APK que piden
 permisos que ningún juego necesita.
 
-43
-00:02:22,403 --> 00:02:26,734
-Si ya ejecutaste uno de estos archivos, no
-entres en pánico, pero actúa hoy.
-
 44
-00:02:27,064 --> 00:02:30,478
+00:02:29,413 --> 00:02:31,036
+¿Y si alguien ya lo ejecutó?
+
+45
+00:02:31,076 --> 00:02:33,720
+Que no entre en pánico, pero que actúe
+hoy.
+
+46
+00:02:34,356 --> 00:02:38,076
 Desconecta el equipo de internet y
 analízalo con tu antivirus.
 
-45
-00:02:30,808 --> 00:02:34,926
+47
+00:02:38,116 --> 00:02:41,836
 Cambia tus contraseñas desde otro
 dispositivo limpio, empezando por el
 
-46
-00:02:34,926 --> 00:02:37,574
+48
+00:02:41,876 --> 00:02:44,875
 correo, y cierra todas las sesiones
 abiertas.
 
-47
-00:02:37,904 --> 00:02:40,010
+49
+00:02:44,915 --> 00:02:47,035
 Activa la verificación en dos pasos.
 
-48
-00:02:40,340 --> 00:02:44,703
+50
+00:02:47,075 --> 00:02:50,945
 Y si escribiste la frase de recuperación
 de una billetera de criptomonedas,
 
-49
-00:02:44,703 --> 00:02:49,647
+51
+00:02:50,985 --> 00:02:55,675
 considérala comprometida: mueve los fondos
 a una billetera nueva desde un dispositivo
 
-50
-00:02:49,647 --> 00:02:50,054
+52
+00:02:55,715 --> 00:02:56,425
 limpio.
 
-51
-00:02:50,384 --> 00:02:52,450
+53
+00:02:56,465 --> 00:02:58,585
 Regla rápida para la próxima vez.
 
-52
-00:02:52,780 --> 00:02:57,026
+54
+00:02:58,625 --> 00:03:03,225
 Si no viene de PlayStation Store, de
 Microsoft Store o de una tienda de
 
-53
-00:02:57,026 --> 00:02:58,402
+55
+00:03:03,265 --> 00:03:05,305
 confianza, no es GTA 6.
 
-54
-00:02:58,732 --> 00:03:01,417
+56
+00:03:05,345 --> 00:03:08,185
 Si te pide desactivar el antivirus, es
 malware.
 
-55
-00:03:01,747 --> 00:03:03,907
+57
+00:03:08,225 --> 00:03:11,372
 Y si es gratis, el producto eres tú.
 
-56
-00:03:04,237 --> 00:03:08,710
+58
+00:03:11,412 --> 00:03:15,612
 Comparte este video con ese primo que
 siempre encuentra “versiones especiales”.
 
-57
-00:03:09,040 --> 00:03:13,700
+59
+00:03:15,652 --> 00:03:20,572
 Y si quieres jugar GTA 6 de verdad, en la
 descripción tienes nuestra guía con la
 
-58
-00:03:13,700 --> 00:03:14,632
+60
+00:03:20,612 --> 00:03:22,771
 hora de tu país.
 
-59
-00:03:14,962 --> 00:03:20,057
+61
+00:03:22,811 --> 00:03:28,246
 Suscríbete a Sal y Asfalto: aquí, la única
 descarga que recomendamos es la oficial.

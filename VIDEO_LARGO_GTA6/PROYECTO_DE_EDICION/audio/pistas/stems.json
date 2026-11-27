@@ -1,0 +1,5 @@
+{
+ "ganancia_master": 0.891840426254248,
+ "lufs_entrada": -13.162097494298793,
+ "nota": "mezcla = (voz + musica + efectos) con limitador final a -14 LUFS"
+}

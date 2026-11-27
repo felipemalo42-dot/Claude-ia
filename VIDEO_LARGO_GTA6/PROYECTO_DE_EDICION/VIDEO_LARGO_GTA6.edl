@@ -1,0 +1,772 @@
+TITLE: VIDEO_LARGO_GTA6
+FCM: NON-DROP FRAME
+
+001  IGN6STAR V     C        00:05:55:18 00:05:59:14 00:00:00:18 00:00:04:14
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:55.6
+
+002  IGN6STAR V     C        00:06:02:08 00:06:05:09 00:00:04:14 00:00:07:15
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:02.2
+* PALABRA: «Ahora
+
+003  IGN6STAR V     C        00:04:57:18 00:04:59:04 00:00:07:15 00:00:09:01
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:57.6
+* PALABRA: Escapar es imposible
+
+004  IGN6STAR V     C        00:06:32:15 00:06:36:10 00:00:09:01 00:00:12:25
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:32.5
+* PALABRA: y la policía no se rendirá
+
+005  IGN6STAR V     C        00:06:37:06 00:06:41:14 00:00:12:25 00:00:17:03
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:37.2
+
+006  GFX      V     C        00:00:00:00 00:00:04:16 00:00:17:03 00:00:21:19
+* GRÁFICO PROPIO: msgcard (engine/videos/gx_render.py, función g_msgcard)
+* PALABRA: Lucía estaba
+
+007  MIKEGOON V     C        00:00:24:06 00:00:26:14 00:00:21:19 00:00:23:27
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 00:24.2
+
+008  IGN6STAR V     C        00:04:15:18 00:04:16:24 00:00:23:27 00:00:25:03
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:15.6
+* PALABRA: el primer disparo
+
+009  IGN6STAR V     C        00:04:08:09 00:04:10:02 00:00:25:03 00:00:26:26
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:08.3
+* PALABRA: ese punto sin retorno
+
+010  SATARA   V     C        00:03:25:18 00:03:26:24 00:00:26:26 00:00:28:02
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 03:25.6
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: Qué ve un testigo
+
+011  IGN6STAR V     C        00:04:23:24 00:04:25:05 00:00:28:02 00:00:29:13
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:23.8
+* PALABRA: qué sabe la policía
+
+012  MIKEGOON V     C        00:13:05:00 00:13:07:02 00:00:29:13 00:00:31:15
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 13:05.0
+* PALABRA: cómo se pierde
+
+013  GFX      V     C        00:00:00:00 00:00:02:17 00:00:31:15 00:00:34:02
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+* PALABRA: lo único que el juego
+
+014  GFX      V     C        00:00:00:00 00:00:02:13 00:00:34:02 00:00:36:15
+* GRÁFICO PROPIO: sting (engine/videos/gx_render.py, función g_sting)
+
+015  MIKEGOON V     C        00:00:29:27 00:00:33:02 00:00:36:15 00:00:39:20
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 00:29.9
+
+016  GFX      V     C        00:00:00:00 00:00:03:28 00:00:39:20 00:00:43:17
+* GRÁFICO PROPIO: creators (engine/videos/gx_render.py, función g_creators)
+* PALABRA: grabadas por jugadores
+
+017  GFX      V     C        00:00:00:00 00:00:06:05 00:00:43:17 00:00:49:23
+* GRÁFICO PROPIO: legend (engine/videos/gx_render.py, función g_legend)
+* PALABRA: Vamos a separar
+
+018  GFX      V     C        00:00:00:00 00:00:02:27 00:00:49:23 00:00:52:20
+* GRÁFICO PROPIO: nospoil (engine/videos/gx_render.py, función g_nospoil)
+
+019  SATARA   V     C        00:04:12:00 00:04:16:04 00:00:52:20 00:00:56:24
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 04:12.0
+* PALABRA: Solo cómo funciona
+
+020  MIKEGOON V     C        00:07:10:00 00:07:13:14 00:00:56:24 00:01:00:08
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 07:10.0
+
+021  GFX      V     C        00:00:00:00 00:00:06:20 00:01:00:08 00:01:06:27
+* GRÁFICO PROPIO: teaser (engine/videos/gx_render.py, función g_teaser)
+* PALABRA: más de 300
+
+022  SATARA   V     C        00:01:22:09 00:01:25:18 00:01:06:27 00:01:10:06
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 01:22.3
+
+023  GFX      V     C        00:00:00:00 00:00:05:28 00:01:10:06 00:01:16:04
+* GRÁFICO PROPIO: witness (engine/videos/gx_render.py, función g_witness)
+* PALABRA: Según Rockstar
+
+024  SATARA   V     C        00:01:04:18 00:01:05:27 00:01:16:04 00:01:17:13
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 01:04.6
+
+025  SATARA   V     C        00:02:00:27 00:02:02:25 00:01:17:13 00:01:19:11
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 02:00.9
+* PALABRA: Un tiroteo
+
+026  SATARA   V     C        00:01:10:12 00:01:12:10 00:01:19:11 00:01:21:09
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 01:10.4
+* PALABRA: escondido detrás
+
+027  SATARA   V     C        00:03:16:00 00:03:21:08 00:01:21:09 00:01:26:17
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 03:16.0
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: Arriba a la derecha
+
+028  SATARA   V     C        00:03:03:15 00:03:05:15 00:01:26:17 00:01:28:17
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 03:03.5
+* ENCUADRE: zoom x2.5 hacia (0.12, 0.33)
+* PALABRA: Y el juego muestra
+
+029  GFX      V     C        00:00:00:00 00:00:05:22 00:01:28:17 00:01:34:10
+* GRÁFICO PROPIO: msgcard (engine/videos/gx_render.py, función g_msgcard)
+* PALABRA: «La policía no te ha
+
+030  GFX      V     C        00:00:00:00 00:00:06:20 00:01:34:10 00:01:41:00
+* GRÁFICO PROPIO: hollow (engine/videos/gx_render.py, función g_hollow)
+
+031  SATARA   V     C        00:02:46:18 00:02:50:16 00:01:41:00 00:01:44:28
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 02:46.6
+
+032  SATARA   V     C        00:03:43:00 00:03:45:10 00:01:44:28 00:01:47:07
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 03:43.0
+* PALABRA: sale caminando
+
+033  SATARA   V     C        00:04:22:00 00:04:25:12 00:01:47:07 00:01:50:19
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 04:22.0
+* PALABRA: Sin correr
+
+034  SATARA   V     C        00:05:36:24 00:05:40:25 00:01:50:19 00:01:54:20
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 05:36.8
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: Un par de minutos
+
+035  SATARA   V     C        00:09:46:00 00:09:50:05 00:01:54:20 00:01:58:26
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 09:46.0
+
+036  SATARA   V     C        00:10:07:21 00:10:11:21 00:01:58:26 00:02:02:26
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 10:07.7
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: Aparece una estrella
+
+037  SATARA   V     C        00:10:46:06 00:10:52:15 00:02:02:26 00:02:09:05
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 10:46.2
+* PALABRA: El juego no explica
+
+038  SATARA   V     C        00:11:40:00 00:11:44:22 00:02:09:05 00:02:13:27
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 11:40.0
+
+039  IGNDETAL V     C        00:00:09:24 00:00:16:01 00:02:13:27 00:02:20:04
+* FROM CLIP NAME: uMYUjOLOOVQ.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=uMYUjOLOOVQ · 00:09.8
+* PALABRA: una mancha de sangre
+
+040  IGNOPS   V     C        00:00:48:09 00:00:51:17 00:02:20:04 00:02:23:13
+* FROM CLIP NAME: eD5ndr0OMM0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=eD5ndr0OMM0 · 00:48.3
+* PALABRA: Y si hay muchos disparos
+
+041  MIKEGOON V     C        00:04:02:06 00:04:06:27 00:02:23:13 00:02:28:03
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 04:02.2
+* PALABRA: algún vecino llame
+
+042  MIKEGOON V     C        00:04:16:15 00:04:20:13 00:02:28:03 00:02:32:01
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 04:16.5
+
+043  IGN6STAR V     C        00:00:47:27 00:00:52:28 00:02:32:01 00:02:37:02
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 00:47.9
+* PALABRA: las estrellas se llenan
+
+044  GFX      V     C        00:00:00:00 00:00:05:04 00:02:37:02 00:02:42:06
+* GRÁFICO PROPIO: icons (engine/videos/gx_render.py, función g_icons)
+
+045  GFX      V     C        00:00:00:00 00:00:07:29 00:02:42:06 00:02:50:06
+* GRÁFICO PROPIO: icons (engine/videos/gx_render.py, función g_icons)
+* PALABRA: Según Rockstar
+
+046  GFX      V     C        00:00:00:00 00:00:07:05 00:02:50:06 00:02:57:11
+* GRÁFICO PROPIO: ficha (engine/videos/gx_render.py, función g_ficha)
+
+047  IGN6STAR V     C        00:04:38:24 00:04:42:25 00:02:57:11 00:03:01:11
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:38.8
+* ENCUADRE: zoom x2.6 hacia (0.95, 0.07)
+
+048  IGNROPA  V     C        00:01:48:09 00:01:50:23 00:03:01:11 00:03:03:26
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 01:48.3
+* PALABRA: con la ropa que llevas
+
+049  IGNROPA  V     C        00:01:40:15 00:01:44:22 00:03:03:26 00:03:08:02
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 01:40.5
+* PALABRA: Por eso, cambiarte
+
+050  IGNROPA  V     C        00:01:34:09 00:01:36:14 00:03:08:02 00:03:10:08
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 01:34.3
+
+051  IGNROPA  V     C        00:02:14:15 00:02:20:13 00:03:10:08 00:03:16:05
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 02:14.5
+* PALABRA: hasta 5 conjuntos
+
+052  IGNROPA  V     C        00:02:25:09 00:02:27:16 00:03:16:05 00:03:18:13
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 02:25.3
+* PALABRA: quitarte la gorra
+
+053  MIKEGOON V     C        00:02:40:00 00:02:42:20 00:03:18:13 00:03:21:02
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 02:40.0
+* PALABRA: enfría un poco
+
+054  IGNFOCUS V     C        00:00:00:18 00:00:02:23 00:03:21:02 00:03:23:08
+* FROM CLIP NAME: JHRVSzM2O2M.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=JHRVSzM2O2M · 00:00.6
+
+055  IGNFOCUS V     C        00:00:18:00 00:00:20:22 00:03:23:08 00:03:25:29
+* FROM CLIP NAME: JHRVSzM2O2M.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=JHRVSzM2O2M · 00:18.0
+* PALABRA: Mientras manejas
+
+056  SATARA   V     C        00:10:20:15 00:10:23:20 00:03:25:29 00:03:29:05
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 10:20.5
+* PALABRA: para que sepas
+
+057  MIKEGOON V     C        00:09:05:00 00:09:09:20 00:03:29:05 00:03:33:25
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 09:05.0
+
+058  MIKEGOON V     C        00:09:09:20 00:09:12:07 00:03:33:25 00:03:36:11
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 09:09.7
+* PALABRA: escapar en un auto
+
+059  MIKEGOON V     C        00:11:38:15 00:11:40:10 00:03:36:11 00:03:38:07
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 11:38.5
+* PALABRA: Lo mejor es dejarlo
+
+060  MIKEGOON V     C        00:04:10:00 00:04:10:26 00:03:38:07 00:03:39:03
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 04:10.0
+* PALABRA: por callejones
+
+061  MIKEGOON V     C        00:05:54:06 00:05:56:15 00:03:39:03 00:03:41:12
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 05:54.2
+* PALABRA: por encima de las cercas
+
+062  MIKEGOON V     C        00:12:13:15 00:12:16:02 00:03:41:12 00:03:43:29
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 12:13.5
+
+063  MIKEGOON V     C        00:13:17:00 00:13:21:09 00:03:43:29 00:03:48:08
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 13:17.0
+* PALABRA: una huida real
+
+064  MIKEGOON V     C        00:00:18:18 00:00:20:11 00:03:48:08 00:03:50:02
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 00:18.6
+
+065  MIKEGOON V     C        00:00:45:06 00:00:48:08 00:03:50:02 00:03:53:04
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 00:45.2
+* PALABRA: un paseo en bicicleta
+
+066  MIKEGOON V     C        00:01:31:15 00:01:33:11 00:03:53:04 00:03:55:00
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 01:31.5
+
+067  MIKEGOON V     C        00:01:54:00 00:01:55:21 00:03:55:00 00:03:56:21
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 01:54.0
+* PALABRA: los autos estacionados
+
+068  MIKEGOON V     C        00:03:01:00 00:03:03:18 00:03:56:21 00:03:59:10
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 03:01.0
+* PALABRA: Llega una patrulla
+
+069  MIKEGOON V     C        00:02:56:09 00:02:58:02 00:03:59:10 00:04:01:02
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 02:56.3
+* PALABRA: se convierte en un tiroteo
+
+070  MIKEGOON V     C        00:04:12:00 00:04:14:01 00:04:01:02 00:04:03:03
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 04:12.0
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+
+071  MIKEGOON V     C        00:06:15:06 00:06:16:22 00:04:03:03 00:04:04:19
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 06:15.2
+* PALABRA: Se refugia en un hotel
+
+072  MIKEGOON V     C        00:06:19:12 00:06:21:07 00:04:04:19 00:04:06:14
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 06:19.4
+* PALABRA: sube hasta el bar
+
+073  MIKEGOON V     C        00:07:06:00 00:07:08:23 00:04:06:14 00:04:09:07
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 07:06.0
+* PALABRA: resiste desde arriba
+
+074  MIKEGOON V     C        00:08:48:18 00:08:50:16 00:04:09:07 00:04:11:05
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 08:48.6
+
+075  MIKEGOON V     C        00:08:53:18 00:08:57:04 00:04:11:05 00:04:14:21
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 08:53.6
+* PALABRA: y escapa por la avenida
+
+076  MIKEGOON V     C        00:09:45:18 00:09:49:08 00:04:14:21 00:04:18:11
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 09:45.6
+* PALABRA: un helicóptero
+
+077  MIKEGOON V     C        00:10:38:06 00:10:39:05 00:04:18:11 00:04:19:10
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 10:38.2
+* PALABRA: un vehículo militar
+
+078  MIKEGOON V     C        00:10:51:00 00:10:53:21 00:04:19:10 00:04:22:01
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 10:51.0
+* PALABRA: y sigue huyendo
+
+079  MIKEGOON V     C        00:11:06:00 00:11:10:22 00:04:22:01 00:04:26:23
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 11:06.0
+
+080  MIKEGOON V     C        00:11:32:24 00:11:34:22 00:04:26:23 00:04:28:21
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 11:32.8
+* PALABRA: Lo abandona
+
+081  MIKEGOON V     C        00:11:59:00 00:12:00:20 00:04:28:21 00:04:30:11
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 11:59.0
+* PALABRA: callejones
+
+082  MIKEGOON V     C        00:12:59:00 00:13:00:01 00:04:30:11 00:04:31:13
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 12:59.0
+* PALABRA: hasta la orilla del mar
+
+083  MIKEGOON V     C        00:13:07:18 00:13:09:05 00:04:31:13 00:04:33:00
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 13:07.6
+* PALABRA: entre los bañistas
+
+084  MIKEGOON V     C        00:13:23:00 00:13:29:03 00:04:33:00 00:04:39:03
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 13:23.0
+
+085  MIKEGOON V     C        00:13:51:26 00:13:53:16 00:04:39:03 00:04:40:23
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 13:51.9
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: las estrellas se vuelven rojas
+
+086  MIKEGOON V     C        00:13:54:26 00:14:00:12 00:04:40:23 00:04:46:10
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 13:54.9
+* ENCUADRE: zoom x2.5 hacia (0.12, 0.33)
+* PALABRA: y el juego avisa
+
+087  GFX      V     C        00:00:00:00 00:00:05:07 00:04:46:10 00:04:51:16
+* GRÁFICO PROPIO: split (engine/videos/gx_render.py, función g_split)
+
+088  MIKEGOON V     C        00:14:05:19 00:14:09:21 00:04:51:16 00:04:55:19
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 14:05.6
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: Las estrellas rojas siguen
+
+089  MIKEGOON V     C        00:14:12:15 00:14:14:23 00:04:55:19 00:04:57:26
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 14:12.5
+* PALABRA: que se parezca a ti
+
+090  GFX      V     C        00:00:00:00 00:00:08:20 00:04:57:26 00:05:06:16
+* GRÁFICO PROPIO: stars (engine/videos/gx_render.py, función g_stars)
+
+091  MIKEGOON V     C        00:12:26:00 00:12:30:16 00:05:06:16 00:05:11:02
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 12:26.0
+* PALABRA: pero siguen buscándote
+
+092  GFX      V     C        00:00:00:00 00:00:04:09 00:05:11:02 00:05:15:11
+* GRÁFICO PROPIO: meter (engine/videos/gx_render.py, función g_meter)
+
+093  IGN6STAR V     C        00:02:08:09 00:02:13:06 00:05:15:11 00:05:20:08
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:08.3
+
+094  IGN6STAR V     C        00:02:15:12 00:02:16:23 00:05:20:08 00:05:21:19
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:15.4
+* PALABRA: atraviesa las barreras
+
+095  IGN6STAR V     C        00:02:22:06 00:02:24:08 00:05:21:19 00:05:23:21
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:22.2
+* PALABRA: se sube a un avión de carga
+
+096  IGN6STAR V     C        00:02:24:28 00:02:26:16 00:05:23:21 00:05:25:09
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:24.9
+* PALABRA: Antes de llegar a la pista
+
+097  IGN6STAR V     C        00:02:26:16 00:02:27:26 00:05:25:09 00:05:26:19
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:26.5
+* ENCUADRE: zoom x3.0 hacia (0.96, 0.06)
+* PALABRA: ya tiene 4 estrellas
+
+098  IGN6STAR V     C        00:02:28:09 00:02:31:01 00:05:26:19 00:05:29:11
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:28.3
+* PALABRA: sin haber matado
+
+099  IGN6STAR V     C        00:02:31:01 00:02:33:02 00:05:29:11 00:05:31:12
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:31.0
+
+100  IGN6STAR V     C        00:02:54:00 00:02:57:15 00:05:31:12 00:05:34:27
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 02:54.0
+* PALABRA: aviones de combate
+
+101  IGN6STAR V     C        00:03:01:00 00:03:02:04 00:05:34:27 00:05:36:01
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:01.0
+
+102  IGN6STAR V     C        00:03:07:15 00:03:09:03 00:05:36:01 00:05:37:19
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:07.5
+* PALABRA: chocar con uno
+
+103  IGN6STAR V     C        00:03:12:00 00:03:18:29 00:05:37:19 00:05:44:19
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:12.0
+* PALABRA: o destrozar el tren
+
+104  IGN6STAR V     C        00:04:26:00 00:04:28:05 00:05:44:19 00:05:46:24
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:26.0
+
+105  IGN6STAR V     C        00:04:20:00 00:04:21:04 00:05:46:24 00:05:47:28
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:20.0
+* PALABRA: vehículos blindados
+
+106  IGN6STAR V     C        00:04:54:00 00:04:54:29 00:05:47:28 00:05:48:26
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:54.0
+* PALABRA: todoterrenos
+
+107  MIKEGOON V     C        00:09:52:00 00:09:54:24 00:05:48:26 00:05:51:20
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 09:52.0
+* PALABRA: helicópteros
+
+108  GFX      V     C        00:00:00:00 00:00:01:02 00:05:51:20 00:05:52:22
+* GRÁFICO PROPIO: meter (engine/videos/gx_render.py, función g_meter)
+* PALABRA: tanques
+
+109  IGN6STAR V     C        00:04:30:00 00:04:33:04 00:05:52:22 00:05:55:27
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:30.0
+
+110  GFX      V     C        00:00:00:00 00:00:04:12 00:05:55:27 00:06:00:09
+* GRÁFICO PROPIO: meter (engine/videos/gx_render.py, función g_meter)
+* PALABRA: El primero
+
+111  IGN6STAR V     C        00:03:56:06 00:04:00:03 00:06:00:09 00:06:04:06
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:56.2
+* PALABRA: Las misiones más intensas
+
+112  GFX      V     C        00:00:00:00 00:00:06:29 00:06:04:06 00:06:11:05
+* GRÁFICO PROPIO: meter (engine/videos/gx_render.py, función g_meter)
+
+113  IGN6STAR V     C        00:05:30:09 00:05:35:15 00:06:11:05 00:06:16:11
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:30.3
+* PALABRA: La sexta estrella
+
+114  IGN6STAR V     C        00:03:20:00 00:03:21:21 00:06:16:11 00:06:18:02
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:20.0
+
+115  IGN6STAR V     C        00:03:28:00 00:03:31:06 00:06:18:02 00:06:21:08
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:28.0
+* PALABRA: Robar un avión no basta
+
+116  IGN6STAR V     C        00:05:20:18 00:05:23:00 00:06:21:08 00:06:23:20
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:20.6
+* PALABRA: destrucción masiva
+
+117  IGN6STAR V     C        00:04:43:15 00:04:46:19 00:06:23:20 00:06:26:24
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 04:43.5
+* PALABRA: sobre todo de policías
+
+118  IGN6STAR V     C        00:05:36:15 00:05:42:18 00:06:26:24 00:06:32:27
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:36.5
+
+119  GFX      V     C        00:00:00:00 00:00:06:14 00:06:32:27 00:06:39:11
+* GRÁFICO PROPIO: quote (engine/videos/gx_render.py, función g_quote)
+* PALABRA: Otros, robando un tanque
+
+120  MIKEGOON V     C        00:09:55:15 00:09:59:06 00:06:39:11 00:06:43:02
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 09:55.5
+
+121  IGN6STAR V     C        00:05:42:21 00:05:43:25 00:06:43:02 00:06:44:06
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:42.7
+* PALABRA: te rodea
+
+122  IGN6STAR V     C        00:06:24:08 00:06:25:26 00:06:44:06 00:06:45:24
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:24.2
+* PALABRA: la pantalla de muerte
+
+123  IGN6STAR V     C        00:03:09:09 00:03:11:19 00:06:45:24 00:06:48:04
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 03:09.3
+* PALABRA: una y otra vez
+
+124  IGN6STAR V     C        00:07:24:20 00:07:27:03 00:06:48:04 00:06:50:17
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 07:24.7
+
+125  GFX      V     C        00:00:00:00 00:00:03:01 00:06:50:17 00:06:53:18
+* GRÁFICO PROPIO: msgcard (engine/videos/gx_render.py, función g_msgcard)
+* PALABRA: «Ahora tienes
+
+126  IGN6STAR V     C        00:05:27:00 00:05:29:02 00:06:53:18 00:06:55:20
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:27.0
+* PALABRA: Escapar es imposible
+
+127  IGN6STAR V     C        00:06:09:26 00:06:12:29 00:06:55:20 00:06:58:23
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:09.9
+* PALABRA: no se rendirá
+
+128  IGN6STAR V     C        00:05:52:00 00:05:53:28 00:06:58:23 00:07:00:21
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:52.0
+
+129  IGN6STAR V     C        00:05:44:09 00:05:49:20 00:07:00:21 00:07:06:02
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:44.3
+* PALABRA: Con 6 estrellas
+
+130  IGN6STAR V     C        00:05:06:18 00:05:09:05 00:07:06:02 00:07:08:19
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:06.6
+* PALABRA: Puedes correr
+
+131  IGN6STAR V     C        00:05:02:21 00:05:05:28 00:07:08:19 00:07:11:26
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 05:02.7
+* PALABRA: La única salida es morir
+
+132  GFX      V     C        00:00:00:00 00:00:06:22 00:07:11:26 00:07:18:18
+* GRÁFICO PROPIO: record (engine/videos/gx_render.py, función g_record)
+
+133  GFX      V     C        00:00:00:00 00:00:03:08 00:07:18:18 00:07:21:26
+* GRÁFICO PROPIO: save (engine/videos/gx_render.py, función g_save)
+* PALABRA: guarda la partida
+
+134  GFX      V     C        00:00:00:00 00:00:02:20 00:07:21:26 00:07:24:16
+* GRÁFICO PROPIO: meter (engine/videos/gx_render.py, función g_meter)
+
+135  GFX      V     C        00:00:00:00 00:00:05:24 00:07:24:16 00:07:30:10
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+* PALABRA: Pero hay algo
+
+136  GFX      V     C        00:00:00:00 00:00:03:16 00:07:30:10 00:07:33:26
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+137  SATARA   V     C        00:07:14:00 00:07:17:23 00:07:33:26 00:07:37:19
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 07:14.0
+* PALABRA: aunque no tengas
+
+138  GFX      V     C        00:00:00:00 00:00:05:16 00:07:37:19 00:07:43:05
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+139  GFX      V     C        00:00:00:00 00:00:03:06 00:07:43:05 00:07:46:12
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+* PALABRA: Y Jason y Lucía
+
+140  MIKEGOON V     C        00:07:16:15 00:07:20:13 00:07:46:12 00:07:50:10
+* FROM CLIP NAME: ey0qks0aQ-c.webm
+* ORIGEN: MikeTheGoon · https://www.youtube.com/watch?v=ey0qks0aQ-c · 07:16.5
+
+141  GFX      V     C        00:00:00:00 00:00:06:12 00:07:50:10 00:07:56:22
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+* PALABRA: Profesional es
+
+142  SATARA   V     C        00:10:56:00 00:10:58:29 00:07:56:22 00:07:59:21
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 10:56.0
+* PALABRA: procura pasar desapercibido
+
+143  GFX      V     C        00:00:00:00 00:00:04:22 00:07:59:21 00:08:04:14
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+144  GFX      V     C        00:00:00:00 00:00:05:26 00:08:04:14 00:08:10:09
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+* PALABRA: Violento ignora
+
+145  GFX      V     C        00:00:00:00 00:00:05:28 00:08:10:09 00:08:16:08
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+146  GFX      V     C        00:00:00:00 00:00:02:07 00:08:16:08 00:08:18:15
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+* PALABRA: Eso sí: cazar no cuenta
+
+147  IGNROPA  V     C        00:02:35:03 00:02:38:12 00:08:18:15 00:08:21:24
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 02:35.1
+* ENCUADRE: zoom x2.5 hacia (0.12, 0.33)
+
+148  GFX      V     C        00:00:00:00 00:00:04:15 00:08:21:24 00:08:26:08
+* GRÁFICO PROPIO: msgcard (engine/videos/gx_render.py, función g_msgcard)
+* PALABRA: «La conducta
+
+149  IGNROPA  V     C        00:02:40:12 00:02:43:11 00:08:26:08 00:08:29:08
+* FROM CLIP NAME: qbhJRtgCx30.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=qbhJRtgCx30 · 02:40.4
+* ENCUADRE: zoom x2.5 hacia (0.12, 0.33)
+
+150  GFX      V     C        00:00:00:00 00:00:07:08 00:08:29:08 00:08:36:16
+* GRÁFICO PROPIO: msgcard (engine/videos/gx_render.py, función g_msgcard)
+* PALABRA: «Tener un nivel
+
+151  IGNFOCUS V     C        00:00:26:00 00:00:32:22 00:08:36:16 00:08:43:08
+* FROM CLIP NAME: JHRVSzM2O2M.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=JHRVSzM2O2M · 00:26.0
+
+152  IGNFOCUS V     C        00:00:32:22 00:00:36:19 00:08:43:08 00:08:47:04
+* FROM CLIP NAME: JHRVSzM2O2M.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=JHRVSzM2O2M · 00:32.7
+* PALABRA: puntos rojos
+
+153  GFX      V     C        00:00:00:00 00:00:10:01 00:08:47:04 00:08:57:05
+* GRÁFICO PROPIO: bonus (engine/videos/gx_render.py, función g_bonus)
+
+154  IGN6STAR V     C        00:07:39:15 00:07:41:03 00:08:57:05 00:08:58:22
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 07:39.5
+* PALABRA: los disparos a la cabeza
+
+155  GFX      V     C        00:00:00:00 00:00:07:02 00:08:58:22 00:09:05:24
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+156  GFX      V     C        00:00:00:00 00:00:06:16 00:09:05:24 00:09:12:10
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+157  GFX      V     C        00:00:00:00 00:00:07:29 00:09:12:10 00:09:20:09
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+158  IGN6STAR V     C        00:06:48:03 00:06:50:13 00:09:20:09 00:09:22:19
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:48.1
+
+159  IGN6STAR V     C        00:06:52:12 00:06:55:13 00:09:22:19 00:09:25:20
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:52.4
+* PALABRA: Este mensaje apareció
+
+160  IGN6STAR V     C        00:06:43:03 00:06:46:24 00:09:25:20 00:09:29:11
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:43.1
+* PALABRA: «Atención
+
+161  GFX      V     C        00:00:00:00 00:00:04:24 00:09:29:11 00:09:34:05
+* GRÁFICO PROPIO: msgcard (engine/videos/gx_render.py, función g_msgcard)
+* PALABRA: Evita la violencia
+
+162  GFX      V     C        00:00:00:00 00:00:06:15 00:09:34:05 00:09:40:20
+* GRÁFICO PROPIO: quote (engine/videos/gx_render.py, función g_quote)
+
+163  SATARA   V     C        00:07:18:00 00:07:21:28 00:09:40:20 00:09:44:18
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 07:18.0
+* PALABRA: Las guías hablan
+
+164  SATARA   V     C        00:11:54:00 00:11:57:17 00:09:44:18 00:09:48:05
+* FROM CLIP NAME: gJyMGHxCKHU.webm
+* ORIGEN: GTAsatara · https://www.youtube.com/watch?v=gJyMGHxCKHU · 11:54.0
+* PALABRA: pero los detalles
+
+165  GFX      V     C        00:00:00:00 00:00:04:29 00:09:48:05 00:09:53:05
+* GRÁFICO PROPIO: ladder (engine/videos/gx_render.py, función g_ladder)
+
+166  GFX      V     C        00:00:00:00 00:00:02:22 00:09:53:05 00:09:55:26
+* GRÁFICO PROPIO: save (engine/videos/gx_render.py, función g_save)
+* PALABRA: cargar una partida
+
+167  IGN6STAR V     C        00:07:35:00 00:07:39:05 00:09:55:26 00:10:00:02
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 07:35.0
+
+168  GFX      V     C        00:00:00:00 00:00:11:04 00:10:00:02 00:10:11:06
+* GRÁFICO PROPIO: stats (engine/videos/gx_render.py, función g_stats)
+* PALABRA: Un redactor
+
+169  GFX      V     C        00:00:00:00 00:00:09:08 00:10:11:06 00:10:20:14
+* GRÁFICO PROPIO: stats (engine/videos/gx_render.py, función g_stats)
+
+170  GFX      V     C        00:00:00:00 00:00:19:17 00:10:20:14 00:10:40:01
+* GRÁFICO PROPIO: recap (engine/videos/gx_render.py, función g_recap)
+
+171  GFX      V     C        00:00:00:00 00:00:09:24 00:10:40:01 00:10:49:25
+* GRÁFICO PROPIO: poll (engine/videos/gx_render.py, función g_poll)
+
+172  IGN6STAR V     C        00:06:28:06 00:06:31:29 00:10:49:25 00:10:53:18
+* FROM CLIP NAME: Om4W6tYMF-0.webm
+* ORIGEN: IGN · https://www.youtube.com/watch?v=Om4W6tYMF-0 · 06:28.2
+
+173  GFX      V     C        00:00:00:00 00:00:04:17 00:10:53:18 00:10:58:05
+* GRÁFICO PROPIO: subscribe (engine/videos/gx_render.py, función g_subscribe)
+* PALABRA: suscríbete
+
+174  GFX      V     C        00:00:00:00 00:00:20:12 00:10:58:05 00:11:18:17
+* GRÁFICO PROPIO: end (engine/videos/gx_render.py, función g_end)

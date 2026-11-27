@@ -1,6 +1,6 @@
 """VIDEO 08 — SHORT: Fauna de Leonida — los 4 animales que Rockstar ya nombró (guía de campo).
 Lenguaje visual: cuaderno de naturalista: papel crema, ilustraciones vectoriales originales a tinta y acuarela plana,
-Abril Fatface + Caveat, anotaciones a mano, fichas que se pasan como páginas. Voz: analista (documental). Música: 'nature' original.
+Abril Fatface + Caveat, anotaciones a mano, fichas que se pasan como páginas. Voz: narradora. Música: 'nature' original.
 """
 import math, numpy as np, skia
 from gfx import *
@@ -148,13 +148,13 @@ beat("Más de ciento setenta especies. Eso es lo que, según Game Informer, vive
      "Y el manatí, la vaca marina: lenta, enorme y pacífica. "
      "Además, algunos animales se podrán rastrear por rareza: raros, descubribles y legendarios. "
      "¿Cuáles serán legendarios? Todavía nadie lo sabe. Guarda este video: después del lanzamiento armamos la guía de campo completa.",
-     sc_main, voice="analista", energy=2, speed=1.04, pause_mul=0.8,
+     sc_main, energy=2, speed=1.04, pause_mul=0.8,
      sfx=[(0.2, "paper", 0.5), ("w:ciento setenta", "pop", 0.4), ("w:aligátor", "paper", 0.6), ("w:flamenco", "paper", 0.6), ("w:pelícano", "paper", 0.6),
           ("w:manatí", "paper", 0.6), ("w:rastrear", "ding", 0.4), (1.5, "bird", 0.4), (9.0, "bird", 0.35), (20.0, "water", 0.4)])
 
 VIDEO = dict(id="v08", folder="VIDEO_08", file="GTA6_fauna_Leonida_guia_de_campo_SHORT", size=(W, H),
              title="Los 4 animales de GTA 6 que Rockstar ya confirmó (y 170 especies más) #shorts", format="Short vertical (9:16)",
-             music="nature", music_seed=81, voice="analista", beats=B, overlay=overlay, lead_in=0.2, tail=1.2, music_gain=0.5)
+             music="nature", music_seed=81, voice="host", beats=B, overlay=overlay, lead_in=0.2, tail=1.2, music_gain=0.5)
 
 def thumbnail(c):
     Wt, Ht = 1280, 720

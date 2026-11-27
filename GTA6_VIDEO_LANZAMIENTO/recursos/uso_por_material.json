@@ -1,0 +1,46 @@
+{
+ "Gameplay de terceros": {
+  "n": 134,
+  "s": 393.2,
+  "archivos": [
+   "https://www.youtube.com/watch?v=0zFpvGl7a3A",
+   "https://www.youtube.com/watch?v=3PiR0G3rVw8",
+   "https://www.youtube.com/watch?v=7j-Ylv-BSXk",
+   "https://www.youtube.com/watch?v=9K-S0pNsRu4",
+   "https://www.youtube.com/watch?v=JKjf8-mt1X8",
+   "https://www.youtube.com/watch?v=ORYwlJXszi4",
+   "https://www.youtube.com/watch?v=aRRNSVwx8UM",
+   "https://www.youtube.com/watch?v=agBEh5aZ_Go",
+   "https://www.youtube.com/watch?v=nqmpDCbz3lA",
+   "https://www.youtube.com/watch?v=w9Y1xXSzQbs"
+  ]
+ },
+ "Captura oficial": {
+  "n": 6,
+  "s": 9.4,
+  "archivos": [
+   "Cal_Hampton_01",
+   "Grassrivers_05",
+   "Grassrivers_06",
+   "Jason_and_Lucia_13",
+   "Jason_and_Lucia_14",
+   "Real_Dimez_02"
+  ]
+ },
+ "Ilustración oficial": {
+  "n": 2,
+  "s": 8.3,
+  "archivos": [
+   "Jason_and_Lucia_Beach_landscape"
+  ]
+ },
+ "Vídeo de personaje": {
+  "n": 3,
+  "s": 7.1,
+  "archivos": [
+   "Cal_Hampton",
+   "Jason_Duval",
+   "Lucia_Caminos"
+  ]
+ }
+}

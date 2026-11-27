@@ -1,289 +1,289 @@
 1
-00:00:00,250 --> 00:00:03,674
+00:00:00,250 --> 00:00:03,650
 Rockstar todavía no ha publicado un mapa
 completo de Leonida.
 
 2
-00:00:04,004 --> 00:00:08,818
+00:00:03,690 --> 00:00:08,290
 Pero sí dejó pistas: seis nombres, dos
 ubicaciones confirmadas y un estado real
 
 3
-00:00:08,818 --> 00:00:10,159
+00:00:08,330 --> 00:00:09,490
 que todos reconocemos.
 
 4
-00:00:10,489 --> 00:00:13,768
+00:00:09,530 --> 00:00:13,880
 Hoy armamos el rompecabezas, sin inventar
 ni una pieza.
 
 5
-00:00:16,498 --> 00:00:17,995
-Esto es Sal y Asfalto.
+00:00:16,959 --> 00:00:18,679
+Estás en Sal y Asfalto.
 
 6
-00:00:18,325 --> 00:00:22,897
+00:00:18,719 --> 00:00:23,559
 Regla del viaje: en verde, lo que Rockstar
 confirmó; en amarillo, lo que deducimos
 
 7
-00:00:22,897 --> 00:00:24,235
+00:00:23,599 --> 00:00:25,319
 nosotros o la comunidad.
 
 8
-00:00:24,565 --> 00:00:29,186
+00:00:25,359 --> 00:00:29,959
 Y una advertencia importante: el mapa que
 vas a ver es la Florida real, no el mapa
 
 9
-00:00:29,186 --> 00:00:29,750
+00:00:29,999 --> 00:00:30,798
 del juego.
 
 10
-00:00:30,080 --> 00:00:33,185
+00:00:30,838 --> 00:00:34,948
 Lo usamos porque Leonida es, claramente,
 su parodia.
 
 11
-00:00:33,515 --> 00:00:34,836
+00:00:36,036 --> 00:00:37,188
 Primero, el tamaño.
 
 12
-00:00:35,166 --> 00:00:39,707
+00:00:37,228 --> 00:00:42,236
 Aaron Garbut, de Rockstar, le dijo a la
 revista Game Informer que el mapa es el
 
 13
-00:00:39,707 --> 00:00:41,547
+00:00:42,276 --> 00:00:45,992
 doble de grande que el de GTA 5.
 
 14
-00:00:41,877 --> 00:00:46,298
+00:00:46,032 --> 00:00:50,552
 No sabemos si habla de superficie de
 tierra, de área total o de contenido, así
 
 15
-00:00:46,298 --> 00:00:49,359
+00:00:50,592 --> 00:00:54,850
 que tómalo como una escala, no como una
 medida exacta.
 
 16
-00:00:49,689 --> 00:00:51,782
+00:00:54,890 --> 00:00:57,250
 Primera parada: el extremo norte.
 
 17
-00:00:52,112 --> 00:00:56,311
+00:00:57,290 --> 00:01:01,730
 La web de Rockstar ubica el Parque
 Nacional Mount Kalaga contra la frontera
 
 18
-00:00:56,311 --> 00:01:00,733
+00:01:01,770 --> 00:01:06,450
 norte de Leonida, y lo describe como el
 borde salvaje del estado: caza, pesca y
 
 19
-00:01:00,733 --> 00:01:03,756
+00:01:06,490 --> 00:01:10,009
 caminos para todoterreno, lejos del caos
 de Vice City.
 
 20
-00:01:04,086 --> 00:01:07,176
+00:01:10,049 --> 00:01:13,209
 Curiosamente, la Florida real no tiene
 montañas.
 
 21
-00:01:07,506 --> 00:01:12,162
+00:01:13,249 --> 00:01:17,769
 Su punto más alto, Britton Hill, mide unos
 ciento cinco metros... y también está
 
 22
-00:01:12,162 --> 00:01:13,733
+00:01:17,809 --> 00:01:19,534
 pegado a la frontera norte.
 
 23
-00:01:14,063 --> 00:01:15,994
+00:01:19,574 --> 00:01:21,214
 Segunda parada, hacia el oeste:
 
 24
-00:01:16,274 --> 00:01:17,053
+00:01:21,254 --> 00:01:22,654
 Port Gellhorn.
 
 25
-00:01:17,383 --> 00:01:22,120
+00:01:22,694 --> 00:01:27,134
 Rockstar lo llama la costa olvidada de
 Leonida: un antiguo destino de vacaciones
 
 26
-00:01:22,120 --> 00:01:26,620
+00:01:27,174 --> 00:01:32,685
 lleno de moteles baratos, atracciones
 cerradas y centros comerciales vacíos.
 
 27
-00:01:26,950 --> 00:01:31,693
+00:01:32,725 --> 00:01:37,485
 La comunidad lo asocia con Panama City y
 el noroeste de Florida, la zona conocida
 
 28
-00:01:31,693 --> 00:01:32,747
+00:01:37,525 --> 00:01:38,685
 como el Panhandle.
 
 29
-00:01:33,077 --> 00:01:33,609
+00:01:38,725 --> 00:01:39,144
 Ojo:
 
 30
-00:01:33,889 --> 00:01:36,857
+00:01:39,184 --> 00:01:43,016
 Rockstar no ha dicho en qué punto exacto
 del mapa está.
 
 31
-00:01:37,187 --> 00:01:39,476
+00:01:43,056 --> 00:01:45,176
 Tercera parada: el corazón del estado.
 
 32
-00:01:39,806 --> 00:01:43,822
+00:01:45,216 --> 00:01:49,336
 Según Rockstar, Ambrosia es un pueblo
 industrial en el centro de Leonida,
 
 33
-00:01:43,822 --> 00:01:48,168
+00:01:49,376 --> 00:01:53,256
 construido alrededor de una refinería de
 azúcar, donde la vieja industria y los
 
 34
-00:01:48,168 --> 00:01:51,084
+00:01:53,296 --> 00:01:57,647
 viejos valores siguen mandando, cueste lo
 que cueste.
 
 35
-00:01:51,414 --> 00:01:53,511
+00:01:57,687 --> 00:01:59,468
 La pista real es casi un regalo:
 
 36
-00:01:53,791 --> 00:01:58,630
+00:01:59,508 --> 00:02:04,767
 Clewiston, a orillas del lago Okeechobee,
 se promociona como la ciudad más dulce de
 
 37
-00:01:58,630 --> 00:02:01,078
+00:02:04,807 --> 00:02:07,228
 Estados Unidos por su industria azucarera.
 
 38
-00:02:01,408 --> 00:02:05,074
+00:02:07,268 --> 00:02:10,416
 Bajamos al sur, y la carretera empieza a
 perderse entre el agua.
 
 39
-00:02:05,404 --> 00:02:09,938
+00:02:10,456 --> 00:02:15,868
 Grassrivers es el humedal de Leonida,
 inspirado en los Everglades: el famoso río
 
 40
-00:02:09,938 --> 00:02:13,679
+00:02:15,908 --> 00:02:19,637
 de hierba, un pantano gigantesco que
 avanza despacio hacia el mar.
 
 41
-00:02:14,009 --> 00:02:17,042
+00:02:19,677 --> 00:02:22,677
 Ahí viven los caimanes que vimos desde el
 primer tráiler.
 
 42
-00:02:17,372 --> 00:02:22,130
+00:02:22,717 --> 00:02:27,672
 Y según Game Informer, Leonida tendrá más
 de ciento setenta especies de animales.
 
 43
-00:02:22,460 --> 00:02:24,110
+00:02:27,712 --> 00:02:28,892
 Quinta parada: la estrella.
 
 44
-00:02:24,440 --> 00:02:28,572
+00:02:28,932 --> 00:02:33,992
 Vice City, la versión de Miami que
 Rockstar parodia desde el año dos mil dos.
 
 45
-00:02:28,902 --> 00:02:32,150
+00:02:34,032 --> 00:02:38,574
 Playas, rascacielos y una vida nocturna
 que no se apaga.
 
 46
-00:02:32,480 --> 00:02:37,161
+00:02:38,614 --> 00:02:43,454
 Es el centro urbano de Leonida, y el lugar
 donde casi todo el marketing ha puesto la
 
 47
-00:02:37,161 --> 00:02:37,551
+00:02:43,494 --> 00:02:45,401
 cámara.
 
 48
-00:02:37,881 --> 00:02:42,414
+00:02:45,441 --> 00:02:50,761
 Y la última parada: las Leonida Keys, el
 reflejo de los Cayos de Florida, esa
 
 49
-00:02:42,414 --> 00:02:45,240
+00:02:50,801 --> 00:02:53,589
 cadena de islas unidas por puentes sobre
 el mar.
 
 50
-00:02:45,570 --> 00:02:50,199
+00:02:53,629 --> 00:02:58,229
 Aquí hay un dato oficial clave para la
 historia: según la web de Rockstar, Jason
 
 51
-00:02:50,199 --> 00:02:52,803
+00:02:58,269 --> 00:03:00,831
 trabaja en los Keys para traficantes
 locales.
 
 52
-00:02:53,133 --> 00:02:54,357
+00:03:00,871 --> 00:03:02,031
 ¿Y qué no sabemos?
 
 53
-00:02:54,737 --> 00:02:55,588
+00:03:02,071 --> 00:03:02,831
 Muchísimo.
 
 54
-00:02:55,918 --> 00:03:00,791
+00:03:02,871 --> 00:03:07,338
 No sabemos la forma exacta de Leonida, ni
 cuánto se parece su costa a la de Florida.
 
 55
-00:03:01,121 --> 00:03:05,436
+00:03:07,378 --> 00:03:11,738
 No sabemos cuántos interiores se pueden
 visitar, ni qué pueblos hay entre una
 
 56
-00:03:05,436 --> 00:03:06,220
+00:03:11,778 --> 00:03:13,018
 región y otra.
 
 57
-00:03:06,550 --> 00:03:09,101
+00:03:13,058 --> 00:03:16,378
 Y no sabemos si estas seis regiones son
 todas.
 
 58
-00:03:09,431 --> 00:03:11,393
+00:03:16,418 --> 00:03:19,692
 Eso solo se responde jugando.
 
 59
-00:03:11,723 --> 00:03:15,811
+00:03:19,732 --> 00:03:23,772
 El jueves, con el juego en las manos,
 volvemos a este mapa y marcamos qué
 
 60
-00:03:15,811 --> 00:03:18,051
+00:03:23,812 --> 00:03:26,572
 deducciones acertamos y cuáles fallamos.
 
 61
-00:03:18,381 --> 00:03:20,760
+00:03:26,612 --> 00:03:29,052
 Si quieres ver ese marcador, suscríbete.
 
 62
-00:03:21,090 --> 00:03:22,877
+00:03:29,092 --> 00:03:30,572
 Y cuéntame en los comentarios:
 
 63
-00:03:23,157 --> 00:03:25,098
+00:03:30,612 --> 00:03:33,406
 ¿a qué región vas a ir primero?
