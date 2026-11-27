@@ -55,16 +55,16 @@ beat("Un truco: si ves que esas estrellas rojas parpadean en blanco, un agente e
 # ================================================================ 3. LOS ICONOS
 beat("Al lado de las estrellas aparecen iconos con lo que la policía sabe de ti. El juego tiene siete: tu cara, tu ropa, tu vehículo, un arma a la vista, tu pareja reconocida, y si te grabó una cámara de seguridad… o una cámara conectada a la nube.",
      id="c3a", chapter=(3, "LO QUE SABEN DE TI"), mus=("synthwave", 2),
-     shots=[X(699.6, zoom=(0.93, 0.06, 2.4, 0.6), zoom_at=0.8), XA("El juego tiene siete", 310.2)], sfx=[("w:siete", "ding", 0.45)])
+     shots=[X(699.6, zoom=(0.93, 0.06, 2.4, 0.6), zoom_at=0.8), XA("El juego tiene siete", 309.65)], sfx=[("w:siete", "ding", 0.45)])
 beat("Y cada pista se puede borrar. Si conocen tu cara, ponte o quítate un sombrero, unas gafas, una máscara, o cámbiate el peinado. Si conocen tu ropa, cámbiate: puedes llevar otra en el maletero.",
      id="c3b", mus=("synthwave", 2),
-     shots=[X(684.0), XA("Si conocen tu ropa", 705.0)], sfx=[])
+     shots=[X(684.0), XA("sombrero", 705.0), XA("Si conocen tu ropa", 626.6)], sfx=[])
 beat("Si conocen tu vehículo, píntalo en un taller o simplemente roba otro donde no te vean. Y si abandonas tu coche, mira lo que pasa: la policía lo encuentra, acordona la zona… y se lo lleva al depósito.",
      id="c3c", mus=("synthwave", 2),
      shots=[X(380.0), XA("Y si abandonas", 389.5)], sfx=[])
 
 # ================================================================ LLAMADA A MITAD
-beat("Por cierto: si esta guía te está ayudando, dale like y suscríbete a Sal y Asfalto. Así sabemos que quieres más guías de GTA 6 con partidas reales.",
+beat("Por cierto: si esta guía te está ayudando, dale like y suscríbete a Sal y Asfalto. Así sabemos que quieres más guías como esta, con partidas reales.",
      id="cta", cta=True, mus=("tropical", 1),
      shots=[X(40.0), XA("dale like", 300.0)], sfx=[("w:dale like", "ding", 0.45), ("w:suscríbete", "pop", 0.45)])
 
@@ -89,9 +89,9 @@ beat("Y un consejo más: roba con pistola, no con un fusil. Un arma grande llama
 beat("Antes de un golpe grande, mira el mapa: cada tienda te dice cuánto podrías sacar y cuánta seguridad tiene. Y revisa la salida: algunos sitios tienen un portón de hierro que se abre con un botón, y con el coche no lo vas a atravesar.",
      id="c5p", chapter=(5, "JOYERÍAS Y BANDAS"), mus=("tension", 2),
      shots=[X(1056.0), XA("Y revisa la salida", 1040.0)], sfx=[])
-beat("En una joyería, impón el control desde el primer segundo: noquea al guardia y haz que el otro suelte el arma. Noquéalos, no dispares: hace ruido y la gente entra en pánico. Y si solo puedes elegir una cosa, ve a por la caja fuerte: es lo que más vale.",
+beat("En una joyería, toma el control desde el primer segundo: noquea al guardia y haz que el otro suelte el arma. Mejor a golpes, no dispares: hace ruido y la gente entra en pánico. Y si solo puedes elegir una cosa, ve a por la caja fuerte: es lo que más vale.",
      id="c5j", mus=("tension", 3),
-     shots=[X(992.0), XA("Noquéalos", 1008.0), XA("ve a por la caja fuerte", 1090.0)], sfx=[("w:noquea", "impact", 0.4)])
+     shots=[X(992.0), XA("Mejor a golpes", 1008.0), XA("ve a por la caja fuerte", 1090.0)], sfx=[("w:noquea", "impact", 0.4)])
 beat("Vigila también a la gente: si alguien sale corriendo por la puerta, es un testigo, y la policía llegará antes.",
      id="c5w", mus=("tension", 2),
      shots=[X(1024.0)], sfx=[])
