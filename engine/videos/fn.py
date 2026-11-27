@@ -129,10 +129,10 @@ beat("También se habla de un final en el que Jason sale libre y Lucía acaba pr
 # ================================================================ CIERRE
 beat("Rockstar no ha dicho cuál de todos es el oficial. Pero si alguna vez volvemos a ver a Jason y Lucía, muchos apuestan por el reencuentro en Liberty City.",
      id="r01", mus=("tropical", 1),
-     shots=[X(652.0), XA("muchos apuestan", 656.0)], sfx=[])
+     shots=[S(None, "g:quote", q="Rockstar no ha dicho cuál es el final oficial.", who="LOS FINALES DE GTA 6"), XA("muchos apuestan", 650.0)], sfx=[])
 beat("Y tú, ¿qué final conseguiste? ¿Y cuál crees que se merecían? Escríbelo en los comentarios. Si quieres más GTA 6 contado a fondo, suscríbete a Sal y Asfalto. Nos vemos en el próximo vídeo.",
      id="r02", mus=("tropical", 1), hold=0.6,
-     shots=[X(636.0), XA("suscríbete", 640.0), S("Nos vemos", "g:subscribe")], sfx=[("w:suscríbete", "pop", 0.45)])
+     shots=[S(None, "g:quote", q="¿Qué final conseguiste tú? ¿Cuál se merecían?", who="ESCRÍBELO EN LOS COMENTARIOS"), S("suscríbete", "g:subscribe")], sfx=[("w:suscríbete", "pop", 0.45)])
 beat("", dur=20.0, mus=("tropical", 1), id="end", shots=[S(None, "g:end")], trans="fade")
 
 def music_fn(total, beats_tl):
