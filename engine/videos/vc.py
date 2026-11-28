@@ -143,7 +143,7 @@ beat("Y si te quedas con ganas de más guiños, en el canal tienes Shorts con ot
 beat("Lo que más me gusta de estos guiños es que premian a los que llevamos años jugando: un nombre en un pódcast, un barco en un jardín, un sombrero en un mercadillo… y, de repente, Niko. Y tú, ¿a quién te gustaría ver volver? ¿A Trevor, a CJ, a Tommy Vercetti? Escríbelo en los comentarios. Y si quieres saber cómo termina la historia de Jason y Lucía, tienes nuestro vídeo con todos los finales. Suscríbete a Sal y Asfalto, y nos vemos en el próximo.",
      id="r01", mus=("tropical", 1), hold=0.6,
      shots=[Q(None, "¿A quién te gustaría ver volver?", "ESCRÍBELO EN LOS COMENTARIOS"), S("Suscríbete", "g:subscribe")], sfx=[("w:Suscríbete", "pop", 0.45)])
-beat("", dur=20.0, mus=("tropical", 1), id="end", shots=[S(None, "g:end")], trans="fade")
+beat("", dur=21.0, mus=("tropical", 1), id="end", shots=[S(None, "g:end")], trans="fade")
 
 def music_fn(total, beats_tl):
     segs = []
