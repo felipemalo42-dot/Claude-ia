@@ -216,6 +216,13 @@ def table(ctx):
         if not s_["src"].startswith("x:") or s_.get("zoom"): continue
         vid_, T_ = parse_x(s_["src"]); T1_ = T_ + (s_["t1"] - s_["t0"] + 0.2) * MZ.rate(vid_)
         if any(T_ < b_ + 0.3 and T1_ > a_ - 0.3 for a_, b_ in TOPMASK.get(vid_, [])): s_["z"] = (1.09, 1.12); s_["f"] = (0.5, 1.0); s_["topmask"] = True
+    # mask={fuente: (z0, z1, fy)}: zoom que deja fuera rótulos o subtítulos quemados en la grabación (fy=0 recorta abajo, 1 arriba);
+    # planos alternos con el encuadre a un lado y a otro y el zoom en sentidos opuestos, para que no parezca el mismo plano
+    for s_ in shots:
+        m_ = ctx.V.get("mask", {}).get(parse_x(s_["src"])[0]) if s_["src"].startswith("x:") else None
+        if not m_ or s_.get("zoom") or s_.get("nosub") or s_.get("topmask"): continue
+        z0_, z1_, fy_ = m_; odd = s_.get("k", 0) % 2
+        s_["z"] = (z1_, z0_) if odd else (z0_, z1_); s_["f"] = (0.62 if odd else 0.38, fy_)
     _T.update(shots=shots, starts=[s["t0"] for s in shots], beats=beats, chapters=chapters, bstarts=[x["bd"]["start"] for x in beats])
     return _T
 

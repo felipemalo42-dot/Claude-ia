@@ -78,7 +78,7 @@ beat("Es la única casa de la calle con mercadillo, así que no tiene pérdida. 
 # ================================================================ 4. DEXTER EN VICE CITY
 beat("Y hay un protagonista que ni siquiera es de Rockstar: Dexter Morgan, el forense de la policía de Miami que, en la serie, es un asesino de asesinos. Tiene sentido: la serie pasa en Miami, la ciudad en la que se inspira Vice City. En Vice City hay un edificio de apartamentos que se parece muchísimo al suyo… y se llama Trinity Apartments.",
      id="c4a", chapter=(4, "DEXTER EN VICE CITY"), mus=("synthwave", 2),
-     shots=[X(D, 0.0), XA("En Vice City hay un edificio", D, 32.0), XA("Trinity Apartments", D, 55.0)], sfx=[("w:Trinity", "stamp", 0.4)])
+     shots=[X(D, 0.0), XA("En Vice City hay un edificio", D, 35.6), XA("Trinity Apartments", D, 55.0)], sfx=[("w:Trinity", "stamp", 0.4)])
 beat("En la serie, Trinity era el asesino de la cuarta temporada, uno de sus peores enemigos. Y la cosa no acaba ahí: en el canal de al lado hay un barco igual que el suyo, el «Slice of Life», en el que se deshacía de los cuerpos, y en la azotea, sus herramientas: un cuchillo, cinta, una jeringuilla, una bolsa de plástico y cuerda. Hasta el aparato de aire acondicionado del apartamento está en su sitio: en la serie, ahí es donde Dexter escondía sus recuerdos de cada víctima.",
      id="c4b", mus=("synthwave", 2),
      shots=[X(D, 40.0), XA("en el canal de al lado", D, 67.0), XA("en la azotea", D, 86.0)], sfx=[])
@@ -126,7 +126,9 @@ beat("Y se va. Ni una palabra más. Giorgio se queda en el suelo, temblando… y
      shots=[X(P, 458.0), XA("Giorgio se queda", P, 474.0), XA("y Jason y Lucía", P, 476.85), XA("Ahora les toca arreglarlo", P, 484.25), XA("y detener un barco", P, 488.9)], sfx=[])
 beat("Esta escena deja algo claro: GTA 4, GTA 5 y GTA 6 comparten el mismo mundo. Y Liberty City sigue ahí: en uno de los finales del juego, en la autopista se ve un cartel hacia Alderney, uno de los barrios de GTA 4. Niko sigue vivo… y más peligroso que nunca.",
      id="c5h", mus=("tension", 1),
-     shots=[Q(None, "GTA 4, GTA 5 y GTA 6: el mismo mundo.", "ESTA ESCENA LO CONFIRMA"), XA("Y Liberty City sigue ahí", "B0b5JhrGUJQ", 422.9), XA("Niko sigue vivo", P, 469.5)], sfx=[("w:Alderney", "ding", 0.4)])
+     shots=[Q(None, "GTA 4, GTA 5 y GTA 6: el mismo mundo.", "ESTA ESCENA LO CONFIRMA"), XA("en uno de los finales", "B0b5JhrGUJQ", 418.55),
+            XA("se ve un cartel", "B0b5JhrGUJQ", 421.85), Q("uno de los barrios", "Alderney: una de las zonas del mapa de Liberty City en GTA 4.", "GTA 4 (2008)"),
+            XA("Niko sigue vivo", P, 469.5)], sfx=[("w:Alderney", "ding", 0.4)])
 
 beat("Repasemos: Wade y su pódcast sobre Michael, Franklin y Trevor; el velero que parece el de Michael y su tono de móvil; el sombrero de Arthur; el apartamento de Dexter… y Niko Bellic, en persona.",
      id="r0a", mus=("tropical", 1),
@@ -171,6 +173,8 @@ VIDEO = dict(id="vc", folder=FOLDER, file="VIDEO_FINAL", res_dir="trabajo", them
              format="Largo (16:9, 1920×1080, 30 fps) · escenas reales del juego", music="tension", music_fn=music_fn,
              voice="host", beats=B, overlay=R.overlay, grade=None, music_gain=0.30, duck=0.22, duck_release=0.9, sfx_gain=0.5,
              expr_pick=dict(seeds=2, confs=[(0.6, 0.4), (0.7, 0.45)]),   # 4 tomas por frase: la más animada (voice_expr.py)
+             # sin los subtítulos en inglés de la partida (abajo) ni el rótulo de capítulo de IGN (arriba a la izquierda): zoom suave
+             mask={P: (1.2, 1.24, 0.0), H: (1.15, 1.19, 1.0)},
              max_tries=6, qa_metric="wer", qa_thr=1.0, drone_clean=True, trim_tail="energia", stems="trabajo/audio/pistas", trans=("cut", 0.0),
              final_codec="h264_hq", crf=18, x264_tune="film", size=(1920, 1080),
              names=dict(narr_wav="trabajo/audio/narracion_original.wav", narr_mp3="trabajo/NARRACION.mp3", srt="SUBTITULOS.srt",
