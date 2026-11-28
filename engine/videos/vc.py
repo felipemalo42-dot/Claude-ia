@@ -31,7 +31,7 @@ beat("Vamos de menos a más. Primero, las pistas que puedes encontrar tú mismo.
             XA("Y quédate hasta el final", P, 272.0)], sfx=[])
 
 # ================================================================ 1. EL PÓDCAST DE WADE
-beat("Empezamos por GTA 5. En la radio de GTA 6 hay un pódcast de crímenes reales. Quien lo presenta lleva tiempo investigando un caso de Los Santos, y tiene su gracia: entre episodio y episodio se queja de sus audiciones fallidas y de las facturas que no puede pagar. Y en esta entrega acaba sentándose a hablar con alguien que conocemos muy bien: Wade.",
+beat("Empezamos por GTA 5. En la radio de GTA 6 hay un pódcast de crímenes reales. Quien lo presenta lleva tiempo investigando un caso de Los Santos, y tiene su gracia: entre episodio y episodio se queja de sus audiciones fallidas y de las facturas que no puede pagar. Y en esta entrega acaba sentándose a hablar con Wade, alguien que conocemos muy bien.",
      id="c1a", chapter=(1, "EL PÓDCAST DE WADE"), mus=("mystery", 2),
      shots=[X(P, 18.0), XA("se queja de sus audiciones", P, 143.0), XA("alguien que conocemos", P, 33.0)], sfx=[("w:Wade", "stamp", 0.4)])
 beat("Wade era el amigo inseparable de Trevor en GTA 5: un chico ingenuo, con rastas, que lo seguía a todas partes. Llegó a Los Santos buscando a su primo Floyd… y Trevor acabó instalándose en casa de Floyd, con las consecuencias que ya conoces.",
@@ -82,7 +82,7 @@ beat("Y hay un protagonista que ni siquiera es de Rockstar: Dexter Morgan, el fo
 beat("En la serie, Trinity era el asesino de la cuarta temporada, uno de sus peores enemigos. Y la cosa no acaba ahí: en el canal de al lado hay un barco igual que el suyo, el «Slice of Life», en el que se deshacía de los cuerpos, y en la azotea, sus herramientas: un cuchillo, cinta, una jeringuilla, una bolsa de plástico y cuerda. Hasta el aparato de aire acondicionado del apartamento está en su sitio: en la serie, ahí es donde Dexter escondía sus recuerdos de cada víctima.",
      id="c4b", mus=("synthwave", 2),
      shots=[X(D, 40.0), XA("en el canal de al lado", D, 67.0), XA("en la azotea", D, 86.0)], sfx=[])
-beat("Y en Key Lento hay una casa que esconde algo peor: una habitación forrada de plástico, como las que preparaba Dexter. Eso sí, primero tendrás que vértelas con el hombre armado que vive allí. Dentro hay armas, un chaleco antibalas… y hasta un lanzacohetes escondido en la bañera.",
+beat("Y en Key Lento hay una casa que esconde algo peor: una habitación forrada de plástico, como las que preparaba Dexter. Eso sí, primero tendrás que vértelas con el hombre armado que vive allí. Dentro hay armas, un chaleco antibalas… y hasta un lanzacohetes, escondido en la bañera.",
      id="c4c", mus=("synthwave", 1),
      shots=[X(D, 96.0), XA("una habitación forrada", D, 158.5), XA("primero tendrás que", D, 114.0), XA("Dentro hay armas", D, 125.5), XA("y hasta un lanzacohetes", D, 130.5)], sfx=[])
 
@@ -102,9 +102,9 @@ beat("Último aviso: a partir de aquí hay spoilers de la historia de GTA 6. Si 
 beat("Para entender la escena: Giorgio Gallo es un mafioso de Vice City con el que Jason y Lucía acaban trabajando. Y en esta misión está eufórico: por fin tiene un disco duro que lo va a sacar de todos sus problemas. Hasta les dice a Jason y Lucía que ya no van a necesitar nuevas identidades.",
      id="c5b", mus=("tension", 2),
      shots=[X(P, 277.6), XA("Hasta les dice", P, 290.15)], sfx=[("w:disco duro", "stamp", 0.4)])
-beat("«Se acabaron los problemas, se acabaron los albaneses. ¡Gigi ha vuelto!». Y justo entonces, alguien entra en la sala. Giorgio se da la vuelta, sonríe… y lo saluda así: «¡Niko Bellic, hermano mío!». Lo dice en voz alta, y así aparece en los subtítulos del juego: Niko Bellic.",
+beat("«Se acabaron los problemas, se acabaron los albaneses. ¡Gigi ha vuelto!». Y justo entonces, alguien entra en la sala. El mafioso se da la vuelta, sonríe… y lo saluda así: «¡Niko Bellic, hermano mío!». Lo dice en voz alta, y así aparece en los subtítulos del juego: Niko Bellic.",
      id="c5c", mus=("tension", 2),
-     shots=[X(P, 296.0), XA("alguien entra", P, 303.4), XA("Giorgio se da la vuelta", P, 306.5), XA("Niko Bellic, hermano", P, 330.7),
+     shots=[X(P, 296.0), XA("alguien entra", P, 303.4), XA("El mafioso se da la vuelta", P, 306.5), XA("Niko Bellic, hermano", P, 330.7),
             # el subtítulo del juego («Niko Bellic, my brother!», sobre negro): ampliado y sin el subtítulo propio encima
             XA("Niko Bellic.", P, 325.6, nosub=True, z=(1.3, 1.38), f=(0.5, 0.91))], sfx=[("w:Niko Bellic", "impact", 0.5)])
 beat("Es él. Mayor, con barba, una cadena de oro… y la misma mirada. En GTA 4, Niko era un veterano de guerra de Europa del Este que llegaba a Liberty City porque su primo Roman le había prometido mansiones, coches y chicas. La realidad era un piso cutre y un montón de deudas. Y su historia terminaba con una decisión que le costaba la vida a Roman… o a Kate. Casi veinte años después, aquel hombre que quería dejar atrás la violencia aparece en Vice City… y no viene de visita.",
@@ -112,10 +112,10 @@ beat("Es él. Mayor, con barba, una cadena de oro… y la misma mirada. En GTA 4
      shots=[X(P, 337.66), Q("En GTA 4", "GTA 4 (2008): Niko Bellic, veterano de guerra de Europa del Este, llega a Liberty City buscando una vida mejor.", "EL PROTAGONISTA DE GTA 4"),
             Q("Y su historia terminaba", "Al final de GTA 4, según lo que elijas, muere Roman… o muere Kate.", "GTA 4 (2008)"),
             XA("aquel hombre", P, 380.0), XA("y no viene de visita", P, 353.0)], sfx=[])
-beat("«Solo hay una razón por la que vendría hasta aquí», le dice. Giorgio la ha liado: hay dos mil millones de dólares en juego, se han perdido demasiados envíos… y los cárteles ya han decidido trabajar con otro: un tal Olaf. Giorgio no se lo puede creer: «¿Olaf? ¡Fui al colegio con Olaf!». Y Niko le recuerda lo que está en juego: el siguiente envío ya ha salido, y media Europa va a comprarle la droga a otro.",
+beat("«Solo hay una razón por la que vendría hasta aquí», le dice. Giorgio la ha liado: hay dos mil millones de dólares en juego, se han perdido demasiados envíos… y los cárteles ya han decidido trabajar con otro: un tal Olaf. Giorgio no se lo puede creer: ¡fue al colegio con Olaf! Y Niko le recuerda lo que está en juego: el siguiente envío ya ha salido, y la mitad de Europa va a comprarle la droga a otro.",
      id="c5e", mus=("storm", 2),
      shots=[X(P, 343.85), XA("hay dos mil millones", P, 350.45), XA("se han perdido demasiados envíos", P, 360.5), XA("y los cárteles", P, 364.9),
-            XA("Giorgio no se lo puede", P, 356.05), XA("¡Fui al colegio", P, 370.15), XA("Y Niko le recuerda", P, 362.55), XA("el siguiente envío", P, 384.1)],
+            XA("Giorgio no se lo puede", P, 356.05), XA("¡fue al colegio", P, 370.15), XA("Y Niko le recuerda", P, 362.55), XA("el siguiente envío", P, 384.1)],
      sfx=[("w:dos mil millones", "stamp", 0.45)])
 beat("Giorgio suplica: «¡Niko, por favor! Tengo un plan, te lo prometo». Pero Niko ni se inmuta. «Giorgio, intentamos limpiar tu desastre… y tú te lo traes a casa». Le apunta, le deja suplicar… y al final le concede una última oportunidad: «No hace falta que te diga lo que pasará después».",
      id="c5f", mus=("storm", 3),
