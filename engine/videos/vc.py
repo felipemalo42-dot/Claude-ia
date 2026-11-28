@@ -115,7 +115,7 @@ beat("Es él. Mayor, con barba, una cadena de oro… y la misma mirada. En GTA 4
 beat("«Solo hay una razón por la que vendría hasta aquí», le dice. Giorgio la ha liado: hay dos mil millones de dólares en juego, se han perdido demasiados envíos… y los cárteles ya han decidido trabajar con otro: un tal Olaf. Giorgio no se lo puede creer: «¿Olaf? ¡Fui al colegio con Olaf!». Y Niko le recuerda lo que está en juego: el siguiente envío ya ha salido, y media Europa va a comprarle la droga a otro.",
      id="c5e", mus=("storm", 2),
      shots=[X(P, 343.85), XA("hay dos mil millones", P, 350.45), XA("se han perdido demasiados envíos", P, 360.5), XA("y los cárteles", P, 364.9),
-            XA("Giorgio no se lo puede", P, 356.05), XA("¡Fui al colegio", P, 370.15), XA("Y Niko le recuerda", P, 362.55), XA("el siguiente envío", P, 383.95)],
+            XA("Giorgio no se lo puede", P, 356.05), XA("¡Fui al colegio", P, 370.15), XA("Y Niko le recuerda", P, 362.55), XA("el siguiente envío", P, 384.1)],
      sfx=[("w:dos mil millones", "stamp", 0.45)])
 beat("Giorgio suplica: «¡Niko, por favor! Tengo un plan, te lo prometo». Pero Niko ni se inmuta. «Giorgio, intentamos limpiar tu desastre… y tú te lo traes a casa». Le apunta, le deja suplicar… y al final le concede una última oportunidad: «No hace falta que te diga lo que pasará después».",
      id="c5f", mus=("storm", 3),
