@@ -15,19 +15,20 @@ EX = dict(exag=0.6, cfg=0.4)
 def beat(vo="", **k): B.append(dict(vo=vo, scene=(R.scene if not B else None), **{**EX, **k}))
 def S(anchor, src, **k): return dict(anchor=anchor, src=src, **k)
 P, N, H, D = "a8fK-RLK4qM", "I1cHE-udf-Y", "HAIx2b9ThL8", "mlnfgO4G0n0"
-def X(v, t, **k): return S(None, f"x:{v}@{t}", z=(1.0, 1.05), **k)
-def XA(anchor, v, t, **k): return S(anchor, f"x:{v}@{t}", z=(1.0, 1.05), **k)
+def X(v, t, **k): return S(None, f"x:{v}@{t}", **{"z": (1.0, 1.05), **k})
+def XA(anchor, v, t, **k): return S(anchor, f"x:{v}@{t}", **{"z": (1.0, 1.05), **k})
 def Q(anchor, q, who): return S(anchor, "g:quote", q=q, who=who)
 
 # ================================================================ APERTURA
 beat("En GTA 6 aparece Niko Bellic. Sí: el de GTA 4. Y no es un parecido ni una teoría: el juego dice su nombre. Pero no es el único que vuelve. Michael, Franklin, Trevor… y hasta Arthur Morgan dejan huella en Leonida. Hoy te los enseño todos, con partidas reales.",
      pre=0.3, id="o01", mus=("tension", 2),
      shots=[S(None, "g:cover", kicker="SPOILERS SOLO AL FINAL", lines=["NIKO BELLIC", "ESTÁ EN GTA 6"], sub="Y no es el único que vuelve"),
-            XA("Sí: el de GTA 4", P, 339.0), XA("el juego dice su nombre", P, 325.0), XA("Michael, Franklin", P, 92.0), XA("Arthur Morgan", H, 100.5)],
+            XA("Sí: el de GTA 4", P, 464.3), Q("Y no es un parecido", "«Niko Bellic, my brother!»", "SUBTÍTULOS DE GTA 6"), XA("Michael, Franklin", P, 92.0), XA("Arthur Morgan", H, 100.5)],
      sfx=[(0.0, "riser", 0.35), ("w:Niko", "stamp", 0.5)])
 beat("Vamos de menos a más. Primero, las pistas que puedes encontrar tú mismo. Y al final, la escena de Niko, que tiene spoilers de la historia: te avisaré antes, para que decidas si la ves. Y quédate hasta el final, porque lo de Niko no es un simple guiño: es una escena entera.",
      id="o02", mus=("tension", 1),
-     shots=[X(N, 86.0), XA("la escena de Niko", P, 272.0)], sfx=[])
+     shots=[S(None, "g:list", title="DE MENOS A MÁS", subt="Así va el vídeo", items=["Pistas que puedes encontrar tú", "La escena de Niko (con spoilers)"], st=[1.8, 4.6]),
+            XA("Y quédate hasta el final", P, 272.0)], sfx=[])
 
 # ================================================================ 1. EL PÓDCAST DE WADE
 beat("Empezamos por GTA 5. En la radio de GTA 6 hay un pódcast de crímenes reales. Quien lo presenta lleva tiempo investigando un caso de Los Santos, y tiene su gracia: entre episodio y episodio se queja de sus audiciones fallidas y de las facturas que no puede pagar. Y en esta entrega acaba sentándose a hablar con alguien que conocemos muy bien: Wade.",
@@ -58,10 +59,12 @@ beat("Pero algunos jugadores creen haber encontrado algo más. Este velero está
      shots=[X(N, 24.0), XA("es casi idéntico", N, 88.0), Q("el que su hijo Jimmy", "Jimmy intenta vender el barco de Michael… y acaba remolcado por la autopista.", "GTA 5 (2013)")], sfx=[])
 beat("En GTA 5, ese barco era el orgullo de Michael. En una de las primeras misiones, Jimmy se lo intenta vender a unos tipos que se lo llevan por la autopista, y Franklin acaba saltando al barco en marcha para recuperarlo. Aquí se puede subir a bordo. Y en la pantalla de navegación, el jugador que lo encontró asegura que hay un guiño a GTA 5. Rockstar no ha dicho nada, así que tómatelo como lo que es: un parecido muy sospechoso.",
      id="c2b", mus=("tropical", 2),
-     shots=[X(N, 67.5), XA("en la pantalla de navegación", N, 80.0), XA("Rockstar no ha dicho nada", N, 33.0)], sfx=[])
+     shots=[X(N, 93.0), Q("En una de las primeras misiones", "Franklin salta al barco en plena autopista para recuperarlo.", "GTA 5 (2013)"),
+            XA("Aquí se puede subir a bordo", N, 67.5), XA("en la pantalla de navegación", N, 80.0), XA("Rockstar no ha dicho nada", N, 33.0)], sfx=[])
 beat("Y el mismo jugador encontró otra cosa en el móvil de Jason: un tono de llamada que se llama «Wind Chimes». Según él, es el mismo tono que sonaba en el móvil de Michael. Si te pasaste GTA 5 con ese sonido en el bolsillo, dinos en los comentarios si lo reconoces.",
      id="c2c", mus=("tropical", 1),
-     shots=[X(N, 105.0), XA("Wind Chimes", N, 113.0)], sfx=[("w:Wind Chimes", "ding", 0.4)])
+     shots=[X(N, 105.0), XA("Wind Chimes", N, 113.0), Q("Si te pasaste GTA 5", "«Wind Chimes»: según el jugador que lo encontró, el tono del móvil de Michael en GTA 5.", "DÍNOSLO EN LOS COMENTARIOS")],
+     sfx=[("w:Wind Chimes", "ding", 0.4)])
 
 # ================================================================ 3. EL SOMBRERO DE ARTHUR
 beat("De Red Dead Redemption 2, de dos mil dieciocho, también hay un recuerdo. Arthur Morgan, su protagonista, nunca se quitaba su sombrero de vaquero… y en GTA 6 puedes llevarte uno igual. Bueno, uno que se le parece muchísimo. A partir del capítulo dos, en una casa azul con una bandera de Estados Unidos muy alta, al noroeste de la casa de Jason y Lucía, hay una venta de garaje.",
@@ -98,26 +101,32 @@ beat("Último aviso: a partir de aquí hay spoilers de la historia de GTA 6. Si 
      shots=[S(None, "g:cover", kicker="ÚLTIMO AVISO", lines=["SPOILERS", "DE LA HISTORIA"], sub="La escena de Niko Bellic")], sfx=[("w:spoilers", "stamp", 0.45)])
 beat("Para entender la escena: Giorgio Gallo es un mafioso de Vice City con el que Jason y Lucía acaban trabajando. Y en esta misión está eufórico: por fin tiene un disco duro que lo va a sacar de todos sus problemas. Hasta les dice a Jason y Lucía que ya no van a necesitar nuevas identidades.",
      id="c5b", mus=("tension", 2),
-     shots=[X(P, 276.0), XA("está eufórico", P, 287.0)], sfx=[("w:disco duro", "stamp", 0.4)])
+     shots=[X(P, 277.6), XA("Hasta les dice", P, 290.15)], sfx=[("w:disco duro", "stamp", 0.4)])
 beat("«Se acabaron los problemas, se acabaron los albaneses. ¡Gigi ha vuelto!». Y justo entonces, alguien entra en la sala. Giorgio se da la vuelta, sonríe… y lo saluda así: «¡Niko Bellic, hermano mío!». Lo dice en voz alta, y así aparece en los subtítulos del juego: Niko Bellic.",
      id="c5c", mus=("tension", 2),
-     shots=[X(P, 294.0), XA("alguien entra", P, 305.0), XA("y lo saluda así", P, 324.0)], sfx=[("w:Niko Bellic", "impact", 0.5)])
+     shots=[X(P, 296.0), XA("alguien entra", P, 303.4), XA("Giorgio se da la vuelta", P, 306.5), XA("Niko Bellic, hermano", P, 330.7),
+            # el subtítulo del juego («Niko Bellic, my brother!», sobre negro): ampliado y sin el subtítulo propio encima
+            XA("Niko Bellic.", P, 325.6, nosub=True, z=(1.3, 1.38), f=(0.5, 0.91))], sfx=[("w:Niko Bellic", "impact", 0.5)])
 beat("Es él. Mayor, con barba, una cadena de oro… y la misma mirada. En GTA 4, Niko era un veterano de guerra de Europa del Este que llegaba a Liberty City porque su primo Roman le había prometido mansiones, coches y chicas. La realidad era un piso cutre y un montón de deudas. Y su historia terminaba con una decisión que le costaba la vida a Roman… o a Kate. Casi veinte años después, aquel hombre que quería dejar atrás la violencia aparece en Vice City… y no viene de visita.",
      id="c5d", mus=("storm", 2),
-     shots=[X(P, 338.5), Q("En GTA 4", "GTA 4 (2008): Niko Bellic, veterano de guerra de Europa del Este, llega a Liberty City buscando una vida mejor.", "EL PROTAGONISTA DE GTA 4"),
-            XA("y no viene de visita", P, 342.0)], sfx=[])
+     shots=[X(P, 337.66), Q("En GTA 4", "GTA 4 (2008): Niko Bellic, veterano de guerra de Europa del Este, llega a Liberty City buscando una vida mejor.", "EL PROTAGONISTA DE GTA 4"),
+            Q("Y su historia terminaba", "Al final de GTA 4, según lo que elijas, muere Roman… o muere Kate.", "GTA 4 (2008)"),
+            XA("aquel hombre", P, 380.0), XA("y no viene de visita", P, 353.0)], sfx=[])
 beat("«Solo hay una razón por la que vendría hasta aquí», le dice. Giorgio la ha liado: hay dos mil millones de dólares en juego, se han perdido demasiados envíos… y los cárteles ya han decidido trabajar con otro: un tal Olaf. Giorgio no se lo puede creer: «¿Olaf? ¡Fui al colegio con Olaf!». Y Niko le recuerda lo que está en juego: el siguiente envío ya ha salido, y media Europa va a comprarle la droga a otro.",
      id="c5e", mus=("storm", 2),
-     shots=[X(P, 349.5), XA("se han perdido demasiados envíos", P, 359.5), XA("y los cárteles", P, 366.5), XA("¿Olaf?", P, 370.5), XA("el siguiente envío", P, 408.5)], sfx=[("w:dos mil millones", "stamp", 0.45)])
+     shots=[X(P, 343.85), XA("hay dos mil millones", P, 350.45), XA("se han perdido demasiados envíos", P, 360.5), XA("y los cárteles", P, 364.9),
+            XA("Giorgio no se lo puede", P, 356.05), XA("¡Fui al colegio", P, 370.15), XA("Y Niko le recuerda", P, 362.55), XA("el siguiente envío", P, 383.95)],
+     sfx=[("w:dos mil millones", "stamp", 0.45)])
 beat("Giorgio suplica: «¡Niko, por favor! Tengo un plan, te lo prometo». Pero Niko ni se inmuta. «Giorgio, intentamos limpiar tu desastre… y tú te lo traes a casa». Le apunta, le deja suplicar… y al final le concede una última oportunidad: «No hace falta que te diga lo que pasará después».",
      id="c5f", mus=("storm", 3),
-     shots=[X(P, 419.5), XA("Giorgio, intentamos", P, 402.0), XA("Le apunta", P, 443.5), XA("una última oportunidad", P, 450.5)], sfx=[("w:apunta", "impact", 0.4)])
+     shots=[X(P, 418.0), XA("Pero Niko ni", P, 433.25), XA("Giorgio, intentamos", P, 425.7), XA("Le apunta", P, 443.6), XA("una última oportunidad", P, 449.0),
+            XA("No hace falta", P, 452.7)], sfx=[("w:apunta", "impact", 0.4)])
 beat("Y se va. Ni una palabra más. Giorgio se queda en el suelo, temblando… y Jason y Lucía, en medio de un lío que acaba de hacerse mucho más grande. Ahora les toca arreglarlo: recuperar la droga de una base de los guardacostas… y detener un barco con veinte mil contenedores rumbo a Europa.",
      id="c5g", mus=("storm", 1),
-     shots=[X(P, 472.0), XA("y Jason y Lucía", P, 480.0), XA("Ahora les toca arreglarlo", P, 486.5)], sfx=[])
+     shots=[X(P, 458.0), XA("Giorgio se queda", P, 474.0), XA("y Jason y Lucía", P, 476.85), XA("Ahora les toca arreglarlo", P, 484.25), XA("y detener un barco", P, 488.9)], sfx=[])
 beat("Esta escena deja algo claro: GTA 4, GTA 5 y GTA 6 comparten el mismo mundo. Y Liberty City sigue ahí: en uno de los finales del juego, en la autopista se ve un cartel hacia Alderney, uno de los barrios de GTA 4. Niko sigue vivo… y más peligroso que nunca.",
      id="c5h", mus=("tension", 1),
-     shots=[X(P, 384.0), XA("Y Liberty City sigue ahí", "B0b5JhrGUJQ", 422.9), XA("Niko sigue vivo", P, 380.5)], sfx=[("w:Alderney", "ding", 0.4)])
+     shots=[Q(None, "GTA 4, GTA 5 y GTA 6: el mismo mundo.", "ESTA ESCENA LO CONFIRMA"), XA("Y Liberty City sigue ahí", "B0b5JhrGUJQ", 422.9), XA("Niko sigue vivo", P, 469.5)], sfx=[("w:Alderney", "ding", 0.4)])
 
 beat("Repasemos: Wade y su pódcast sobre Michael, Franklin y Trevor; el velero que parece el de Michael y su tono de móvil; el sombrero de Arthur; el apartamento de Dexter… y Niko Bellic, en persona.",
      id="r0a", mus=("tropical", 1),

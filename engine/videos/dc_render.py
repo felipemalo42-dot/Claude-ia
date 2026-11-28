@@ -336,6 +336,9 @@ def fit(shots, total):
             FIT_LOG.append((s["t0"], s.get("anchor"), vid, T0, [(round(p["t0"], 2), round(parse_x(p["src"])[1], 2)) for p in pieces]))
         out += pieces
     for i, s in enumerate(out): s["t1"] = out[i + 1]["t0"] if i + 1 < len(out) else total
+    # un trozo de relleno de menos de 0,1 s sería un destello de 1-3 fotogramas de otro momento: lo absorbe el plano anterior
+    out = [s for i, s in enumerate(out) if not (i and s.get("fit") and s["t1"] - s["t0"] < 0.1 and out[i - 1]["src"].startswith("x:"))]
+    for i, s in enumerate(out): s["t1"] = out[i + 1]["t0"] if i + 1 < len(out) else total
     return out
 
 def validate(ctx, verbose=True):
@@ -482,7 +485,7 @@ def overlay(c, gt, ctx):
         if ck and (not sh["src"].startswith("g:") or sh.get("cert")): cert(c, ck, 1.0, y=82 if not sh["src"].startswith("g:") else 92, left=sh["src"].startswith("g:"))
         if sh["src"].startswith("x:") and ctx.V.get("credit", True): credit(c, sh)   # credit=False: créditos solo en la descripción
     if b.get("cta"): cta_pill(c, gt - T["bstarts"][bi], ctx)
-    G.subtitles(c, gt, ctx)
+    if not sh.get("nosub"): G.subtitles(c, gt, ctx)   # nosub: el plano enseña el subtítulo del propio juego
     if gt > 3: K.watermark(c, W, H, 0.45, corner="tl", size=40)
 
 def cta_pill(c, tt, ctx):
